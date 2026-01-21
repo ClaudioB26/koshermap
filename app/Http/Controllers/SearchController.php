@@ -5,37 +5,33 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use App\Services\ExternalProductService;
+use Illuminate\Support\Collection;
 
 class SearchController extends Controller
 {
     public function index(Request $request, ExternalProductService $externalService)
-	{
-		$query = $request->input('query');
-		if (!$query) return view('welcome');
+    {
+        $query = $request->input('query');
 
-		// 1. Buscamos en nuestra base de datos local
-		$products = Product::with('brand')
-					->where('barcode', $query)
-					->orWhere('name', 'LIKE', "%{$query}%")
-					->get();
+        if (!$query) {
+            return view('welcome');
+        }
 
-		// 2. Si no hay nada y es numérico, intentamos importar
-		if ($products->isEmpty() && is_numeric($query)) {
-			
-			// Intentamos la importación normal
-			$newProduct = $externalService->searchAndImport($query);
+        // 1. Search our local database first.
+        $localProducts = Product::with(['brand', 'certifier'])
+            ->where('name', 'LIKE', "%{$query}%")
+            ->orWhere('barcode', $query)
+            ->get();
 
-			// Si falló (como pasó recién), intentamos quitarle los ceros a la izquierda
-			if (!$newProduct) {
-				$cleanQuery = ltrim($query, '0'); 
-				$newProduct = $externalService->searchAndImport($cleanQuery);
-			}
+        // 2. Call the unified external service.
+        $externalProducts = $externalService->search($query);
 
-			if ($newProduct) {
-				return redirect()->route('products.show', $newProduct->slug);
-			}
-		}
+        // 3. Merge local and external results, ensuring uniqueness.
+        $allProducts = $localProducts->concat($externalProducts)->unique('barcode');
 
-		return view('welcome', compact('products', 'query'));
-	}
+        return view('welcome', [
+            'products' => $allProducts,
+            'query' => $query,
+        ]);
+    }
 }
