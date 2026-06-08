@@ -23,6 +23,15 @@
     {{-- Google AdSense --}}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3393238730190407"
             crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9G0V2KMB14"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9G0V2KMB14');
+    </script>        
     @stack('head')
 </head>
 <body class="bg-gray-50 flex flex-col min-h-screen">
