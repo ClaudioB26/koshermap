@@ -1,4 +1,10 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteRule ^(.*)$ public/$1 [L,QSA]
+
+    # Si el archivo o directorio existe en public/, servirlo directo
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Todo lo demás va al index.php raíz
+    RewriteRule ^ index.php [L]
 </IfModule>
