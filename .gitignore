@@ -1,6 +1,37 @@
 *.log
 .DS_Store
 .env
+
+# Archivos de prueba y desarrollo local
+/public/test-routes.php
+tokengoogle.txt
+*.txt
+check_*.php
+test_*.php
+debug_*.php
+analyze_*.php
+fix_*.php
+run_*.php
+scrape_*.php
+inspect_*.php
+find_*.php
+force_*.php
+generate_*.php
+complete_*.php
+verify_*.php
+restore_*.php
+create_*.php
+explain_*.php
+try_*.php
+clean_*.php
+status.php
+kmd_*.html
+ajdut_*.js
+ajdut_*.html
+ajdut_*.json
+
+# Claude Code worktrees
+/.claude/worktrees/
 .env.backup
 .env.production
 .phpactor.json
