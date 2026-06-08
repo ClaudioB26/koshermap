@@ -10,7 +10,7 @@
 
 <div class="w-full max-w-sm">
     <div class="text-center mb-8">
-        <h1 class="text-3xl font-black text-blue-600">Kosher<span class="text-gray-800">Status</span></h1>
+        <h1 class="text-3xl font-black text-blue-600">Kosher<span class="text-gray-800">Map</span></h1>
         <p class="text-gray-500 text-sm mt-1">Panel de administración</p>
     </div>
 

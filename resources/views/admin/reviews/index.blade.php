@@ -11,7 +11,7 @@
 
 <header class="bg-white shadow-sm px-6 py-4 flex items-center justify-between">
     <div class="flex items-center gap-4">
-        <span class="text-xl font-black text-blue-600">Kosher<span class="text-gray-800">Status</span></span>
+        <span class="text-xl font-black text-blue-600">Kosher<span class="text-gray-800">Map</span></span>
         <span class="text-gray-400">|</span>
         <span class="font-semibold text-gray-700">Moderación de comentarios</span>
     </div>

@@ -27,7 +27,7 @@
 
             <!-- Logo -->
             <a href="{{ route('home') }}" class="text-xl font-black text-blue-600 shrink-0 hover:opacity-80 transition">
-                Kosher<span class="text-gray-800">Status</span>
+                Kosher<span class="text-gray-800">Map</span>
             </a>
 
             <!-- Primary Nav (desktop) -->
@@ -138,7 +138,7 @@
 
 <footer class="bg-white border-t py-8 mt-auto">
     <div class="container mx-auto px-4 text-center text-gray-500 text-sm">
-        <p class="font-semibold text-gray-700 mb-1">Kosher<span class="text-blue-600">Status</span></p>
+        <p class="font-semibold text-gray-700 mb-1">Kosher<span class="text-blue-600">Map</span></p>
         <p>{{ __('footer_text') }}</p>
         <div class="flex justify-center gap-4 mt-3 text-xs text-gray-400">
             <a href="{{ route('places.index') }}" class="hover:text-blue-600">📍 Lugares kosher</a>

@@ -7,7 +7,7 @@
 {{-- Hero: cuando no hay búsqueda activa --}}
 @if(!isset($query) && !request('country') && !request('category') && !request('certifier'))
 <div class="text-center py-16">
-    <h1 class="text-5xl font-black text-blue-600 mb-3">Kosher<span class="text-gray-800">Status</span></h1>
+    <h1 class="text-5xl font-black text-blue-600 mb-3">Kosher<span class="text-gray-800">Map</span></h1>
     <p class="text-gray-400 text-lg mb-12">Encontrá productos y locales con certificación kosher</p>
 
     <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
