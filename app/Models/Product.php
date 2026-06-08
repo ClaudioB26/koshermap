@@ -11,7 +11,6 @@ class Product extends Model
 
     /**
      * Los campos que se pueden llenar masivamente.
-     * Esto es vital para cuando hagamos el Scraper o importación.
      */
     protected $fillable = [
         'name',
@@ -20,9 +19,17 @@ class Product extends Model
         'kosher_status',
         'brand_id',
         'certifier_id',
+        'category_id',
         'description',
-        'image_url'
+        'image_url',
+        'source',
+        'unique_hash'
     ];
+
+    public function reports()
+    {
+        return $this->morphMany(Report::class, 'reportable');
+    }
 
     /**
      * Relación: Un producto pertenece a una Marca.
@@ -38,5 +45,29 @@ class Product extends Model
     public function certifier()
     {
         return $this->belongsTo(Certifier::class);
+    }
+
+    /**
+     * Relación: Un producto pertenece a un Rubro/Categoría.
+     */
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
+
+    /**
+     * Relación: Un producto puede estar disponible en varios Países.
+     */
+    public function countries()
+    {
+        return $this->belongsToMany(Country::class, 'product_country');
+    }
+
+    /**
+     * Relación: Un producto tiene muchos comentarios.
+     */
+    public function reviews()
+    {
+        return $this->hasMany(Review::class)->where('is_approved', true)->latest();
     }
 }

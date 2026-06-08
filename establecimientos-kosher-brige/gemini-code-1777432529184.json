@@ -1,0 +1,11 @@
+"host_permissions": [
+  "https://www.google.com/maps/*",
+  "https://tuservidor_laravel.test/*"
+],
+"content_scripts": [
+  {
+    "matches": ["https://www.google.com/maps/*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }
+]

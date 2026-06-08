@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/logoAK.png" type="image/x-icon">
+    <meta name="description" content="">
+    <title>Ajdut Kosher</title>
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+    <link rel="stylesheet" href="assets/style.css" type="text/css">
+    <!-- <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css"> -->
+    <link rel="stylesheet" href="assets/fontawesome/font-awesome.min.css" />
+
+    <script src="assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/angular/angular.min.js"></script>
+    <script src='assets/ng-infinite-scroll/ng-infinite-scroll.min.js'></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.js"></script> -->
+    <script src="assets/angular/angular-ui-router.min.js"></script>
+    <script src="//code.angularjs.org/1.5.9/angular-route.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <script src="js/app.js"></script>
+
+    
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    </script>
+    
+    
+<!-- Los codigos deben estar entre las TAGS <HEAD></HEAD> -- >
+
+ 
+
+<!-- Global site tag (gtag.js) - Google Ads: 795803083 -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-795803083"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+ 
+
+  gtag('config', 'AW-795803083');
+
+</script>
+
+ 
+
+ 
+
+<script>
+
+ 
+
+var googleFindURL = "https://www.kosher.org.ar/index.html#/exito"
+
+if(window.location.href == googleFindURL) {
+
+  console.log("Formulario enviado");
+
+  gtag('event', 'conversion', {'send_to': 'AW-795803083/vYbMCIapvJUDEMv7u_sC'});
+
+}
+
+ 
+
+</script>    
+    
+</head>
+
+<body ng-app="akApp" ng-controller="masterCtrl" >
+
+    <section class="menu cid-rbn8SpG1Vy" once="menu" id="menu2-0">
+
+        <nav class="navbar navbar-default navbar-static-top" id="dummy"></nav>
+        <!-- Dummy nav bar para que no quede nada tapado -->
+
+
+        <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm"
+            id="main-navbar">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="menu-logo">
+                <div class="navbar-brand">
+                    <span class="navbar-logo">
+                        <a href="index.html"><img src="assets/images/logonuevoAK.png" alt="AJDUT KOSHER"
+                                title="AJDUT KOSHER" style="height: 3.8rem;"></a>
+                    </span>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                    <li class="nav-item"><a class="nav-link link  text-blue display-3" data-toggle="collapse"
+                            data-target=".navbar-collapse" ui-sref="home">
+                            <b>INICIO</b></a></li>
+                    <li class="nav-item"><a class="nav-link link text-blue display-3" data-toggle="collapse"
+                            data-target=".navbar-collapse" ui-sref="quienes-somos">
+                            <b>¿QUIENES SOMOS?</b></a></li>
+                    <li class="nav-item"><a class="nav-link link text-blue display-3" data-toggle="collapse"
+                            data-target=".navbar-collapse" ui-sref="empresas">
+                            <b>EMPRESAS (CERTIFICACIÓN KOSHER)</b></a></li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-blue display-3" data-toggle="collapse"
+                            data-target=".navbar-collapse" ui-sref="consumidores">
+                            <b>CONSUMIDORES</b></a>
+                    </li>
+                    <li class="nav-item" ng-show="pesaj.mostrar == 'Si'" >
+                        <a class="nav-link link  display-3" style="color: red;" data-toggle="collapse"
+                            data-target=".navbar-collapse"  ui-sref="pesaj">
+                            <b >PESAJ</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-blue display-3" data-toggle="collapse"
+                            data-target=".navbar-collapse" ui-sref="contacto">
+                            <b>CONTACTO</b></a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </section>
+
+    <section>
+        <!-- MAIN CONTENT -->
+        <div layout="column">
+            <md-content flex layout-padding>
+                    
+
+                <div class="container-flex" style="padding:0%;">
+                    <div ui-view autoscroll="false"></div>
+                </div>
+            </md-content>
+        </div>
+    </section>
+
+    <!--[if IE ]>
+HOLAAAA
+<![endif]-->
+
+    <section class="cid-rbVWkE7Lac" id="footer2-e">
+
+
+
+
+
+        <div class="container-fluid">
+            <div class="media-container-row content mbr-white">
+                <div class="col-12 col-md-3  display-7">
+                    <p class="mbr-text"><strong>Contacto</strong>
+                        <br>
+                        <br>Teléfono: +54-11-4787-6712 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        <br>Celular (Administración): +54-911-5636-0072 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        <br>
+                        <br>
+                        <br>
+                        <br>Redes Sociales:
+                        <div style="font-size: 2em;">
+                            <a href="https://twitter.com/ajdutk" target="_blank">
+                                <i class="fab fa-twitter mbr-white"></i>
+                            </a>
+                            <a href="https://es-la.facebook.com/AjdutK/" target="_blank">
+                                <i class="fab fa-facebook mbr-white"></i>
+                            </a>
+                            <a href="https://www.instagram.com/ajdutkosher" target="_blank">
+                                <i class="fab fa-instagram mbr-white"></i>
+                            </a>
+                        </div>
+                    </p>
+
+
+                </div>
+                <div class="col-12 col-md-3  display-7">
+                    <p class="mbr-text">Dirección
+                        <br>
+                        <br>Moldes 2449<br>CABA, 1428<br>Argentina</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="google-map"><iframe frameborder="0" style="border:0"
+                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJ2XSxsyq0vJURrRcHjx6wEBc"
+                            allowfullscreen=""></iframe></div>
+                </div>
+            </div>
+            <div class="footer-lower">
+                <div class="media-container-row">
+                    <div class="col-sm-12">
+                        <hr>
+                    </div>
+                </div>
+                <div class="align-right media-container-row mbr-white">
+                    <div class="col-sm-12 copyright">
+                        <p class="mbr-text  display-7">
+                            © Copyright 2019 Ajdut Kosher</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -14,6 +14,8 @@ return new class extends Migration
             $table->string('slug')->unique();
             $table->string('barcode')->nullable()->index();
             $table->string('kosher_status');
+            $table->string('source')->default('local')->index();
+            $table->string('unique_hash')->nullable()->index();
             $table->foreignId('brand_id')->nullable()->constrained()->onDelete('set null');
             $table->foreignId('certifier_id')->nullable()->constrained()->onDelete('set null');
             $table->text('description')->nullable();

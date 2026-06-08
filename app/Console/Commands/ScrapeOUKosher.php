@@ -16,6 +16,7 @@ class ScrapeOUKosher extends Command
     {
         $this->info('Starting scrape of OU Kosher API.');
         $productCount = 0;
+        $verify = filter_var(env('HTTP_VERIFY_SSL', true), FILTER_VALIDATE_BOOLEAN);
 
         // Loop through the alphabet to search for products
         foreach (range('a', 'z') as $letter) {
@@ -28,8 +29,23 @@ class ScrapeOUKosher extends Command
 
                 try {
                     $response = Http::withHeaders([
-                        'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36'
-                    ])->get('https://oukosher.org/wp-json/kosher-api/v1/loc/posts', [
+                        'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
+                        'Connection' => 'keep-alive',
+                        'Accept' => 'application/json',
+                        'Accept-Encoding' => 'gzip, deflate'
+                    ])
+                    ->withOptions([
+                        'verify' => $verify,
+                        'connect_timeout' => 10,
+                        'read_timeout' => 60,
+                        'timeout' => 90
+                    ])
+                    ->retry(2, 2000, function ($exception, $request) {
+                        // Solo reintentar en timeouts o errores de conexión
+                        return $exception instanceof \Illuminate\Http\Client\ConnectionException 
+                               || $exception instanceof \Illuminate\Http\Client\RequestException;
+                    })
+                    ->get('https://oukosher.org/wp-json/kosher-api/v1/loc/posts', [
                         'query' => $letter,
                         'limit' => $perPage,
                         'page' => $page,
@@ -52,12 +68,30 @@ class ScrapeOUKosher extends Command
                     foreach ($products as $product) {
                         Log::info('Raw product from OU API:', ['product' => $product]);
 
-                        $productName = $product['product_name'] ?? 'Nombre Desconocido';
-                        $brandName = $product['company'] ?? 'Marca Desconocida';
-                        $status = $product['kosher_status'] ?? 'OU Kosher';
+                        $productName = $product['LabelName'] ?? null;
+                        $brandName = $product['BrandName'] ?? null;
+                        $symbol = $product['Symbol'] ?? null;
+
+                        if (!$productName || !$brandName) {
+                            continue;
+                        }
 
                         $productName = html_entity_decode($productName);
                         $brandName = html_entity_decode($brandName);
+
+                        // Clean quotes from start/end
+                        $productName = trim($productName, " \t\n\r\0\x0B\"'");
+                        $brandName = trim($brandName, " \t\n\r\0\x0B\"'");
+
+                        $status = 'OU Kosher';
+                        $symbolLower = strtolower($symbol ?? '');
+                        if (str_contains($symbolLower, 'd')) {
+                            $status = 'OU Dairy';
+                        } elseif (str_contains($symbolLower, 'pareve') || str_contains($symbolLower, 'p')) {
+                            $status = 'OU Pareve';
+                        } elseif (str_contains($symbolLower, 'fish')) {
+                            $status = 'OU Fish';
+                        }
 
                         ProcessOUProduct::dispatch([
                             'name' => $productName,
@@ -78,11 +112,23 @@ class ScrapeOUKosher extends Command
                     }
 
                     $page++;
-                    sleep(random_int(1, 2));
+                    
+                    // Pausa progresiva para evitar sobrecargar la API
+                    $pauseTime = min(5, max(2, $page * 0.5));
+                    $this->info("Pausing for {$pauseTime} seconds before next page...");
+                    sleep($pauseTime);
 
+                } catch (\Illuminate\Http\Client\ConnectionException $e) {
+                    $this->error("Connection timeout for page {$page} of letter '{$letter}'. Skipping to next letter.");
+                    Log::warning('Connection timeout', ['letter' => $letter, 'page' => $page, 'error' => $e->getMessage()]);
+                    break; // Move to the next letter
+                } catch (\Illuminate\Http\Client\RequestException $e) {
+                    $this->error("HTTP error for page {$page} of letter '{$letter}': " . $e->getMessage());
+                    Log::error('HTTP request error', ['letter' => $letter, 'page' => $page, 'error' => $e->getMessage()]);
+                    break; // Move to the next letter
                 } catch (\Exception $e) {
-                    $this->error("Failed to scrape API page {$page} for letter '{$letter}': " . $e->getMessage());
-                    Log::error('Scraping Exception:', ['error' => $e]);
+                    $this->error("Unexpected error for page {$page} of letter '{$letter}': " . $e->getMessage());
+                    Log::error('Unexpected scraping error', ['letter' => $letter, 'page' => $page, 'error' => $e]);
                     break; // Move to the next letter
                 }
             }
