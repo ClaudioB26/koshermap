@@ -53,7 +53,12 @@
 {{-- Resultados --}}
 @if(isset($products) && $products->count() > 0)
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-    @foreach($products as $product)
+    @foreach($products as $i => $product)
+    @if($i > 0 && $i % 6 === 0)
+    </div>
+    @include('partials.ad_banner')
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    @endif
     <a href="/product/{{ $product->slug }}"
        class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md border border-gray-100 flex items-center justify-between transition group">
         <div class="flex items-center space-x-4">

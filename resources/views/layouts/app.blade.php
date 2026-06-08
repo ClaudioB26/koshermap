@@ -9,6 +9,7 @@
     <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
 
     @if(app()->environment('production'))
+        {{-- Google Analytics --}}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
@@ -16,6 +17,10 @@
           gtag('js', new Date());
           gtag('config', 'G-XXXXXXXXXX');
         </script>
+
+        {{-- Google AdSense --}}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3393238730190407"
+                crossorigin="anonymous"></script>
     @endif
     @stack('head')
 </head>
@@ -132,9 +137,25 @@
     </div>
 </header>
 
+{{-- Anuncio horizontal debajo del header --}}
+@if(app()->environment('production'))
+<div class="container mx-auto px-4 pt-3">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3393238730190407"
+         data-ad-slot="auto"
+         data-ad-format="horizontal"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+@endif
+
 <main class="flex-grow container mx-auto px-4 py-8">
     @yield('content')
 </main>
+
+{{-- Anuncio antes del footer --}}
+@include('partials.ad_banner', ['class' => 'container mx-auto px-4 mb-2'])
 
 <footer class="bg-white border-t py-8 mt-auto">
     <div class="container mx-auto px-4 text-center text-gray-500 text-sm">
