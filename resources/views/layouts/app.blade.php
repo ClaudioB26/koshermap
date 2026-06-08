@@ -18,10 +18,11 @@
           gtag('config', 'G-XXXXXXXXXX');
         </script>
 
-        {{-- Google AdSense --}}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3393238730190407"
-                crossorigin="anonymous"></script>
     @endif
+
+    {{-- Google AdSense --}}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3393238730190407"
+            crossorigin="anonymous"></script>
     @stack('head')
 </head>
 <body class="bg-gray-50 flex flex-col min-h-screen">
