@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', __('Certifier') . ': ' . $certifier->name . ' - KosherStatus')
+@section('title', __('Certifier') . ': ' . $certifier->name . ' - KosherMap')
 
 @section('content')
     <div class="flex justify-between items-center mb-6">

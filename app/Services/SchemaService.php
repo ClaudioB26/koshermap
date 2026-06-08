@@ -87,7 +87,7 @@ class SchemaService
         return [
             '@context' => 'https://schema.org',
             '@type' => 'Organization',
-            'name' => 'KosherStatus',
+            'name' => 'KosherMap',
             'url' => config('app.url'),
             'logo' => config('app.url') . '/images/logo.png',
             'description' => 'Comprehensive kosher product database and certification verification platform',
@@ -116,7 +116,7 @@ class SchemaService
         return [
             '@context' => 'https://schema.org',
             '@type' => 'WebSite',
-            'name' => 'KosherStatus',
+            'name' => 'KosherMap',
             'url' => config('app.url'),
             'description' => 'Search and verify kosher products from multiple certification agencies',
             'potentialAction' => [

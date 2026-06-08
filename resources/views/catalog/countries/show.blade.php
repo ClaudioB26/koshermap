@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', $country->name . ' - KosherStatus')
+@section('title', $country->name . ' - KosherMap')
 
 @section('content')
 

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'KosherStatus - ' . __('Search products'))
+@section('title', 'KosherMap - ' . __('Search products'))
 
 @section('content')
 

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Lugares Kosher - KosherStatus')
+@section('title', 'Lugares Kosher - KosherMap')
 
 @section('content')
 

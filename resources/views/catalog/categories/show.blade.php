@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', __('Category') . ': ' . $category->name . ' - KosherStatus')
+@section('title', __('Category') . ': ' . $category->name . ' - KosherMap')
 
 @section('content')
     <nav class="flex mb-4 text-sm text-gray-500" aria-label="Breadcrumb">

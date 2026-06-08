@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Países - KosherStatus')
+@section('title', 'Países - KosherMap')
 
 @section('content')
     <h1 class="text-3xl font-bold mb-6 text-center text-blue-800">{{ __('Countries with Kosher Products') }}</h1>

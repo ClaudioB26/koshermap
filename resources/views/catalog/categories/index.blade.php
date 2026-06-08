@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Rubros - KosherStatus')
+@section('title', 'Rubros - KosherMap')
 
 @section('content')
     <h1 class="text-3xl font-bold mb-8 text-center text-blue-800">{{ __('Food Categories') }}</h1>
