@@ -6,7 +6,7 @@
 /public/test-routes.php
 tokengoogle.txt
 *.txt
-!public/ads.txt
+!ads.txt
 check_*.php
 test_*.php
 debug_*.php
