@@ -93,6 +93,7 @@ class KosherPlace extends Model
             'temple'        => ['emoji' => '🕍', 'label' => 'Sinagogas',      'badge' => 'bg-blue-100 text-blue-700'],
             'school'        => ['emoji' => '🏫', 'label' => 'Escuelas',       'badge' => 'bg-green-100 text-green-700'],
             'cemetery'      => ['emoji' => '🪦', 'label' => 'Cementerios',    'badge' => 'bg-stone-100 text-stone-700'],
+            'community'     => ['emoji' => '🏛️', 'label' => 'Comunidades',    'badge' => 'bg-indigo-100 text-indigo-700'],
             'other'         => ['emoji' => '📍', 'label' => 'Otros',          'badge' => 'bg-gray-100 text-gray-600'],
         ];
     }
