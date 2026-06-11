@@ -66,6 +66,17 @@ class PlacesModerationController extends Controller
         return back()->with('success', "Tipo de \"$place->name\" actualizado a {$request->input('place_type')}.");
     }
 
+    public function updateOrientation(Request $request, KosherPlace $place)
+    {
+        $request->validate([
+            'orientation' => 'required|in:' . implode(',', array_keys(KosherPlace::orientations())),
+        ]);
+
+        $place->update(['orientation' => $request->input('orientation')]);
+
+        return back()->with('success', "Orientación de \"$place->name\" actualizada.");
+    }
+
     public function resetPending(KosherPlace $place)
     {
         $place->update(['status' => KosherPlace::STATUS_PENDING, 'rejection_reason' => null]);

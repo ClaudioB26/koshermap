@@ -95,6 +95,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::post('/places/{place}/reject',   [\App\Http\Controllers\Admin\PlacesModerationController::class, 'reject'])->name('places.reject');
         Route::post('/places/{place}/pending',  [\App\Http\Controllers\Admin\PlacesModerationController::class, 'resetPending'])->name('places.pending');
         Route::post('/places/{place}/type',     [\App\Http\Controllers\Admin\PlacesModerationController::class, 'updateType'])->name('places.update-type');
+        Route::post('/places/{place}/orientation', [\App\Http\Controllers\Admin\PlacesModerationController::class, 'updateOrientation'])->name('places.update-orientation');
     });
 });
 

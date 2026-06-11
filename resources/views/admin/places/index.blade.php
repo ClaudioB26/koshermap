@@ -185,6 +185,17 @@
                                     @endforeach
                                 </select>
                             </form>
+                            @if(in_array($place->place_type, \App\Models\KosherPlace::ORIENTABLE_TYPES))
+                            <form method="POST" action="{{ route('admin.places.update-orientation', $place) }}" class="mt-1">
+                                @csrf
+                                <select name="orientation" onchange="this.form.submit()"
+                                        class="px-2 py-0.5 rounded-full text-xs font-medium border-0 cursor-pointer bg-gray-100 text-gray-600">
+                                    @foreach(\App\Models\KosherPlace::orientations() as $o => $label)
+                                    <option value="{{ $o }}" {{ $place->orientation === $o ? 'selected' : '' }}>{{ $label }}</option>
+                                    @endforeach
+                                </select>
+                            </form>
+                            @endif
                         </td>
                         <td class="px-4 py-3 text-gray-600">
                             {{ $place->city->name }}<br>

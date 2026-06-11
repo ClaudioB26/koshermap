@@ -9,6 +9,8 @@ $citiesByCountry = $countries->mapWithKeys(fn ($c) => [
     $c->id => $c->cities->map(fn ($city) => ['id' => $city->id, 'name' => $city->name])->values(),
 ]);
 $certifiableTypes = \App\Models\KosherPlace::CERTIFIABLE_TYPES;
+$orientableTypes  = \App\Models\KosherPlace::ORIENTABLE_TYPES;
+$orientations     = \App\Models\KosherPlace::orientations();
 @endphp
 
 <div class="max-w-2xl mx-auto">
@@ -43,9 +45,11 @@ $certifiableTypes = \App\Models\KosherPlace::CERTIFIABLE_TYPES;
               countryId: '{{ old('country_id') }}',
               certifierId: '{{ old('certifier_id') }}',
               certifiableTypes: @js($certifiableTypes),
+              orientableTypes: @js($orientableTypes),
               citiesByCountry: @js($citiesByCountry),
               get cities() { return this.citiesByCountry[this.countryId] || []; },
-              get needsCertification() { return this.certifiableTypes.includes(this.placeType); }
+              get needsCertification() { return this.certifiableTypes.includes(this.placeType); },
+              get needsOrientation() { return this.orientableTypes.includes(this.placeType); }
           }">
         @csrf
 
@@ -69,6 +73,16 @@ $certifiableTypes = \App\Models\KosherPlace::CERTIFIABLE_TYPES;
                         <option value="{{ $key }}" {{ old('place_type') === $key ? 'selected' : '' }}>
                             {{ $info['emoji'] }} {{ $info['label'] }}
                         </option>
+                        @endforeach
+                    </select>
+                </div>
+
+                <div x-show="needsOrientation" x-cloak>
+                    <label class="block text-sm text-gray-600 mb-1">Orientación</label>
+                    <select name="orientation"
+                            class="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:ring-2 focus:ring-blue-300 focus:outline-none">
+                        @foreach($orientations as $key => $label)
+                        <option value="{{ $key }}" {{ old('orientation', 'orthodox') === $key ? 'selected' : '' }}>{{ $label }}</option>
                         @endforeach
                     </select>
                 </div>

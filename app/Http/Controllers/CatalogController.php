@@ -151,6 +151,7 @@ class CatalogController extends Controller
         $query       = $request->input('query');
         $countrySlug = $request->input('country');
         $placeType   = $request->input('place_type');
+        $orientation = $request->input('orientation');
 
         $countries = \App\Models\Country::orderBy('name')->get();
 
@@ -171,6 +172,20 @@ class CatalogController extends Controller
             $placesQuery->where('place_type', $placeType);
         }
 
+        // Por defecto solo se muestran sinagogas/comunidades de orientación ortodoxa.
+        // Con ?orientation=all se ven todas; con ?orientation=reform, etc. se filtra esa.
+        if ($orientation && $orientation !== 'all') {
+            $placesQuery->where(function ($q) use ($orientation) {
+                $q->whereNotIn('place_type', KosherPlace::ORIENTABLE_TYPES)
+                  ->orWhere('orientation', $orientation);
+            });
+        } elseif (!$orientation) {
+            $placesQuery->where(function ($q) {
+                $q->whereNotIn('place_type', KosherPlace::ORIENTABLE_TYPES)
+                  ->orWhere('orientation', 'orthodox');
+            });
+        }
+
         $places = $placesQuery->paginate(24)->withQueryString();
 
         $placeTypes = KosherPlace::approved()
@@ -181,7 +196,7 @@ class CatalogController extends Controller
             ->pluck('total', 'place_type');
 
         return view('places.index', compact(
-            'places', 'countries', 'placeTypes', 'placeType', 'query', 'countrySlug'
+            'places', 'countries', 'placeTypes', 'placeType', 'query', 'countrySlug', 'orientation'
         ));
     }
 }

@@ -20,6 +20,7 @@ class KosherPlace extends Model
         'rejection_reason',
         'name',
         'place_type',
+        'orientation',
         'address',
         'latitude',
         'longitude',
@@ -51,6 +52,14 @@ class KosherPlace extends Model
         'confectionery',
         'ice_cream',
         'takeaway',
+    ];
+
+    /**
+     * Tipos de lugar donde aplica la orientación religiosa (templos, comunidades).
+     */
+    public const ORIENTABLE_TYPES = [
+        'temple',
+        'community',
     ];
 
     protected $casts = [
@@ -115,6 +124,19 @@ class KosherPlace extends Model
             'community'     => ['emoji' => '🏛️', 'label' => 'Comunidades',    'badge' => 'bg-indigo-100 text-indigo-700'],
             'takeaway'      => ['emoji' => '🥡', 'label' => 'Take Away',      'badge' => 'bg-amber-100 text-amber-700'],
             'other'         => ['emoji' => '📍', 'label' => 'Otros',          'badge' => 'bg-gray-100 text-gray-600'],
+        ];
+    }
+
+    /**
+     * Orientaciones religiosas para templos y comunidades.
+     */
+    public static function orientations(): array
+    {
+        return [
+            'orthodox'     => 'Ortodoxa',
+            'conservative' => 'Conservadora',
+            'reform'       => 'Reformista',
+            'other'        => 'Otra',
         ];
     }
 

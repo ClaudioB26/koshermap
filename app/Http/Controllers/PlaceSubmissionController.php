@@ -24,6 +24,7 @@ class PlaceSubmissionController extends Controller
         $validated = $request->validate([
             'name'            => 'required|string|max:255',
             'place_type'      => 'required|in:' . implode(',', array_keys(KosherPlace::types())),
+            'orientation'     => 'nullable|in:' . implode(',', array_keys(KosherPlace::orientations())),
             'city_id'         => 'required|exists:cities,id',
             'address'         => 'nullable|string|max:255',
             'phone'           => 'nullable|string|max:50',
@@ -39,6 +40,10 @@ class PlaceSubmissionController extends Controller
             $validated['certifier_other'] = null;
         }
 
+        $validated['orientation'] = in_array($validated['place_type'], KosherPlace::ORIENTABLE_TYPES, true)
+            ? ($validated['orientation'] ?? 'orthodox')
+            : 'orthodox';
+
         $user = $request->user();
 
         KosherPlace::create([
@@ -48,6 +53,7 @@ class PlaceSubmissionController extends Controller
             'owner_id'        => $user->id,
             'name'            => $validated['name'],
             'place_type'      => $validated['place_type'],
+            'orientation'     => $validated['orientation'],
             'city_id'         => $validated['city_id'],
             'address'         => $validated['address'] ?? null,
             'phone'           => $validated['phone'] ?? null,

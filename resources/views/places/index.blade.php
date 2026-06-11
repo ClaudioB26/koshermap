@@ -54,6 +54,19 @@
     </div>
 </div>
 
+{{-- Aviso de orientación para sinagogas/comunidades --}}
+@if(in_array($placeType, \App\Models\KosherPlace::ORIENTABLE_TYPES))
+<div class="mb-4 text-sm text-gray-500">
+    @if(($orientation ?? null) === 'all')
+    Mostrando comunidades de todas las orientaciones.
+    <a href="{{ request()->fullUrlWithQuery(['orientation' => null]) }}" class="text-blue-600 hover:underline">Ver solo ortodoxas</a>
+    @else
+    Mostrando comunidades de orientación ortodoxa.
+    <a href="{{ request()->fullUrlWithQuery(['orientation' => 'all']) }}" class="text-blue-600 hover:underline">Ver también conservadoras / reformistas</a>
+    @endif
+</div>
+@endif
+
 {{-- Filtros activos --}}
 @if($query || $countrySlug || $placeType)
 <div class="flex gap-2 mb-4 flex-wrap">
@@ -101,6 +114,12 @@
                 {{ $typeBadge[1] }}
             </span>
         </div>
+
+        @if(in_array($place->place_type, \App\Models\KosherPlace::ORIENTABLE_TYPES) && $place->orientation !== 'orthodox')
+        <span class="self-start text-xs font-medium px-2 py-0.5 rounded-full bg-gray-100 text-gray-600">
+            {{ \App\Models\KosherPlace::orientations()[$place->orientation] ?? $place->orientation }}
+        </span>
+        @endif
 
         @if($place->google_rating)
         <div class="flex items-center gap-1.5 text-sm">
