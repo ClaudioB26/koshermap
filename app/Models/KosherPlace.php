@@ -32,6 +32,24 @@ class KosherPlace extends Model
         'is_permanently_closed',
         'is_active',
         'last_verified_at',
+        'certifier_id',
+        'certifier_other',
+        'owner_name',
+        'owner_email',
+        'owner_phone',
+        'source',
+    ];
+
+    /**
+     * Tipos de lugar que requieren certificación kosher.
+     */
+    public const CERTIFIABLE_TYPES = [
+        'restaurant',
+        'bakery',
+        'bar',
+        'confectionery',
+        'ice_cream',
+        'takeaway',
     ];
 
     protected $casts = [
@@ -94,6 +112,7 @@ class KosherPlace extends Model
             'school'        => ['emoji' => '🏫', 'label' => 'Escuelas',       'badge' => 'bg-green-100 text-green-700'],
             'cemetery'      => ['emoji' => '🪦', 'label' => 'Cementerios',    'badge' => 'bg-stone-100 text-stone-700'],
             'community'     => ['emoji' => '🏛️', 'label' => 'Comunidades',    'badge' => 'bg-indigo-100 text-indigo-700'],
+            'takeaway'      => ['emoji' => '🥡', 'label' => 'Take Away',      'badge' => 'bg-amber-100 text-amber-700'],
             'other'         => ['emoji' => '📍', 'label' => 'Otros',          'badge' => 'bg-gray-100 text-gray-600'],
         ];
     }
@@ -101,6 +120,11 @@ class KosherPlace extends Model
     public function reports(): MorphMany
     {
         return $this->morphMany(Report::class, 'reportable');
+    }
+
+    public function certifier(): BelongsTo
+    {
+        return $this->belongsTo(Certifier::class);
     }
 
     public function isApproved(): bool { return $this->status === self::STATUS_APPROVED; }

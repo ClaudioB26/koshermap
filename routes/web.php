@@ -33,6 +33,8 @@ Route::get('/brands', [CatalogController::class, 'brands'])->name('brands.index'
 Route::get('/brands/{slug}', [CatalogController::class, 'brand'])->name('brands.show');
 
 Route::get('/places', [CatalogController::class, 'placesIndex'])->name('places.index');
+Route::get('/places/agregar', [\App\Http\Controllers\PlaceSubmissionController::class, 'create'])->name('places.create');
+Route::post('/places/agregar', [\App\Http\Controllers\PlaceSubmissionController::class, 'store'])->name('places.store');
 
 // Categorías en árbol por certificadora
 Route::get('/certifiers/{certifierSlug}/categories', [CategoryController::class, 'tree'])->name('certifiers.categories.tree');
