@@ -87,23 +87,24 @@
             <!-- Right: location + lang -->
             <div class="flex items-center gap-2 shrink-0">
                 @if(isset($userCountry))
-                <div class="hidden lg:block relative group">
-                    <button class="text-sm font-medium text-gray-600 hover:text-blue-600 flex items-center gap-1 whitespace-nowrap">
+                <div class="hidden lg:block relative" x-data="{ open: false }" @click.outside="open = false">
+                    <button @click="open = !open" type="button"
+                            class="text-sm font-medium text-gray-600 hover:text-blue-600 flex items-center gap-1 whitespace-nowrap">
                         📍 {{ $userCountry->name }}
                         <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
-                    <div class="absolute right-0 rtl:right-auto rtl:left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 hidden group-hover:block border border-gray-100">
+                    <div x-show="open" x-transition @click="open = false"
+                         class="absolute right-0 rtl:right-auto rtl:left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-100"
+                         style="display: none;">
                         <a href="{{ route('countries.index') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700">
                             {{ __('change_country') }}
                         </a>
                     </div>
                 </div>
                 @endif
-                <div class="hidden md:block">
-                    @include('partials.language_switcher')
-                </div>
+                @include('partials.language_switcher')
             </div>
         </div>
 
@@ -130,7 +131,6 @@
                class="px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap bg-gray-100 text-gray-600">
                 🌍 Países
             </a>
-            @include('partials.language_switcher')
         </nav>
     </div>
 </header>

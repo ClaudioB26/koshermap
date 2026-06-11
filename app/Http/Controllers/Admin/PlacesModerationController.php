@@ -55,6 +55,17 @@ class PlacesModerationController extends Controller
         return back()->with('success', "\"$place->name\" rechazado.");
     }
 
+    public function updateType(Request $request, KosherPlace $place)
+    {
+        $request->validate([
+            'place_type' => 'required|in:' . implode(',', array_keys(KosherPlace::types())),
+        ]);
+
+        $place->update(['place_type' => $request->input('place_type')]);
+
+        return back()->with('success', "Tipo de \"$place->name\" actualizado a {$request->input('place_type')}.");
+    }
+
     public function resetPending(KosherPlace $place)
     {
         $place->update(['status' => KosherPlace::STATUS_PENDING, 'rejection_reason' => null]);

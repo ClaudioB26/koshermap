@@ -78,6 +78,25 @@ class KosherPlace extends Model
         return $query->where('place_type', $type);
     }
 
+    /**
+     * Tipos de lugar disponibles: emoji, etiqueta y color para badges.
+     */
+    public static function types(): array
+    {
+        return [
+            'restaurant'    => ['emoji' => '🍽️', 'label' => 'Restaurantes',   'badge' => 'bg-orange-100 text-orange-700'],
+            'bakery'        => ['emoji' => '🥐', 'label' => 'Panaderías',     'badge' => 'bg-yellow-100 text-yellow-700'],
+            'bar'           => ['emoji' => '🍷', 'label' => 'Bares',          'badge' => 'bg-purple-100 text-purple-700'],
+            'confectionery' => ['emoji' => '☕', 'label' => 'Cafeterías',     'badge' => 'bg-pink-100 text-pink-700'],
+            'ice_cream'     => ['emoji' => '🍦', 'label' => 'Heladerías',     'badge' => 'bg-cyan-100 text-cyan-700'],
+            'supermarket'   => ['emoji' => '🛒', 'label' => 'Supermercados',  'badge' => 'bg-lime-100 text-lime-700'],
+            'temple'        => ['emoji' => '🕍', 'label' => 'Sinagogas',      'badge' => 'bg-blue-100 text-blue-700'],
+            'school'        => ['emoji' => '🏫', 'label' => 'Escuelas',       'badge' => 'bg-green-100 text-green-700'],
+            'cemetery'      => ['emoji' => '🪦', 'label' => 'Cementerios',    'badge' => 'bg-stone-100 text-stone-700'],
+            'other'         => ['emoji' => '📍', 'label' => 'Otros',          'badge' => 'bg-gray-100 text-gray-600'],
+        ];
+    }
+
     public function reports(): MorphMany
     {
         return $this->morphMany(Report::class, 'reportable');

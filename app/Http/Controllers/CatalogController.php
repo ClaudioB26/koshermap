@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\View;
 use App\Models\Category;
 use App\Models\Country;
 use App\Models\Certifier;
@@ -48,6 +50,10 @@ class CatalogController extends Controller
     public function country(Request $request, $slug)
     {
         $country = Country::where('slug', $slug)->firstOrFail();
+
+        // Visitar la página de un país lo convierte en el país preferido del usuario
+        Cookie::queue('user_country', $country->slug, 60 * 24 * 365);
+        View::share('userCountry', $country);
 
         $products   = $country->products()->paginate(20);
         $certifiers = $country->certifiers;

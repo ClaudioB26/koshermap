@@ -25,9 +25,12 @@ const SEARCH_TERMS = [
     { query: 'kosher food',        type: 'restaurant' },
     { query: 'kosher bakery',      type: 'bakery' },
     { query: 'kosher bar',         type: 'bar' },
+    { query: 'kosher ice cream',   type: 'ice_cream' },
+    { query: 'kosher supermarket', type: 'supermarket' },
     { query: 'sinagoga',           type: 'temple' },
     { query: 'synagogue kosher',   type: 'temple' },
     { query: 'escuela judía',      type: 'school' },
+    { query: 'cementerio judío',   type: 'cemetery' },
     { query: 'hebraica',           type: 'other' },
     { query: 'comunidad judía',    type: 'other' },
 ];
@@ -224,8 +227,11 @@ function resolveType(hintType, categoryText) {
         bar:           ['bar', 'pub', 'cervecería', 'brewery'],
         bakery:        ['panadería', 'bakery', 'pastelería'],
         confectionery: ['confitería', 'café', 'cafetería', 'cafe'],
+        ice_cream:     ['heladería', 'heladeria', 'ice cream', 'gelato'],
+        supermarket:   ['supermercado', 'supermarket', 'almacén', 'almacen', 'grocery', 'mercado'],
         temple:        ['sinagoga', 'synagogue', 'templo', 'temple', 'worship'],
         school:        ['escuela', 'school', 'colegio', 'instituto', 'universidad'],
+        cemetery:      ['cementerio', 'cemetery'],
     };
     for (const [type, words] of Object.entries(keywords)) {
         if (words.some(w => categoryText.includes(w))) return type;

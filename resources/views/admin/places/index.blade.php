@@ -92,8 +92,8 @@
         </select>
         <select name="type" class="text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white">
             <option value="">Todos los tipos</option>
-            @foreach(['restaurant','bakery','bar','confectionery','temple','school','other'] as $t)
-            <option value="{{ $t }}" {{ $type === $t ? 'selected' : '' }}>{{ ucfirst($t) }}</option>
+            @foreach(\App\Models\KosherPlace::types() as $t => $info)
+            <option value="{{ $t }}" {{ $type === $t ? 'selected' : '' }}>{{ $info['emoji'] }} {{ $info['label'] }}</option>
             @endforeach
         </select>
         <button type="submit" class="px-4 py-2 bg-gray-700 text-white text-sm rounded-lg hover:bg-gray-800">Filtrar</button>
@@ -151,15 +151,7 @@
                 <tbody class="divide-y divide-gray-100">
                     @foreach($places as $place)
                     @php
-                    $badge = [
-                        'restaurant'    => 'bg-orange-100 text-orange-700',
-                        'bakery'        => 'bg-yellow-100 text-yellow-700',
-                        'bar'           => 'bg-purple-100 text-purple-700',
-                        'confectionery' => 'bg-pink-100 text-pink-700',
-                        'temple'        => 'bg-blue-100 text-blue-700',
-                        'school'        => 'bg-green-100 text-green-700',
-                        'other'         => 'bg-gray-100 text-gray-600',
-                    ][$place->place_type] ?? 'bg-gray-100 text-gray-600';
+                    $badge = (\App\Models\KosherPlace::types()[$place->place_type] ?? \App\Models\KosherPlace::types()['other'])['badge'];
                     @endphp
                     <tr class="hover:bg-gray-50 transition row-item">
                         @if($status === 'pending')
@@ -182,9 +174,17 @@
                             </div>
                         </td>
                         <td class="px-4 py-3">
-                            <span class="px-2 py-0.5 rounded-full text-xs font-medium {{ $badge }}">
-                                {{ $place->place_type }}
-                            </span>
+                            <form method="POST" action="{{ route('admin.places.update-type', $place) }}">
+                                @csrf
+                                <select name="place_type" onchange="this.form.submit()"
+                                        class="px-2 py-0.5 rounded-full text-xs font-medium border-0 cursor-pointer {{ $badge }}">
+                                    @foreach(\App\Models\KosherPlace::types() as $t => $info)
+                                    <option value="{{ $t }}" {{ $place->place_type === $t ? 'selected' : '' }}>
+                                        {{ $info['emoji'] }} {{ $info['label'] }}
+                                    </option>
+                                    @endforeach
+                                </select>
+                            </form>
                         </td>
                         <td class="px-4 py-3 text-gray-600">
                             {{ $place->city->name }}<br>

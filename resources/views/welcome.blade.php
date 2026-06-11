@@ -60,7 +60,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
     @endif
     <a href="/product/{{ $product->slug }}"
-       class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md border border-gray-100 flex items-center justify-between transition group">
+       class="bg-white p-4 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-0.5 border border-gray-100 flex items-center justify-between transition-all duration-200 group">
         <div class="flex items-center space-x-4">
             @php
                 $certifier = $product->certifier;

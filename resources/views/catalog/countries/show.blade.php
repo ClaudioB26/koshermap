@@ -44,7 +44,7 @@
 @if($tab === 'productos')
 
     @if($certifiers->isNotEmpty())
-    <div class="mb-8 p-5 bg-white rounded-xl shadow-sm border border-gray-100">
+    <div class="mb-8 p-5 bg-white rounded-2xl shadow-sm border border-gray-100">
         <h2 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">{{ __('Certifiers in this region') }}</h2>
         <div class="flex gap-3 flex-wrap">
             @foreach($certifiers as $cert)
@@ -64,7 +64,7 @@
     @else
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
         @foreach($products as $product)
-        <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
+        <div class="bg-white p-4 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 border border-gray-100">
             @if($product->image_url)
             <img src="{{ $product->image_url }}" alt="{{ $product->name }}" class="w-full h-40 object-contain mb-4 rounded-lg">
             @endif
@@ -90,17 +90,7 @@
 
     {{-- Filtros por tipo --}}
     @if($placeTypes->count() > 1)
-    @php
-    $typeLabels = [
-        'restaurant'    => '🍽️ Restaurantes',
-        'bakery'        => '🥐 Panaderías',
-        'bar'           => '🍷 Bares',
-        'confectionery' => '☕ Cafeterías',
-        'temple'        => '🕍 Sinagogas',
-        'school'        => '🏫 Escuelas',
-        'other'         => '📍 Otros',
-    ];
-    @endphp
+    @php $placeTypeInfo = \App\Models\KosherPlace::types(); @endphp
     <div class="flex flex-wrap gap-2 mb-6">
         <a href="{{ request()->fullUrlWithQuery(['tab' => 'lugares', 'place_type' => null]) }}"
            class="px-3 py-1.5 rounded-full text-sm font-medium border transition
@@ -111,7 +101,7 @@
         <a href="{{ request()->fullUrlWithQuery(['tab' => 'lugares', 'place_type' => $type]) }}"
            class="px-3 py-1.5 rounded-full text-sm font-medium border transition
                   {{ $placeType === $type ? 'bg-blue-600 text-white border-blue-600' : 'bg-white text-gray-600 border-gray-300 hover:border-blue-400' }}">
-            {{ $typeLabels[$type] ?? $type }} ({{ $count }})
+            {{ isset($placeTypeInfo[$type]) ? $placeTypeInfo[$type]['emoji'] . ' ' . $placeTypeInfo[$type]['label'] : $type }} ({{ $count }})
         </a>
         @endforeach
     </div>
@@ -126,17 +116,10 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         @foreach($places as $place)
         @php
-        $typeBadge = [
-            'restaurant'    => ['bg-orange-100 text-orange-700', '🍽️'],
-            'bakery'        => ['bg-yellow-100 text-yellow-700', '🥐'],
-            'bar'           => ['bg-purple-100 text-purple-700', '🍷'],
-            'confectionery' => ['bg-pink-100 text-pink-700',   '☕'],
-            'temple'        => ['bg-blue-100 text-blue-700',   '🕍'],
-            'school'        => ['bg-green-100 text-green-700', '🏫'],
-            'other'         => ['bg-gray-100 text-gray-600',   '📍'],
-        ][$place->place_type] ?? ['bg-gray-100 text-gray-600', '📍'];
+        $typeInfo  = \App\Models\KosherPlace::types()[$place->place_type] ?? \App\Models\KosherPlace::types()['other'];
+        $typeBadge = [$typeInfo['badge'], $typeInfo['emoji']];
         @endphp
-        <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-5 flex flex-col gap-2 hover:shadow-md transition">
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 flex flex-col gap-2 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
             <div class="flex justify-between items-start gap-2">
                 <h3 class="font-bold text-gray-800 text-base leading-tight">{{ $place->name }}</h3>
                 <span class="shrink-0 text-xs font-medium px-2 py-0.5 rounded-full {{ $typeBadge[0] }}">
