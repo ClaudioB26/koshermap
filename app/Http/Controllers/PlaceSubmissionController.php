@@ -30,8 +30,6 @@ class PlaceSubmissionController extends Controller
             'website'         => 'nullable|url|max:255',
             'certifier_id'    => 'nullable|exists:certifiers,id',
             'certifier_other' => 'nullable|string|max:255',
-            'owner_name'      => 'required|string|max:255',
-            'owner_email'     => 'required|email|max:255',
             'owner_phone'     => 'nullable|string|max:50',
             'terms'           => 'accepted',
         ]);
@@ -41,10 +39,13 @@ class PlaceSubmissionController extends Controller
             $validated['certifier_other'] = null;
         }
 
+        $user = $request->user();
+
         KosherPlace::create([
             'google_place_id' => 'manual-' . Str::uuid(),
             'source'          => 'owner',
             'status'          => KosherPlace::STATUS_PENDING,
+            'owner_id'        => $user->id,
             'name'            => $validated['name'],
             'place_type'      => $validated['place_type'],
             'city_id'         => $validated['city_id'],
@@ -53,13 +54,13 @@ class PlaceSubmissionController extends Controller
             'website'         => $validated['website'] ?? null,
             'certifier_id'    => $validated['certifier_id'] ?? null,
             'certifier_other' => $validated['certifier_other'] ?? null,
-            'owner_name'      => $validated['owner_name'],
-            'owner_email'     => $validated['owner_email'],
+            'owner_name'      => $user->name,
+            'owner_email'     => $user->email,
             'owner_phone'     => $validated['owner_phone'] ?? null,
             'is_active'       => true,
         ]);
 
-        return redirect()->route('places.create')
+        return redirect()->route('account.places')
             ->with('success', '¡Gracias! Tu local fue enviado y será revisado por nuestro equipo antes de publicarse.');
     }
 }

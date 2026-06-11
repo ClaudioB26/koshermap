@@ -5,8 +5,11 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\CatalogController;
 use App\Http\Controllers\CategoryController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cookie;
 use App\Models\Country;
+use App\Http\Controllers\Auth\GoogleAuthController;
+use App\Http\Controllers\AccountController;
 
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\ReportController;
@@ -33,8 +36,23 @@ Route::get('/brands', [CatalogController::class, 'brands'])->name('brands.index'
 Route::get('/brands/{slug}', [CatalogController::class, 'brand'])->name('brands.show');
 
 Route::get('/places', [CatalogController::class, 'placesIndex'])->name('places.index');
-Route::get('/places/agregar', [\App\Http\Controllers\PlaceSubmissionController::class, 'create'])->name('places.create');
-Route::post('/places/agregar', [\App\Http\Controllers\PlaceSubmissionController::class, 'store'])->name('places.store');
+Route::middleware('auth')->group(function () {
+    Route::get('/places/agregar', [\App\Http\Controllers\PlaceSubmissionController::class, 'create'])->name('places.create');
+    Route::post('/places/agregar', [\App\Http\Controllers\PlaceSubmissionController::class, 'store'])->name('places.store');
+});
+
+// Login con Google (dueños de locales / certificadoras)
+Route::get('/login', function () {
+    return Auth::check() ? redirect()->route('account.places') : view('auth.login');
+})->name('login');
+
+Route::get('/login/google', [GoogleAuthController::class, 'redirect'])->name('auth.google.redirect');
+Route::get('/login/google/callback', [GoogleAuthController::class, 'callback'])->name('auth.google.callback');
+Route::post('/logout', [GoogleAuthController::class, 'logout'])->name('logout');
+
+Route::middleware('auth')->prefix('cuenta')->name('account.')->group(function () {
+    Route::get('/mis-locales', [AccountController::class, 'places'])->name('places');
+});
 
 // Categorías en árbol por certificadora
 Route::get('/certifiers/{certifierSlug}/categories', [CategoryController::class, 'tree'])->name('certifiers.categories.tree');

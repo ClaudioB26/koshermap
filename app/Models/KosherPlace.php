@@ -14,6 +14,7 @@ class KosherPlace extends Model
 
     protected $fillable = [
         'city_id',
+        'owner_id',
         'google_place_id',
         'status',
         'rejection_reason',
@@ -125,6 +126,11 @@ class KosherPlace extends Model
     public function certifier(): BelongsTo
     {
         return $this->belongsTo(Certifier::class);
+    }
+
+    public function owner(): BelongsTo
+    {
+        return $this->belongsTo(User::class, 'owner_id');
     }
 
     public function isApproved(): bool { return $this->status === self::STATUS_APPROVED; }

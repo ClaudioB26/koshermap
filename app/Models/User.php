@@ -4,6 +4,8 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
@@ -11,6 +13,10 @@ class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
+
+    const ROLE_ADMIN      = 'admin';
+    const ROLE_PLACE_OWNER = 'place_owner';
+    const ROLE_CERTIFIER  = 'certifier';
 
     /**
      * The attributes that are mass assignable.
@@ -21,6 +27,10 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role',
+        'google_id',
+        'avatar',
+        'certifier_id',
     ];
 
     /**
@@ -45,4 +55,17 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function certifier(): BelongsTo
+    {
+        return $this->belongsTo(Certifier::class);
+    }
+
+    public function places(): HasMany
+    {
+        return $this->hasMany(KosherPlace::class, 'owner_id');
+    }
+
+    public function isAdmin(): bool     { return $this->role === self::ROLE_ADMIN; }
+    public function isCertifier(): bool { return $this->role === self::ROLE_CERTIFIER; }
 }

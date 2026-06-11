@@ -18,9 +18,9 @@ return Application::configure(basePath: dirname(__DIR__))
             // \App\Http\Middleware\GeoLocationMiddleware::class, // Desactivado temporalmente
         ]);
 
-        // Redirigir unauthenticated al login del admin
+        // Redirigir unauthenticated al login correspondiente
         $middleware->redirectGuestsTo(fn (\Illuminate\Http\Request $request) =>
-            $request->is('admin/*') ? route('admin.login') : route('admin.login')
+            $request->is('admin/*') ? route('admin.login') : route('login')
         );
     })
     ->withExceptions(function (Exceptions $exceptions): void {

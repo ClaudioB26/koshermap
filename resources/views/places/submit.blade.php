@@ -145,22 +145,13 @@ $certifiableTypes = \App\Models\KosherPlace::CERTIFIABLE_TYPES;
             <h2 class="text-sm font-semibold text-gray-700 mb-3">Tus datos de contacto</h2>
             <p class="text-xs text-gray-400 mb-3">No se publican — son solo para que podamos contactarte si tenemos dudas.</p>
             <div class="space-y-3">
-                <div>
-                    <label class="block text-sm text-gray-600 mb-1">Tu nombre *</label>
-                    <input type="text" name="owner_name" value="{{ old('owner_name') }}" required
-                           class="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:ring-2 focus:ring-blue-300 focus:outline-none">
+                <div class="text-sm text-gray-600 bg-gray-50 border border-gray-100 rounded-lg px-3 py-2">
+                    {{ auth()->user()->name }} · {{ auth()->user()->email }}
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <div>
-                        <label class="block text-sm text-gray-600 mb-1">Tu email *</label>
-                        <input type="email" name="owner_email" value="{{ old('owner_email') }}" required
-                               class="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:ring-2 focus:ring-blue-300 focus:outline-none">
-                    </div>
-                    <div>
-                        <label class="block text-sm text-gray-600 mb-1">Tu teléfono</label>
-                        <input type="text" name="owner_phone" value="{{ old('owner_phone') }}"
-                               class="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:ring-2 focus:ring-blue-300 focus:outline-none">
-                    </div>
+                <div>
+                    <label class="block text-sm text-gray-600 mb-1">Tu teléfono</label>
+                    <input type="text" name="owner_phone" value="{{ old('owner_phone') }}"
+                           class="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:ring-2 focus:ring-blue-300 focus:outline-none">
                 </div>
             </div>
         </div>
