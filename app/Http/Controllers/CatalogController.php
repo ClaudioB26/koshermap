@@ -37,7 +37,7 @@ class CatalogController extends Controller
         // To include children products: $category->products() only gets direct.
         // Let's stick to direct + show subcategories links.
         
-        $products = $category->products()->paginate(20);
+        $products = $category->products()->active()->paginate(20);
         return view('catalog.categories.show', compact('category', 'products'));
     }
 
@@ -55,7 +55,7 @@ class CatalogController extends Controller
         Cookie::queue('user_country', $country->slug, 60 * 24 * 365);
         View::share('userCountry', $country);
 
-        $products   = $country->products()->paginate(20);
+        $products   = $country->products()->active()->paginate(20);
         $certifiers = $country->certifiers;
 
         // Lugares kosher en este país
@@ -103,7 +103,7 @@ class CatalogController extends Controller
         
         $categorySlug = $request->input('category');
         
-        $productsQuery = $certifier->products()->with('category');
+        $productsQuery = $certifier->products()->active()->with('category');
         
         $category = null;
         if ($categorySlug) {
@@ -139,6 +139,7 @@ class CatalogController extends Controller
         $brand = Brand::where('slug', $slug)->firstOrFail();
 
         $products = $brand->products()
+            ->active()
             ->with(['category', 'certifier'])
             ->orderBy('name')
             ->paginate(20);

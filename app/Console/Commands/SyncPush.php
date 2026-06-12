@@ -201,6 +201,7 @@ class SyncPush extends Command
                     'certifier_slug' => $p->certifier?->slug,
                     'category_slug'  => $p->category?->slug,
                     'country_codes'  => $p->countries->pluck('code')->toArray(),
+                    'is_active'      => $p->is_active,
                 ]);
 
                 $res = $this->post('/api/sync/products', ['products' => $data->toArray()], timeout: 60);

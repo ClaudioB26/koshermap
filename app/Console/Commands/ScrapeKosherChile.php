@@ -10,10 +10,13 @@ use App\Models\Brand;
 use App\Models\Certifier;
 use App\Models\Category;
 use App\Jobs\ProcessOUProductIntelligent;
+use App\Console\Commands\Concerns\TracksProductActivity;
 use Illuminate\Support\Str;
 
 class ScrapeKosherChile extends Command
 {
+    use TracksProductActivity;
+
     protected $signature = 'scrape:kosher-chile {--limit=100}';
     protected $description = 'Scrape productos kosher de Chile Kosher';
 
@@ -72,7 +75,16 @@ class ScrapeKosherChile extends Command
                 }
             }
 
-            // 4. Resumen final
+            // 4. Desactivar productos que ya no figuran en el sitio
+            //    (solo si el límite no recortó el listado, para no desactivar de más)
+            if ($processedCount < count($productLinks)) {
+                $this->warn('Desactivación de productos obsoletos omitida (el límite recortó el listado).');
+            } else {
+                $deactivated = $this->deactivateStaleProducts($certifier->id);
+                $this->info("Productos desactivados (ya no están en el sitio): {$deactivated}");
+            }
+
+            // 5. Resumen final
             $this->printSummary();
 
         } catch (\Exception $e) {
@@ -254,13 +266,15 @@ class ScrapeKosherChile extends Command
                 'description' => $productData['description'],
                 'image_url' => $productData['image_url'],
                 'source' => 'kosher_chile_scraper',
-                'unique_hash' => md5($productData['name'] . $brand->id . $certifier->id)
+                'unique_hash' => md5($productData['name'] . $brand->id . $certifier->id),
+                'is_active' => true,
             ]);
+            $this->markProductSeen($existingProduct);
             return;
         }
 
         // Crear nuevo producto
-        Product::create([
+        $product = Product::create([
             'name' => $productData['name'],
             'slug' => $slug,
             'brand_id' => $brand->id,
@@ -269,9 +283,11 @@ class ScrapeKosherChile extends Command
             'description' => $productData['description'],
             'image_url' => $productData['image_url'],
             'source' => 'kosher_chile_scraper',
-            'unique_hash' => md5($productData['name'] . $brand->id . $certifier->id)
+            'unique_hash' => md5($productData['name'] . $brand->id . $certifier->id),
+            'is_active' => true,
         ]);
 
+        $this->markProductSeen($product);
         $this->info("Producto '{$productData['name']}' creado exitosamente");
     }
 

@@ -8,11 +8,14 @@ use Illuminate\Support\Facades\Log;
 use App\Models\Product;
 use App\Models\Brand;
 use App\Models\Certifier;
+use App\Console\Commands\Concerns\TracksProductActivity;
 use Illuminate\Support\Str;
 use ZipArchive;
 
 class ScrapeBDKBrasil extends Command
 {
+    use TracksProductActivity;
+
     protected $signature = 'scrape:bdk {--limit=0 : Límite de productos a procesar (0 = sin límite)}';
     protected $description = 'Scrape de productos kosher certificados por BDK Brasil (vía exportación Excel del catálogo)';
 
@@ -63,6 +66,13 @@ class ScrapeBDKBrasil extends Command
                     $this->error("Error procesando '{$row['nombre']}': " . $e->getMessage());
                     $this->failed++;
                 }
+            }
+
+            if ($limit === 0) {
+                $deactivated = $this->deactivateStaleProducts($certifier->id);
+                $this->info("Productos desactivados (ya no están en el catálogo): {$deactivated}");
+            } else {
+                $this->warn('Desactivación de productos obsoletos omitida (uso de --limit).');
             }
 
             $this->printSummary();
@@ -237,12 +247,14 @@ class ScrapeBDKBrasil extends Command
                 'kosher_status' => $kosherStatus,
                 'certifier_id' => $certifier->id,
                 'source' => 'bdk_scraper',
+                'is_active' => true,
             ]);
+            $this->markProductSeen($existing);
             $this->updated++;
             return;
         }
 
-        Product::create([
+        $product = Product::create([
             'name' => $row['nombre'],
             'slug' => $this->generateUniqueSlug($row['nombre'], $brand),
             'brand_id' => $brand->id,
@@ -252,8 +264,10 @@ class ScrapeBDKBrasil extends Command
             'image_url' => null,
             'source' => 'bdk_scraper',
             'unique_hash' => $uniqueHash,
+            'is_active' => true,
         ]);
 
+        $this->markProductSeen($product);
         $this->created++;
     }
 

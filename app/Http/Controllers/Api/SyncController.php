@@ -147,6 +147,7 @@ class SyncController extends Controller
                 'brand_id'     => $brandId,
                 'certifier_id' => $certifierId,
                 'category_id'  => $categoryId,
+                'is_active'    => $data['is_active'] ?? true,
             ];
 
             $existing = Product::where('slug', $data['slug'])->first();

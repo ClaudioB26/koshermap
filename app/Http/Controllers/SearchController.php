@@ -35,7 +35,7 @@ class SearchController extends Controller
         }
 
         // 1. Search our local database first.
-        $localQuery = Product::with(['brand', 'certifier', 'countries', 'category']);
+        $localQuery = Product::active()->with(['brand', 'certifier', 'countries', 'category']);
 
         // Apply Context Filters
         if ($countrySlug) {

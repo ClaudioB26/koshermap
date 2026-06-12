@@ -24,7 +24,7 @@ class SitemapController extends Controller
         );
         
         // Calcular cantidad de páginas para cada tipo
-        $productPages = ceil(Product::count() / 1000);
+        $productPages = ceil(Product::active()->count() / 1000);
         $categoryPages = ceil(Category::count() / 500);
         $certifierPages = ceil(Certifier::count() / 100);
         $brandPages = ceil(Brand::whereNotNull('slug')->where('slug', '!=', '')->count() / 500);
@@ -117,7 +117,8 @@ class SitemapController extends Controller
         
         $offset = ($page - 1) * 1000;
         
-        Product::orderBy('updated_at', 'desc')
+        Product::active()
+            ->orderBy('updated_at', 'desc')
             ->skip($offset)
             ->take(1000)
             ->chunk(100, function ($products) use (&$xml) {

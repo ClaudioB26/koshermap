@@ -23,8 +23,18 @@ class Product extends Model
         'description',
         'image_url',
         'source',
-        'unique_hash'
+        'unique_hash',
+        'is_active',
     ];
+
+    protected $casts = [
+        'is_active' => 'boolean',
+    ];
+
+    public function scopeActive($query)
+    {
+        return $query->where('is_active', true);
+    }
 
     public function reports()
     {

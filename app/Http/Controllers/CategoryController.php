@@ -43,6 +43,7 @@ class CategoryController extends Controller
         $categoryIds = $this->getCategoryWithChildren($category->id);
         
         $products = $category->products()
+            ->active()
             ->where('certifier_id', $certifier->id)
             ->with('brand', 'certifier')
             ->orderBy('name')

@@ -6,6 +6,7 @@ use App\Models\Brand;
 use App\Models\Certifier;
 use App\Models\Country;
 use App\Models\Product;
+use App\Console\Commands\Concerns\TracksProductActivity;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
@@ -14,6 +15,8 @@ use Symfony\Component\DomCrawler\Crawler;
 
 class ScrapeKMD extends Command
 {
+    use TracksProductActivity;
+
     /**
      * The name and signature of the console command.
      *
@@ -165,9 +168,12 @@ class ScrapeKMD extends Command
                                 'certifier_id' => $certifier->id,
                                 'barcode' => null, // KMD doesn't seem to provide barcodes
                                 'image_url' => null,
+                                'is_active' => true,
                             ]
                         );
-                        
+
+                        $this->markProductSeen($product);
+
                         // Sync country
                         if (!$product->countries()->where('countries.id', $country->id)->exists()) {
                             $product->countries()->attach($country->id);
@@ -190,6 +196,13 @@ class ScrapeKMD extends Command
                 $this->error("Error fetching page {$page}: " . $e->getMessage());
                 $hasMore = false;
             }
+        }
+
+        if (!$this->option('limit')) {
+            $deactivated = $this->deactivateStaleProducts($certifier->id);
+            $this->info("Productos desactivados (ya no están en el catálogo): {$deactivated}");
+        } else {
+            $this->warn('Desactivación de productos obsoletos omitida (uso de --limit).');
         }
 
         $this->info('Scraping completed.');
