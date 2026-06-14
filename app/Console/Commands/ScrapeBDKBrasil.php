@@ -318,19 +318,45 @@ class ScrapeBDKBrasil extends Command
             $html = $response->body();
             $target = mb_strtoupper(trim($name));
 
-            if (preg_match_all('/<h1>\s*<a href="[^"]*[?&]produto=(\d+)"[^>]*>([^<]+)<\/a>\s*<\/h1>/is', $html, $matches, PREG_SET_ORDER)) {
+            if (preg_match_all('/<h1>\s*<a href="([^"]+)"[^>]*>([^<]+)<\/a>\s*<\/h1>/is', $html, $matches, PREG_SET_ORDER)) {
                 foreach ($matches as $match) {
                     $matchedName = mb_strtoupper(trim(html_entity_decode($match[2], ENT_QUOTES | ENT_HTML5)));
 
                     if ($matchedName === $target) {
-                        foreach (['reais', 'thumbs'] as $variant) {
-                            $url = "https://www.bdk.com.br/anexos/produtos/{$match[1]}/{$variant}/produto_thumb.jpg";
-                            if (Http::timeout(15)->head($url)->successful()) {
-                                return $url;
-                            }
-                        }
-                        return null;
+                        return $this->fetchImageFromProductPage($match[1]);
                     }
+                }
+            }
+
+            return null;
+        } catch (\Exception $e) {
+            return null;
+        }
+    }
+
+    /**
+     * Cargar la página de detalle de un producto y extraer la URL de su imagen.
+     */
+    private function fetchImageFromProductPage(string $url): ?string
+    {
+        try {
+            $response = Http::timeout(30)
+                ->withHeaders([
+                    'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+                ])
+                ->get($url);
+
+            if (!$response->successful()) {
+                return null;
+            }
+
+            $html = $response->body();
+
+            if (preg_match('/<img[^>]+src="([^"]*anexos[^"]*)"/i', $html, $match)) {
+                $imageUrl = $match[1];
+
+                if (Http::timeout(15)->head($imageUrl)->successful()) {
+                    return $imageUrl;
                 }
             }
 
