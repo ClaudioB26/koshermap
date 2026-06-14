@@ -27,6 +27,7 @@ class ScrapeBDKBrasil extends Command
     private $updated = 0;
     private $skipped = 0;
     private $failed = 0;
+    private $imagesFound = 0;
 
     public function handle()
     {
@@ -62,6 +63,11 @@ class ScrapeBDKBrasil extends Command
                 try {
                     $this->processProduct($row, $certifier);
                     $this->processed++;
+
+                    if ($this->processed % 20 === 0) {
+                        $this->info("Procesados {$this->processed} productos...");
+                        usleep(300000);
+                    }
                 } catch (\Exception $e) {
                     $this->error("Error procesando '{$row['nombre']}': " . $e->getMessage());
                     $this->failed++;
@@ -242,16 +248,31 @@ class ScrapeBDKBrasil extends Command
         $existing = Product::where('unique_hash', $uniqueHash)->first();
 
         if ($existing) {
-            $existing->update([
+            $payload = [
                 'description' => $description,
                 'kosher_status' => $kosherStatus,
                 'certifier_id' => $certifier->id,
                 'source' => 'bdk_scraper',
                 'is_active' => true,
-            ]);
+            ];
+
+            if (!$existing->image_url) {
+                $imageUrl = $this->fetchProductImage($row['nombre']);
+                if ($imageUrl) {
+                    $payload['image_url'] = $imageUrl;
+                    $this->imagesFound++;
+                }
+            }
+
+            $existing->update($payload);
             $this->markProductSeen($existing);
             $this->updated++;
             return;
+        }
+
+        $imageUrl = $this->fetchProductImage($row['nombre']);
+        if ($imageUrl) {
+            $this->imagesFound++;
         }
 
         $product = Product::create([
@@ -261,7 +282,7 @@ class ScrapeBDKBrasil extends Command
             'certifier_id' => $certifier->id,
             'kosher_status' => $kosherStatus,
             'description' => $description,
-            'image_url' => null,
+            'image_url' => $imageUrl,
             'source' => 'bdk_scraper',
             'unique_hash' => $uniqueHash,
             'is_active' => true,
@@ -269,6 +290,54 @@ class ScrapeBDKBrasil extends Command
 
         $this->markProductSeen($product);
         $this->created++;
+    }
+
+    /**
+     * Buscar la imagen de un producto en bdk.com.br a partir de su nombre exacto.
+     * Devuelve la URL de la imagen "real" (alta resolución) o null si no se encuentra.
+     */
+    private function fetchProductImage(string $name): ?string
+    {
+        try {
+            $response = Http::timeout(30)
+                ->withHeaders([
+                    'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+                ])
+                ->get('https://bdk.com.br/produtos', [
+                    'produto' => $name,
+                    'fabricante' => '',
+                    'categoria' => '',
+                    'tipo' => '',
+                    'pesquisar' => 'Pesquisar',
+                ]);
+
+            if (!$response->successful()) {
+                return null;
+            }
+
+            $html = $response->body();
+            $target = mb_strtoupper(trim($name));
+
+            if (preg_match_all('/<h1>\s*<a href="[^"]*[?&]produto=(\d+)"[^>]*>([^<]+)<\/a>\s*<\/h1>/is', $html, $matches, PREG_SET_ORDER)) {
+                foreach ($matches as $match) {
+                    $matchedName = mb_strtoupper(trim(html_entity_decode($match[2], ENT_QUOTES | ENT_HTML5)));
+
+                    if ($matchedName === $target) {
+                        foreach (['reais', 'thumbs'] as $variant) {
+                            $url = "https://www.bdk.com.br/anexos/produtos/{$match[1]}/{$variant}/produto_thumb.jpg";
+                            if (Http::timeout(15)->head($url)->successful()) {
+                                return $url;
+                            }
+                        }
+                        return null;
+                    }
+                }
+            }
+
+            return null;
+        } catch (\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -342,6 +411,7 @@ class ScrapeBDKBrasil extends Command
 
         $this->info("Productos creados: {$this->created}");
         $this->info("Productos actualizados: {$this->updated}");
+        $this->info("Imágenes encontradas: {$this->imagesFound}");
         $this->info("Productos no certificados (omitidos): {$this->skipped}");
         $this->info("Errores: {$this->failed}");
 
