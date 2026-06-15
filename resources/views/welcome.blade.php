@@ -11,7 +11,7 @@
     <p class="text-gray-400 text-lg mb-12">Encontrá productos y locales con certificación kosher</p>
 
     <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-        <button onclick="document.getElementById('query-input').focus()"
+        <button onclick="document.getElementById('query-input').closest('form').requestSubmit()"
                 class="flex-1 flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-700
                        text-white font-bold py-5 px-6 rounded-2xl shadow-lg transition text-base">
             🛒 <span>Buscar producto</span>

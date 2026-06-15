@@ -247,6 +247,12 @@ class ScrapeBDKBrasil extends Command
 
         $existing = Product::where('unique_hash', $uniqueHash)->first();
 
+        $meta = $this->fetchBdkProductMeta($row['nombre'], $brandName);
+
+        if ($meta['obs_importante'] && !str_contains($description, $meta['obs_importante'])) {
+            $description = trim($description . '. Atención: ' . $meta['obs_importante'], '. ');
+        }
+
         if ($existing) {
             $payload = [
                 'description' => $description,
@@ -256,12 +262,9 @@ class ScrapeBDKBrasil extends Command
                 'is_active' => true,
             ];
 
-            if (!$existing->image_url) {
-                $imageUrl = $this->fetchProductImage($row['nombre']);
-                if ($imageUrl) {
-                    $payload['image_url'] = $imageUrl;
-                    $this->imagesFound++;
-                }
+            if (!$existing->image_url && $meta['image_url']) {
+                $payload['image_url'] = $meta['image_url'];
+                $this->imagesFound++;
             }
 
             $existing->update($payload);
@@ -270,8 +273,7 @@ class ScrapeBDKBrasil extends Command
             return;
         }
 
-        $imageUrl = $this->fetchProductImage($row['nombre']);
-        if ($imageUrl) {
+        if ($meta['image_url']) {
             $this->imagesFound++;
         }
 
@@ -282,7 +284,7 @@ class ScrapeBDKBrasil extends Command
             'certifier_id' => $certifier->id,
             'kosher_status' => $kosherStatus,
             'description' => $description,
-            'image_url' => $imageUrl,
+            'image_url' => $meta['image_url'],
             'source' => 'bdk_scraper',
             'unique_hash' => $uniqueHash,
             'is_active' => true,
@@ -293,11 +295,16 @@ class ScrapeBDKBrasil extends Command
     }
 
     /**
-     * Buscar la imagen de un producto en bdk.com.br a partir de su nombre exacto.
-     * Devuelve la URL de la imagen "real" (alta resolución) o null si no se encuentra.
+     * Buscar metadatos de un producto en bdk.com.br a partir de su nombre exacto,
+     * usando los bloques var_dump (comentarios HTML de debug) de la página de búsqueda.
+     * Si hay varios productos con el mismo nombre (distintos fabricantes), se elige
+     * el que mejor coincida con la marca/fabricante de nuestro producto.
+     * Devuelve ['image_url' => ?string, 'obs_importante' => ?string].
      */
-    private function fetchProductImage(string $name): ?string
+    private function fetchBdkProductMeta(string $name, string $brandName): array
     {
+        $result = ['image_url' => null, 'obs_importante' => null];
+
         try {
             $response = Http::timeout(30)
                 ->withHeaders([
@@ -312,58 +319,148 @@ class ScrapeBDKBrasil extends Command
                 ]);
 
             if (!$response->successful()) {
-                return null;
+                return $result;
             }
 
             $html = $response->body();
             $target = mb_strtoupper(trim($name));
 
-            if (preg_match_all('/<h1>\s*<a href="([^"]+)"[^>]*>([^<]+)<\/a>\s*<\/h1>/is', $html, $matches, PREG_SET_ORDER)) {
-                foreach ($matches as $match) {
-                    $matchedName = mb_strtoupper(trim(html_entity_decode($match[2], ENT_QUOTES | ENT_HTML5)));
+            $blocks = preg_split('/<!--\s*object\(stdClass\)#\d+/', $html);
+            $candidates = [];
 
-                    if ($matchedName === $target) {
-                        return $this->fetchImageFromProductPage($match[1]);
+            foreach ($blocks as $block) {
+                if (!preg_match('/\["produto"\]=>\s*\n\s*string\(\d+\) "([^\n]*)"/', $block, $m)) {
+                    continue;
+                }
+
+                $produtoName = mb_strtoupper(trim(html_entity_decode($m[1], ENT_QUOTES | ENT_HTML5)));
+
+                if ($produtoName !== $target) {
+                    continue;
+                }
+
+                $candidates[] = [
+                    'id_produto' => $this->extractBdkIntField($block, 'id_produto'),
+                    'arquivo' => $this->extractBdkStringField($block, 'arquivo'),
+                    'marca' => $this->extractBdkStringField($block, 'marca') ?? '',
+                    'fabricante' => $this->extractBdkStringField($block, 'fabricante') ?? '',
+                    'obs_importante' => $this->extractBdkStringField($block, 'obs_importante'),
+                ];
+            }
+
+            if (empty($candidates)) {
+                return $result;
+            }
+
+            $best = $this->pickBestBdkCandidate($candidates, $brandName);
+
+            if ($best['id_produto'] && $best['arquivo']) {
+                foreach (['reais', 'thumbs'] as $variant) {
+                    $imageUrl = "https://www.bdk.com.br/anexos/produtos/{$best['id_produto']}/{$variant}/{$best['arquivo']}";
+
+                    if (Http::timeout(15)->head($imageUrl)->successful()) {
+                        $result['image_url'] = $imageUrl;
+                        break;
                     }
                 }
             }
 
-            return null;
+            $obsImportante = $best['obs_importante'];
+
+            // Si el candidato elegido no tiene "obs_importante" propio, buscar entre los
+            // demás candidatos del mismo fabricante: la observación suele aplicar a todos
+            // los productos homónimos fabricados por esa misma empresa.
+            if (!$obsImportante && $best['fabricante']) {
+                foreach ($candidates as $candidate) {
+                    if ($candidate['obs_importante']
+                        && mb_strtoupper(trim($candidate['fabricante'])) === mb_strtoupper(trim($best['fabricante']))
+                    ) {
+                        $obsImportante = $candidate['obs_importante'];
+                        break;
+                    }
+                }
+            }
+
+            if ($obsImportante) {
+                $result['obs_importante'] = trim(html_entity_decode($obsImportante, ENT_QUOTES | ENT_HTML5));
+            }
+
+            return $result;
         } catch (\Exception $e) {
-            return null;
+            return $result;
         }
     }
 
     /**
-     * Cargar la página de detalle de un producto y extraer la URL de su imagen.
+     * Elegir el candidato cuya marca/fabricante mejor coincida con la marca de nuestro producto.
      */
-    private function fetchImageFromProductPage(string $url): ?string
+    private function pickBestBdkCandidate(array $candidates, string $brandName): array
     {
-        try {
-            $response = Http::timeout(30)
-                ->withHeaders([
-                    'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-                ])
-                ->get($url);
-
-            if (!$response->successful()) {
-                return null;
-            }
-
-            $html = $response->body();
-
-            if (preg_match('/<img[^>]+src="([^"]*anexos[^"]*)"/i', $html, $match)) {
-                $imageUrl = $match[1];
-
-                if (Http::timeout(15)->head($imageUrl)->successful()) {
-                    return $imageUrl;
-                }
-            }
-
-            return null;
-        } catch (\Exception $e) {
-            return null;
+        if (count($candidates) === 1) {
+            return $candidates[0];
         }
+
+        $ourWords = $this->normalizeBdkWords($brandName);
+        $best = $candidates[0];
+        $bestScore = -1;
+
+        foreach ($candidates as $candidate) {
+            $bdkWords = array_merge(
+                $this->normalizeBdkWords($candidate['marca']),
+                $this->normalizeBdkWords($candidate['fabricante'])
+            );
+
+            $score = count(array_intersect($ourWords, $bdkWords));
+
+            if ($score > $bestScore) {
+                $bestScore = $score;
+                $best = $candidate;
+            }
+        }
+
+        return $best;
+    }
+
+    /**
+     * Normalizar texto a un conjunto de palabras en mayúsculas sin acentos, para comparación.
+     */
+    private function normalizeBdkWords(string $text): array
+    {
+        $text = mb_strtoupper($text);
+        $text = strtr($text, [
+            'Á' => 'A', 'À' => 'A', 'Â' => 'A', 'Ã' => 'A', 'Ä' => 'A',
+            'É' => 'E', 'È' => 'E', 'Ê' => 'E', 'Ë' => 'E',
+            'Í' => 'I', 'Ì' => 'I', 'Î' => 'I', 'Ï' => 'I',
+            'Ó' => 'O', 'Ò' => 'O', 'Ô' => 'O', 'Õ' => 'O', 'Ö' => 'O',
+            'Ú' => 'U', 'Ù' => 'U', 'Û' => 'U', 'Ü' => 'U',
+            'Ç' => 'C', 'Ñ' => 'N',
+        ]);
+
+        return array_values(array_filter(preg_split('/[^A-Z0-9]+/', $text)));
+    }
+
+    /**
+     * Extraer un campo string("...") de un bloque var_dump.
+     */
+    private function extractBdkStringField(string $block, string $key): ?string
+    {
+        if (preg_match('/\["' . preg_quote($key, '/') . '"\]=>\s*\n\s*string\(\d+\) "([^\n]*)"/', $block, $m)) {
+            return $m[1];
+        }
+
+        return null;
+    }
+
+    /**
+     * Extraer un campo int(...) de un bloque var_dump.
+     */
+    private function extractBdkIntField(string $block, string $key): ?int
+    {
+        if (preg_match('/\["' . preg_quote($key, '/') . '"\]=>\s*\n\s*int\((\d+)\)/', $block, $m)) {
+            return (int) $m[1];
+        }
+
+        return null;
     }
 
     /**

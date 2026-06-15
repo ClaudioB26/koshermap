@@ -15,14 +15,14 @@ class SearchController extends Controller
         $countrySlug = $request->input('country');
         
         // Use detected country if no explicit country filter is provided
-        if (!$countrySlug && $userCountry = $request->attributes->get('userCountry')) {
+        if (!$request->has('country') && $userCountry = $request->attributes->get('userCountry')) {
             $countrySlug = $userCountry->slug;
         }
 
         $categorySlug = $request->input('category');
         $certifierSlug = $request->input('certifier');
 
-        if (!$query) {
+        if (!$query && !$request->has('query')) {
             // Si hay un país detectado, lo pasamos a la vista welcome
             return view('welcome', [
                 'selectedCountry' => $countrySlug
@@ -59,16 +59,21 @@ class SearchController extends Controller
             });
         }
 
-        $localProducts = $localQuery->where(function($q) use ($query) {
-            $q->where('name', 'LIKE', "%{$query}%")
-              ->orWhere('barcode', $query);
-        })->get();
+        // Si no se escribió ningún término, mostrar todos los productos (según los filtros aplicados)
+        if ($query !== '') {
+            $localQuery->where(function($q) use ($query) {
+                $q->where('name', 'LIKE', "%{$query}%")
+                  ->orWhere('barcode', $query);
+            });
+        }
+
+        $localProducts = $localQuery->get();
 
         // 2. Call the unified external service ONLY if no specific country/category context is enforced,
         // OR if we want to fallback. For now, let's include it only if no strict filters are applied,
         // because external API results are not categorized/localized yet.
         $externalProducts = collect();
-        if (!$countrySlug && !$categorySlug && !$certifierSlug) {
+        if ($query !== '' && !$countrySlug && !$categorySlug && !$certifierSlug) {
              $externalProducts = $externalService->search($query);
         }
 

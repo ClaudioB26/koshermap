@@ -154,12 +154,16 @@ class CatalogController extends Controller
         $placeType   = $request->input('place_type');
         $orientation = $request->input('orientation');
 
+        // Si no se especificó país explícitamente, usar el país detectado/preferido del usuario
+        if (!$request->has('country') && $userCountry = $request->attributes->get('userCountry')) {
+            $countrySlug = $userCountry->slug;
+        }
+
         $countries = \App\Models\Country::orderBy('name')->get();
 
         $placesQuery = KosherPlace::approved()
             ->where('is_active', true)
-            ->with(['city.country'])
-            ->orderBy('google_rating', 'desc');
+            ->with(['city.country']);
 
         if ($query) {
             $placesQuery->where('name', 'like', "%{$query}%");
@@ -167,10 +171,6 @@ class CatalogController extends Controller
 
         if ($countrySlug) {
             $placesQuery->whereHas('city.country', fn ($q) => $q->where('slug', $countrySlug));
-        }
-
-        if ($placeType) {
-            $placesQuery->where('place_type', $placeType);
         }
 
         // Por defecto solo se muestran sinagogas/comunidades de orientación ortodoxa.
@@ -187,14 +187,18 @@ class CatalogController extends Controller
             });
         }
 
-        $places = $placesQuery->paginate(24)->withQueryString();
-
-        $placeTypes = KosherPlace::approved()
-            ->where('is_active', true)
+        // Conteo por tipo de lugar respetando los filtros activos (país, búsqueda, orientación)
+        $placeTypes = (clone $placesQuery)
             ->selectRaw('place_type, count(*) as total')
             ->groupBy('place_type')
             ->orderBy('total', 'desc')
             ->pluck('total', 'place_type');
+
+        if ($placeType) {
+            $placesQuery->where('place_type', $placeType);
+        }
+
+        $places = $placesQuery->orderBy('google_rating', 'desc')->paginate(24)->withQueryString();
 
         return view('places.index', compact(
             'places', 'countries', 'placeTypes', 'placeType', 'query', 'countrySlug', 'orientation'
