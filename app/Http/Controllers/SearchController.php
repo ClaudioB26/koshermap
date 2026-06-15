@@ -158,7 +158,13 @@ class SearchController extends Controller
         if (!$categorySlug) {
             return;
         }
-        $q->whereHas('category', fn ($sq) => $sq->where('slug', $categorySlug));
+
+        $category = Category::where('slug', $categorySlug)->with('children')->first();
+        if (!$category) {
+            return;
+        }
+
+        $q->whereIn('category_id', $category->selfAndDescendantIds());
     }
 
     private function applyCertifierFilter($q, ?string $certifierSlug): void

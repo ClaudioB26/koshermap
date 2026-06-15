@@ -64,4 +64,18 @@ class Category extends Model
     {
         return $this->hasMany(Category::class, 'parent_id');
     }
+
+    /**
+     * Devuelve el id de esta categoría y de todos sus descendientes (a cualquier profundidad).
+     */
+    public function selfAndDescendantIds(): array
+    {
+        $ids = [$this->id];
+
+        foreach ($this->children as $child) {
+            $ids = array_merge($ids, $child->loadMissing('children')->selfAndDescendantIds());
+        }
+
+        return $ids;
+    }
 }
