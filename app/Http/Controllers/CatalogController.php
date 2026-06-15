@@ -30,15 +30,29 @@ class CatalogController extends Controller
     public function category($slug)
     {
         $category = Category::where('slug', $slug)->with('children')->firstOrFail();
-        
-        // Products in this category OR subcategories? 
-        // Usually, clicking "Dairy" shows Milk + Cheese products.
-        // For now, let's just show direct products, but maybe in future include children products.
-        // To include children products: $category->products() only gets direct.
-        // Let's stick to direct + show subcategories links.
-        
-        $products = $category->products()->active()->paginate(20);
+
+        // Mostrar productos de esta categoría y de todas sus subcategorías (a cualquier profundidad)
+        $categoryIds = $this->collectCategoryIds($category);
+
+        $products = Product::active()
+            ->whereIn('category_id', $categoryIds)
+            ->paginate(20);
+
         return view('catalog.categories.show', compact('category', 'products'));
+    }
+
+    /**
+     * Recolecta el id de la categoría y de todos sus descendientes.
+     */
+    private function collectCategoryIds(Category $category): array
+    {
+        $ids = [$category->id];
+
+        foreach ($category->children as $child) {
+            $ids = array_merge($ids, $this->collectCategoryIds($child->loadMissing('children')));
+        }
+
+        return $ids;
     }
 
     public function countries()
