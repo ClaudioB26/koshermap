@@ -36,6 +36,16 @@ class City extends Model
         'tiny'   => 365,
     ];
 
+    // Cantidad mínima de lugares encontrados para asignar cada densidad.
+    // Se recorre en orden: la primera cuyo umbral se alcance, gana.
+    public const PLACE_COUNT_DENSITY_THRESHOLDS = [
+        'major'  => 150,
+        'large'  => 80,
+        'medium' => 40,
+        'small'  => 15,
+        'tiny'   => 0,
+    ];
+
     public function country(): BelongsTo
     {
         return $this->belongsTo(Country::class);
@@ -56,15 +66,41 @@ class City extends Model
         return is_null($this->next_scrape_at) || $this->next_scrape_at->isPast();
     }
 
-    public function markScraped(): void
+    /**
+     * Registra que la ciudad fue scrapeada y calcula cuándo le toca de nuevo.
+     *
+     * Si se pasa la cantidad de lugares encontrados, la densidad de la
+     * comunidad (y por lo tanto la frecuencia de refresco) se recalcula
+     * automáticamente en base a ese resultado.
+     */
+    public function markScraped(?int $placesFound = null): void
     {
-        $interval = self::DENSITY_INTERVALS[$this->community_density] ?? 180;
+        $density = $placesFound !== null
+            ? self::densityForPlaceCount($placesFound)
+            : ($this->community_density ?? 'medium');
+
+        $interval = self::DENSITY_INTERVALS[$density] ?? 180;
 
         $this->update([
-            'last_scraped_at'     => now(),
-            'next_scrape_at'      => now()->addDays($interval),
-            'scrape_interval_days'=> $interval,
+            'community_density'    => $density,
+            'last_scraped_at'      => now(),
+            'next_scrape_at'       => now()->addDays($interval),
+            'scrape_interval_days' => $interval,
         ]);
+    }
+
+    /**
+     * Determina la densidad de comunidad según la cantidad de lugares encontrados.
+     */
+    public static function densityForPlaceCount(int $placesFound): string
+    {
+        foreach (self::PLACE_COUNT_DENSITY_THRESHOLDS as $density => $threshold) {
+            if ($placesFound >= $threshold) {
+                return $density;
+            }
+        }
+
+        return 'tiny';
     }
 
     public function scopeDueForScraping($query)

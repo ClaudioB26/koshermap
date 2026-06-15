@@ -100,7 +100,7 @@ class ScrapeCity implements ShouldQueue
                 ->where('last_verified_at', '<', now()->subDays(30))
                 ->update(['is_active' => false]);
 
-            $this->city->markScraped();
+            $this->city->markScraped($stats['found']);
 
             $log->update([
                 'status'            => 'completed',
