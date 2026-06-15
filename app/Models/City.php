@@ -28,8 +28,9 @@ class City extends Model
         'is_active'       => 'boolean',
     ];
 
+    // Mínimo 90 días (3 meses) entre scrapeos, incluso para las ciudades más activas.
     public const DENSITY_INTERVALS = [
-        'major'  => 60,
+        'major'  => 90,
         'large'  => 90,
         'medium' => 180,
         'small'  => 270,
