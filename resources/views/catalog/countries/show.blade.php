@@ -18,7 +18,7 @@
 
 {{-- Tabs --}}
 <div class="flex border-b border-gray-200 mb-6">
-    <a href="{{ request()->fullUrlWithQuery(['tab' => 'productos']) }}"
+    <a href="{{ route('home', ['country' => $country->slug]) }}"
        class="px-6 py-3 font-semibold text-sm border-b-2 transition
               {{ $tab === 'productos' ? 'border-blue-600 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700' }}">
         🛒 Productos

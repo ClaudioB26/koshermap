@@ -60,12 +60,24 @@
                         <input type="hidden" name="country" value="{{ $country->slug }}">
                     @elseif(isset($userCountry) && $userCountry instanceof \App\Models\Country && !request()->has('country'))
                         <input type="hidden" name="country" value="{{ $userCountry->slug }}">
+                    @elseif(request()->has('country'))
+                        <input type="hidden" name="country" value="{{ request('country') }}">
                     @endif
                     @if(isset($category) && $category instanceof \App\Models\Category)
                         <input type="hidden" name="category" value="{{ $category->slug }}">
+                    @elseif(request()->has('category'))
+                        <input type="hidden" name="category" value="{{ request('category') }}">
                     @endif
                     @if(isset($certifier) && $certifier instanceof \App\Models\Certifier)
                         <input type="hidden" name="certifier" value="{{ $certifier->slug }}">
+                    @elseif(request()->has('certifier'))
+                        <input type="hidden" name="certifier" value="{{ request('certifier') }}">
+                    @endif
+                    @if(request()->has('brand'))
+                        <input type="hidden" name="brand" value="{{ request('brand') }}">
+                    @endif
+                    @if(request()->has('tipo'))
+                        <input type="hidden" name="tipo" value="{{ request('tipo') }}">
                     @endif
 
                     <input type="text" id="query-input" name="query"
