@@ -8,7 +8,7 @@
 
     {{-- Breadcrumb --}}
     <nav class="text-sm text-gray-500 mb-6">
-        <a href="{{ route('home') }}" class="hover:text-blue-600">{{ __('home') ?? 'Inicio' }}</a>
+        <a href="{{ route('home') }}" class="hover:text-blue-600">KosherMap</a>
         <span class="mx-2">›</span>
         <span class="text-gray-700">{{ $content['title'] }}</span>
     </nav>
