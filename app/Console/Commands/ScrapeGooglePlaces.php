@@ -14,7 +14,8 @@ class ScrapeGooglePlaces extends Command
                             {--country=   : Código ISO del país (AR, IL, US...)}
                             {--force      : Ignorar next_scrape_at}
                             {--sync       : Ejecutar directamente (sin cola)}
-                            {--one-term   : Solo buscar con el primer término (para pruebas rápidas)}';
+                            {--one-term   : Solo buscar con el primer término (para pruebas rápidas)}
+                            {--limit=2    : Máximo de ciudades a procesar en esta corrida (para no arriesgar bloqueos de Google)}';
 
     protected $description = 'Scraping de Google Maps para lugares kosher por ciudad.';
 
@@ -42,14 +43,27 @@ class ScrapeGooglePlaces extends Command
             $query->dueForScraping();
         }
 
-        $cities = $query->orderByRaw("FIELD(community_density,'major','large','medium','small','tiny')")->get();
+        $cities = $query
+            ->orderBy('next_scrape_at')
+            ->orderByRaw("FIELD(community_density,'major','large','medium','small','tiny')")
+            ->get();
 
         if ($cities->isEmpty()) {
             $this->info('No hay ciudades pendientes de scraping.');
             return 0;
         }
 
-        $this->info("Ciudades a procesar: {$cities->count()}");
+        $totalDue = $cities->count();
+        $limit    = (int) $this->option('limit');
+
+        if ($limit > 0) {
+            $cities = $cities->take($limit);
+        }
+
+        $this->info("Ciudades pendientes: {$totalDue}. Procesando esta corrida: {$cities->count()}.");
+        if ($limit > 0 && $totalDue > $cities->count()) {
+            $this->line('  (límite aplicado para evitar bloqueos de Google; el resto queda para la próxima corrida)');
+        }
         $this->newLine();
 
         foreach ($cities as $city) {

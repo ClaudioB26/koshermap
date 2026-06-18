@@ -22,6 +22,58 @@
             📍 <span>Encontrar local</span>
         </a>
     </div>
+
+    {{-- Sección introductoria para AdSense / SEO --}}
+    <div class="mt-16 text-left max-w-3xl mx-auto">
+        <p class="text-sm font-semibold text-blue-600 uppercase tracking-widest mb-1">
+            {{ trans('home.tagline') }}
+        </p>
+        <p class="text-gray-600 leading-relaxed mb-8">
+            {!! trans('home.description') !!}
+        </p>
+
+        {{-- Stats --}}
+        <div class="flex flex-wrap justify-center gap-8 mb-10 text-center">
+            <div>
+                <p class="text-2xl font-black text-blue-600">{{ trans('home.stat_products') }}</p>
+            </div>
+            <div>
+                <p class="text-2xl font-black text-blue-600">{{ trans('home.stat_places') }}</p>
+            </div>
+            <div>
+                <p class="text-2xl font-black text-blue-600">{{ trans('home.stat_langs') }}</p>
+            </div>
+        </div>
+
+        {{-- Feature cards --}}
+        <h2 class="text-lg font-bold text-gray-800 mb-4">{{ trans('home.features_title') }}</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+            <div class="bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+                <p class="font-semibold text-gray-800 mb-1">{{ trans('home.feature_1_title') }}</p>
+                <p class="text-sm text-gray-500">{{ trans('home.feature_1_body') }}</p>
+            </div>
+            <div class="bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+                <p class="font-semibold text-gray-800 mb-1">{{ trans('home.feature_2_title') }}</p>
+                <p class="text-sm text-gray-500">{{ trans('home.feature_2_body') }}</p>
+            </div>
+            <div class="bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+                <p class="font-semibold text-gray-800 mb-1">{{ trans('home.feature_3_title') }}</p>
+                <p class="text-sm text-gray-500">{{ trans('home.feature_3_body') }}</p>
+            </div>
+        </div>
+
+        {{-- Links a páginas informativas --}}
+        <div class="flex flex-wrap gap-3 text-sm">
+            <a href="{{ route('pages.que-es-kosher') }}"
+               class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full hover:bg-blue-100 transition font-medium">
+                {{ trans('home.learn_kosher') }}
+            </a>
+            <a href="{{ route('pages.sobre-nosotros') }}"
+               class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition font-medium">
+                {{ trans('home.about_us') }}
+            </a>
+        </div>
+    </div>
 </div>
 
 @else

@@ -207,10 +207,29 @@
     <div class="container mx-auto px-4 text-center text-gray-500 text-sm">
         <p class="font-semibold text-gray-700 mb-1">Kosher<span class="text-blue-600">Map</span></p>
         <p>{{ __('footer_text') }}</p>
-        <div class="flex justify-center gap-4 mt-3 text-xs text-gray-400">
+
+        {{-- Links del catálogo --}}
+        <div class="flex flex-wrap justify-center gap-4 mt-3 text-xs text-gray-400">
             <a href="{{ route('places.index') }}" class="hover:text-blue-600">📍 Lugares kosher</a>
             <a href="{{ route('countries.index') }}" class="hover:text-blue-600">🌍 Países</a>
             <a href="{{ route('certifiers.index') }}" class="hover:text-blue-600">🏅 Certificadoras</a>
+        </div>
+
+        {{-- Links informativos --}}
+        <div class="flex flex-wrap justify-center gap-3 mt-2 text-xs text-gray-400">
+            <a href="{{ route('pages.que-es-kosher') }}" class="hover:text-blue-600">¿Qué es Kosher?</a>
+            <span class="text-gray-200">|</span>
+            <a href="{{ route('pages.kashrut') }}" class="hover:text-blue-600">Kashrut</a>
+            <span class="text-gray-200">|</span>
+            <a href="{{ route('pages.judaismo') }}" class="hover:text-blue-600">Judaísmo</a>
+            <span class="text-gray-200">|</span>
+            <a href="{{ route('pages.etiqueta-kosher') }}" class="hover:text-blue-600">Etiquetas</a>
+            <span class="text-gray-200">|</span>
+            <a href="{{ route('pages.sobre-nosotros') }}" class="hover:text-blue-600">Sobre nosotros</a>
+            <span class="text-gray-200">|</span>
+            <a href="{{ route('pages.contacto') }}" class="hover:text-blue-600">Contacto</a>
+            <span class="text-gray-200">|</span>
+            <a href="{{ route('pages.privacidad') }}" class="hover:text-blue-600">Privacidad</a>
         </div>
     </div>
 </footer>

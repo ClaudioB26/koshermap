@@ -127,3 +127,21 @@ Route::get('lang/{locale}', function ($locale) {
     }
     return back();
 })->name('set-locale');
+
+// Páginas informativas (multiidioma vía sesión)
+$infoPages = [
+    'que-es-kosher'   => 'que_es_kosher',
+    'kashrut'         => 'kashrut',
+    'judaismo'        => 'judaismo',
+    'etiqueta-kosher' => 'etiqueta_kosher',
+    'sobre-nosotros'  => 'sobre_nosotros',
+    'contacto'        => 'contacto',
+    'privacidad'      => 'privacidad',
+];
+foreach ($infoPages as $slug => $pageKey) {
+    Route::get("/{$slug}", function () use ($pageKey) {
+        $content = trans("pages.{$pageKey}");
+        abort_if(!is_array($content), 404);
+        return view('pages.show', compact('content'));
+    })->name("pages.{$slug}");
+}
