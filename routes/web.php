@@ -121,7 +121,7 @@ Route::get('/set-country/{slug}', function ($slug) {
 })->name('set-country');
 
 // Set Locale
-Route::get('lang/{locale}', function ($locale) {
+Route::get('set-locale/{locale}', function ($locale) {
     if (in_array($locale, ['en', 'es', 'pt', 'fr', 'he', 'ru'])) {
         Session::put('locale', $locale);
     }
