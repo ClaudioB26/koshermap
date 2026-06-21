@@ -1,5 +1,6 @@
 <?php
 return [
+    'subtitle'    => 'Trouvez des produits et des lieux certifiés cachères',
     'tagline'     => 'Le répertoire mondial des produits et lieux cachères',
     'description' => '<strong>KosherMap</strong> est l\'outil dont la communauté juive avait besoin : un endroit unique pour trouver des produits certifiés cachères et des établissements (restaurants, synagogues, boucheries, supermarchés) dans des villes du monde entier. Que vous soyez à Buenos Aires, Tel Aviv, São Paulo ou Paris, KosherMap vous aide à maintenir votre régime casher où que vous soyez.',
     'stat_products' => '+6 000 produits certifiés',

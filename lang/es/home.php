@@ -1,5 +1,6 @@
 <?php
 return [
+    'subtitle'    => 'Encontrá productos y locales con certificación kosher',
     'tagline'     => 'El directorio global de productos y locales kosher',
     'description' => '<strong>KosherMap</strong> es la herramienta que la comunidad judía necesitaba: un lugar único donde encontrar productos con certificación kosher y locales (restaurantes, sinagogas, carnicerías, supermercados) en ciudades de todo el mundo. Tanto si vivís en Buenos Aires, Tel Aviv, São Paulo o París, KosherMap te ayuda a mantener tu dieta kasher donde sea que estés.',
     'stat_products' => '+6.000 productos certificados',
