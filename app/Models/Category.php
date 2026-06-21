@@ -34,8 +34,13 @@ class Category extends Model
         
         $decoded = json_decode($value, true);
         if (json_last_error() === JSON_ERROR_NONE && is_array($decoded)) {
-             $locale = app()->getLocale();
-             return $decoded[$locale] ?? $decoded['es'] ?? $decoded['en'] ?? $value;
+            $locale = app()->getLocale();
+            return $decoded[$locale] ?? $decoded['es'] ?? $decoded['en'] ?? $value;
+        }
+        $key = 'categories.' . $this->slug;
+        $translated = trans($key);
+        if ($translated !== $key) {
+            return $translated;
         }
         return $value;
     }

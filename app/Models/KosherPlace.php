@@ -112,18 +112,18 @@ class KosherPlace extends Model
     public static function types(): array
     {
         return [
-            'restaurant'    => ['emoji' => '🍽️', 'label' => 'Restaurantes',   'badge' => 'bg-orange-100 text-orange-700'],
-            'bakery'        => ['emoji' => '🥐', 'label' => 'Panaderías',     'badge' => 'bg-yellow-100 text-yellow-700'],
-            'bar'           => ['emoji' => '🍷', 'label' => 'Bares',          'badge' => 'bg-purple-100 text-purple-700'],
-            'confectionery' => ['emoji' => '☕', 'label' => 'Cafeterías',     'badge' => 'bg-pink-100 text-pink-700'],
-            'ice_cream'     => ['emoji' => '🍦', 'label' => 'Heladerías',     'badge' => 'bg-cyan-100 text-cyan-700'],
-            'supermarket'   => ['emoji' => '🛒', 'label' => 'Supermercados',  'badge' => 'bg-lime-100 text-lime-700'],
-            'temple'        => ['emoji' => '🕍', 'label' => 'Sinagogas',      'badge' => 'bg-blue-100 text-blue-700'],
-            'school'        => ['emoji' => '🏫', 'label' => 'Escuelas',       'badge' => 'bg-green-100 text-green-700'],
-            'cemetery'      => ['emoji' => '🪦', 'label' => 'Cementerios',    'badge' => 'bg-stone-100 text-stone-700'],
-            'community'     => ['emoji' => '🏛️', 'label' => 'Comunidades',    'badge' => 'bg-indigo-100 text-indigo-700'],
-            'takeaway'      => ['emoji' => '🥡', 'label' => 'Take Away',      'badge' => 'bg-amber-100 text-amber-700'],
-            'other'         => ['emoji' => '📍', 'label' => 'Otros',          'badge' => 'bg-gray-100 text-gray-600'],
+            'restaurant'    => ['emoji' => '🍽️', 'label' => trans('place_types.restaurant'),   'badge' => 'bg-orange-100 text-orange-700'],
+            'bakery'        => ['emoji' => '🥐', 'label' => trans('place_types.bakery'),        'badge' => 'bg-yellow-100 text-yellow-700'],
+            'bar'           => ['emoji' => '🍷', 'label' => trans('place_types.bar'),           'badge' => 'bg-purple-100 text-purple-700'],
+            'confectionery' => ['emoji' => '☕', 'label' => trans('place_types.confectionery'), 'badge' => 'bg-pink-100 text-pink-700'],
+            'ice_cream'     => ['emoji' => '🍦', 'label' => trans('place_types.ice_cream'),     'badge' => 'bg-cyan-100 text-cyan-700'],
+            'supermarket'   => ['emoji' => '🛒', 'label' => trans('place_types.supermarket'),   'badge' => 'bg-lime-100 text-lime-700'],
+            'temple'        => ['emoji' => '🕍', 'label' => trans('place_types.temple'),        'badge' => 'bg-blue-100 text-blue-700'],
+            'school'        => ['emoji' => '🏫', 'label' => trans('place_types.school'),        'badge' => 'bg-green-100 text-green-700'],
+            'cemetery'      => ['emoji' => '🪦', 'label' => trans('place_types.cemetery'),      'badge' => 'bg-stone-100 text-stone-700'],
+            'community'     => ['emoji' => '🏛️', 'label' => trans('place_types.community'),     'badge' => 'bg-indigo-100 text-indigo-700'],
+            'takeaway'      => ['emoji' => '🥡', 'label' => trans('place_types.takeaway'),      'badge' => 'bg-amber-100 text-amber-700'],
+            'other'         => ['emoji' => '📍', 'label' => trans('place_types.other'),         'badge' => 'bg-gray-100 text-gray-600'],
         ];
     }
 
