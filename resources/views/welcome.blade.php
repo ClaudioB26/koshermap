@@ -68,6 +68,10 @@
                class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full hover:bg-blue-100 transition font-medium">
                 {{ trans('home.learn_kosher') }}
             </a>
+            <a href="{{ route('articles.index') }}"
+               class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full hover:bg-blue-100 transition font-medium">
+                📰 Artículos
+            </a>
             <a href="{{ route('pages.sobre-nosotros') }}"
                class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition font-medium">
                 {{ trans('home.about_us') }}
