@@ -63,19 +63,30 @@
         </div>
 
         {{-- Links a páginas informativas --}}
-        <div class="flex flex-wrap gap-3 text-sm">
+        <div class="flex flex-wrap gap-3 text-sm mb-8">
             <a href="{{ route('pages.que-es-kosher') }}"
                class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full hover:bg-blue-100 transition font-medium">
                 {{ trans('home.learn_kosher') }}
-            </a>
-            <a href="{{ route('articles.index') }}"
-               class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full hover:bg-blue-100 transition font-medium">
-                📰 Artículos
             </a>
             <a href="{{ route('pages.sobre-nosotros') }}"
                class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition font-medium">
                 {{ trans('home.about_us') }}
             </a>
+        </div>
+
+        {{-- Artículos por categoría --}}
+        <h2 class="text-lg font-bold text-gray-800 mb-4">📰 Artículos</h2>
+        <div class="flex flex-wrap gap-2">
+            <a href="{{ route('articles.index') }}"
+               class="px-4 py-2 bg-white border border-gray-200 text-gray-700 rounded-full hover:bg-gray-50 transition font-medium text-sm">
+                Todos
+            </a>
+            @foreach(\App\Http\Controllers\ArticleController::CATEGORY_LABELS as $slug => $label)
+                <a href="{{ route('articles.index', ['category' => $slug]) }}"
+                   class="px-4 py-2 bg-white border border-gray-200 text-gray-700 rounded-full hover:bg-gray-50 transition font-medium text-sm">
+                    {{ $label }}
+                </a>
+            @endforeach
         </div>
     </div>
 </div>

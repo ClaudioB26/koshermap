@@ -3,14 +3,35 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use Illuminate\Http\Request;
 
 class ArticleController extends Controller
 {
-    public function index()
-    {
-        $articles = Article::published()->orderBy('sort_order')->get();
+    public const CATEGORY_LABELS = [
+        'halajot'         => 'Halajot',
+        'kasherizacion'   => 'Kasherización',
+        'festividades'    => 'Festividades',
+        'productos'       => 'Productos',
+        'kashrut-basico'  => 'Kashrut Básico',
+        'vida-diaria'     => 'Vida Diaria',
+    ];
 
-        return view('articles.index', compact('articles'));
+    public function index(Request $request)
+    {
+        $category = $request->input('category');
+
+        $query = Article::published()->orderBy('sort_order');
+        if ($category && isset(self::CATEGORY_LABELS[$category])) {
+            $query->where('category', $category);
+        } else {
+            $category = null;
+        }
+
+        $articles = $query->get();
+        $categories = self::CATEGORY_LABELS;
+        $selectedCategory = $category;
+
+        return view('articles.index', compact('articles', 'categories', 'selectedCategory'));
     }
 
     public function show(string $slug)

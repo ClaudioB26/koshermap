@@ -13,7 +13,7 @@
         <span class="text-gray-700">{{ $article->title }}</span>
     </nav>
 
-    <p class="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-2">{{ $article->category }}</p>
+    <p class="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-2">{{ \App\Http\Controllers\ArticleController::CATEGORY_LABELS[$article->category] ?? $article->category }}</p>
     <h1 class="text-3xl font-bold text-gray-900 mb-4">{{ $article->title }}</h1>
 
     @if(!empty($article->excerpt))
