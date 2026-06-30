@@ -141,6 +141,22 @@
         </div>
         @endif
 
+        {{-- Artículos relacionados a la búsqueda --}}
+        @if(isset($matchingArticles) && $matchingArticles->isNotEmpty())
+        <div class="mb-6">
+            <p class="text-sm font-semibold text-gray-500 mb-2">📰 Artículos relacionados</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                @foreach($matchingArticles as $article)
+                <a href="{{ route('articles.show', $article->slug) }}"
+                   class="block bg-blue-50 hover:bg-blue-100 transition rounded-xl p-4 border border-blue-100">
+                    <p class="font-semibold text-blue-800 text-sm mb-1">{{ $article->title }}</p>
+                    <p class="text-xs text-blue-600 line-clamp-2">{{ $article->excerpt }}</p>
+                </a>
+                @endforeach
+            </div>
+        </div>
+        @endif
+
         {{-- Resultados --}}
         @if($products->count() > 0)
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">

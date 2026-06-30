@@ -219,6 +219,8 @@
         <div class="flex flex-wrap justify-center gap-3 mt-2 text-xs text-gray-400">
             <a href="{{ route('pages.que-es-kosher') }}" class="hover:text-blue-600">¿Qué es Kosher?</a>
             <span class="text-gray-200">|</span>
+            <a href="{{ route('articles.index') }}" class="hover:text-blue-600">Artículos</a>
+            <span class="text-gray-200">|</span>
             <a href="{{ route('pages.kashrut') }}" class="hover:text-blue-600">Kashrut</a>
             <span class="text-gray-200">|</span>
             <a href="{{ route('pages.judaismo') }}" class="hover:text-blue-600">Judaísmo</a>

@@ -145,3 +145,7 @@ foreach ($infoPages as $slug => $pageKey) {
         return view('pages.show', compact('content'));
     })->name("pages.{$slug}");
 }
+
+// Artículos sobre kashrut (tabla articles, multiidioma vía JSON)
+Route::get('/articulos', [\App\Http\Controllers\ArticleController::class, 'index'])->name('articles.index');
+Route::get('/articulos/{slug}', [\App\Http\Controllers\ArticleController::class, 'show'])->name('articles.show');

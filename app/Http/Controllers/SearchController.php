@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
 use App\Models\Brand;
 use App\Models\Category;
 use App\Models\Country;
@@ -124,6 +125,8 @@ class SearchController extends Controller
             $total = $products->total();
         }
 
+        $matchingArticles = $query !== '' ? $this->searchArticles($query) : collect();
+
         // Facetas con conteo para la sidebar de filtros
         $categoryFacets = $this->buildCategoryFacet($baseQuery, $brandSlug, $tipo);
         $brandFacets = $this->buildBrandFacet($baseQuery, $categorySlug, $tipo);
@@ -150,7 +153,20 @@ class SearchController extends Controller
             'tipoFacets' => $tipoFacets,
             'countryFacets' => $countryFacets,
             'tipoLabels' => self::TIPO_LABELS,
+            'matchingArticles' => $matchingArticles,
         ]);
+    }
+
+    private function searchArticles(string $query): Collection
+    {
+        return Article::published()
+            ->where(function ($q) use ($query) {
+                $q->where('title', 'LIKE', "%{$query}%")
+                  ->orWhere('content', 'LIKE', "%{$query}%");
+            })
+            ->orderBy('sort_order')
+            ->limit(6)
+            ->get();
     }
 
     private function applyCategoryFilter($q, ?string $categorySlug): void
