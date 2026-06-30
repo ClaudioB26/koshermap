@@ -62,18 +62,6 @@
             </div>
         </div>
 
-        {{-- Links a páginas informativas --}}
-        <div class="flex flex-wrap gap-3 text-sm mb-8">
-            <a href="{{ route('pages.que-es-kosher') }}"
-               class="px-4 py-2 bg-blue-50 text-blue-700 rounded-full hover:bg-blue-100 transition font-medium">
-                {{ trans('home.learn_kosher') }}
-            </a>
-            <a href="{{ route('pages.sobre-nosotros') }}"
-               class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition font-medium">
-                {{ trans('home.about_us') }}
-            </a>
-        </div>
-
         {{-- Artículos por categoría --}}
         <h2 class="text-lg font-bold text-gray-800 mb-4">📰 Artículos</h2>
         <div class="flex flex-wrap gap-2">
