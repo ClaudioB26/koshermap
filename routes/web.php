@@ -14,6 +14,66 @@ use App\Http\Controllers\AccountController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\ReportController;
 
+// Robots.txt generado por ruta (no depende de servir el archivo estático en el hosting)
+Route::get('/robots.txt', function () {
+    $lines = [
+        'User-agent: *',
+        'Allow: /',
+        '',
+        'User-agent: Googlebot',
+        'Allow: /',
+        '',
+        'User-agent: Googlebot-Image',
+        'Allow: /',
+        '',
+        'User-agent: Bingbot',
+        'Allow: /',
+        '',
+        'User-agent: Slurp',
+        'Allow: /',
+        '',
+        'User-agent: DuckDuckBot',
+        'Allow: /',
+        '',
+        'User-agent: Baiduspider',
+        'Allow: /',
+        '',
+        'User-agent: YandexBot',
+        'Allow: /',
+        '',
+        'User-agent: Applebot',
+        'Allow: /',
+        '',
+        'User-agent: GPTBot',
+        'Allow: /',
+        '',
+        'User-agent: ChatGPT-User',
+        'Allow: /',
+        '',
+        'User-agent: OAI-SearchBot',
+        'Allow: /',
+        '',
+        'User-agent: ClaudeBot',
+        'Allow: /',
+        '',
+        'User-agent: anthropic-ai',
+        'Allow: /',
+        '',
+        'User-agent: Google-Extended',
+        'Allow: /',
+        '',
+        'User-agent: CCBot',
+        'Allow: /',
+        '',
+        'User-agent: PerplexityBot',
+        'Allow: /',
+        '',
+        'Sitemap: https://koshermap.org/sitemap.xml',
+    ];
+
+    return response(implode("\n", $lines), 200)->header('Content-Type', 'text/plain');
+})->name('robots');
+
 // Cambia la ruta '/' que estaba antes por esta:
 Route::get('/', [SearchController::class, 'index'])->name('home');
 // Ruta para ver un producto individual
