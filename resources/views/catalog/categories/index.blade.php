@@ -6,8 +6,10 @@
 @section('content')
     <h1 class="text-3xl font-bold mb-4 text-center text-blue-800">{{ __('Food Categories') }}</h1>
 
-    <div class="max-w-3xl mx-auto mb-8 text-gray-600 text-sm leading-relaxed text-center">
-        <p>KosherMap organiza su catálogo de más de 6.000 productos kosher en rubros y subrubros para facilitar tu búsqueda. Encontrá alimentos certificados por categoría: desde lácteos y carnes hasta panadería, bebidas, snacks y productos de limpieza. Cada categoría muestra el sello de la certificadora (OU, KMD, Ajdut, BDK y otras) para que puedas verificar la kashrut del producto antes de comprarlo.</p>
+    <div class="max-w-3xl mx-auto mb-8 text-gray-600 text-sm leading-relaxed">
+        <p class="mb-3">KosherMap organiza su catálogo de más de 6.000 productos kosher en rubros y subrubros para facilitar tu búsqueda. Encontrá alimentos certificados por categoría: desde lácteos y carnes hasta panadería, bebidas, snacks y productos de limpieza.</p>
+        <p class="mb-3">Cada categoría muestra el sello de la certificadora (OU, KMD, Ajdut, BDK y otras) para que puedas verificar la kashrut del producto antes de comprarlo. Las leyes de kashrut establecen distintas categorías para los alimentos: los productos <strong>parve</strong> (sin carne ni lácteos) pueden consumirse con cualquier comida; los <strong>lácteos</strong> (chalav) no pueden mezclarse con carne; y los productos <strong>cárnicos</strong> (basar) requieren una espera después de los lácteos según la tradición de cada comunidad.</p>
+        <p>Usá los filtros de cada categoría para acotar tu búsqueda por país de origen, marca o certificadora. Si buscás un producto específico, podés usar el buscador por nombre o escanear el código de barras con la cámara de tu dispositivo.</p>
     </div>
     
     <div class="space-y-12">

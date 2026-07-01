@@ -6,8 +6,10 @@
 @section('content')
     <h1 class="text-3xl font-bold mb-4 text-center text-blue-800">{{ __('Kosher Certifiers') }}</h1>
 
-    <div class="max-w-3xl mx-auto mb-8 text-gray-600 text-sm leading-relaxed text-center">
-        <p>Una certificación kosher es el aval de una agencia rabbínica que garantiza que un producto cumple con las leyes de kashrut (alimentación judía). KosherMap incluye productos certificados por las agencias más reconocidas de América Latina, Estados Unidos e Israel: la Orthodox Union (OU), KMD México, Ajdut Kosher Argentina, BDK Brasil, Chile Kosher (CK), Kehila Uruguay y UK Kosher Latinoamérica, entre otras. Hacé click en una certificadora para ver todos sus productos disponibles en el directorio.</p>
+    <div class="max-w-3xl mx-auto mb-8 text-gray-600 text-sm leading-relaxed">
+        <p class="mb-3">Una certificación kosher es el aval de una agencia rabbínica que garantiza que un producto cumple con las leyes de kashrut (alimentación judía). Sin este sello, un producto no puede considerarse kosher aunque sus ingredientes parezcan aceptables, ya que la certificación también implica supervisión del proceso de producción, limpieza de líneas y separación de carne y lácteos.</p>
+        <p class="mb-3">KosherMap incluye productos certificados por las agencias más reconocidas de América Latina, Estados Unidos e Israel: la <strong>Orthodox Union (OU)</strong> —la más grande del mundo, con presencia en supermercados de más de 100 países—, <strong>KMD México</strong>, <strong>Ajdut Kosher Argentina</strong>, <strong>BDK Brasil</strong>, <strong>Chile Kosher (CK)</strong>, <strong>Kehila Uruguay</strong> y <strong>UK Kosher Latinoamérica</strong>, entre otras.</p>
+        <p>Hacé click en una certificadora para ver todos sus productos disponibles en el directorio. Podés filtrar los resultados por categoría de alimento (lácteos, carnes, bebidas, panadería, etc.) para encontrar exactamente lo que necesitás.</p>
     </div>
 
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">

@@ -6,8 +6,10 @@
 @section('content')
     <h1 class="text-3xl font-bold mb-4 text-center text-blue-800">{{ __('Countries with Kosher Products') }}</h1>
 
-    <div class="max-w-3xl mx-auto mb-8 text-gray-600 text-sm leading-relaxed text-center">
-        <p>KosherMap es un directorio global: cubrimos productos con certificación kosher en más de 10 países. Podés seleccionar tu país para ver los productos disponibles en tu región, filtrados por la certificadora local (por ejemplo, Ajdut Kosher en Argentina, BDK en Brasil o KMD en México). También podés explorar el catálogo internacional de productos con sello OU (Orthodox Union), que se consiguen en supermercados de todo el mundo. Seleccioná un país para establecerlo como tu ubicación predeterminada y ver resultados relevantes para vos.</p>
+    <div class="max-w-3xl mx-auto mb-8 text-gray-600 text-sm leading-relaxed">
+        <p class="mb-3">KosherMap es un directorio global: cubrimos productos con certificación kosher en más de 10 países de América, Europa y Medio Oriente. Podés seleccionar tu país para ver los productos disponibles en tu región, filtrados por la certificadora local: <strong>Ajdut Kosher</strong> en Argentina, <strong>BDK</strong> en Brasil, <strong>KMD</strong> en México, <strong>Kehila</strong> en Uruguay, <strong>Chile Kosher</strong> en Chile y los grandes sellos internacionales como <strong>OU</strong> presentes en todos los países.</p>
+        <p class="mb-3">También cubrimos Israel, donde la kashrut está regulada por el Gran Rabinato y tiene características propias (Mehadrin, Badatz, etc.). En Estados Unidos incluimos productos con OU, OK, Star-K y otros sellos ampliamente reconocidos por la comunidad judía ortodoxa y conservadora.</p>
+        <p>Seleccioná un país para establecerlo como tu ubicación predeterminada y ver resultados relevantes para tu región. Esta preferencia se guarda durante un año en tu dispositivo. Podés cambiarla en cualquier momento desde el menú superior.</p>
     </div>
 
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
