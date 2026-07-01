@@ -2,14 +2,16 @@
 
 @section('title', 'KosherMap - Directorio de Productos y Locales Kosher')
 @section('meta_description', 'KosherMap es el directorio global de productos y locales con certificación kosher. Buscá por nombre, escaneá el código de barras, o encontrá restaurantes y sinagogas en tu ciudad.')
+@section('canonical', 'https://koshermap.org/')
 
 @section('content')
 
 {{-- Hero: cuando no hay búsqueda activa --}}
 @if(!isset($query) && !request('country') && !request('category') && !request('certifier') && !request('brand') && !request('tipo'))
 <div class="text-center py-16">
-    <h1 class="text-5xl font-black text-blue-600 mb-3">Kosher<span class="text-gray-800">Map</span></h1>
-    <p class="text-gray-400 text-lg mb-12">{{ trans('home.subtitle') }}</p>
+    <h1 class="text-5xl font-black text-blue-600 mb-1">Kosher<span class="text-gray-800">Map</span></h1>
+    <p class="text-base font-semibold text-gray-500 mb-2">Directorio de Productos y Locales Kosher</p>
+    <p class="text-gray-400 text-base mb-12">{{ trans('home.subtitle') }}</p>
 
     <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
         <button onclick="document.getElementById('query-input').closest('form').requestSubmit()"

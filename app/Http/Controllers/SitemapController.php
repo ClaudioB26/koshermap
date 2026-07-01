@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
 use App\Models\Brand;
 use App\Models\Category;
 use App\Models\Certifier;
@@ -60,12 +61,25 @@ class SitemapController extends Controller
                 Carbon::now()
             );
         }
-        
+
+        // Agregar sitemap de artículos
+        if (class_exists(Article::class) && Article::published()->count() > 0) {
+            $sitemap .= $this->createSitemapEntry(
+                url('/sitemap-articles.xml'),
+                Carbon::now()
+            );
+        }
+
         $sitemap .= '</sitemapindex>';
         
         return response($sitemap, 200)
             ->header('Content-Type', 'application/xml')
             ->header('Cache-Control', 'public, max-age=3600'); // Cache por 1 hora
+    }
+
+    public function articles()
+    {
+        return $this->generateArticlesSitemap();
     }
 
     public function show($type)
@@ -81,8 +95,10 @@ class SitemapController extends Controller
             return $this->generateBrandsSitemap(1);
         } elseif ($type === 'pages') {
             return $this->generatePagesSitemap();
+        } elseif ($type === 'articles') {
+            return $this->generateArticlesSitemap();
         }
-        
+
         abort(404);
     }
     
@@ -221,6 +237,28 @@ class SitemapController extends Controller
             ->header('Cache-Control', 'public, max-age=86400'); // Cache por 1 día
     }
     
+    private function generateArticlesSitemap()
+    {
+        $xml = $this->startSitemap();
+
+        Article::published()->orderBy('sort_order')->chunk(100, function ($articles) use (&$xml) {
+            foreach ($articles as $article) {
+                $xml .= $this->createUrlBlock(
+                    url('/articulos/' . $article->slug),
+                    $article->updated_at->format('Y-m-d'),
+                    '0.7',
+                    'monthly'
+                );
+            }
+        });
+
+        $xml .= '</urlset>';
+
+        return response($xml, 200)
+            ->header('Content-Type', 'application/xml')
+            ->header('Cache-Control', 'public, max-age=86400');
+    }
+
     private function generatePagesSitemap()
     {
         $xml = $this->startSitemap();

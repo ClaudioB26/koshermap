@@ -168,6 +168,7 @@ Route::get('/sitemap-categories-{page}.xml', [App\Http\Controllers\SitemapContro
 Route::get('/sitemap-certifiers-{page}.xml', [App\Http\Controllers\SitemapController::class, 'certifiers'])->name('sitemap.certifiers');
 Route::get('/sitemap-brands-{page}.xml', [App\Http\Controllers\SitemapController::class, 'brands'])->name('sitemap.brands');
 Route::get('/sitemap-pages.xml', [App\Http\Controllers\SitemapController::class, 'pages'])->name('sitemap.pages');
+Route::get('/sitemap-articles.xml', [App\Http\Controllers\SitemapController::class, 'articles'])->name('sitemap.articles');
 
 // Sitemap genérico (menos prioritario)
 Route::get('/sitemap-{type}.xml', [App\Http\Controllers\SitemapController::class, 'show'])->name('sitemap.show');

@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title', 'KosherMap')</title>
     <meta name="description" content="@yield('meta_description', 'KosherMap — Directorio global de productos y locales con certificación kosher. Encontrá restaurantes, sinagogas, panaderías y productos certificados en tu ciudad.')">
-    <link rel="canonical" href="{{ url()->current() }}">
+    <link rel="canonical" href="@yield('canonical', request()->url())">
+    <meta property="og:title" content="@yield('title', 'KosherMap')">
+    <meta property="og:description" content="@yield('meta_description', 'KosherMap — Directorio global de productos y locales con certificación kosher.')">
+    <meta property="og:url" content="@yield('canonical', request()->url())">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="{{ str_replace('-', '_', app()->getLocale()) === 'es' ? 'es_AR' : str_replace('-', '_', app()->getLocale()) }}">
+    <meta name="language" content="{{ app()->getLocale() }}">
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <style>[x-cloak] { display: none !important; }</style>
