@@ -228,11 +228,18 @@ class SitemapController extends Controller
         // Static pages
         $pages = [
             '/' => ['priority' => '1.0', 'changefreq' => 'daily'],
-            '/search' => ['priority' => '0.8', 'changefreq' => 'daily'],
             '/categories' => ['priority' => '0.6', 'changefreq' => 'weekly'],
             '/countries' => ['priority' => '0.6', 'changefreq' => 'weekly'],
             '/certifiers' => ['priority' => '0.6', 'changefreq' => 'weekly'],
             '/brands' => ['priority' => '0.5', 'changefreq' => 'weekly'],
+            '/articulos' => ['priority' => '0.7', 'changefreq' => 'weekly'],
+            '/que-es-kosher' => ['priority' => '0.7', 'changefreq' => 'monthly'],
+            '/kashrut' => ['priority' => '0.6', 'changefreq' => 'monthly'],
+            '/judaismo' => ['priority' => '0.6', 'changefreq' => 'monthly'],
+            '/etiqueta-kosher' => ['priority' => '0.6', 'changefreq' => 'monthly'],
+            '/sobre-nosotros' => ['priority' => '0.5', 'changefreq' => 'monthly'],
+            '/contacto' => ['priority' => '0.5', 'changefreq' => 'monthly'],
+            '/privacidad' => ['priority' => '0.4', 'changefreq' => 'yearly'],
         ];
         
         foreach ($pages as $page => $options) {

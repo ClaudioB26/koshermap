@@ -1,9 +1,14 @@
 @extends('layouts.app')
 
-@section('title', 'Rubros - KosherMap')
+@section('title', 'Rubros de Alimentos Kosher - KosherMap')
+@section('meta_description', 'Explorá todas las categorías de alimentos kosher: lácteos, carnes, bebidas, panadería, snacks y más. Cada rubro incluye productos certificados por las principales agencias kosher del mundo.')
 
 @section('content')
-    <h1 class="text-3xl font-bold mb-8 text-center text-blue-800">{{ __('Food Categories') }}</h1>
+    <h1 class="text-3xl font-bold mb-4 text-center text-blue-800">{{ __('Food Categories') }}</h1>
+
+    <div class="max-w-3xl mx-auto mb-8 text-gray-600 text-sm leading-relaxed text-center">
+        <p>KosherMap organiza su catálogo de más de 6.000 productos kosher en rubros y subrubros para facilitar tu búsqueda. Encontrá alimentos certificados por categoría: desde lácteos y carnes hasta panadería, bebidas, snacks y productos de limpieza. Cada categoría muestra el sello de la certificadora (OU, KMD, Ajdut, BDK y otras) para que puedas verificar la kashrut del producto antes de comprarlo.</p>
+    </div>
     
     <div class="space-y-12">
         @foreach($categories as $category)

@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title', 'KosherMap')</title>
+    <meta name="description" content="@yield('meta_description', 'KosherMap — Directorio global de productos y locales con certificación kosher. Encontrá restaurantes, sinagogas, panaderías y productos certificados en tu ciudad.')">
+    <link rel="canonical" href="{{ url()->current() }}">
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <style>[x-cloak] { display: none !important; }</style>

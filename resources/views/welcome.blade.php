@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'KosherMap - ' . __('Search products'))
+@section('title', 'KosherMap - Directorio de Productos y Locales Kosher')
+@section('meta_description', 'KosherMap es el directorio global de productos y locales con certificación kosher. Buscá por nombre, escaneá el código de barras, o encontrá restaurantes y sinagogas en tu ciudad.')
 
 @section('content')
 

@@ -1,10 +1,15 @@
 @extends('layouts.app')
 
-@section('title', 'Países - KosherMap')
+@section('title', 'Países con Productos Kosher - KosherMap')
+@section('meta_description', 'Directorio de productos y locales kosher por país: Argentina, Brasil, Israel, Estados Unidos, México, Uruguay, Chile, Francia, Alemania y Reino Unido. Seleccioná tu país para ver resultados locales.')
 
 @section('content')
-    <h1 class="text-3xl font-bold mb-6 text-center text-blue-800">{{ __('Countries with Kosher Products') }}</h1>
-    
+    <h1 class="text-3xl font-bold mb-4 text-center text-blue-800">{{ __('Countries with Kosher Products') }}</h1>
+
+    <div class="max-w-3xl mx-auto mb-8 text-gray-600 text-sm leading-relaxed text-center">
+        <p>KosherMap es un directorio global: cubrimos productos con certificación kosher en más de 10 países. Podés seleccionar tu país para ver los productos disponibles en tu región, filtrados por la certificadora local (por ejemplo, Ajdut Kosher en Argentina, BDK en Brasil o KMD en México). También podés explorar el catálogo internacional de productos con sello OU (Orthodox Union), que se consiguen en supermercados de todo el mundo. Seleccioná un país para establecerlo como tu ubicación predeterminada y ver resultados relevantes para vos.</p>
+    </div>
+
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         @foreach($countries as $country)
         <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 text-center border border-gray-100 flex flex-col items-center">
