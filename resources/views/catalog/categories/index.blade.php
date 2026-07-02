@@ -36,4 +36,22 @@
         </div>
         @endforeach
     </div>
+
+    <div class="max-w-3xl mx-auto mt-16">
+        <h2 class="text-xl font-bold text-gray-800 mb-6">Preguntas frecuentes sobre rubros kosher</h2>
+        <div class="space-y-5 text-sm text-gray-600 leading-relaxed">
+            <div>
+                <h3 class="font-semibold text-gray-800 mb-1">¿Qué diferencia hay entre parve, lácteo y cárnico?</h3>
+                <p>La kashrut divide los alimentos en tres grandes grupos. Los productos <strong>parve</strong> no contienen carne ni lácteos (incluyen frutas, verduras, huevos, pescado y la mayoría de los granos) y pueden comerse con cualquier comida. Los productos <strong>lácteos</strong> contienen leche o derivados y no pueden mezclarse con carne ni consumirse juntos según las leyes de kashrut. Los productos <strong>cárnicos</strong> provienen de animales permitidos sacrificados según las reglas de shejitá y requieren una separación temporal de los lácteos que varía entre comunidades (entre 1 y 6 horas).</p>
+            </div>
+            <div>
+                <h3 class="font-semibold text-gray-800 mb-1">¿Puedo confiar en un producto importado sin sello kosher local?</h3>
+                <p>Depende del sello que tenga. Un producto con OU (Orthodox Union), OK Kosher, Star-K o Kof-K es reconocido internacionalmente y aceptado por prácticamente todas las comunidades judías. Si el sello es de una certificadora regional desconocida en tu país, es recomendable consultar con tu rabino o autoridad kosher local antes de consumirlo. KosherMap muestra la certificadora de cada producto para ayudarte a tomar esa decisión.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold text-gray-800 mb-1">¿Los productos de limpieza o cosméticos necesitan certificación kosher?</h3>
+                <p>En general, los productos no comestibles no requieren certificación kosher para uso cotidiano. Sin embargo, algunos productos que entran en contacto con la boca (pasta de dientes, enjuague bucal, lápiz labial) o que se usan en la preparación de alimentos (jabón de manos, detergente) pueden necesitar supervisión, especialmente durante Pesaj, cuando las restricciones son más estrictas. Consultá con tu autoridad rabbínica si tenés dudas específicas.</p>
+            </div>
+        </div>
+    </div>
 @endsection

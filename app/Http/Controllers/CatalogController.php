@@ -127,8 +127,8 @@ class CatalogController extends Controller
         $brands = Brand::withCount('products')
             ->orderBy('products_count', 'desc')
             ->orderBy('name')
-            ->paginate(50);
-            
+            ->paginate(24);
+
         return view('catalog.brands.index', compact('brands'));
     }
 

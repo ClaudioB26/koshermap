@@ -9,8 +9,10 @@
 {{-- Hero: cuando no hay búsqueda activa --}}
 @if(!isset($query) && !request('country') && !request('category') && !request('certifier') && !request('brand') && !request('tipo'))
 <div class="text-center py-16">
-    <h1 class="text-5xl font-black text-blue-600 mb-1">Kosher<span class="text-gray-800">Map</span></h1>
-    <p class="text-base font-semibold text-gray-500 mb-2">Directorio de Productos y Locales Kosher</p>
+    <h1 class="mb-3">
+        <span class="block text-5xl font-black text-blue-600">Kosher<span class="text-gray-800">Map</span></span>
+        <span class="block text-lg font-semibold text-gray-500 mt-1">Directorio de Productos y Locales Kosher</span>
+    </h1>
     <p class="text-gray-400 text-base mb-12">{{ trans('home.subtitle') }}</p>
 
     <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
