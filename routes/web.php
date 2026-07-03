@@ -19,6 +19,7 @@ Route::get('/robots.txt', function () {
     $lines = [
         'User-agent: *',
         'Allow: /',
+        'Disallow: /lang/',
         '',
         'User-agent: Googlebot',
         'Allow: /',
@@ -188,6 +189,14 @@ Route::get('set-locale/{locale}', function ($locale) {
     }
     return back();
 })->name('set-locale');
+
+// Redirect legacy /lang/{locale} URLs (indexed by Google before route rename)
+Route::get('lang/{locale}', function ($locale) {
+    if (in_array($locale, ['en', 'es', 'pt', 'fr', 'he', 'ru'])) {
+        Session::put('locale', $locale);
+    }
+    return redirect('/', 301);
+});
 
 // Páginas informativas (multiidioma vía sesión)
 $infoPages = [

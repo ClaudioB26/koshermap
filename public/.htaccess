@@ -6,7 +6,8 @@
     RewriteEngine On
 
     # Redirect old /lang/{locale} routes to /set-locale/{locale} (301 permanent)
-    RewriteRule ^lang/(en|es|pt|fr|he|ru)/?$ /set-locale/$1 [R=301,L]
+    RewriteCond %{REQUEST_URI} ^/lang/(en|es|pt|fr|he|ru)(/?)$
+    RewriteRule .* /set-locale/%1 [R=301,L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
