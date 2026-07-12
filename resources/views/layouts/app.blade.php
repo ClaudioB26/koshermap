@@ -44,6 +44,11 @@
 
             <!-- Primary Nav (desktop) -->
             <nav class="hidden md:flex items-center gap-1 shrink-0">
+                <a href="{{ route('articles.index') }}"
+                   class="px-3 py-1.5 rounded-lg text-sm font-semibold transition
+                          {{ request()->routeIs('articles.*') ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-gray-100' }}">
+                    📰 Artículos
+                </a>
                 <a href="{{ route('home') }}"
                    class="px-3 py-1.5 rounded-lg text-sm font-semibold transition
                           {{ request()->routeIs('home') || request()->routeIs('products.*') || request()->routeIs('categories.*') || request()->routeIs('certifiers.*') || request()->routeIs('brands.*') ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-gray-100' }}">
@@ -169,6 +174,11 @@
 
         <!-- Mobile Nav -->
         <nav class="md:hidden flex gap-2 mt-2 overflow-x-auto pb-1 -mx-1 px-1">
+            <a href="{{ route('articles.index') }}"
+               class="px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap
+                      {{ request()->routeIs('articles.*') ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-600' }}">
+                📰 Artículos
+            </a>
             <a href="{{ route('home') }}"
                class="px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap
                       {{ request()->routeIs('home') || request()->routeIs('products.*') ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-600' }}">
