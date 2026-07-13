@@ -250,6 +250,8 @@
             <a href="{{ route('pages.contacto') }}" class="hover:text-blue-600">Contacto</a>
             <span class="text-gray-200">|</span>
             <a href="{{ route('pages.privacidad') }}" class="hover:text-blue-600">Privacidad</a>
+            <span class="text-gray-200">|</span>
+            <a href="{{ route('pages.terminos') }}" class="hover:text-blue-600">Términos de Uso</a>
         </div>
     </div>
 </footer>

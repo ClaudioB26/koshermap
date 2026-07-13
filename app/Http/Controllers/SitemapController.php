@@ -278,6 +278,7 @@ class SitemapController extends Controller
             '/sobre-nosotros' => ['priority' => '0.5', 'changefreq' => 'monthly'],
             '/contacto' => ['priority' => '0.5', 'changefreq' => 'monthly'],
             '/privacidad' => ['priority' => '0.4', 'changefreq' => 'yearly'],
+            '/terminos'   => ['priority' => '0.4', 'changefreq' => 'yearly'],
         ];
         
         foreach ($pages as $page => $options) {

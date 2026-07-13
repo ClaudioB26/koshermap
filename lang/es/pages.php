@@ -284,7 +284,7 @@ return [
             ],
             [
                 'title' => 'Tecnología y Datos',
-                'body'  => '<p>KosherMap utiliza tecnología moderna para mantener la información actualizada. Los lugares son verificados periódicamente mediante scraping de Google Maps, y los productos son actualizados desde fuentes oficiales de las agencias certificadoras.</p>
+                'body'  => '<p>KosherMap utiliza tecnología moderna para mantener la información actualizada. Los lugares son verificados periódicamente a través de fuentes públicas y nuestra comunidad de moderadores, y los productos son actualizados desde fuentes oficiales de las agencias certificadoras.</p>
 <p>Nuestro compromiso es ofrecer información <strong>precisa, actualizada y confiable</strong>, aunque siempre recomendamos confirmar el estatus kosher de cualquier establecimiento directamente antes de visitarlo, ya que las situaciones pueden cambiar.</p>',
             ],
         ],
@@ -356,6 +356,43 @@ return [
             [
                 'title' => 'Cambios a esta Política',
                 'body'  => '<p>Podemos actualizar esta política de privacidad periódicamente. Te notificaremos de cambios significativos publicando la nueva versión en esta página. La fecha de última actualización es <strong>junio de 2026</strong>.</p>',
+            ],
+        ],
+    ],
+
+    'terminos' => [
+        'title'       => 'Términos de Uso',
+        'description' => 'Términos y condiciones de uso de KosherMap: acceso al sitio, responsabilidad de la información, propiedad intelectual y limitaciones.',
+        'intro'       => 'Al acceder y usar <strong>KosherMap</strong> (koshermap.org) aceptás los siguientes términos y condiciones. Si no estás de acuerdo con alguno de ellos, te pedimos que no uses el sitio.',
+        'sections'    => [
+            [
+                'title' => 'Uso del Sitio',
+                'body'  => '<p>KosherMap es un directorio informativo de productos y lugares kosher. El sitio puede ser usado de forma gratuita para búsquedas personales, consultas sobre certificaciones y localización de comercios.</p>
+<p>Queda prohibido usar KosherMap para:</p>
+<ul>
+  <li>Reproducir o distribuir el contenido del sitio con fines comerciales sin autorización escrita.</li>
+  <li>Realizar scraping automatizado masivo del directorio de productos o lugares.</li>
+  <li>Publicar información falsa o engañosa sobre productos o establecimientos.</li>
+</ul>',
+            ],
+            [
+                'title' => 'Exactitud de la Información',
+                'body'  => '<p>KosherMap hace su mejor esfuerzo para mantener la información actualizada y precisa. Sin embargo, <strong>no garantizamos la exactitud, completitud o vigencia</strong> de los datos sobre productos, certificaciones o establecimientos.</p>
+<p>El estatus kosher de un producto o local puede cambiar. Siempre recomendamos confirmar directamente con el establecimiento o la certificadora antes de tomar decisiones alimentarias.</p>',
+            ],
+            [
+                'title' => 'Propiedad Intelectual',
+                'body'  => '<p>El diseño, los textos editoriales y el código de KosherMap son propiedad de sus creadores. Los datos de productos y certificaciones provienen de fuentes oficiales de las agencias certificadoras.</p>
+<p>Si encontrás contenido tuyo que considerás que está siendo usado incorrectamente, contactanos a <a href="mailto:info@koshermap.org" class="text-blue-600 hover:underline">info@koshermap.org</a>.</p>',
+            ],
+            [
+                'title' => 'Limitación de Responsabilidad',
+                'body'  => '<p>KosherMap no se hace responsable por daños directos o indirectos derivados del uso de la información publicada en el sitio, incluyendo decisiones alimentarias o religiosas basadas en los datos aquí listados.</p>',
+            ],
+            [
+                'title' => 'Modificaciones',
+                'body'  => '<p>Nos reservamos el derecho de modificar estos términos en cualquier momento. Los cambios entran en vigencia al ser publicados en esta página. La versión actual fue actualizada en <strong>julio de 2026</strong>.</p>
+<p>Para consultas sobre estos términos, escribinos a <a href="mailto:info@koshermap.org" class="text-blue-600 hover:underline">info@koshermap.org</a>.</p>',
             ],
         ],
     ],

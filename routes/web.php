@@ -207,6 +207,7 @@ $infoPages = [
     'sobre-nosotros'  => 'sobre_nosotros',
     'contacto'        => 'contacto',
     'privacidad'      => 'privacidad',
+    'terminos'        => 'terminos',
 ];
 foreach ($infoPages as $slug => $pageKey) {
     Route::get("/{$slug}", function () use ($pageKey) {
