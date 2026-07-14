@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Article;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class ArticleSeeder extends Seeder
 {
@@ -444,13 +445,23 @@ class ArticleSeeder extends Seeder
         ];
 
         foreach ($articles as $i => $data) {
+            $existing = DB::table('articles')->where('slug', $data['slug'])->first();
+
+            $title = $existing ? (json_decode($existing->title, true) ?: []) : [];
+            $excerpt = $existing ? (json_decode($existing->excerpt, true) ?: []) : [];
+            $content = $existing ? (json_decode($existing->content, true) ?: []) : [];
+
+            $title['es'] = $data['title'];
+            $excerpt['es'] = $data['excerpt'];
+            $content['es'] = $data['content'];
+
             Article::updateOrCreate(
                 ['slug' => $data['slug']],
                 [
                     'category' => $data['category'],
-                    'title' => ['es' => $data['title']],
-                    'excerpt' => ['es' => $data['excerpt']],
-                    'content' => ['es' => $data['content']],
+                    'title' => $title,
+                    'excerpt' => $excerpt,
+                    'content' => $content,
                     'sort_order' => $i + 1,
                     'is_published' => true,
                 ]
