@@ -145,7 +145,7 @@
                             <label class="block text-xs font-medium text-gray-600 mb-1">
                                 {{ __('Comment') }}
                             </label>
-                            <textarea name="content" rows="3"
+                            <textarea name="content" rows="5"
                                       placeholder="{{ __('Write your opinion...') }}"
                                       class="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg
                                              focus:ring-2 focus:ring-blue-500 outline-none bg-white resize-none">{{ old('content') }}</textarea>
@@ -226,7 +226,7 @@
 
     {{-- Artículos relacionados: sidebar desktop --}}
     @if($relatedArticles->isNotEmpty())
-    <aside class="hidden lg:block lg:w-80 shrink-0">
+    <aside class="hidden lg:block lg:w-[26rem] shrink-0">
         <div class="sticky top-20 bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
             <h2 class="text-lg font-bold text-gray-800 mb-4">📰 Te puede interesar</h2>
             <div class="flex flex-col gap-3">
