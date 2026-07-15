@@ -25,19 +25,14 @@ class SitemapController extends Controller
         );
         
         // Calcular cantidad de páginas para cada tipo
-        $productPages = ceil(Product::active()->count() / 1000);
         $categoryPages = ceil(Category::count() / 500);
         $certifierPages = ceil(Certifier::count() / 100);
-        $brandPages = ceil(Brand::whereNotNull('slug')->where('slug', '!=', '')->count() / 500);
-        
-        // Agregar sitemaps de productos
-        for ($page = 1; $page <= $productPages; $page++) {
-            $sitemap .= $this->createSitemapEntry(
-                url("/sitemap-products-{$page}.xml"),
-                Carbon::now()
-            );
-        }
-        
+
+        // Nota: los sitemaps de productos y marcas quedan deliberadamente fuera
+        // del índice porque esas páginas están marcadas noindex (contenido
+        // demasiado fino para AdSense). Los controladores siguen existiendo
+        // por si se decide reactivarlos más adelante.
+
         // Agregar sitemaps de categorías
         for ($page = 1; $page <= $categoryPages; $page++) {
             $sitemap .= $this->createSitemapEntry(
@@ -45,19 +40,11 @@ class SitemapController extends Controller
                 Carbon::now()
             );
         }
-        
+
         // Agregar sitemaps de certificadores
         for ($page = 1; $page <= $certifierPages; $page++) {
             $sitemap .= $this->createSitemapEntry(
                 url("/sitemap-certifiers-{$page}.xml"),
-                Carbon::now()
-            );
-        }
-        
-        // Agregar sitemaps de marcas
-        for ($page = 1; $page <= $brandPages; $page++) {
-            $sitemap .= $this->createSitemapEntry(
-                url("/sitemap-brands-{$page}.xml"),
                 Carbon::now()
             );
         }

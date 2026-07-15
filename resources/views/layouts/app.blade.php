@@ -6,6 +6,7 @@
     <title>@yield('title', 'KosherMap')</title>
     <meta name="description" content="@yield('meta_description', 'KosherMap — Directorio global de productos y locales con certificación kosher. Encontrá restaurantes, sinagogas, panaderías y productos certificados en tu ciudad.')">
     <link rel="canonical" href="@yield('canonical', request()->url())">
+    <meta name="robots" content="@yield('robots', 'index, follow')">
     <meta property="og:title" content="@yield('title', 'KosherMap')">
     <meta property="og:description" content="@yield('meta_description', 'KosherMap — Directorio global de productos y locales con certificación kosher.')">
     <meta property="og:url" content="@yield('canonical', request()->url())">

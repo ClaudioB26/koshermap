@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', $product->name . ' - KosherMap')
+@section('robots', 'noindex, follow')
 
 @section('content')
 

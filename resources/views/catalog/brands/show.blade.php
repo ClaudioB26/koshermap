@@ -2,6 +2,7 @@
 
 @section('title', $brand->name . ' - Productos Kosher - KosherMap')
 @section('meta_description', 'Productos kosher de ' . $brand->name . ' disponibles en KosherMap. Verificá la certificación, el tipo (parve, lácteo, cárnico) y encontrá dónde conseguirlos.')
+@section('robots', 'noindex, follow')
 
 @section('content')
     <div class="flex justify-between items-center mb-6">
