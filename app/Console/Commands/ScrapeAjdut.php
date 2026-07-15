@@ -59,14 +59,33 @@ class ScrapeAjdut extends Command
         }
 
         $url = 'https://kosher.org.ar/api/products.php';
+        $categoriasUrl = 'https://kosher.org.ar/api/categorias.php';
+
+        $httpHeaders = [
+            'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Referer' => 'https://kosher.org.ar/',
+        ];
+
+        // Ajdut publica su propio sitio armando la lista SOLO con los rubros que
+        // aparecen en categorias.php. Los productos con un rubroId que no está ahí
+        // (ej: listas de Pesaj del año que viene, todavía no liberadas) existen en
+        // products.php pero Ajdut no los muestra públicamente. Replicamos ese mismo
+        // filtro acá para no importar productos que la certificadora no publica.
+        $this->info("Fetching valid rubros from {$categoriasUrl}...");
+        $categoriasResponse = Http::withoutVerifying()->withHeaders($httpHeaders)->get($categoriasUrl);
+        $validRubroIds = $categoriasResponse->successful()
+            ? collect($categoriasResponse->json())->pluck('id')->map(fn ($id) => (string) $id)->all()
+            : [];
+
+        if (empty($validRubroIds)) {
+            $this->warn('No se pudo obtener la lista de rubros válidos; se procesarán todos los productos sin filtrar por rubro.');
+        }
+
         $this->info("Fetching products from {$url}...");
 
         try {
             $response = Http::withoutVerifying()
-                ->withHeaders([
-                    'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-                    'Referer' => 'https://kosher.org.ar/',
-                ])
+                ->withHeaders($httpHeaders)
                 ->get($url);
 
             if (!$response->successful()) {
@@ -75,6 +94,18 @@ class ScrapeAjdut extends Command
             }
 
             $products = $response->json();
+
+            if (!empty($validRubroIds)) {
+                $beforeCount = count($products);
+                $products = array_values(array_filter($products, function ($item) use ($validRubroIds) {
+                    return in_array((string) ($item['rubroId'] ?? ''), $validRubroIds, true);
+                }));
+                $skipped = $beforeCount - count($products);
+                if ($skipped > 0) {
+                    $this->info("Descartados {$skipped} productos con rubro no publicado por Ajdut (ej: listas futuras de Pesaj).");
+                }
+            }
+
             $total = count($products);
             $this->info("Found {$total} products.");
 
@@ -137,13 +168,12 @@ class ScrapeAjdut extends Command
                          $imageUrl = 'https://kosher.org.ar/images/' . $item['imagen'];
                     }
 
-                    // Description from AJDUT
+                    // Description pública: solo datos reales de cara al usuario.
+                    // El "rubro" es metadata interna de Ajdut (y a veces trae notas
+                    // internas tipo "NOPUBLICAR"), así que no se muestra en el sitio.
                     $description = '';
                     if (!empty($item['sintacc']) && $item['sintacc'] === 'Si') {
-                        $description .= "Sin TACC. ";
-                    }
-                    if (!empty($item['rubro'])) {
-                        $description .= "Rubro: " . $item['rubro'];
+                        $description = 'Sin gluten (sin TACC).';
                     }
 
                     // Disparar job inteligente para buscar barcode e imagen en OFF
