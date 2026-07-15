@@ -11,6 +11,7 @@ use App\Models\Certifier;
 use App\Models\Product;
 use App\Models\Brand;
 use App\Models\KosherPlace;
+use App\Services\RelatedArticlesService;
 
 class CatalogController extends Controller
 {
@@ -45,7 +46,7 @@ class CatalogController extends Controller
         return view('catalog.countries.index', compact('countries'));
     }
 
-    public function country(Request $request, $slug)
+    public function country(Request $request, $slug, RelatedArticlesService $relatedArticlesService)
     {
         $country = Country::where('slug', $slug)->firstOrFail();
 
@@ -80,8 +81,10 @@ class CatalogController extends Controller
             ->orderBy('total', 'desc')
             ->pluck('total', 'place_type');
 
+        $relatedArticles = $relatedArticlesService->forCountry();
+
         return view('catalog.countries.show', compact(
-            'country', 'products', 'certifiers', 'places', 'placeTypes', 'placeType'
+            'country', 'products', 'certifiers', 'places', 'placeTypes', 'placeType', 'relatedArticles'
         ));
     }
 
@@ -95,7 +98,7 @@ class CatalogController extends Controller
         return view('catalog.certifiers.index', compact('certifiers'));
     }
 
-    public function certifier(Request $request, $slug)
+    public function certifier(Request $request, $slug, RelatedArticlesService $relatedArticlesService)
     {
         $certifier = Certifier::where('slug', $slug)->firstOrFail();
         
@@ -119,9 +122,11 @@ class CatalogController extends Controller
             $q->where('certifier_id', $certifier->id);
         })->with('parent')->get()->sortBy('name');
 
-        return view('catalog.certifiers.show', compact('certifier', 'products', 'categories', 'category'));
+        $relatedArticles = $relatedArticlesService->forCertifier();
+
+        return view('catalog.certifiers.show', compact('certifier', 'products', 'categories', 'category', 'relatedArticles'));
     }
-    
+
     public function brands()
     {
         $brands = Brand::withCount('products')
@@ -132,7 +137,7 @@ class CatalogController extends Controller
         return view('catalog.brands.index', compact('brands'));
     }
 
-    public function brand($slug)
+    public function brand($slug, RelatedArticlesService $relatedArticlesService)
     {
         $brand = Brand::where('slug', $slug)->firstOrFail();
 
@@ -142,7 +147,9 @@ class CatalogController extends Controller
             ->orderBy('name')
             ->paginate(20);
 
-        return view('catalog.brands.show', compact('brand', 'products'));
+        $relatedArticles = $relatedArticlesService->forBrand($brand);
+
+        return view('catalog.brands.show', compact('brand', 'products', 'relatedArticles'));
     }
 
     public function placesIndex(Request $request)

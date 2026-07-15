@@ -40,6 +40,9 @@
     </a>
 </div>
 
+<div class="flex flex-col lg:flex-row gap-6">
+<div class="flex-1 min-w-0">
+
 {{-- TAB: PRODUCTOS --}}
 @if($tab === 'productos')
 
@@ -191,5 +194,20 @@
     @endif
 
 @endif
+
+</div>
+
+@if($relatedArticles->isNotEmpty())
+<aside class="hidden lg:block lg:w-[26rem] shrink-0">
+    <div class="sticky top-20">
+        @include('partials.related_articles_sidebar')
+    </div>
+</aside>
+@endif
+</div>
+
+<div class="lg:hidden mt-6">
+    @include('partials.related_articles_sidebar')
+</div>
 
 @endsection
