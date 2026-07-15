@@ -99,12 +99,24 @@ class ProductController extends Controller
         return view('products.show', compact('product', 'relatedArticles'));
     }
 
+    private const RELATED_ARTICLES_COUNT = 4;
+
+    // Relleno genérico para completar hasta RELATED_ARTICLES_COUNT cuando la
+    // categoría/tipo del producto no alcanza para tantos artículos específicos.
+    private const FILLER_ARTICLES = [
+        'como-leer-etiqueta-kosher',
+        'certificaciones-kosher-mundo',
+        'que-significa-pareve',
+        'errores-comunes-empezar-comer-kosher',
+    ];
+
     private function relatedArticles(Product $product): Collection
     {
         $slugs = [];
+        $limit = self::RELATED_ARTICLES_COUNT;
 
         $category = $product->category;
-        while ($category && count($slugs) < 3) {
+        while ($category && count($slugs) < $limit) {
             foreach (self::CATEGORY_ARTICLES[$category->slug] ?? [] as $articleSlug) {
                 if (!in_array($articleSlug, $slugs, true)) {
                     $slugs[] = $articleSlug;
@@ -113,15 +125,22 @@ class ProductController extends Controller
             $category = $category->parent;
         }
 
-        if (empty($slugs)) {
-            $slugs = self::KOSHER_STATUS_ARTICLES[$product->kosher_status] ?? [];
+        if (count($slugs) < $limit) {
+            foreach (self::KOSHER_STATUS_ARTICLES[$product->kosher_status] ?? [] as $articleSlug) {
+                if (!in_array($articleSlug, $slugs, true)) {
+                    $slugs[] = $articleSlug;
+                }
+            }
         }
 
-        if (empty($slugs)) {
-            $slugs = ['como-leer-etiqueta-kosher'];
+        foreach (self::FILLER_ARTICLES as $articleSlug) {
+            if (count($slugs) >= $limit) break;
+            if (!in_array($articleSlug, $slugs, true)) {
+                $slugs[] = $articleSlug;
+            }
         }
 
-        $slugs = array_slice($slugs, 0, 3);
+        $slugs = array_slice($slugs, 0, $limit);
 
         $articles = Article::published()->whereIn('slug', $slugs)->get()->keyBy('slug');
 
