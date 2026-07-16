@@ -304,6 +304,17 @@ class HumanValueLayerService
      */
     public function saveHumanContent(Product $product)
     {
+        // Deshabilitado a propósito (julio 2026): este método escribe reseñas de
+        // "expertos" y "retroalimentación comunitaria" inventadas (mirá
+        // generateExpertReview()/generateCommunityFeedback() más abajo: son las
+        // mismas frases fijas para cualquier producto, no vienen de datos reales).
+        // Google lo detectó como contenido de bajo valor / reseñas fabricadas y
+        // bloqueó la aprobación de AdSense. Ya se limpiaron ~420 productos
+        // afectados en producción. No reactives esto sin cambiar la lógica para
+        // usar información real en vez de plantillas fijas.
+        Log::warning("saveHumanContent() está deshabilitado a propósito, no se generó contenido para: {$product->name}");
+        return [];
+
         $content = $this->generateHumanContent($product);
         
         // Aquí podrías guardar en una tabla específica de human_content
@@ -359,6 +370,10 @@ class HumanValueLayerService
      */
     public function generateBatchContent($limit = 50)
     {
+        // Deshabilitado a propósito (julio 2026): ver comentario en saveHumanContent().
+        Log::warning('generateBatchContent() está deshabilitado a propósito, no se generó nada.');
+        return 0;
+
         $products = Product::whereNull('description')
             ->orWhere('description', 'LIKE', '%Producto importado%')
             ->limit($limit)

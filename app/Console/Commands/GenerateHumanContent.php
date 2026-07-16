@@ -13,6 +13,16 @@ class GenerateHumanContent extends Command
 
     public function handle()
     {
+        // Deshabilitado a propósito (julio 2026): este comando escribía reseñas de
+        // "expertos" y "retroalimentación comunitaria" inventadas, iguales para
+        // cualquier producto, en el campo description. Google lo detectó como
+        // contenido de bajo valor / reseñas fabricadas y bloqueó la aprobación de
+        // AdSense. Ya se limpiaron ~420 productos afectados en producción.
+        // No lo reactives sin antes cambiar la lógica para que use información
+        // real (no plantillas fijas de HumanValueLayerService).
+        $this->error('Comando deshabilitado: generaba reseñas falsas detectadas por Google como contenido de bajo valor. Ver comentario en el código para más detalle.');
+        return;
+
         $this->info('=== GENERADOR DE CONTENIDO HUMANO ===');
         
         $humanService = new HumanValueLayerService();
