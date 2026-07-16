@@ -37,7 +37,10 @@
             {!! trans('home.description') !!}
         </p>
 
-        {{-- Stats --}}
+        {{-- Stats: sacadas por ahora (jul 2026) — números grandes tipo "+6.000 productos"
+             chocan con el reencuadre de la home como recurso de kashrut en vez de
+             directorio comercial masivo. Se pueden reactivar más adelante. --}}
+        {{--
         <div class="flex flex-wrap justify-center gap-8 mb-10 text-center">
             <div>
                 <p class="text-2xl font-black text-blue-600">{{ trans('home.stat_products') }}</p>
@@ -49,6 +52,7 @@
                 <p class="text-2xl font-black text-blue-600">{{ trans('home.stat_langs') }}</p>
             </div>
         </div>
+        --}}
 
         {{-- Feature cards --}}
         <h2 class="text-lg font-bold text-gray-800 mb-4">{{ trans('home.features_title') }}</h2>
