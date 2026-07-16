@@ -52,11 +52,12 @@
 
         {{-- Feature cards --}}
         <h2 class="text-lg font-bold text-gray-800 mb-4">{{ trans('home.features_title') }}</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
-            <div class="bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+            <a href="{{ route('articles.index') }}"
+               class="bg-white border border-gray-100 rounded-xl p-4 shadow-sm hover:shadow-md hover:border-blue-200 transition">
                 <p class="font-semibold text-gray-800 mb-1">{{ trans('home.feature_1_title') }}</p>
                 <p class="text-sm text-gray-500">{{ trans('home.feature_1_body') }}</p>
-            </div>
+            </a>
             <div class="bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
                 <p class="font-semibold text-gray-800 mb-1">{{ trans('home.feature_2_title') }}</p>
                 <p class="text-sm text-gray-500">{{ trans('home.feature_2_body') }}</p>
@@ -64,6 +65,10 @@
             <div class="bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
                 <p class="font-semibold text-gray-800 mb-1">{{ trans('home.feature_3_title') }}</p>
                 <p class="text-sm text-gray-500">{{ trans('home.feature_3_body') }}</p>
+            </div>
+            <div class="bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
+                <p class="font-semibold text-gray-800 mb-1">{{ trans('home.feature_4_title') }}</p>
+                <p class="text-sm text-gray-500">{{ trans('home.feature_4_body') }}</p>
             </div>
         </div>
 
