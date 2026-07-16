@@ -2,7 +2,7 @@
 return [
     'subtitle'    => 'Encontrá productos y locales con certificación kosher',
     'tagline'     => 'El directorio global de productos y locales kosher',
-    'description' => 'Las leyes de kashrut generan dudas todo el tiempo: si un producto lleva el sello correcto, si dos alimentos se pueden combinar, si tal certificadora es confiable en tu país. <strong>KosherMap</strong> nació para resolver esas dudas con artículos explicados en criollo, y además reunir en un solo lugar un directorio con miles de productos certificados y locales kosher (restaurantes, sinagogas, carnicerías, supermercados) en ciudades de todo el mundo. Vivas en Buenos Aires, Tel Aviv, São Paulo o París, acá encontrás tanto las respuestas como los lugares.',
+    'description' => 'Las leyes de kashrut generan dudas todo el tiempo: si un producto lleva el sello correcto, si dos alimentos se pueden combinar, si tal certificadora es confiable en tu país. <strong>KosherMap</strong> nació para resolver esas dudas con artículos explicados en un lenguaje simple y directo, y además reunir en un solo lugar un directorio con miles de productos certificados y locales kosher (restaurantes, sinagogas, carnicerías, supermercados) en ciudades de todo el mundo. Vivas en Buenos Aires, Tel Aviv, São Paulo o París, acá encontrás tanto las respuestas como los lugares.',
     'stat_products' => '+6.000 productos certificados',
     'stat_places'   => 'Locales en 20 países',
     'stat_langs'    => '6 idiomas',
