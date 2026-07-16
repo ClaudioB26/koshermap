@@ -11,11 +11,11 @@
 <div class="text-center py-16">
     <h1 class="mb-3">
         <span class="block text-5xl font-black text-blue-600">Kosher<span class="text-gray-800">Map</span></span>
-        <span class="block text-lg font-semibold text-gray-500 mt-1">Directorio de Productos y Locales Kosher</span>
+        <span class="block text-lg font-semibold text-gray-500 mt-1">Directorio de Productos, Locales y Artículos sobre Kashrut</span>
     </h1>
     <p class="text-gray-400 text-base mb-12">{{ trans('home.subtitle') }}</p>
 
-    <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+    <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
         <button onclick="document.getElementById('query-input').closest('form').requestSubmit()"
                 class="flex-1 flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-700
                        text-white font-bold py-5 px-6 rounded-2xl shadow-lg transition text-base">
@@ -25,6 +25,11 @@
            class="flex-1 flex items-center justify-center gap-3 bg-white hover:bg-gray-50
                   text-gray-800 font-bold py-5 px-6 rounded-2xl shadow-lg border border-gray-200 transition text-base">
             📍 <span>Encontrar local</span>
+        </a>
+        <a href="{{ route('articles.index') }}"
+           class="flex-1 flex items-center justify-center gap-3 bg-white hover:bg-gray-50
+                  text-gray-800 font-bold py-5 px-6 rounded-2xl shadow-lg border border-gray-200 transition text-base">
+            📰 <span>Artículos</span>
         </a>
     </div>
 
