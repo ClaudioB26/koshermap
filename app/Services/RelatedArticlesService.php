@@ -111,6 +111,13 @@ class RelatedArticlesService
         'armar-cocina-kosher',
     ];
 
+    private const PLACES_ARTICLES = [
+        'comer-kosher-restaurante',
+        'certificaciones-kosher-mundo',
+        'calendario-judio-festividades-alimentacion',
+        'errores-comunes-empezar-comer-kosher',
+    ];
+
     private const BRAND_FALLBACK_ARTICLES = [
         'como-leer-etiqueta-kosher',
         'simbolos-certificacion-kosher',
@@ -167,6 +174,11 @@ class RelatedArticlesService
     public function forCountry(): Collection
     {
         return $this->resolve(self::COUNTRY_ARTICLES);
+    }
+
+    public function forPlaces(): Collection
+    {
+        return $this->resolve(self::PLACES_ARTICLES);
     }
 
     private function appendUnique(array &$slugs, array $candidates): void

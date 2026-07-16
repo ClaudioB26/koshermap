@@ -152,7 +152,7 @@ class CatalogController extends Controller
         return view('catalog.brands.show', compact('brand', 'products', 'relatedArticles'));
     }
 
-    public function placesIndex(Request $request)
+    public function placesIndex(Request $request, RelatedArticlesService $relatedArticlesService)
     {
         $query       = $request->input('query');
         $countrySlug = $request->input('country');
@@ -205,8 +205,10 @@ class CatalogController extends Controller
 
         $places = $placesQuery->orderBy('google_rating', 'desc')->paginate(24)->withQueryString();
 
+        $relatedArticles = $relatedArticlesService->forPlaces();
+
         return view('places.index', compact(
-            'places', 'countries', 'placeTypes', 'placeType', 'query', 'countrySlug', 'orientation'
+            'places', 'countries', 'placeTypes', 'placeType', 'query', 'countrySlug', 'orientation', 'relatedArticles'
         ));
     }
 }

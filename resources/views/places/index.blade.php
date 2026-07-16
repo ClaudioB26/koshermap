@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Lugares Kosher - KosherMap')
+@section('meta_description', 'Encontrá restaurantes, sinagogas, panaderías, carnicerías y comunidades kosher en tu ciudad. Directorio global de lugares kosher verificados por país.')
 
 @section('content')
 
@@ -13,6 +14,11 @@
        class="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition shrink-0">
         ➕ Agregar mi local
     </a>
+</div>
+
+<div class="max-w-3xl mb-8 text-gray-600 text-sm leading-relaxed">
+    <p class="mb-3">Encontrar un lugar kosher confiable en una ciudad nueva no siempre es fácil, sobre todo si estás de viaje o te acabás de mudar. Acá reunimos restaurantes, panaderías, carnicerías, sinagogas y comunidades de distintos países, con rating de Google, dirección y contacto para que no tengas que armar la búsqueda de cero cada vez.</p>
+    <p>Los locales se relevan a través de Google Maps y se revisan con la comunidad de moderadores antes de aparecer en el directorio. Por default mostramos sinagogas y comunidades de orientación ortodoxa, pero podés ampliar el filtro para ver también conservadoras y reformistas. Si encontrás un lugar cerrado, con datos viejos, o querés sumar uno que falta, usá el botón de reportar en cada tarjeta o "Agregar mi local" arriba.</p>
 </div>
 
 {{-- Filtros --}}
@@ -84,6 +90,9 @@
     @endif
 </div>
 @endif
+
+<div class="flex flex-col lg:flex-row gap-6">
+<div class="flex-1 min-w-0">
 
 {{-- Grid de resultados --}}
 @if($places->isEmpty())
@@ -191,5 +200,38 @@
 <div class="mt-8">{{ $places->links() }}</div>
 
 @endif
+
+</div>
+
+@if($relatedArticles->isNotEmpty())
+<aside class="hidden lg:block lg:w-[26rem] shrink-0">
+    <div class="sticky top-20">
+        @include('partials.related_articles_sidebar')
+    </div>
+</aside>
+@endif
+</div>
+
+<div class="lg:hidden mt-6">
+    @include('partials.related_articles_sidebar')
+</div>
+
+<div class="max-w-3xl mt-16">
+    <h2 class="text-xl font-bold text-gray-800 mb-6">Preguntas frecuentes sobre lugares kosher</h2>
+    <div class="space-y-5 text-sm text-gray-600 leading-relaxed">
+        <div>
+            <h3 class="font-semibold text-gray-800 mb-1">¿Cómo saben que un restaurante o local es realmente kosher?</h3>
+            <p>La certificación kosher de un local la otorga una agencia rabínica reconocida (OU, Ajdut Kosher, etc.), no KosherMap. Nosotros relevamos el local vía Google Maps y nuestra comunidad de moderadores revisa la información antes de publicarla, pero la kashrut en sí depende de la supervisión vigente del establecimiento. Ante la duda sobre un local puntual, lo más seguro es confirmar directamente con el lugar o con la certificadora que dice tener.</p>
+        </div>
+        <div>
+            <h3 class="font-semibold text-gray-800 mb-1">¿Por qué por defecto solo aparecen sinagogas y comunidades ortodoxas?</h3>
+            <p>Es el filtro que mejor refleja lo que busca la mayoría de nuestros usuarios, pero no es el único contenido disponible. Si tocás "Ver también conservadoras / reformistas" en la parte de arriba, el listado se amplía para incluir todas las orientaciones. Podés cambiar este filtro las veces que quieras, no queda guardado de forma permanente.</p>
+        </div>
+        <div>
+            <h3 class="font-semibold text-gray-800 mb-1">Encontré un local cerrado o con datos desactualizados, ¿qué hago?</h3>
+            <p>Usá el botón "⚑ Reportar problema" que aparece en la tarjeta de cada lugar. Elegís el motivo (cerrado, dirección incorrecta, ya no es kosher, etc.) y opcionalmente dejás un comentario y tu email. El equipo de moderación revisa el reporte y actualiza o da de baja el local si corresponde. Si en cambio querés sumar un local que todavía no está en el directorio, usá el botón "➕ Agregar mi local".</p>
+        </div>
+    </div>
+</div>
 
 @endsection
