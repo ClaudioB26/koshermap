@@ -16,26 +16,127 @@ class ArticleSeeder extends Seeder
                 'category' => 'halajot',
                 'title' => 'Insectos en frutas y verduras: cómo revisarlas correctamente',
                 'excerpt' => 'La Torá prohíbe comer insectos, por lo que revisar frutas y verduras antes de consumirlas es una parte central de mantener una cocina kosher.',
-                'content' => '<p>La prohibición de comer insectos (sheratzim) es una de las más estrictas de la Torá: a diferencia de otras prohibiciones alimentarias, comer un solo insecto puede constar como múltiples transgresiones. Por eso, revisar frutas y verduras antes de cocinarlas o servirlas es un paso ineludible en una cocina kosher.</p>
-<p>Las verduras de hoja como la lechuga, la espinaca, el brócoli y la coliflor son las que más cuidado requieren, porque los pulgones y otros insectos pequeños se esconden entre las hojas y son difíciles de detectar a simple vista. La técnica habitual incluye separar las hojas, lavarlas individualmente bajo un chorro de agua y revisarlas a contraluz.</p>
+                'content' => '<p>De todas las prohibiciones alimentarias de la Torá, la de los insectos (<em>sheratzim</em>) tiene una particularidad que sorprende a mucha gente: comer un solo insecto puede constituir varias transgresiones a la vez, porque la Torá lo prohíbe en más de un versículo. Por eso revisar frutas y verduras no es una recomendación de higiene, es un paso ineludible antes de que esos alimentos lleguen a la mesa.</p>
+
+<h2>Por qué las verduras de hoja son el caso más delicado</h2>
+<p>El problema no es que los insectos sean muchos, sino que son diminutos y del mismo color que la hoja. Los pulgones (áfidos) miden entre uno y tres milímetros y suelen ser verde claro, así que se camuflan perfectamente en la lechuga o la espinaca. Los trips son todavía más chicos y se meten en los pliegues. Y en el brócoli o la coliflor el problema se agrava, porque los racimos forman una estructura cerrada donde un insecto puede quedar alojado sin que se vea nada desde afuera.</p>
+<p>No todas las verduras presentan el mismo nivel de riesgo. Esta es la escala aproximada que manejan la mayoría de las guías de kashrut:</p>
+
+<svg viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nivel de riesgo de infestación por tipo de verdura: alto para lechuga, espinaca, brócoli y coliflor; medio para frutillas, frambuesas, repollo y perejil; bajo para papa, zanahoria, cebolla, banana y manzana." style="width:100%;height:auto;max-width:640px;margin:1.5rem auto;display:block;">
+  <rect x="0" y="0" width="640" height="250" fill="#f9fafb" rx="8"/>
+  <text x="20" y="30" font-family="system-ui,sans-serif" font-size="15" font-weight="700" fill="#1f2937">Nivel de atención requerido al revisar</text>
+  <rect x="20" y="50" width="380" height="42" fill="#fee2e2" rx="6"/>
+  <rect x="20" y="50" width="8" height="42" fill="#dc2626" rx="4"/>
+  <text x="40" y="70" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#991b1b">ALTO — revisión hoja por hoja</text>
+  <text x="40" y="86" font-family="system-ui,sans-serif" font-size="12" fill="#7f1d1d">Lechuga, espinaca, acelga, brócoli, coliflor, alcaucil</text>
+  <rect x="20" y="102" width="300" height="42" fill="#fef3c7" rx="6"/>
+  <rect x="20" y="102" width="8" height="42" fill="#d97706" rx="4"/>
+  <text x="40" y="122" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#92400e">MEDIO — remojo y enjuague cuidadoso</text>
+  <text x="40" y="138" font-family="system-ui,sans-serif" font-size="12" fill="#78350f">Frutillas, frambuesas, repollo, perejil, legumbres secas</text>
+  <rect x="20" y="154" width="220" height="42" fill="#dcfce7" rx="6"/>
+  <rect x="20" y="154" width="8" height="42" fill="#16a34a" rx="4"/>
+  <text x="40" y="174" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#166534">BAJO — lavado normal</text>
+  <text x="40" y="190" font-family="system-ui,sans-serif" font-size="12" fill="#14532d">Papa, zanahoria, cebolla, banana, manzana, cítricos</text>
+  <text x="20" y="228" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280">El riesgo varía según la región y el método de cultivo: consultá la guía de tu certificadora local.</text>
+</svg>
+
+<h2>Cómo revisar, según el tipo de alimento</h2>
 <ul>
-<li><strong>Verduras de hoja:</strong> separar hoja por hoja y lavar bajo agua corriente, revisando ambos lados.</li>
-<li><strong>Coliflor y brócoli:</strong> remojar en agua con un poco de jabón o vinagre para que los insectos se desprendan de los racimos.</li>
-<li><strong>Frutillas y frambuesas:</strong> remojar en agua salada o con vinagre antes de enjuagar.</li>
-<li><strong>Legumbres secas (lentejas, garbanzos):</strong> extender sobre una superficie clara y revisar antes de cocinar.</li>
+<li><strong>Verduras de hoja:</strong> separar hoja por hoja, lavar bajo agua corriente frotando suavemente ambos lados, y revisar a contraluz. La luz natural de una ventana funciona mejor que la de una lámpara.</li>
+<li><strong>Coliflor y brócoli:</strong> cortar en floretes chicos y remojar entre 3 y 5 minutos en agua con unas gotas de detergente o un chorrito de vinagre. El agua jabonosa rompe la tensión superficial y hace que los insectos se desprendan; después hay que enjuagar bien.</li>
+<li><strong>Frutillas y frambuesas:</strong> sacarles el cabito, remojar en agua salada o con vinagre unos minutos, y enjuagar. Las frambuesas son especialmente difíciles por su estructura hueca, y hay comunidades que directamente no las consumen frescas.</li>
+<li><strong>Legumbres secas (lentejas, garbanzos, porotos):</strong> extender sobre una superficie clara —una fuente blanca o un repasador liso— y revisar antes de cocinar. Acá el enemigo suele ser el gorgojo, que aparece por almacenamiento prolongado.</li>
+<li><strong>Harinas y cereales:</strong> tamizar antes de usar, sobre todo si el paquete estuvo abierto mucho tiempo o guardado en un lugar húmedo.</li>
 </ul>
-<p>Y que quede claro que esto no es tan fácil como suena. A uno de nosotros, en casa, siempre le tocaba revisar las verduras. Con los años empezó a necesitar anteojos, y un día vio un puntito negro en una hoja. Convencido de que no era nada, le preguntó a su hija: ¿esto qué es? Y la hija le contestó: ¿no ves que es un bicho, que se le ven las patitas? Desde ese día no revisa una sola hoja sin los anteojos puestos. La enseñanza es simple: revisar bien exige buena luz y buena vista, y ante la duda, una segunda mirada nunca sobra.</p>
-<p>Muchas certificadoras kosher ofrecen guías específicas, ilustradas, de cómo revisar cada tipo de verdura según la región donde fue cultivada, porque la prevalencia de insectos varía según el clima y el método de cultivo. Hoy también existen verduras "pre-revisadas" o cultivadas bajo supervisión específica para minimizar la infestación, lo que simplifica mucho el proceso en la cocina diaria.</p>',
+
+<h2>Una lección que aprendimos en casa</h2>
+<p>Y que quede claro que esto no es tan fácil como suena. A uno de nosotros, en casa, siempre le tocaba revisar las verduras. Con los años empezó a necesitar anteojos, y un día vio un puntito negro en una hoja. Convencido de que no era nada, le preguntó a su hija: ¿esto qué es? Y la hija le contestó: ¿no ves que es un bicho, que se le ven las patitas? Desde ese día no revisa una sola hoja sin los anteojos puestos.</p>
+<p>La enseñanza es simple pero vale por todo el artículo: revisar bien exige buena luz y buena vista. Si usás anteojos, ponételos. Si la cocina tiene luz amarilla tenue, mudá la tarea a la mesa cerca de la ventana. Y ante la duda, una segunda mirada —o una segunda persona— nunca sobra.</p>
+
+<h2>El factor estacional: por qué en verano hay que redoblar la atención</h2>
+<p>La prevalencia de insectos no es igual todo el año. En los meses cálidos y húmedos las poblaciones de pulgones y trips se multiplican, y una lechuga que en invierno venía prácticamente limpia puede requerir el doble de trabajo en enero. Lo mismo pasa con la procedencia: la verdura de invernadero suele venir más infestada que la de campo abierto, porque el ambiente cerrado y templado favorece la reproducción.</p>
+<p>Por eso muchas certificadoras publican alertas estacionales avisando qué productos están viniendo especialmente problemáticos en determinado momento del año. Si tu comunidad tiene una lista de este tipo, conviene revisarla antes de las compras grandes de festividades.</p>
+
+<h2>Verduras pre-revisadas: ¿son confiables?</h2>
+<p>Hoy existen verduras cultivadas bajo supervisión específica para minimizar la infestación —típicamente hidropónicas o de invernadero controlado— que se venden con certificación kosher y no requieren revisión adicional. Son considerablemente más caras, pero para familias con poco tiempo o para eventos grandes resuelven el problema de raíz.</p>
+<p>La advertencia importante: que un paquete diga "lavado y listo para consumir" no significa nada desde el punto de vista del kashrut. Ese sello habla de higiene alimentaria, no de revisión por insectos. Solo sirve si tiene certificación kosher explícita de una agencia reconocida. Podés verificar el estatus de un producto puntual en nuestro <a href="/">directorio de productos certificados</a>.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Y si encuentro un insecto después de haber cocinado?</strong><br>
+Depende del caso y conviene consultarlo con un rabino, porque entran en juego conceptos de anulación (<em>bitul</em>) que no se pueden generalizar en un artículo. La regla práctica es que la revisión se hace antes de cocinar, justamente para no llegar a esa situación.</p>
+<p><strong>¿Sirve lavar con productos comerciales para desinfectar verduras?</strong><br>
+Ayudan a desprender insectos, igual que el agua jabonosa, pero no reemplazan la inspección visual. El lavado es un paso previo, no el paso final.</p>
+<p><strong>¿Los insectos microscópicos también están prohibidos?</strong><br>
+No. La halajá se refiere a lo que es visible a simple vista. Los microorganismos que solo se ven con microscopio no entran en la prohibición, justamente porque el criterio es lo perceptible por el ojo humano.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>Si estás organizando una cocina kosher desde cero, te puede servir nuestra guía sobre <a href="/articulos/armar-cocina-kosher">cómo armar una cocina kosher</a>, y si recién empezás, el repaso de <a href="/articulos/errores-comunes-empezar-comer-kosher">errores comunes al empezar a comer kosher</a> incluye justamente este tema entre los que más se pasan por alto.</p>
+<p>Para profundizar en fuentes externas, la <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">guía introductoria de la Orthodox Union</a> cubre los fundamentos del kashrut en detalle, y el <a href="https://www.youtube.com/@OUKosher" target="_blank" rel="noopener">canal de OU Kosher en YouTube</a> publica material audiovisual sobre revisión de productos. También podés consultar el artículo general sobre <a href="https://es.wikipedia.org/wiki/Kashrut" target="_blank" rel="noopener">kashrut en Wikipedia</a> para el contexto histórico.</p>',
             ],
             [
                 'slug' => 'carne-y-leche',
                 'category' => 'halajot',
                 'title' => 'Carne y leche: por qué no se mezclan',
                 'excerpt' => 'La separación entre carne y leche es uno de los pilares más conocidos del kashrut. Te explicamos su origen, sus alcances y cómo se aplica en la práctica.',
-                'content' => '<p>"No cocinarás un cabrito en la leche de su madre." Ese versículo aparece tres veces en la Torá, y de esa repetición la tradición oral sacó una prohibición triple: no cocinar carne con leche, no comerla mezclada y tampoco sacar ningún provecho de esa mezcla.</p>
-<p>De ahí sale la división de todos los alimentos en tres grupos que cualquier persona que sigue el kashrut maneja de memoria: <strong>cárnicos</strong> (carne y derivados), <strong>lácteos</strong> (leche y derivados) y <strong>parve</strong> (todo lo que no es ni una cosa ni la otra: frutas, verduras, huevos, pescado).</p>
-<p>Y esto no se queda en la teoría. En una cocina kosher observante los utensilios, las ollas, los platos e incluso el lavavajillas se dividen en dos juegos, uno para carne y otro para leche, porque el calor y el uso repetido hacen que los sabores y las partículas pasen de una superficie a otra. También hay que esperar entre comer carne y comer lácteos (el tiempo varía según la familia, generalmente entre una y seis horas), mientras que para pasar de lácteos a carne alcanza con enjuagarse la boca y comer algo neutro en el medio.</p>
-<p>Por eso tantas etiquetas llevan una letra chiquita junto al sello de certificación: "D" para dairy (lácteo), "M" para meat (cárnico) o directamente "Pareve". Con solo mirar esa letra, sabés al instante si podés combinar ese producto con lo que estás por comer.</p>',
+                'content' => '<p>"No cocinarás un cabrito en la leche de su madre." Ese versículo aparece tres veces en la Torá —en Éxodo dos veces y en Deuteronomio una— y de esa repetición la tradición oral sacó una prohibición triple: no cocinar carne con leche, no comerla mezclada y tampoco sacar ningún provecho de esa mezcla, ni siquiera vendiéndola.</p>
+<p>Esa última parte suele sorprender. Una persona que sigue el kashrut no solo se abstiene de comer un plato de carne con crema: tampoco puede venderlo ni regalarlo, porque el beneficio económico también está incluido en la prohibición.</p>
+
+<h2>Las tres categorías que ordenan toda la cocina</h2>
+<p>De ahí sale la división de todos los alimentos en tres grupos que cualquier persona que sigue el kashrut maneja de memoria:</p>
+
+<svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagrama de las tres categorías del kashrut: cárnico y lácteo no se pueden combinar entre sí, mientras que parve se combina con ambos." style="width:100%;height:auto;max-width:640px;margin:1.5rem auto;display:block;">
+  <rect x="0" y="0" width="640" height="260" fill="#f9fafb" rx="8"/>
+  <rect x="40" y="30" width="160" height="70" fill="#fee2e2" stroke="#dc2626" stroke-width="2" rx="8"/>
+  <text x="120" y="58" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="700" fill="#991b1b">CÁRNICO</text>
+  <text x="120" y="78" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#7f1d1d">Carne, pollo y derivados</text>
+  <rect x="440" y="30" width="160" height="70" fill="#dbeafe" stroke="#2563eb" stroke-width="2" rx="8"/>
+  <text x="520" y="58" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="700" fill="#1e40af">LÁCTEO</text>
+  <text x="520" y="78" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#1e3a8a">Leche, queso, manteca</text>
+  <line x1="200" y1="65" x2="440" y2="65" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <circle cx="320" cy="65" r="18" fill="#fef2f2" stroke="#dc2626" stroke-width="2.5"/>
+  <line x1="310" y1="55" x2="330" y2="75" stroke="#dc2626" stroke-width="2.5"/>
+  <line x1="330" y1="55" x2="310" y2="75" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="320" y="106" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#991b1b">nunca se mezclan</text>
+  <rect x="240" y="150" width="160" height="70" fill="#dcfce7" stroke="#16a34a" stroke-width="2" rx="8"/>
+  <text x="320" y="178" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="700" fill="#166534">PARVE</text>
+  <text x="320" y="198" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#14532d">Frutas, verduras, huevos, pescado</text>
+  <line x1="240" y1="175" x2="120" y2="100" stroke="#16a34a" stroke-width="2"/>
+  <line x1="400" y1="175" x2="520" y2="100" stroke="#16a34a" stroke-width="2"/>
+  <text x="150" y="145" font-family="system-ui,sans-serif" font-size="11" fill="#166534">se combina ✓</text>
+  <text x="425" y="145" font-family="system-ui,sans-serif" font-size="11" fill="#166534">se combina ✓</text>
+</svg>
+
+<p>La categoría <strong>parve</strong> es la más versátil y por eso la más buscada por la industria alimentaria: un postre parve puede servirse después de una comida de carne, algo imposible con uno lácteo. Si querés profundizar en ese punto, lo desarrollamos en el artículo sobre <a href="/articulos/que-significa-pareve">qué significa pareve</a>.</p>
+
+<h2>Por qué hacen falta dos juegos de todo</h2>
+<p>Esto no se queda en la teoría. En una cocina kosher observante los utensilios, las ollas, los platos y hasta el lavavajillas se dividen en dos juegos separados. El motivo es un principio halájico llamado <em>bliot</em>: cuando un alimento se cocina en un recipiente a temperatura alta, se considera que el sabor queda absorbido en las paredes de ese recipiente. Una olla en la que herviste leche "es" lácteo aunque esté impecablemente limpia, y si después cocinás carne ahí, esa carne queda comprometida.</p>
+<p>La solución práctica que usan la mayoría de las familias es codificar por color: un color para carne, otro para leche. Rojo y azul es la combinación más difundida, pero cualquiera sirve mientras sea consistente. Esto aplica a ollas, sartenes, cubiertos, tablas de cortar, esponjas y repasadores.</p>
+<p>¿Y si se mezclan por error? Existen procedimientos de kasherización que permiten recuperar ciertos utensilios: la <a href="/articulos/hagala-utensilios-metal">hagalá para utensilios de metal</a> es el más común. Pero no todo material se puede kasherizar, y el procedimiento correcto depende del caso, así que conviene consultarlo.</p>
+
+<h2>Los tiempos de espera entre carne y lácteos</h2>
+<p>Después de comer carne hay que esperar antes de consumir lácteos. El tiempo exacto es una de las diferencias más visibles entre comunidades:</p>
+<ul>
+<li><strong>Seis horas:</strong> la costumbre más extendida, seguida por la mayoría de las comunidades sefaradíes y muchas asquenazíes.</li>
+<li><strong>Tres horas:</strong> costumbre de origen alemán, todavía vigente en algunas familias.</li>
+<li><strong>Una hora:</strong> costumbre holandesa, la más breve de las tradicionales.</li>
+</ul>
+<p>La razón que dan las fuentes es doble: la carne deja residuos entre los dientes, y su sabor persiste en la boca más tiempo que el de otros alimentos. En sentido inverso —de lácteos a carne— no hace falta esperar: alcanza con enjuagarse la boca y comer algo neutro, como un pedazo de pan.</p>
+<p>La excepción son los quesos duros y muy estacionados, que en varias comunidades requieren la misma espera completa que la carne, justamente porque su sabor es más persistente. Lo importante acá es no improvisar: la costumbre se hereda de la familia o se define con el rabino de la comunidad, no se elige la más cómoda.</p>
+
+<h2>Cómo se traduce esto en las etiquetas del supermercado</h2>
+<p>Por eso tantas etiquetas llevan una letra chiquita junto al sello de certificación: "D" para <em>dairy</em> (lácteo), "M" para <em>meat</em> (cárnico) o directamente "Pareve". Con solo mirar esa letra sabés al instante si podés combinar ese producto con lo que estás por comer.</p>
+<p>Hay una cuarta marca que confunde bastante: <strong>"DE"</strong>, de <em>dairy equipment</em>. Significa que el producto no tiene ingredientes lácteos, pero se elaboró en una línea de producción que también procesa lácteos. No se puede comer junto con carne, pero sí después de carne. Es una categoría intermedia que existe justamente porque las fábricas modernas comparten equipos entre productos. Lo explicamos en detalle en <a href="/articulos/como-leer-etiqueta-kosher">cómo leer una etiqueta kosher</a>.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿El pollo también cuenta como carne?</strong><br>
+Sí. Por la Torá el pollo no estaría incluido en la prohibición, que habla de "un cabrito", pero los sabores lo extendieron a todas las aves para evitar confusiones. Hoy el pollo se trata exactamente igual que la carne roja a estos efectos.</p>
+<p><strong>¿Y el pescado?</strong><br>
+El pescado es parve, así que técnicamente se puede combinar con lácteos —de hecho el salmón con crema es un clásico. Con carne es distinto: hay una costumbre extendida de no comerlos juntos en el mismo plato, pero por motivos de salud según el Talmud, no por la prohibición de carne y leche. Más detalle en <a href="/articulos/pescado-kosher-aletas-escamas">pescado kosher</a>.</p>
+<p><strong>¿Puedo tener un solo horno?</strong><br>
+Sí, es lo más común. Se maneja cubriendo bien los alimentos, usando bandejas dedicadas, o asignando el horno a una sola categoría. La opción más simple para quien recién empieza es destinarlo a parve y cárnico, y resolver los lácteos en la hornalla.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>Si estás organizando tu cocina, la guía de <a href="/articulos/armar-cocina-kosher">cómo armar una cocina kosher desde cero</a> aterriza todo esto en pasos concretos. Para las fuentes originales, la <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">guía introductoria de la Orthodox Union</a> desarrolla el tema con las citas talmúdicas, y el artículo de <a href="https://es.wikipedia.org/wiki/Kashrut" target="_blank" rel="noopener">Wikipedia sobre kashrut</a> da el panorama histórico general.</p>',
             ],
             [
                 'slug' => 'kasherizar-horno',
@@ -57,15 +158,72 @@ class ArticleSeeder extends Seeder
                 'category' => 'kasherizacion',
                 'title' => 'Cómo kasherizar un microondas',
                 'excerpt' => 'El microondas tiene un proceso de kasherización distinto al del horno tradicional, porque cocina con vapor y no con calor seco.',
-                'content' => '<p>El microondas cocina distinto: en vez de calor seco como el horno, genera vapor por dentro, y eso cambia el método de kasherización que recomiendan la mayoría de las autoridades halájicas.</p>
-<p>Los pasos más habituales:</p>
+                'content' => '<p>El microondas es probablemente el electrodoméstico que más dudas genera en una cocina kosher, y por una buena razón: no cocina como ningún otro aparato. Mientras el horno usa calor seco y la hornalla transmite calor por contacto directo, el microondas calienta el agua que ya está dentro del alimento, y eso genera vapor que circula por todo el interior.</p>
+<p>Esa diferencia técnica es la que define el método de kasherización, y por qué no se puede simplemente aplicar lo mismo que al <a href="/articulos/kasherizar-horno">horno tradicional</a>.</p>
+
+<h2>Por qué el vapor cambia todo</h2>
+<p>En halajá rige un principio central para estos casos: <em>k\'bolo kach polto</em>, "como absorbió, así expulsa". Un utensilio se purifica por el mismo medio por el que absorbió el sabor. Si absorbió por líquido hirviendo, se kasheriza con líquido hirviendo; si absorbió por fuego directo, necesita fuego directo.</p>
+<p>El microondas absorbe por vapor, así que se kasheriza por vapor. Por eso el procedimiento consiste en generar deliberadamente una gran cantidad de vapor dentro de la cavidad, para que alcance todas las superficies que estuvieron en contacto con las salpicaduras y los vapores de la comida anterior.</p>
+
+<svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Procedimiento de kasherización de un microondas en cuatro pasos: limpieza profunda, espera de 24 horas, hervir agua generando vapor, y dejar actuar el vapor." style="width:100%;height:auto;max-width:640px;margin:1.5rem auto;display:block;">
+  <rect x="0" y="0" width="640" height="230" fill="#f9fafb" rx="8"/>
+  <text x="20" y="28" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#1f2937">Los cuatro pasos, en orden</text>
+  <circle cx="70" cy="90" r="26" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="70" y="97" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#1e40af">1</text>
+  <text x="70" y="138" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#1f2937">Limpieza</text>
+  <text x="70" y="153" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280">profunda</text>
+  <line x1="100" y1="90" x2="132" y2="90" stroke="#9ca3af" stroke-width="2"/>
+  <circle cx="230" cy="90" r="26" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="230" y="97" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#1e40af">2</text>
+  <text x="230" y="138" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#1f2937">Esperar</text>
+  <text x="230" y="153" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280">24 horas sin uso</text>
+  <line x1="260" y1="90" x2="292" y2="90" stroke="#9ca3af" stroke-width="2"/>
+  <circle cx="390" cy="90" r="26" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="390" y="97" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#92400e">3</text>
+  <text x="390" y="138" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#1f2937">Hervir agua</text>
+  <text x="390" y="153" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280">hasta llenar de vapor</text>
+  <line x1="420" y1="90" x2="452" y2="90" stroke="#9ca3af" stroke-width="2"/>
+  <circle cx="550" cy="90" r="26" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="550" y="97" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#166534">4</text>
+  <text x="550" y="138" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#1f2937">Dejar actuar</text>
+  <text x="550" y="153" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280">unos minutos más</text>
+  <text x="20" y="200" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280">El plato giratorio se kasheriza aparte o se reemplaza. Si el equipo tiene grill, ese modo requiere un paso extra.</text>
+</svg>
+
+<h2>El procedimiento, paso a paso</h2>
+<ol>
+<li><strong>Limpieza profunda.</strong> No puede quedar ninguna partícula visible de comida. Prestá atención a las salpicaduras del techo de la cavidad, que es donde más se acumulan y donde menos se mira. Sacá el plato giratorio y limpiá también el aro y la base.</li>
+<li><strong>24 horas sin usar.</strong> Este paso no es opcional. La halajá considera que después de 24 horas el sabor absorbido se degrada y pierde su condición, lo que hace válida la kasherización. Si usaste el microondas hace dos horas, tenés que esperar.</li>
+<li><strong>Generar el vapor.</strong> Poné un recipiente con agua —conviene que sea un recipiente que no vayas a usar después para comida, o uno descartable— y hacelo hervir hasta que el interior quede completamente empañado. Suelen hacer falta entre 5 y 10 minutos según la potencia del equipo. Si el agua se evapora del todo, reponé y repetí.</li>
+<li><strong>Dejar actuar.</strong> Con el vapor ya generado, dejá el recipiente adentro unos minutos más con la puerta cerrada, para que el vapor alcance también la cara interna de la puerta y las esquinas.</li>
+</ol>
+
+<h2>El plato giratorio: el detalle que se pasa por alto</h2>
+<p>El plato de vidrio giratorio recibe directamente los derrames de la comida, así que necesita su propio tratamiento. Como es vidrio, las opiniones varían: algunos consideran que alcanza con un lavado a fondo, otros piden inmersión en agua hirviendo, y la solución más práctica que adoptan muchas familias es simplemente comprar un plato de repuesto y tener uno por categoría de uso.</p>
+
+<h2>La estrategia que evita todo esto</h2>
+<p>La mayoría de las familias observantes no kasheriza el microondas cada vez que cambia de uso, por una razón simple: es tedioso. En su lugar aplican dos costumbres que resuelven el problema de raíz:</p>
 <ul>
-<li>Limpiar bien el interior, sin ninguna partícula de comida visible, incluyendo el plato giratorio y las paredes.</li>
-<li>No usarlo durante 24 horas antes de kasherizarlo.</li>
-<li>Poner un recipiente con agua adentro y encenderlo hasta que hierva y el vapor cubra todas las superficies internas, puerta incluida.</li>
-<li>Dejar que el vapor actúe sobre las paredes unos minutos más.</li>
+<li><strong>Tapar siempre.</strong> Calentar la comida con tapa apta para microondas o film. Si nada se evapora libremente, no hay transferencia de sabor y el microondas se mantiene neutro. Esta es la razón por la que en muchas cocinas kosher las tapas de plástico están al lado del microondas y no en el cajón.</li>
+<li><strong>Asignarle una sola categoría.</strong> Destinar el aparato exclusivamente a parve, o exclusivamente a lácteo, y resolver el resto en la hornalla o el horno. Es la opción más simple para quien recién <a href="/articulos/armar-cocina-kosher">arma su cocina kosher</a>.</li>
 </ul>
-<p>Muchas familias directamente evitan el problema: usan siempre tapa o film para microondas al calentar comida, y reservan el aparato para un solo uso (cárnico, lácteo o parve) en vez de andar kasherizándolo cada vez. Si tu microondas tiene grill o convección, esa función calienta distinto y puede necesitar un paso adicional parecido al del horno. Como los modelos varían tanto, si tenés dudas con el tuyo, consultalo con el rav antes de darlo por kasherizado.</p>',
+
+<h2>Casos especiales</h2>
+<p><strong>Microondas con grill o convección.</strong> Esas funciones generan calor seco, no vapor, así que el método de vapor no las cubre. Para esa parte hace falta un procedimiento tipo <em>libun</em>, similar al del horno convencional. Si tenés un equipo combinado y usaste el grill, consultalo específicamente.</p>
+<p><strong>Microondas de acero inoxidable vs. interior plástico o esmaltado.</strong> Los materiales absorben distinto, y algunas autoridades son más estrictas con ciertos revestimientos. Es uno de los puntos donde más conviene preguntar por tu modelo puntual.</p>
+<p><strong>Kasherizar para Pesaj.</strong> Las reglas de Pesaj son más estrictas que las del resto del año. El procedimiento base es el mismo, pero muchas comunidades agregan requisitos. Antes de la festividad conviene revisar la guía específica de tu certificadora y nuestro artículo sobre <a href="/articulos/vajilla-para-pesaj">vajilla para Pesaj</a>.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Puedo usar vinagre o limón en el agua?</strong><br>
+No hace falta para la kasherización en sí —lo que purifica es el vapor, no el aditivo—, pero ayuda a despegar suciedad y a neutralizar olores durante el paso de limpieza previa.</p>
+<p><strong>¿Sirve poner un vaso de agua nomás?</strong><br>
+Un vaso chico probablemente no genere vapor suficiente para saturar toda la cavidad. Conviene un recipiente amplio y con bastante agua, para que el vapor sea abundante y sostenido.</p>
+<p><strong>Compré un microondas usado, ¿alcanza con esto?</strong><br>
+El procedimiento es el mismo, pero como no sabés qué se cocinó ahí, es un caso donde vale especialmente la pena consultarlo con el rabino de la comunidad antes de usarlo.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>Los otros procedimientos de kasherización están en <a href="/articulos/kasherizar-horno">cómo kasherizar un horno</a>, <a href="/articulos/kasherizar-lavavajillas">cómo kasherizar un lavavajillas</a> y <a href="/articulos/hagala-utensilios-metal">hagalá para utensilios de metal</a>.</p>
+<p>Como fuente externa, la <a href="https://www.star-k.org/articles/kashrus-kurrents/" target="_blank" rel="noopener">publicación Kashrus Kurrents de Star-K</a> tiene material técnico detallado sobre kasherización de electrodomésticos, y la <a href="https://oukosher.org/passover/" target="_blank" rel="noopener">sección de Pesaj de la Orthodox Union</a> cubre los requisitos adicionales de la festividad.</p>',
             ],
             [
                 'slug' => 'kasherizar-lavavajillas',
@@ -205,21 +363,139 @@ class ArticleSeeder extends Seeder
                 'category' => 'kashrut-basico',
                 'title' => 'Pareve: qué significa y por qué es tan común en las etiquetas',
                 'excerpt' => 'Pareve es una de las palabras más repetidas en el etiquetado kosher. Te explicamos qué significa y por qué es tan valorada.',
-                'content' => '<p>Pareve (también se escribe parve) es la palabra que describe a los alimentos que no son ni cárnicos ni lácteos: frutas, verduras, huevos, pescado, granos y la mayoría de los productos hechos sin ingredientes de origen animal lácteo o cárnico.</p>
-<p>La gran ventaja de un producto pareve es que se puede combinar libremente tanto con comidas cárnicas como con lácteas, sin generar ningún conflicto de kashrut. Por eso muchas industrias alimenticias buscan activamente sacar versiones pareve de productos que tradicionalmente llevan lácteos (chocolate, margarina, sustitutos de crema), para ampliar el mercado al que le pueden vender.</p>
-<p>Ahora, hay un matiz que conviene tener claro: un alimento puede ser pareve por sus ingredientes y perder ese estatus si se fabricó en un equipo que también procesa lácteos o carne, según las trazas que puedan haber quedado. Por eso la certificación no solo mira ingredientes, también revisa el equipo de producción y la limpieza entre lotes.</p>
-<p>Algunos ejemplos típicos de productos pareve: aceite de oliva, pasta seca sin huevo, la mayoría de los panes (aunque algunos llevan manteca y ahí pasan a ser lácteos), frutos secos sin procesar, bebidas gaseosas. La única forma de estar seguro es revisar siempre la etiqueta, porque la receta puede cambiar entre marcas o incluso entre presentaciones de la misma marca.</p>',
+                'content' => '<p>Pareve (también escrito <em>parve</em>, del ídish "neutral") es la palabra que describe a los alimentos que no son ni cárnicos ni lácteos: frutas, verduras, huevos, pescado, granos, legumbres y la mayoría de los productos elaborados sin ingredientes de origen lácteo o cárnico.</p>
+<p>Es probablemente la palabra que más vas a leer en las etiquetas kosher, y entender bien qué implica te ahorra la mitad de las dudas cotidianas en la cocina.</p>
+
+<h2>Por qué es la categoría más buscada</h2>
+<p>La gran ventaja de un producto pareve es que se puede combinar libremente tanto con comidas cárnicas como con lácteas, sin generar ningún conflicto. Eso lo convierte en el comodín de la cocina kosher.</p>
+<p>El caso donde más se nota es el postre. Si la cena fue de carne, no podés servir helado, flan ni nada con crema, porque hay que esperar entre <a href="/articulos/carne-y-leche">carne y lácteos</a>. Un postre pareve resuelve el problema: se puede servir inmediatamente después de un asado. Por eso la industria invierte tanto en desarrollar versiones pareve de productos que tradicionalmente llevan lácteos —chocolate, margarina, cremas vegetales para repostería, helados a base de agua o leches vegetales—: le abre un mercado que de otra forma no podría comprarlos en la comida principal.</p>
+
+<svg viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Un producto puede ser pareve por ingredientes pero perder ese estatus si se elabora en equipamiento compartido con lácteos, pasando a la categoría DE (dairy equipment)." style="width:100%;height:auto;max-width:640px;margin:1.5rem auto;display:block;">
+  <rect x="0" y="0" width="640" height="200" fill="#f9fafb" rx="8"/>
+  <text x="20" y="28" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#1f2937">Ser pareve no depende solo de los ingredientes</text>
+  <rect x="20" y="48" width="150" height="60" fill="#dcfce7" stroke="#16a34a" stroke-width="2" rx="8"/>
+  <text x="95" y="72" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#166534">Ingredientes</text>
+  <text x="95" y="90" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#166534">sin lácteos</text>
+  <path d="M 175 78 L 215 78" stroke="#6b7280" stroke-width="2" marker-end="url(#ar)"/>
+  <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#6b7280"/></marker></defs>
+  <rect x="220" y="48" width="170" height="60" fill="#fef3c7" stroke="#d97706" stroke-width="2" rx="8"/>
+  <text x="305" y="72" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#92400e">¿Se elaboró en equipo</text>
+  <text x="305" y="90" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#92400e">compartido con lácteos?</text>
+  <path d="M 395 65 L 435 55" stroke="#16a34a" stroke-width="2" marker-end="url(#ar)"/>
+  <path d="M 395 92 L 435 118" stroke="#d97706" stroke-width="2" marker-end="url(#ar)"/>
+  <rect x="440" y="30" width="180" height="46" fill="#dcfce7" stroke="#16a34a" stroke-width="2" rx="8"/>
+  <text x="530" y="50" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#166534">PAREVE</text>
+  <text x="530" y="66" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#14532d">se combina con todo</text>
+  <rect x="440" y="100" width="180" height="46" fill="#fef3c7" stroke="#d97706" stroke-width="2" rx="8"/>
+  <text x="530" y="120" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#92400e">DE (dairy equipment)</text>
+  <text x="530" y="136" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#78350f">no junto con carne</text>
+  <text x="20" y="180" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280">Por eso la certificación revisa la línea de producción, no solo la lista de ingredientes.</text>
+</svg>
+
+<h2>El matiz que confunde a todo el mundo: pareve por ingredientes vs. pareve certificado</h2>
+<p>Acá está el punto donde más gente se equivoca. Un alimento puede tener una lista de ingredientes impecablemente libre de lácteos y aun así no ser pareve, si se fabricó en un equipo que también procesa productos lácteos.</p>
+<p>Pensá en una fábrica de galletitas: la misma línea produce a la mañana galletitas con manteca y a la tarde galletitas sin ella. Aunque la segunda tanda no lleve ningún ingrediente lácteo, el equipo retiene sabor del lote anterior. El resultado se etiqueta <strong>"DE"</strong> (<em>dairy equipment</em>): no se puede comer junto con carne, aunque sí después de una comida cárnica, sin esperar las horas completas.</p>
+<p>Por eso la certificación kosher no es un análisis de laboratorio de ingredientes: es una auditoría del proceso completo, incluyendo qué se produjo antes en esa línea y cómo se limpió en el medio.</p>
+
+<h2>Ejemplos concretos de productos pareve</h2>
+<ul>
+<li><strong>Casi siempre pareve:</strong> aceite de oliva y otros aceites vegetales, azúcar, sal, arroz, legumbres secas, frutas y verduras frescas, frutos secos sin procesar, agua mineral y gaseosas.</li>
+<li><strong>Depende de la marca:</strong> pan (muchos llevan manteca o suero de leche), pastas (las que llevan huevo siguen siendo pareve, pero conviene verificar), chocolate (el amargo suele ser pareve, el con leche obviamente no), galletitas, margarina.</li>
+<li><strong>Pareve pero con asterisco:</strong> el pescado es pareve, pero muchas comunidades no lo combinan con carne en el mismo plato por una cuestión aparte, explicada en <a href="/articulos/pescado-kosher-aletas-escamas">pescado kosher</a>.</li>
+</ul>
+<p>Podés verificar el estatus de una marca puntual en nuestro <a href="/">directorio de productos certificados</a>, filtrando directamente por tipo.</p>
+
+<h2>Un error clásico: confundir pareve con vegano</h2>
+<p>No son lo mismo, aunque se superpongan bastante. Un producto vegano no contiene nada de origen animal, pero puede haberse elaborado en equipamiento compartido con productos cárnicos, o contener ingredientes que la halajá restringe por otros motivos —como el vino, que necesita supervisión propia aunque sea vegano.</p>
+<p>Y al revés: un producto pareve puede contener huevo o pescado, que no son veganos. Desarrollamos las diferencias en <a href="/articulos/kashrut-y-veganismo">kashrut y veganismo</a>.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿El huevo es pareve aunque venga de un animal?</strong><br>
+Sí. La categoría cárnica se refiere a la carne del animal, no a sus subproductos no lácteos. El huevo de un ave kosher es pareve y se puede usar tanto en preparaciones lácteas como cárnicas. Eso sí, hay que revisarlo antes de usarlo, como explicamos en <a href="/articulos/huevos-kosher">huevos kosher</a>.</p>
+<p><strong>Si cocino algo pareve en una olla cárnica, ¿sigue siendo pareve?</strong><br>
+No exactamente. Pasa a considerarse "pareve cocinado en cárnico", lo que en la práctica significa que no lo podés servir con lácteos. Por eso muchas familias tienen algunas ollas dedicadas exclusivamente a parve, justamente para conservar esa flexibilidad.</p>
+<p><strong>¿La miel es pareve si la producen las abejas?</strong><br>
+Sí, la miel es pareve y kosher, a pesar de que las abejas no son un animal kosher. Es una de las excepciones clásicas del kashrut, porque la miel no se considera un producto del cuerpo de la abeja sino néctar transformado.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>El complemento natural de este artículo es <a href="/articulos/carne-y-leche">carne y leche: por qué no se mezclan</a>, que explica de dónde sale toda esta división. Para el detalle de cómo interpretar los símbolos en el envase, mirá <a href="/articulos/como-leer-etiqueta-kosher">cómo leer una etiqueta kosher</a>.</p>
+<p>En fuentes externas, la <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">guía de la Orthodox Union</a> cubre las categorías con las fuentes halájicas correspondientes, y podés consultar la entrada de <a href="https://es.wikipedia.org/wiki/Pareve" target="_blank" rel="noopener">Wikipedia sobre pareve</a> para una referencia rápida.</p>',
             ],
             [
                 'slug' => 'shejita-sacrificio-kosher',
                 'category' => 'kashrut-basico',
                 'title' => 'Shejita: el método de sacrificio kosher',
                 'excerpt' => 'Para que la carne de un animal kosher sea apta para consumo, debe faenarse según un método ritual específico llamado shejita.',
-                'content' => '<p>La shejita es el método de sacrificio ritual judío, realizado por un shojet (matarife capacitado y certificado) usando un cuchillo extremadamente afilado y sin mellas, diseñado específicamente para producir un corte rápido y preciso en la garganta del animal, seccionando la tráquea y el esófago en un solo movimiento continuo.</p>
-<p>El objetivo de este método es minimizar el sufrimiento del animal y producir una pérdida de conciencia prácticamente instantánea. El shojet inspecciona el cuchillo antes y después de cada faena para asegurarse de que no tenga ninguna imperfección, por mínima que sea, ya que cualquier irregularidad invalida el procedimiento.</p>
-<p>Un familiar de nuestro equipo trabaja en shejita, y da una idea de lo obsesivo que es el control en la práctica. El jalef (el cuchillo) no lo revisa solamente el shojet antes y después de cada animal: además hay un supervisor que controla todos los cuchillos, día por día, con un criterio extremadamente estricto. Una imperfección que a simple vista ni se percibe alcanza para dejar un cuchillo fuera de uso. Es un ambiente de máxima seriedad y precisión, donde ante cualquier situación fuera de lo común lo primero es frenar todo y priorizar la seguridad.</p>
-<p>Después de la shejita, se realiza una inspección (bedika) de los órganos internos del animal, especialmente los pulmones, para descartar enfermedades o adherencias que invalidarían la carne como kosher. Solo los animales que pasan esta inspección se consideran aptos.</p>
-<p>Adicionalmente, la carne debe pasar por un proceso de salado (kashering) para extraer la sangre, ya que la Torá prohíbe consumir sangre. Esto se hace remojando la carne en agua, salándola y dejándola reposar antes de enjuagarla nuevamente, un proceso que hoy en día generalmente realiza la propia carnicería o frigorífico certificado antes de que el producto llegue al consumidor.</p>',
+                'content' => '<p>Para que la carne de un animal kosher sea apta, no alcanza con que la especie esté permitida. El animal tiene que haber sido faenado según un método ritual muy específico llamado <em>shejita</em>, ejecutado por una persona formada y certificada para eso: el <em>shojet</em>.</p>
+<p>Es uno de los procesos más regulados de todo el kashrut, y entender cómo funciona explica por qué la carne kosher cuesta bastante más que la convencional.</p>
+
+<h2>Qué es exactamente la shejita</h2>
+<p>La shejita consiste en un corte único y continuo en la garganta del animal, que secciona la tráquea y el esófago en un solo movimiento. Se realiza con un cuchillo llamado <em>jalef</em>, de filo extremadamente perfeccionado y sin ninguna melladura.</p>
+<p>El objetivo declarado del método es que la pérdida de conciencia sea prácticamente instantánea. Para eso, la halajá define cinco condiciones que invalidan el procedimiento si no se cumplen: que el corte sea sin pausa, sin presión, sin que el cuchillo quede tapado, dentro de la zona anatómica correcta, y sin desgarro. Si alguna falla, el animal no es kosher, sin excepciones y sin importar el valor económico en juego.</p>
+
+<h2>El jalef: por qué el cuchillo es el centro de todo</h2>
+<p>El cuchillo tiene requisitos casi obsesivos. Tiene que ser perfectamente liso, sin la mínima imperfección en el filo. El shojet lo revisa pasando la uña por el borde, un método que detecta irregularidades que el ojo no ve, y lo hace antes y después de cada animal. Si al terminar encuentra una melladura, ese animal queda invalidado retroactivamente, porque no hay forma de saber si la melladura estaba durante el corte.</p>
+
+<svg viewBox="0 0 640 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cadena de controles de la carne kosher: revisión del cuchillo, shejitá, inspección de órganos internos, y salado para extraer la sangre." style="width:100%;height:auto;max-width:640px;margin:1.5rem auto;display:block;">
+  <rect x="0" y="0" width="640" height="210" fill="#f9fafb" rx="8"/>
+  <text x="20" y="28" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#1f2937">La cadena de controles: si falla cualquiera, la carne no es kosher</text>
+  <rect x="20" y="52" width="140" height="66" fill="#eff6ff" stroke="#2563eb" stroke-width="2" rx="8"/>
+  <text x="90" y="78" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1e40af">1. Jalef</text>
+  <text x="90" y="96" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#1e3a8a">Cuchillo sin melladuras,</text>
+  <text x="90" y="109" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#1e3a8a">revisado antes y después</text>
+  <path d="M 165 85 L 190 85" stroke="#6b7280" stroke-width="2" marker-end="url(#sa)"/>
+  <defs><marker id="sa" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#6b7280"/></marker></defs>
+  <rect x="195" y="52" width="140" height="66" fill="#eff6ff" stroke="#2563eb" stroke-width="2" rx="8"/>
+  <text x="265" y="78" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1e40af">2. Shejitá</text>
+  <text x="265" y="96" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#1e3a8a">Corte único y continuo</text>
+  <text x="265" y="109" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#1e3a8a">por un shojet certificado</text>
+  <path d="M 340 85 L 365 85" stroke="#6b7280" stroke-width="2" marker-end="url(#sa)"/>
+  <rect x="370" y="52" width="140" height="66" fill="#eff6ff" stroke="#2563eb" stroke-width="2" rx="8"/>
+  <text x="440" y="78" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1e40af">3. Bediká</text>
+  <text x="440" y="96" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#1e3a8a">Inspección de órganos,</text>
+  <text x="440" y="109" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#1e3a8a">sobre todo pulmones</text>
+  <path d="M 515 85 L 540 85" stroke="#6b7280" stroke-width="2" marker-end="url(#sa)"/>
+  <rect x="545" y="52" width="80" height="66" fill="#dcfce7" stroke="#16a34a" stroke-width="2" rx="8"/>
+  <text x="585" y="78" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#166534">4. Salado</text>
+  <text x="585" y="96" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#14532d">Extrae la</text>
+  <text x="585" y="109" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#14532d">sangre</text>
+  <text x="20" y="160" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280">Una falla en cualquier eslabón invalida el animal completo, sin importar el valor comercial.</text>
+  <text x="20" y="180" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280">Por eso la carne kosher es sensiblemente más cara que la convencional.</text>
+</svg>
+
+<h2>Cómo se vive esto adentro de un frigorífico</h2>
+<p>Un familiar de nuestro equipo trabaja en shejita, y lo que cuenta da una dimensión del nivel de control que hay en la práctica, más allá de lo que dicen los manuales.</p>
+<p>El jalef no lo revisa solamente el shojet antes y después de cada animal: además hay un supervisor que controla todos los cuchillos del establecimiento, día por día, con un criterio extremadamente estricto. Una imperfección que a simple vista ni se percibe alcanza para dejar un cuchillo fuera de uso hasta que se reacondicione.</p>
+<p>Y hay algo que no suele contarse: es un ambiente donde la seguridad manda por encima de la producción. Ante cualquier situación fuera de lo previsto, el protocolo es frenar todo, guardar los cuchillos y evaluar antes de seguir. No existe la lógica de "terminemos el turno igual". Esa combinación de precisión técnica y seriedad operativa es lo que sostiene la confiabilidad del sello kosher en la carne.</p>
+
+<h2>Bediká: la inspección que descarta buena parte de los animales</h2>
+<p>Después de la shejita viene la <em>bediká</em>, la inspección de los órganos internos, con foco en los pulmones. Se buscan adherencias (<em>sirjot</em>) y signos de enfermedad que indicarían que el animal no estaba sano.</p>
+<p>Este paso descarta un porcentaje significativo de animales que ya fueron faenados correctamente. Esa carne no se tira —se vende en el circuito convencional no kosher—, pero explica buena parte del sobrecosto: el frigorífico kosher paga por todos los animales y solo puede vender como kosher los que pasan la inspección.</p>
+<p>Los animales cuyos pulmones no presentan ninguna adherencia se clasifican como <em>glatt</em> (liso, en ídish), el estándar más exigente. Lo desarrollamos en <a href="/articulos/glatt-kosher">glatt kosher: qué diferencia hay con el kosher común</a>.</p>
+
+<h2>El salado: por qué la carne kosher se prepara distinto</h2>
+<p>La Torá prohíbe expresamente consumir sangre, así que la carne debe pasar por un proceso de extracción llamado <em>melijá</em>:</p>
+<ol>
+<li><strong>Remojo</strong> en agua durante aproximadamente 30 minutos, para ablandar y abrir los poros.</li>
+<li><strong>Salado</strong> con sal gruesa por todas las superficies, incluidos los pliegues y cortes.</li>
+<li><strong>Reposo</strong> de alrededor de una hora sobre una superficie inclinada o rejilla, para que la sangre escurra.</li>
+<li><strong>Enjuague</strong> abundante, generalmente tres veces, para eliminar la sal.</li>
+</ol>
+<p>Hoy este proceso lo realiza casi siempre la carnicería o el frigorífico certificado antes de que el producto llegue al consumidor. Si comprás carne en una carnicería kosher, ya viene kasherizada salvo que te avisen lo contrario. La excepción clásica es el hígado: por su alto contenido de sangre no se puede kasherizar por salado y requiere asado directo al fuego.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Cualquier persona puede ser shojet?</strong><br>
+No. Requiere años de estudio de las leyes correspondientes, entrenamiento práctico supervisado, y una certificación (<em>kabalá</em>) otorgada por una autoridad rabínica. Además debe ser una persona observante, porque de su integridad depende toda la cadena.</p>
+<p><strong>¿La shejita aplica también a las aves?</strong><br>
+Sí, con el mismo principio, aunque los detalles técnicos y el cuchillo son distintos por el tamaño. El pollo kosher pasa por el mismo tipo de proceso que la carne vacuna.</p>
+<p><strong>¿Y el pescado necesita shejita?</strong><br>
+No. El pescado kosher no requiere ni shejita ni salado, lo que simplifica mucho su preparación. Solo tiene que cumplir el criterio de aletas y escamas, explicado en <a href="/articulos/pescado-kosher-aletas-escamas">pescado kosher</a>.</p>
+<p><strong>¿Por qué la carne kosher es tanto más cara?</strong><br>
+Por la suma de todo lo anterior: personal especializado, supervisión permanente, animales descartados en la inspección, y el proceso adicional de salado. No es un sobreprecio de marca, es costo operativo real.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>Para entender qué se puede hacer con esa carne una vez en casa, mirá <a href="/articulos/carne-y-leche">carne y leche: por qué no se mezclan</a>. Y si te interesa el estándar más estricto, está <a href="/articulos/glatt-kosher">glatt kosher</a>.</p>
+<p>En fuentes externas, la <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">guía de la Orthodox Union</a> desarrolla las leyes de shejita con sus fuentes, el <a href="https://www.youtube.com/@OUKosher" target="_blank" rel="noopener">canal de OU Kosher en YouTube</a> publica material explicativo del proceso, y podés consultar el artículo de <a href="https://en.wikipedia.org/wiki/Shechita" target="_blank" rel="noopener">Wikipedia sobre shechita</a> (en inglés) para el contexto histórico y el debate contemporáneo.</p>',
             ],
             [
                 'slug' => 'glatt-kosher',
