@@ -158,7 +158,7 @@ Sí, es lo más común. Se maneja cubriendo bien los alimentos, usando bandejas 
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/kasherizar-horno.jpg" alt="El libun, la kasherización del horno por calor intenso, exige limpieza total previa y 24 horas sin uso." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
-  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">El libun, la kasherización del horno por calor intenso, exige limpieza total previa y 24 horas sin uso. Foto: Eric65170 vía <a href="https://commons.wikimedia.org/wiki/File%3AAppartement_vue_g%C3%A9n%C3%A9rale.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">El libun, la kasherización del horno por calor intenso, exige limpieza total previa y 24 horas sin uso. Foto: Brandon Carson vía <a href="https://commons.wikimedia.org/wiki/File%3ADouble_oven.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY 2.0.</figcaption>
 </figure>
 <p>El método tradicional se llama <em>libun</em> (autolimpieza por calor intenso) y se hace así:</p>
 <ul>
@@ -660,7 +660,7 @@ Por la suma de todo lo anterior: personal especializado, supervisión permanente
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/tevilat-kelim.jpg" alt="Una mikve, el baño ritual donde se sumergen los utensilios nuevos antes de usarlos por primera vez." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
-  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Una mikve, el baño ritual donde se sumergen los utensilios nuevos antes de usarlos por primera vez. Foto: Michele Ahin vía <a href="https://commons.wikimedia.org/wiki/File%3AWLANL_-_MicheleLovesArt_-_Joods_Historisch_Museum_-_Mikwe_%28Grote_synagoge%29.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 2.0.</figcaption>
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Una mikve, el baño ritual donde se sumergen los utensilios nuevos antes de usarlos por primera vez. Foto: Stefan Walkowski vía <a href="https://commons.wikimedia.org/wiki/File%3AMikveh.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
 <p>Aplica principalmente a utensilios que tocan la comida directamente: ollas, sartenes, cubiertos, platos de vidrio, vasos. No suele aplicarse a utensilios eléctricos (una tostadora, una batidora) ni a los de plástico o madera, aunque las opiniones cambian según la tradición de cada comunidad, así que ante un caso específico conviene preguntarle al rabino.</p>
 <p>El proceso en sí es sencillo: se limpia bien el utensilio, sin restos de etiquetas, precintos ni adhesivos; se sumerge completo en el agua de la mikve mientras se recita una bendición; y ya queda listo para usarse con normalidad.</p>
@@ -675,7 +675,7 @@ Por la suma de todo lo anterior: personal especializado, supervisión permanente
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/armar-cocina-kosher.jpg" alt="Armar una cocina kosher desde cero es un proceso gradual: no hace falta resolverlo todo en un día." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
-  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Armar una cocina kosher desde cero es un proceso gradual: no hace falta resolverlo todo en un día. Foto: Shixart1985 vía <a href="https://commons.wikimedia.org/wiki/File%3AA_stylish_living_area_features_a_modern_kitchen%2C_comfortable_seating%2C_and_large_windows_allowing_ample_natural_ligh.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY 2.0.</figcaption>
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Armar una cocina kosher desde cero es un proceso gradual: no hace falta resolverlo todo en un día. Foto: MeRyan vía <a href="https://commons.wikimedia.org/wiki/File%3AKitchen_with_island%2C_New_Orleans_2007.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY 2.0.</figcaption>
 </figure>
 <ul>
 <li><strong>Definir la separación física:</strong> decidir qué utensilios, ollas y vajilla van a ser cárnicos y cuáles lácteos. Lo más práctico suele ser usar colores distintos (rojo para carne, azul para leche, por ejemplo) para no confundirse en el día a día.</li>
