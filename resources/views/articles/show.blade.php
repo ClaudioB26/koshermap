@@ -3,12 +3,24 @@
 @section('title', $article->title . ' — KosherMap')
 @section('meta_description', $article->excerpt)
 
+@push('head')
+    {{-- hreflang: le dice a Google que esta misma nota existe en estos otros
+    idiomas, cada uno con su propia URL, para que le muestre a cada usuario
+    la versión que corresponde en los resultados de búsqueda. --}}
+    @foreach($article->alternateUrls() as $altLocale => $altUrl)
+        <link rel="alternate" hreflang="{{ $altLocale }}" href="{{ $altUrl }}">
+    @endforeach
+    @if($article->urlFor('es'))
+        <link rel="alternate" hreflang="x-default" href="{{ $article->urlFor('es') }}">
+    @endif
+@endpush
+
 @section('content')
 <div class="max-w-3xl mx-auto px-4 py-10">
     <nav class="text-sm text-gray-500 mb-6">
         <a href="{{ route('home') }}" class="hover:text-blue-600">KosherMap</a>
         <span class="mx-2">›</span>
-        <a href="{{ route('articles.index') }}" class="hover:text-blue-600">Artículos</a>
+        <a href="{{ \App\Models\Article::indexUrlFor(app()->getLocale()) }}" class="hover:text-blue-600">{{ \App\Models\Article::sectionLabelFor(app()->getLocale()) }}</a>
         <span class="mx-2">›</span>
         <span class="text-gray-700">{{ $article->title }}</span>
     </nav>
@@ -47,7 +59,7 @@
         <h2 class="text-lg font-bold text-gray-800 mb-4">Artículos relacionados</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             @foreach($related as $r)
-                <a href="{{ route('articles.show', $r->slug) }}"
+                <a href="{{ $r->urlFor(app()->getLocale()) ?? route('articles.show', $r->slug) }}"
                    class="block bg-white border border-gray-100 rounded-xl p-4 shadow-sm hover:shadow-md transition">
                     <p class="font-semibold text-gray-800 text-sm">{{ $r->title }}</p>
                 </a>

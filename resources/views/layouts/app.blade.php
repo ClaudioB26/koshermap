@@ -45,7 +45,7 @@
 
             <!-- Primary Nav (desktop) -->
             <nav class="hidden md:flex items-center gap-1 shrink-0">
-                <a href="{{ route('articles.index') }}"
+                <a href="{{ \App\Models\Article::indexUrlFor(app()->getLocale()) }}"
                    class="px-3 py-1.5 rounded-lg text-sm font-semibold transition
                           {{ request()->routeIs('articles.*') ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-gray-100' }}">
                     📰 Artículos
@@ -175,7 +175,7 @@
 
         <!-- Mobile Nav -->
         <nav class="md:hidden flex gap-2 mt-2 overflow-x-auto pb-1 -mx-1 px-1">
-            <a href="{{ route('articles.index') }}"
+            <a href="{{ \App\Models\Article::indexUrlFor(app()->getLocale()) }}"
                class="px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap
                       {{ request()->routeIs('articles.*') ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-600' }}">
                 📰 Artículos
@@ -238,7 +238,7 @@
         <div class="flex flex-wrap justify-center gap-3 mt-2 text-xs text-gray-400">
             <a href="{{ route('pages.que-es-kosher') }}" class="hover:text-blue-600">¿Qué es Kosher?</a>
             <span class="text-gray-200">|</span>
-            <a href="{{ route('articles.index') }}" class="hover:text-blue-600">Artículos</a>
+            <a href="{{ \App\Models\Article::indexUrlFor(app()->getLocale()) }}" class="hover:text-blue-600">{{ \App\Models\Article::sectionLabelFor(app()->getLocale()) }}</a>
             <span class="text-gray-200">|</span>
             <a href="{{ route('pages.kashrut') }}" class="hover:text-blue-600">Kashrut</a>
             <span class="text-gray-200">|</span>

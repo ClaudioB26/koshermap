@@ -218,5 +218,19 @@ foreach ($infoPages as $slug => $pageKey) {
 }
 
 // Artículos sobre kashrut (tabla articles, multiidioma vía JSON)
+// Español es el default: sin prefijo de idioma en la URL.
 Route::get('/articulos', [\App\Http\Controllers\ArticleController::class, 'index'])->name('articles.index');
 Route::get('/articulos/{slug}', [\App\Http\Controllers\ArticleController::class, 'show'])->name('articles.show');
+
+// Resto de idiomas: URL propia con prefijo /{locale}/{palabra-traducida}/...
+// para que Google indexe cada idioma por separado (antes todos compartían
+// /articulos/{slug} y solo la sesión decidía qué texto se mostraba).
+foreach (\App\Models\Article::LOCALE_PATHS as $locale => $word) {
+    Route::get("/{$locale}/{$word}", function (\Illuminate\Http\Request $request) use ($locale) {
+        return app(\App\Http\Controllers\ArticleController::class)->index($request, $locale);
+    })->name("articles.index.{$locale}");
+
+    Route::get("/{$locale}/{$word}/{slug}", function (\Illuminate\Http\Request $request, string $slug) use ($locale) {
+        return app(\App\Http\Controllers\ArticleController::class)->show($request, $slug, $locale);
+    })->name("articles.show.{$locale}");
+}

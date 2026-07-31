@@ -26,7 +26,7 @@
                   text-gray-800 font-bold py-5 px-6 rounded-2xl shadow-lg border border-gray-200 transition text-base">
             📍 <span>Encontrar local</span>
         </a>
-        <a href="{{ route('articles.index') }}"
+        <a href="{{ \App\Models\Article::indexUrlFor(app()->getLocale()) }}"
            class="flex-1 flex items-center justify-center gap-3 bg-white hover:bg-gray-50
                   text-gray-800 font-bold py-5 px-6 rounded-2xl shadow-lg border border-gray-200 transition text-base">
             📰 <span>Artículos</span>
@@ -62,7 +62,7 @@
         {{-- Feature cards --}}
         <h2 class="text-lg font-bold text-gray-800 mb-4">{{ trans('home.features_title') }}</h2>
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-            <a href="{{ route('articles.index') }}"
+            <a href="{{ \App\Models\Article::indexUrlFor(app()->getLocale()) }}"
                class="bg-white border border-gray-100 rounded-xl p-4 shadow-sm hover:shadow-md hover:border-blue-200 transition">
                 <p class="font-semibold text-gray-800 mb-1">{{ trans('home.feature_1_title') }}</p>
                 <p class="text-sm text-gray-500">{{ trans('home.feature_1_body') }}</p>
@@ -84,12 +84,12 @@
         {{-- Artículos por categoría --}}
         <h2 class="text-lg font-bold text-gray-800 mb-4">📰 Artículos</h2>
         <div class="flex flex-wrap gap-2">
-            <a href="{{ route('articles.index') }}"
+            <a href="{{ \App\Models\Article::indexUrlFor(app()->getLocale()) }}"
                class="px-4 py-2 bg-white border border-gray-200 text-gray-700 rounded-full hover:bg-gray-50 transition font-medium text-sm">
                 Todos
             </a>
             @foreach(\App\Http\Controllers\ArticleController::CATEGORY_LABELS as $slug => $label)
-                <a href="{{ route('articles.index', ['category' => $slug]) }}"
+                <a href="{{ \App\Models\Article::indexUrlFor(app()->getLocale()) }}?category={{ $slug }}"
                    class="px-4 py-2 bg-white border border-gray-200 text-gray-700 rounded-full hover:bg-gray-50 transition font-medium text-sm">
                     {{ $label }}
                 </a>
@@ -169,7 +169,7 @@
             <p class="text-sm font-semibold text-gray-500 mb-2">📰 Artículos relacionados</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 @foreach($matchingArticles as $article)
-                <a href="{{ route('articles.show', $article->slug) }}"
+                <a href="{{ $article->urlFor(app()->getLocale()) ?? route('articles.show', $article->slug) }}"
                    class="block bg-blue-50 hover:bg-blue-100 transition rounded-xl p-4 border border-blue-100">
                     <p class="font-semibold text-blue-800 text-sm mb-1">{{ $article->title }}</p>
                     <p class="text-xs text-blue-600 line-clamp-2">{{ $article->excerpt }}</p>

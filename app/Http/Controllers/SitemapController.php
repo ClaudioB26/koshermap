@@ -226,16 +226,35 @@ class SitemapController extends Controller
     
     private function generateArticlesSitemap()
     {
-        $xml = $this->startSitemap();
+        // Un <url> por idioma y por artículo, con <xhtml:link hreflang> hacia
+        // las otras variantes: es el formato que documenta Google para que un
+        // sitemap declare traducciones de la misma página.
+        $xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
+        $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+              . 'xmlns:xhtml="http://www.w3.org/1999/xhtml">' . "\n";
 
         Article::published()->orderBy('sort_order')->chunk(100, function ($articles) use (&$xml) {
             foreach ($articles as $article) {
-                $xml .= $this->createUrlBlock(
-                    url('/articulos/' . $article->slug),
-                    $article->updated_at->format('Y-m-d'),
-                    '0.7',
-                    'monthly'
-                );
+                $alternates = $article->alternateUrls();
+
+                foreach ($alternates as $locale => $loc) {
+                    $xml .= "  <url>\n";
+                    $xml .= '    <loc>' . htmlspecialchars($loc, ENT_XML1) . "</loc>\n";
+                    $xml .= '    <lastmod>' . $article->updated_at->format('Y-m-d') . "</lastmod>\n";
+                    $xml .= "    <priority>0.7</priority>\n";
+                    $xml .= "    <changefreq>monthly</changefreq>\n";
+
+                    foreach ($alternates as $altLocale => $altUrl) {
+                        $xml .= '    <xhtml:link rel="alternate" hreflang="' . $altLocale
+                              . '" href="' . htmlspecialchars($altUrl, ENT_XML1) . "\" />\n";
+                    }
+                    if (isset($alternates['es'])) {
+                        $xml .= '    <xhtml:link rel="alternate" hreflang="x-default" href="'
+                              . htmlspecialchars($alternates['es'], ENT_XML1) . "\" />\n";
+                    }
+
+                    $xml .= "  </url>\n";
+                }
             }
         });
 
