@@ -19,7 +19,12 @@ class ArticleSeeder extends Seeder
                 'content' => '<p>De todas las prohibiciones alimentarias de la Torá, la de los insectos (<em>sheratzim</em>) tiene una particularidad que sorprende a mucha gente: comer un solo insecto puede constituir varias transgresiones a la vez, porque la Torá lo prohíbe en más de un versículo. Por eso revisar frutas y verduras no es una recomendación de higiene, es un paso ineludible antes de que esos alimentos lleguen a la mesa.</p>
 
 <h2>Por qué las verduras de hoja son el caso más delicado</h2>
-<p>El problema no es que los insectos sean muchos, sino que son diminutos y del mismo color que la hoja. Los pulgones (áfidos) miden entre uno y tres milímetros y suelen ser verde claro, así que se camuflan perfectamente en la lechuga o la espinaca. Los trips son todavía más chicos y se meten en los pliegues. Y en el brócoli o la coliflor el problema se agrava, porque los racimos forman una estructura cerrada donde un insecto puede quedar alojado sin que se vea nada desde afuera.</p>
+<p>El problema no es que los insectos sean muchos, sino que son diminutos y del mismo color que la hoja. Los <a href="https://es.wikipedia.org/wiki/%C3%81fido" target="_blank" rel="noopener">pulgones o áfidos</a> miden entre uno y tres milímetros, y aunque en las fotos ampliadas se ven perfectamente, sobre una hoja real son apenas un punto. Los trips son todavía más chicos y se meten en los pliegues. Y en el brócoli o la coliflor el problema se agrava, porque los racimos forman una estructura cerrada donde un insecto puede quedar alojado sin que se vea nada desde afuera.</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/pulgon-en-hoja.jpg" alt="Primer plano macro de un pulgón (áfido) sobre la superficie de una hoja verde, donde se distinguen claramente sus seis patas y antenas" loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Un pulgón sobre una hoja, ampliado. En la verdura real mide entre uno y tres milímetros: a simple vista es apenas un puntito oscuro, y por eso se pasa por alto tan fácil. Foto: WikiPedant vía <a href="https://commons.wikimedia.org/wiki/File:Aphid_on_leaf05.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>.</figcaption>
+</figure>
 <p>No todas las verduras presentan el mismo nivel de riesgo. Esta es la escala aproximada que manejan la mayoría de las guías de kashrut:</p>
 
 <svg viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nivel de riesgo de infestación por tipo de verdura: alto para lechuga, espinaca, brócoli y coliflor; medio para frutillas, frambuesas, repollo y perejil; bajo para papa, zanahoria, cebolla, banana y manzana." style="width:100%;height:auto;max-width:640px;margin:1.5rem auto;display:block;">
@@ -51,6 +56,7 @@ class ArticleSeeder extends Seeder
 
 <h2>Una lección que aprendimos en casa</h2>
 <p>Y que quede claro que esto no es tan fácil como suena. A uno de nosotros, en casa, siempre le tocaba revisar las verduras. Con los años empezó a necesitar anteojos, y un día vio un puntito negro en una hoja. Convencido de que no era nada, le preguntó a su hija: ¿esto qué es? Y la hija le contestó: ¿no ves que es un bicho, que se le ven las patitas? Desde ese día no revisa una sola hoja sin los anteojos puestos.</p>
+<p>Vale la pena volver a mirar la foto de arriba con eso en mente. Ampliado se ven las seis patas, las antenas, todo. Sobre la hoja, en la mesada de la cocina y con luz mediocre, es el puntito que casi pasa desapercibido.</p>
 <p>La enseñanza es simple pero vale por todo el artículo: revisar bien exige buena luz y buena vista. Si usás anteojos, ponételos. Si la cocina tiene luz amarilla tenue, mudá la tarea a la mesa cerca de la ventana. Y ante la duda, una segunda mirada —o una segunda persona— nunca sobra.</p>
 
 <h2>El factor estacional: por qué en verano hay que redoblar la atención</h2>
@@ -136,7 +142,7 @@ El pescado es parve, así que técnicamente se puede combinar con lácteos —de
 Sí, es lo más común. Se maneja cubriendo bien los alimentos, usando bandejas dedicadas, o asignando el horno a una sola categoría. La opción más simple para quien recién empieza es destinarlo a parve y cárnico, y resolver los lácteos en la hornalla.</p>
 
 <h2>Para seguir leyendo</h2>
-<p>Si estás organizando tu cocina, la guía de <a href="/articulos/armar-cocina-kosher">cómo armar una cocina kosher desde cero</a> aterriza todo esto en pasos concretos. Para las fuentes originales, la <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">guía introductoria de la Orthodox Union</a> desarrolla el tema con las citas talmúdicas, y el artículo de <a href="https://es.wikipedia.org/wiki/Kashrut" target="_blank" rel="noopener">Wikipedia sobre kashrut</a> da el panorama histórico general.</p>',
+<p>Si estás organizando tu cocina, la guía de <a href="/articulos/armar-cocina-kosher">cómo armar una cocina kosher desde cero</a> aterriza todo esto en pasos concretos. Para las fuentes originales, la <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">guía introductoria de la Orthodox Union</a> desarrolla el tema con las citas talmúdicas, el artículo de <a href="https://es.wikipedia.org/wiki/Kashrut" target="_blank" rel="noopener">Wikipedia sobre kashrut</a> da el panorama histórico general, y el <a href="https://www.youtube.com/@OUKosher" target="_blank" rel="noopener">canal de OU Kosher en YouTube</a> publica material audiovisual sobre cómo se organiza una cocina con separación.</p>',
             ],
             [
                 'slug' => 'kasherizar-horno',
@@ -164,6 +170,13 @@ Sí, es lo más común. Se maneja cubriendo bien los alimentos, usando bandejas 
 <h2>Por qué el vapor cambia todo</h2>
 <p>En halajá rige un principio central para estos casos: <em>k\'bolo kach polto</em>, "como absorbió, así expulsa". Un utensilio se purifica por el mismo medio por el que absorbió el sabor. Si absorbió por líquido hirviendo, se kasheriza con líquido hirviendo; si absorbió por fuego directo, necesita fuego directo.</p>
 <p>El microondas absorbe por vapor, así que se kasheriza por vapor. Por eso el procedimiento consiste en generar deliberadamente una gran cantidad de vapor dentro de la cavidad, para que alcance todas las superficies que estuvieron en contacto con las salpicaduras y los vapores de la comida anterior.</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/microondas-cocina.jpg" alt="Microondas empotrado sobre una cocina con horno, en una cocina doméstica" loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">La cavidad del microondas acumula salpicaduras sobre todo en el techo, que es donde menos se mira al limpiar. Foto: Tomwsulcer vía <a href="https://commons.wikimedia.org/wiki/File:Stove_oven_combination_and_microwave_oven.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC0.</figcaption>
+</figure>
+
+<p>Si te interesa el detalle técnico de por qué el <a href="https://es.wikipedia.org/wiki/Horno_de_microondas" target="_blank" rel="noopener">horno de microondas</a> calienta agitando las moléculas de agua del alimento, ahí está la explicación física completa. Para el kashrut, lo relevante es la consecuencia: se genera vapor, y el vapor transporta sabor.</p>
 
 <svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Procedimiento de kasherización de un microondas en cuatro pasos: limpieza profunda, espera de 24 horas, hervir agua generando vapor, y dejar actuar el vapor." style="width:100%;height:auto;max-width:640px;margin:1.5rem auto;display:block;">
   <rect x="0" y="0" width="640" height="230" fill="#f9fafb" rx="8"/>
@@ -290,7 +303,14 @@ El procedimiento es el mismo, pero como no sabés qué se cocinó ahí, es un ca
                 'excerpt' => 'El vino tiene un estatus particular en la halajá: para ser kosher, debe ser elaborado y manipulado exclusivamente por judíos observantes.',
                 'content' => '<p>Hace un tiempo pudimos recorrer una bodega en Mendoza que produce vino kosher, y ver el proceso de cerca ayuda a entender por qué el vino tiene reglas tan distintas al resto de los alimentos. Con casi cualquier otro producto alcanza con que los ingredientes y el proceso cumplan ciertos requisitos. Con el vino no: la halajá exige que toda persona que lo toque durante la elaboración, desde que la uva entra hasta que se embotella, sea judía y observante. El motivo es histórico: el vino se usaba en rituales de idolatría, y de ahí viene la restricción.</p>
 <p>En la práctica, esto arma una división de tareas bastante particular. El que sabe de vino es el enólogo, que en general no es judío (el goy), y es quien indica qué hacer en cada etapa. Pero el que efectivamente mueve el vino, abre las canillas y hace todo lo que implica tocar el producto es siempre un judío observante (el ieudí). El experto dirige, el ieudí ejecuta, y todo bajo supervisión rabínica constante.</p>
-<p>El vino va descansando en distintos ambientes según la etapa, y una parte se guarda en toneles de roble, que se pueden reutilizar hasta unas tres veces antes de perder sus propiedades. Cada tonel va sellado, y ese sello no es un detalle menor: es la garantía de que nadie ajeno tocó el contenido. Nos contaron un caso que muestra hasta dónde llega la exigencia. En un tonel de miles de litros notaron que faltaba el sello en el punto donde tenía que estar cerrado: estaba abierto. Tuvo que venir el Rab de Buenos Aires a verificar la situación en persona, y dictaminó que ese vino había quedado sin supervisión. Resultado: esos miles de litros ya no se podían vender como kosher.</p>
+<p>El vino va descansando en distintos ambientes según la etapa, y una parte se guarda en toneles de roble, que se pueden reutilizar hasta unas tres veces antes de perder sus propiedades.</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/barricas-roble-vino.jpg" alt="Barricas de roble apiladas en la sala de crianza de una bodega, cada una con su tapón y marcas de identificación" loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Sala de barricas de una bodega (imagen ilustrativa, no corresponde a la bodega mendocina que visitamos). En una bodega kosher, cada barrica lleva además un sello que certifica que nadie ajeno a la supervisión la abrió. Foto: Subhashish Panigrahi vía <a href="https://commons.wikimedia.org/wiki/File:Oak_barrels_used_for_aging_of_wine_in_a_cellar_at_Grover_Zampa_Vineyard,_Doddaballapura,_Karnataka,_India.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>.</figcaption>
+</figure>
+
+<p>Cada tonel va sellado, y ese sello no es un detalle menor: es la garantía de que nadie ajeno tocó el contenido. Nos contaron un caso que muestra hasta dónde llega la exigencia. En un tonel de miles de litros notaron que faltaba el sello en el punto donde tenía que estar cerrado: estaba abierto. Tuvo que venir el Rab de Buenos Aires a verificar la situación en persona, y dictaminó que ese vino había quedado sin supervisión. Resultado: esos miles de litros ya no se podían vender como kosher.</p>
 <p>Existe además una categoría especial, el <strong>vino mevushal</strong> ("hervido"), que es vino pasteurizado a una temperatura específica. Una vez que un vino es mevushal, conserva su estatus kosher aunque después lo sirva o lo toque una persona no judía. Por eso es tan práctico para eventos, restaurantes y catering, donde no hay forma de controlar quién agarra cada botella.</p>
 <p>Hoy hay vinos kosher de buena calidad en casi todas las regiones vitivinícolas del mundo. Mendoza es un polo importante en Argentina, y también se producen en Chile, Francia, España, Italia y por supuesto Israel, certificados por las principales agencias rabínicas.</p>',
             ],
@@ -419,7 +439,7 @@ Sí, la miel es pareve y kosher, a pesar de que las abejas no son un animal kosh
 
 <h2>Para seguir leyendo</h2>
 <p>El complemento natural de este artículo es <a href="/articulos/carne-y-leche">carne y leche: por qué no se mezclan</a>, que explica de dónde sale toda esta división. Para el detalle de cómo interpretar los símbolos en el envase, mirá <a href="/articulos/como-leer-etiqueta-kosher">cómo leer una etiqueta kosher</a>.</p>
-<p>En fuentes externas, la <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">guía de la Orthodox Union</a> cubre las categorías con las fuentes halájicas correspondientes, y podés consultar la entrada de <a href="https://es.wikipedia.org/wiki/Pareve" target="_blank" rel="noopener">Wikipedia sobre pareve</a> para una referencia rápida.</p>',
+<p>En fuentes externas, la <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">guía de la Orthodox Union</a> cubre las categorías con las fuentes halájicas correspondientes, y podés consultar la entrada de <a href="https://es.wikipedia.org/wiki/Pareve" target="_blank" rel="noopener">Wikipedia sobre pareve</a> para una referencia rápida. Otras certificadoras con material público útil son <a href="https://www.ok.org" target="_blank" rel="noopener">OK Kosher Certification</a> y el <a href="https://www.crcweb.org" target="_blank" rel="noopener">Chicago Rabbinical Council (cRc)</a>, que publica listas de productos actualizadas.</p>',
             ],
             [
                 'slug' => 'shejita-sacrificio-kosher',
@@ -683,7 +703,13 @@ Por la suma de todo lo anterior: personal especializado, supervisión permanente
 <li>Quemar la porción separada (envuelta en papel de aluminio, en el horno) o desecharla de forma que no se use para consumo regular.</li>
 </ul>
 <p>Esta práctica es la razón por la que muchas panaderías kosher industriales certificadas separan jalá como parte de su proceso de producción, y por la que muchas mujeres y familias judías la realizan en casa cada vez que hornean pan o jalá para Shabat en cantidad suficiente.</p>
-<p>En muchas casas esto se vive como un momento especial. En la nuestra, por ejemplo, las chicas siempre tratan de llegar a la cantidad mínima de masa justamente para poder separar la jalá con berajá, ya que hacerlo con la bendición tiene un valor agregado. Más allá del gesto técnico, termina siendo un ritual familiar alrededor del horno.</p>',
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/jala-shabat.jpg" alt="Pan de jalá trenzado y dorado sobre una mesa, junto a una copa de vino blanco y un montoncito de sal gruesa, cubierto parcialmente por un paño blanco" loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Jalá trenzada lista para Shabat, con la copa de vino y la sal. El paño que la cubre es parte de la costumbre de la mesa de Shabat. Foto: HaJunkiyada vía <a href="https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Challah_for_Shabbat_with_wine_and_salt.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>.</figcaption>
+</figure>
+
+<p>En muchas casas esto se vive como un momento especial. En la nuestra, por ejemplo, las chicas siempre tratan de llegar a la cantidad mínima de masa justamente para poder separar la jalá con berajá, ya que hacerlo con la bendición tiene un valor agregado. Más allá del gesto técnico, termina siendo un ritual familiar alrededor del horno.</p>
+<p>Si querés profundizar, la <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">guía de la Orthodox Union</a> desarrolla las leyes de hafrashat jalá con sus fuentes, y podés consultar la entrada de <a href="https://es.wikipedia.org/wiki/Jal%C3%A1" target="_blank" rel="noopener">Wikipedia sobre la jalá</a> para el contexto histórico y las variantes regionales del pan.</p>',
             ],
             [
                 'slug' => 'calendario-judio-festividades-alimentacion',
