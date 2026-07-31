@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Ilustración del jalef, el cuchillo de shejitá, siendo inspeccionado con lupa para detectar melladuras en el filo">
+  <rect width="1200" height="800" fill="#f8fafc"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#2563eb"/>
+
+  <text x="600" y="90" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="42" font-weight="700" fill="#1e293b">El jalef</text>
+  <text x="600" y="132" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="22" fill="#64748b">El cuchillo de shejitá y su inspección</text>
+
+  <!-- Cuchillo -->
+  <g transform="translate(180,330)">
+    <rect x="0" y="26" width="230" height="46" rx="10" fill="#78350f"/>
+    <rect x="0" y="26" width="230" height="14" rx="7" fill="#92400e"/>
+    <circle cx="52" cy="49" r="6" fill="#451a03"/>
+    <circle cx="115" cy="49" r="6" fill="#451a03"/>
+    <circle cx="178" cy="49" r="6" fill="#451a03"/>
+    <path d="M 230 26 L 700 30 L 700 62 L 230 72 Z" fill="#cbd5e1"/>
+    <path d="M 230 62 L 700 56 L 700 62 L 230 72 Z" fill="#94a3b8"/>
+    <path d="M 240 34 L 690 37 L 690 43 L 240 42 Z" fill="#e2e8f0" opacity="0.8"/>
+  </g>
+
+  <!-- Lupa -->
+  <g transform="translate(700,300)">
+    <circle cx="120" cy="120" r="108" fill="#ffffff" fill-opacity="0.96" stroke="#2563eb" stroke-width="9"/>
+    <line x1="196" y1="196" x2="272" y2="272" stroke="#2563eb" stroke-width="18" stroke-linecap="round"/>
+    <!-- Filo ampliado con una melladura -->
+    <line x1="42" y1="120" x2="198" y2="120" stroke="#475569" stroke-width="7"/>
+    <path d="M 118 120 L 128 100 L 138 120" fill="none" stroke="#dc2626" stroke-width="7" stroke-linejoin="round"/>
+    <circle cx="128" cy="86" r="24" fill="none" stroke="#dc2626" stroke-width="5"/>
+    <text x="128" y="180" text-anchor="middle" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="#dc2626">melladura</text>
+  </g>
+
+  <!-- Texto explicativo -->
+  <rect x="180" y="530" width="840" height="180" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="220" y="580" font-family="system-ui,sans-serif" font-size="21" fill="#334155">El shojet revisa el filo pasando la uña por el borde,</text>
+  <text x="220" y="616" font-family="system-ui,sans-serif" font-size="21" fill="#334155">antes y después de cada animal. Una sola melladura</text>
+  <text x="220" y="652" font-family="system-ui,sans-serif" font-size="21" fill="#334155">—invisible a simple vista— invalida el procedimiento</text>
+  <text x="220" y="688" font-family="system-ui,sans-serif" font-size="21" fill="#334155">y el animal deja de ser apto.</text>
+</svg>

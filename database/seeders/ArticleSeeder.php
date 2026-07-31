@@ -85,6 +85,11 @@ No. La halajá se refiere a lo que es visible a simple vista. Los microorganismo
                 'title' => 'Carne y leche: por qué no se mezclan',
                 'excerpt' => 'La separación entre carne y leche es uno de los pilares más conocidos del kashrut. Te explicamos su origen, sus alcances y cómo se aplica en la práctica.',
                 'content' => '<p>"No cocinarás un cabrito en la leche de su madre." Ese versículo aparece tres veces en la Torá —en Éxodo dos veces y en Deuteronomio una— y de esa repetición la tradición oral sacó una prohibición triple: no cocinar carne con leche, no comerla mezclada y tampoco sacar ningún provecho de esa mezcla, ni siquiera vendiéndola.</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/carne-y-leche.jpg" alt="Una cocina kosher observante mantiene dos juegos completos de ollas y utensilios, uno para carne y otro para lácteos." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Una cocina kosher observante mantiene dos juegos completos de ollas y utensilios, uno para carne y otro para lácteos. Foto: PattayaPatrol vía <a href="https://commons.wikimedia.org/wiki/File%3ADFC_2431_A_cook_flips_food_in_a_hot_pan_while_working_in_a_compact_well-used_kitchen_filled_with_pots_utensils_and_shelves_of_ingredients.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
+</figure>
 <p>Esa última parte suele sorprender. Una persona que sigue el kashrut no solo se abstiene de comer un plato de carne con crema: tampoco puede venderlo ni regalarlo, porque el beneficio económico también está incluido en la prohibición.</p>
 
 <h2>Las tres categorías que ordenan toda la cocina</h2>
@@ -150,6 +155,11 @@ Sí, es lo más común. Se maneja cubriendo bien los alimentos, usando bandejas 
                 'title' => 'Cómo kasherizar un horno',
                 'excerpt' => 'Cuando un horno se usó con alimentos no kosher, o se quiere pasar de uso cárnico a lácteo, existe un proceso específico para volverlo apto.',
                 'content' => '<p>Hay varios momentos en los que kasherizar un horno se vuelve necesario: te mudás a una casa que tenía un horno de uso no kosher, decidís pasarlo de uso cárnico a lácteo, o se acerca Pesaj y hay que sacar hasta el último rastro de jametz.</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/kasherizar-horno.jpg" alt="El libun, la kasherización del horno por calor intenso, exige limpieza total previa y 24 horas sin uso." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">El libun, la kasherización del horno por calor intenso, exige limpieza total previa y 24 horas sin uso. Foto: Eric65170 vía <a href="https://commons.wikimedia.org/wiki/File%3AAppartement_vue_g%C3%A9n%C3%A9rale.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
+</figure>
 <p>El método tradicional se llama <em>libun</em> (autolimpieza por calor intenso) y se hace así:</p>
 <ul>
 <li>Limpiar a fondo el horno, sacando toda la suciedad y los residuos de comida visibles.</li>
@@ -244,6 +254,11 @@ El procedimiento es el mismo, pero como no sabés qué se cocinó ahí, es un ca
                 'title' => 'Cómo kasherizar un lavavajillas',
                 'excerpt' => 'Muchas familias usan el lavavajillas para platos cárnicos y lácteos en ciclos separados. Te contamos qué hace falta para kasherizarlo.',
                 'content' => '<p>El lavavajillas complica un poco más que otros electrodomésticos: sus paredes internas, los filtros y los brazos aspersores están en contacto constante con restos de comida a alta temperatura, y eso hace que absorban sabores de forma más persistente.</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/kasherizar-lavavajillas.jpg" alt="El lavavajillas es de los electrodomésticos más discutidos: sus filtros y aspersores retienen restos a alta temperatura." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">El lavavajillas es de los electrodomésticos más discutidos: sus filtros y aspersores retienen restos a alta temperatura. Foto: SelenaJKruse vía <a href="https://commons.wikimedia.org/wiki/File%3ALoading_Dishwasher_with_Detergent.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
+</figure>
 <p>Por esa razón, muchas autoridades rabínicas son más estrictas acá que con otros aparatos, y algunas directamente desaconsejan usarlo para las dos categorías (cárnico y lácteo), ni siquiera en días distintos. Quienes sí lo permiten piden, en general:</p>
 <ul>
 <li>Limpieza profunda de filtros, brazos rociadores y juntas de goma.</li>
@@ -259,6 +274,11 @@ El procedimiento es el mismo, pero como no sabés qué se cocinó ahí, es un ca
                 'title' => 'Cómo kasherizar utensilios de metal (hagalá)',
                 'excerpt' => 'La hagalá es el método tradicional de inmersión en agua hirviendo para kasherizar ollas, cubiertos y otros utensilios metálicos.',
                 'content' => '<p>Entre los métodos de kasherización, la hagalá es de los más antiguos, y se usa sobre todo en utensilios de metal que estuvieron en contacto directo con fuego o líquido hirviendo: ollas, cubiertos, sartenes sin recubrimiento antiadherente y otras piezas de cocina.</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/hagala-utensilios-metal.jpg" alt="La hagalá consiste en sumergir el utensilio en agua hirviendo: como absorbió, así expulsa." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">La hagalá consiste en sumergir el utensilio en agua hirviendo: como absorbió, así expulsa. Foto: W.carter vía <a href="https://commons.wikimedia.org/wiki/File%3ASteam-boiling_green_asparagus.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC0.</figcaption>
+</figure>
 <p>La lógica detrás es simple de recordar: "como absorbió, así expulsa". Si un utensilio absorbió sabor no kosher (o cárnico/lácteo) a través de líquido hirviendo, se purifica de la misma forma, sumergiéndolo en agua hirviendo.</p>
 <p>El procedimiento:</p>
 <ul>
@@ -276,6 +296,11 @@ El procedimiento es el mismo, pero como no sabés qué se cocinó ahí, es un ca
                 'title' => 'Vajilla para Pesaj: todo lo que hay que saber',
                 'excerpt' => 'Durante Pesaj rigen reglas más estrictas que el resto del año en cuanto a utensilios de cocina, debido a la prohibición de jametz.',
                 'content' => '<p>De todas las épocas del año, Pesaj es la que trae las reglas más estrictas, porque a las normas habituales de kashrut se le suma la prohibición total de tener o comer jametz (productos fermentados hechos con alguno de cinco granos: trigo, cebada, avena, centeno y espelta).</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/vajilla-para-pesaj.jpg" alt="Muchas familias tienen un juego de vajilla exclusivo para Pesaj, guardado el resto del año." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Muchas familias tienen un juego de vajilla exclusivo para Pesaj, guardado el resto del año. Foto: Silar vía <a href="https://commons.wikimedia.org/wiki/File%3A020210817_135854_Seder_plates%2C_brass_plate%2C_%C4%86miel%C3%B3w_porcelain%2C_19th-early_20th_century%2C_Category%2C_Passover_in_Galicia.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
+</figure>
 <p>El problema es que el jametz pudo haber estado en contacto con ollas, platos y cubiertos durante todo el año. Por eso muchas familias directamente tienen un juego de vajilla aparte, exclusivo para Pesaj, guardado el resto del año: es la opción más simple, y la que evita tener que kasherizar cada vez que llega la festividad.</p>
 <p>Para quienes no tienen vajilla separada, hay margen para kasherizar algunos utensilios, aunque no todos:</p>
 <ul>
@@ -292,6 +317,11 @@ El procedimiento es el mismo, pero como no sabés qué se cocinó ahí, es un ca
                 'title' => 'Jametz: qué es y cómo se elimina antes de Pesaj',
                 'excerpt' => 'El jametz es el alimento fermentado prohibido durante Pesaj. Conocer qué productos lo contienen es clave para preparar la festividad.',
                 'content' => '<p>El jametz es cualquier producto elaborado con uno de cinco granos (trigo, cebada, avena, centeno o espelta) que entró en contacto con agua y fermentó por más de 18 minutos sin ser horneado. Ahí entran el pan, la cerveza, casi todas las pastas, las galletitas y una cantidad enorme de productos industrializados que usan estos granos como ingrediente o derivado.</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/jametz-pesaj.jpg" alt="Durante Pesaj rige la prohibición total de comer y de poseer jametz." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Durante Pesaj rige la prohibición total de comer y de poseer jametz. Foto: Ministry of Information Photo Division Photographer vía <a href="https://commons.wikimedia.org/wiki/File%3AAllied_Forces_Celebrate_Passover-_Jewish_Traditions_in_Wartime_Britain%2C_April_1944_D19336.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, Public domain.</figcaption>
+</figure>
 <p>La Torá no solo prohíbe comer jametz durante Pesaj: prohíbe también tenerlo en casa. Por eso, en las semanas previas a la festividad, las familias judías hacen una limpieza a fondo (bedikat jametz) para sacar cualquier resto de pan, harina o producto con jametz de armarios, autos, carteras y cualquier rincón donde pueda haber caído una miga.</p>
 <p>Para el jametz que no conviene tirar (productos caros, o difíciles de reponer), existe la opción de "venderlo" simbólicamente a una persona no judía mediante un contrato llamado <em>mejirat jametz</em>, que suele coordinar el rabino de la comunidad. Ese jametz se guarda cerrado y aparte durante toda la festividad, y se "recompra" automáticamente al terminar Pesaj.</p>
 <p>La noche antes de Pesaj se hace una búsqueda ritual del jametz por toda la casa, generalmente con una vela, una pluma y una cuchara de madera, y a la mañana siguiente se quema lo que se encontró (biur jametz).</p>',
@@ -320,6 +350,11 @@ El procedimiento es el mismo, pero como no sabés qué se cocinó ahí, es un ca
                 'title' => 'Gelatina kosher: el debate halájico',
                 'excerpt' => 'La gelatina es uno de los ingredientes más debatidos en el mundo del kashrut, porque su origen animal puede comprometer su estatus.',
                 'content' => '<p>Para hacer gelatina tradicional se hierven huesos, piel y tejido conectivo de animales (por lo general vacas o cerdos) hasta extraer el colágeno. Ahí aparecen dos problemas para el kashrut: el origen del animal (¿es una especie kosher?) y el proceso (¿fue faenado según shejita?).</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/gelatina-kosher.jpg" alt="Golosinas y postres son los productos donde más aparece la gelatina, el ingrediente más debatido del kashrut." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Golosinas y postres son los productos donde más aparece la gelatina, el ingrediente más debatido del kashrut. Foto: Sakurai Midori vía <a href="https://commons.wikimedia.org/wiki/File%3ASweets_Offering_for_Obon.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 3.0.</figcaption>
+</figure>
 <p>Durante décadas distintas autoridades rabínicas discutieron si la gelatina, al pasar por un proceso químico tan transformador, cambia de estatus halájico (un concepto que se llama <em>panim jadashot</em>, transformación total). Algunas posturas más permisivas sostuvieron que el proceso es tan radical que el producto final ya no cuenta como carne en sentido halájico. La mayoría de las certificadoras kosher grandes, sin embargo, no acepta esa postura para gelatina de origen no kosher.</p>
 <p>Por eso, hoy casi todos los productos con certificación kosher que necesitan gelatina (golosinas, postres, cápsulas de medicamentos, malvaviscos) usan alguna de estas alternativas:</p>
 <ul>
@@ -335,6 +370,11 @@ El procedimiento es el mismo, pero como no sabés qué se cocinó ahí, es un ca
                 'title' => 'Alcohol y bebidas espirituosas: qué hace falta para que sean kosher',
                 'excerpt' => 'Whisky, vodka, ron y otros destilados suelen ser kosher por naturaleza, pero hay excepciones importantes a tener en cuenta.',
                 'content' => '<p>La mayoría de los destilados (whisky, vodka, ron, gin) se hacen a partir de granos, papa o caña de azúcar, ingredientes que en sí mismos no dan problemas de kashrut. Por eso muchos destilados simples son kosher sin necesitar certificación especial, siempre que no se les agregue sabores, colorantes o aditivos de origen no kosher.</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/alcohol-bebidas-espirituosas.jpg" alt="Muchos destilados son kosher por sus ingredientes, pero el añejado en barricas de vino puede cambiar su estatus." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Muchos destilados son kosher por sus ingredientes, pero el añejado en barricas de vino puede cambiar su estatus. Foto: 4028mdk09 vía <a href="https://commons.wikimedia.org/wiki/File%3ABarbestand.JPG" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 3.0.</figcaption>
+</figure>
 <p>Ahora, hay puntos donde conviene prestar atención:</p>
 <ul>
 <li><strong>Añejamiento en barricas de vino o jerez:</strong> algunos whiskies y rones se añejan en barriles que antes tuvieron vino no kosher, y eso puede afectar su estatus.</li>
@@ -350,6 +390,11 @@ El procedimiento es el mismo, pero como no sabés qué se cocinó ahí, es un ca
                 'title' => 'Cómo comer kosher en un restaurante no certificado',
                 'excerpt' => 'Viajar o salir a comer sin un restaurante kosher cerca no significa romper la dieta. Hay opciones para mantenerse dentro de las normas.',
                 'content' => '<p>No siempre hay un restaurante con certificación kosher disponible, especialmente al viajar o vivir en ciudades con poca infraestructura comunitaria. Aun así, existen estrategias para mantenerse dentro del kashrut en restaurantes comunes.</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/comer-kosher-restaurante.jpg" alt="Sin un restaurante certificado cerca, hay estrategias para mantenerse dentro del kashrut." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Sin un restaurante certificado cerca, hay estrategias para mantenerse dentro del kashrut. Foto: David Adam Kess vía <a href="https://commons.wikimedia.org/wiki/File%3A%28Zazu%2C_Quito_Ecuador%2C_interior%29_table_setting.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
+</figure>
 <ul>
 <li><strong>Opciones vegetarianas o veganas:</strong> al eliminar carne y lácteos del plato, se reduce mucho el riesgo, aunque sigue siendo necesario verificar ingredientes (caldo de carne, manteca, salsas con base animal).</li>
 <li><strong>Frutas y verduras crudas:</strong> sin cocción ni manipulación compleja, suelen ser una opción segura en casi cualquier lugar.</li>
@@ -366,6 +411,11 @@ El procedimiento es el mismo, pero como no sabés qué se cocinó ahí, es un ca
                 'title' => 'Símbolos de certificación kosher más comunes',
                 'excerpt' => 'OU, OK, Star-K, KSA... existen decenas de símbolos de certificación kosher en el mundo. Te ayudamos a reconocer los más usados.',
                 'content' => '<p>Cuando un producto pasa por el proceso de certificación kosher, la agencia certificadora autoriza el uso de un símbolo (hechsher) en el packaging que permite identificarlo de un vistazo. Existen cientos de certificadoras en el mundo, pero algunas son especialmente conocidas por su alcance global.</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/simbolos-certificacion-kosher.jpg" alt="Un hechsher: el certificado de kashrut que una agencia rabínica otorga a un establecimiento o producto." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Un hechsher: el certificado de kashrut que una agencia rabínica otorga a un establecimiento o producto. Foto: Utilisateur:Djampa - User:Djampa vía <a href="https://commons.wikimedia.org/wiki/File%3AHechsher_Safed_Rabbinate.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
+</figure>
 <ul>
 <li><strong>OU (Orthodox Union):</strong> una "U" dentro de un círculo. Es probablemente el símbolo kosher más reconocido a nivel mundial, con sede en Estados Unidos.</li>
 <li><strong>OK Kosher Certification:</strong> una "K" dentro de un círculo, otra de las grandes agencias estadounidenses.</li>
@@ -384,6 +434,11 @@ El procedimiento es el mismo, pero como no sabés qué se cocinó ahí, es un ca
                 'title' => 'Pareve: qué significa y por qué es tan común en las etiquetas',
                 'excerpt' => 'Pareve es una de las palabras más repetidas en el etiquetado kosher. Te explicamos qué significa y por qué es tan valorada.',
                 'content' => '<p>Pareve (también escrito <em>parve</em>, del ídish "neutral") es la palabra que describe a los alimentos que no son ni cárnicos ni lácteos: frutas, verduras, huevos, pescado, granos, legumbres y la mayoría de los productos elaborados sin ingredientes de origen lácteo o cárnico.</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/que-significa-pareve.jpg" alt="Frutas y verduras frescas son parve por naturaleza: se combinan tanto con carne como con lácteos." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Frutas y verduras frescas son parve por naturaleza: se combinan tanto con carne como con lácteos. Foto: PattayaPatrol vía <a href="https://commons.wikimedia.org/wiki/File%3ADFC_2197_A_colorful_assortment_of_fresh_fruits_and_vegetables_-_apples_mango_dragon_fruit_kiwis_limes_bananas_and_more_-_arranged_on_a_wooden_crate.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
+</figure>
 <p>Es probablemente la palabra que más vas a leer en las etiquetas kosher, y entender bien qué implica te ahorra la mitad de las dudas cotidianas en la cocina.</p>
 
 <h2>Por qué es la categoría más buscada</h2>
@@ -447,6 +502,11 @@ Sí, la miel es pareve y kosher, a pesar de que las abejas no son un animal kosh
                 'title' => 'Shejita: el método de sacrificio kosher',
                 'excerpt' => 'Para que la carne de un animal kosher sea apta para consumo, debe faenarse según un método ritual específico llamado shejita.',
                 'content' => '<p>Para que la carne de un animal kosher sea apta, no alcanza con que la especie esté permitida. El animal tiene que haber sido faenado según un método ritual muy específico llamado <em>shejita</em>, ejecutado por una persona formada y certificada para eso: el <em>shojet</em>.</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/shejita-sacrificio-kosher.svg" alt="El jalef se revisa antes y después de cada animal: una sola melladura invalida el procedimiento." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">El jalef se revisa antes y después de cada animal: una sola melladura invalida el procedimiento. Ilustración: KosherMap.</figcaption>
+</figure>
 <p>Es uno de los procesos más regulados de todo el kashrut, y entender cómo funciona explica por qué la carne kosher cuesta bastante más que la convencional.</p>
 
 <h2>Qué es exactamente la shejita</h2>
@@ -523,6 +583,11 @@ Por la suma de todo lo anterior: personal especializado, supervisión permanente
                 'title' => 'Glatt kosher: qué diferencia hay con el kosher común',
                 'excerpt' => 'El término "glatt" aparece frecuentemente en carnicerías y restaurantes kosher. Te explicamos qué nivel de estrictez representa.',
                 'content' => '<p>"Glatt" quiere decir "liso" en ídish, y originalmente se refería puntualmente al estado de los pulmones de un animal después de la shejita: si no tenían ninguna adherencia (sirja), el animal se consideraba "glatt", el nivel más alto de certeza de que esa carne es kosher sin ninguna duda.</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/glatt-kosher.jpg" alt="Un restaurante de carne kosher en Jerusalén. &quot;Glatt&quot; indica el estándar más exigente de inspección." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Un restaurante de carne kosher en Jerusalén. "Glatt" indica el estándar más exigente de inspección. Foto: brionv from San Francisco, United States vía <a href="https://commons.wikimedia.org/wiki/File%3AJerusalem_MMMM_MEAT_%286036353902%29.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 2.0.</figcaption>
+</figure>
 <p>Con el tiempo, sobre todo en comunidades asquenazíes de Estados Unidos, "glatt kosher" pasó a usarse de forma más coloquial, para describir un estándar general de mayor estrictez en toda la cadena de producción de un alimento, no solo en la inspección de pulmones. Hoy es habitual ver "glatt kosher" en etiquetas de restaurantes y productos para indicar que cumplen con los criterios más exigentes.</p>
 <p>Vale aclarar algo que se presta a confusión: un producto "kosher" sin la etiqueta "glatt" no es menos válido halájicamente, simplemente sigue un estándar distinto, aceptado por la amplia mayoría de las comunidades. Elegir entre kosher estándar y glatt kosher suele depender más de la costumbre familiar o comunitaria que de una diferencia objetiva de validez.</p>
 <p>En aves y pescado, el concepto de "glatt" técnicamente no aplica igual que en mamíferos, aunque coloquialmente a veces se usa para indicar un nivel de supervisión más riguroso en general.</p>',
@@ -533,6 +598,11 @@ Por la suma de todo lo anterior: personal especializado, supervisión permanente
                 'title' => 'Cómo leer una etiqueta de producto kosher',
                 'excerpt' => 'Más allá del símbolo de certificación, las etiquetas kosher contienen información clave para saber si un producto es apto para tu mesa.',
                 'content' => '<p>Mirar el símbolo de certificación es solo el primer paso. Una etiqueta kosher tiene otros datos que conviene revisar siempre:</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/como-leer-etiqueta-kosher.jpg" alt="La etiqueta de un producto israelí: además del sello, conviene mirar la categoría y los ingredientes." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">La etiqueta de un producto israelí: además del sello, conviene mirar la categoría y los ingredientes. Foto: Chenspec vía <a href="https://commons.wikimedia.org/wiki/File%3AList_of_ingredients_of_food_products_in_Israel_02.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
+</figure>
 <ul>
 <li><strong>El símbolo de la certificadora:</strong> indica qué agencia supervisó el producto. Conviene reconocer certificadoras confiables, porque no todos los símbolos del mundo tienen el mismo nivel de exigencia.</li>
 <li><strong>La categoría:</strong> "Dairy" o "D" (lácteo), "Meat" o "M" (cárnico), "Pareve" (neutro), o "Fish" (pescado, que en muchas tradiciones se trata como categoría aparte de la carne).</li>
@@ -548,6 +618,11 @@ Por la suma de todo lo anterior: personal especializado, supervisión permanente
                 'title' => 'Bishul Akum: por qué algunos alimentos cocidos necesitan supervisión judía',
                 'excerpt' => 'Existe una categoría de leyes específica sobre alimentos cocinados por no judíos, conocida como bishul akum. Te explicamos de qué se trata.',
                 'content' => '<p>Bishul akum ("cocción de un no judío") es una categoría de leyes rabínicas que limita el consumo de ciertos alimentos cocinados enteramente por una persona no judía, aunque todos los ingredientes sean kosher. La prohibición viene de los sabios talmúdicos, y buscaba sobre todo fomentar la cohesión social y frenar la asimilación.</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/bishul-akum.jpg" alt="Bishul akum regula los alimentos cocinados enteramente por una persona no judía, aunque los ingredientes sean kosher." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Bishul akum regula los alimentos cocinados enteramente por una persona no judía, aunque los ingredientes sean kosher. Foto: Seattle Municipal Archives from Seattle, WA vía <a href="https://commons.wikimedia.org/wiki/File%3ACooks_in_kitchen%2C_1930_%2820981103874%29.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY 2.0.</figcaption>
+</figure>
 <p>No aplica a cualquier alimento: en general se limita a comidas que se consideran "dignas de la mesa de un rey" (jaschivut) y que no se comen crudas. Por eso las frutas, las verduras crudas y la mayoría de los snacks industrializados quedan afuera de esta categoría.</p>
 <p>En una fábrica o un restaurante certificado, el problema se resuelve de dos formas habituales:</p>
 <ul>
@@ -562,6 +637,11 @@ Por la suma de todo lo anterior: personal especializado, supervisión permanente
                 'title' => 'Mevushal: vino kosher que se puede servir sin restricciones',
                 'excerpt' => 'El vino mevushal es una categoría especial que permite servirlo en eventos sin necesidad de que solo judíos lo manipulen.',
                 'content' => '<p>Como vimos con el vino kosher, la regla general exige que solo judíos observantes manipulen el vino desde la elaboración hasta que se sirve. El vino mevushal ("hervido", pasteurizado) es la excepción práctica a esa regla: una vez que pasa por un proceso de calentamiento a una temperatura mínima específica, conserva su estatus kosher sin importar quién lo sirva después.</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/vino-mevushal.jpg" alt="El vino mevushal es pasteurizado, y por eso conserva su estatus kosher aunque lo sirva una persona no judía." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">El vino mevushal es pasteurizado, y por eso conserva su estatus kosher aunque lo sirva una persona no judía. Foto: misbehave vía <a href="https://commons.wikimedia.org/wiki/File%3ABottle_%26_glass_of_red_Bordeaux_style_blend.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY 2.0.</figcaption>
+</figure>
 <p>Esta categoría existe por un principio halájico: el vino alterado por calor pierde la "dignidad" ritual que originalmente motivó la restricción, porque históricamente esa preocupación apuntaba al uso del vino en ceremonias idólatras, algo para lo que un vino hervido no se prestaba en ese contexto.</p>
 <p>El mevushal es muy popular en:</p>
 <ul>
@@ -577,6 +657,11 @@ Por la suma de todo lo anterior: personal especializado, supervisión permanente
                 'title' => 'Tevilat Kelim: la inmersión ritual de utensilios nuevos',
                 'excerpt' => 'Antes de usar por primera vez ciertos utensilios de cocina fabricados por no judíos, existe la costumbre de sumergirlos en una mikve.',
                 'content' => '<p>Tevilat Kelim es la costumbre de sumergir utensilios de cocina nuevos, de metal o vidrio, comprados a un fabricante no judío, en una mikve (baño ritual) o una fuente de agua natural antes de usarlos por primera vez.</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/tevilat-kelim.jpg" alt="Una mikve, el baño ritual donde se sumergen los utensilios nuevos antes de usarlos por primera vez." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Una mikve, el baño ritual donde se sumergen los utensilios nuevos antes de usarlos por primera vez. Foto: Michele Ahin vía <a href="https://commons.wikimedia.org/wiki/File%3AWLANL_-_MicheleLovesArt_-_Joods_Historisch_Museum_-_Mikwe_%28Grote_synagoge%29.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 2.0.</figcaption>
+</figure>
 <p>Aplica principalmente a utensilios que tocan la comida directamente: ollas, sartenes, cubiertos, platos de vidrio, vasos. No suele aplicarse a utensilios eléctricos (una tostadora, una batidora) ni a los de plástico o madera, aunque las opiniones cambian según la tradición de cada comunidad, así que ante un caso específico conviene preguntarle al rabino.</p>
 <p>El proceso en sí es sencillo: se limpia bien el utensilio, sin restos de etiquetas, precintos ni adhesivos; se sumerge completo en el agua de la mikve mientras se recita una bendición; y ya queda listo para usarse con normalidad.</p>
 <p>Muchas mikvaot comunitarias tienen un horario específico habilitado solo para tevilat kelim, separado del uso ritual personal, con instrucciones detalladas sobre qué materiales necesitan inmersión y cuáles no. Es de esas prácticas que parecen un detalle menor, pero que forman parte de cómo muchas familias judías observantes equipan su cocina.</p>',
@@ -587,6 +672,11 @@ Por la suma de todo lo anterior: personal especializado, supervisión permanente
                 'title' => 'Cómo armar una cocina kosher desde cero',
                 'excerpt' => 'Empezar a mantener una cocina kosher puede parecer abrumador al principio. Te damos una guía práctica de los primeros pasos.',
                 'content' => '<p>Armar una cocina kosher desde cero no es algo que se resuelve en un día, y no hace falta que lo sea. Estos son los pasos que más se repiten entre las familias que arrancan este proceso:</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/armar-cocina-kosher.jpg" alt="Armar una cocina kosher desde cero es un proceso gradual: no hace falta resolverlo todo en un día." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Armar una cocina kosher desde cero es un proceso gradual: no hace falta resolverlo todo en un día. Foto: Shixart1985 vía <a href="https://commons.wikimedia.org/wiki/File%3AA_stylish_living_area_features_a_modern_kitchen%2C_comfortable_seating%2C_and_large_windows_allowing_ample_natural_ligh.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY 2.0.</figcaption>
+</figure>
 <ul>
 <li><strong>Definir la separación física:</strong> decidir qué utensilios, ollas y vajilla van a ser cárnicos y cuáles lácteos. Lo más práctico suele ser usar colores distintos (rojo para carne, azul para leche, por ejemplo) para no confundirse en el día a día.</li>
 <li><strong>Separar las superficies de trabajo:</strong> tablas de cortar, repasadores y esponjas también se dividen por categoría.</li>
@@ -602,6 +692,11 @@ Por la suma de todo lo anterior: personal especializado, supervisión permanente
                 'title' => 'Diferencias entre las certificaciones kosher alrededor del mundo',
                 'excerpt' => 'No todas las certificadoras kosher siguen exactamente los mismos criterios. Conocer estas diferencias ayuda a elegir productos con confianza.',
                 'content' => '<p>Los principios del kashrut son universales, pero existen cientos de agencias certificadoras en el mundo, y cada una puede tener criterios algo distintos sobre temas puntuales: cuánta supervisión exige para bishul akum, por ejemplo, o cómo aborda ciertos aditivos químicos cuyo origen es difícil de rastrear.</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/certificaciones-kosher-mundo.svg" alt="Los principios del kashrut son universales, pero cada región tiene sus propias agencias certificadoras." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Los principios del kashrut son universales, pero cada región tiene sus propias agencias certificadoras. Ilustración: KosherMap.</figcaption>
+</figure>
 <p>Algunas diferencias comunes entre regiones:</p>
 <ul>
 <li><strong>Estados Unidos:</strong> tiene las certificadoras más grandes a nivel industrial (OU, OK, Star-K, Kof-K), con procesos muy estandarizados para exportación masiva.</li>
@@ -617,6 +712,11 @@ Por la suma de todo lo anterior: personal especializado, supervisión permanente
                 'title' => 'Queso kosher: por qué necesita cuajo especial',
                 'excerpt' => 'El queso es uno de los productos lácteos con más restricciones kosher, principalmente por el origen del cuajo utilizado para elaborarlo.',
                 'content' => '<p>El cuajo (rennet) es la enzima que tradicionalmente se usa para coagular la leche y separar el suero al hacer queso. El problema para el kashrut es que el cuajo tradicional se extrae del estómago de terneros, y para que sea apto ese animal tuvo que ser faenado por shejita, algo que en la industria quesera convencional casi nunca pasa.</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/queso-kosher-cuajo.jpg" alt="El queso necesita certificación específica por el origen del cuajo, la enzima que coagula la leche." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">El queso necesita certificación específica por el origen del cuajo, la enzima que coagula la leche. Foto: Daderot vía <a href="https://commons.wikimedia.org/wiki/File%3ACheese_display%2C_Cambridge_MA_-_DSC05391.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC0.</figcaption>
+</figure>
 <p>Por eso, prácticamente todo el queso "normal" del mercado no es kosher si no tiene una certificación específica, aunque esté hecho solo con leche y cuajo, porque el origen del cuajo no se puede verificar a simple vista.</p>
 <p>Los fabricantes de queso kosher recurren a alguna de estas opciones:</p>
 <ul>
@@ -632,6 +732,11 @@ Por la suma de todo lo anterior: personal especializado, supervisión permanente
                 'title' => 'Huevos kosher: qué hay que revisar antes de usarlos',
                 'excerpt' => 'Los huevos son pareve y generalmente kosher, pero existe un paso de revisión obligatorio antes de cocinarlos.',
                 'content' => '<p>Los huevos de aves kosher, como la gallina, son en principio pareve y aptos para comer. Pero antes de usar un huevo, la tradición pide revisar que no tenga manchas de sangre en la yema, porque un huevo con sangre se considera no apto.</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/huevos-kosher.jpg" alt="Los huevos son parve, pero hay que revisarlos por manchas de sangre antes de usarlos." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Los huevos son parve, pero hay que revisarlos por manchas de sangre antes de usarlos. Foto: Evan-Amos vía <a href="https://commons.wikimedia.org/wiki/File%3A6-Pack-Chicken-Eggs.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, Public domain.</figcaption>
+</figure>
 <p>El procedimiento es sencillo: al romper el huevo, se mira la yema (y a veces la clara) contra la luz, buscando puntos rojos o manchas. Si aparece sangre, el huevo se descarta entero; si la yema está limpia, se usa con total normalidad.</p>
 <p>Algunos datos extra sobre huevos y kashrut:</p>
 <ul>
@@ -647,6 +752,11 @@ Por la suma de todo lo anterior: personal especializado, supervisión permanente
                 'title' => 'Pescado kosher: aletas y escamas, las reglas básicas',
                 'excerpt' => 'A diferencia de la carne, el pescado kosher no requiere shejita, pero sí debe cumplir con un criterio físico específico.',
                 'content' => '<p>Para el pescado, la Torá pone una regla bastante simple: tiene que tener tanto aletas (snapir) como escamas (kaskeset) visibles a simple vista. Esa combinación está en la gran mayoría de los peces de agua dulce y salada que se comen habitualmente: salmón, atún, merluza, trucha, caballa.</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/pescado-kosher-aletas-escamas.jpg" alt="Para ser kosher, un pescado debe tener aletas y escamas visibles." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Para ser kosher, un pescado debe tener aletas y escamas visibles. Foto: IndayLiburan vía <a href="https://commons.wikimedia.org/wiki/File%3AFish_stalls_at_Valencia_Public_Market_01.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
+</figure>
 <p>Quedan afuera del kashrut, entre otros:</p>
 <ul>
 <li>Todos los mariscos (camarones, langostinos, cangrejos, mejillones, ostras).</li>
@@ -664,6 +774,11 @@ Por la suma de todo lo anterior: personal especializado, supervisión permanente
                 'title' => 'Frutos secos y kashrut: riesgos de contaminación cruzada',
                 'excerpt' => 'Los frutos secos son naturalmente pareve, pero el procesamiento industrial puede introducir riesgos de kashrut que no son evidentes.',
                 'content' => '<p>Almendras, nueces, maní y la mayoría de los frutos secos son, crudos y sin procesar, alimentos pareve sin ninguna restricción de kashrut. El problema aparece cuando entran en la cadena de procesamiento industrial, donde pueden mezclarse con otros productos en las mismas líneas de producción.</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/frutos-secos-contaminacion-cruzada.jpg" alt="Crudos son parve sin restricciones; el riesgo aparece en el procesamiento industrial." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Crudos son parve sin restricciones; el riesgo aparece en el procesamiento industrial. Foto: Famartin vía <a href="https://commons.wikimedia.org/wiki/File%3A2021-01-06_12_15_43_Cranberry_trail_mix_with_cranberries%2C_peanuts%2C_raisins%2C_walnuts%2C_almonds%2C_sunflower_seeds%2C_pepitas_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
+</figure>
 <p>Algunos riesgos habituales:</p>
 <ul>
 <li><strong>Saborizantes lácteos:</strong> los frutos secos "tostados con manteca" o con cobertura de chocolate con leche dejan de ser pareve.</li>
@@ -679,6 +794,11 @@ Por la suma de todo lo anterior: personal especializado, supervisión permanente
                 'title' => 'Kashrut y veganismo: ¿es lo mismo comer vegano que comer kosher?',
                 'excerpt' => 'Muchas personas asumen que un producto vegano es automáticamente kosher. La realidad es más matizada.',
                 'content' => '<p>Es una confusión bastante común: si un producto no tiene ningún ingrediente de origen animal, parece lógico pensar que ya con eso es kosher. Pero el kashrut no se define solo por los ingredientes, también entran en juego los procesos de elaboración, el equipamiento que se usó y, en algunos casos, quién supervisó la producción.</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/kashrut-y-veganismo.jpg" alt="Un producto vegano no es automáticamente kosher: el kashrut también mira procesos y equipamiento." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Un producto vegano no es automáticamente kosher: el kashrut también mira procesos y equipamiento. Foto: HaJunkiyada vía <a href="https://commons.wikimedia.org/wiki/File%3ALiat_Portal_for_Foodie_Disorder_-_Cauliflower_from_SF_farmers%27_market.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
+</figure>
 <p>Algunos casos donde un producto vegano puede no ser kosher:</p>
 <ul>
 <li><strong>Equipamiento compartido:</strong> una fábrica vegana puede usar la misma línea que antes procesó productos cárnicos o lácteos, sin la limpieza certificada que exige el kashrut entre lotes.</li>
@@ -717,6 +837,11 @@ Por la suma de todo lo anterior: personal especializado, supervisión permanente
                 'title' => 'El calendario judío y las fiestas que afectan la alimentación kosher',
                 'excerpt' => 'Varias festividades judías tienen costumbres alimentarias específicas, más allá de las reglas generales del kashrut.',
                 'content' => '<p>Además de las normas de kashrut que rigen todo el año, el calendario judío trae festividades con costumbres de comida propias, y conocerlas ayuda a entender por qué ciertos productos aparecen o desaparecen de las góndolas en determinadas épocas:</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/calendario-judio-festividades-alimentacion.jpg" alt="Manzana, miel y granada: los símbolos de Rosh Hashaná, una de las festividades con costumbres alimentarias propias." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Manzana, miel y granada: los símbolos de Rosh Hashaná, una de las festividades con costumbres alimentarias propias. Foto: Gilabrand vía <a href="https://commons.wikimedia.org/wiki/File%3ASymbols_of_Rosh_Hashana.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 3.0.</figcaption>
+</figure>
 <ul>
 <li><strong>Rosh Hashaná:</strong> se come manzana con miel para simbolizar un año dulce, y se evitan alimentos amargos o ácidos en la mesa festiva.</li>
 <li><strong>Iom Kipur:</strong> día de ayuno completo de 25 horas, sin comida ni bebida, salvo excepciones médicas puntuales.</li>
@@ -734,6 +859,11 @@ Por la suma de todo lo anterior: personal especializado, supervisión permanente
                 'title' => 'Errores comunes al empezar a comer kosher',
                 'excerpt' => 'Adoptar el kashrut por primera vez implica un proceso de aprendizaje. Repasamos los errores más frecuentes para evitarlos desde el principio.',
                 'content' => '<p>Empezar a comer kosher lleva tiempo, y es normal cometer errores al principio. Estos son los más comunes:</p>
+
+<figure style="margin:1.5rem 0;">
+  <img src="/images/articulos/errores-comunes-empezar-comer-kosher.jpg" alt="Al empezar, el error más común es asumir que un producto es kosher sin buscar la certificación." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Al empezar, el error más común es asumir que un producto es kosher sin buscar la certificación. Foto: Nenad Stojkovic vía <a href="https://commons.wikimedia.org/wiki/File%3ACorn_in_a_shopping_trolley._%2851964905166%29.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY 2.0.</figcaption>
+</figure>
 <ul>
 <li><strong>Asumir que "natural" o "sin conservantes" significa kosher:</strong> el marketing de un producto no tiene nada que ver con su estatus de kashrut. Siempre hay que buscar la certificación.</li>
 <li><strong>No revisar productos que parecen obviamente pareve:</strong> snacks, panificados y golosinas a veces tienen ingredientes lácteos o gelatina que no se notan en el nombre.</li>
