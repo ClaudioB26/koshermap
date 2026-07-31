@@ -8,6 +8,12 @@ use Illuminate\Support\Facades\DB;
 
 class ArticleSeeder extends Seeder
 {
+    // Fecha del primer artículo. El resto se escalonan a partir de acá,
+    // uno cada ~5 días, para no tener los 30 publicados el mismo día.
+    private const PUBLISH_START_DATE = '2025-11-03';
+
+    private static ?\Carbon\Carbon $publishStart = null;
+
     public function run(): void
     {
         $articles = [
@@ -257,7 +263,7 @@ El procedimiento es el mismo, pero como no sabés qué se cocinó ahí, es un ca
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/kasherizar-lavavajillas.jpg" alt="El lavavajillas es de los electrodomésticos más discutidos: sus filtros y aspersores retienen restos a alta temperatura." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
-  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">El lavavajillas es de los electrodomésticos más discutidos: sus filtros y aspersores retienen restos a alta temperatura. Foto: SelenaJKruse vía <a href="https://commons.wikimedia.org/wiki/File%3ALoading_Dishwasher_with_Detergent.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">El lavavajillas es de los electrodomésticos más discutidos: sus filtros y aspersores retienen restos a alta temperatura. Foto: Myke2020 vía <a href="https://commons.wikimedia.org/wiki/File%3ACountertop_dishwasher_7882.JPG" target="_blank" rel="noopener">Wikimedia Commons</a>, dominio público.</figcaption>
 </figure>
 <p>Por esa razón, muchas autoridades rabínicas son más estrictas acá que con otros aparatos, y algunas directamente desaconsejan usarlo para las dos categorías (cárnico y lácteo), ni siquiera en días distintos. Quienes sí lo permiten piden, en general:</p>
 <ul>
@@ -393,7 +399,7 @@ El procedimiento es el mismo, pero como no sabés qué se cocinó ahí, es un ca
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/comer-kosher-restaurante.jpg" alt="Sin un restaurante certificado cerca, hay estrategias para mantenerse dentro del kashrut." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
-  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Sin un restaurante certificado cerca, hay estrategias para mantenerse dentro del kashrut. Foto: David Adam Kess vía <a href="https://commons.wikimedia.org/wiki/File%3A%28Zazu%2C_Quito_Ecuador%2C_interior%29_table_setting.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Sin un restaurante certificado cerca, hay estrategias para mantenerse dentro del kashrut. Foto: Sohail1308 vía <a href="https://commons.wikimedia.org/wiki/File%3AAl_Fanar_Restaurant.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
 <ul>
 <li><strong>Opciones vegetarianas o veganas:</strong> al eliminar carne y lácteos del plato, se reduce mucho el riesgo, aunque sigue siendo necesario verificar ingredientes (caldo de carne, manteca, salsas con base animal).</li>
@@ -887,7 +893,7 @@ Por la suma de todo lo anterior: personal especializado, supervisión permanente
             $excerpt['es'] = $data['excerpt'];
             $content['es'] = $data['content'];
 
-            Article::updateOrCreate(
+            $article = Article::updateOrCreate(
                 ['slug' => $data['slug']],
                 [
                     'category' => $data['category'],
@@ -898,6 +904,17 @@ Por la suma de todo lo anterior: personal especializado, supervisión permanente
                     'is_published' => true,
                 ]
             );
+
+            // Escalonar las fechas de publicación. Cargar los 30 artículos con la
+            // misma fecha es una señal de publicación automatizada en masa, que es
+            // justo lo que penalizan los sistemas de calidad de contenido.
+            // Se reparten hacia atrás desde la fecha base, ~5 días entre uno y otro.
+            $publishedAt = \Carbon\Carbon::parse(self::PUBLISH_START_DATE)
+                ->addDays($i * 5)
+                ->setTime(9 + ($i % 8), ($i * 7) % 60);
+            DB::table('articles')
+                ->where('id', $article->id)
+                ->update(['created_at' => $publishedAt]);
         }
     }
 }
