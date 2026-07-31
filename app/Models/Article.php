@@ -12,9 +12,38 @@ class Article extends Model
         'is_published' => 'boolean',
     ];
 
+    // Emoji de respaldo por categoría, para los artículos que todavía no tienen foto.
+    public const CATEGORY_ICONS = [
+        'halajot'        => '📜',
+        'kasherizacion'  => '🔥',
+        'festividades'   => '🕯️',
+        'productos'      => '🏷️',
+        'kashrut-basico' => '📖',
+        'vida-diaria'    => '🏠',
+    ];
+
     public function scopePublished($query)
     {
         return $query->where('is_published', true);
+    }
+
+    /**
+     * Primera imagen del contenido, para usar como miniatura en los listados.
+     * Se extrae del HTML en vez de guardarse aparte para que nunca quede
+     * desincronizada con el artículo. Devuelve null si el artículo no tiene fotos.
+     */
+    public function getThumbnailAttribute(): ?string
+    {
+        if (!preg_match('/<img[^>]+src=["\']([^"\']+)["\']/i', $this->content ?? '', $m)) {
+            return null;
+        }
+
+        return $m[1];
+    }
+
+    public function getCategoryIconAttribute(): string
+    {
+        return self::CATEGORY_ICONS[$this->category] ?? '📰';
     }
 
     public function getTitleAttribute($value)
