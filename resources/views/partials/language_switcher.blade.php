@@ -3,8 +3,8 @@
     // real, así que el selector tiene que navegar ahí en vez de solo cambiar
     // la sesión — si no, la ruta sin prefijo /articulos fuerza español de
     // nuevo apenas se recarga y el cambio de idioma "no hace nada".
-    $isArticleShow = isset($article) && $article instanceof \App\Models\Article;
-    $isArticleIndex = !$isArticleShow && isset($articles) && isset($categories) && isset($selectedCategory);
+    $isArticleShow = !empty($isArticleShowPage) && isset($article) && $article instanceof \App\Models\Article;
+    $isArticleIndex = !$isArticleShow && !empty($isArticlesIndexPage);
     $articleOrNull = $isArticleShow ? $article : null;
 
     $localeHref = function (string $locale) use ($isArticleShow, $isArticleIndex, $articleOrNull) {

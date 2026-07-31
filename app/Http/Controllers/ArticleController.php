@@ -35,8 +35,12 @@ class ArticleController extends Controller
         $articles = $query->get();
         $categories = self::CATEGORY_LABELS;
         $selectedCategory = $category;
+        // Bandera explícita para que el selector de idioma sepa que está en el
+        // índice: no se puede inferir con isset($selectedCategory) porque esa
+        // variable vale null cuando no hay filtro, e isset(null) es false.
+        $isArticlesIndexPage = true;
 
-        return view('articles.index', compact('articles', 'categories', 'selectedCategory'));
+        return view('articles.index', compact('articles', 'categories', 'selectedCategory', 'isArticlesIndexPage'));
     }
 
     public function show(Request $request, string $slug, string $locale = 'es')
@@ -61,6 +65,12 @@ class ArticleController extends Controller
             ->limit(4)
             ->get();
 
-        return view('articles.show', compact('article', 'related'));
+        // Bandera explícita para el selector de idioma: no alcanza con
+        // isset($article), porque cualquier foreach de otra vista que
+        // reutilice "$article" como variable de loop deja basura en el mismo
+        // scope compartido con el layout (ya pasó una vez, ver commit previo).
+        $isArticleShowPage = true;
+
+        return view('articles.show', compact('article', 'related', 'isArticleShowPage'));
     }
 }

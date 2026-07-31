@@ -42,21 +42,21 @@
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        @foreach($articles as $article)
-            <a href="{{ $article->urlFor($locale) ?? route('articles.show', $article->slug) }}"
+        @foreach($articles as $listedArticle)
+            <a href="{{ $listedArticle->urlFor($locale) ?? route('articles.show', $listedArticle->slug) }}"
                class="group flex flex-col bg-white border border-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
-                @if($article->thumbnail)
-                    <img src="{{ $article->thumbnail }}" alt="{{ $article->title }}" loading="lazy"
+                @if($listedArticle->thumbnail)
+                    <img src="{{ $listedArticle->thumbnail }}" alt="{{ $listedArticle->title }}" loading="lazy"
                          class="w-full h-40 object-cover">
                 @else
                     <div class="w-full h-40 bg-gradient-to-br from-blue-50 to-gray-100 flex items-center justify-center">
-                        <span class="text-5xl opacity-70" aria-hidden="true">{{ $article->category_icon }}</span>
+                        <span class="text-5xl opacity-70" aria-hidden="true">{{ $listedArticle->category_icon }}</span>
                     </div>
                 @endif
                 <div class="p-5 flex-1">
-                    <p class="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-2">{{ $categories[$article->category] ?? $article->category }}</p>
-                    <h2 class="font-bold text-gray-800 mb-2 leading-snug group-hover:text-blue-700 transition">{{ $article->title }}</h2>
-                    <p class="text-sm text-gray-500 line-clamp-3">{{ $article->excerpt }}</p>
+                    <p class="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-2">{{ $categories[$listedArticle->category] ?? $listedArticle->category }}</p>
+                    <h2 class="font-bold text-gray-800 mb-2 leading-snug group-hover:text-blue-700 transition">{{ $listedArticle->title }}</h2>
+                    <p class="text-sm text-gray-500 line-clamp-3">{{ $listedArticle->excerpt }}</p>
                 </div>
             </a>
         @endforeach
