@@ -166,14 +166,37 @@ Sí, es lo más común. Se maneja cubriendo bien los alimentos, usando bandejas 
   <img src="/images/articulos/kasherizar-horno.jpg" alt="El libun, la kasherización del horno por calor intenso, exige limpieza total previa y 24 horas sin uso." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">El libun, la kasherización del horno por calor intenso, exige limpieza total previa y 24 horas sin uso. Foto: Brandon Carson vía <a href="https://commons.wikimedia.org/wiki/File%3ADouble_oven.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY 2.0.</figcaption>
 </figure>
-<p>El método tradicional se llama <em>libun</em> (autolimpieza por calor intenso) y se hace así:</p>
-<ul>
-<li>Limpiar a fondo el horno, sacando toda la suciedad y los residuos de comida visibles.</li>
-<li>No usarlo durante 24 horas antes de kasherizarlo.</li>
-<li>Encenderlo a la temperatura más alta posible (la función de autolimpieza, si el horno la tiene, es ideal) durante al menos una hora.</li>
-</ul>
-<p>Las rejillas y bandejas metálicas suelen kasherizarse aparte, sumergiéndolas en agua hirviendo (hagalá). Las superficies de vidrio o esmalte, en cambio, generalmente necesitan libun porque absorben más.</p>
-<p>Cada horno es un caso distinto: el material, el modelo y la costumbre de cada comunidad hacen variar el procedimiento exacto, y algunos hornos modernos con recubrimientos especiales directamente no aguantan el libun a alta temperatura. Antes de meterle fuego al máximo, conviene chequear el manual del fabricante y hablarlo con el rabino de la comunidad.</p>',
+
+<h2>Por qué el horno necesita un método tan drástico</h2>
+<p>El <a href="https://es.wikipedia.org/wiki/Horno" target="_blank" rel="noopener">horno</a> cocina con calor seco y directo, muy distinto del vapor del <a href="/articulos/kasherizar-microondas">microondas</a>. Ese calor intenso hace que el sabor de lo que se cocinó quede literalmente absorbido en las paredes internas, la resistencia y el vidrio de la puerta. Por el principio de "como absorbió, así expulsa", la única forma de purificarlo es con un calor todavía más intenso: el <em>libun</em>.</p>
+<p>Existen en realidad dos niveles de libun según cuánto absorbió el horno. El <em>libun jamur</em> (riguroso) requiere que las paredes lleguen a un punto en que, si se les tira una brizna de paja, se prenda fuego sola —en la práctica, esto se logra acercándose a la temperatura máxima del horno. El <em>libun kal</em> (leve) alcanza con que el metal esté lo suficientemente caliente como para quemar algo que lo toque. Para uso doméstico, la mayoría de las autoridades piden el nivel más alto que el horno pueda alcanzar.</p>
+
+<h2>El procedimiento paso a paso</h2>
+<ol>
+<li><strong>Limpieza a fondo.</strong> Sin esto, el libun no sirve: cualquier resto de comida que quede se va a carbonizar en vez de quemarse limpiamente, y puede seguir actuando como barrera. Prestá especial atención a las bisagras de la puerta y el borde inferior, donde se acumula grasa.</li>
+<li><strong>24 horas sin uso.</strong> Igual que con el <a href="/articulos/kasherizar-microondas">microondas</a>, este tiempo de espera es necesario para que el sabor absorbido se considere "degradado" según la halajá.</li>
+<li><strong>Temperatura máxima, al menos una hora.</strong> Si el horno tiene función de autolimpieza pirolítica, es ideal: esas funciones suelen superar los 450°C, bastante por encima de lo que se necesita. Si no la tiene, se enciende a la temperatura más alta posible del selector.</li>
+</ol>
+
+<h2>Rejillas, bandejas y superficies de vidrio</h2>
+<p>No todo dentro del horno se kasheriza igual. Las rejillas y bandejas metálicas, al ser piezas sueltas, se pueden sacar y sumergir en agua hirviendo (<a href="/articulos/hagala-utensilios-metal">hagalá</a>), que es más simple que meterlas en el ciclo de libun. Las superficies de vidrio o esmaltadas —como el vidrio de la puerta o algunos interiores esmaltados— generalmente necesitan el libun completo, porque el esmalte absorbe de forma distinta al metal desnudo.</p>
+<p>Un caso aparte son las planchas de piedra para pizza o pan: la piedra porosa prácticamente nunca se puede kasherizar por ningún método, así que si se usó con algo no kosher, lo más simple es reemplazarla.</p>
+
+<h2>Hornos que no soportan el libun</h2>
+<p>Los hornos modernos con recubrimientos autolimpiantes especiales, algunos paneles digitales sensibles, o modelos con partes plásticas cerca de la cavidad, pueden no bancar una hora entera a temperatura máxima sin dañarse. Antes de arrancar, conviene revisar el manual del fabricante para confirmar que el horno soporta uso prolongado en el máximo (no solo el ciclo corto de autolimpieza).</p>
+<p>Si el horno no lo soporta, hay opciones intermedias que varían según la costumbre de cada comunidad, así que en esos casos vale la pena consultarlo puntualmente con el rabino antes de arriesgar el electrodoméstico.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Cuánto dura el proceso completo?</strong><br>
+Contando la limpieza previa y las 24 horas de espera, el proceso completo lleva más de un día, aunque el libun en sí (el horno encendido al máximo) es solo la última hora.</p>
+<p><strong>¿Hace falta kasherizar el horno para Pesaj aunque ya sea de uso parve?</strong><br>
+Sí, si en algún momento del año se coció algo con jametz ahí (pan, por ejemplo). El uso cárnico/lácteo y la cuestión de Pesaj son dos ejes distintos: uno no reemplaza al otro.</p>
+<p><strong>¿El horno eléctrico se kasheriza distinto al de gas?</strong><br>
+El principio es el mismo (calor intenso), pero algunas opiniones distinguen matices entre ambos por cómo se distribuye el calor. Es otro punto donde conviene la consulta puntual con el rabino de la comunidad.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>Los otros procesos de kasherización están en <a href="/articulos/kasherizar-microondas">cómo kasherizar un microondas</a>, <a href="/articulos/kasherizar-lavavajillas">cómo kasherizar un lavavajillas</a> y <a href="/articulos/hagala-utensilios-metal">hagalá para utensilios de metal</a>. Para Pesaj específicamente, <a href="/articulos/vajilla-para-pesaj">vajilla para Pesaj</a> cubre qué hacer con el resto de la cocina.</p>
+<p>Como fuente externa, la <a href="https://oukosher.org/passover/" target="_blank" rel="noopener">sección de Pesaj de la Orthodox Union</a> tiene guías detalladas de kasherización por tipo de electrodoméstico.</p>',
             ],
             [
                 'slug' => 'kasherizar-microondas',
@@ -259,20 +282,41 @@ El procedimiento es el mismo, pero como no sabés qué se cocinó ahí, es un ca
                 'category' => 'kasherizacion',
                 'title' => 'Cómo kasherizar un lavavajillas',
                 'excerpt' => 'Muchas familias usan el lavavajillas para platos cárnicos y lácteos en ciclos separados. Te contamos qué hace falta para kasherizarlo.',
-                'content' => '<p>El lavavajillas complica un poco más que otros electrodomésticos: sus paredes internas, los filtros y los brazos aspersores están en contacto constante con restos de comida a alta temperatura, y eso hace que absorban sabores de forma más persistente.</p>
+                'content' => '<p>El <a href="https://es.wikipedia.org/wiki/Lavavajillas" target="_blank" rel="noopener">lavavajillas</a> complica un poco más que otros electrodomésticos: sus paredes internas, los filtros y los brazos aspersores están en contacto constante con restos de comida a alta temperatura, y eso hace que absorban sabores de forma más persistente que una superficie lisa.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/kasherizar-lavavajillas.jpg" alt="El lavavajillas es de los electrodomésticos más discutidos: sus filtros y aspersores retienen restos a alta temperatura." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">El lavavajillas es de los electrodomésticos más discutidos: sus filtros y aspersores retienen restos a alta temperatura. Foto: Myke2020 vía <a href="https://commons.wikimedia.org/wiki/File%3ACountertop_dishwasher_7882.JPG" target="_blank" rel="noopener">Wikimedia Commons</a>, dominio público.</figcaption>
 </figure>
-<p>Por esa razón, muchas autoridades rabínicas son más estrictas acá que con otros aparatos, y algunas directamente desaconsejan usarlo para las dos categorías (cárnico y lácteo), ni siquiera en días distintos. Quienes sí lo permiten piden, en general:</p>
-<ul>
-<li>Limpieza profunda de filtros, brazos rociadores y juntas de goma.</li>
-<li>No usarlo durante 24 horas antes de kasherizarlo.</li>
-<li>Correr un ciclo completo en vacío, a la temperatura más alta, idealmente con un producto de limpieza fuerte.</li>
-<li>En algunas comunidades se recomienda directamente usar canastos o bandejas intercambiables para cárnico y lácteo, en vez de kasherizar el aparato entero cada vez que cambia el uso.</li>
-</ul>
-<p>Las costumbres varían bastante en este tema, incluso entre comunidades sefaradíes y asquenazíes, así que es de esos casos donde conviene hablarlo directamente con el rabino de la congregación antes de decidir cómo organizar la cocina.</p>',
+
+<h2>Por qué genera tanto debate entre las autoridades rabínicas</h2>
+<p>El problema no es solo el calor: es la geometría del aparato. A diferencia de una olla, donde el agua hirviendo entra en contacto con toda la superficie por igual, el lavavajillas tiene rincones —el filtro, la base de los brazos rociadores, las juntas de goma de la puerta— donde quedan atrapados restos de comida que ni el ciclo más largo llega a disolver del todo. Por eso muchas autoridades son más estrictas acá que con el <a href="/articulos/kasherizar-horno">horno</a> o la <a href="/articulos/kasherizar-microondas">heladera</a>, y algunas directamente desaconsejan usarlo para ambas categorías (cárnico y lácteo) bajo cualquier circunstancia, ni siquiera en días separados.</p>
+
+<h2>El procedimiento para quienes sí lo permiten</h2>
+<ol>
+<li><strong>Limpieza profunda.</strong> Desarmar y limpiar el filtro a fondo, revisar la base de los brazos rociadores (ahí se acumula grasa que no siempre se ve a simple vista) y las juntas de goma de la puerta.</li>
+<li><strong>24 horas sin uso.</strong> El mismo principio que en el resto de los electrodomésticos: el sabor absorbido necesita ese tiempo para considerarse degradado.</li>
+<li><strong>Ciclo completo en vacío, a la temperatura más alta.</strong> Sin platos adentro, con la temperatura al máximo que permita el aparato, idealmente agregando un producto de limpieza fuerte para ayudar a disolver cualquier resto.</li>
+</ol>
+<p>Algunas opiniones piden directamente <strong>dos ciclos completos</strong> en vacío en vez de uno, dado lo difícil que es garantizar que el agua alcanzó cada rincón del interior.</p>
+
+<h2>La alternativa que evita el problema de raíz</h2>
+<p>Por la dificultad de garantizar una kasherización completa, muchas familias optan por no kasherizar el lavavajillas nunca y en cambio usar <strong>canastos o bandejas intercambiables</strong>: un juego de rejillas para uso cárnico y otro para lácteo, que se cambian según lo que se vaya a lavar. El aparato en sí queda "neutro" porque nunca entra en contacto directo con los platos, solo con el agua y jabón que circula alrededor de las rejillas removibles.</p>
+<p>Esta solución es la que recomiendan más autoridades como opción por defecto, precisamente porque evita depender de que la kasherización haya sido perfecta.</p>
+
+<h2>Diferencias entre comunidades</h2>
+<p>Este es uno de los temas donde más varían las costumbres. Algunas comunidades sefaradíes son relativamente más flexibles con el lavavajillas que ciertas comunidades asquenazíes, que tienden a preferir directamente dos aparatos separados si el espacio de la cocina lo permite. Ninguna postura es "la correcta" en abstracto: depende de la tradición familiar y comunitaria, así que vale la pena consultarlo puntualmente antes de decidir cómo organizar la cocina.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿El lavavajillas de acero inoxidable es más fácil de kasherizar que uno de plástico?</strong><br>
+Sí, en general. El acero inoxidable absorbe menos que el plástico, así que algunas opiniones son más permisivas con los interiores metálicos.</p>
+<p><strong>¿Puedo lavar utensilios parve en el mismo ciclo que cárnicos?</strong><br>
+Depende de si el lavavajillas está asignado a una sola categoría o no. Si es de uso exclusivamente cárnico, lo parve se puede lavar ahí sin problema; si alterna categorías, hay que seguir la misma lógica que con cualquier otro utensilio.</p>
+<p><strong>¿Y si el lavavajillas es nuevo, hace falta tevilat kelim?</strong><br>
+Los electrodomésticos eléctricos generalmente no requieren <a href="/articulos/tevilat-kelim">inmersión ritual</a>, a diferencia de utensilios de metal o vidrio que se usan sueltos.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>El resto de los procesos de kasherización están en <a href="/articulos/kasherizar-horno">cómo kasherizar un horno</a>, <a href="/articulos/kasherizar-microondas">cómo kasherizar un microondas</a> y <a href="/articulos/hagala-utensilios-metal">hagalá para utensilios de metal</a>. Si estás organizando la cocina desde cero, <a href="/articulos/armar-cocina-kosher">esta guía</a> ayuda a decidir qué electrodomésticos separar y cuáles kasherizar.</p>',
             ],
             [
                 'slug' => 'hagala-utensilios-metal',
@@ -395,44 +439,85 @@ El procedimiento es el mismo, pero como no sabés qué se cocinó ahí, es un ca
                 'category' => 'vida-diaria',
                 'title' => 'Cómo comer kosher en un restaurante no certificado',
                 'excerpt' => 'Viajar o salir a comer sin un restaurante kosher cerca no significa romper la dieta. Hay opciones para mantenerse dentro de las normas.',
-                'content' => '<p>No siempre hay un restaurante con certificación kosher disponible, especialmente al viajar o vivir en ciudades con poca infraestructura comunitaria. Aun así, existen estrategias para mantenerse dentro del kashrut en restaurantes comunes.</p>
+                'content' => '<p>No siempre hay un restaurante con certificación kosher disponible, especialmente al viajar o vivir en ciudades con poca infraestructura comunitaria. Aun así, existen estrategias para mantenerse dentro del kashrut en restaurantes comunes, y no todas implican quedarse sin comer.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/comer-kosher-restaurante.jpg" alt="Sin un restaurante certificado cerca, hay estrategias para mantenerse dentro del kashrut." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Sin un restaurante certificado cerca, hay estrategias para mantenerse dentro del kashrut. Foto: Sohail1308 vía <a href="https://commons.wikimedia.org/wiki/File%3AAl_Fanar_Restaurant.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
+
+<h2>Las opciones más seguras, de más a menos estrictas</h2>
 <ul>
-<li><strong>Opciones vegetarianas o veganas:</strong> al eliminar carne y lácteos del plato, se reduce mucho el riesgo, aunque sigue siendo necesario verificar ingredientes (caldo de carne, manteca, salsas con base animal).</li>
-<li><strong>Frutas y verduras crudas:</strong> sin cocción ni manipulación compleja, suelen ser una opción segura en casi cualquier lugar.</li>
-<li><strong>Pescado con aletas y escamas:</strong> en restaurantes de cocina simple, un pescado a la plancha sin salsas puede ser una alternativa razonable para quienes siguen un criterio más flexible (siempre que no se cocine junto a mariscos o carne no kosher en el mismo equipamiento, según el criterio de cada persona).</li>
-<li><strong>Bebidas embotelladas y selladas:</strong> agua, gaseosas y jugos en su envase original generalmente no presentan problemas.</li>
+<li><strong>Bebidas embotelladas y selladas:</strong> agua, gaseosas y jugos en su envase original generalmente no presentan ningún problema, sin importar dónde se compren.</li>
+<li><strong>Frutas y verduras crudas:</strong> sin cocción ni manipulación compleja, suelen ser la opción más segura en casi cualquier lugar del mundo.</li>
+<li><strong>Opciones vegetarianas o veganas:</strong> al eliminar carne y lácteos del plato se reduce mucho el riesgo, aunque igual hay que preguntar por ingredientes escondidos (caldo de carne en un salteado de verduras, manteca en un puré, salsas con base animal).</li>
+<li><strong>Pescado con aletas y escamas:</strong> en restaurantes de cocina simple, un pescado a la plancha sin salsas puede ser una alternativa razonable para quienes siguen un criterio más flexible, siempre que no se cocine junto a mariscos o carne no kosher en el mismo equipamiento —esto ya depende del criterio de cada persona y cada comunidad.</li>
 </ul>
-<p>Un ejemplo bien concreto de cómo se resuelve esto en la práctica. Una vez viajamos de vacaciones a Mar del Plata con los chicos todavía pequeños, y llegando por la Avenida Constitución mi mujer se acordó de que se había olvidado las galletitas. En invierno, en esa zona, conseguir pan o galletitas kosher es prácticamente imposible. ¿Qué les dábamos a los chicos? En casa no acostumbrábamos comer ciertos snacks de paquete, pero ante la urgencia recurrimos a la lista de Ajdut Kosher, una guía de productos de góndola aprobados que publica la certificadora. Buscamos entre las marcas permitidas y dimos con unas galletitas tipo Traviatas que estaban en la lista. Eso nos salvó.</p>
-<p>La moraleja: cuando viajás, tener a mano la lista de productos aprobados de tu certificadora de confianza vale oro. Muchísimos productos comunes de supermercado son kosher aunque no lleven un sello grande impreso en el paquete, y conocer esa lista te abre opciones donde parecía no haber ninguna.</p>
-<p>Más allá de eso, cada persona y cada comunidad tiene un nivel de estrictez distinto sobre qué se considera aceptable fuera de un restaurante certificado: algunos solo comen productos envasados y sellados, otros aceptan ciertos preparados simples. Ante la duda, lo más recomendable es consultar con el rabino de la congregación cuál es el criterio que corresponde seguir.</p>',
+<p>Lo que casi ninguna opinión permite es la carne o las aves de un restaurante no certificado, sin importar cómo se vea el plato: ahí entra en juego tanto el origen del animal como el método de faena (<a href="/articulos/shejita-sacrificio-kosher">shejita</a>), algo que no se puede verificar a simple vista.</p>
+
+<h2>Un ejemplo real de cómo se resuelve en la práctica</h2>
+<p>Una vez viajamos de vacaciones a Mar del Plata con los chicos todavía pequeños, y llegando por la Avenida Constitución mi mujer se acordó de que se había olvidado las galletitas. En invierno, en esa zona, conseguir pan o galletitas kosher es prácticamente imposible. ¿Qué les dábamos a los chicos? En casa no acostumbrábamos comer ciertos snacks de paquete, pero ante la urgencia recurrimos a la lista de Ajdut Kosher, una guía de productos de góndola aprobados que publica la certificadora. Buscamos entre las marcas permitidas y dimos con unas galletitas tipo Traviatas que estaban en la lista. Eso nos salvó.</p>
+<p>La moraleja: cuando viajás, tener a mano la lista de productos aprobados de tu certificadora de confianza vale oro. Muchísimos productos comunes de supermercado son kosher aunque no lleven un sello grande impreso en el paquete, y conocer esa lista te abre opciones donde parecía no haber ninguna. Hoy la mayoría de las certificadoras publican estas listas online o en apps, así que conviene guardarla en el teléfono antes de viajar, no buscarla recién cuando hace falta.</p>
+
+<h2>Preguntar en la cocina: qué tiene sentido consultar</h2>
+<p>Si vas a comer algo preparado en el momento, hay preguntas que ayudan más que otras. Preguntar "¿esto es kosher?" a un mesero que no sabe qué significa la palabra rara vez sirve. Es más útil preguntar cosas concretas: ¿el aceite se usó antes para freír otra cosa?, ¿la plancha se usa también para carne?, ¿hay manteca o crema en la preparación? Cuanto más específica la pregunta, más confiable la respuesta.</p>
+
+<h2>Los distintos niveles de estrictez, y por qué varían tanto</h2>
+<p>Cada persona y cada comunidad tiene un umbral distinto sobre qué se considera aceptable fuera de un restaurante certificado. Algunas familias solo comen productos envasados y sellados de fábrica, sin excepción. Otras aceptan ciertos preparados simples (una ensalada, un té) en restaurantes comunes, pero no platos elaborados. No hay una única respuesta correcta: depende de la costumbre familiar y del rabino que cada uno sigue. Ante la duda en un caso puntual, lo más recomendable es consultarlo directamente antes de un viaje, no improvisar en el momento.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Un restaurante vegano es automáticamente aceptable?</strong><br>
+No necesariamente. Que no tenga ingredientes de origen animal no resuelve todo: los equipos compartidos y el tema de <a href="/articulos/bishul-akum">bishul akum</a> (comida cocinada enteramente por alguien no judío) siguen siendo relevantes según la opinión que se siga. Lo desarrollamos en <a href="/articulos/kashrut-y-veganismo">kashrut y veganismo</a>.</p>
+<p><strong>¿Qué hago si viajo a una ciudad sin ninguna comunidad judía?</strong><br>
+Priorizar lo envasado y sellado (con certificación visible) que hayas traído o consigas en un supermercado, y frutas/verduras crudas. Muchos viajeros llevan una reserva de productos no perecederos certificados para estos casos.</p>
+<p><strong>¿Las apps de delivery muestran si un lugar es kosher?</strong><br>
+Algunas certificadoras tienen sus propias apps o listados online con los restaurantes certificados de su región, que suelen ser más confiables que confiar en la descripción del local en una app de delivery genérica.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>Para entender qué hace que un lugar tenga certificación real, mirá <a href="/articulos/simbolos-certificacion-kosher">símbolos de certificación kosher</a>. Y si el tema es directamente armar tu propia cocina para no depender de comer afuera, está <a href="/articulos/armar-cocina-kosher">cómo armar una cocina kosher desde cero</a>.</p>',
             ],
             [
                 'slug' => 'simbolos-certificacion-kosher',
                 'category' => 'productos',
                 'title' => 'Símbolos de certificación kosher más comunes',
                 'excerpt' => 'OU, OK, Star-K, KSA... existen decenas de símbolos de certificación kosher en el mundo. Te ayudamos a reconocer los más usados.',
-                'content' => '<p>Cuando un producto pasa por el proceso de certificación kosher, la agencia certificadora autoriza el uso de un símbolo (hechsher) en el packaging que permite identificarlo de un vistazo. Existen cientos de certificadoras en el mundo, pero algunas son especialmente conocidas por su alcance global.</p>
+                'content' => '<p>Cuando un producto pasa por el proceso de certificación kosher, la agencia certificadora autoriza el uso de un símbolo (hechsher) en el packaging que permite identificarlo de un vistazo. Existen cientos de certificadoras en el mundo, pero algunas son especialmente conocidas por su alcance global, y aprender a reconocerlas ahorra mucho tiempo en la góndola.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/simbolos-certificacion-kosher.jpg" alt="Un hechsher: el certificado de kashrut que una agencia rabínica otorga a un establecimiento o producto." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Un hechsher: el certificado de kashrut que una agencia rabínica otorga a un establecimiento o producto. Foto: Utilisateur:Djampa - User:Djampa vía <a href="https://commons.wikimedia.org/wiki/File%3AHechsher_Safed_Rabbinate.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
+
+<h2>Los símbolos más reconocidos a nivel mundial</h2>
 <ul>
-<li><strong>OU (Orthodox Union):</strong> una "U" dentro de un círculo. Es probablemente el símbolo kosher más reconocido a nivel mundial, con sede en Estados Unidos.</li>
-<li><strong>OK Kosher Certification:</strong> una "K" dentro de un círculo, otra de las grandes agencias estadounidenses.</li>
-<li><strong>Star-K:</strong> una estrella con una "K" en el centro.</li>
-<li><strong>KSA (Kosher Supervision of America):</strong> certificadora con fuerte presencia en productos industriales.</li>
-<li><strong>Badatz:</strong> sello utilizado por varios tribunales rabínicos en Israel, asociado a estándares de estrictez muy altos.</li>
-<li><strong>KS / certificadoras locales:</strong> en países como Argentina, Brasil o México existen certificadoras comunitarias locales (como la Va\'ad Hakashrut de cada kehilá) con sus propios sellos.</li>
+<li><strong>OU (Orthodox Union):</strong> una "U" dentro de un círculo. Es probablemente el símbolo kosher más reconocido a nivel mundial, con sede en Estados Unidos y presencia en decenas de miles de productos.</li>
+<li><strong>OK Kosher Certification:</strong> una "K" dentro de un círculo, otra de las grandes agencias estadounidenses, muy fuerte en productos industriales y aditivos.</li>
+<li><strong>Star-K:</strong> una estrella con una "K" en el centro, con sede en Baltimore.</li>
+<li><strong>KSA (Kosher Supervision of America):</strong> certificadora con fuerte presencia en productos industriales y saborizantes.</li>
+<li><strong>Badatz:</strong> sello utilizado por varios tribunales rabínicos en Israel, asociado a estándares de estrictez muy altos (existen varios Badatz distintos, no es una sola organización).</li>
+<li><strong>KS / certificadoras locales:</strong> en países como Argentina, Brasil o México existen certificadoras comunitarias locales (como la Va\'ad Hakashrut de cada kehilá) con sus propios sellos, generalmente reconocidos solo dentro de esa comunidad o país.</li>
 </ul>
-<p>Además del símbolo, muchas etiquetas incluyen una letra adicional: "D" (dairy/lácteo), "M" (meat/cárnico), "Pareve" (neutro) o "DE" (dairy equipment, elaborado en equipo lácteo pero sin ingredientes lácteos directos). Conocer estos símbolos agiliza enormemente las compras, sobre todo al viajar a países donde no se domina el idioma local.</p>
+
+<h2>Las letras que acompañan al símbolo</h2>
+<p>Además del símbolo, muchas etiquetas incluyen una letra adicional: "D" (dairy/lácteo), "M" (meat/cárnico), "Pareve" (neutro) o "DE" (dairy equipment, elaborado en equipo lácteo pero sin ingredientes lácteos directos). Esta última distinción es importante: un producto "DE" no es apto para comer directamente después de carne, aunque no contenga lácteos como ingrediente. Conocer estos símbolos agiliza enormemente las compras, sobre todo al viajar a países donde no se domina el idioma local.</p>
+
+<h2>Un hechsher no es un trámite único: es supervisión constante</h2>
 <p>Vale aclarar algo que no siempre se entiende: un hechsher no es un trámite que se hace una vez y queda para siempre. Es una supervisión activa y constante. Conocemos el caso de una panadería de Buenos Aires que tenía la certificación de una agencia comunitaria. En un momento el rabino supervisor notó movimientos raros y mandó gente a controlar, casi como un detective. Descubrieron que estaba comprando dulce de leche sin supervisión, cuando debía usar solamente productos Jalav Israel (lácteos elaborados bajo supervisión judía). Le advirtieron y le pidieron corregir. Al poco tiempo, sin saber que lo seguían de cerca, apareció comprando queso común sin certificación, y esa fue la gota que rebalsó el vaso: le retiraron la supervisión. Todo se manejó con discreción, sin escándalo, simplemente dejando de certificar el local.</p>
-<p>La moraleja para el consumidor es clara: el sello vale porque detrás hay alguien controlando en serio, todo el tiempo. Por eso conviene confiar en certificadoras reconocidas y, ante un símbolo que no conocés, preguntar en la comunidad antes de dar por sentado que un producto es kosher.</p>',
+<p>La moraleja para el consumidor es clara: el sello vale porque detrás hay alguien controlando en serio, todo el tiempo. Por eso conviene confiar en certificadoras reconocidas y, ante un símbolo que no conocés, preguntar en la comunidad antes de dar por sentado que un producto es kosher.</p>
+
+<h2>¿Por qué algunas comunidades aceptan unos sellos y no otros?</h2>
+<p>No todos los rabinos ni todas las comunidades aceptan los mismos hechsherim. Algunos criterios son más flexibles y confían en un rango amplio de certificadoras reconocidas; otros, especialmente en comunidades más estrictas, solo confían en un puñado específico de sellos cuyos estándares conocen a fondo. No es raro ver listas ("listas de hechsherim confiables") que cada comunidad publica para sus miembros. Ante la duda sobre si un sello en particular es aceptado, lo más simple es preguntar directamente al rabino de la congregación.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Un producto sin ningún símbolo puede ser kosher igual?</strong><br>
+Técnicamente sí, si todos sus ingredientes son kosher y no hubo contacto con equipamiento no kosher, pero sin certificación no hay forma de verificarlo desde afuera. Por eso el hechsher existe: es la garantía de que alguien lo controló.</p>
+<p><strong>¿Todos los símbolos con una letra "K" son confiables?</strong><br>
+No. A diferencia de "OU" o "OK", la letra "K" sola no está registrada como marca por ninguna agencia específica, así que cualquier fabricante puede imprimirla sin que signifique una supervisión real. Conviene desconfiar de una "K" suelta sin agencia identificable.</p>
+<p><strong>¿Los símbolos significan lo mismo en todos los países?</strong><br>
+El símbolo en sí (el diseño) suele ser consistente porque está registrado por la certificadora, pero el nivel de reconocimiento que le da cada comunidad varía según el país y la corriente religiosa.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>Para entender la diferencia entre "D", "M" y "Pareve" en detalle, mirá <a href="/articulos/que-significa-pareve">qué significa pareve</a>. Y si te interesa cómo leer una etiqueta completa más allá del símbolo, está <a href="/articulos/como-leer-etiqueta-kosher">cómo leer una etiqueta kosher</a>.</p>',
             ],
             [
                 'slug' => 'que-significa-pareve',
@@ -642,20 +727,38 @@ Por la suma de todo lo anterior: personal especializado, supervisión permanente
                 'category' => 'productos',
                 'title' => 'Mevushal: vino kosher que se puede servir sin restricciones',
                 'excerpt' => 'El vino mevushal es una categoría especial que permite servirlo en eventos sin necesidad de que solo judíos lo manipulen.',
-                'content' => '<p>Como vimos con el vino kosher, la regla general exige que solo judíos observantes manipulen el vino desde la elaboración hasta que se sirve. El vino mevushal ("hervido", pasteurizado) es la excepción práctica a esa regla: una vez que pasa por un proceso de calentamiento a una temperatura mínima específica, conserva su estatus kosher sin importar quién lo sirva después.</p>
+                'content' => '<p>Como vimos con el <a href="/articulos/vino-kosher">vino kosher</a>, la regla general exige que solo judíos observantes manipulen el vino desde la elaboración hasta que se sirve. El vino mevushal ("hervido", pasteurizado) es la excepción práctica a esa regla: una vez que pasa por un proceso de calentamiento a una temperatura mínima específica, conserva su estatus kosher sin importar quién lo sirva después.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/vino-mevushal.jpg" alt="El vino mevushal es pasteurizado, y por eso conserva su estatus kosher aunque lo sirva una persona no judía." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">El vino mevushal es pasteurizado, y por eso conserva su estatus kosher aunque lo sirva una persona no judía. Foto: misbehave vía <a href="https://commons.wikimedia.org/wiki/File%3ABottle_%26_glass_of_red_Bordeaux_style_blend.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY 2.0.</figcaption>
 </figure>
-<p>Esta categoría existe por un principio halájico: el vino alterado por calor pierde la "dignidad" ritual que originalmente motivó la restricción, porque históricamente esa preocupación apuntaba al uso del vino en ceremonias idólatras, algo para lo que un vino hervido no se prestaba en ese contexto.</p>
+
+<h2>Por qué el calor cambia todo</h2>
+<p>Esta categoría existe por un principio halájico: el vino alterado por calor pierde la "dignidad" ritual que originalmente motivó la restricción, porque históricamente esa preocupación apuntaba al uso del vino en ceremonias idólatras, algo para lo que un vino hervido no se prestaba en ese contexto. Al perder esa condición, deja de importar quién lo toca o lo sirve después del proceso: puede pasar por manos no judías sin que pierda su estatus kosher.</p>
+
+<h2>Dónde se usa más</h2>
 <p>El mevushal es muy popular en:</p>
 <ul>
-<li>Catering y eventos donde el personal de servicio no es necesariamente judío.</li>
-<li>Restaurantes kosher abiertos al público general.</li>
-<li>Aerolíneas y hoteles que ofrecen opciones kosher.</li>
+<li><strong>Catering y eventos:</strong> bodas, bar/bat mitzvás y recepciones donde el personal de servicio no es necesariamente judío.</li>
+<li><strong>Restaurantes kosher abiertos al público general:</strong> permite que cualquier mesero sirva el vino sin supervisión especial en cada mesa.</li>
+<li><strong>Aerolíneas y hoteles</strong> que ofrecen opciones kosher, donde sería impracticable garantizar que solo personal judío toque cada botella.</li>
+<li><strong>Sinagogas y eventos comunitarios grandes</strong>, donde el vino circula entre muchas manos durante un kidush.</li>
 </ul>
-<p>Hoy existen técnicas de pasteurización rápida (flash pasteurization) que permiten hacer vino mevushal de buena calidad, algo que antes era más difícil de lograr sin arruinar el sabor. Eso amplió mucho la oferta de vinos mevushal premium en el mercado.</p>',
+
+<h2>Cómo se pasteuriza sin arruinar el sabor</h2>
+<p>Durante mucho tiempo, hervir el vino de la forma tradicional afectaba bastante el sabor, y el mevushal tenía fama de ser de calidad inferior. Hoy existen técnicas de pasteurización rápida (flash pasteurization), donde el vino se calienta a la temperatura mínima requerida solo por unos segundos y se enfría de inmediato, algo que antes era más difícil de lograr sin arruinar el sabor. Eso amplió mucho la oferta de vinos mevushal premium en el mercado, incluyendo etiquetas de bodegas reconocidas que antes solo producían vino no mevushal.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Todo vino kosher que se vende en supermercados es mevushal?</strong><br>
+No, hay vinos kosher no-mevushal en el mercado general también. Conviene revisar la etiqueta o el sitio de la certificadora si es un dato relevante para tu uso (por ejemplo, si lo vas a servir en un evento con personal no judío).</p>
+<p><strong>¿El mevushal tiene menor calidad que el vino kosher común?</strong><br>
+Ya no necesariamente. Con las técnicas modernas de pasteurización rápida, muchas bodegas producen mevushal de nivel premium indistinguible en cata de la versión no pasteurizada.</p>
+<p><strong>¿Un vino puede volverse mevushal después de embotellado?</strong><br>
+No, el proceso de calentamiento tiene que hacerse antes o durante la elaboración, bajo supervisión, y queda indicado en la etiqueta o en la ficha del producto de la certificadora.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>Para entender por qué el vino común necesita supervisión tan estricta en primer lugar, mirá <a href="/articulos/vino-kosher">vino kosher: por qué requiere supervisión especial</a>. El tema también se relaciona con <a href="/articulos/bishul-akum">bishul akum</a>, otra categoría donde importa quién manipula la comida.</p>',
             ],
             [
                 'slug' => 'tevilat-kelim',
