@@ -1446,50 +1446,103 @@ O desenho do símbolo costuma ser consistente porque é registrado pela certific
             'glatt-kosher' => [
                 'title' => 'Glatt kosher: que diferença há para o kosher comum',
                 'excerpt' => 'O termo "glatt" aparece frequentemente em açougues e restaurantes kosher. Explicamos que nível de rigor representa.',
-                'content' => '<p>"Glatt" significa "liso" em iídiche e originalmente se referia especificamente ao estado dos pulmões de um animal após a shechitá: se os pulmões não apresentassem nenhuma aderência (sircá), o animal era considerado "glatt", o nível mais alto de certeza de que a carne é kosher sem dúvida alguma.</p>
+                'content' => '<p>"Glatt" significa "liso" em iídiche e originalmente se referia especificamente ao estado dos pulmões de um animal após a <a href="/articulos/shejita-sacrificio-kosher">shechitá</a>: se os pulmões não apresentassem nenhuma aderência (sircá), o animal era considerado "glatt", o nível mais alto de certeza de que a carne é kosher sem dúvida alguma.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/glatt-kosher.jpg" alt="Um restaurante de carne kosher em Jerusalém. &quot;Glatt&quot; indica o padrão de inspeção mais exigente." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Um restaurante de carne kosher em Jerusalém. "Glatt" indica o padrão de inspeção mais exigente. Foto: brionv from San Francisco, United States via <a href="https://commons.wikimedia.org/wiki/File%3AJerusalem_MMMM_MEAT_%286036353902%29.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 2.0.</figcaption>
 </figure>
-<p>Com o tempo, especialmente em comunidades asquenazitas dos Estados Unidos, o termo "glatt kosher" se estendeu coloquialmente para descrever um padrão geral de maior rigor em toda a cadeia de produção de um alimento, não só na inspeção de pulmões. Hoje é comum ver "glatt kosher" em rótulos de restaurantes e produtos para indicar que cumprem os critérios mais exigentes possíveis.</p>
-<p>É importante destacar que um produto "kosher" sem o rótulo "glatt" não é menos válido halajicamente: simplesmente segue um padrão de certificação diferente, geralmente aceito pela ampla maioria das comunidades. A escolha entre kosher padrão e glatt kosher costuma depender do costume familiar ou comunitário, mais do que de uma diferença objetiva de validade.</p>
-<p>No caso de aves e peixes, o conceito de "glatt" tecnicamente não se aplica da mesma forma que em mamíferos, embora coloquialmente às vezes seja usado para indicar um nível de supervisão mais rigoroso em geral.</p>',
+
+<h2>A origem técnica: os pulmões do animal</h2>
+<p>Durante a inspeção pós-shechitá, um dos passos-chave é revisar os pulmões do animal em busca de aderências (sircot), que podem indicar uma doença ou perfuração que invalidaria o animal como kosher. Quando o pulmão aparece completamente liso, sem nenhuma aderência, o animal é classificado como "glatt". Se tem aderências menores que um examinador experiente (bodek) considera que podem ser removidas sem deixar perfuração, o animal ainda pode se qualificar como kosher sob o critério padrão, embora não como "glatt".</p>
+
+<h2>Como passou de termo técnico a marca de rigor geral</h2>
+<p>Com o tempo, especialmente em comunidades asquenazitas dos Estados Unidos, o termo "glatt kosher" se estendeu coloquialmente para descrever um padrão geral de maior rigor em toda a cadeia de produção de um alimento, não só na inspeção de pulmões. Hoje é comum ver "glatt kosher" em rótulos de restaurantes e produtos para indicar que cumprem os critérios mais exigentes possíveis, mesmo em contextos onde o termo técnico original (os pulmões do animal) nem se aplica.</p>
+
+<h2>O kosher comum é "menos válido"?</h2>
+<p>É importante destacar que um produto "kosher" sem o rótulo "glatt" não é menos válido halajicamente: simplesmente segue um padrão de certificação diferente, geralmente aceito pela ampla maioria das comunidades e autoridades rabínicas. A escolha entre kosher padrão e glatt kosher costuma depender do costume familiar ou comunitário, mais do que de uma diferença objetiva de validade. Muitas famílias que não seguem glatt no dia a dia escolhem mesmo assim para ocasiões especiais, como um casamento ou uma festividade importante.</p>
+<p>No caso de aves e peixes, o conceito de "glatt" tecnicamente não se aplica da mesma forma, já que as aves não passam pelo mesmo tipo de inspeção pulmonar, embora coloquialmente às vezes seja usado para indicar um nível de supervisão mais rigoroso em geral.</p>
+
+<h2>Perguntas frequentes</h2>
+<p><strong>Toda carne glatt kosher é mais cara?</strong><br>
+Em geral sim, porque o processo de seleção é mais rigoroso e uma porcentagem maior de animais é descartada, o que reduz a oferta disponível em relação à demanda.</p>
+<p><strong>Um restaurante que diz "kosher" sem especificar "glatt" está sendo desonesto?</strong><br>
+Não, está simplesmente sendo preciso: segue o critério kosher padrão, plenamente válido para a grande maioria das comunidades.</p>
+<p><strong>"Glatt" garante que outras regras, como bishul akum, também foram seguidas?</strong><br>
+Não automaticamente. "Glatt" se refere especificamente ao nível de inspeção da carne; outras regras como <a href="/articulos/bishul-akum">bishul akum</a> são verificadas separadamente como parte do processo geral de certificação.</p>
+
+<h2>Para continuar lendo</h2>
+<p>Para entender o processo completo por trás da carne kosher, do abate à inspeção, veja <a href="/articulos/shejita-sacrificio-kosher">shechitá: o método de abate kosher</a>. E para reconhecer os selos que certificam tudo isso no rótulo, veja <a href="/articulos/simbolos-certificacion-kosher">símbolos de certificação kosher</a>.</p>',
             ],
             'como-leer-etiqueta-kosher' => [
                 'title' => 'Como ler um rótulo de produto kosher',
                 'excerpt' => 'Além do símbolo de certificação, os rótulos kosher contêm informações-chave para saber se um produto é apto para sua mesa.',
-                'content' => '<p>Ler corretamente um rótulo kosher vai além de procurar o símbolo de certificação. Há vários elementos que vale a pena sempre revisar:</p>
+                'content' => '<p>Ler corretamente um rótulo kosher vai além de procurar o símbolo de certificação. Há vários elementos que vale a pena sempre revisar, e aprender a lê-los por completo evita surpresas à mesa.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/como-leer-etiqueta-kosher.jpg" alt="O rótulo de um produto israelense: além do selo, vale olhar a categoria e os ingredientes." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">O rótulo de um produto israelense: além do selo, vale olhar a categoria e os ingredientes. Foto: Chenspec via <a href="https://commons.wikimedia.org/wiki/File%3AList_of_ingredients_of_food_products_in_Israel_02.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
+
+<h2>Os quatro dados que vale a pena procurar, em ordem</h2>
 <ul>
-<li><strong>O símbolo da certificadora:</strong> identifica qual agência supervisionou o produto. É importante reconhecer certificadoras confiáveis, já que nem todos os símbolos do mundo têm o mesmo nível de exigência.</li>
-<li><strong>A categoria:</strong> "Dairy" ou "D" (lácteo), "Meat" ou "M" (cárneo), "Pareve" (neutro), ou "Fish" (peixe, que em muitas tradições é tratado como categoria separada da carne).</li>
-<li><strong>"Kosher para Pessach":</strong> indicação adicional necessária durante a festividade, diferente da certificação kosher habitual do resto do ano.</li>
-<li><strong>Data de certificação:</strong> algumas certificadoras incluem um código ou data para verificar se o selo continua válido, já que receitas e processos de fábrica podem mudar.</li>
+<li><strong>O símbolo da certificadora:</strong> identifica qual agência supervisionou o produto. É importante reconhecer certificadoras confiáveis (detalhadas em <a href="/articulos/simbolos-certificacion-kosher">símbolos de certificação kosher</a>), já que nem todos os símbolos do mundo têm o mesmo nível de exigência.</li>
+<li><strong>A categoria:</strong> "Dairy" ou "D" (lácteo), "Meat" ou "M" (cárneo), "Pareve" (neutro), ou "Fish" (peixe, que em muitas tradições é tratado como categoria separada da carne). Essa letra determina com quais outras comidas o produto pode ser combinado.</li>
+<li><strong>"Kosher para Pessach":</strong> indicação adicional necessária durante a festividade, diferente da certificação kosher habitual do resto do ano. Um produto pode ser kosher o ano todo, mas não apto para Pessach se contiver algum derivado dos cinco grãos.</li>
+<li><strong>Data ou código de certificação:</strong> algumas certificadoras incluem um código ou data para verificar se o selo continua válido, já que receitas e processos de fábrica podem mudar, e uma certificação pode ser perdida sem que o design da embalagem mude.</li>
 </ul>
-<p>Quando um produto não tem certificação visível mas a lista de ingredientes parece simples (por exemplo, só água, sal e um vegetal), algumas pessoas optam por investigar mais, mas a recomendação geral das autoridades de kashrut é não assumir que um produto é kosher só pela aparência de seus ingredientes: muitos aditivos e processos industriais não são evidentes à primeira vista.</p>
-<p>No KosherMap você pode buscar produtos por nome ou código de barras e filtrar diretamente por certificadora, categoria e tipo, para não depender só do rótulo físico.</p>',
+
+<h2>A categoria "DE": o detalhe mais esquecido</h2>
+<p>Além de "D", "M" e "Pareve", alguns rótulos incluem "DE" (dairy equipment): significa que o produto não leva ingredientes lácteos, mas foi elaborado no mesmo equipamento que produtos lácteos. Para efeitos práticos, muitas opiniões tratam um produto "DE" de forma mais flexível que um "D" real, mas não como se fosse pareve puro. Vale entender essa diferença em detalhe em <a href="/articulos/que-significa-pareve">o que significa pareve</a>.</p>
+
+<h2>Por que não convém assumir por eliminação</h2>
+<p>Quando um produto não tem certificação visível mas a lista de ingredientes parece simples (por exemplo, só água, sal e um vegetal), a tentação é assumir que é kosher por eliminação. A recomendação geral das autoridades de kashrut é não fazer isso: muitos aditivos e processos industriais não são evidentes à primeira vista, desde enzimas usadas no processamento até equipamento compartilhado com outros produtos na mesma linha de produção.</p>
+
+<h2>Perguntas frequentes</h2>
+<p><strong>Um produto sem categoria (D/M/Pareve) impressa é sempre pareve?</strong><br>
+Não assuma isso. A ausência de uma letra não confirma nada por si só; se o rótulo não esclarece a categoria, vale procurar o produto diretamente no banco de dados da certificadora.</p>
+<p><strong>Aplicativos de leitura de código de barras substituem a necessidade de revisar o rótulo físico?</strong><br>
+Ajudam muito, mas convém usá-los como complemento, não como substituto total, principalmente com produtos importados ou de fabricação recente que o banco de dados ainda não atualizou.</p>
+<p><strong>Todos os países exigem que o rótulo kosher esteja no idioma local?</strong><br>
+Não, é comum encontrar produtos importados com a informação kosher só no idioma de origem (hebraico, inglês), o que torna mais valioso reconhecer os símbolos de memória em vez de depender do texto.</p>
+
+<h2>Para continuar lendo</h2>
+<p>Para reconhecer de relance os selos mais comuns do mundo, veja <a href="/articulos/simbolos-certificacion-kosher">símbolos de certificação kosher</a>. No KosherMap você também pode buscar produtos por nome ou código de barras e filtrar diretamente por certificadora, categoria e tipo, para não depender só do rótulo físico.</p>',
             ],
             'bishul-akum' => [
                 'title' => 'Bishul Akum: por que alguns alimentos cozidos precisam de supervisão judaica',
                 'excerpt' => 'Existe uma categoria de leis específica sobre alimentos cozinhados por não judeus, conhecida como bishul akum. Explicamos do que se trata.',
-                'content' => '<p>Bishul akum (literalmente "cozimento de um não judeu") é uma categoria de leis rabínicas que restringe o consumo de certos alimentos cozinhados inteiramente por uma pessoa não judia, mesmo que todos os ingredientes sejam kosher. A proibição foi estabelecida pelos sábios talmúdicos, principalmente para fomentar a coesão social e evitar a assimilação cultural.</p>
+                'content' => '<p>Bishul akum (literalmente "cozimento de um não judeu") é uma categoria de leis rabínicas que restringe o consumo de certos alimentos cozinhados inteiramente por uma pessoa não judia, mesmo que todos os ingredientes sejam kosher. A proibição foi estabelecida pelos sábios talmúdicos, principalmente para fomentar a coesão social e evitar a assimilação cultural entre comunidades.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/bishul-akum.jpg" alt="Bishul akum regula alimentos cozidos inteiramente por um não judeu, mesmo com ingredientes kosher." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Bishul akum regula alimentos cozidos inteiramente por um não judeu, mesmo com ingredientes kosher. Foto: Seattle Municipal Archives from Seattle, WA via <a href="https://commons.wikimedia.org/wiki/File%3ACooks_in_kitchen%2C_1930_%2820981103874%29.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY 2.0.</figcaption>
 </figure>
-<p>Essa lei não se aplica a todos os alimentos: geralmente se limita a alimentos considerados "dignos de servir na mesa de um rei" (chashivut) e que não se comem crus. Por isso, frutas, verduras cruas e a maioria dos lanches industrializados não entram nessa categoria.</p>
+
+<h2>Que alimentos entram nessa categoria (e quais não)</h2>
+<p>Essa lei não se aplica a todos os alimentos: geralmente se limita a alimentos considerados "dignos de servir na mesa de um rei" (chashivut) e que não se comem crus. Por isso, frutas, verduras cruas e a maioria dos lanches industrializados não entram nessa categoria. O critério de "chashivut" é em parte subjetivo e varia conforme a comunidade: um guisado elaborado claramente entra, enquanto um vegetal simplesmente fervido gera mais debate entre as diferentes opiniões rabínicas.</p>
+
+<h2>Como se resolve numa fábrica ou restaurante certificado</h2>
 <p>Há duas formas habituais de resolver o problema em um contexto de produção industrial ou restaurantes certificados:</p>
 <ul>
-<li>Que um judeu observante participe ativamente do processo de cozimento, por exemplo, acendendo o fogo ou o equipamento de cocção.</li>
-<li>Que a supervisão rabínica certifique que um representante judeu esteve presente durante o acendimento dos equipamentos de cocção em cada turno de produção.</li>
+<li><strong>Que um judeu observante participe ativamente do processo de cozimento</strong>, por exemplo acendendo o fogo ou o equipamento antes de começar o processo de produção.</li>
+<li><strong>Que a supervisão rabínica certifique</strong> que um representante judeu esteve presente durante o acendimento dos equipamentos de cocção em cada turno de produção, mesmo que o resto do processo seja depois conduzido por pessoal não judeu.</li>
 </ul>
-<p>Essa é uma das razões pelas quais a certificação kosher de uma fábrica de alimentos não se limita a revisar ingredientes: também supervisiona processos, presença de pessoal e protocolos operacionais do estabelecimento, o que torna o trabalho das certificadoras muito mais complexo do que uma simples lista de checagem de insumos.</p>',
+<p>Essa é uma das razões pelas quais a certificação kosher de uma fábrica de alimentos não se limita a revisar ingredientes: também supervisiona processos, presença de pessoal e protocolos operacionais do estabelecimento, o que torna o trabalho das certificadoras muito mais complexo do que uma simples lista de checagem de insumos.</p>
+
+<h2>Por que isso afeta restaurantes que não são kosher</h2>
+<p>Essa é uma das razões de fundo pelas quais um prato preparado num restaurante sem certificação gera dúvidas mesmo quando todos os ingredientes parecem aptos: além da origem da carne ou do equipamento compartilhado, entra em jogo quem efetivamente acendeu o fogo e conduziu o cozimento. O tema é desenvolvido com exemplos concretos em <a href="/articulos/comer-kosher-restaurante">como comer kosher em um restaurante não certificado</a>.</p>
+
+<h2>Perguntas frequentes</h2>
+<p><strong>Bishul akum também se aplica em casa, com funcionários domésticos não judeus?</strong><br>
+Sim, o princípio é o mesmo independentemente de onde se cozinha; o que muda é a solução prática, geralmente algum membro judeu da família participando do acendimento.</p>
+<p><strong>Um forno elétrico com timer resolve o problema do acendimento?</strong><br>
+Depende da opinião rabínica seguida; algumas aceitam como forma de "participação" do dono judeu, outras exigem um ato mais direto. Na dúvida, consulte o rabino da comunidade.</p>
+<p><strong>Bishul akum tem alguma relação com a casherização de utensílios?</strong><br>
+São categorias distintas: bishul akum trata de quem cozinha, enquanto a casherização (como a <a href="/articulos/hagala-utensilios-metal">hagalá</a>) trata do que um utensílio absorveu anteriormente.</p>
+
+<h2>Para continuar lendo</h2>
+<p>Para ver como esse princípio se aplica na prática ao comer fora, veja <a href="/articulos/comer-kosher-restaurante">como comer kosher em um restaurante não certificado</a>. E para outra categoria onde importa muito quem manipula o produto, veja <a href="/articulos/vino-kosher">vinho kosher</a>.</p>',
             ],
             'vino-mevushal' => [
                 'title' => 'Mevushal: vinho kosher que pode ser servido sem restrições',
@@ -1536,9 +1589,31 @@ Não, o processo de aquecimento precisa ser feito antes ou durante a elaboraçã
   <img src="/images/articulos/tevilat-kelim.jpg" alt="Uma mikvê, o banho ritual onde se imergem os utensílios novos antes do primeiro uso." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Uma mikvê, o banho ritual onde se imergem os utensílios novos antes do primeiro uso. Foto: Stefan Walkowski via <a href="https://commons.wikimedia.org/wiki/File%3AMikveh.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>Esse costume se aplica principalmente a utensílios que entram em contato direto com a comida: panelas, frigideiras, talheres, pratos de vidro e copos. Geralmente não se aplica a utensílios elétricos (como uma torradeira ou liquidificador) nem a utensílios de plástico ou madeira, embora as opiniões variem conforme a tradição de cada comunidade, por isso é recomendável consultar um rabino sobre casos específicos.</p>
-<p>O processo em si é simples: o utensílio é bem limpo (sem restos de etiquetas, lacres ou adesivos), submergido completamente na água do mikvê enquanto se recita uma bênção, e então está pronto para ser usado normalmente.</p>
-<p>Muitos mikvês comunitários têm um horário específico habilitado para tevilat kelim, separado do uso ritual pessoal, assim como instruções detalhadas sobre quais materiais requerem imersão e quais não. É uma dessas práticas que, embora pareça um detalhe menor, faz parte integral de como muitas famílias judaicas observantes equipam sua cozinha.</p>',
+
+<h2>Quais utensílios precisam de tevilá e quais não</h2>
+<p>Esse costume se aplica principalmente a utensílios que entram em contato direto com a comida: panelas, frigideiras, talheres, pratos de vidro e copos. Geralmente não se aplica a utensílios elétricos (como uma torradeira ou liquidificador) nem a utensílios de plástico ou madeira, embora as opiniões variem conforme a tradição de cada comunidade, por isso é recomendável consultar um rabino sobre casos específicos. O critério geral usado para essa distinção é parecido com o que determina o que precisa de <a href="/articulos/hagala-utensilios-metal">hagalá</a>: quanto mais direto o contato com a comida e mais durável o material, mais provável que precise de imersão.</p>
+
+<h2>O processo passo a passo</h2>
+<ol>
+<li>Limpar bem o utensílio, sem restos de etiquetas, lacres ou adesivos que possam se interpor entre a água e a superfície.</li>
+<li>Verificar que não haja nenhuma substância (gordura, ferrugem, resíduo de embalagem) atuando como barreira.</li>
+<li>Submergir completamente na água do mikvê, ou numa fonte de água natural apropriada, enquanto se recita uma bênção (no caso de utensílios que a exigem conforme a tradição).</li>
+<li>Uma vez imerso corretamente, o utensílio já está pronto para ser usado normalmente, sem nenhum passo adicional.</li>
+</ol>
+
+<h2>Onde fazer isso na prática</h2>
+<p>Muitos mikvês comunitários têm um horário específico habilitado para tevilat kelim, separado do uso ritual pessoal, assim como instruções detalhadas sobre quais materiais requerem imersão e quais não. Algumas comunidades maiores têm até uma piscina separada, dedicada exclusivamente a esse uso, para não misturar os horários com o mikvê de uso ritual pessoal.</p>
+
+<h2>Perguntas frequentes</h2>
+<p><strong>Um utensílio de segunda mão precisa de tevilá igual a um novo?</strong><br>
+Sim, se foi fabricado ou vendido originalmente por alguém não judeu, o costume se aplica independentemente de o utensílio ser novo ou usado.</p>
+<p><strong>E se eu comprar um utensílio e não tiver um mikvê por perto?</strong><br>
+Pode-se usar qualquer fonte de água natural que cumpra os requisitos halájicos (um rio, o mar), embora na prática a maioria recorra ao mikvê comunitário mais próximo que tenha horário habilitado para isso.</p>
+<p><strong>Utensílios comprados de um fabricante judeu também precisam de tevilá?</strong><br>
+Em geral não; o costume se concentra especificamente em utensílios de origem não judia.</p>
+
+<h2>Para continuar lendo</h2>
+<p>Para outros passos práticos ao equipar uma cozinha do zero, incluindo esse costume, veja <a href="/articulos/armar-cocina-kosher">como montar uma cozinha kosher do zero</a>. E para o método usado para purificar utensílios que absorveram sabor não kosher, veja <a href="/articulos/hagala-utensilios-metal">hagalá: como casherizar utensílios de metal</a>.</p>',
             ],
             'armar-cocina-kosher' => [
                 'title' => 'Como montar uma cozinha kosher do zero',
@@ -1549,14 +1624,33 @@ Não, o processo de aquecimento precisa ser feito antes ou durante a elaboraçã
   <img src="/images/articulos/armar-cocina-kosher.jpg" alt="Montar uma cozinha kosher é um processo gradual: não é preciso resolver tudo em um dia." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Montar uma cozinha kosher é um processo gradual: não é preciso resolver tudo em um dia. Foto: MeRyan via <a href="https://commons.wikimedia.org/wiki/File%3AKitchen_with_island%2C_New_Orleans_2007.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY 2.0.</figcaption>
 </figure>
+
+<h2>Os passos mais comuns</h2>
 <ul>
 <li><strong>Definir a separação física:</strong> estabelecer quais utensílios, panelas e louças serão cárneos e quais lácteos. O mais prático costuma ser usar cores diferentes (por exemplo, vermelho para carne, azul para leite) para evitar confusões diárias.</li>
-<li><strong>Separar as superfícies de trabalho:</strong> tábuas de corte, panos de prato e esponjas também devem ser divididos por categoria.</li>
+<li><strong>Separar as superfícies de trabalho:</strong> tábuas de corte, panos de prato e esponjas também devem ser divididos por categoria, idealmente guardados em lugares diferentes da cozinha para evitar misturas acidentais.</li>
 <li><strong>Avaliar eletrodomésticos compartilhados:</strong> forno, micro-ondas e lava-louças podem ser casherizados entre usos ou, mais simples, designados a uma só categoria desde o início (por exemplo, micro-ondas só para pareve).</li>
-<li><strong>Comprar produtos certificados:</strong> revisar o símbolo de certificação em cada compra, até que vire um hábito automático.</li>
-<li><strong>Coordenar com um rabino:</strong> especialmente para casherizar itens que já estavam na cozinha antes de começar esse processo.</li>
+<li><strong>Comprar produtos certificados:</strong> revisar o símbolo de certificação em cada compra, até que vire um hábito automático, sem precisar pensar nisso toda vez.</li>
+<li><strong>Coordenar com um rabino:</strong> especialmente para casherizar itens que já estavam na cozinha antes de começar esse processo, e resolver dúvidas pontuais sobre materiais ou utensílios específicos.</li>
+<li><strong>Somar tevilat kelim:</strong> utensílios novos de metal ou vidro comprados de um fabricante não judeu precisam de imersão ritual antes do primeiro uso.</li>
 </ul>
-<p>Uma estratégia muito usada por quem está começando é incorporar a separação aos poucos: primeiro os utensílios de uso diário, depois as louças de mesa, e finalmente os eletrodomésticos. Não é necessário trocar toda a cozinha de uma vez, e muitas famílias levam meses para completar a transição sem que isso seja um problema halájico em si.</p>',
+
+<h2>Ir aos poucos: a ordem que mais facilita a transição</h2>
+<p>Uma estratégia muito usada por quem está começando é incorporar a separação aos poucos: primeiro os utensílios de uso diário (panelas, frigideiras, talheres), depois as louças de mesa, e finalmente os eletrodomésticos, que costumam ser o mais caro e complexo de resolver. Não é necessário trocar toda a cozinha de uma vez, e muitas famílias levam meses para completar a transição sem que isso seja um problema halájico em si: o que importa é a intenção de seguir avançando, não a velocidade.</p>
+
+<h2>O orçamento: como distribuir o investimento</h2>
+<p>Montar uma cozinha completa do zero pode parecer caro se pensado como um gasto único. Na prática, a maioria das famílias distribui em compras pequenas e espaçadas: um jogo de panelas este mês, talheres no próximo, e assim por diante. Bazares e lojas da comunidade costumam ter combos pensados especificamente para isso, com preços mais acessíveis do que comprar tudo separadamente.</p>
+
+<h2>Perguntas frequentes</h2>
+<p><strong>Preciso jogar fora tudo o que já havia na cozinha antes de começar?</strong><br>
+Não necessariamente. Muitos utensílios podem ser casherizados conforme o material (veja <a href="/articulos/hagala-utensilios-metal">hagalá</a>); só o que não admite casherização, como a maioria da cerâmica, precisa ser substituído.</p>
+<p><strong>O micro-ondas precisa de duas unidades, uma para carne e outra para lácteo?</strong><br>
+Não é obrigatório: muitas famílias usam um único micro-ondas designado "só para pareve", ou o casherizam entre usos conforme detalhado em <a href="/articulos/kasherizar-horno">como casherizar o forno</a> (o princípio é semelhante).</p>
+<p><strong>Quanto tempo leva em média para completar a transição?</strong><br>
+Varia muito conforme o orçamento e o ritmo de cada família, mas não é incomum levar entre vários meses e um ano para completar todos os passos com tranquilidade.</p>
+
+<h2>Para continuar lendo</h2>
+<p>Para o detalhe da imersão ritual de utensílios novos, veja <a href="/articulos/tevilat-kelim">tevilat kelim</a>. E para entender o método usado para casherizar o que você já tinha em casa, veja <a href="/articulos/hagala-utensilios-metal">hagalá: como casherizar utensílios de metal</a>.</p>',
             ],
             'certificaciones-kosher-mundo' => [
                 'title' => 'Diferenças entre as certificações kosher ao redor do mundo',
