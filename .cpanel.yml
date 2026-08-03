@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/u906361878/domains/koshermap.org/public_html/
+    - /bin/ln -sfn "$DEPLOYPATH"public/images "$DEPLOYPATH"images
