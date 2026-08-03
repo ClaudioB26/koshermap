@@ -472,50 +472,103 @@ The symbol\'s design is usually consistent since it is trademarked by the certif
             'glatt-kosher' => [
                 'title' => 'Glatt kosher: how is it different from regular kosher',
                 'excerpt' => 'The term "glatt" appears frequently in kosher butcher shops and restaurants. We explain what level of strictness it represents.',
-                'content' => '<p>"Glatt" means "smooth" in Yiddish and originally referred specifically to the condition of an animal\'s lungs after shechita: if the lungs had no adhesions (sirchah), the animal was considered "glatt," the highest level of certainty that the meat is kosher beyond doubt.</p>
+                'content' => '<p>"Glatt" means "smooth" in Yiddish and originally referred specifically to the condition of an animal\'s lungs after <a href="/articulos/shejita-sacrificio-kosher">shechita</a>: if the lungs had no adhesions (sirchah), the animal was considered "glatt," the highest level of certainty that the meat is kosher beyond doubt.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/glatt-kosher.jpg" alt="A kosher meat restaurant in Jerusalem. &quot;Glatt&quot; indicates the strictest inspection standard." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">A kosher meat restaurant in Jerusalem. "Glatt" indicates the strictest inspection standard. Photo: brionv from San Francisco, United States via <a href="https://commons.wikimedia.org/wiki/File%3AJerusalem_MMMM_MEAT_%286036353902%29.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 2.0.</figcaption>
 </figure>
-<p>Over time, especially in Ashkenazi communities in the United States, the term "glatt kosher" colloquially expanded to describe an overall stricter standard throughout a food\'s entire production chain, not just lung inspection. Today it is common to see "glatt kosher" on restaurant and product labels to indicate they meet the most demanding criteria possible.</p>
-<p>It is important to note that a "kosher" product without the "glatt" label is not less halachically valid: it simply follows a different certification standard, generally accepted by the vast majority of communities. Choosing between standard kosher and glatt kosher usually depends on family or community custom, rather than an objective difference in validity.</p>
-<p>For poultry and fish, the concept of "glatt" technically does not apply in the same way as for mammals, although colloquially it is sometimes used to indicate a generally more rigorous level of supervision.</p>',
+
+<h2>The technical origin: the animal\'s lungs</h2>
+<p>During the post-shechita inspection, one of the key steps is checking the animal\'s lungs for adhesions (sirchot), which can indicate a disease or perforation that would invalidate the animal as kosher. When the lung appears completely smooth, with no adhesions at all, the animal is classified as "glatt." If it has minor adhesions that an expert examiner (bodek) determines can be removed without leaving a perforation, the animal may still qualify as kosher under the standard criterion, though not as "glatt."</p>
+
+<h2>How it went from a technical term to a general strictness label</h2>
+<p>Over time, especially in Ashkenazi communities in the United States, the term "glatt kosher" colloquially expanded to describe an overall stricter standard throughout a food\'s entire production chain, not just lung inspection. Today it is common to see "glatt kosher" on restaurant and product labels to indicate they meet the most demanding criteria possible, even in contexts where the original technical term (an animal\'s lungs) doesn\'t even apply.</p>
+
+<h2>Is standard kosher "less valid"?</h2>
+<p>It is important to note that a "kosher" product without the "glatt" label is not less halachically valid: it simply follows a different certification standard, generally accepted by the vast majority of communities and rabbinic authorities. Choosing between standard kosher and glatt kosher usually depends on family or community custom, rather than an objective difference in validity. Many families who don\'t follow glatt daily still choose it for special occasions, like a wedding or a major holiday.</p>
+<p>For poultry and fish, the concept of "glatt" technically does not apply in the same way, since birds don\'t undergo the same kind of lung inspection, although colloquially it is sometimes used to indicate a generally more rigorous level of supervision.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Is all glatt kosher meat more expensive?</strong><br>
+Generally yes, because the selection process is stricter and a higher percentage of animals are rejected, which reduces the available supply relative to demand.</p>
+<p><strong>Is a restaurant that says "kosher" without specifying "glatt" being dishonest?</strong><br>
+No, it is simply being precise: it follows the standard kosher criterion, which is fully valid for the vast majority of communities.</p>
+<p><strong>Does "glatt" guarantee that other rules, like bishul akum, were also followed?</strong><br>
+Not automatically. "Glatt" refers specifically to the meat inspection level; other rules like <a href="/articulos/bishul-akum">bishul akum</a> are verified separately as part of the overall certification process.</p>
+
+<h2>Related reading</h2>
+<p>To understand the full process behind kosher meat, from slaughter to inspection, see <a href="/articulos/shejita-sacrificio-kosher">shechita: the kosher slaughter method</a>. And to recognize the seals that certify all of this on a label, see <a href="/articulos/simbolos-certificacion-kosher">kosher certification symbols</a>.</p>',
             ],
             'como-leer-etiqueta-kosher' => [
                 'title' => 'How to read a kosher product label',
                 'excerpt' => 'Beyond the certification symbol, kosher labels contain key information about whether a product is suitable for your table.',
-                'content' => '<p>Properly reading a kosher label goes beyond looking for the certification symbol. There are several elements worth always checking:</p>
+                'content' => '<p>Properly reading a kosher label goes beyond looking for the certification symbol. There are several elements worth always checking, and learning to read them fully avoids surprises at the table.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/como-leer-etiqueta-kosher.jpg" alt="An Israeli product label: beyond the seal, check the category and the ingredients." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">An Israeli product label: beyond the seal, check the category and the ingredients. Photo: Chenspec via <a href="https://commons.wikimedia.org/wiki/File%3AList_of_ingredients_of_food_products_in_Israel_02.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
+
+<h2>The four things worth checking, in order</h2>
 <ul>
-<li><strong>The certifier\'s symbol:</strong> identifies which agency supervised the product. It\'s important to recognize trustworthy certifiers, since not every symbol in the world has the same level of rigor.</li>
-<li><strong>The category:</strong> "Dairy" or "D," "Meat" or "M," "Pareve" (neutral), or "Fish" (which in many traditions is treated as a category separate from meat).</li>
-<li><strong>"Kosher for Passover":</strong> an additional indication needed during the holiday, distinct from the regular kosher certification used the rest of the year.</li>
-<li><strong>Certification date:</strong> some certifiers include a code or date to verify that the seal is still current, since recipes and factory processes can change.</li>
+<li><strong>The certifier\'s symbol:</strong> identifies which agency supervised the product. It\'s important to recognize trustworthy certifiers (covered in <a href="/articulos/simbolos-certificacion-kosher">kosher certification symbols</a>), since not every symbol in the world has the same level of rigor.</li>
+<li><strong>The category:</strong> "Dairy" or "D," "Meat" or "M," "Pareve" (neutral), or "Fish" (which in many traditions is treated as a category separate from meat). This letter determines what other foods the product can be combined with.</li>
+<li><strong>"Kosher for Passover":</strong> an additional indication needed during the holiday, distinct from the regular kosher certification used the rest of the year. A product can be kosher year-round but not fit for Passover if it contains any derivative of the five grains.</li>
+<li><strong>Certification date or code:</strong> some certifiers include a code or date to verify that the seal is still current, since recipes and factory processes can change, and certification can be lost without the packaging design changing at all.</li>
 </ul>
-<p>When a product has no visible certification but the ingredient list looks simple (for example, just water, salt and a vegetable), some people choose to investigate further, but the general recommendation from kashrut authorities is not to assume a product is kosher just because its ingredients look simple: many additives and industrial processes are not obvious at a glance.</p>
-<p>On KosherMap you can search products by name or barcode and filter directly by certifier, category and type, so you don\'t have to rely solely on the physical label.</p>',
+
+<h2>The "DE" category: the detail most often overlooked</h2>
+<p>Beyond "D," "M" and "Pareve," some labels include "DE" (dairy equipment): it means the product contains no dairy ingredients, but was made on the same equipment as dairy products. For practical purposes, many opinions treat a "DE" product more flexibly than a true "D" product, but not the same as pure pareve. It is worth understanding this difference in detail in <a href="/articulos/que-significa-pareve">what pareve means</a>.</p>
+
+<h2>Why you shouldn\'t assume by elimination</h2>
+<p>When a product has no visible certification but the ingredient list looks simple (for example, just water, salt and a vegetable), it can be tempting to assume it is kosher by elimination. The general recommendation from kashrut authorities is not to do that: many additives and industrial processes are not obvious at a glance, from enzymes used in processing to equipment shared with other products on the same production line.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Is a product with no category (D/M/Pareve) printed on it always pareve?</strong><br>
+Don\'t assume it. The absence of a letter doesn\'t confirm anything on its own; if the label doesn\'t clarify the category, it\'s worth looking the product up directly in the certifier\'s database.</p>
+<p><strong>Do barcode scanning apps replace the need to check the physical label?</strong><br>
+They help a lot, but it\'s best to use them as a complement rather than a full replacement, especially with imported or recently manufactured products the database may not have updated yet.</p>
+<p><strong>Do all countries require the kosher label to be in the local language?</strong><br>
+No, it\'s common to find imported products with kosher information only in the language of origin (Hebrew, English), which makes it more valuable to recognize the symbols by sight instead of relying on the text.</p>
+
+<h2>Related reading</h2>
+<p>To recognize the most common seals at a glance, see <a href="/articulos/simbolos-certificacion-kosher">kosher certification symbols</a>. On KosherMap you can also search products by name or barcode and filter directly by certifier, category and type, so you don\'t have to rely solely on the physical label.</p>',
             ],
             'bishul-akum' => [
                 'title' => 'Bishul Akum: why some cooked foods need Jewish supervision',
                 'excerpt' => 'There is a specific category of rabbinic laws about food cooked by non-Jews, known as bishul akum. We explain what it\'s about.',
-                'content' => '<p>Bishul akum (literally "cooking of a non-Jew") is a category of rabbinic laws that restricts the consumption of certain foods cooked entirely by a non-Jewish person, even if all the ingredients are kosher. The prohibition was established by the Talmudic sages, mainly to encourage social cohesion and prevent cultural assimilation.</p>
+                'content' => '<p>Bishul akum (literally "cooking of a non-Jew") is a category of rabbinic laws that restricts the consumption of certain foods cooked entirely by a non-Jewish person, even if all the ingredients are kosher. The prohibition was established by the Talmudic sages, mainly to encourage social cohesion and prevent cultural assimilation between communities.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/bishul-akum.jpg" alt="Bishul akum governs food cooked entirely by a non-Jew, even when the ingredients are kosher." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Bishul akum governs food cooked entirely by a non-Jew, even when the ingredients are kosher. Photo: Seattle Municipal Archives from Seattle, WA via <a href="https://commons.wikimedia.org/wiki/File%3ACooks_in_kitchen%2C_1930_%2820981103874%29.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY 2.0.</figcaption>
 </figure>
-<p>This law does not apply to all foods: it is generally limited to foods considered "fit to serve at a king\'s table" (chashivut) and that are not eaten raw. That is why fruits, raw vegetables and most processed snacks do not fall into this category.</p>
+
+<h2>Which foods fall into this category (and which don\'t)</h2>
+<p>This law does not apply to all foods: it is generally limited to foods considered "fit to serve at a king\'s table" (chashivut) and that are not eaten raw. That is why fruits, raw vegetables and most processed snacks do not fall into this category. The "chashivut" criterion is partly subjective and varies somewhat by community: an elaborate stew clearly falls under it, while a simply boiled vegetable is more debated among different rabbinic opinions.</p>
+
+<h2>How it is resolved in a certified factory or restaurant</h2>
 <p>There are two common ways to resolve the issue in an industrial production or certified restaurant context:</p>
 <ul>
-<li>An observant Jew actively participates in the cooking process, for example by lighting the fire or cooking equipment.</li>
-<li>Rabbinic supervision certifies that a Jewish representative was present when the cooking equipment was turned on during each production shift.</li>
+<li><strong>An observant Jew actively participates in the cooking process</strong>, for example by lighting the fire or the cooking equipment before the production process begins.</li>
+<li><strong>Rabbinic supervision certifies</strong> that a Jewish representative was present when the cooking equipment was turned on during each production shift, even if the rest of the process is later handled by non-Jewish staff.</li>
 </ul>
-<p>This is one of the reasons why kosher certification of a food factory is not limited to reviewing ingredients: it also supervises processes, staff presence and operational protocols at the facility, which makes certifiers\' work much more complex than a simple ingredient checklist.</p>',
+<p>This is one of the reasons why kosher certification of a food factory is not limited to reviewing ingredients: it also supervises processes, staff presence and operational protocols at the facility, which makes certifiers\' work much more complex than a simple ingredient checklist.</p>
+
+<h2>Why this affects restaurants that aren\'t kosher</h2>
+<p>This is one of the underlying reasons a dish cooked at a restaurant without certification raises doubts even when all the ingredients seem fit: beyond the meat\'s origin or shared equipment, who actually lit the fire and handled the cooking also comes into play. The topic is covered with concrete examples in <a href="/articulos/comer-kosher-restaurante">how to eat kosher at a non-certified restaurant</a>.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Does bishul akum also apply at home, with non-Jewish domestic staff?</strong><br>
+Yes, the principle is the same regardless of where the cooking takes place; what changes is the practical solution, generally that a Jewish family member participates in lighting the fire.</p>
+<p><strong>Does an electric oven with a timer solve the lighting problem?</strong><br>
+It depends on the rabbinic opinion followed; some accept it as a form of the Jewish owner\'s "participation," others require a more direct act. When in doubt, consult the community rabbi.</p>
+<p><strong>Does bishul akum have anything to do with koshering utensils?</strong><br>
+They are separate categories: bishul akum is about who cooks, while koshering (like <a href="/articulos/hagala-utensilios-metal">hagalah</a>) is about what a utensil previously absorbed.</p>
+
+<h2>Related reading</h2>
+<p>To see how this principle applies in practice when eating out, see <a href="/articulos/comer-kosher-restaurante">how to eat kosher at a non-certified restaurant</a>. And for another category where who handles the product matters greatly, see <a href="/articulos/vino-kosher">kosher wine</a>.</p>',
             ],
             'vino-mevushal' => [
                 'title' => 'Mevushal: kosher wine that can be served without restrictions',
@@ -562,9 +615,31 @@ No, the heating process must happen before or during production, under supervisi
   <img src="/images/articulos/tevilat-kelim.jpg" alt="A mikveh, the ritual bath where new utensils are immersed before their first use." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">A mikveh, the ritual bath where new utensils are immersed before their first use. Photo: Stefan Walkowski via <a href="https://commons.wikimedia.org/wiki/File%3AMikveh.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>This custom mainly applies to utensils that come into direct contact with food: pots, pans, cutlery, glass plates and cups. It usually does not apply to electric appliances (such as a toaster or a blender) nor to plastic or wooden utensils, although opinions vary depending on each community\'s tradition, so it is advisable to consult a rabbi about specific cases.</p>
-<p>The process itself is simple: the utensil is cleaned well (with no labels, seals or adhesives left), fully immersed in the mikveh\'s water while a blessing is recited, and is then ready for normal use.</p>
-<p>Many community mikvehs have a specific time slot available for tevilat kelim, separate from personal ritual use, as well as detailed instructions on which materials require immersion and which do not. It is one of those practices that, although it may seem like a minor detail, is an integral part of how many observant Jewish families equip their kitchen.</p>',
+
+<h2>Which utensils need tevilah, and which don\'t</h2>
+<p>This custom mainly applies to utensils that come into direct contact with food: pots, pans, cutlery, glass plates and cups. It usually does not apply to electric appliances (such as a toaster or a blender) nor to plastic or wooden utensils, although opinions vary depending on each community\'s tradition, so it is advisable to consult a rabbi about specific cases. The general criterion used to draw this line is similar to the one used for <a href="/articulos/hagala-utensilios-metal">hagalah</a>: the more direct the contact with food and the more durable the material, the more likely it needs immersion.</p>
+
+<h2>The step-by-step process</h2>
+<ol>
+<li>Clean the utensil well, with no labels, seals or adhesives left that could stand between the water and the surface.</li>
+<li>Check that there is no substance (grease, rust, packaging residue) acting as a barrier.</li>
+<li>Fully immerse it in the mikveh\'s water, or in a fitting natural water source, while a blessing is recited (for utensils that require it according to tradition).</li>
+<li>Once properly immersed, the utensil is ready for normal use, with no further steps needed.</li>
+</ol>
+
+<h2>Where to do it in practice</h2>
+<p>Many community mikvehs have a specific time slot available for tevilat kelim, separate from personal ritual use, as well as detailed instructions on which materials require immersion and which do not. Some larger communities even have a separate pool dedicated exclusively to this use, to avoid mixing schedules with the mikveh used for personal ritual immersion.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Does a second-hand utensil need tevilah just like a new one?</strong><br>
+Yes, if it was originally manufactured or sold by a non-Jewish party, the custom applies regardless of whether the utensil is new or used.</p>
+<p><strong>What if I buy a utensil and there\'s no mikveh nearby?</strong><br>
+Any natural water source that meets the halachic requirements can be used (a river, the sea), though in practice most people use the nearest community mikveh that has a time slot available for this.</p>
+<p><strong>Do utensils bought from a Jewish manufacturer also need tevilah?</strong><br>
+Generally not; the custom is specifically focused on utensils of non-Jewish origin.</p>
+
+<h2>Related reading</h2>
+<p>For other practical steps when equipping a kitchen from scratch, including this custom, see <a href="/articulos/armar-cocina-kosher">how to set up a kosher kitchen from scratch</a>. And for the method used to purify utensils that absorbed non-kosher flavor, see <a href="/articulos/hagala-utensilios-metal">hagalah: how to kosher metal utensils</a>.</p>',
             ],
             'armar-cocina-kosher' => [
                 'title' => 'How to set up a kosher kitchen from scratch',
@@ -575,14 +650,33 @@ No, the heating process must happen before or during production, under supervisi
   <img src="/images/articulos/armar-cocina-kosher.jpg" alt="Setting up a kosher kitchen is a gradual process: it does not have to be done in one day." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Setting up a kosher kitchen is a gradual process: it does not have to be done in one day. Photo: MeRyan via <a href="https://commons.wikimedia.org/wiki/File%3AKitchen_with_island%2C_New_Orleans_2007.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY 2.0.</figcaption>
 </figure>
+
+<h2>The steps that come up most often</h2>
 <ul>
 <li><strong>Define the physical separation:</strong> decide which utensils, pots and dishware will be meat and which dairy. The most practical approach is usually to use different colors (for example, red for meat, blue for dairy) to avoid daily mix-ups.</li>
-<li><strong>Separate work surfaces:</strong> cutting boards, dish towels and sponges must also be divided by category.</li>
+<li><strong>Separate work surfaces:</strong> cutting boards, dish towels and sponges must also be divided by category, ideally stored in different parts of the kitchen to avoid accidental mixing.</li>
 <li><strong>Evaluate shared appliances:</strong> oven, microwave and dishwasher can be koshered between uses or, more simply, assigned to a single category from the start (for example, microwave only for pareve).</li>
-<li><strong>Buy certified products:</strong> check the certification symbol on every purchase, until it becomes an automatic habit.</li>
-<li><strong>Coordinate with a rabbi:</strong> especially to kosher items that were already in the kitchen before starting this process.</li>
+<li><strong>Buy certified products:</strong> check the certification symbol on every purchase, until it becomes an automatic habit that doesn\'t require thinking about each time.</li>
+<li><strong>Coordinate with a rabbi:</strong> especially to kosher items that were already in the kitchen before starting this process, and to resolve specific doubts about particular materials or utensils.</li>
+<li><strong>Add tevilat kelim:</strong> new metal or glass utensils bought from a non-Jewish manufacturer need ritual immersion before their first use.</li>
 </ul>
-<p>A strategy many people just starting out use is to gradually incorporate the separation: first everyday utensils, then table dishware, and finally appliances. There is no need to replace the entire kitchen at once, and many families take months to complete the transition without that being a halachic problem in itself.</p>',
+
+<h2>Go step by step: the order that makes the transition easiest</h2>
+<p>A strategy many people just starting out use is to gradually incorporate the separation: first everyday utensils (pots, pans, cutlery), then table dishware, and finally appliances, which tend to be the most expensive and complex to resolve. There is no need to replace the entire kitchen at once, and many families take months to complete the transition without that being a halachic problem in itself: what matters is the intention to keep moving forward, not the speed.</p>
+
+<h2>The budget: how to spread out the investment</h2>
+<p>Setting up an entire kitchen from scratch can feel expensive if you think of it as a single expense. In practice, most families spread it out in small, spaced-out purchases: a set of pots this month, cutlery the next, and so on. Community shops and stores often have combos designed specifically for this, at more accessible prices than buying everything separately.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Do I need to throw out everything that was already in the kitchen before starting?</strong><br>
+Not necessarily. Many utensils can be koshered depending on the material (see <a href="/articulos/hagala-utensilios-metal">hagalah</a>); only what can\'t be koshered, like most ceramics, needs to be replaced.</p>
+<p><strong>Does the microwave need two separate units, one for meat and one for dairy?</strong><br>
+It\'s not required: many families use a single microwave assigned to "pareve only," or kosher it between uses as described in <a href="/articulos/kasherizar-horno">how to kosher an oven</a> (the same principle applies).</p>
+<p><strong>How long does the transition typically take?</strong><br>
+It varies a lot depending on each family\'s budget and pace, but it\'s not unusual for it to take anywhere from several months to a year to comfortably complete every step.</p>
+
+<h2>Related reading</h2>
+<p>For the detail of the ritual immersion of new utensils, see <a href="/articulos/tevilat-kelim">tevilat kelim</a>. And to understand the method used to kosher what you already had at home, see <a href="/articulos/hagala-utensilios-metal">hagalah: how to kosher metal utensils</a>.</p>',
             ],
             'certificaciones-kosher-mundo' => [
                 'title' => 'Differences between kosher certifications around the world',
