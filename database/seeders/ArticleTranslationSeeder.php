@@ -2130,35 +2130,68 @@ Pas universellement — certains avis plus stricts préfèrent encore une machin
   <img src="/images/articulos/hagala-utensilios-metal.jpg" alt="La hagalah consiste à immerger l&#039;ustensile dans l&#039;eau bouillante : comme il a absorbé, ainsi il expulse." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">La hagalah consiste à immerger l\'ustensile dans l\'eau bouillante : comme il a absorbé, ainsi il expulse. Photo: W.carter via <a href="https://commons.wikimedia.org/wiki/File%3ASteam-boiling_green_asparagus.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC0.</figcaption>
 </figure>
-<p>Le principe derrière la hagala est "comme il a absorbé, ainsi il rejette" : si un ustensile a absorbé une saveur non cachère (ou carnée/laitière) par un liquide bouillant, il se purifie de la même manière, en étant immergé dans l\'eau bouillante.</p>
-<p>La procédure de base est :</p>
-<ul>
-<li>Nettoyer l\'ustensile à fond, sans rouille, nourriture collée ou saleté incrustée.</li>
-<li>Attendre 24 heures sans utiliser l\'ustensile avant la hagala.</li>
-<li>Faire bouillir une grande casserole d\'eau jusqu\'à pleine ébullition.</li>
-<li>Immerger complètement l\'ustensile dans l\'eau bouillante, en s\'assurant que toutes ses surfaces entrent en contact avec l\'eau à cette température.</li>
-<li>Le retirer avec un instrument n\'ayant pas été en contact avec de la nourriture non cachère, et le rincer à l\'eau froide.</li>
-</ul>
-<p>Les ustensiles avec manche en bois ou en plastique, ou avec des pièces collées avec des adhésifs ne résistant pas à l\'eau bouillante, ne conviennent généralement pas à la hagala et nécessitent une autre méthode, ou ne peuvent simplement pas être cachérisés. Les poêles antiadhésives (téflon) ne sont généralement pas non plus cachérisées par hagala, car le revêtement est endommagé par la chaleur.</p>',
+
+<h2>Le principe derrière la méthode</h2>
+<p>Le principe est simple à retenir : "comme il a absorbé, ainsi il rejette" (<em>kevol\'o kakh polto</em>). Si un ustensile a absorbé une saveur non cachère (ou carnée/laitière) par un liquide bouillant, il se purifie de la même manière : en étant immergé dans l\'eau bouillante. C\'est le même principe que pour cachériser un <a href="/articulos/kasherizar-horno">four</a>, appliqué par une méthode différente selon le type de chaleur absorbé par chaque surface.</p>
+
+<h2>La procédure étape par étape</h2>
+<ol>
+<li>Nettoyer l\'ustensile à fond, sans rouille, nourriture collée ou saleté incrustée. Tout résidu restant bloque le contact direct avec l\'eau et invalide le processus à cet endroit.</li>
+<li>Attendre 24 heures sans utiliser l\'ustensile avant la hagala. Cette période fait que la saveur absorbée est considérée comme "gâtée" et plus facile à rejeter.</li>
+<li>Faire bouillir une grande casserole d\'eau jusqu\'à pleine ébullition, dans un récipient différent de celui à cachériser.</li>
+<li>Immerger complètement l\'ustensile dans l\'eau bouillante, en s\'assurant que toutes ses surfaces — y compris bords et recoins — entrent en contact avec l\'eau à cette température.</li>
+<li>Le retirer avec un instrument n\'ayant pas été en contact avec de la nourriture non cachère, et le rincer immédiatement à l\'eau froide.</li>
+</ol>
+
+<h2>Les ustensiles que cette méthode ne peut pas traiter</h2>
+<p>Les ustensiles avec manche en bois ou en plastique, ou avec des pièces collées avec des adhésifs ne résistant pas à l\'eau bouillante, ne conviennent généralement pas à la hagala et nécessitent une autre méthode, ou ne peuvent simplement pas être cachérisés. Les poêles antiadhésives (téflon) ne sont généralement pas non plus cachérisées par hagala, car le revêtement est endommagé par la chaleur et le processus de cachérisation lui-même finirait par abîmer la surface de toute façon. Pour le verre et la vaisselle, le critère est différent : voir <a href="/articulos/vajilla-para-pesaj">vaisselle pour Pessah</a>, matériau par matériau.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>La hagala fonctionne-t-elle pour tout ustensile ayant touché de la nourriture non cachère ?</strong><br>
+Pas toujours. Si l\'ustensile a été en contact direct avec le feu (comme un gril), la méthode correcte est différente : le liboun, qui exige de chauffer le métal jusqu\'à incandescence ou jusqu\'à ce qu\'un brin de paille le touchant brûle. La hagala est spécifiquement pour l\'absorption par liquide.</p>
+<p><strong>Combien de fois le même ustensile peut-il être cachérisé ainsi ?</strong><br>
+Il n\'y a pas de limite fixe de réutilisation de la méthode elle-même, tant que l\'ustensile est en bon état. Ce qui importe à chaque fois, c\'est de respecter la période de 24 heures sans utilisation préalable.</p>
+<p><strong>Ai-je besoin d\'un rabbin présent pour faire la hagala à la maison ?</strong><br>
+Ce n\'est pas obligatoire pour la procédure domestique habituelle, mais en cas de doute sur un ustensile spécifique, il vaut la peine de consulter au préalable.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Si l\'ustensile en question est un four ou un micro-ondes, ces cas ont leurs propres règles : voir <a href="/articulos/kasherizar-horno">comment cachériser un four</a> et <a href="/articulos/kasherizar-microondas">comment cachériser un four à micro-ondes</a>. Pour le lave-vaisselle, l\'un des appareils les plus débattus, voir <a href="/articulos/kasherizar-lavavajillas">comment cachériser un lave-vaisselle</a>.</p>',
             ],
             'vajilla-para-pesaj' => [
                 'title' => 'Vaisselle pour Pessah : tout ce qu\'il faut savoir',
                 'excerpt' => 'Pendant Pessah, des règles plus strictes que le reste de l\'année s\'appliquent aux ustensiles de cuisine, en raison de l\'interdiction du hametz.',
-                'content' => '<p>Pessah est la fête aux règles alimentaires les plus strictes du calendrier juif, car en plus des normes habituelles de cacherout, s\'ajoute l\'interdiction totale de consommer ou de posséder du hametz (produits fermentés à base de cinq céréales : blé, orge, avoine, seigle et épeautre).</p>
+                'content' => '<p>Pessah est la fête aux règles alimentaires les plus strictes du calendrier juif, car en plus des normes habituelles de cacherout, s\'ajoute l\'interdiction totale de consommer ou de posséder du <a href="/articulos/jametz-pesaj">hametz</a> (produits fermentés à base de cinq céréales : blé, orge, avoine, seigle et épeautre).</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/vajilla-para-pesaj.jpg" alt="Beaucoup de familles ont un service de vaisselle réservé à Pessah, rangé le reste de l&#039;année." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Beaucoup de familles ont un service de vaisselle réservé à Pessah, rangé le reste de l\'année. Photo: Silar via <a href="https://commons.wikimedia.org/wiki/File%3A020210817_135854_Seder_plates%2C_brass_plate%2C_%C4%86miel%C3%B3w_porcelain%2C_19th-early_20th_century%2C_Category%2C_Passover_in_Galicia.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>Comme le hametz peut avoir été en contact avec casseroles, assiettes et couverts toute l\'année, de nombreuses familles choisissent d\'avoir un service de vaisselle séparé, exclusif à Pessah, rangé le reste de l\'année. C\'est l\'option la plus simple et qui évite d\'avoir à cachériser chaque année.</p>
-<p>Ceux qui n\'ont pas de vaisselle séparée pour Pessah peuvent cachériser certains ustensiles :</p>
+
+<h2>Pourquoi le hametz du reste de l\'année pose problème</h2>
+<p>Le problème est que le hametz peut avoir été en contact avec casseroles, assiettes et couverts toute l\'année : chaque fois qu\'on a cuisiné des pâtes, cuit du pain ou servi des biscuits, ces ustensiles ont absorbé des traces de hametz. Le reste de l\'année, ce n\'est pas un problème, puisque le hametz lui-même est cachère. Mais pendant Pessah, avoir des ustensiles pouvant "libérer" cette saveur absorbée entre en conflit avec l\'interdiction totale de la fête.</p>
+
+<h2>L\'option la plus simple : une vaisselle à part</h2>
+<p>C\'est pourquoi de nombreuses familles choisissent d\'avoir un service de vaisselle séparé, exclusif à Pessah, rangé le reste de l\'année dans des boîtes ou une armoire dédiée : c\'est l\'option la plus simple, et qui évite d\'avoir à cachériser chaque année. Avec le temps, de nombreuses familles constituent cette vaisselle petit à petit, en achetant ou héritant des pièces, jusqu\'à avoir un service complet dédié uniquement à ces huit jours de l\'année.</p>
+
+<h2>Ce qui peut être cachérisé, matériau par matériau</h2>
+<p>Ceux qui n\'ont pas de vaisselle séparée pour Pessah peuvent cachériser certains ustensiles par <a href="/articulos/hagala-utensilios-metal">hagala</a>, mais pas tous :</p>
 <ul>
-<li><strong>Métal sans revêtement</strong> (casseroles, couverts) : généralement apte à la hagala.</li>
-<li><strong>Verre</strong> : selon la coutume, certains considèrent qu\'un bon lavage suffit, d\'autres exigent une immersion.</li>
-<li><strong>Céramique et porcelaine</strong> : en général, ne peuvent pas être cachérisées pour Pessah et il faut utiliser un service à part.</li>
-<li><strong>Plastique et caoutchouc</strong> : la plupart des avis ne permettent pas de les cachériser.</li>
+<li><strong>Métal sans revêtement</strong> (casseroles, couverts) : généralement apte à la hagala, en suivant la même procédure utilisée le reste de l\'année.</li>
+<li><strong>Verre</strong> : selon la coutume, certains considèrent qu\'un bon lavage suffit, d\'autres exigent une immersion ; il vaut la peine de consulter le critère de sa propre communauté.</li>
+<li><strong>Céramique et porcelaine</strong> : en général, ne peuvent être cachérisées pour Pessah selon aucun avis, car le matériau poreux retient ce qu\'il a absorbé de façon permanente ; il faut utiliser un service à part.</li>
+<li><strong>Plastique et caoutchouc</strong> : la plupart des avis ne permettent pas de les cachériser, bien qu\'il existe des exceptions ponctuelles selon l\'usage qu\'ils ont eu.</li>
 </ul>
-<p>Avant Pessah, il vaut la peine de consulter le guide spécifique de cachérisation de la communauté ou du certificateur local, car les délais et méthodes exactes peuvent varier selon le type de matériau et l\'usage de l\'ustensile pendant l\'année.</p>',
+
+<h2>Questions fréquentes</h2>
+<p><strong>Dois-je acheter une nouvelle vaisselle pour Pessah chaque année ?</strong><br>
+Non, une fois le service constitué, il est réutilisé année après année, rangé le reste du temps. Il suffit de remplacer les pièces cassées ou d\'en ajouter si la famille s\'agrandit.</p>
+<p><strong>Les appareils électroménagers ont-ils aussi besoin d\'un service à part ?</strong><br>
+Cela dépend de l\'appareil. Certains, comme le grille-pain, ne peuvent généralement pas être cachérisés et il vaut la peine d\'en avoir un dédié à Pessah ; d\'autres, comme le four, ont une procédure spécifique détaillée dans <a href="/articulos/kasherizar-horno">comment cachériser un four</a>.</p>
+<p><strong>Combien de temps à l\'avance faut-il commencer à préparer la vaisselle ?</strong><br>
+Il vaut la peine de commencer avec de la marge, au moins une semaine avant, pour avoir le temps de cachériser sans précipitation les ustensiles qui le permettent et résoudre tout doute avec le rabbin ou le certificateur local avant le début de la fête.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Pour comprendre exactement quels produits doivent quitter la cuisine avant la fête, voir <a href="/articulos/jametz-pesaj">le hametz : qu\'est-ce que c\'est et comment l\'éliminer</a>. Et pour savoir quoi faire avec les casseroles et poêles utilisées au quotidien, voir <a href="/articulos/hagala-utensilios-metal">comment cachériser des ustensiles en métal</a>.</p>',
             ],
             'jametz-pesaj' => [
                 'title' => 'Le hametz : qu\'est-ce que c\'est et comment l\'éliminer avant Pessah',
@@ -2169,9 +2202,26 @@ Pas universellement — certains avis plus stricts préfèrent encore une machin
   <img src="/images/articulos/jametz-pesaj.jpg" alt="Pendant Pessah, il est totalement interdit de consommer et même de posséder du hametz." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Pendant Pessah, il est totalement interdit de consommer et même de posséder du hametz. Photo: Ministry of Information Photo Division Photographer via <a href="https://commons.wikimedia.org/wiki/File%3AAllied_Forces_Celebrate_Passover-_Jewish_Traditions_in_Wartime_Britain%2C_April_1944_D19336.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, Public domain.</figcaption>
 </figure>
-<p>La Torah interdit non seulement de manger du hametz pendant Pessah, mais aussi d\'en posséder. C\'est pourquoi, dans les semaines précédant la fête, les familles juives effectuent un grand nettoyage de la maison (bedikat hametz) pour éliminer tout reste de pain, de farine ou de produits avec hametz des placards, voitures, sacs et tout coin où une miette aurait pu tomber.</p>
-<p>Pour le hametz qui ne peut ou ne doit pas être jeté (par exemple, des produits coûteux ou difficiles à remplacer), il existe l\'option de le "vendre" symboliquement à une personne non juive par un contrat appelé <em>mekhirat hametz</em>, généralement coordonné par le rabbin de la communauté. Le hametz vendu est gardé fermé et à part pendant la fête et est "racheté" automatiquement à la fin de Pessah.</p>
-<p>La nuit précédant Pessah, une recherche rituelle du hametz est effectuée dans toute la maison (bedikat hametz), généralement avec une bougie, une plume et une cuillère en bois, suivie de la combustion de ce qui a été trouvé (bi\'our hametz) le lendemain matin.</p>',
+
+<h2>Pas seulement le manger : le posséder est aussi interdit</h2>
+<p>La Torah interdit non seulement de manger du hametz pendant Pessah, mais aussi d\'en posséder, même simplement rangé sans intention de le manger. C\'est pourquoi, dans les semaines précédant la fête, les familles juives effectuent un grand nettoyage de la maison (bedikat hametz) pour éliminer tout reste de pain, de farine ou de produits avec hametz des placards, voitures, sacs et tout coin où une miette aurait pu tomber. Ce nettoyage commence généralement plusieurs jours avant, pièce par pièce, et se termine la veille de Pessah par une recherche rituelle finale.</p>
+
+<h2>Que faire du hametz qu\'on ne peut pas jeter</h2>
+<p>Pour le hametz qui ne peut ou ne doit pas être jeté, comme des spiritueux coûteux ou des produits difficiles à remplacer, il existe l\'option de le "vendre" symboliquement à une personne non juive par un contrat appelé <em>mekhirat hametz</em>, généralement coordonné par le rabbin de la communauté, souvent en ligne dans les semaines précédant la fête. Le hametz vendu est gardé fermé et à part pendant la fête, physiquement présent dans la maison mais légalement "vendu", et est "racheté" automatiquement à la fin de Pessah, sans aucune démarche supplémentaire pour le propriétaire.</p>
+
+<h2>La recherche rituelle et la combustion finale</h2>
+<p>La nuit précédant Pessah, on effectue la bedikat hametz, la recherche rituelle du hametz dans toute la maison, généralement avec une bougie, une plume et une cuillère en bois. Il est courant qu\'avant de commencer, un membre de la famille cache exprès quelques petits morceaux de pain enveloppés dans du papier pour que la recherche ne se termine pas bredouille (une coutume répandue dans de nombreuses communautés). Le lendemain matin, ce qui a été trouvé est brûlé lors d\'un rituel appelé <em>bi\'our hametz</em>, accompagné d\'une déclaration annulant tout reste qui n\'aurait pas été trouvé.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>L\'avoine et le seigle sont-ils vraiment interdits, ou seulement le blé ?</strong><br>
+Les cinq céréales (blé, orge, avoine, seigle et épeautre) sont toutes incluses dans l\'interdiction du hametz quand elles fermentent avec de l\'eau. Le riz et le maïs ne font pas partie de ce groupe, bien que dans certaines communautés (principalement ashkénazes) ils soient évités par une coutume à part appelée <em>kitniyot</em>, distincte de l\'interdiction du hametz elle-même.</p>
+<p><strong>Que se passe-t-il si je trouve du hametz à la maison pendant Pessah ?</strong><br>
+Il doit être retiré immédiatement : gardé fermé jusqu\'à la fin de la fête (s\'il était déjà inclus dans la vente symbolique) ou jeté sinon.</p>
+<p><strong>La vente du hametz a-t-elle un coût ?</strong><br>
+Elle se fait généralement gratuitement ou avec une contribution symbolique à la synagogue qui la coordonne ; ce n\'est pas une vente réelle sur le plan économique, mais un mécanisme légal au sein de la halakha.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Pour comprendre ce qui arrive aux casseroles et assiettes ayant été en contact avec du hametz pendant l\'année, voir <a href="/articulos/vajilla-para-pesaj">vaisselle pour Pessah</a>. Et pour en savoir plus sur le calendrier et ce que l\'on mange à chaque fête, voir <a href="/articulos/calendario-judio-festividades-alimentacion">le calendrier juif et l\'alimentation</a>.</p>',
             ],
             'vino-kosher' => [
                 'title' => 'Le vin cachère : pourquoi il nécessite une supervision spéciale',
@@ -2190,20 +2240,38 @@ Pas universellement — certains avis plus stricts préfèrent encore une machin
             'gelatina-kosher' => [
                 'title' => 'La gélatine cachère : le débat halakhique',
                 'excerpt' => 'La gélatine est l\'un des ingrédients les plus débattus dans le monde de la cacherout, car son origine animale peut compromettre son statut.',
-                'content' => '<p>La gélatine traditionnelle s\'obtient en faisant bouillir des os, de la peau et du tissu conjonctif d\'animaux — généralement des vaches ou des porcs — jusqu\'à en extraire le collagène. Cela pose deux problèmes du point de vue de la cacherout : l\'origine de l\'animal (est-ce une espèce cachère ?) et la méthode de transformation (l\'animal a-t-il été abattu selon la shehita ?).</p>
+                'content' => '<p>La gélatine traditionnelle s\'obtient en faisant bouillir des os, de la peau et du tissu conjonctif d\'animaux — généralement des vaches ou des porcs — jusqu\'à en extraire le collagène. Cela pose deux problèmes du point de vue de la cacherout : l\'origine de l\'animal (est-ce une espèce cachère ?) et la méthode de transformation (l\'animal a-t-il été abattu selon la <a href="/articulos/shejita-sacrificio-kosher">shehita</a> ?).</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/gelatina-kosher.jpg" alt="Bonbons et desserts sont les produits où l&#039;on trouve le plus la gélatine, l&#039;ingrédient le plus débattu de la cacherout." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Bonbons et desserts sont les produits où l\'on trouve le plus la gélatine, l\'ingrédient le plus débattu de la cacherout. Photo: Sakurai Midori via <a href="https://commons.wikimedia.org/wiki/File%3ASweets_Offering_for_Obon.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 3.0.</figcaption>
 </figure>
-<p>Pendant des décennies, différentes autorités rabbiniques ont débattu de la question de savoir si la gélatine, en subissant un processus chimique aussi radical, change de statut halakhique (un concept appelé <em>panim hadashot</em>, ou transformation totale). Certains avis plus permissifs ont soutenu que le processus est si radical que le produit final n\'est plus considéré comme de la viande au sens halakhique ; la plupart des certificateurs cachères grand public, cependant, n\'acceptent pas cette position pour la gélatine d\'origine non cachère.</p>
-<p>C\'est pourquoi aujourd\'hui, la grande majorité des produits certifiés cachères nécessitant de la gélatine (bonbons, desserts, capsules de médicaments, marshmallows) utilisent des alternatives certifiées :</p>
+
+<h2>Le débat de fond : la transformation change-t-elle le statut ?</h2>
+<p>Pendant des décennies, différentes autorités rabbiniques ont débattu de la question de savoir si la gélatine, en subissant un processus chimique aussi radical, change de statut halakhique, un concept appelé <em>panim hadashot</em> (littéralement "nouveau visage", transformation totale). Certains avis plus permissifs ont soutenu que le processus est si radical — d\'os et de peau à une poudre cristalline sans goût, couleur ni texture reconnaissable de l\'animal d\'origine — que le produit final n\'est plus considéré comme de la viande au sens halakhique. La plupart des certificateurs cachères grand public, cependant, n\'acceptent pas cette position pour la gélatine d\'origine non cachère, et exigent que l\'origine du collagène soit autorisée dès le départ.</p>
+
+<h2>Les alternatives qui évitent le problème à la racine</h2>
+<p>C\'est pourquoi aujourd\'hui, la grande majorité des produits certifiés cachères nécessitant de la gélatine (bonbons, desserts, capsules de médicaments, marshmallows) utilisent l\'une de ces alternatives :</p>
 <ul>
-<li>Gélatine de poisson cachère.</li>
-<li>Gélatine bovine d\'animaux abattus selon la shehita.</li>
-<li>Substituts végétaux comme l\'agar-agar ou la pectine, qui évitent complètement le débat.</li>
+<li><strong>Gélatine de poisson cachère :</strong> extraite d\'espèces à nageoires et écailles, évitant le problème d\'origine que pose la gélatine de mammifère.</li>
+<li><strong>Gélatine bovine d\'animaux abattus selon la shehita :</strong> résout le problème à la source, bien qu\'elle soit généralement plus chère que l\'alternative conventionnelle.</li>
+<li><strong>Substituts végétaux</strong> comme l\'agar-agar (extrait d\'algues) ou la pectine (de fruits), qui évitent complètement le débat car ils n\'ont aucune origine animale.</li>
 </ul>
-<p>Lorsqu\'un produit porte le sceau d\'un certificateur reconnu, il n\'est plus nécessaire d\'enquêter sur l\'origine de la gélatine : la certification garantit que ce point a déjà été vérifié.</p>',
+<p>Lorsqu\'un produit porte le sceau d\'un certificateur reconnu, il n\'est plus nécessaire d\'enquêter sur l\'origine de la gélatine : la certification garantit que ce point a déjà été vérifié dans le cadre du processus de certification.</p>
+
+<h2>Où la gélatine apparaît sans qu\'on le remarque</h2>
+<p>Au-delà des bonbons et desserts évidents, la gélatine apparaît dans des endroits moins évidents : capsules de médicaments et compléments, certains yaourts et desserts laitiers (pour la texture), vins et bières (utilisée comme agent de clarification lors de la filtration) et certains produits de boulangerie industrielle. Il vaut toujours la peine de vérifier l\'étiquette, sans supposer qu\'un produit "sans goût de gélatine" n\'en contient pas.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>La gélatine végétale (agar-agar) est-elle toujours cachère ?</strong><br>
+Par son origine (algues), oui, mais comme pour tout produit, il vaut la peine de vérifier qu\'elle n\'a pas été transformée sur un équipement partagé avec des ingrédients non cachères.</p>
+<p><strong>Pourquoi certaines marques de bonbons cachères ont-elles une texture différente des marques conventionnelles ?</strong><br>
+Parce que beaucoup utilisent de la gélatine de poisson ou des substituts végétaux au lieu de la gélatine bovine ou porcine standard, ce qui peut légèrement changer la texture finale.</p>
+<p><strong>Un produit étiqueté simplement "gélatine", sans plus de détails, peut-il être considéré non cachère ?</strong><br>
+Sans certification visible, il n\'y a aucun moyen sûr de le savoir ; le plus sûr est de chercher le sceau d\'un certificateur reconnu.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Pour comprendre la méthode d\'abattage qui détermine si la viande ou le collagène d\'origine animale est apte, voir <a href="/articulos/shejita-sacrificio-kosher">la shehita : la méthode d\'abattage cachère</a>. Et pour un autre ingrédient tout aussi débattu, voir <a href="/articulos/queso-kosher-cuajo">le fromage cachère et la présure</a>.</p>',
             ],
             'alcohol-bebidas-espirituosas' => [
                 'title' => 'Alcool et spiritueux : ce qu\'il faut pour qu\'ils soient cachères',
@@ -2214,14 +2282,32 @@ Pas universellement — certains avis plus stricts préfèrent encore une machin
   <img src="/images/articulos/alcohol-bebidas-espirituosas.jpg" alt="Beaucoup de spiritueux sont cachers par leurs ingrédients, mais le vieillissement en fûts de vin peut changer leur statut." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Beaucoup de spiritueux sont cachers par leurs ingrédients, mais le vieillissement en fûts de vin peut changer leur statut. Photo: 4028mdk09 via <a href="https://commons.wikimedia.org/wiki/File%3ABarbestand.JPG" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 3.0.</figcaption>
 </figure>
-<p>Cependant, il existe des points d\'attention importants :</p>
+
+<h2>Les points qui méritent attention</h2>
 <ul>
-<li><strong>Vieillissement en fûts de vin ou de xérès :</strong> certains whiskies et rhums vieillissent dans des fûts ayant contenu auparavant du vin non cachère, ce qui peut compromettre leur statut.</li>
-<li><strong>Arômes et additifs :</strong> les liqueurs à la crème, au chocolat ou aux fruits contiennent souvent des ingrédients nécessitant une vérification.</li>
-<li><strong>Boissons à base de vin</strong> (comme le vermouth ou certaines liqueurs) : héritent de toutes les restrictions du vin cachère, y compris la nécessité d\'une supervision rabbinique lors de leur élaboration.</li>
-<li><strong>Bière :</strong> généralement cachère grâce à ses ingrédients de base (eau, orge, houblon, levure), sauf variantes avec arômes spéciaux.</li>
+<li><strong>Vieillissement en fûts de vin ou de xérès :</strong> certains whiskies et rhums vieillissent dans des fûts ayant contenu auparavant du vin non cachère, et ce contact peut affecter leur statut, un peu comme les <a href="/articulos/vino-kosher">fûts de vin cachère</a> qui ne peuvent être réutilisés qu\'un nombre limité de fois.</li>
+<li><strong>Arômes et additifs :</strong> les liqueurs à la crème, au chocolat ou aux fruits contiennent souvent des ingrédients (colorants, essences, stabilisants) nécessitant une vérification au cas par cas.</li>
+<li><strong>Boissons à base de vin</strong> (comme le vermouth ou certaines liqueurs) : héritent de toutes les restrictions du vin cachère, y compris la nécessité d\'une supervision rabbinique pendant toute l\'élaboration.</li>
+<li><strong>Bière :</strong> généralement cachère grâce à ses ingrédients de base (eau, orge, houblon, levure), sauf variantes avec arômes spéciaux ou processus de filtration utilisant des agents clarifiants d\'origine animale.</li>
+<li><strong>Liqueurs à la crème :</strong> contenant des produits laitiers, au-delà de l\'analyse des ingrédients, il faut aussi considérer les règles de mélange avec les plats carnés.</li>
 </ul>
-<p>Pendant Pessah, il faut en outre porter une attention particulière car de nombreux spiritueux sont élaborés à partir de céréales constituant du hametz, d\'où la nécessité d\'une certification spécifique "cachère pour Pessah" à cette période de l\'année.</p>',
+
+<h2>Pourquoi la vodka et le gin sont souvent plus simples</h2>
+<p>Les spiritueux neutres comme la vodka ou le gin de base soulèvent généralement moins de questions que le whisky ou le rhum, car ils ne passent généralement pas par un vieillissement en fût et leurs ingrédients sont plus directs : eau, céréale ou pomme de terre fermentées et distillées plusieurs fois. Le gin est un cas intermédiaire, car des botaniques (genièvre, agrumes, épices) sont ajoutés pendant la distillation, et c\'est là qu\'il vaut la peine de vérifier que ces additifs n\'incluent pas d\'ingrédients problématiques.</p>
+
+<h2>Pessah : l\'exception qui change tout</h2>
+<p>Pendant Pessah, il faut en outre porter une attention particulière car de nombreux spiritueux sont élaborés à partir de céréales constituant du <a href="/articulos/jametz-pesaj">hametz</a>, d\'où la nécessité d\'une certification spécifique "cachère pour Pessah" à cette période de l\'année. Cela affecte particulièrement le whisky (fait à base d\'orge) et certaines vodkas de céréales, tandis que les spiritueux à base de pomme de terre ou de canne à sucre ont généralement moins de restrictions supplémentaires pour la fête, bien qu\'il vaille la peine de confirmer la certification spécifique avant l\'achat.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Tout whisky sans certification cachère visible est-il automatiquement inapte ?</strong><br>
+Pas nécessairement, mais sans vérification, il n\'y a aucun moyen de confirmer s\'il a vieilli dans des fûts de vin non cachère ou s\'il contient des additifs problématiques. En cas de doute, cherchez une marque avec certification reconnue.</p>
+<p><strong>L\'alcool lui-même (l\'éthanol) peut-il être non cachère ?</strong><br>
+L\'éthanol en tant que molécule ne pose pas de problème de cacherout ; la question porte toujours sur l\'origine de la matière première fermentée et sur les additifs ajoutés après la distillation.</p>
+<p><strong>Les cocktails préparés dans un bar ordinaire peuvent-ils être considérés cachères si tous les ingrédients le sont ?</strong><br>
+Cela dépend du critère de chacun : au-delà des ingrédients, le fait que le bar utilise le même équipement pour des préparations avec des ingrédients non cachères entre aussi en jeu, un sujet similaire à celui abordé dans <a href="/articulos/comer-kosher-restaurante">comment manger cachère dans un restaurant non certifié</a>.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Pour comprendre pourquoi le vin nécessite une supervision si stricte, ce qui affecte aussi les liqueurs à base de vin, voir <a href="/articulos/vino-kosher">le vin cachère</a>. Et sur l\'exception qui permet de servir du vin sans restrictions, voir <a href="/articulos/vino-mevushal">le vin mevoushal</a>.</p>',
             ],
             'comer-kosher-restaurante' => [
                 'title' => 'Comment manger cachère dans un restaurant non certifié',
