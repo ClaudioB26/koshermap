@@ -432,8 +432,10 @@ Generalmente se hace sin costo o con una contribución simbólica a la sinagoga 
                 'title' => 'Vino kosher: por qué necesita supervisión especial',
                 'excerpt' => 'El vino tiene un estatus particular en la halajá: para ser kosher, debe ser elaborado y manipulado exclusivamente por judíos observantes.',
                 'content' => '<p>Hace un tiempo pudimos recorrer una bodega en Mendoza que produce vino kosher, y ver el proceso de cerca ayuda a entender por qué el vino tiene reglas tan distintas al resto de los alimentos. Con casi cualquier otro producto alcanza con que los ingredientes y el proceso cumplan ciertos requisitos. Con el vino no: la halajá exige que toda persona que lo toque durante la elaboración, desde que la uva entra hasta que se embotella, sea judía y observante. El motivo es histórico: el vino se usaba en rituales de idolatría, y de ahí viene la restricción.</p>
-<p>En la práctica, esto arma una división de tareas bastante particular. El que sabe de vino es el enólogo, que en general no es judío (el goy), y es quien indica qué hacer en cada etapa. Pero el que efectivamente mueve el vino, abre las canillas y hace todo lo que implica tocar el producto es siempre un judío observante (el ieudí). El experto dirige, el ieudí ejecuta, y todo bajo supervisión rabínica constante.</p>
-<p>El vino va descansando en distintos ambientes según la etapa, y una parte se guarda en toneles de roble, que se pueden reutilizar hasta unas tres veces antes de perder sus propiedades.</p>
+
+<h2>Una división de tareas particular: el enólogo y el ieudí</h2>
+<p>En la práctica, esto arma una división de tareas bastante particular. El que sabe de vino es el enólogo, que en general no es judío (el goy), y es quien indica qué hacer en cada etapa: cuándo cosechar, cómo fermentar, qué mezclas hacer. Pero el que efectivamente mueve el vino, abre las canillas y hace todo lo que implica tocar el producto es siempre un judío observante (el ieudí). El experto dirige, el ieudí ejecuta, y todo bajo supervisión rabínica constante durante cada etapa del proceso.</p>
+<p>El vino va descansando en distintos ambientes según la etapa, y una parte se guarda en toneles de roble, que se pueden reutilizar hasta unas tres veces antes de perder sus propiedades aromáticas.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/barricas-roble-vino.jpg" alt="Barricas de roble apiladas en la sala de crianza de una bodega, cada una con su tapón y marcas de identificación" loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
@@ -441,8 +443,23 @@ Generalmente se hace sin costo o con una contribución simbólica a la sinagoga 
 </figure>
 
 <p>Cada tonel va sellado, y ese sello no es un detalle menor: es la garantía de que nadie ajeno tocó el contenido. Nos contaron un caso que muestra hasta dónde llega la exigencia. En un tonel de miles de litros notaron que faltaba el sello en el punto donde tenía que estar cerrado: estaba abierto. Tuvo que venir el Rab de Buenos Aires a verificar la situación en persona, y dictaminó que ese vino había quedado sin supervisión. Resultado: esos miles de litros ya no se podían vender como kosher.</p>
-<p>Existe además una categoría especial, el <strong>vino mevushal</strong> ("hervido"), que es vino pasteurizado a una temperatura específica. Una vez que un vino es mevushal, conserva su estatus kosher aunque después lo sirva o lo toque una persona no judía. Por eso es tan práctico para eventos, restaurantes y catering, donde no hay forma de controlar quién agarra cada botella.</p>
-<p>Hoy hay vinos kosher de buena calidad en casi todas las regiones vitivinícolas del mundo. Mendoza es un polo importante en Argentina, y también se producen en Chile, Francia, España, Italia y por supuesto Israel, certificados por las principales agencias rabínicas.</p>',
+
+<h2>La excepción que resuelve el problema para eventos masivos</h2>
+<p>Existe además una categoría especial, el <strong>vino mevushal</strong> ("hervido"), que es vino pasteurizado a una temperatura específica. Una vez que un vino es mevushal, conserva su estatus kosher aunque después lo sirva o lo toque una persona no judía. Por eso es tan práctico para eventos, restaurantes y catering, donde no hay forma de controlar quién agarra cada botella. El detalle completo de cómo funciona esta excepción está en <a href="/articulos/vino-mevushal">mevushal: vino kosher que se puede servir sin restricciones</a>.</p>
+
+<h2>Dónde se produce hoy</h2>
+<p>Hoy hay vinos kosher de buena calidad en casi todas las regiones vitivinícolas del mundo. Mendoza es un polo importante en Argentina, y también se producen en Chile, Francia, España, Italia y por supuesto Israel, certificados por las principales agencias rabínicas. La calidad de estos vinos mejoró muchísimo en las últimas décadas: hace años el vino kosher tenía fama de ser dulce y de calidad limitada, pero hoy compite de igual a igual con vinos convencionales en catas a ciegas.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Por qué el vino tiene reglas tan distintas a la comida sólida?</strong><br>
+Por el origen histórico de la restricción: el vino se usaba específicamente en ceremonias de idolatría en la antigüedad, algo que no ocurría de la misma forma con otros alimentos, y esa preocupación específica generó una regla propia y más estricta.</p>
+<p><strong>¿El jugo de uva tiene las mismas restricciones que el vino?</strong><br>
+Sí, el jugo de uva sin fermentar sigue el mismo criterio que el vino en cuanto a manipulación, precisamente porque puede fermentar y convertirse en vino.</p>
+<p><strong>¿Cómo sé si una botella de vino tiene la supervisión correcta?</strong><br>
+Buscando el sello de una certificadora reconocida en la etiqueta; sin ese sello no hay forma de confirmar que se respetó la cadena completa de manipulación judía.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>Para la excepción que permite servir vino sin restricciones sobre quién lo toca, mirá <a href="/articulos/vino-mevushal">vino mevushal</a>. Y sobre otras bebidas donde el origen del vino también entra en juego, está <a href="/articulos/alcohol-bebidas-espirituosas">alcohol y bebidas espirituosas</a>.</p>',
             ],
             [
                 'slug' => 'gelatina-kosher',
@@ -1171,14 +1188,31 @@ No, si el fruto seco de origen era crudo y sin procesar industrialmente, remojar
   <img src="/images/articulos/kashrut-y-veganismo.jpg" alt="Un producto vegano no es automáticamente kosher: el kashrut también mira procesos y equipamiento." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Un producto vegano no es automáticamente kosher: el kashrut también mira procesos y equipamiento. Foto: HaJunkiyada vía <a href="https://commons.wikimedia.org/wiki/File%3ALiat_Portal_for_Foodie_Disorder_-_Cauliflower_from_SF_farmers%27_market.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>Algunos casos donde un producto vegano puede no ser kosher:</p>
+
+<h2>Casos donde un producto vegano puede no ser kosher</h2>
 <ul>
-<li><strong>Equipamiento compartido:</strong> una fábrica vegana puede usar la misma línea que antes procesó productos cárnicos o lácteos, sin la limpieza certificada que exige el kashrut entre lotes.</li>
-<li><strong>Vino y derivados:</strong> un vino vegano, sin clarificantes de origen animal, igual necesita que todo el proceso de elaboración esté en manos de judíos observantes para ser kosher.</li>
-<li><strong>Insectos:</strong> ciertos colorantes como el carmín (de origen animal) están prohibidos en kosher, pero a veces se etiquetan como aptos para veganos por error o por estándares distintos de certificación vegana.</li>
-<li><strong>Bishul akum:</strong> un alimento vegano cocinado enteramente por una persona no judía puede caer dentro de esta restricción, según cómo se clasifique el producto.</li>
+<li><strong>Equipamiento compartido:</strong> una fábrica vegana puede usar la misma línea que antes procesó productos cárnicos o lácteos, sin la limpieza certificada que exige el kashrut entre lotes, un problema similar al que se ve en <a href="/articulos/frutos-secos-contaminacion-cruzada">frutos secos y contaminación cruzada</a>.</li>
+<li><strong>Vino y derivados:</strong> un vino vegano, sin clarificantes de origen animal, igual necesita que todo el proceso de elaboración esté en manos de judíos observantes para ser kosher, como se explica en <a href="/articulos/vino-kosher">vino kosher</a>.</li>
+<li><strong>Insectos:</strong> ciertos colorantes como el carmín (de origen animal, extraído de un insecto) están prohibidos en kosher, pero a veces se etiquetan como aptos para veganos por error o por estándares distintos de certificación vegana.</li>
+<li><strong>Bishul akum:</strong> un alimento vegano cocinado enteramente por una persona no judía puede caer dentro de esta restricción, según cómo se clasifique el producto (ver <a href="/articulos/bishul-akum">bishul akum</a>).</li>
 </ul>
-<p>Y a la inversa también pasa: muchos productos kosher pareve terminan siendo veganos. Pero no hay equivalencia automática en ningún sentido. Lo más seguro siempre es buscar la certificación kosher explícita, en vez de dar por sentado que "vegano" es lo mismo que "kosher".</p>',
+
+<h2>Por qué las certificaciones veganas y kosher no se solapan del todo</h2>
+<p>Las certificaciones veganas se enfocan casi exclusivamente en el origen de los ingredientes: que no haya carne, lácteos, huevo, miel ni derivados animales de ningún tipo. El kashrut mira eso también, pero además revisa el proceso completo: qué equipamiento se usó, quién estuvo presente en ciertas etapas de cocción, y si hubo contacto con productos no kosher en algún punto de la cadena. Son sistemas de verificación con objetivos distintos, aunque se superpongan en varios productos.</p>
+
+<h2>La otra dirección: kosher no siempre es vegano</h2>
+<p>Y a la inversa también pasa: muchos productos kosher pareve terminan siendo veganos, porque "pareve" ya excluye carne y lácteos. Pero un producto puede ser kosher y no vegano sin ninguna contradicción: un yogur con certificación kosher lácteo, por ejemplo, es perfectamente válido para el kashrut y no apto para veganos.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Existe alguna certificación que combine ambos criterios en un solo sello?</strong><br>
+Algunas certificadoras ofrecen indicaciones combinadas ("Kosher Pareve" junto a un sello vegano del mismo fabricante), pero son dos procesos de verificación separados, no un único trámite.</p>
+<p><strong>¿Un restaurante 100% vegano necesita certificación kosher aparte para ser confiable?</strong><br>
+Sí, si busca ser considerado kosher: el hecho de que todos los platos sean veganos no resuelve automáticamente el tema del equipamiento ni el de quién cocina.</p>
+<p><strong>¿El miel es vegana o kosher?</strong><br>
+La miel es kosher (una excepción notable, ya que proviene de un insecto pero la halajá la permite), pero no es vegana, ya que la mayoría de las certificaciones veganas excluyen cualquier producto de origen animal, incluidos los insectos.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>Para entender por qué el vino necesita supervisión tan particular, aun siendo vegano, mirá <a href="/articulos/vino-kosher">vino kosher</a>. Y sobre el riesgo de contaminación cruzada en productos aparentemente simples, está <a href="/articulos/frutos-secos-contaminacion-cruzada">frutos secos y kashrut</a>.</p>',
             ],
             [
                 'slug' => 'separar-la-jala',
@@ -1186,65 +1220,113 @@ No, si el fruto seco de origen era crudo y sin procesar industrialmente, remojar
                 'title' => 'Cómo separar la challá (jalá)',
                 'excerpt' => 'Separar la jalá es un mandamiento específico que se aplica al amasar pan en grandes cantidades, con raíces en las ofrendas del Templo.',
                 'content' => '<p>La separación de jalá (hafrashat jalá) es un mandamiento bíblico que originalmente requería entregar una porción de la masa de pan a los sacerdotes (kohanim) del Templo de Jerusalén. Tras la destrucción del Templo, la práctica se transformó: hoy, en lugar de entregarse, la porción separada se quema o se desecha de una manera respetuosa.</p>
-<p>Esta mitzvá aplica cuando se amasa una cantidad significativa de masa hecha con alguno de los cinco granos (trigo, cebada, avena, centeno o espelta): la cantidad mínima exacta (generalmente alrededor de 1,2 kg de harina) varía según la opinión halájica que se siga.</p>
-<p>El proceso básico es:</p>
-<ul>
+
+<h2>Cuándo aplica esta mitzvá</h2>
+<p>Esta mitzvá aplica cuando se amasa una cantidad significativa de masa hecha con alguno de los cinco granos (trigo, cebada, avena, centeno o espelta): la cantidad mínima exacta (generalmente alrededor de 1,2 kg de harina) varía según la opinión halájica que se siga. Por debajo de esa cantidad, la separación no es obligatoria, aunque algunas costumbres la hacen igual sin la bendición correspondiente.</p>
+
+<h2>El proceso paso a paso</h2>
+<ol>
 <li>Amasar la masa de pan normalmente, hasta que alcance la cantidad mínima requerida.</li>
 <li>Separar una pequeña porción (tradicionalmente del tamaño de una aceituna o más, según la costumbre).</li>
-<li>Recitar la bendición correspondiente antes de separar la porción.</li>
+<li>Recitar la bendición correspondiente antes de separar la porción, si la cantidad de masa llega al mínimo que la requiere.</li>
 <li>Quemar la porción separada (envuelta en papel de aluminio, en el horno) o desecharla de forma que no se use para consumo regular.</li>
-</ul>
+</ol>
 <p>Esta práctica es la razón por la que muchas panaderías kosher industriales certificadas separan jalá como parte de su proceso de producción, y por la que muchas mujeres y familias judías la realizan en casa cada vez que hornean pan o jalá para Shabat en cantidad suficiente.</p>
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/jala-shabat.jpg" alt="Pan de jalá trenzado y dorado sobre una mesa, junto a una copa de vino blanco y un montoncito de sal gruesa, cubierto parcialmente por un paño blanco" loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Jalá trenzada lista para Shabat, con la copa de vino y la sal. El paño que la cubre es parte de la costumbre de la mesa de Shabat. Foto: HaJunkiyada vía <a href="https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Challah_for_Shabbat_with_wine_and_salt.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>.</figcaption>
 </figure>
 
+<h2>Un ritual familiar, más allá del gesto técnico</h2>
 <p>En muchas casas esto se vive como un momento especial. En la nuestra, por ejemplo, las chicas siempre tratan de llegar a la cantidad mínima de masa justamente para poder separar la jalá con berajá, ya que hacerlo con la bendición tiene un valor agregado. Más allá del gesto técnico, termina siendo un ritual familiar alrededor del horno.</p>
-<p>Si querés profundizar, la <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">guía de la Orthodox Union</a> desarrolla las leyes de hafrashat jalá con sus fuentes, y podés consultar la entrada de <a href="https://es.wikipedia.org/wiki/Jal%C3%A1" target="_blank" rel="noopener">Wikipedia sobre la jalá</a> para el contexto histórico y las variantes regionales del pan.</p>',
+<p>Con el tiempo, muchas familias convierten este momento en una costumbre casi semanal, sobre todo cuando se hornea pan o jalá para Shabat: las chicas más grandes de la casa se encargan de calcular la cantidad de harina para asegurarse de llegar al mínimo, y el momento de separar la porción con la bendición se vuelve parte fija de la rutina de los viernes.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Hace falta separar jalá si se amasa poco pan, para uso familiar chico?</strong><br>
+Si no se llega a la cantidad mínima de harina, la separación no es obligatoria según la halajá, aunque algunas familias eligen hacerla igual, sin la bendición, por costumbre.</p>
+<p><strong>¿Se puede separar jalá de una masa que no es específicamente para pan (por ejemplo, para facturas)?</strong><br>
+Sí, la mitzvá aplica a cualquier masa hecha con los cinco granos que cumpla la cantidad mínima, no solo al pan tradicional.</p>
+<p><strong>¿Qué pasa si me olvido de separar la jalá antes de hornear?</strong><br>
+Se puede separar incluso después de horneado el pan, aunque lo ideal es hacerlo antes; conviene consultar con el rabino si surge esta duda puntual.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>Si querés profundizar, la <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">guía de la Orthodox Union</a> desarrolla las leyes de hafrashat jalá con sus fuentes, y podés consultar la entrada de <a href="https://es.wikipedia.org/wiki/Jal%C3%A1" target="_blank" rel="noopener">Wikipedia sobre la jalá</a> para el contexto histórico y las variantes regionales del pan. Sobre otras festividades y costumbres alimentarias del calendario judío, mirá <a href="/articulos/calendario-judio-festividades-alimentacion">el calendario judío y las fiestas</a>.</p>',
             ],
             [
                 'slug' => 'calendario-judio-festividades-alimentacion',
                 'category' => 'festividades',
                 'title' => 'El calendario judío y las fiestas que afectan la alimentación kosher',
                 'excerpt' => 'Varias festividades judías tienen costumbres alimentarias específicas, más allá de las reglas generales del kashrut.',
-                'content' => '<p>Además de las normas de kashrut que rigen todo el año, el calendario judío trae festividades con costumbres de comida propias, y conocerlas ayuda a entender por qué ciertos productos aparecen o desaparecen de las góndolas en determinadas épocas:</p>
+                'content' => '<p>Además de las normas de kashrut que rigen todo el año, el calendario judío trae festividades con costumbres de comida propias, y conocerlas ayuda a entender por qué ciertos productos aparecen o desaparecen de las góndolas en determinadas épocas.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/calendario-judio-festividades-alimentacion.jpg" alt="Manzana, miel y granada: los símbolos de Rosh Hashaná, una de las festividades con costumbres alimentarias propias." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Manzana, miel y granada: los símbolos de Rosh Hashaná, una de las festividades con costumbres alimentarias propias. Foto: Gilabrand vía <a href="https://commons.wikimedia.org/wiki/File%3ASymbols_of_Rosh_Hashana.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 3.0.</figcaption>
 </figure>
+
+<h2>Un recorrido festividad por festividad</h2>
 <ul>
-<li><strong>Rosh Hashaná:</strong> se come manzana con miel para simbolizar un año dulce, y se evitan alimentos amargos o ácidos en la mesa festiva.</li>
-<li><strong>Iom Kipur:</strong> día de ayuno completo de 25 horas, sin comida ni bebida, salvo excepciones médicas puntuales.</li>
-<li><strong>Sucot:</strong> se come en una cabaña temporal (sucá) al aire libre durante toda la semana de la festividad.</li>
-<li><strong>Janucá:</strong> tradición de comer frito en aceite (sufganiot, rosquillas rellenas; latkes, panqueques de papa) en conmemoración del milagro del aceite.</li>
-<li><strong>Purim:</strong> se preparan hamantaschen (orejas de Hamán), masas triangulares rellenas, y se acostumbra compartir canastas de comida (mishloaj manot) con amigos y familia.</li>
-<li><strong>Pesaj:</strong> la festividad con más restricciones alimentarias, centrada en la prohibición de jametz.</li>
-<li><strong>Shavuot:</strong> costumbre de comer lácteos, con el cheesecake y los blintzes (panqueques rellenos de queso) como protagonistas.</li>
+<li><strong>Rosh Hashaná:</strong> se come manzana con miel para simbolizar un año dulce, y se evitan alimentos amargos o ácidos en la mesa festiva. También es común comer granada, contando simbólicamente sus semillas como los méritos deseados para el año nuevo.</li>
+<li><strong>Iom Kipur:</strong> día de ayuno completo de 25 horas, sin comida ni bebida, salvo excepciones médicas puntuales. La comida previa al ayuno (seudá mafseket) suele ser abundante pero simple, evitando alimentos muy salados que den sed.</li>
+<li><strong>Sucot:</strong> se come en una cabaña temporal (sucá) al aire libre durante toda la semana de la festividad, recreando las viviendas temporales del éxodo de Egipto.</li>
+<li><strong>Janucá:</strong> tradición de comer frito en aceite (sufganiot, rosquillas rellenas; latkes, panqueques de papa) en conmemoración del milagro del aceite que duró ocho días.</li>
+<li><strong>Purim:</strong> se preparan hamantaschen (orejas de Hamán), masas triangulares rellenas, y se acostumbra compartir canastas de comida (mishloaj manot) con amigos y familia, además de una comida festiva (seudá) por la tarde.</li>
+<li><strong>Pesaj:</strong> la festividad con más restricciones alimentarias, centrada en la prohibición de <a href="/articulos/jametz-pesaj">jametz</a>, con la matzá como alimento central de toda la semana.</li>
+<li><strong>Shavuot:</strong> costumbre de comer lácteos, con el cheesecake y los blintzes (panqueques rellenos de queso) como protagonistas, en conmemoración de la entrega de la Torá.</li>
 </ul>
-<p>Por eso productos como la matzá, las sufganiot o el vino kosher para Pesaj aparecen con mucha más disponibilidad en góndolas y comercios justo antes de cada festividad.</p>',
+
+<h2>Por qué esto afecta lo que se ve en las góndolas</h2>
+<p>Por eso productos como la matzá, las sufganiot o el vino kosher para Pesaj aparecen con mucha más disponibilidad en góndolas y comercios justo antes de cada festividad, y muchas veces desaparecen por completo el resto del año. Para quien no conoce el calendario judío, esto puede parecer errático; en realidad sigue un ciclo anual bastante predecible una vez que se conocen las fechas.</p>
+
+<h2>El calendario lunar: por qué las fechas "se mueven"</h2>
+<p>El calendario judío es lunisolar, lo que hace que las festividades caigan en fechas distintas del calendario gregoriano cada año, aunque siempre en la misma época del año (Pesaj siempre en primavera boreal, por ejemplo). Por eso conviene revisar el calendario judío específico de cada año en vez de memorizar una fecha fija.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Todas estas festividades tienen el mismo nivel de restricción alimentaria que Pesaj?</strong><br>
+No, Pesaj es la más estricta en términos de qué se puede y no se puede comer o poseer. El resto tiene costumbres alimentarias específicas, pero no la misma prohibición total de ciertos productos.</p>
+<p><strong>¿Hay festividades donde se permite comer jametz aunque sea cerca de Pesaj?</strong><br>
+Sí, fuera del período específico de Pesaj no hay restricción de jametz; la prohibición aplica únicamente durante los días de esa festividad.</p>
+<p><strong>¿Por qué el pescado o la carne no tienen una festividad asociada como los lácteos en Shavuot?</strong><br>
+No hay una razón única; simplemente la costumbre de comer lácteos en Shavuot tiene raíces históricas y simbólicas específicas que no se replicaron de la misma forma con otros alimentos en otras festividades.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>Para profundizar en la festividad con más reglas alimentarias del año, mirá <a href="/articulos/jametz-pesaj">jametz: qué es y cómo se elimina antes de Pesaj</a>. Y sobre la vajilla que muchas familias reservan específicamente para esa época, está <a href="/articulos/vajilla-para-pesaj">vajilla para Pesaj</a>.</p>',
             ],
             [
                 'slug' => 'errores-comunes-empezar-comer-kosher',
                 'category' => 'vida-diaria',
                 'title' => 'Errores comunes al empezar a comer kosher',
                 'excerpt' => 'Adoptar el kashrut por primera vez implica un proceso de aprendizaje. Repasamos los errores más frecuentes para evitarlos desde el principio.',
-                'content' => '<p>Empezar a comer kosher lleva tiempo, y es normal cometer errores al principio. Estos son los más comunes:</p>
+                'content' => '<p>Empezar a comer kosher lleva tiempo, y es normal cometer errores al principio. Repasamos los más comunes para que sean más fáciles de evitar desde el arranque.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/errores-comunes-empezar-comer-kosher.jpg" alt="Al empezar, el error más común es asumir que un producto es kosher sin buscar la certificación." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Al empezar, el error más común es asumir que un producto es kosher sin buscar la certificación. Foto: Nenad Stojkovic vía <a href="https://commons.wikimedia.org/wiki/File%3ACorn_in_a_shopping_trolley._%2851964905166%29.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY 2.0.</figcaption>
 </figure>
+
+<h2>Los errores más frecuentes</h2>
 <ul>
-<li><strong>Asumir que "natural" o "sin conservantes" significa kosher:</strong> el marketing de un producto no tiene nada que ver con su estatus de kashrut. Siempre hay que buscar la certificación.</li>
-<li><strong>No revisar productos que parecen obviamente pareve:</strong> snacks, panificados y golosinas a veces tienen ingredientes lácteos o gelatina que no se notan en el nombre.</li>
-<li><strong>Mezclar utensilios cárnicos y lácteos por descuido:</strong> al principio es fácil olvidarse de la separación; etiquetar o usar colores distintos ayuda mucho durante la transición.</li>
-<li><strong>No revisar verduras de hoja por insectos:</strong> un paso que mucha gente nueva en el kashrut ni sabe que existe.</li>
-<li><strong>Confiar en certificaciones desconocidas:</strong> no todos los símbolos de un paquete son certificaciones kosher reales, algunos son sellos de calidad que no tienen nada que ver con el kashrut.</li>
-<li><strong>No preguntar:</strong> muchas dudas se resuelven rápido con una consulta al rabino de la comunidad o a alguien con más experiencia, en vez de adivinar.</li>
+<li><strong>Asumir que "natural" o "sin conservantes" significa kosher:</strong> el marketing de un producto no tiene nada que ver con su estatus de kashrut. Siempre hay que buscar la certificación, sin importar cuán simple parezca la lista de ingredientes.</li>
+<li><strong>No revisar productos que parecen obviamente pareve:</strong> snacks, panificados y golosinas a veces tienen ingredientes lácteos o <a href="/articulos/gelatina-kosher">gelatina</a> que no se notan en el nombre del producto.</li>
+<li><strong>Mezclar utensilios cárnicos y lácteos por descuido:</strong> al principio es fácil olvidarse de la separación; etiquetar o usar colores distintos ayuda mucho durante la transición, como se detalla en <a href="/articulos/armar-cocina-kosher">cómo armar una cocina kosher desde cero</a>.</li>
+<li><strong>No revisar verduras de hoja por insectos:</strong> un paso que mucha gente nueva en el kashrut ni sabe que existe, y que aplica especialmente a verduras de hoja verde.</li>
+<li><strong>Confiar en certificaciones desconocidas:</strong> no todos los símbolos de un paquete son certificaciones kosher reales, algunos son sellos de calidad que no tienen nada que ver con el kashrut. Vale la pena aprender a distinguirlos.</li>
+<li><strong>No preguntar:</strong> muchas dudas se resuelven rápido con una consulta al rabino de la comunidad o a alguien con más experiencia, en vez de adivinar o asumir el criterio más estricto (o más laxo) por las dudas.</li>
 </ul>
-<p>Lo importante es entender que esta transición no tiene que ser perfecta desde el primer día. La mayoría de las comunidades judías valoran el proceso de aprendizaje gradual, y hay bastantes recursos (certificadoras, rabinos, herramientas como KosherMap) para acompañar ese camino.</p>',
+
+<h2>Por qué conviene ir de a poco</h2>
+<p>Uno de los errores más silenciosos es querer resolver todo de golpe: cambiar la cocina entera, memorizar todas las reglas y dejar de comer afuera el mismo día que se decide empezar. En la práctica, quienes sostienen el cambio a largo plazo suelen avanzar por etapas, priorizando primero lo que se cocina en casa y dejando para después decisiones más complejas como comer en restaurantes o organizar eventos.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Es necesario tener una certificadora de referencia desde el primer día?</strong><br>
+No es imprescindible, pero ayuda mucho: elegir una o dos certificadoras reconocidas como referencia simplifica las decisiones de compra desde el principio, en vez de evaluar cada sello por separado.</p>
+<p><strong>¿Cuánto tiempo lleva sentirse cómodo con las reglas básicas?</strong><br>
+Varía mucho según cada persona, pero la mayoría reporta sentirse más segura después de unos meses de práctica constante, sobre todo una vez que revisar etiquetas se vuelve un hábito automático.</p>
+<p><strong>¿Hay algún error que sea especialmente difícil de corregir después?</strong><br>
+Mezclar utensilios cárnicos y lácteos de forma reiterada puede complicar más la cocina a largo plazo que otros errores, porque puede requerir kasherizar o reemplazar piezas; por eso conviene resolver la separación física cuanto antes.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>Lo importante es entender que esta transición no tiene que ser perfecta desde el primer día. La mayoría de las comunidades judías valoran el proceso de aprendizaje gradual, y hay bastantes recursos (certificadoras, rabinos, herramientas como KosherMap) para acompañar ese camino. Para los primeros pasos concretos, mirá <a href="/articulos/armar-cocina-kosher">cómo armar una cocina kosher desde cero</a>, y para entender qué mirar en cada etiqueta, está <a href="/articulos/como-leer-etiqueta-kosher">cómo leer una etiqueta de producto kosher</a>.</p>',
             ],
         ];
 
