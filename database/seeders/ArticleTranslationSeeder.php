@@ -2228,14 +2228,33 @@ Elle se fait généralement gratuitement ou avec une contribution symbolique à 
                 'excerpt' => 'Le vin a un statut particulier en halakha : pour être cachère, il doit être élaboré et manipulé exclusivement par des juifs pratiquants.',
                 'content' => '<p>Il y a quelque temps, nous avons pu visiter un domaine à Mendoza qui produit du vin cachère, et voir le processus de près aide à comprendre pourquoi le vin a des règles si différentes de celles de tout autre aliment. Pour presque n\'importe quel autre produit, il suffit que les ingrédients et le processus respectent certaines exigences. Pas pour le vin : la halakha exige que toute personne le touchant pendant son élaboration, depuis l\'arrivée du raisin jusqu\'à la mise en bouteille, soit juive et pratiquante. La raison est historique : le vin était utilisé dans des rituels d\'idolâtrie, et c\'est de là que vient la restriction.</p>
 
+<h2>Une répartition des tâches particulière : l\'œnologue et le yehoudi</h2>
+<p>En pratique, cela crée une répartition des tâches assez particulière. Celui qui s\'y connaît en vin, c\'est l\'œnologue, qui en général n\'est pas juif (le goy), et c\'est lui qui indique quoi faire à chaque étape : quand vendanger, comment fermenter, quels assemblages faire. Mais celui qui manipule effectivement le vin, ouvre les robinets et fait tout ce qui implique de toucher le produit, est toujours un juif pratiquant (le yehoudi). L\'expert dirige, le yehoudi exécute, et tout cela sous supervision rabbinique constante à chaque étape du processus.</p>
+<p>Le vin repose dans différents espaces selon l\'étape, et une partie est conservée dans des fûts de chêne, réutilisables environ trois fois avant de perdre leurs propriétés aromatiques.</p>
+
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/barricas-roble-vino.jpg" alt="Chai à barriques d&#039;un domaine (image d&#039;illustration, ce n&#039;est pas le domaine de Mendoza que nous avons visité). Dans un domaine casher, chaque fût porte aussi un sceau certifiant que personne d&#039;étranger à la supervision ne l&#039;a ouvert." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Chai à barriques d\'un domaine (image d\'illustration, ce n\'est pas le domaine de Mendoza que nous avons visité). Dans un domaine casher, chaque fût porte aussi un sceau certifiant que personne d\'étranger à la supervision ne l\'a ouvert. Photo: Subhashish Panigrahi via <a href="https://commons.wikimedia.org/wiki/File:Oak_barrels_used_for_aging_of_wine_in_a_cellar_at_Grover_Zampa_Vineyard,_Doddaballapura,_Karnataka,_India.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>En pratique, cela crée une répartition des tâches assez particulière. Celui qui s\'y connaît en vin, c\'est l\'œnologue, qui en général n\'est pas juif (le goy), et c\'est lui qui indique quoi faire à chaque étape. Mais celui qui manipule effectivement le vin, ouvre les robinets et fait tout ce qui implique de toucher le produit, est toujours un juif pratiquant (le yehoudi). L\'expert dirige, le yehoudi exécute, et tout cela sous supervision rabbinique constante.</p>
-<p>Le vin repose dans différents espaces selon l\'étape, et une partie est conservée dans des fûts de chêne, réutilisables environ trois fois avant de perdre leurs propriétés. Chaque fût est scellé, et ce sceau n\'est pas un détail mineur : c\'est la garantie que personne d\'extérieur n\'a touché le contenu. On nous a raconté un cas qui montre jusqu\'où va cette exigence. Dans un fût de plusieurs milliers de litres, on a remarqué qu\'il manquait le sceau exactement là où il aurait dû être fermé : il était ouvert. Le rabbin de Buenos Aires a dû venir vérifier la situation en personne, et il a statué que ce vin était resté sans supervision. Résultat : ces milliers de litres ne pouvaient plus être vendus comme cachères.</p>
-<p>Il existe aussi une catégorie spéciale, le <strong>vin mevoushal</strong> ("bouilli"), un vin pasteurisé à une température précise. Une fois mevoushal, le vin conserve son statut cachère même s\'il est ensuite servi ou touché par une personne non juive. C\'est pourquoi il est si pratique pour les événements, restaurants et traiteurs, où l\'on ne peut pas contrôler qui prend chaque bouteille.</p>
-<p>Aujourd\'hui, il existe de bons vins cachères de qualité dans presque toutes les régions viticoles du monde. Mendoza est un pôle important en Argentine, et on en produit aussi au Chili, en France, en Espagne, en Italie et bien sûr en Israël, certifiés par les principales agences rabbiniques.</p>',
+
+<p>Chaque fût est scellé, et ce sceau n\'est pas un détail mineur : c\'est la garantie que personne d\'extérieur n\'a touché le contenu. On nous a raconté un cas qui montre jusqu\'où va cette exigence. Dans un fût de plusieurs milliers de litres, on a remarqué qu\'il manquait le sceau exactement là où il aurait dû être fermé : il était ouvert. Le rabbin de Buenos Aires a dû venir vérifier la situation en personne, et il a statué que ce vin était resté sans supervision. Résultat : ces milliers de litres ne pouvaient plus être vendus comme cachères.</p>
+
+<h2>L\'exception qui résout le problème pour les grands événements</h2>
+<p>Il existe aussi une catégorie spéciale, le <strong>vin mevoushal</strong> ("bouilli"), un vin pasteurisé à une température précise. Une fois mevoushal, le vin conserve son statut cachère même s\'il est ensuite servi ou touché par une personne non juive. C\'est pourquoi il est si pratique pour les événements, restaurants et traiteurs, où l\'on ne peut pas contrôler qui prend chaque bouteille. Le détail complet de cette exception se trouve dans <a href="/articulos/vino-mevushal">mevoushal : le vin cachère qui peut être servi sans restrictions</a>.</p>
+
+<h2>Où il est produit aujourd\'hui</h2>
+<p>Aujourd\'hui, il existe de bons vins cachères de qualité dans presque toutes les régions viticoles du monde. Mendoza est un pôle important en Argentine, et on en produit aussi au Chili, en France, en Espagne, en Italie et bien sûr en Israël, certifiés par les principales agences rabbiniques. La qualité de ces vins s\'est énormément améliorée ces dernières décennies : il y a quelques années, le vin cachère avait la réputation d\'être sucré et de qualité limitée, mais aujourd\'hui il rivalise à égalité avec les vins conventionnels lors de dégustations à l\'aveugle.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Pourquoi le vin a-t-il des règles si différentes de la nourriture solide ?</strong><br>
+Cela vient de l\'origine historique de la restriction : le vin était spécifiquement utilisé dans des cérémonies d\'idolâtrie dans l\'Antiquité, ce qui ne se produisait pas de la même façon avec d\'autres aliments, et cette préoccupation spécifique a créé une règle propre et plus stricte.</p>
+<p><strong>Le jus de raisin a-t-il les mêmes restrictions que le vin ?</strong><br>
+Oui, le jus de raisin non fermenté suit le même critère de manipulation que le vin, précisément parce qu\'il peut fermenter et se transformer en vin.</p>
+<p><strong>Comment savoir si une bouteille de vin a la bonne supervision ?</strong><br>
+En cherchant le sceau d\'un certificateur reconnu sur l\'étiquette ; sans ce sceau, il n\'y a aucun moyen de confirmer que toute la chaîne de manipulation juive a été respectée.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Pour l\'exception qui permet de servir du vin sans restriction sur qui le touche, voir <a href="/articulos/vino-mevushal">le vin mevoushal</a>. Et sur d\'autres boissons où l\'origine du vin entre aussi en jeu, voir <a href="/articulos/alcohol-bebidas-espirituosas">alcool et spiritueux</a>.</p>',
             ],
             'gelatina-kosher' => [
                 'title' => 'La gélatine cachère : le débat halakhique',
@@ -2810,73 +2829,140 @@ Non, si le fruit sec d\'origine était cru et non transformé industriellement, 
   <img src="/images/articulos/kashrut-y-veganismo.jpg" alt="Un produit végane n&#039;est pas automatiquement casher : la cacherout regarde aussi procédés et équipements." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Un produit végane n\'est pas automatiquement casher : la cacherout regarde aussi procédés et équipements. Photo: HaJunkiyada via <a href="https://commons.wikimedia.org/wiki/File%3ALiat_Portal_for_Foodie_Disorder_-_Cauliflower_from_SF_farmers%27_market.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>Quelques exemples où un produit végane peut ne pas être cachère :</p>
+
+<h2>Cas où un produit végane peut ne pas être cachère</h2>
 <ul>
-<li><strong>Équipement partagé :</strong> une usine végane peut utiliser la même ligne de production ayant auparavant traité des produits carnés ou laitiers, sans le nettoyage certifié exigé par la cacherout entre les lots.</li>
-<li><strong>Vin et dérivés :</strong> un vin végane (sans clarifiants d\'origine animale) exige toujours que tout le processus d\'élaboration soit entre les mains de juifs pratiquants pour être cachère.</li>
-<li><strong>Insectes :</strong> certains colorants (comme le carmin, d\'origine animale) sont interdits en cachère mais parfois étiquetés comme adaptés aux véganes par erreur ou selon des normes différentes de certification végane.</li>
-<li><strong>Bishoul akoum :</strong> un aliment végane cuisiné entièrement par une personne non juive peut tomber sous cette restriction, selon la classification du produit.</li>
+<li><strong>Équipement partagé :</strong> une usine végane peut utiliser la même ligne de production ayant auparavant traité des produits carnés ou laitiers, sans le nettoyage certifié exigé par la cacherout entre les lots, un problème similaire à celui vu dans <a href="/articulos/frutos-secos-contaminacion-cruzada">fruits secs et contamination croisée</a>.</li>
+<li><strong>Vin et dérivés :</strong> un vin végane (sans clarifiants d\'origine animale) exige toujours que tout le processus d\'élaboration soit entre les mains de juifs pratiquants pour être cachère, comme expliqué dans <a href="/articulos/vino-kosher">le vin cachère</a>.</li>
+<li><strong>Insectes :</strong> certains colorants (comme le carmin, d\'origine animale, extrait d\'un insecte) sont interdits en cachère mais parfois étiquetés comme adaptés aux véganes par erreur ou selon des normes différentes de certification végane.</li>
+<li><strong>Bishoul akoum :</strong> un aliment végane cuisiné entièrement par une personne non juive peut tomber sous cette restriction, selon la classification du produit (voir <a href="/articulos/bishul-akum">bishoul akoum</a>).</li>
 </ul>
-<p>Inversement, il est aussi vrai que de nombreux produits cachères parve sont, en fait, véganes. Mais l\'équivalence n\'est automatique dans aucun sens : le plus sûr est toujours de chercher la certification cachère explicite, plutôt que de supposer que "végane" équivaut à "cachère".</p>',
+
+<h2>Pourquoi les certifications végane et cachère ne se recoupent pas totalement</h2>
+<p>Les certifications véganes se concentrent presque exclusivement sur l\'origine des ingrédients : pas de viande, de lait, d\'œuf, de miel ni de dérivé animal d\'aucune sorte. La cacherout regarde cela aussi, mais examine également tout le processus : quel équipement a été utilisé, qui était présent à certaines étapes de cuisson, et s\'il y a eu contact avec des produits non cachères à un moment de la chaîne. Ce sont des systèmes de vérification aux objectifs différents, même s\'ils se recoupent sur de nombreux produits.</p>
+
+<h2>L\'autre sens : cachère n\'est pas toujours végane</h2>
+<p>Inversement, il est aussi vrai que de nombreux produits cachères parve sont, en fait, véganes, car "parve" exclut déjà la viande et les produits laitiers. Mais un produit peut être cachère et non végane sans aucune contradiction : un yaourt avec une certification cachère laitière, par exemple, est parfaitement valide pour la cacherout et non adapté aux véganes.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Existe-t-il une certification combinant les deux critères en un seul sceau ?</strong><br>
+Certains certificateurs proposent des indications combinées ("Kosher Pareve" à côté d\'un sceau végane du même fabricant), mais ce sont deux processus de vérification séparés, pas une seule démarche.</p>
+<p><strong>Un restaurant 100% végane a-t-il besoin d\'une certification cachère à part pour être fiable ?</strong><br>
+Oui, s\'il cherche à être considéré cachère : le fait que tous les plats soient véganes ne résout pas automatiquement la question de l\'équipement ni celle de qui cuisine.</p>
+<p><strong>Le miel est-il végane ou cachère ?</strong><br>
+Le miel est cachère (une exception notable, car il provient d\'un insecte mais la halakha le permet), mais il n\'est pas végane, car la plupart des certifications véganes excluent tout produit d\'origine animale, y compris les insectes.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Pour comprendre pourquoi le vin nécessite une supervision si particulière, même végane, voir <a href="/articulos/vino-kosher">le vin cachère</a>. Et sur le risque de contamination croisée dans des produits en apparence simples, voir <a href="/articulos/frutos-secos-contaminacion-cruzada">fruits secs et cacherout</a>.</p>',
             ],
             'separar-la-jala' => [
                 'title' => 'Comment prélever la halla',
                 'excerpt' => 'Prélever la halla est un commandement spécifique s\'appliquant lors du pétrissage de pâte en grandes quantités, avec des racines dans les offrandes du Temple.',
                 'content' => '<p>Le prélèvement de la halla (hafrachat halla) est un commandement biblique exigeant originellement de donner une portion de la pâte à pain aux prêtres (cohanim) du Temple de Jérusalem. Après la destruction du Temple, la pratique s\'est transformée : aujourd\'hui, au lieu d\'être donnée, la portion prélevée est brûlée ou jetée de manière respectueuse.</p>
 
+<h2>Quand cette mitsva s\'applique</h2>
+<p>Cette mitsva s\'applique lors du pétrissage d\'une quantité significative de pâte faite avec l\'une des cinq céréales (blé, orge, avoine, seigle ou épeautre) — la quantité minimale exacte (généralement autour de 1,2 kg de farine) varie selon l\'avis halakhique suivi. En dessous de cette quantité, le prélèvement n\'est pas obligatoire, bien que certaines coutumes le fassent quand même, sans la bénédiction.</p>
+
+<h2>Le processus étape par étape</h2>
+<ol>
+<li>Pétrir la pâte à pain normalement, jusqu\'à atteindre la quantité minimale requise.</li>
+<li>Prélever une petite portion (traditionnellement de la taille d\'une olive ou plus, selon la coutume).</li>
+<li>Réciter la bénédiction correspondante avant de prélever la portion, si la quantité de pâte atteint le minimum qui l\'exige.</li>
+<li>Brûler la portion prélevée (enveloppée dans du papier aluminium, au four) ou la jeter d\'une manière qu\'elle ne soit pas utilisée pour une consommation régulière.</li>
+</ol>
+<p>Cette pratique explique pourquoi de nombreuses boulangeries cachères industrielles certifiées prélèvent la halla dans le cadre de leur processus de production, et pourquoi de nombreuses femmes et familles juives la réalisent à la maison chaque fois qu\'elles font cuire du pain ou de la halla pour Chabbat en quantité suffisante.</p>
+
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/jala-shabat.jpg" alt="Halla tressée prête pour Chabbat, avec la coupe de vin et le sel. Le linge qui la couvre fait partie de la coutume de la table de Chabbat." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Halla tressée prête pour Chabbat, avec la coupe de vin et le sel. Le linge qui la couvre fait partie de la coutume de la table de Chabbat. Photo: HaJunkiyada via <a href="https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Challah_for_Shabbat_with_wine_and_salt.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>Cette mitsva s\'applique lors du pétrissage d\'une quantité significative de pâte faite avec l\'une des cinq céréales (blé, orge, avoine, seigle ou épeautre) — la quantité minimale exacte (généralement autour de 1,2 kg de farine) varie selon l\'avis halakhique suivi.</p>
-<p>Le processus de base est :</p>
-<ul>
-<li>Pétrir la pâte à pain normalement, jusqu\'à atteindre la quantité minimale requise.</li>
-<li>Prélever une petite portion (traditionnellement de la taille d\'une olive ou plus, selon la coutume).</li>
-<li>Réciter la bénédiction correspondante avant de prélever la portion.</li>
-<li>Brûler la portion prélevée (enveloppée dans du papier aluminium, au four) ou la jeter d\'une manière qu\'elle ne soit pas utilisée pour une consommation régulière.</li>
-</ul>
-<p>Cette pratique explique pourquoi de nombreuses boulangeries cachères industrielles certifiées prélèvent la halla dans le cadre de leur processus de production, et pourquoi de nombreuses femmes et familles juives la réalisent à la maison chaque fois qu\'elles font cuire du pain ou de la halla pour Chabbat en quantité suffisante.</p>
-<p>Dans de nombreux foyers, ce moment est vécu comme quelque chose de spécial. Chez nous, par exemple, les filles essaient toujours d\'atteindre la quantité minimale de pâte précisément pour pouvoir prélever la halla avec une bénédiction, car le faire avec la berakha a une valeur supplémentaire. Au-delà du geste technique, cela finit par devenir un rituel familial autour du four.</p>',
+
+<h2>Un rituel familial, au-delà du geste technique</h2>
+<p>Dans de nombreux foyers, ce moment est vécu comme quelque chose de spécial. Chez nous, par exemple, les filles essaient toujours d\'atteindre la quantité minimale de pâte précisément pour pouvoir prélever la halla avec une bénédiction, car le faire avec la berakha a une valeur supplémentaire. Au-delà du geste technique, cela finit par devenir un rituel familial autour du four.</p>
+<p>Avec le temps, de nombreuses familles transforment ce moment en une coutume presque hebdomadaire, surtout pour la cuisson du pain ou de la halla pour Chabbat : les filles aînées de la maison se chargent de calculer la quantité de farine pour s\'assurer d\'atteindre le minimum, et le moment de prélever la portion avec la bénédiction devient une partie fixe de la routine du vendredi.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Dois-je prélever la halla si je pétris peu de pâte, pour un usage familial restreint ?</strong><br>
+Si la quantité minimale de farine n\'est pas atteinte, le prélèvement n\'est pas obligatoire selon la halakha, bien que certaines familles le fassent quand même, sans la bénédiction, par coutume.</p>
+<p><strong>Peut-on prélever la halla d\'une pâte qui n\'est pas spécifiquement pour du pain (par exemple, pour des pâtisseries) ?</strong><br>
+Oui, la mitsva s\'applique à toute pâte faite avec les cinq céréales atteignant la quantité minimale, pas seulement au pain traditionnel.</p>
+<p><strong>Que se passe-t-il si j\'oublie de prélever la halla avant la cuisson ?</strong><br>
+Elle peut être prélevée même après la cuisson du pain, bien qu\'il soit préférable de le faire avant ; consultez un rabbin si ce doute spécifique se présente.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Si vous souhaitez approfondir, le <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">guide de l\'Orthodox Union</a> développe les lois de hafrachat halla avec leurs sources, et vous pouvez consulter l\'article de <a href="https://fr.wikipedia.org/wiki/Halla" target="_blank" rel="noopener">Wikipédia sur la halla</a> pour le contexte historique et les variantes régionales du pain. Sur d\'autres fêtes et coutumes alimentaires du calendrier juif, voir <a href="/articulos/calendario-judio-festividades-alimentacion">le calendrier juif et les fêtes</a>.</p>',
             ],
             'calendario-judio-festividades-alimentacion' => [
                 'title' => 'Le calendrier juif et les fêtes qui affectent l\'alimentation cachère',
                 'excerpt' => 'Plusieurs fêtes juives ont des coutumes alimentaires spécifiques, au-delà des règles générales de la cacherout.',
-                'content' => '<p>Outre les règles de cacherout valables toute l\'année, le calendrier juif apporte des fêtes avec des coutumes alimentaires propres qu\'il vaut la peine de connaître :</p>
+                'content' => '<p>Outre les règles de cacherout valables toute l\'année, le calendrier juif apporte des fêtes avec des coutumes alimentaires propres, et les connaître aide à comprendre pourquoi certains produits vont et viennent des rayons à certaines périodes.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/calendario-judio-festividades-alimentacion.jpg" alt="Pomme, miel et grenade : les symboles de Roch Hachana, l&#039;une des fêtes aux coutumes alimentaires propres." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Pomme, miel et grenade : les symboles de Roch Hachana, l\'une des fêtes aux coutumes alimentaires propres. Photo: Gilabrand via <a href="https://commons.wikimedia.org/wiki/File%3ASymbols_of_Rosh_Hashana.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 3.0.</figcaption>
 </figure>
+
+<h2>Un tour d\'horizon fête par fête</h2>
 <ul>
-<li><strong>Roch Hachana :</strong> on a coutume de manger une pomme avec du miel pour symboliser une année douce, et d\'éviter les aliments amers ou acides à la table festive.</li>
-<li><strong>Yom Kippour :</strong> jour de jeûne complet de 25 heures, sans nourriture ni boisson, sauf exceptions médicales spécifiques.</li>
-<li><strong>Souccot :</strong> on a coutume de manger dans une hutte temporaire (souccah) en plein air pendant toute la semaine de la fête.</li>
-<li><strong>Hanouca :</strong> tradition de manger des aliments frits dans l\'huile (comme les soufganiot, beignets fourrés, et les latkes, galettes de pomme de terre) en commémoration du miracle de l\'huile.</li>
-<li><strong>Pourim :</strong> on prépare des hamantaschen (oreilles d\'Haman), pâtisseries triangulaires fourrées, et on a coutume de partager des paniers de nourriture (michloah manot) avec amis et famille.</li>
-<li><strong>Pessah :</strong> la fête aux restrictions alimentaires les plus nombreuses, centrée sur l\'interdiction du hametz, comme nous l\'avons vu en détail.</li>
-<li><strong>Chavouot :</strong> coutume de manger des aliments laitiers, avec des plats comme le cheesecake et les blintzes (crêpes fourrées au fromage) en vedette.</li>
+<li><strong>Roch Hachana :</strong> on a coutume de manger une pomme avec du miel pour symboliser une année douce, et d\'éviter les aliments amers ou acides à la table festive. Il est aussi courant de manger de la grenade, en comptant symboliquement ses graines comme les mérites souhaités pour la nouvelle année.</li>
+<li><strong>Yom Kippour :</strong> jour de jeûne complet de 25 heures, sans nourriture ni boisson, sauf exceptions médicales spécifiques. Le repas précédant le jeûne est généralement copieux mais simple, en évitant les aliments très salés qui donnent soif.</li>
+<li><strong>Souccot :</strong> on a coutume de manger dans une hutte temporaire (souccah) en plein air pendant toute la semaine de la fête, recréant les habitations temporaires de l\'exode d\'Égypte.</li>
+<li><strong>Hanouca :</strong> tradition de manger des aliments frits dans l\'huile (comme les soufganiot, beignets fourrés, et les latkes, galettes de pomme de terre) en commémoration du miracle de l\'huile qui a duré huit jours.</li>
+<li><strong>Pourim :</strong> on prépare des hamantaschen (oreilles d\'Haman), pâtisseries triangulaires fourrées, et on a coutume de partager des paniers de nourriture (michloah manot) avec amis et famille, ainsi qu\'un repas festif (seouda) l\'après-midi.</li>
+<li><strong>Pessah :</strong> la fête aux restrictions alimentaires les plus nombreuses, centrée sur l\'interdiction du <a href="/articulos/jametz-pesaj">hametz</a>, avec la matsa comme aliment central de toute la semaine.</li>
+<li><strong>Chavouot :</strong> coutume de manger des aliments laitiers, avec des plats comme le cheesecake et les blintzes (crêpes fourrées au fromage) en vedette, en commémoration du don de la Torah.</li>
 </ul>
-<p>Connaître ce calendrier aide à comprendre pourquoi certains produits (comme la matsa, les soufganiot ou le vin cachère pour Pessah) sont plus disponibles dans les rayons et commerces à certaines périodes de l\'année.</p>',
+
+<h2>Pourquoi cela affecte ce qu\'on voit dans les rayons</h2>
+<p>C\'est pourquoi des produits comme la matsa, les soufganiot ou le vin cachère pour Pessah sont beaucoup plus disponibles dans les rayons et commerces juste avant chaque fête, et disparaissent souvent complètement le reste de l\'année. Pour qui ne connaît pas le calendrier juif, cela peut sembler erratique ; en réalité, cela suit un cycle annuel assez prévisible une fois les dates connues.</p>
+
+<h2>Le calendrier lunaire : pourquoi les dates "bougent"</h2>
+<p>Le calendrier juif est lunisolaire, ce qui fait que les fêtes tombent sur des dates différentes du calendrier grégorien chaque année, bien que toujours à la même saison (Pessah toujours au printemps de l\'hémisphère nord, par exemple). Il vaut la peine de consulter le calendrier juif spécifique de chaque année plutôt que de mémoriser une date fixe.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Toutes ces fêtes ont-elles le même niveau de restriction alimentaire que Pessah ?</strong><br>
+Non, Pessah est la plus stricte en termes de ce qui peut ou ne peut pas être mangé ou possédé. Les autres ont des coutumes alimentaires spécifiques, mais pas la même interdiction totale de certains produits.</p>
+<p><strong>Existe-t-il des fêtes où l\'on peut manger du hametz même près de Pessah ?</strong><br>
+Oui, en dehors de la période spécifique de Pessah, il n\'y a pas de restriction sur le hametz ; l\'interdiction ne s\'applique que pendant les jours de cette fête.</p>
+<p><strong>Pourquoi le poisson ou la viande n\'ont-ils pas de fête associée comme les produits laitiers avec Chavouot ?</strong><br>
+Il n\'y a pas de raison unique ; la coutume de manger des laitages à Chavouot a simplement des racines historiques et symboliques spécifiques qui ne se sont pas reproduites de la même façon avec d\'autres aliments lors d\'autres fêtes.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Pour approfondir la fête aux règles alimentaires les plus nombreuses de l\'année, voir <a href="/articulos/jametz-pesaj">le hametz : qu\'est-ce que c\'est et comment l\'éliminer avant Pessah</a>. Et sur la vaisselle que de nombreuses familles réservent spécifiquement pour cette période, voir <a href="/articulos/vajilla-para-pesaj">vaisselle pour Pessah</a>.</p>',
             ],
             'errores-comunes-empezar-comer-kosher' => [
                 'title' => 'Erreurs courantes en commençant à manger cachère',
                 'excerpt' => 'Adopter la cacherout pour la première fois implique un processus d\'apprentissage. Nous passons en revue les erreurs les plus fréquentes pour les éviter dès le départ.',
-                'content' => '<p>Commencer à suivre un régime cachère est un processus qui prend du temps, et il est normal de faire des erreurs au début. Voici quelques-unes des plus courantes :</p>
+                'content' => '<p>Commencer à suivre un régime cachère est un processus qui prend du temps, et il est normal de faire des erreurs au début. Passons en revue les plus fréquentes pour qu\'il soit plus facile de les éviter dès le départ.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/errores-comunes-empezar-comer-kosher.jpg" alt="Au début, l&#039;erreur la plus fréquente est de supposer qu&#039;un produit est casher sans chercher la certification." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Au début, l\'erreur la plus fréquente est de supposer qu\'un produit est casher sans chercher la certification. Photo: Nenad Stojkovic via <a href="https://commons.wikimedia.org/wiki/File%3ACorn_in_a_shopping_trolley._%2851964905166%29.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY 2.0.</figcaption>
 </figure>
+
+<h2>Les erreurs les plus fréquentes</h2>
 <ul>
-<li><strong>Supposer que "naturel" ou "sans conservateurs" signifie cachère :</strong> le marketing d\'un produit n\'a aucun rapport direct avec son statut de cacherout. Il faut toujours chercher la certification.</li>
-<li><strong>Ne pas vérifier les produits semblant évidemment parve :</strong> les en-cas, produits de boulangerie et confiseries contiennent parfois des ingrédients laitiers ou de la gélatine non évidents dans le nom du produit.</li>
-<li><strong>Mélanger les ustensiles carnés et laitiers par mégarde :</strong> au début, il est facile d\'oublier la séparation ; étiqueter ou utiliser des couleurs différentes aide beaucoup pendant la transition.</li>
-<li><strong>Ne pas vérifier les légumes-feuilles pour les insectes :</strong> une étape que beaucoup de nouveaux pratiquants de la cacherout ignorent complètement.</li>
-<li><strong>Faire confiance à des certifications inconnues ou peu claires :</strong> tous les symboles sur un emballage ne sont pas de véritables certifications cachères ; certains sont des labels de qualité sans rapport avec la cacherout.</li>
-<li><strong>Ne pas demander :</strong> de nombreux doutes se résolvent rapidement en consultant le rabbin de la communauté ou quelqu\'un de plus expérimenté, plutôt que de deviner.</li>
+<li><strong>Supposer que "naturel" ou "sans conservateurs" signifie cachère :</strong> le marketing d\'un produit n\'a aucun rapport direct avec son statut de cacherout. Il faut toujours chercher la certification, quelle que soit la simplicité apparente de la liste d\'ingrédients.</li>
+<li><strong>Ne pas vérifier les produits semblant évidemment parve :</strong> les en-cas, produits de boulangerie et confiseries contiennent parfois des ingrédients laitiers ou de la <a href="/articulos/gelatina-kosher">gélatine</a> non évidents dans le nom du produit.</li>
+<li><strong>Mélanger les ustensiles carnés et laitiers par mégarde :</strong> au début, il est facile d\'oublier la séparation ; étiqueter ou utiliser des couleurs différentes aide beaucoup pendant la transition, comme détaillé dans <a href="/articulos/armar-cocina-kosher">comment organiser une cuisine cachère à partir de zéro</a>.</li>
+<li><strong>Ne pas vérifier les légumes-feuilles pour les insectes :</strong> une étape que beaucoup de nouveaux pratiquants de la cacherout ignorent complètement, et qui s\'applique surtout aux légumes à feuilles vertes.</li>
+<li><strong>Faire confiance à des certifications inconnues ou peu claires :</strong> tous les symboles sur un emballage ne sont pas de véritables certifications cachères ; certains sont des labels de qualité sans rapport avec la cacherout. Cela vaut la peine d\'apprendre à les distinguer.</li>
+<li><strong>Ne pas demander :</strong> de nombreux doutes se résolvent rapidement en consultant le rabbin de la communauté ou quelqu\'un de plus expérimenté, plutôt que de deviner ou de suivre par défaut le critère le plus strict (ou le plus souple) par précaution.</li>
 </ul>
-<p>Le plus important est de comprendre que la transition n\'a pas besoin d\'être parfaite dès le premier jour. La plupart des communautés juives valorisent le processus d\'apprentissage graduel, et il existe de nombreuses ressources — y compris des certificateurs, des rabbins et des outils comme KosherMap — pour accompagner ce chemin.</p>',
+
+<h2>Pourquoi il vaut la peine d\'y aller étape par étape</h2>
+<p>L\'une des erreurs les plus silencieuses est de vouloir tout résoudre d\'un coup : refaire toute la cuisine, mémoriser toutes les règles et arrêter de manger dehors le jour même où l\'on décide de commencer. En pratique, ceux qui maintiennent le changement sur le long terme avancent généralement par étapes, en priorisant d\'abord ce qui se cuisine à la maison et en laissant pour plus tard des décisions plus complexes, comme manger au restaurant ou organiser des événements.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Faut-il avoir un certificateur de référence dès le premier jour ?</strong><br>
+Ce n\'est pas indispensable, mais cela aide beaucoup : choisir un ou deux certificateurs reconnus comme référence simplifie les décisions d\'achat dès le début, plutôt que d\'évaluer chaque sceau séparément.</p>
+<p><strong>Combien de temps faut-il pour se sentir à l\'aise avec les règles de base ?</strong><br>
+Cela varie beaucoup d\'une personne à l\'autre, mais la plupart rapportent se sentir plus confiantes après quelques mois de pratique régulière, surtout une fois que vérifier les étiquettes devient une habitude automatique.</p>
+<p><strong>Y a-t-il une erreur particulièrement difficile à corriger ensuite ?</strong><br>
+Mélanger les ustensiles carnés et laitiers de façon répétée peut compliquer davantage la cuisine à long terme que d\'autres erreurs, car cela peut nécessiter de cachériser ou remplacer des pièces ; il vaut donc mieux résoudre la séparation physique au plus vite.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Le plus important est de comprendre que la transition n\'a pas besoin d\'être parfaite dès le premier jour. La plupart des communautés juives valorisent le processus d\'apprentissage graduel, et il existe de nombreuses ressources — y compris des certificateurs, des rabbins et des outils comme KosherMap — pour accompagner ce chemin. Pour les premiers pas concrets, voir <a href="/articulos/armar-cocina-kosher">comment organiser une cuisine cachère à partir de zéro</a>, et pour savoir quoi observer sur chaque étiquette, voir <a href="/articulos/como-leer-etiqueta-kosher">comment lire une étiquette de produit cachère</a>.</p>',
             ],
         ];
     }
