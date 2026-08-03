@@ -980,40 +980,74 @@ Varía mucho según el presupuesto y el ritmo de cada familia, pero no es raro q
                 'category' => 'productos',
                 'title' => 'Diferencias entre las certificaciones kosher alrededor del mundo',
                 'excerpt' => 'No todas las certificadoras kosher siguen exactamente los mismos criterios. Conocer estas diferencias ayuda a elegir productos con confianza.',
-                'content' => '<p>Los principios del kashrut son universales, pero existen cientos de agencias certificadoras en el mundo, y cada una puede tener criterios algo distintos sobre temas puntuales: cuánta supervisión exige para bishul akum, por ejemplo, o cómo aborda ciertos aditivos químicos cuyo origen es difícil de rastrear.</p>
+                'content' => '<p>Los principios del kashrut son universales, pero existen cientos de agencias certificadoras en el mundo, y cada una puede tener criterios algo distintos sobre temas puntuales: cuánta supervisión exige para <a href="/articulos/bishul-akum">bishul akum</a>, por ejemplo, o cómo aborda ciertos aditivos químicos cuyo origen es difícil de rastrear.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/certificaciones-kosher-mundo.svg" alt="Los principios del kashrut son universales, pero cada región tiene sus propias agencias certificadoras." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Los principios del kashrut son universales, pero cada región tiene sus propias agencias certificadoras. Ilustración: KosherMap.</figcaption>
 </figure>
-<p>Algunas diferencias comunes entre regiones:</p>
+
+<h2>Cómo varía la certificación según la región</h2>
 <ul>
-<li><strong>Estados Unidos:</strong> tiene las certificadoras más grandes a nivel industrial (OU, OK, Star-K, Kof-K), con procesos muy estandarizados para exportación masiva.</li>
-<li><strong>Israel:</strong> el Rabanut (rabinato) da la certificación oficial estatal, mientras que organizaciones como el Badatz mantienen estándares adicionales que ciertas comunidades consideran más estrictos.</li>
-<li><strong>Europa:</strong> certificadoras como la Beth Din de distintas ciudades (Londres, París, Zúrich) supervisan tanto la producción local como las importaciones.</li>
-<li><strong>Latinoamérica:</strong> cada comunidad suele tener su propio Va\'ad Hakashrut (en Buenos Aires, San Pablo, Ciudad de México), que certifica productos locales y también restaurantes.</li>
+<li><strong>Estados Unidos:</strong> tiene las certificadoras más grandes a nivel industrial (OU, OK, Star-K, Kof-K), con procesos muy estandarizados para exportación masiva. Un mismo producto certificado ahí suele llegar prácticamente igual a decenas de países.</li>
+<li><strong>Israel:</strong> el Rabanut (rabinato) da la certificación oficial estatal, mientras que organizaciones como el Badatz mantienen estándares adicionales que ciertas comunidades consideran más estrictos, generando a veces dos niveles de certificación sobre un mismo producto.</li>
+<li><strong>Europa:</strong> certificadoras como la Beth Din de distintas ciudades (Londres, París, Zúrich) supervisan tanto la producción local como las importaciones, adaptándose a mercados con menor escala industrial que Estados Unidos.</li>
+<li><strong>Latinoamérica:</strong> cada comunidad suele tener su propio Va\'ad Hakashrut (en Buenos Aires, San Pablo, Ciudad de México), que certifica productos locales y también restaurantes, generalmente con un alcance más acotado a su propia ciudad o país.</li>
 </ul>
-<p>Para el consumidor, lo más útil es aprender a reconocer las certificadoras activas en su región. Y ante un símbolo que no conoces, mejor preguntarle al rabino de la comunidad o investigar la reputación de esa agencia antes de confiar a ciegas en un producto. La mayoría de las certificadoras grandes publica listas de productos certificados en sus propios sitios web.</p>',
+
+<h2>Por qué existen tantas agencias en vez de una sola</h2>
+<p>A diferencia de otros sellos de calidad, no existe una autoridad central única para el kashrut a nivel mundial. Cada certificadora responde a su propia cadena de rabinos supervisores, y su reconocimiento se construye con el tiempo, en base a la confianza que le tienen otras comunidades y rabinos. Por eso una certificadora puede ser muy respetada en su país de origen y prácticamente desconocida en otro, sin que eso implique que sea menos seria.</p>
+
+<h2>Qué hacer frente a un sello que no reconocés</h2>
+<p>Para el consumidor, lo más útil es aprender a reconocer las certificadoras activas en su región (repasadas con más detalle en <a href="/articulos/simbolos-certificacion-kosher">símbolos de certificación kosher</a>). Y ante un símbolo que no conocés, mejor preguntarle al rabino de la comunidad o investigar la reputación de esa agencia antes de confiar a ciegas en un producto. La mayoría de las certificadoras grandes publica listas de productos certificados en sus propios sitios web, algo útil especialmente al comprar productos importados.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Un producto certificado en un país es automáticamente aceptado en otro?</strong><br>
+No siempre. Depende del reconocimiento mutuo entre certificadoras y del criterio de cada comunidad; algunas familias solo confían en un listado acotado de agencias, sin importar de dónde venga el producto.</p>
+<p><strong>¿Existe alguna lista global de certificadoras confiables?</strong><br>
+No una sola oficial, pero muchas organizaciones rabínicas regionales publican sus propias listas de agencias que reconocen, que sirven como referencia práctica.</p>
+<p><strong>¿Por qué algunos productos tienen dos o tres sellos distintos?</strong><br>
+Suele pasar cuando el fabricante quiere llegar a mercados o comunidades con distintos criterios de confianza, y busca la aprobación de varias agencias reconocidas en cada región.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>Para reconocer los símbolos más comunes de un vistazo, mirá <a href="/articulos/simbolos-certificacion-kosher">símbolos de certificación kosher más comunes</a>. Y para entender toda la información que puede llevar una etiqueta más allá del sello, está <a href="/articulos/como-leer-etiqueta-kosher">cómo leer una etiqueta de producto kosher</a>.</p>',
             ],
             [
                 'slug' => 'queso-kosher-cuajo',
                 'category' => 'productos',
                 'title' => 'Queso kosher: por qué necesita cuajo especial',
                 'excerpt' => 'El queso es uno de los productos lácteos con más restricciones kosher, principalmente por el origen del cuajo utilizado para elaborarlo.',
-                'content' => '<p>El cuajo (rennet) es la enzima que tradicionalmente se usa para coagular la leche y separar el suero al hacer queso. El problema para el kashrut es que el cuajo tradicional se extrae del estómago de terneros, y para que sea apto ese animal tuvo que ser faenado por shejita, algo que en la industria quesera convencional casi nunca pasa.</p>
+                'content' => '<p>El cuajo (rennet) es la enzima que tradicionalmente se usa para coagular la leche y separar el suero al hacer queso. El problema para el kashrut es que el cuajo tradicional se extrae del estómago de terneros, y para que sea apto ese animal tuvo que ser faenado por <a href="/articulos/shejita-sacrificio-kosher">shejita</a>, algo que en la industria quesera convencional casi nunca pasa.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/queso-kosher-cuajo.jpg" alt="El queso necesita certificación específica por el origen del cuajo, la enzima que coagula la leche." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">El queso necesita certificación específica por el origen del cuajo, la enzima que coagula la leche. Foto: Daderot vía <a href="https://commons.wikimedia.org/wiki/File%3ACheese_display%2C_Cambridge_MA_-_DSC05391.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC0.</figcaption>
 </figure>
-<p>Por eso, prácticamente todo el queso "normal" del mercado no es kosher si no tiene una certificación específica, aunque esté hecho solo con leche y cuajo, porque el origen del cuajo no se puede verificar a simple vista.</p>
+
+<h2>Por qué el queso "normal" casi nunca es kosher por descarte</h2>
+<p>Por eso, prácticamente todo el queso "normal" del mercado no es kosher si no tiene una certificación específica, aunque esté hecho solo con leche y cuajo, porque el origen del cuajo no se puede verificar a simple vista. Ni el color, ni el sabor, ni la textura del queso cambian según el tipo de cuajo usado, así que no hay manera de distinguirlo sin la información del fabricante.</p>
+
+<h2>Las tres alternativas que usan los fabricantes</h2>
 <p>Los fabricantes de queso kosher recurren a alguna de estas opciones:</p>
 <ul>
-<li><strong>Cuajo animal kosher:</strong> extraído de animales faenados por shejita y bajo supervisión rabínica en toda la cadena.</li>
-<li><strong>Cuajo microbiano:</strong> producido por fermentación, sin origen animal, cada vez más común en quesos industriales y kosher.</li>
-<li><strong>Cuajo vegetal:</strong> extraído de ciertas plantas, tradicional en algunas variedades específicas de quesos artesanales.</li>
+<li><strong>Cuajo animal kosher:</strong> extraído de animales faenados por shejita y bajo supervisión rabínica en toda la cadena, desde la faena hasta la extracción de la enzima.</li>
+<li><strong>Cuajo microbiano:</strong> producido por fermentación de hongos o bacterias, sin origen animal, cada vez más común en quesos industriales y kosher por igual, ya que también resuelve el problema para consumidores vegetarianos.</li>
+<li><strong>Cuajo vegetal:</strong> extraído de ciertas plantas (como el cardo), tradicional en algunas variedades específicas de quesos artesanales, sobre todo en la península ibérica.</li>
 </ul>
-<p>Además del cuajo hay otro punto: muchas comunidades exigen que el queso se elabore bajo supervisión judía constante (Gvinat Yisrael) para considerarlo plenamente kosher, un criterio que va más allá del simple análisis de ingredientes. Por eso comprar queso con certificación reconocida es la forma más segura de no equivocarse.</p>',
+
+<h2>Gvinat Yisrael: un criterio que va más allá del cuajo</h2>
+<p>Además del cuajo hay otro punto: muchas comunidades exigen que el queso se elabore bajo supervisión judía constante (Gvinat Yisrael) para considerarlo plenamente kosher, un criterio que va más allá del simple análisis de ingredientes y que se acerca al principio detrás de <a href="/articulos/bishul-akum">bishul akum</a>: no alcanza con que los insumos sean correctos, también importa quién controla el proceso.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Los quesos veganos o "sin lácteos" son automáticamente kosher?</strong><br>
+No necesariamente. Aunque evitan el problema del cuajo animal, hay que revisar el resto de los ingredientes y el equipamiento usado, igual que con cualquier otro producto industrializado.</p>
+<p><strong>¿El queso rallado envasado tiene el mismo riesgo que el queso entero?</strong><br>
+Sí, y a veces más: el proceso de rallado y envasado puede sumar otros ingredientes (antiaglomerantes, conservantes) que también necesitan verificación.</p>
+<p><strong>¿Cómo sé si un queso usa cuajo microbiano o animal si no tiene certificación?</strong><br>
+Sin certificación visible no hay forma confiable de saberlo desde la etiqueta; por eso comprar queso con un sello reconocido es la forma más segura de no equivocarse.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>Para entender el método de faena que determina si el cuajo animal es apto, mirá <a href="/articulos/shejita-sacrificio-kosher">shejita: el sacrificio kosher</a>. Y sobre otro ingrediente de origen animal igual de debatido, está <a href="/articulos/gelatina-kosher">gelatina kosher: el debate halájico</a>.</p>',
             ],
             [
                 'slug' => 'huevos-kosher',
@@ -1026,14 +1060,30 @@ Varía mucho según el presupuesto y el ritmo de cada familia, pero no es raro q
   <img src="/images/articulos/huevos-kosher.jpg" alt="Los huevos son parve, pero hay que revisarlos por manchas de sangre antes de usarlos." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Los huevos son parve, pero hay que revisarlos por manchas de sangre antes de usarlos. Foto: Evan-Amos vía <a href="https://commons.wikimedia.org/wiki/File%3A6-Pack-Chicken-Eggs.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, Public domain.</figcaption>
 </figure>
-<p>El procedimiento es sencillo: al romper el huevo, se mira la yema (y a veces la clara) contra la luz, buscando puntos rojos o manchas. Si aparece sangre, el huevo se descarta entero; si la yema está limpia, se usa con total normalidad.</p>
-<p>Algunos datos extra sobre huevos y kashrut:</p>
+
+<h2>El procedimiento de revisión</h2>
+<p>El procedimiento es sencillo: al romper el huevo, se mira la yema (y a veces la clara) contra la luz, buscando puntos rojos o manchas. Conviene romper cada huevo en un recipiente aparte antes de sumarlo a una mezcla más grande, precisamente para poder descartarlo sin arruinar el resto de la preparación. Si aparece sangre, el huevo se descarta entero; si la yema está limpia, se usa con total normalidad.</p>
+
+<h2>Por qué pasa esto en algunos huevos</h2>
+<p>La mancha de sangre suele originarse por la ruptura de un vaso sanguíneo durante la formación del huevo dentro de la gallina, y no tiene relación con que el huevo esté fertilizado ni con ningún problema de salud del ave. Es más común en huevos de gallinas más viejas, aunque puede aparecer en cualquier huevo sin patrón previsible, por eso la revisión se hace siempre, no solo "cuando parece sospechoso".</p>
+
+<h2>Otros datos sobre huevos y kashrut</h2>
 <ul>
-<li>La cáscara y la clara en general no presentan el mismo riesgo que la yema, aunque la costumbre varía según la comunidad.</li>
-<li>Los huevos de aves no kosher (avestruz, ciertas aves rapaces) tampoco son aptos, tengan sangre o no.</li>
-<li>Los productos industrializados con huevo (pastas, mayonesa) suelen pasar por un control de calidad que detecta automáticamente los huevos con sangre, pero igual necesitan certificación para garantizar que ese control se hizo bien.</li>
+<li>La cáscara y la clara en general no presentan el mismo riesgo que la yema, aunque la costumbre varía según la comunidad: algunas revisan ambas partes con el mismo cuidado.</li>
+<li>Los huevos de aves no kosher (avestruz, ciertas aves rapaces) tampoco son aptos, tengan sangre o no, ya que el problema de fondo es el origen del ave, no la sangre en sí.</li>
+<li>Los productos industrializados con huevo (pastas, mayonesa) suelen pasar por un control de calidad que detecta automáticamente los huevos con sangre mediante ovoscopía, pero igual necesitan certificación para garantizar que ese control se hizo bajo los criterios correctos.</li>
 </ul>
-<p>Es de los hábitos más simples de meter en la rutina diaria de una cocina kosher: revisar cada huevo apenas se rompe, antes de mezclarlo con el resto de los ingredientes.</p>',
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Hay que revisar también los huevos de codorniz o de pata?</strong><br>
+Sí, el mismo criterio aplica a los huevos de cualquier ave kosher, no solo a los de gallina.</p>
+<p><strong>¿Un huevo con una manchita muy chiquita se puede salvar quitando solo esa parte?</strong><br>
+Las opiniones varían según la tradición y el tamaño de la mancha; algunas permiten retirar solo el punto afectado, otras piden descartar el huevo entero. Ante la duda, conviene seguir el criterio más estricto o consultar al rabino.</p>
+<p><strong>¿Los huevos con certificación kosher ya vienen revisados de fábrica?</strong><br>
+No reemplaza la revisión casera: la certificación garantiza el origen del ave y el proceso industrial, pero la revisión de sangre en la yema sigue siendo responsabilidad de quien cocina, salvo en productos industrializados que ya pasaron por ovoscopía certificada.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>Es de los hábitos más simples de meter en la rutina diaria de una cocina kosher: revisar cada huevo apenas se rompe, antes de mezclarlo con el resto de los ingredientes. Para otros pasos prácticos del día a día, mirá <a href="/articulos/armar-cocina-kosher">cómo armar una cocina kosher desde cero</a>. Y sobre otro alimento pareve con reglas propias de revisión, está <a href="/articulos/insectos-frutas-verduras">insectos en frutas y verduras</a>.</p>',
             ],
             [
                 'slug' => 'pescado-kosher-aletas-escamas',
@@ -1046,16 +1096,32 @@ Varía mucho según el presupuesto y el ritmo de cada familia, pero no es raro q
   <img src="/images/articulos/pescado-kosher-aletas-escamas.jpg" alt="Para ser kosher, un pescado debe tener aletas y escamas visibles." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Para ser kosher, un pescado debe tener aletas y escamas visibles. Foto: IndayLiburan vía <a href="https://commons.wikimedia.org/wiki/File%3AFish_stalls_at_Valencia_Public_Market_01.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>Quedan afuera del kashrut, entre otros:</p>
+
+<h2>Qué queda afuera del kashrut</h2>
 <ul>
-<li>Todos los mariscos (camarones, langostinos, cangrejos, mejillones, ostras).</li>
-<li>Pulpo y calamar.</li>
-<li>Tiburón y rape (no tienen escamas verdaderas, según la mayoría de las opiniones halájicas).</li>
-<li>Anguila (sin escamas visibles).</li>
-<li>Pez espada (su estatus es tema de debate histórico entre distintas autoridades rabínicas).</li>
+<li><strong>Todos los mariscos</strong> (camarones, langostinos, cangrejos, mejillones, ostras): no tienen aletas ni escamas bajo ningún criterio.</li>
+<li><strong>Pulpo y calamar:</strong> tampoco cumplen el criterio, al no tener ni aletas ni escamas verdaderas.</li>
+<li><strong>Tiburón y rape:</strong> no tienen escamas verdaderas, según la mayoría de las opiniones halájicas, aunque el tema se debatió durante años entre distintas autoridades rabínicas.</li>
+<li><strong>Anguila:</strong> sin escamas visibles, queda fuera del criterio kosher.</li>
+<li><strong>Pez espada:</strong> su estatus es tema de debate histórico entre distintas autoridades rabínicas, y no todas las certificadoras lo tratan igual.</li>
 </ul>
-<p>A diferencia de la carne, el pescado kosher no necesita shejita ni el proceso de salado para sacar la sangre, así que su preparación es bastante más simple. Aun así, en muchas tradiciones (sobre todo asquenazíes) se lo trata como una categoría aparte de la carne y los lácteos, evitando mezclarlo con carne en el mismo plato, aunque sin exigir la misma separación estricta de utensilios que rige entre carne y leche.</p>
-<p>Al comprar pescado fresco conviene chequear que conserve la piel con escamas visibles, porque algunos fileteados sacan toda la piel y complican la verificación. Por eso muchas pescaderías kosher dejan una parte de piel identificable en el corte.</p>',
+
+<h2>Por qué el pescado kosher es más simple de preparar que la carne</h2>
+<p>A diferencia de la carne, el pescado kosher no necesita <a href="/articulos/shejita-sacrificio-kosher">shejita</a> ni el proceso de salado para sacar la sangre, así que su preparación es bastante más simple. Aun así, en muchas tradiciones (sobre todo asquenazíes) se lo trata como una categoría aparte de la carne y los lácteos, evitando mezclarlo con carne en el mismo plato, aunque sin exigir la misma separación estricta de utensilios que rige entre carne y leche.</p>
+
+<h2>Cómo verificar el pescado al comprarlo</h2>
+<p>Al comprar pescado fresco conviene chequear que conserve la piel con escamas visibles, porque algunos fileteados sacan toda la piel y complican la verificación. Por eso muchas pescaderías kosher dejan una parte de piel identificable en el corte, generalmente una tira cerca de la cola, específicamente para que se pueda confirmar la especie sin dudas.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿El caviar es kosher?</strong><br>
+Depende del pescado de origen: el caviar de esturión es un tema debatido (por las escamas atípicas del esturión), mientras que huevas de otros pescados con aletas y escamas claras suelen ser aceptadas sin problema.</p>
+<p><strong>¿Hace falta certificación para comprar pescado fresco entero en la pescadería?</strong><br>
+No es obligatorio si uno mismo puede verificar la especie por sus características físicas, aunque para productos procesados (filetes sin piel, conservas) sí conviene buscar certificación.</p>
+<p><strong>¿Por qué se evita mezclar pescado con carne si ambos son aptos por separado?</strong><br>
+Es una costumbre, no una prohibición de la misma categoría que carne y leche; se originó por una preocupación de salud histórica que ya no aplica, pero se mantiene como tradición en muchas comunidades.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>Para entender el proceso que sí necesita la carne de mamíferos y aves, mirá <a href="/articulos/shejita-sacrificio-kosher">shejita: el sacrificio kosher</a>. Y sobre otro ingrediente de origen animal con reglas propias, está <a href="/articulos/gelatina-kosher">gelatina kosher: el debate halájico</a>.</p>',
             ],
             [
                 'slug' => 'frutos-secos-contaminacion-cruzada',
@@ -1068,14 +1134,31 @@ Varía mucho según el presupuesto y el ritmo de cada familia, pero no es raro q
   <img src="/images/articulos/frutos-secos-contaminacion-cruzada.jpg" alt="Crudos son parve sin restricciones; el riesgo aparece en el procesamiento industrial." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Crudos son parve sin restricciones; el riesgo aparece en el procesamiento industrial. Foto: Famartin vía <a href="https://commons.wikimedia.org/wiki/File%3A2021-01-06_12_15_43_Cranberry_trail_mix_with_cranberries%2C_peanuts%2C_raisins%2C_walnuts%2C_almonds%2C_sunflower_seeds%2C_pepitas_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>Algunos riesgos habituales:</p>
+
+<h2>Los riesgos más habituales</h2>
 <ul>
-<li><strong>Saborizantes lácteos:</strong> los frutos secos "tostados con manteca" o con cobertura de chocolate con leche dejan de ser pareve.</li>
-<li><strong>Líneas compartidas:</strong> una fábrica puede procesar frutos secos pareve en el mismo equipo donde después procesa productos con leche o derivados cárnicos, dejando trazas no kosher si no hay una limpieza certificada entre lotes.</li>
-<li><strong>Aceites de cocción:</strong> algunos frutos secos fritos usan aceites que también se usan para otros productos no kosher.</li>
-<li><strong>Glaseados y recubrimientos:</strong> los "garrapiñados" o con cobertura dulce pueden llevar gelatina u otros ingredientes de origen animal.</li>
+<li><strong>Saborizantes lácteos:</strong> los frutos secos "tostados con manteca" o con cobertura de chocolate con leche dejan de ser pareve y pasan a la categoría de lácteos, con todas las restricciones de mezcla que eso implica.</li>
+<li><strong>Líneas compartidas:</strong> una fábrica puede procesar frutos secos pareve en el mismo equipo donde después procesa productos con leche o derivados cárnicos, dejando trazas no kosher si no hay una limpieza certificada entre lotes, algo que ninguna etiqueta de ingredientes revela por sí sola.</li>
+<li><strong>Aceites de cocción:</strong> algunos frutos secos fritos usan aceites que también se usan para otros productos no kosher, sin que eso se note en el sabor final.</li>
+<li><strong>Glaseados y recubrimientos:</strong> los "garrapiñados" o con cobertura dulce pueden llevar <a href="/articulos/gelatina-kosher">gelatina</a> u otros ingredientes de origen animal en el glaseado.</li>
 </ul>
-<p>Un fruto seco crudo y sin procesar casi nunca da problemas. Pero los productos industrializados (mix de frutos secos, snacks saborizados, barras de cereal) siempre hay que revisarlos por certificación, sin asumir que son kosher solo porque el ingrediente principal lo es.</p>',
+
+<h2>Por qué esto es más común de lo que parece</h2>
+<p>Muchas fábricas de frutos secos procesan decenas de variedades y presentaciones distintas en la misma planta, para aprovechar el mismo equipamiento: la línea que hoy tuesta almendras naturales puede haber procesado ayer un lote con recubrimiento de chocolate con leche. Sin una limpieza certificada entre lotes (o sin líneas dedicadas exclusivamente a productos pareve), quedan trazas suficientes para que el producto deje de ser considerado pareve bajo un criterio estricto.</p>
+
+<h2>Cómo minimizar el riesgo en la práctica</h2>
+<p>Un fruto seco crudo y sin procesar, comprado a granel de una fuente confiable o en su cáscara original, casi nunca da problemas. Pero los productos industrializados (mix de frutos secos, snacks saborizados, barras de cereal) siempre hay que revisarlos por certificación, sin asumir que son kosher solo porque el ingrediente principal lo es. Esto aplica igual de fuerte a los productos que se venden como "naturales" o "sin aditivos": esas etiquetas no dicen nada sobre el equipamiento compartido.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Los frutos secos a granel sin marca son más riesgosos que los envasados?</strong><br>
+Pueden serlo, porque no hay forma de rastrear el origen o el proceso; conviene comprarlos en comercios de confianza o preferir marcas con certificación visible.</p>
+<p><strong>¿La manteca de maní tiene el mismo riesgo?</strong><br>
+Sí, y a veces más, porque suele llevar aceites y estabilizantes adicionales que también necesitan verificación, más allá del maní en sí.</p>
+<p><strong>¿Los frutos secos activados o remojados en casa cambian algo el análisis?</strong><br>
+No, si el fruto seco de origen era crudo y sin procesar industrialmente, remojarlo en casa no introduce ningún riesgo nuevo de kashrut.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>Para otro ingrediente donde el procesamiento industrial es la clave del problema, mirá <a href="/articulos/gelatina-kosher">gelatina kosher: el debate halájico</a>. Y para entender cómo leer toda la información relevante en una etiqueta, está <a href="/articulos/como-leer-etiqueta-kosher">cómo leer una etiqueta de producto kosher</a>.</p>',
             ],
             [
                 'slug' => 'kashrut-y-veganismo',
