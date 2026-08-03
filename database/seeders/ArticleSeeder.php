@@ -329,37 +329,70 @@ Los electrodomésticos eléctricos generalmente no requieren <a href="/articulos
   <img src="/images/articulos/hagala-utensilios-metal.jpg" alt="La hagalá consiste en sumergir el utensilio en agua hirviendo: como absorbió, así expulsa." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">La hagalá consiste en sumergir el utensilio en agua hirviendo: como absorbió, así expulsa. Foto: W.carter vía <a href="https://commons.wikimedia.org/wiki/File%3ASteam-boiling_green_asparagus.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC0.</figcaption>
 </figure>
-<p>La lógica detrás es simple de recordar: "como absorbió, así expulsa". Si un utensilio absorbió sabor no kosher (o cárnico/lácteo) a través de líquido hirviendo, se purifica de la misma forma, sumergiéndolo en agua hirviendo.</p>
-<p>El procedimiento:</p>
-<ul>
-<li>Limpiar el utensilio a fondo, sin óxido, comida pegada ni suciedad incrustada.</li>
-<li>Esperar 24 horas sin usarlo antes de la hagalá.</li>
-<li>Hervir una olla grande de agua hasta que rompa el hervor.</li>
-<li>Sumergir el utensilio completo en el agua hirviendo, asegurando que todas sus superficies toquen el agua a esa temperatura.</li>
-<li>Sacarlo con algo que no haya tocado comida no kosher, y enjuagarlo con agua fría.</li>
-</ul>
-<p>No todo sirve para hagalá: los utensilios con mango de madera o plástico, o con piezas pegadas con adhesivos que no bancan el agua hirviendo, generalmente quedan afuera y necesitan otro método (o directamente no se pueden kasherizar). Las sartenes de teflón tampoco, porque el recubrimiento se arruina con el calor.</p>',
+
+<h2>El principio detrás del método</h2>
+<p>La lógica detrás es simple de recordar: "como absorbió, así expulsa" (<em>kevol\'o kaj polto</em>). Si un utensilio absorbió sabor no kosher, o cárnico/lácteo, a través de líquido hirviendo, se purifica de la misma forma: sumergiéndolo en agua hirviendo. Es el mismo principio que rige la kasherización del <a href="/articulos/kasherizar-horno">horno</a>, aplicado a un método distinto según el tipo de calor que absorbió cada superficie.</p>
+
+<h2>El procedimiento paso a paso</h2>
+<ol>
+<li>Limpiar el utensilio a fondo, sin óxido, comida pegada ni suciedad incrustada. Cualquier resto que quede en el medio bloquea el contacto directo con el agua e invalida el proceso en esa zona.</li>
+<li>Esperar 24 horas sin usarlo antes de la hagalá. Ese período (<em>eino ben yomo</em>) hace que el sabor absorbido se considere "arruinado" y más fácil de expulsar.</li>
+<li>Hervir una olla grande de agua hasta que rompa el hervor, en un recipiente distinto al que se va a kasherizar.</li>
+<li>Sumergir el utensilio completo en el agua hirviendo, asegurando que todas sus superficies toquen el agua a esa temperatura, incluso los bordes y las hendiduras.</li>
+<li>Sacarlo con algo que no haya tocado comida no kosher, y enjuagarlo con agua fría inmediatamente después.</li>
+</ol>
+
+<h2>Qué utensilios quedan afuera de este método</h2>
+<p>No todo sirve para hagalá: los utensilios con mango de madera o plástico, o con piezas pegadas con adhesivos que no bancan el agua hirviendo, generalmente quedan afuera y necesitan otro método, o directamente no se pueden kasherizar. Las sartenes de teflón tampoco, porque el recubrimiento se arruina con el calor y además el proceso de kasherización requeriría dañar esa superficie de todos modos. Para vidrio y vajilla, en cambio, el criterio es distinto: conviene revisar <a href="/articulos/vajilla-para-pesaj">vajilla para Pesaj</a>, donde se detalla material por material.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿La hagalá sirve para cualquier utensilio que se usó con comida no kosher?</strong><br>
+No siempre. Si el utensilio estuvo en contacto con fuego directo (como una parrilla) en vez de líquido hirviendo, el método correcto es otro: el libun, que requiere calentar el metal hasta que esté al rojo o que arda una brizna de pasto al tocarlo. La hagalá es específicamente para absorción por líquido.</p>
+<p><strong>¿Cuántas veces se puede kasherizar el mismo utensilio?</strong><br>
+No hay un límite fijo por reutilización del método en sí, siempre que el utensilio esté en buen estado. Lo que sí importa cada vez es respetar el período de 24 horas sin uso previo.</p>
+<p><strong>¿Hace falta un rabino presente para hacer la hagalá en casa?</strong><br>
+No es obligatorio para el procedimiento doméstico habitual, pero ante dudas sobre un utensilio específico (material desconocido, uso mixto) conviene consultar antes de proceder.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>Si el utensilio en cuestión es un horno o un microondas, esos casos tienen sus propias reglas: mirá <a href="/articulos/kasherizar-horno">kasherizar el horno</a> y <a href="/articulos/kasherizar-microondas">kasherizar el microondas</a>. Para el lavavajillas, que genera más debate entre las autoridades rabínicas, está <a href="/articulos/kasherizar-lavavajillas">kasherizar el lavavajillas</a>.</p>',
             ],
             [
                 'slug' => 'vajilla-para-pesaj',
                 'category' => 'festividades',
                 'title' => 'Vajilla para Pesaj: todo lo que hay que saber',
                 'excerpt' => 'Durante Pesaj rigen reglas más estrictas que el resto del año en cuanto a utensilios de cocina, debido a la prohibición de jametz.',
-                'content' => '<p>De todas las épocas del año, Pesaj es la que trae las reglas más estrictas, porque a las normas habituales de kashrut se le suma la prohibición total de tener o comer jametz (productos fermentados hechos con alguno de cinco granos: trigo, cebada, avena, centeno y espelta).</p>
+                'content' => '<p>De todas las épocas del año, Pesaj es la que trae las reglas más estrictas, porque a las normas habituales de kashrut se le suma la prohibición total de tener o comer <a href="/articulos/jametz-pesaj">jametz</a> (productos fermentados hechos con alguno de cinco granos: trigo, cebada, avena, centeno y espelta).</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/vajilla-para-pesaj.jpg" alt="Muchas familias tienen un juego de vajilla exclusivo para Pesaj, guardado el resto del año." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Muchas familias tienen un juego de vajilla exclusivo para Pesaj, guardado el resto del año. Foto: Silar vía <a href="https://commons.wikimedia.org/wiki/File%3A020210817_135854_Seder_plates%2C_brass_plate%2C_%C4%86miel%C3%B3w_porcelain%2C_19th-early_20th_century%2C_Category%2C_Passover_in_Galicia.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>El problema es que el jametz pudo haber estado en contacto con ollas, platos y cubiertos durante todo el año. Por eso muchas familias directamente tienen un juego de vajilla aparte, exclusivo para Pesaj, guardado el resto del año: es la opción más simple, y la que evita tener que kasherizar cada vez que llega la festividad.</p>
-<p>Para quienes no tienen vajilla separada, hay margen para kasherizar algunos utensilios, aunque no todos:</p>
+
+<h2>Por qué el jametz de todo el año es el problema</h2>
+<p>El problema es que el jametz pudo haber estado en contacto con ollas, platos y cubiertos durante todo el año: cada vez que se cocinó pasta, se horneó pan o se sirvió una picada con galletitas, esos utensilios absorbieron restos de jametz. Durante el resto del año eso no es un problema, porque el jametz en sí es kosher. Pero durante Pesaj, tener utensilios que puedan "liberar" ese sabor absorbido entra en conflicto con la prohibición total de la festividad.</p>
+
+<h2>La opción más simple: vajilla aparte</h2>
+<p>Por eso muchas familias directamente tienen un juego de vajilla aparte, exclusivo para Pesaj, guardado el resto del año en cajas o en un mueble específico: es la opción más simple, y la que evita tener que kasherizar cada vez que llega la festividad. Con el tiempo, muchas familias arman esta vajilla de a poco, comprando o heredando piezas, hasta tener un juego completo dedicado solo a esos ocho días del año.</p>
+
+<h2>Qué se puede kasherizar, material por material</h2>
+<p>Para quienes no tienen vajilla separada, hay margen para kasherizar algunos utensilios mediante <a href="/articulos/hagala-utensilios-metal">hagalá</a>, aunque no todos:</p>
 <ul>
-<li><strong>Metal sin recubrimiento</strong> (ollas, cubiertos): en general apto para hagalá.</li>
-<li><strong>Vidrio</strong>: según la costumbre, algunos consideran que alcanza con un buen lavado, otros piden inmersión.</li>
-<li><strong>Cerámica y porcelana</strong>: en general no se pueden kasherizar para Pesaj, hay que usar un juego aparte.</li>
-<li><strong>Plástico y goma</strong>: la mayoría de las opiniones no permite kasherizarlos.</li>
+<li><strong>Metal sin recubrimiento</strong> (ollas, cubiertos): en general apto para hagalá, siguiendo el mismo procedimiento que se usa el resto del año.</li>
+<li><strong>Vidrio</strong>: según la costumbre, algunos consideran que alcanza con un buen lavado, otros piden inmersión en agua; conviene consultar el criterio de la comunidad propia.</li>
+<li><strong>Cerámica y porcelana</strong>: en general no se pueden kasherizar para Pesaj bajo ninguna opinión, porque el material poroso retiene lo absorbido de forma permanente; hay que usar un juego aparte.</li>
+<li><strong>Plástico y goma</strong>: la mayoría de las opiniones no permite kasherizarlos, aunque hay excepciones puntuales según el uso que tuvieron.</li>
 </ul>
-<p>Las fechas límite y los métodos exactos cambian según el material y el uso que tuvo cada utensilio durante el año, así que antes de Pesaj conviene revisar la guía de kasherización de tu comunidad o certificadora local.</p>',
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Hace falta comprar vajilla nueva para Pesaj todos los años?</strong><br>
+No, una vez que se arma el juego se reutiliza año a año, guardado el resto del tiempo. Solo hace falta reponer piezas rotas o sumar nuevas si la familia crece.</p>
+<p><strong>¿Los electrodomésticos también necesitan un juego aparte?</strong><br>
+Depende del aparato. Algunos, como la tostadora, en general no se pueden kasherizar y conviene tener una exclusiva para Pesaj; otros, como el horno, tienen un procedimiento específico que está detallado en <a href="/articulos/kasherizar-horno">cómo kasherizar el horno</a>.</p>
+<p><strong>¿Cuánto tiempo antes de Pesaj hay que empezar a preparar la vajilla?</strong><br>
+Conviene arrancar con margen, al menos una semana antes, para tener tiempo de kasherizar sin apuro los utensilios que lo permiten y resolver cualquier duda con el rabino o la certificadora local antes de que empiece la festividad.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>Para entender exactamente qué productos hay que sacar de la cocina antes de la festividad, mirá <a href="/articulos/jametz-pesaj">jametz: qué es y cómo se elimina</a>. Y para saber qué hacer con las ollas y sartenes que se usan a diario, está <a href="/articulos/hagala-utensilios-metal">cómo kasherizar utensilios de metal</a>.</p>',
             ],
             [
                 'slug' => 'jametz-pesaj',
@@ -372,9 +405,26 @@ Los electrodomésticos eléctricos generalmente no requieren <a href="/articulos
   <img src="/images/articulos/jametz-pesaj.jpg" alt="Durante Pesaj rige la prohibición total de comer y de poseer jametz." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Durante Pesaj rige la prohibición total de comer y de poseer jametz. Foto: Ministry of Information Photo Division Photographer vía <a href="https://commons.wikimedia.org/wiki/File%3AAllied_Forces_Celebrate_Passover-_Jewish_Traditions_in_Wartime_Britain%2C_April_1944_D19336.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, Public domain.</figcaption>
 </figure>
-<p>La Torá no solo prohíbe comer jametz durante Pesaj: prohíbe también tenerlo en casa. Por eso, en las semanas previas a la festividad, las familias judías hacen una limpieza a fondo (bedikat jametz) para sacar cualquier resto de pan, harina o producto con jametz de armarios, autos, carteras y cualquier rincón donde pueda haber caído una miga.</p>
-<p>Para el jametz que no conviene tirar (productos caros, o difíciles de reponer), existe la opción de "venderlo" simbólicamente a una persona no judía mediante un contrato llamado <em>mejirat jametz</em>, que suele coordinar el rabino de la comunidad. Ese jametz se guarda cerrado y aparte durante toda la festividad, y se "recompra" automáticamente al terminar Pesaj.</p>
-<p>La noche antes de Pesaj se hace una búsqueda ritual del jametz por toda la casa, generalmente con una vela, una pluma y una cuchara de madera, y a la mañana siguiente se quema lo que se encontró (biur jametz).</p>',
+
+<h2>No solo comerlo: tampoco se puede poseer</h2>
+<p>La Torá no solo prohíbe comer jametz durante Pesaj: prohíbe también tenerlo en casa, aunque sea guardado sin intención de comerlo. Por eso, en las semanas previas a la festividad, las familias judías hacen una limpieza a fondo (<em>bedikat jametz</em>) para sacar cualquier resto de pan, harina o producto con jametz de armarios, autos, carteras y cualquier rincón donde pueda haber caído una miga. Esta limpieza suele empezar varios días antes, habitación por habitación, y se completa la noche previa a Pesaj con una búsqueda ritual final.</p>
+
+<h2>Qué hacer con el jametz que no se puede tirar</h2>
+<p>Para el jametz que no conviene tirar, como bebidas caras o productos difíciles de reponer, existe la opción de "venderlo" simbólicamente a una persona no judía mediante un contrato llamado <em>mejirat jametz</em>, que suele coordinar el rabino de la comunidad, muchas veces de forma online en las semanas previas a la festividad. Ese jametz se guarda cerrado y aparte durante toda la festividad, físicamente presente en la casa pero legalmente "vendido", y se "recompra" automáticamente al terminar Pesaj sin que el dueño tenga que hacer ningún trámite adicional.</p>
+
+<h2>La búsqueda ritual y la quema final</h2>
+<p>La noche antes de Pesaj se hace <em>bedikat jametz</em>, la búsqueda ritual del jametz por toda la casa, generalmente con una vela, una pluma y una cuchara de madera. Es común que, antes de empezar, algún familiar esconda a propósito varios pedacitos de pan envueltos en papel para que la búsqueda no termine en cero (una costumbre extendida en muchas comunidades). A la mañana siguiente se quema lo que se encontró, en un ritual llamado <em>biur jametz</em>, acompañado de una declaración que anula cualquier resto que pudiera haber quedado sin encontrar.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿La avena y el centeno están realmente prohibidos, o solo el trigo?</strong><br>
+Los cinco granos (trigo, cebada, avena, centeno y espelta) están todos incluidos en la prohibición de jametz cuando fermentan con agua. El arroz y el maíz no forman parte de este grupo, aunque en algunas comunidades (principalmente asquenazíes) se evitan por una costumbre aparte llamada <em>kitniot</em>, distinta de la prohibición de jametz en sí.</p>
+<p><strong>¿Qué pasa si encuentro jametz en casa durante Pesaj?</strong><br>
+Debe removerse de inmediato: guardarlo cerrado hasta terminar la festividad (si ya estaba incluido en la venta simbólica) o desecharlo si no lo estaba.</p>
+<p><strong>¿La venta de jametz tiene algún costo?</strong><br>
+Generalmente se hace sin costo o con una contribución simbólica a la sinagoga que coordina el trámite; no es una venta real en términos económicos, sino un mecanismo legal dentro de la halajá.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>Para entender qué pasa con las ollas y platos que estuvieron en contacto con jametz durante el año, mirá <a href="/articulos/vajilla-para-pesaj">vajilla para Pesaj</a>. Y si el tema es directamente calendario y qué se come en cada festividad, está <a href="/articulos/calendario-judio-festividades-alimentacion">calendario judío y alimentación</a>.</p>',
             ],
             [
                 'slug' => 'vino-kosher',
@@ -399,20 +449,38 @@ Los electrodomésticos eléctricos generalmente no requieren <a href="/articulos
                 'category' => 'productos',
                 'title' => 'Gelatina kosher: el debate halájico',
                 'excerpt' => 'La gelatina es uno de los ingredientes más debatidos en el mundo del kashrut, porque su origen animal puede comprometer su estatus.',
-                'content' => '<p>Para hacer gelatina tradicional se hierven huesos, piel y tejido conectivo de animales (por lo general vacas o cerdos) hasta extraer el colágeno. Ahí aparecen dos problemas para el kashrut: el origen del animal (¿es una especie kosher?) y el proceso (¿fue faenado según shejita?).</p>
+                'content' => '<p>Para hacer gelatina tradicional se hierven huesos, piel y tejido conectivo de animales, por lo general vacas o cerdos, hasta extraer el colágeno. Ahí aparecen dos problemas para el kashrut: el origen del animal (¿es una especie kosher?) y el proceso (¿fue faenado según <a href="/articulos/shejita-sacrificio-kosher">shejita</a>?).</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/gelatina-kosher.jpg" alt="Golosinas y postres son los productos donde más aparece la gelatina, el ingrediente más debatido del kashrut." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Golosinas y postres son los productos donde más aparece la gelatina, el ingrediente más debatido del kashrut. Foto: Sakurai Midori vía <a href="https://commons.wikimedia.org/wiki/File%3ASweets_Offering_for_Obon.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 3.0.</figcaption>
 </figure>
-<p>Durante décadas distintas autoridades rabínicas discutieron si la gelatina, al pasar por un proceso químico tan transformador, cambia de estatus halájico (un concepto que se llama <em>panim jadashot</em>, transformación total). Algunas posturas más permisivas sostuvieron que el proceso es tan radical que el producto final ya no cuenta como carne en sentido halájico. La mayoría de las certificadoras kosher grandes, sin embargo, no acepta esa postura para gelatina de origen no kosher.</p>
+
+<h2>El debate de fondo: ¿la transformación cambia el estatus?</h2>
+<p>Durante décadas distintas autoridades rabínicas discutieron si la gelatina, al pasar por un proceso químico tan transformador, cambia de estatus halájico, un concepto que se llama <em>panim jadashot</em> (literalmente "cara nueva", transformación total). Algunas posturas más permisivas sostuvieron que el proceso es tan radical —de hueso y piel a un polvo cristalino sin sabor, color ni textura reconocible del animal original— que el producto final ya no cuenta como carne en sentido halájico. La mayoría de las certificadoras kosher grandes, sin embargo, no acepta esa postura para gelatina de origen no kosher, y exige que el origen del colágeno sea desde el principio de una fuente autorizada.</p>
+
+<h2>Las alternativas que evitan el problema de raíz</h2>
 <p>Por eso, hoy casi todos los productos con certificación kosher que necesitan gelatina (golosinas, postres, cápsulas de medicamentos, malvaviscos) usan alguna de estas alternativas:</p>
 <ul>
-<li>Gelatina de pescado kosher.</li>
-<li>Gelatina bovina de animales faenados según shejita.</li>
-<li>Sustitutos vegetales como agar-agar o pectina, que directamente esquivan el debate.</li>
+<li><strong>Gelatina de pescado kosher:</strong> extraída de especies con aletas y escamas, sin el problema de origen que tiene la gelatina de mamíferos.</li>
+<li><strong>Gelatina bovina de animales faenados según shejita:</strong> resuelve el problema desde el origen, aunque suele ser más cara que la alternativa convencional.</li>
+<li><strong>Sustitutos vegetales</strong> como agar-agar (extraído de algas) o pectina (de frutas), que directamente esquivan el debate porque no tienen origen animal.</li>
 </ul>
-<p>Cuando un producto tiene el sello de una certificadora reconocida, ya no hace falta averiguar de dónde salió la gelatina: ese punto ya fue chequeado.</p>',
+<p>Cuando un producto tiene el sello de una certificadora reconocida, ya no hace falta averiguar de dónde salió la gelatina: ese punto ya fue chequeado como parte del proceso de certificación.</p>
+
+<h2>Dónde aparece la gelatina sin que uno lo note</h2>
+<p>Más allá de golosinas y postres obvios, la gelatina aparece en lugares menos evidentes: cápsulas de medicamentos y suplementos, algunos yogures y postres lácteos para darles textura, vinos y cervezas (usada como clarificante en el proceso de filtrado) y ciertos productos de repostería industrial. Por eso conviene revisar siempre la etiqueta, no asumir que un producto "sin sabor a gelatina" no la contiene.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿La gelatina vegetal (agar-agar) es siempre kosher?</strong><br>
+Por su origen (algas), sí, pero como con cualquier producto conviene verificar que no se haya procesado con equipamiento compartido con ingredientes no kosher.</p>
+<p><strong>¿Por qué algunas marcas de golosinas kosher tienen textura distinta a las convencionales?</strong><br>
+Porque muchas usan gelatina de pescado o sustitutos vegetales en vez de la gelatina bovina o porcina estándar, lo que puede cambiar levemente la textura final.</p>
+<p><strong>¿Un producto etiquetado "gelatina" sin más detalle se puede asumir no kosher?</strong><br>
+Sin certificación visible, no hay forma de saberlo con seguridad desde la etiqueta; lo más seguro es buscar un sello de una certificadora reconocida.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>Para entender el método de faena que determina si la carne o el colágeno de origen animal es apto, mirá <a href="/articulos/shejita-sacrificio-kosher">shejita: el sacrificio kosher</a>. Y para otro ingrediente igual de debatido, está <a href="/articulos/queso-kosher-cuajo">queso kosher y el cuajo</a>.</p>',
             ],
             [
                 'slug' => 'alcohol-bebidas-espirituosas',
@@ -425,14 +493,32 @@ Los electrodomésticos eléctricos generalmente no requieren <a href="/articulos
   <img src="/images/articulos/alcohol-bebidas-espirituosas.jpg" alt="Muchos destilados son kosher por sus ingredientes, pero el añejado en barricas de vino puede cambiar su estatus." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Muchos destilados son kosher por sus ingredientes, pero el añejado en barricas de vino puede cambiar su estatus. Foto: 4028mdk09 vía <a href="https://commons.wikimedia.org/wiki/File%3ABarbestand.JPG" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 3.0.</figcaption>
 </figure>
-<p>Ahora, hay puntos donde conviene prestar atención:</p>
+
+<h2>Los puntos donde conviene prestar atención</h2>
 <ul>
-<li><strong>Añejamiento en barricas de vino o jerez:</strong> algunos whiskies y rones se añejan en barriles que antes tuvieron vino no kosher, y eso puede afectar su estatus.</li>
-<li><strong>Saborizantes y aditivos:</strong> los licores con sabor a crema, chocolate o frutas suelen llevar ingredientes que hay que verificar.</li>
-<li><strong>Bebidas con base de vino</strong> (vermut y algunos licores): heredan todas las restricciones del vino kosher, incluida la supervisión rabínica durante la elaboración.</li>
-<li><strong>Cerveza:</strong> por lo general kosher gracias a sus ingredientes base (agua, cebada, lúpulo, levadura), salvo variantes con saborizantes especiales.</li>
+<li><strong>Añejamiento en barricas de vino o jerez:</strong> algunos whiskies y rones se añejan en barriles que antes tuvieron vino no kosher, y ese contacto puede afectar su estatus, de forma parecida a lo que pasa con las <a href="/articulos/vino-kosher">barricas de vino kosher</a> que solo se reutilizan un número limitado de veces.</li>
+<li><strong>Saborizantes y aditivos:</strong> los licores con sabor a crema, chocolate o frutas suelen llevar ingredientes (colorantes, esencias, estabilizantes) que hay que verificar caso por caso.</li>
+<li><strong>Bebidas con base de vino</strong> (vermut y algunos licores): heredan todas las restricciones del vino kosher, incluida la supervisión rabínica durante toda la elaboración.</li>
+<li><strong>Cerveza:</strong> por lo general kosher gracias a sus ingredientes base (agua, cebada, lúpulo, levadura), salvo variantes con saborizantes especiales o procesos de filtrado con clarificantes de origen animal.</li>
+<li><strong>Licores de crema:</strong> al llevar lácteos, además del análisis de ingredientes hay que tener en cuenta las reglas de mezcla con comidas cárnicas.</li>
 </ul>
-<p>En Pesaj hay que tener cuidado extra: muchos destilados se hacen con granos que son jametz, así que en esa época se necesita una certificación específica de "kosher para Pesaj".</p>',
+
+<h2>Por qué el vodka y el gin suelen ser más simples</h2>
+<p>Los destilados neutros como el vodka o el gin base tienden a generar menos dudas que el whisky o el ron, porque en general no pasan por añejamiento en madera y sus ingredientes son más directos: agua, grano o papa fermentados y destilados varias veces. El gin es un caso intermedio, porque se le agregan botánicos (enebro, cítricos, especias) durante la destilación, y ahí sí conviene revisar que esos aditivos no incluyan ingredientes problemáticos.</p>
+
+<h2>Pesaj: la excepción que lo cambia todo</h2>
+<p>En Pesaj hay que tener cuidado extra: muchos destilados se hacen con granos que son <a href="/articulos/jametz-pesaj">jametz</a>, así que en esa época se necesita una certificación específica de "kosher para Pesaj". Esto afecta especialmente al whisky (hecho con cebada) y a algunos vodkas de grano, mientras que los destilados de papa o de caña de azúcar suelen tener menos restricciones adicionales para la festividad, aunque igual conviene confirmar la certificación específica antes de comprar.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Todo whisky sin certificación kosher visible es automáticamente no apto?</strong><br>
+No necesariamente, pero sin verificación no hay forma de confirmar si se añejó en barricas de vino no kosher o si lleva aditivos problemáticos. Ante la duda, conviene buscar una marca con certificación reconocida.</p>
+<p><strong>¿El alcohol en sí (el etanol) puede no ser kosher?</strong><br>
+El etanol como molécula no tiene problema de kashrut; el tema pasa siempre por el origen de la materia prima fermentada y por los aditivos que se suman después de la destilación.</p>
+<p><strong>¿Los cócteles preparados en un bar común se pueden considerar kosher si todos los ingredientes lo son?</strong><br>
+Depende del criterio de cada persona: además de los ingredientes, entra en juego si el bar usa el mismo equipamiento para preparaciones con ingredientes no kosher, un tema similar al que se plantea en <a href="/articulos/comer-kosher-restaurante">comer kosher en un restaurante no certificado</a>.</p>
+
+<h2>Para seguir leyendo</h2>
+<p>Para entender por qué el vino necesita supervisión tan estricta, algo que también afecta a licores con base de vino, mirá <a href="/articulos/vino-kosher">vino kosher</a>. Y sobre la excepción que permite servir vino sin restricciones, está <a href="/articulos/vino-mevushal">vino mevushal</a>.</p>',
             ],
             [
                 'slug' => 'comer-kosher-restaurante',
