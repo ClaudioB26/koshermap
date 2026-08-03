@@ -182,35 +182,68 @@ Not universally — some more stringent opinions still prefer a fully dedicated 
   <img src="/images/articulos/hagala-utensilios-metal.jpg" alt="Hagalah means immersing the utensil in boiling water: as it absorbed, so it expels." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Hagalah means immersing the utensil in boiling water: as it absorbed, so it expels. Photo: W.carter via <a href="https://commons.wikimedia.org/wiki/File%3ASteam-boiling_green_asparagus.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC0.</figcaption>
 </figure>
-<p>The principle behind hagalah is "as it absorbed, so it releases": if a utensil absorbed non-kosher (or meat/dairy) flavor through boiling liquid, it is purified the same way, by immersing it in boiling water.</p>
-<p>The basic procedure is:</p>
-<ul>
-<li>Clean the utensil thoroughly, with no rust, stuck-on food or caked dirt.</li>
-<li>Wait 24 hours without using the utensil before doing hagalah.</li>
-<li>Bring a large pot of water to a rolling boil.</li>
-<li>Fully submerge the utensil in the boiling water, making sure all its surfaces come into contact with the water at that temperature.</li>
-<li>Remove it with an implement that has not been in contact with non-kosher food, and rinse it in cold water.</li>
-</ul>
-<p>Utensils with wooden or plastic handles, or with parts glued with adhesives that cannot withstand boiling water, are generally not suitable for hagalah and need a different method, or simply cannot be koshered. Non-stick (Teflon) pans also are not usually koshered via hagalah, since the coating is damaged by the heat.</p>',
+
+<h2>The principle behind the method</h2>
+<p>The principle is simple to remember: "as it absorbed, so it releases" (<em>kevol\'o kach polto</em>). If a utensil absorbed non-kosher (or meat/dairy) flavor through boiling liquid, it is purified the same way: by immersing it in boiling water. It is the same principle behind koshering an <a href="/articulos/kasherizar-horno">oven</a>, applied through a different method depending on what kind of heat each surface absorbed.</p>
+
+<h2>The step-by-step procedure</h2>
+<ol>
+<li>Clean the utensil thoroughly, with no rust, stuck-on food or caked dirt. Any residue left behind blocks direct contact with the water and invalidates the process in that spot.</li>
+<li>Wait 24 hours without using the utensil before doing hagalah. That waiting period makes the absorbed flavor count as "spoiled" and easier to expel.</li>
+<li>Bring a large pot of water to a rolling boil, in a container other than the one being koshered.</li>
+<li>Fully submerge the utensil in the boiling water, making sure all its surfaces — including edges and crevices — come into contact with the water at that temperature.</li>
+<li>Remove it with an implement that has not been in contact with non-kosher food, and rinse it immediately in cold water.</li>
+</ol>
+
+<h2>Utensils that this method cannot handle</h2>
+<p>Utensils with wooden or plastic handles, or with parts glued with adhesives that cannot withstand boiling water, are generally not suitable for hagalah and need a different method, or simply cannot be koshered. Non-stick (Teflon) pans also are not usually koshered via hagalah, since the coating is damaged by the heat and the koshering process itself would ruin the surface anyway. Glass and dishware follow a different criterion, covered in <a href="/articulos/vajilla-para-pesaj">Passover dishware</a>, material by material.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Does hagalah work for any utensil that touched non-kosher food?</strong><br>
+Not always. If the utensil was in direct contact with fire (like a grill), the correct method is different: libun, which requires heating the metal until it glows or until a piece of straw touching it would burn. Hagalah is specifically for absorption through liquid.</p>
+<p><strong>How many times can the same utensil be koshered this way?</strong><br>
+There is no fixed limit on reuse, as long as the utensil is in good condition. What matters each time is respecting the 24-hour waiting period beforehand.</p>
+<p><strong>Do I need a rabbi present to do hagalah at home?</strong><br>
+It is not required for routine home use, but when in doubt about a specific utensil (unknown material, mixed use), it is worth consulting first.</p>
+
+<h2>Related reading</h2>
+<p>If the utensil in question is an oven or a microwave, those follow their own rules: see <a href="/articulos/kasherizar-horno">how to kosher an oven</a> and <a href="/articulos/kasherizar-microondas">how to kosher a microwave</a>. For the dishwasher, one of the most debated appliances, see <a href="/articulos/kasherizar-lavavajillas">how to kosher a dishwasher</a>.</p>',
             ],
             'vajilla-para-pesaj' => [
                 'title' => 'Passover dishware: everything you need to know',
                 'excerpt' => 'During Passover, stricter rules than the rest of the year apply to kitchenware, due to the prohibition of chametz.',
-                'content' => '<p>Passover is the holiday with the strictest dietary rules in the Jewish calendar, because in addition to the usual kashrut rules, there is the total prohibition on eating or owning chametz (fermented products from five grains: wheat, barley, oats, rye and spelt).</p>
+                'content' => '<p>Passover is the holiday with the strictest dietary rules in the Jewish calendar, because in addition to the usual kashrut rules, there is the total prohibition on eating or owning <a href="/articulos/jametz-pesaj">chametz</a> (fermented products from five grains: wheat, barley, oats, rye and spelt).</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/vajilla-para-pesaj.jpg" alt="Many families keep a set of dishes used only for Passover, stored away the rest of the year." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Many families keep a set of dishes used only for Passover, stored away the rest of the year. Photo: Silar via <a href="https://commons.wikimedia.org/wiki/File%3A020210817_135854_Seder_plates%2C_brass_plate%2C_%C4%86miel%C3%B3w_porcelain%2C_19th-early_20th_century%2C_Category%2C_Passover_in_Galicia.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>Since chametz may have been in contact with pots, plates and cutlery all year, many families choose to keep a separate set of dishware exclusively for Passover, stored away the rest of the year. This is the simplest option and avoids having to kosher items every year.</p>
-<p>Those without separate Passover dishware can kosher certain utensils:</p>
+
+<h2>Why chametz from the rest of the year is the problem</h2>
+<p>The problem is that chametz may have been in contact with pots, plates and cutlery all year: every time pasta was cooked, bread baked, or crackers served, those utensils absorbed traces of chametz. The rest of the year that is not an issue, since chametz itself is kosher. But during Passover, having utensils that could "release" that absorbed flavor conflicts with the holiday\'s total prohibition.</p>
+
+<h2>The simplest option: a separate set</h2>
+<p>That is why many families keep a separate set of dishware exclusively for Passover, stored away the rest of the year in boxes or a dedicated cabinet: it is the simplest option, and it avoids having to kosher items every year. Over time, many families build this set gradually, buying or inheriting pieces, until they have a complete set dedicated only to those eight days a year.</p>
+
+<h2>What can be koshered, material by material</h2>
+<p>Those without separate Passover dishware can kosher certain utensils through <a href="/articulos/hagala-utensilios-metal">hagalah</a>, though not all of them:</p>
 <ul>
-<li><strong>Uncoated metal</strong> (pots, cutlery): generally suitable for hagalah.</li>
-<li><strong>Glass</strong>: depending on custom, some consider thorough washing sufficient, others require immersion.</li>
-<li><strong>Ceramic and porcelain</strong>: generally cannot be koshered for Passover and a separate set must be used.</li>
-<li><strong>Plastic and rubber</strong>: most opinions do not allow koshering them.</li>
+<li><strong>Uncoated metal</strong> (pots, cutlery): generally suitable for hagalah, following the same procedure used the rest of the year.</li>
+<li><strong>Glass</strong>: depending on custom, some consider thorough washing sufficient, others require immersion; check your community\'s specific criterion.</li>
+<li><strong>Ceramic and porcelain</strong>: generally cannot be koshered for Passover under any opinion, since the porous material retains what it absorbed permanently; a separate set is required.</li>
+<li><strong>Plastic and rubber</strong>: most opinions do not allow koshering them, though there are specific exceptions depending on prior use.</li>
 </ul>
-<p>Before Passover, it is worth consulting the community\'s or local certifier\'s specific koshering guide, since deadlines and exact methods can vary depending on the material and how the utensil was used during the year.</p>',
+
+<h2>Frequently asked questions</h2>
+<p><strong>Do I need to buy new Passover dishware every year?</strong><br>
+No, once the set is assembled it is reused year after year, stored the rest of the time. You only need to replace broken pieces or add new ones as the family grows.</p>
+<p><strong>Do appliances also need a separate set for Passover?</strong><br>
+It depends on the appliance. Some, like a toaster, generally cannot be koshered and it is worth having one dedicated to Passover; others, like the oven, have a specific procedure detailed in <a href="/articulos/kasherizar-horno">how to kosher an oven</a>.</p>
+<p><strong>How far in advance should I start preparing the dishware?</strong><br>
+It is worth starting with some margin, at least a week ahead, to have time to kosher the eligible utensils without rushing and to resolve any doubts with your rabbi or local certifier before the holiday begins.</p>
+
+<h2>Related reading</h2>
+<p>To understand exactly which products need to be removed from the kitchen before the holiday, see <a href="/articulos/jametz-pesaj">chametz: what it is and how it is removed</a>. And to know what to do with the pots and pans used daily throughout the year, see <a href="/articulos/hagala-utensilios-metal">how to kosher metal utensils</a>.</p>',
             ],
             'jametz-pesaj' => [
                 'title' => 'Chametz: what it is and how it is eliminated before Passover',
@@ -221,9 +254,26 @@ Not universally — some more stringent opinions still prefer a fully dedicated 
   <img src="/images/articulos/jametz-pesaj.jpg" alt="During Passover there is a total ban on both eating and owning chametz." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">During Passover there is a total ban on both eating and owning chametz. Photo: Ministry of Information Photo Division Photographer via <a href="https://commons.wikimedia.org/wiki/File%3AAllied_Forces_Celebrate_Passover-_Jewish_Traditions_in_Wartime_Britain%2C_April_1944_D19336.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, Public domain.</figcaption>
 </figure>
-<p>The Torah forbids not only eating chametz during Passover, but also owning it. That is why, in the weeks before the holiday, Jewish families do a deep cleaning of the house (bedikat chametz) to remove any trace of bread, flour or chametz products from cupboards, cars, bags and any corner where a crumb might have fallen.</p>
-<p>For chametz that cannot or should not be thrown away (for example, expensive or hard-to-replace products), there is the option of symbolically "selling" it to a non-Jewish person through a contract called <em>mechirat chametz</em>, usually coordinated by the community rabbi. The sold chametz is kept closed and set aside during the holiday and is automatically "bought back" once Passover ends.</p>
-<p>The night before Passover, a ritual search for chametz is performed throughout the house (bedikat chametz), usually with a candle, a feather and a wooden spoon, followed by burning what was found (biur chametz) the next morning.</p>',
+
+<h2>Not just eating it: owning it is forbidden too</h2>
+<p>The Torah forbids not only eating chametz during Passover, but also owning it, even just stored away with no intention of eating it. That is why, in the weeks before the holiday, Jewish families do a deep cleaning of the house (bedikat chametz) to remove any trace of bread, flour or chametz products from cupboards, cars, bags and any corner where a crumb might have fallen. This cleaning usually starts several days ahead, room by room, and is completed the night before Passover with a final ritual search.</p>
+
+<h2>What to do with chametz you cannot throw away</h2>
+<p>For chametz that cannot or should not be thrown away, such as expensive spirits or hard-to-replace products, there is the option of symbolically "selling" it to a non-Jewish person through a contract called <em>mechirat chametz</em>, usually coordinated by the community rabbi, often online in the weeks before the holiday. The sold chametz is kept closed and set aside during the holiday, physically still in the house but legally "sold," and is automatically "bought back" once Passover ends, with no further action needed from the owner.</p>
+
+<h2>The ritual search and the final burning</h2>
+<p>The night before Passover, a ritual search for chametz (bedikat chametz) is performed throughout the house, usually with a candle, a feather and a wooden spoon. It is common for a family member to hide a few small pieces of bread wrapped in paper beforehand so the search doesn\'t come up empty (a widespread custom in many communities). The next morning, whatever was found is burned in a ritual called <em>biur chametz</em>, accompanied by a declaration nullifying any remaining trace that might not have been found.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Are oats and rye really forbidden, or only wheat?</strong><br>
+All five grains (wheat, barley, oats, rye and spelt) are included in the chametz prohibition when they ferment with water. Rice and corn are not part of this group, though in some communities (mainly Ashkenazi) they are avoided under a separate custom called <em>kitniyot</em>, distinct from the chametz prohibition itself.</p>
+<p><strong>What happens if I find chametz at home during Passover?</strong><br>
+It must be removed immediately: kept closed until the holiday ends if it was already included in the symbolic sale, or discarded if it wasn\'t.</p>
+<p><strong>Does selling chametz cost anything?</strong><br>
+It is generally done free of charge or with a symbolic contribution to the synagogue coordinating it; it is not a real economic sale, but a legal mechanism within halacha.</p>
+
+<h2>Related reading</h2>
+<p>To understand what happens with pots and dishes that were in contact with chametz during the year, see <a href="/articulos/vajilla-para-pesaj">Passover dishware</a>. And for the broader calendar and what is eaten at each holiday, see <a href="/articulos/calendario-judio-festividades-alimentacion">the Jewish calendar and food</a>.</p>',
             ],
             'vino-kosher' => [
                 'title' => 'Kosher wine: why it needs special supervision',
@@ -242,20 +292,38 @@ Not universally — some more stringent opinions still prefer a fully dedicated 
             'gelatina-kosher' => [
                 'title' => 'Kosher gelatin: the halachic debate',
                 'excerpt' => 'Gelatin is one of the most debated ingredients in the kosher world, because its animal origin can compromise its status.',
-                'content' => '<p>Traditional gelatin is obtained by boiling bones, skin and connective tissue from animals — usually cows or pigs — until the collagen is extracted. This raises two problems for kashrut: the animal\'s origin (is it a kosher species?) and the processing method (was the animal slaughtered according to shechita?).</p>
+                'content' => '<p>Traditional gelatin is obtained by boiling bones, skin and connective tissue from animals — usually cows or pigs — until the collagen is extracted. This raises two problems for kashrut: the animal\'s origin (is it a kosher species?) and the processing method (was the animal slaughtered according to <a href="/articulos/shejita-sacrificio-kosher">shechita</a>?).</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/gelatina-kosher.jpg" alt="Sweets and desserts are where gelatin, the most debated ingredient in kashrut, shows up most." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Sweets and desserts are where gelatin, the most debated ingredient in kashrut, shows up most. Photo: Sakurai Midori via <a href="https://commons.wikimedia.org/wiki/File%3ASweets_Offering_for_Obon.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 3.0.</figcaption>
 </figure>
-<p>For decades, various rabbinic authorities debated whether gelatin, having gone through such a radical chemical transformation, changes its halachic status (a concept called <em>panim chadashot</em>, or total transformation). Some more lenient opinions held that the process is so radical that the final product is no longer considered meat in a halachic sense; most mainstream kosher certifiers, however, do not accept this view for gelatin of non-kosher origin.</p>
-<p>That is why most kosher-certified products that require gelatin (candy, desserts, medicine capsules, marshmallows) today use certified alternatives:</p>
+
+<h2>The underlying debate: does the transformation change its status?</h2>
+<p>For decades, various rabbinic authorities debated whether gelatin, having gone through such a radical chemical transformation, changes its halachic status, a concept called <em>panim chadashot</em> (literally "new face," total transformation). Some more lenient opinions held that the process is so radical — from bone and skin to a flavorless, colorless crystalline powder unrecognizable from the original animal — that the final product is no longer considered meat in a halachic sense. Most mainstream kosher certifiers, however, do not accept this view for gelatin of non-kosher origin, and require that the collagen\'s source be authorized from the start.</p>
+
+<h2>The alternatives that avoid the problem at the root</h2>
+<p>That is why most kosher-certified products that require gelatin (candy, desserts, medicine capsules, marshmallows) today use one of these alternatives:</p>
 <ul>
-<li>Kosher fish gelatin.</li>
-<li>Beef gelatin from animals slaughtered according to shechita.</li>
-<li>Plant-based substitutes such as agar-agar or pectin, which avoid the debate entirely.</li>
+<li><strong>Kosher fish gelatin:</strong> extracted from species with fins and scales, avoiding the origin problem that mammal-based gelatin carries.</li>
+<li><strong>Beef gelatin from animals slaughtered according to shechita:</strong> resolves the problem at its source, though it is usually more expensive than the conventional alternative.</li>
+<li><strong>Plant-based substitutes</strong> such as agar-agar (extracted from algae) or pectin (from fruit), which avoid the debate entirely since they have no animal origin.</li>
 </ul>
-<p>When a product carries the seal of a recognized certifier, there is no longer any need to investigate the gelatin\'s origin: the certification guarantees that point has already been verified.</p>',
+<p>When a product carries the seal of a recognized certifier, there is no longer any need to investigate the gelatin\'s origin: the certification guarantees that point has already been checked as part of the certification process.</p>
+
+<h2>Where gelatin shows up without you noticing</h2>
+<p>Beyond obvious sweets and desserts, gelatin appears in less obvious places: medicine and supplement capsules, some yogurts and dairy desserts (for texture), wine and beer (used as a fining agent during filtration) and certain industrial baked goods. It is always worth checking the label rather than assuming a product "without a gelatin taste" doesn\'t contain any.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Is plant-based gelatin (agar-agar) always kosher?</strong><br>
+By origin (algae), yes, but as with any product it is worth verifying it wasn\'t processed on shared equipment with non-kosher ingredients.</p>
+<p><strong>Why do some kosher candy brands have a different texture than conventional ones?</strong><br>
+Because many use fish gelatin or plant-based substitutes instead of standard beef or pork gelatin, which can slightly change the final texture.</p>
+<p><strong>Can a product labeled just "gelatin," with no further detail, be assumed non-kosher?</strong><br>
+Without visible certification, there\'s no reliable way to know; the safest approach is to look for a recognized certifier\'s seal.</p>
+
+<h2>Related reading</h2>
+<p>To understand the slaughter method that determines whether meat or animal-derived collagen is fit, see <a href="/articulos/shejita-sacrificio-kosher">shechita: the kosher slaughter method</a>. And for another equally debated ingredient, see <a href="/articulos/queso-kosher-cuajo">kosher cheese and rennet</a>.</p>',
             ],
             'alcohol-bebidas-espirituosas' => [
                 'title' => 'Alcohol and spirits: what it takes for them to be kosher',
@@ -266,14 +334,32 @@ Not universally — some more stringent opinions still prefer a fully dedicated 
   <img src="/images/articulos/alcohol-bebidas-espirituosas.jpg" alt="Many spirits are kosher by their ingredients, but ageing in wine casks can change their status." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Many spirits are kosher by their ingredients, but ageing in wine casks can change their status. Photo: 4028mdk09 via <a href="https://commons.wikimedia.org/wiki/File%3ABarbestand.JPG" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 3.0.</figcaption>
 </figure>
-<p>However, there are important points to watch for:</p>
+
+<h2>Points that deserve attention</h2>
 <ul>
-<li><strong>Aging in wine or sherry barrels:</strong> some whiskeys and rums are aged in barrels that previously held non-kosher wine, which can compromise their status.</li>
-<li><strong>Flavorings and additives:</strong> cream-, chocolate- or fruit-flavored liqueurs often include ingredients that require verification.</li>
-<li><strong>Wine-based drinks</strong> (such as vermouth or certain liqueurs): inherit all the restrictions of kosher wine, including the need for rabbinic supervision during production.</li>
-<li><strong>Beer:</strong> generally kosher due to its base ingredients (water, barley, hops, yeast), except for variants with special flavorings.</li>
+<li><strong>Aging in wine or sherry barrels:</strong> some whiskeys and rums are aged in barrels that previously held non-kosher wine, and that contact can affect their status, similar to how <a href="/articulos/vino-kosher">kosher wine barrels</a> can only be reused a limited number of times.</li>
+<li><strong>Flavorings and additives:</strong> cream-, chocolate- or fruit-flavored liqueurs often include ingredients (colorings, essences, stabilizers) that require case-by-case verification.</li>
+<li><strong>Wine-based drinks</strong> (such as vermouth or certain liqueurs): inherit all the restrictions of kosher wine, including the need for rabbinic supervision throughout production.</li>
+<li><strong>Beer:</strong> generally kosher due to its base ingredients (water, barley, hops, yeast), except for variants with special flavorings or filtering processes that use animal-derived fining agents.</li>
+<li><strong>Cream liqueurs:</strong> since they contain dairy, beyond checking ingredients you also need to consider the rules on mixing with meat dishes.</li>
 </ul>
-<p>During Passover, extra attention is needed because many spirits are made from grains that constitute chametz, so a specific "kosher for Passover" certification is required during that time of year.</p>',
+
+<h2>Why vodka and gin tend to be simpler</h2>
+<p>Neutral spirits like vodka or base gin tend to raise fewer questions than whiskey or rum, since they generally don\'t go through wood aging and their ingredients are more straightforward: water and fermented, repeatedly distilled grain or potato. Gin is a middle case, since botanicals (juniper, citrus, spices) are added during distillation, and that\'s where it\'s worth checking those additives don\'t include problematic ingredients.</p>
+
+<h2>Passover: the exception that changes everything</h2>
+<p>During Passover, extra attention is needed because many spirits are made from grains that constitute <a href="/articulos/jametz-pesaj">chametz</a>, so a specific "kosher for Passover" certification is required during that time of year. This especially affects whiskey (made from barley) and some grain vodkas, while potato- or sugar-cane-based spirits tend to have fewer additional restrictions for the holiday, though it\'s still worth confirming the specific certification before buying.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Is every whiskey without visible kosher certification automatically unfit?</strong><br>
+Not necessarily, but without verification there is no way to confirm whether it was aged in non-kosher wine barrels or contains problematic additives. When in doubt, look for a recognized certified brand.</p>
+<p><strong>Can the alcohol itself (ethanol) be non-kosher?</strong><br>
+Ethanol as a molecule has no kashrut issue; the concern is always about the origin of the fermented raw material and any additives introduced after distillation.</p>
+<p><strong>Can cocktails made at a regular bar be considered kosher if all the ingredients are?</strong><br>
+It depends on each person\'s criteria: beyond the ingredients, whether the bar uses the same equipment for preparations with non-kosher ingredients also comes into play, similar to the issue raised in <a href="/articulos/comer-kosher-restaurante">eating kosher at a non-certified restaurant</a>.</p>
+
+<h2>Related reading</h2>
+<p>To understand why wine needs such strict supervision, which also affects wine-based liqueurs, see <a href="/articulos/vino-kosher">kosher wine</a>. And for the exception that allows serving wine without restrictions, see <a href="/articulos/vino-mevushal">mevushal wine</a>.</p>',
             ],
             'comer-kosher-restaurante' => [
                 'title' => 'How to eat kosher at a non-certified restaurant',
