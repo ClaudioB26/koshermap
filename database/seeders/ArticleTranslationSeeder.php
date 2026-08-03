@@ -280,14 +280,33 @@ It is generally done free of charge or with a symbolic contribution to the synag
                 'excerpt' => 'Wine has a particular status in halacha: to be kosher, it must be made and handled exclusively by observant Jews.',
                 'content' => '<p>Some time ago we were able to visit a winery in Mendoza that makes kosher wine, and seeing the process up close helps explain why wine has such different rules from every other food. With almost anything else, it is enough for the ingredients and the process to meet certain requirements. Not with wine: halacha requires that everyone who touches it during production, from the moment the grapes come in until the bottle is sealed, be an observant Jew. The reason is historical: wine used to be used in idolatrous rituals, and that is where the restriction comes from.</p>
 
+<h2>A particular division of labor: the winemaker and the yehudi</h2>
+<p>In practice, this creates a fairly particular division of labor. The person who actually knows about wine is the winemaker, who is usually not Jewish (the goy), and who tells the crew what to do at each stage: when to harvest, how to ferment, what blends to make. But the person who actually moves the wine, opens the valves, and does anything that involves touching the product is always an observant Jew (the yehudi). The expert directs, the yehudi executes, and all of it under constant rabbinic supervision at every stage of the process.</p>
+<p>The wine rests in different settings depending on the stage, and part of it is kept in oak barrels, which can be reused about three times before losing their aromatic properties.</p>
+
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/barricas-roble-vino.jpg" alt="A winery barrel room (illustrative image, not the Mendoza winery we visited). In a kosher winery each barrel also carries a seal certifying nobody outside the supervision opened it." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">A winery barrel room (illustrative image, not the Mendoza winery we visited). In a kosher winery each barrel also carries a seal certifying nobody outside the supervision opened it. Photo: Subhashish Panigrahi via <a href="https://commons.wikimedia.org/wiki/File:Oak_barrels_used_for_aging_of_wine_in_a_cellar_at_Grover_Zampa_Vineyard,_Doddaballapura,_Karnataka,_India.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>In practice, this creates a fairly particular division of labor. The person who actually knows about wine is the winemaker, who is usually not Jewish (the goy), and who tells the crew what to do at each stage. But the person who actually moves the wine, opens the valves, and does anything that involves touching the product is always an observant Jew (the yehudi). The expert directs, the yehudi executes, and all of it under constant rabbinic supervision.</p>
-<p>The wine rests in different settings depending on the stage, and part of it is kept in oak barrels, which can be reused about three times before losing their properties. Every barrel is sealed, and that seal is not a minor detail: it is the guarantee that no outsider touched the contents. We were told about a case that shows just how far this goes. In a barrel holding thousands of liters, they noticed the seal was missing right where it should have been closed: it was open. The Rabbi of Buenos Aires himself had to come verify the situation in person, and he ruled that the wine had been left without supervision. The result: those thousands of liters could no longer be sold as kosher.</p>
-<p>There is also a special category, <strong>mevushal wine</strong> ("boiled"), which is wine pasteurized at a specific temperature. Once a wine is mevushal, it keeps its kosher status even if served or touched by a non-Jew afterward. That is why it is so practical for events, restaurants and catering, where there is no way to control who picks up each bottle.</p>
-<p>Today there is good-quality kosher wine in almost every wine-growing region in the world. Mendoza is an important hub in Argentina, and kosher wine is also produced in Chile, France, Spain, Italy and, of course, Israel, certified by the leading rabbinic agencies.</p>',
+
+<p>Every barrel is sealed, and that seal is not a minor detail: it is the guarantee that no outsider touched the contents. We were told about a case that shows just how far this goes. In a barrel holding thousands of liters, they noticed the seal was missing right where it should have been closed: it was open. The Rabbi of Buenos Aires himself had to come verify the situation in person, and he ruled that the wine had been left without supervision. The result: those thousands of liters could no longer be sold as kosher.</p>
+
+<h2>The exception that solves the problem for large events</h2>
+<p>There is also a special category, <strong>mevushal wine</strong> ("boiled"), which is wine pasteurized at a specific temperature. Once a wine is mevushal, it keeps its kosher status even if served or touched by a non-Jew afterward. That is why it is so practical for events, restaurants and catering, where there is no way to control who picks up each bottle. The full detail of how this exception works is in <a href="/articulos/vino-mevushal">mevushal: kosher wine that can be served without restrictions</a>.</p>
+
+<h2>Where it is produced today</h2>
+<p>Today there is good-quality kosher wine in almost every wine-growing region in the world. Mendoza is an important hub in Argentina, and kosher wine is also produced in Chile, France, Spain, Italy and, of course, Israel, certified by the leading rabbinic agencies. The quality of these wines has improved enormously in recent decades: years ago kosher wine had a reputation for being sweet and of limited quality, but today it competes on equal footing with conventional wines in blind tastings.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Why does wine have such different rules from solid food?</strong><br>
+It comes from the restriction\'s historical origin: wine was specifically used in idolatrous ceremonies in ancient times, something that didn\'t happen the same way with other foods, and that specific concern created its own, stricter rule.</p>
+<p><strong>Does grape juice have the same restrictions as wine?</strong><br>
+Yes, unfermented grape juice follows the same handling criteria as wine, precisely because it can ferment and turn into wine.</p>
+<p><strong>How do I know if a bottle of wine has the correct supervision?</strong><br>
+By looking for the seal of a recognized certifier on the label; without that seal there is no way to confirm the full chain of Jewish handling was respected.</p>
+
+<h2>Related reading</h2>
+<p>For the exception that allows serving wine without restrictions on who touches it, see <a href="/articulos/vino-mevushal">mevushal wine</a>. And for other drinks where wine\'s origin also comes into play, see <a href="/articulos/alcohol-bebidas-espirituosas">alcohol and spirits</a>.</p>',
             ],
             'gelatina-kosher' => [
                 'title' => 'Kosher gelatin: the halachic debate',
@@ -862,73 +881,140 @@ No, if the original nut was raw and not industrially processed, soaking it at ho
   <img src="/images/articulos/kashrut-y-veganismo.jpg" alt="A vegan product is not automatically kosher: kashrut also looks at processes and equipment." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">A vegan product is not automatically kosher: kashrut also looks at processes and equipment. Photo: HaJunkiyada via <a href="https://commons.wikimedia.org/wiki/File%3ALiat_Portal_for_Foodie_Disorder_-_Cauliflower_from_SF_farmers%27_market.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>Some examples where a vegan product may not be kosher:</p>
+
+<h2>Cases where a vegan product may not be kosher</h2>
 <ul>
-<li><strong>Shared equipment:</strong> a vegan factory may use the same production line that previously processed meat or dairy products, without the certified cleaning kashrut requires between batches.</li>
-<li><strong>Wine and derivatives:</strong> a vegan wine (without animal-derived fining agents) still requires the entire production process to be in the hands of observant Jews to be kosher.</li>
-<li><strong>Insects:</strong> certain dyes (such as carmine, of animal origin) are forbidden in kosher but are sometimes labeled vegan-friendly by mistake or under different vegan certification standards.</li>
-<li><strong>Bishul akum:</strong> a vegan food cooked entirely by a non-Jewish person may fall under this restriction, depending on how the product is classified.</li>
+<li><strong>Shared equipment:</strong> a vegan factory may use the same production line that previously processed meat or dairy products, without the certified cleaning kashrut requires between batches, a problem similar to what\'s seen in <a href="/articulos/frutos-secos-contaminacion-cruzada">nuts and cross-contamination</a>.</li>
+<li><strong>Wine and derivatives:</strong> a vegan wine (without animal-derived fining agents) still requires the entire production process to be in the hands of observant Jews to be kosher, as explained in <a href="/articulos/vino-kosher">kosher wine</a>.</li>
+<li><strong>Insects:</strong> certain dyes (such as carmine, of animal origin, extracted from an insect) are forbidden in kosher but are sometimes labeled vegan-friendly by mistake or under different vegan certification standards.</li>
+<li><strong>Bishul akum:</strong> a vegan food cooked entirely by a non-Jewish person may fall under this restriction, depending on how the product is classified (see <a href="/articulos/bishul-akum">bishul akum</a>).</li>
 </ul>
-<p>Conversely, it is also true that many pareve kosher products are, in fact, vegan. But the equivalence is not automatic in either direction: the safest approach is always to look for explicit kosher certification, rather than assuming "vegan" equals "kosher."</p>',
+
+<h2>Why vegan and kosher certifications don\'t fully overlap</h2>
+<p>Vegan certifications focus almost exclusively on ingredient origin: no meat, dairy, egg, honey or animal derivatives of any kind. Kashrut looks at that too, but also reviews the full process: what equipment was used, who was present at certain cooking stages, and whether there was contact with non-kosher products anywhere along the chain. These are verification systems with different goals, even though they overlap on many products.</p>
+
+<h2>The other direction: kosher isn\'t always vegan</h2>
+<p>And the reverse is also true: many pareve kosher products end up being vegan, because "pareve" already excludes meat and dairy. But a product can be kosher and not vegan with no contradiction at all: a yogurt with kosher dairy certification, for example, is perfectly valid for kashrut and not suitable for vegans.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Is there a certification that combines both criteria into a single seal?</strong><br>
+Some certifiers offer combined indications ("Kosher Pareve" alongside a vegan seal from the same manufacturer), but these are two separate verification processes, not a single procedure.</p>
+<p><strong>Does a 100% vegan restaurant need a separate kosher certification to be trustworthy?</strong><br>
+Yes, if it seeks to be considered kosher: the fact that every dish is vegan doesn\'t automatically resolve the equipment issue or who is doing the cooking.</p>
+<p><strong>Is honey vegan or kosher?</strong><br>
+Honey is kosher (a notable exception, since it comes from an insect but halacha permits it), but it is not vegan, since most vegan certifications exclude any animal-derived product, including insects.</p>
+
+<h2>Related reading</h2>
+<p>To understand why wine needs such particular supervision, even when vegan, see <a href="/articulos/vino-kosher">kosher wine</a>. And on the cross-contamination risk in seemingly simple products, see <a href="/articulos/frutos-secos-contaminacion-cruzada">nuts and kashrut</a>.</p>',
             ],
             'separar-la-jala' => [
                 'title' => 'How to separate challah',
                 'excerpt' => 'Separating challah is a specific commandment that applies when kneading dough in large quantities, rooted in the Temple offerings.',
                 'content' => '<p>Separating challah (hafrashat challah) is a biblical commandment that originally required giving a portion of bread dough to the priests (kohanim) of the Temple in Jerusalem. After the Temple\'s destruction, the practice changed: today, instead of being given away, the separated portion is burned or discarded respectfully.</p>
 
+<h2>When this mitzvah applies</h2>
+<p>This mitzvah applies when kneading a significant amount of dough made with one of the five grains (wheat, barley, oats, rye or spelt) — the exact minimum amount (generally around 1.2 kg of flour) varies depending on which halachic opinion is followed. Below that amount, separating is not obligatory, though some customs do it anyway without the blessing.</p>
+
+<h2>The step-by-step process</h2>
+<ol>
+<li>Knead the bread dough normally, until it reaches the required minimum amount.</li>
+<li>Separate a small portion (traditionally olive-sized or larger, depending on custom).</li>
+<li>Recite the corresponding blessing before separating the portion, if the amount of dough reaches the minimum that requires it.</li>
+<li>Burn the separated portion (wrapped in aluminum foil, in the oven) or discard it in a way that it is not used for regular consumption.</li>
+</ol>
+<p>This practice is why many certified industrial kosher bakeries separate challah as part of their production process, and why many Jewish women and families do it at home whenever they bake bread or challah for Shabbat in sufficient quantity.</p>
+
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/jala-shabat.jpg" alt="Braided challah ready for Shabbat, with the cup of wine and the salt. The cloth covering it is part of the Shabbat table custom." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Braided challah ready for Shabbat, with the cup of wine and the salt. The cloth covering it is part of the Shabbat table custom. Photo: HaJunkiyada via <a href="https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Challah_for_Shabbat_with_wine_and_salt.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>This mitzvah applies when kneading a significant amount of dough made with one of the five grains (wheat, barley, oats, rye or spelt) — the exact minimum amount (generally around 1.2 kg of flour) varies depending on which halachic opinion is followed.</p>
-<p>The basic process is:</p>
-<ul>
-<li>Knead the bread dough normally, until it reaches the required minimum amount.</li>
-<li>Separate a small portion (traditionally olive-sized or larger, depending on custom).</li>
-<li>Recite the corresponding blessing before separating the portion.</li>
-<li>Burn the separated portion (wrapped in aluminum foil, in the oven) or discard it in a way that it is not used for regular consumption.</li>
-</ul>
-<p>This practice is why many certified industrial kosher bakeries separate challah as part of their production process, and why many Jewish women and families do it at home whenever they bake bread or challah for Shabbat in sufficient quantity.</p>
-<p>In many homes this becomes a special moment. In ours, for instance, the girls always try to reach the minimum amount of dough specifically so they can separate the challah with a blessing, since doing it with the berachah carries extra meaning. Beyond the technical requirement, it ends up being a family ritual built around the oven.</p>',
+
+<h2>A family ritual, beyond the technical requirement</h2>
+<p>In many homes this becomes a special moment. In ours, for instance, the girls always try to reach the minimum amount of dough specifically so they can separate the challah with a blessing, since doing it with the berachah carries extra meaning. Beyond the technical requirement, it ends up being a family ritual built around the oven.</p>
+<p>Over time, many families turn this moment into an almost weekly custom, especially when baking bread or challah for Shabbat: the older girls in the house take charge of calculating the amount of flour to make sure they reach the minimum, and the moment of separating the portion with the blessing becomes a fixed part of the Friday routine.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Do I need to separate challah if I only knead a small amount, for a small family?</strong><br>
+If the minimum amount of flour isn\'t reached, separation isn\'t obligatory according to halacha, though some families do it anyway, without the blessing, as a custom.</p>
+<p><strong>Can challah be separated from dough that isn\'t specifically for bread (for example, pastries)?</strong><br>
+Yes, the mitzvah applies to any dough made with the five grains that reaches the minimum amount, not just traditional bread.</p>
+<p><strong>What happens if I forget to separate the challah before baking?</strong><br>
+It can be separated even after the bread is baked, though it\'s best to do it beforehand; consult a rabbi if this specific doubt comes up.</p>
+
+<h2>Related reading</h2>
+<p>If you want to go deeper, the <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">Orthodox Union\'s guide</a> covers the laws of hafrashat challah with sources, and you can check the <a href="https://en.wikipedia.org/wiki/Challah" target="_blank" rel="noopener">Wikipedia entry on challah</a> for historical context and regional variations of the bread. On other holidays and food customs in the Jewish calendar, see <a href="/articulos/calendario-judio-festividades-alimentacion">the Jewish calendar and holidays</a>.</p>',
             ],
             'calendario-judio-festividades-alimentacion' => [
                 'title' => 'The Jewish calendar and the holidays that affect kosher eating',
                 'excerpt' => 'Several Jewish holidays have their own food customs, beyond the general rules of kashrut.',
-                'content' => '<p>Besides the kashrut rules that apply all year, the Jewish calendar brings holidays with their own food customs worth knowing:</p>
+                'content' => '<p>Besides the kashrut rules that apply all year, the Jewish calendar brings holidays with their own food customs, and knowing them helps explain why certain products come and go from store shelves at certain times of year.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/calendario-judio-festividades-alimentacion.jpg" alt="Apple, honey and pomegranate: the symbols of Rosh Hashanah, one of the festivals with its own food customs." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Apple, honey and pomegranate: the symbols of Rosh Hashanah, one of the festivals with its own food customs. Photo: Gilabrand via <a href="https://commons.wikimedia.org/wiki/File%3ASymbols_of_Rosh_Hashana.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 3.0.</figcaption>
 </figure>
+
+<h2>A tour through each holiday</h2>
 <ul>
-<li><strong>Rosh Hashanah:</strong> it is customary to eat apple with honey to symbolize a sweet year, and to avoid bitter or sour foods at the festive table.</li>
-<li><strong>Yom Kippur:</strong> a full 25-hour fast day, with no food or drink, except for specific medical exceptions.</li>
-<li><strong>Sukkot:</strong> it is customary to eat in a temporary outdoor hut (sukkah) throughout the holiday week.</li>
-<li><strong>Hanukkah:</strong> a tradition of eating foods fried in oil (such as sufganiyot, filled doughnuts, and latkes, potato pancakes) commemorating the miracle of the oil.</li>
-<li><strong>Purim:</strong> hamantaschen (Haman\'s ears), filled triangular pastries, are prepared, and it is customary to share gift baskets of food (mishloach manot) with friends and family.</li>
-<li><strong>Passover:</strong> the holiday with the most dietary restrictions, centered on the prohibition of chametz, as we saw in detail.</li>
-<li><strong>Shavuot:</strong> a custom of eating dairy foods, with dishes like cheesecake and blintzes (cheese-filled pancakes) taking center stage.</li>
+<li><strong>Rosh Hashanah:</strong> it is customary to eat apple with honey to symbolize a sweet year, and to avoid bitter or sour foods at the festive table. It is also common to eat pomegranate, symbolically counting its seeds as the merits wished for the new year.</li>
+<li><strong>Yom Kippur:</strong> a full 25-hour fast day, with no food or drink, except for specific medical exceptions. The meal before the fast (seudah mafseket) is usually hearty but simple, avoiding very salty foods that cause thirst.</li>
+<li><strong>Sukkot:</strong> it is customary to eat in a temporary outdoor hut (sukkah) throughout the holiday week, recreating the temporary dwellings from the exodus from Egypt.</li>
+<li><strong>Hanukkah:</strong> a tradition of eating foods fried in oil (such as sufganiyot, filled doughnuts, and latkes, potato pancakes) commemorating the miracle of the oil that lasted eight days.</li>
+<li><strong>Purim:</strong> hamantaschen (Haman\'s ears), filled triangular pastries, are prepared, and it is customary to share gift baskets of food (mishloach manot) with friends and family, plus a festive meal (seudah) in the afternoon.</li>
+<li><strong>Passover:</strong> the holiday with the most dietary restrictions, centered on the prohibition of <a href="/articulos/jametz-pesaj">chametz</a>, with matzah as the central food of the whole week.</li>
+<li><strong>Shavuot:</strong> a custom of eating dairy foods, with dishes like cheesecake and blintzes (cheese-filled pancakes) taking center stage, commemorating the giving of the Torah.</li>
 </ul>
-<p>Knowing this calendar helps explain why certain products (such as matzah, sufganiyot or kosher-for-Passover wine) appear with greater availability on shelves and in stores at certain times of the year.</p>',
+
+<h2>Why this affects what you see on shelves</h2>
+<p>That is why products like matzah, sufganiyot or kosher-for-Passover wine appear with much greater availability on shelves and in stores right before each holiday, and often disappear entirely the rest of the year. For anyone unfamiliar with the Jewish calendar, this can seem erratic; in reality it follows a fairly predictable annual cycle once you know the dates.</p>
+
+<h2>The lunar calendar: why the dates "move"</h2>
+<p>The Jewish calendar is lunisolar, which makes holidays fall on different dates of the Gregorian calendar each year, though always around the same season (Passover always in the Northern Hemisphere\'s spring, for example). It\'s worth checking the specific Jewish calendar for each year instead of memorizing a fixed date.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Do all these holidays have the same level of dietary restriction as Passover?</strong><br>
+No, Passover is the strictest in terms of what can and cannot be eaten or owned. The rest have specific food customs, but not the same total prohibition on certain products.</p>
+<p><strong>Are there holidays where you can eat chametz even close to Passover?</strong><br>
+Yes, outside the specific Passover period there is no chametz restriction; the prohibition only applies during the days of that holiday.</p>
+<p><strong>Why don\'t fish or meat have a holiday associated with them like dairy does with Shavuot?</strong><br>
+There\'s no single reason; the custom of eating dairy on Shavuot simply has specific historical and symbolic roots that weren\'t replicated the same way with other foods on other holidays.</p>
+
+<h2>Related reading</h2>
+<p>To go deeper into the holiday with the most dietary rules of the year, see <a href="/articulos/jametz-pesaj">chametz: what it is and how it is removed before Passover</a>. And for the dishware many families set aside specifically for that time, see <a href="/articulos/vajilla-para-pesaj">Passover dishware</a>.</p>',
             ],
             'errores-comunes-empezar-comer-kosher' => [
                 'title' => 'Common mistakes when starting to eat kosher',
                 'excerpt' => 'Adopting kashrut for the first time is a learning process. We go over the most frequent mistakes to avoid from the start.',
-                'content' => '<p>Starting to keep a kosher diet is a process that takes time, and it\'s normal to make mistakes at first. Here are some of the most common ones:</p>
+                'content' => '<p>Starting to keep a kosher diet is a process that takes time, and it\'s normal to make mistakes at first. We go over the most common ones so they\'re easier to avoid from the start.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/errores-comunes-empezar-comer-kosher.jpg" alt="When starting out, the most common mistake is assuming a product is kosher without looking for certification." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">When starting out, the most common mistake is assuming a product is kosher without looking for certification. Photo: Nenad Stojkovic via <a href="https://commons.wikimedia.org/wiki/File%3ACorn_in_a_shopping_trolley._%2851964905166%29.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY 2.0.</figcaption>
 </figure>
+
+<h2>The most frequent mistakes</h2>
 <ul>
-<li><strong>Assuming "natural" or "preservative-free" means kosher:</strong> a product\'s marketing has no direct relation to its kashrut status. You should always look for certification.</li>
-<li><strong>Not checking products that seem obviously pareve:</strong> snacks, baked goods and candy sometimes contain dairy ingredients or gelatin that aren\'t obvious from the product name.</li>
-<li><strong>Mixing meat and dairy utensils by accident:</strong> at first it\'s easy to forget the separation; labeling or using different colors helps a lot during the transition.</li>
-<li><strong>Not checking leafy vegetables for insects:</strong> a step many people new to kashrut are completely unaware of.</li>
-<li><strong>Trusting unknown or unclear certifications:</strong> not every symbol on a package is a real kosher certification; some are quality seals unrelated to kashrut.</li>
-<li><strong>Not asking:</strong> many doubts are resolved quickly with a question to the community rabbi or someone with more experience, instead of guessing.</li>
+<li><strong>Assuming "natural" or "preservative-free" means kosher:</strong> a product\'s marketing has no direct relation to its kashrut status. You should always look for certification, no matter how simple the ingredient list looks.</li>
+<li><strong>Not checking products that seem obviously pareve:</strong> snacks, baked goods and candy sometimes contain dairy ingredients or <a href="/articulos/gelatina-kosher">gelatin</a> that aren\'t obvious from the product name.</li>
+<li><strong>Mixing meat and dairy utensils by accident:</strong> at first it\'s easy to forget the separation; labeling or using different colors helps a lot during the transition, as detailed in <a href="/articulos/armar-cocina-kosher">how to set up a kosher kitchen from scratch</a>.</li>
+<li><strong>Not checking leafy vegetables for insects:</strong> a step many people new to kashrut are completely unaware of, and one that applies especially to leafy greens.</li>
+<li><strong>Trusting unknown or unclear certifications:</strong> not every symbol on a package is a real kosher certification; some are quality seals unrelated to kashrut. It\'s worth learning to tell them apart.</li>
+<li><strong>Not asking:</strong> many doubts are resolved quickly with a question to the community rabbi or someone with more experience, instead of guessing or defaulting to the strictest (or most lenient) option just in case.</li>
 </ul>
-<p>The most important thing is to understand that the transition doesn\'t need to be perfect from day one. Most Jewish communities value the gradual learning process, and there are many resources — including certifiers, rabbis and tools like KosherMap — to support that journey.</p>',
+
+<h2>Why it\'s worth going step by step</h2>
+<p>One of the quietest mistakes is trying to solve everything at once: overhauling the whole kitchen, memorizing every rule and giving up eating out the same day you decide to start. In practice, those who sustain the change long-term tend to move in stages, prioritizing what\'s cooked at home first and leaving more complex decisions, like eating at restaurants or hosting events, for later.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Do I need a go-to certifier from day one?</strong><br>
+It isn\'t essential, but it helps a lot: choosing one or two recognized certifiers as your reference simplifies purchasing decisions from the start, instead of evaluating every seal separately.</p>
+<p><strong>How long does it take to feel comfortable with the basic rules?</strong><br>
+It varies a lot from person to person, but most people report feeling more confident after a few months of consistent practice, especially once checking labels becomes an automatic habit.</p>
+<p><strong>Is there a mistake that\'s especially hard to fix later?</strong><br>
+Repeatedly mixing meat and dairy utensils can complicate the kitchen more long-term than other mistakes, since it may require koshering or replacing pieces; it\'s worth resolving the physical separation as soon as possible.</p>
+
+<h2>Related reading</h2>
+<p>The most important thing is to understand that the transition doesn\'t need to be perfect from day one. Most Jewish communities value the gradual learning process, and there are many resources — including certifiers, rabbis and tools like KosherMap — to support that journey. For the first concrete steps, see <a href="/articulos/armar-cocina-kosher">how to set up a kosher kitchen from scratch</a>, and to know what to look for on every label, see <a href="/articulos/como-leer-etiqueta-kosher">how to read a kosher product label</a>.</p>',
             ],
         ];
     }
