@@ -2629,38 +2629,72 @@ Cela varie beaucoup selon le budget et le rythme de chaque famille, mais il n\'e
             'certificaciones-kosher-mundo' => [
                 'title' => 'Différences entre les certifications cachères à travers le monde',
                 'excerpt' => 'Tous les certificateurs cachères ne suivent pas exactement les mêmes critères. Connaître ces différences aide à choisir des produits en toute confiance.',
-                'content' => '<p>Bien que les principes fondamentaux de la cacherout soient universels, il existe des centaines d\'agences certificatrices dans le monde, et chacune peut avoir des critères légèrement différents sur des sujets spécifiques — par exemple, quel niveau de supervision elle exige pour le bishoul akoum, ou comment elle traite certains additifs chimiques dont l\'origine est difficile à tracer.</p>
+                'content' => '<p>Bien que les principes fondamentaux de la cacherout soient universels, il existe des centaines d\'agences certificatrices dans le monde, et chacune peut avoir des critères légèrement différents sur des sujets spécifiques — par exemple, quel niveau de supervision elle exige pour le <a href="/articulos/bishul-akum">bishoul akoum</a>, ou comment elle traite certains additifs chimiques dont l\'origine est difficile à tracer.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/certificaciones-kosher-mundo.svg" alt="Les principes de la cacherout sont universels, mais chaque région a ses propres agences de certification." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Les principes de la cacherout sont universels, mais chaque région a ses propres agences de certification. Illustration : KosherMap.</figcaption>
 </figure>
-<p>Quelques différences courantes entre régions :</p>
+
+<h2>Comment la certification varie selon la région</h2>
 <ul>
-<li><strong>États-Unis :</strong> abrite les plus grands certificateurs au niveau industriel (OU, OK, Star-K, Kof-K), avec des processus très standardisés pour l\'exportation de masse.</li>
-<li><strong>Israël :</strong> le Rabbanout (rabbinat) offre une certification officielle d\'État, tandis que des organisations comme le Badatz maintiennent des normes additionnelles considérées plus strictes par certaines communautés.</li>
-<li><strong>Europe :</strong> des certificateurs comme le Beth Din de différentes villes (Londres, Paris, Zurich) supervisent à la fois la production locale et les importations.</li>
-<li><strong>Amérique latine :</strong> chaque communauté a généralement son Va\'ad Hakashrut local (par exemple, à Buenos Aires, São Paulo ou Mexico), qui certifie tant les produits locaux que les restaurants.</li>
+<li><strong>États-Unis :</strong> abrite les plus grands certificateurs au niveau industriel (OU, OK, Star-K, Kof-K), avec des processus très standardisés pour l\'exportation de masse. Un même produit certifié là-bas atteint souvent des dizaines de pays sous une forme quasi identique.</li>
+<li><strong>Israël :</strong> le Rabbanout (rabbinat) offre une certification officielle d\'État, tandis que des organisations comme le Badatz maintiennent des normes additionnelles considérées plus strictes par certaines communautés, générant parfois deux niveaux de certification sur un même produit.</li>
+<li><strong>Europe :</strong> des certificateurs comme le Beth Din de différentes villes (Londres, Paris, Zurich) supervisent à la fois la production locale et les importations, en s\'adaptant à des marchés d\'échelle industrielle moindre qu\'aux États-Unis.</li>
+<li><strong>Amérique latine :</strong> chaque communauté a généralement son Va\'ad Hakashrut local (par exemple, à Buenos Aires, São Paulo ou Mexico), qui certifie tant les produits locaux que les restaurants, généralement avec une portée limitée à sa propre ville ou son pays.</li>
 </ul>
-<p>Pour le consommateur, le plus important est d\'apprendre à reconnaître les certificateurs actifs dans sa région et, en cas de doute sur un symbole inconnu, de consulter le rabbin de la communauté ou d\'enquêter sur la réputation de l\'agence avant de faire confiance à un produit. La plupart des grands certificateurs publient des listes publiques de produits certifiés sur leurs sites web.</p>',
+
+<h2>Pourquoi il n\'existe pas une seule agence</h2>
+<p>Contrairement à d\'autres labels de qualité, il n\'existe pas d\'autorité centrale unique pour la cacherout au niveau mondial. Chaque certificateur répond à sa propre chaîne de rabbins superviseurs, et sa reconnaissance se construit avec le temps, sur la confiance que d\'autres communautés et rabbins lui accordent. C\'est pourquoi un certificateur peut être très respecté dans son pays d\'origine et pratiquement inconnu ailleurs, sans que cela signifie qu\'il soit moins sérieux.</p>
+
+<h2>Que faire face à un sceau que vous ne reconnaissez pas</h2>
+<p>Pour le consommateur, le plus important est d\'apprendre à reconnaître les certificateurs actifs dans sa région (détaillés dans <a href="/articulos/simbolos-certificacion-kosher">les symboles de certification cachère</a>). Et en cas de doute sur un symbole inconnu, consulter le rabbin de la communauté ou enquêter sur la réputation de l\'agence avant de faire confiance à un produit. La plupart des grands certificateurs publient des listes publiques de produits certifiés sur leurs sites web, ce qui est particulièrement utile lors de l\'achat de produits importés.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Un produit certifié dans un pays est-il automatiquement accepté dans un autre ?</strong><br>
+Pas toujours. Cela dépend de la reconnaissance mutuelle entre certificateurs et du critère de chaque communauté ; certaines familles ne font confiance qu\'à une liste limitée d\'agences, peu importe la provenance du produit.</p>
+<p><strong>Existe-t-il une liste globale unique de certificateurs fiables ?</strong><br>
+Il n\'existe pas de liste officielle unique, mais de nombreuses organisations rabbiniques régionales publient leurs propres listes d\'agences qu\'elles reconnaissent, qui servent de référence pratique.</p>
+<p><strong>Pourquoi certains produits portent-ils deux ou trois sceaux différents ?</strong><br>
+Cela arrive généralement quand le fabricant veut atteindre des marchés ou communautés aux critères de confiance différents, et recherche l\'approbation de plusieurs agences reconnues dans chaque région.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Pour reconnaître les symboles les plus courants d\'un coup d\'œil, voir <a href="/articulos/simbolos-certificacion-kosher">les symboles de certification cachère les plus courants</a>. Et pour comprendre toutes les informations qu\'une étiquette peut porter au-delà du sceau, voir <a href="/articulos/como-leer-etiqueta-kosher">comment lire une étiquette de produit cachère</a>.</p>',
             ],
             'queso-kosher-cuajo' => [
                 'title' => 'Fromage cachère : pourquoi il nécessite une présure spéciale',
                 'excerpt' => 'Le fromage est l\'un des produits laitiers avec le plus de restrictions cachères, principalement à cause de l\'origine de la présure utilisée pour le fabriquer.',
-                'content' => '<p>La présure (rennet) est l\'enzyme traditionnellement utilisée pour coaguler le lait et séparer le petit-lait dans la fabrication du fromage. Le problème du point de vue de la cacherout est que la présure traditionnelle s\'extrait de l\'estomac de veaux, et pour être apte, cet animal doit avoir été abattu par shehita (la méthode d\'abattage cachère) — chose qui n\'arrive presque jamais dans l\'industrie fromagère conventionnelle.</p>
+                'content' => '<p>La présure (rennet) est l\'enzyme traditionnellement utilisée pour coaguler le lait et séparer le petit-lait dans la fabrication du fromage. Le problème du point de vue de la cacherout est que la présure traditionnelle s\'extrait de l\'estomac de veaux, et pour être apte, cet animal doit avoir été abattu par <a href="/articulos/shejita-sacrificio-kosher">shehita</a> — chose qui n\'arrive presque jamais dans l\'industrie fromagère conventionnelle.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/queso-kosher-cuajo.jpg" alt="Le fromage exige une certification spécifique à cause de l&#039;origine de la présure qui coagule le lait." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Le fromage exige une certification spécifique à cause de l\'origine de la présure qui coagule le lait. Photo: Daderot via <a href="https://commons.wikimedia.org/wiki/File%3ACheese_display%2C_Cambridge_MA_-_DSC05391.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC0.</figcaption>
 </figure>
-<p>C\'est pourquoi pratiquement tout le fromage "ordinaire" du marché, même fait uniquement avec du lait et de la présure, n\'est pas cachère sans certification spécifique, car l\'origine de la présure ne peut être vérifiée à l\'œil nu.</p>
+
+<h2>Pourquoi le fromage "ordinaire" n\'est presque jamais cachère par élimination</h2>
+<p>C\'est pourquoi pratiquement tout le fromage "ordinaire" du marché, même fait uniquement avec du lait et de la présure, n\'est pas cachère sans certification spécifique, car l\'origine de la présure ne peut être vérifiée à l\'œil nu. Ni la couleur, ni le goût, ni la texture du fromage ne changent selon le type de présure utilisée, il n\'y a donc aucun moyen de les distinguer sans information du fabricant.</p>
+
+<h2>Les trois alternatives utilisées par les fabricants</h2>
 <p>Les options utilisées par les fabricants de fromage cachère incluent :</p>
 <ul>
-<li><strong>Présure animale cachère :</strong> extraite d\'animaux abattus selon la shehita et sous supervision rabbinique tout au long de la chaîne.</li>
-<li><strong>Présure microbienne :</strong> produite par fermentation, sans origine animale, de plus en plus courante dans les fromages industriels et cachères.</li>
-<li><strong>Présure végétale :</strong> extraite de certaines plantes, utilisée traditionnellement dans certaines variétés spécifiques de fromages artisanaux.</li>
+<li><strong>Présure animale cachère :</strong> extraite d\'animaux abattus selon la shehita et sous supervision rabbinique tout au long de la chaîne, de l\'abattage à l\'extraction de l\'enzyme.</li>
+<li><strong>Présure microbienne :</strong> produite par fermentation de champignons ou bactéries, sans origine animale, de plus en plus courante à la fois dans les fromages industriels et cachères, car elle résout aussi le problème pour les consommateurs végétariens.</li>
+<li><strong>Présure végétale :</strong> extraite de certaines plantes (comme le chardon), utilisée traditionnellement dans certaines variétés spécifiques de fromages artisanaux, surtout dans la péninsule ibérique.</li>
 </ul>
-<p>Au-delà de la présure, il y a un autre facteur pertinent : de nombreuses communautés exigent que le fromage soit élaboré sous supervision juive constante (Gvinat Yisrael) pour le considérer pleinement cachère, un critère additionnel à la simple analyse des ingrédients. C\'est pourquoi acheter du fromage avec une certification reconnue est le moyen le plus fiable d\'éviter les erreurs.</p>',
+
+<h2>Gvinat Yisrael : un critère qui va au-delà de la présure</h2>
+<p>Au-delà de la présure, il y a un autre facteur pertinent : de nombreuses communautés exigent que le fromage soit élaboré sous supervision juive constante (Gvinat Yisrael) pour le considérer pleinement cachère, un critère additionnel à la simple analyse des ingrédients, proche du principe derrière le <a href="/articulos/bishul-akum">bishoul akoum</a> : avoir les bons ingrédients ne suffit pas, qui supervise le processus compte aussi.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Les fromages végans ou "sans lait" sont-ils automatiquement cachères ?</strong><br>
+Pas nécessairement. Même s\'ils évitent le problème de la présure animale, il faut encore vérifier le reste des ingrédients et l\'équipement utilisé, comme pour tout autre produit industriel.</p>
+<p><strong>Le fromage râpé emballé présente-t-il le même risque qu\'un bloc entier ?</strong><br>
+Oui, et parfois plus : le processus de râpage et d\'emballage peut ajouter d\'autres ingrédients (anti-agglomérants, conservateurs) nécessitant aussi une vérification.</p>
+<p><strong>Comment savoir si un fromage utilise une présure microbienne ou animale sans certification ?</strong><br>
+Sans certification visible, il n\'existe aucun moyen fiable de le savoir depuis l\'étiquette ; c\'est pourquoi acheter du fromage avec un sceau reconnu est le moyen le plus sûr d\'éviter les erreurs.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Pour comprendre la méthode d\'abattage qui détermine si la présure animale est apte, voir <a href="/articulos/shejita-sacrificio-kosher">la shehita : la méthode d\'abattage cachère</a>. Et pour un autre ingrédient d\'origine animale tout aussi débattu, voir <a href="/articulos/gelatina-kosher">la gélatine cachère : le débat halakhique</a>.</p>',
             ],
             'huevos-kosher' => [
                 'title' => 'Œufs cachères : que vérifier avant de les utiliser',
@@ -2671,14 +2705,30 @@ Cela varie beaucoup selon le budget et le rythme de chaque famille, mais il n\'e
   <img src="/images/articulos/huevos-kosher.jpg" alt="Les œufs sont parvé, mais il faut les vérifier pour des taches de sang avant utilisation." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Les œufs sont parvé, mais il faut les vérifier pour des taches de sang avant utilisation. Photo: Evan-Amos via <a href="https://commons.wikimedia.org/wiki/File%3A6-Pack-Chicken-Eggs.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, Public domain.</figcaption>
 </figure>
-<p>La procédure est simple : en cassant l\'œuf, on examine visuellement le jaune (et parfois le blanc) à contre-jour, en cherchant des points rouges ou des taches. Si du sang est trouvé, l\'œuf est entièrement jeté ; si le jaune est propre, l\'œuf est apte à être utilisé normalement.</p>
-<p>Quelques informations supplémentaires sur les œufs et la cacherout :</p>
+
+<h2>La procédure de vérification</h2>
+<p>La procédure est simple : en cassant l\'œuf, on examine visuellement le jaune (et parfois le blanc) à contre-jour, en cherchant des points rouges ou des taches. Il vaut mieux casser chaque œuf dans un récipient à part avant de l\'ajouter à un mélange plus grand, précisément pour pouvoir le jeter sans gâcher le reste de la préparation. Si du sang est trouvé, l\'œuf est entièrement jeté ; si le jaune est propre, l\'œuf est apte à être utilisé normalement.</p>
+
+<h2>Pourquoi cela arrive dans certains œufs</h2>
+<p>La tache de sang provient généralement de la rupture d\'un vaisseau sanguin pendant la formation de l\'œuf à l\'intérieur de la poule, et n\'a aucun rapport avec le fait que l\'œuf soit fécondé ni avec un quelconque problème de santé de l\'oiseau. C\'est plus courant chez les œufs de poules plus âgées, bien que cela puisse apparaître dans n\'importe quel œuf sans motif prévisible, c\'est pourquoi la vérification se fait toujours, pas seulement "quand ça paraît suspect".</p>
+
+<h2>Autres informations sur les œufs et la cacherout</h2>
 <ul>
-<li>La coquille et le blanc présentent généralement le même risque que le jaune, bien que la coutume varie selon la communauté.</li>
-<li>Les œufs d\'oiseaux non cachères (comme l\'autruche ou certains rapaces) ne sont pas aptes non plus, indépendamment de la présence de sang.</li>
-<li>Les produits industriels contenant de l\'œuf (comme les pâtes ou la mayonnaise) passent généralement par un processus de contrôle de qualité incluant la détection automatique d\'œufs avec du sang, mais nécessitent quand même une certification pour garantir que ce contrôle a été bien effectué.</li>
+<li>La coquille et le blanc ne présentent généralement pas le même risque que le jaune, bien que la coutume varie selon la communauté : certaines vérifient les deux parties avec le même soin.</li>
+<li>Les œufs d\'oiseaux non cachères (comme l\'autruche ou certains rapaces) ne sont pas aptes non plus, indépendamment de la présence de sang, car le problème de fond est l\'origine de l\'oiseau, pas le sang en lui-même.</li>
+<li>Les produits industriels contenant de l\'œuf (comme les pâtes ou la mayonnaise) passent généralement par un processus de contrôle de qualité détectant automatiquement les œufs avec du sang par mirage, mais nécessitent quand même une certification pour garantir que ce contrôle a été effectué selon les bons critères.</li>
 </ul>
-<p>C\'est l\'une des habitudes les plus simples à intégrer dans une cuisine cachère quotidienne : vérifier chaque œuf dès qu\'il est cassé, avant de le mélanger avec le reste des ingrédients.</p>',
+
+<h2>Questions fréquentes</h2>
+<p><strong>Faut-il aussi vérifier les œufs de caille ou de cane ?</strong><br>
+Oui, le même critère s\'applique aux œufs de tout oiseau cachère, pas seulement à ceux de poule.</p>
+<p><strong>Un œuf avec une toute petite tache peut-il être sauvé en retirant juste cette partie ?</strong><br>
+Les avis varient selon la tradition et la taille de la tache ; certains permettent de retirer seulement le point affecté, d\'autres exigent de jeter l\'œuf entier. En cas de doute, mieux vaut suivre l\'avis le plus strict ou consulter un rabbin.</p>
+<p><strong>Les œufs certifiés cachères arrivent-ils déjà vérifiés d\'usine ?</strong><br>
+Cela ne remplace pas la vérification à la maison : la certification garantit l\'origine de l\'oiseau et le processus industriel, mais vérifier le jaune pour du sang reste la responsabilité de celui qui cuisine, sauf pour les produits industriels déjà passés par un mirage certifié.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>C\'est l\'une des habitudes les plus simples à intégrer dans une cuisine cachère quotidienne : vérifier chaque œuf dès qu\'il est cassé, avant de le mélanger avec le reste des ingrédients. Pour d\'autres étapes pratiques du quotidien, voir <a href="/articulos/armar-cocina-kosher">comment organiser une cuisine cachère à partir de zéro</a>. Et pour un autre aliment parve avec ses propres règles de vérification, voir <a href="/articulos/insectos-frutas-verduras">insectes dans les fruits et légumes</a>.</p>',
             ],
             'pescado-kosher-aletas-escamas' => [
                 'title' => 'Poisson cachère : nageoires et écailles, les règles de base',
@@ -2689,16 +2739,32 @@ Cela varie beaucoup selon le budget et le rythme de chaque famille, mais il n\'e
   <img src="/images/articulos/pescado-kosher-aletas-escamas.jpg" alt="Pour être casher, un poisson doit avoir des nageoires et des écailles visibles." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Pour être casher, un poisson doit avoir des nageoires et des écailles visibles. Photo: IndayLiburan via <a href="https://commons.wikimedia.org/wiki/File%3AFish_stalls_at_Valencia_Public_Market_01.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>Sont exclus de la cacherout, entre autres :</p>
+
+<h2>Ce qui est exclu de la cacherout</h2>
 <ul>
-<li>Tous les fruits de mer (crevettes, langoustines, crabe, moules, huîtres).</li>
-<li>Poulpe et calamar.</li>
-<li>Requin et lotte (manquent d\'écailles véritables selon la plupart des avis halakhiques).</li>
-<li>Anguille (manque d\'écailles visibles).</li>
-<li>Espadon (son statut fait l\'objet d\'un débat historique entre différentes autorités rabbiniques).</li>
+<li><strong>Tous les fruits de mer</strong> (crevettes, langoustines, crabe, moules, huîtres) : ils n\'ont ni nageoires ni écailles selon aucun critère.</li>
+<li><strong>Poulpe et calamar :</strong> ne répondent pas non plus au critère, n\'ayant ni véritables nageoires ni écailles.</li>
+<li><strong>Requin et lotte :</strong> manquent d\'écailles véritables selon la plupart des avis halakhiques, bien que le sujet ait été débattu pendant des années entre différentes autorités rabbiniques.</li>
+<li><strong>Anguille :</strong> manque d\'écailles visibles, et reste exclue du critère cachère.</li>
+<li><strong>Espadon :</strong> son statut fait l\'objet d\'un débat historique entre différentes autorités rabbiniques, et tous les certificateurs ne le traitent pas de la même façon.</li>
 </ul>
-<p>Une différence importante par rapport à la viande : le poisson cachère ne nécessite ni shehita ni processus de salage pour extraire le sang, ce qui simplifie beaucoup sa préparation. Cependant, dans de nombreuses traditions — surtout ashkénazes — le poisson est traité comme une catégorie distincte de la viande et des produits laitiers, évitant de le combiner avec de la viande dans le même plat (bien qu\'il ne nécessite pas la même séparation stricte des ustensiles que celle régissant viande et lait).</p>
-<p>Lors de l\'achat de poisson frais, il vaut la peine de vérifier qu\'il conserve la peau avec des écailles visibles, car certains filetages enlèvent complètement la peau, rendant la vérification difficile. C\'est pourquoi de nombreuses poissonneries cachères laissent une portion de peau identifiable sur la coupe.</p>',
+
+<h2>Pourquoi le poisson cachère est plus simple à préparer que la viande</h2>
+<p>Une différence importante par rapport à la viande : le poisson cachère ne nécessite ni <a href="/articulos/shejita-sacrificio-kosher">shehita</a> ni processus de salage pour extraire le sang, ce qui simplifie beaucoup sa préparation. Cependant, dans de nombreuses traditions — surtout ashkénazes — le poisson est traité comme une catégorie distincte de la viande et des produits laitiers, évitant de le combiner avec de la viande dans le même plat (bien qu\'il ne nécessite pas la même séparation stricte des ustensiles que celle régissant viande et lait).</p>
+
+<h2>Comment vérifier le poisson lors de l\'achat</h2>
+<p>Lors de l\'achat de poisson frais, il vaut la peine de vérifier qu\'il conserve la peau avec des écailles visibles, car certains filetages enlèvent complètement la peau, rendant la vérification difficile. C\'est pourquoi de nombreuses poissonneries cachères laissent une portion de peau identifiable sur la coupe, généralement une bande près de la queue, précisément pour que l\'espèce puisse être confirmée sans aucun doute.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Le caviar est-il cachère ?</strong><br>
+Cela dépend du poisson d\'origine : le caviar d\'esturgeon est un sujet débattu (à cause des écailles atypiques de l\'esturgeon), tandis que les œufs d\'autres poissons aux nageoires et écailles claires sont généralement acceptés sans problème.</p>
+<p><strong>Faut-il une certification pour acheter du poisson frais entier à la poissonnerie ?</strong><br>
+Ce n\'est pas obligatoire si vous pouvez vous-même vérifier l\'espèce par ses caractéristiques physiques, bien que pour les produits transformés (filets sans peau, conserves), il vaille la peine de chercher une certification.</p>
+<p><strong>Pourquoi évite-t-on de mélanger poisson et viande si les deux sont aptes séparément ?</strong><br>
+C\'est une coutume, pas une interdiction de la même catégorie que viande et lait ; elle est née d\'une préoccupation de santé historique qui ne s\'applique plus, mais elle se maintient comme tradition dans de nombreuses communautés.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Pour comprendre le processus dont la viande de mammifères et de volaille a réellement besoin, voir <a href="/articulos/shejita-sacrificio-kosher">la shehita : la méthode d\'abattage cachère</a>. Et pour un autre ingrédient d\'origine animale aux règles propres, voir <a href="/articulos/gelatina-kosher">la gélatine cachère : le débat halakhique</a>.</p>',
             ],
             'frutos-secos-contaminacion-cruzada' => [
                 'title' => 'Fruits secs et cacherout : risques de contamination croisée',
@@ -2709,14 +2775,31 @@ Cela varie beaucoup selon le budget et le rythme de chaque famille, mais il n\'e
   <img src="/images/articulos/frutos-secos-contaminacion-cruzada.jpg" alt="Crus, ils sont parvé sans restriction ; le risque apparaît lors de la transformation industrielle." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Crus, ils sont parvé sans restriction ; le risque apparaît lors de la transformation industrielle. Photo: Famartin via <a href="https://commons.wikimedia.org/wiki/File%3A2021-01-06_12_15_43_Cranberry_trail_mix_with_cranberries%2C_peanuts%2C_raisins%2C_walnuts%2C_almonds%2C_sunflower_seeds%2C_pepitas_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>Quelques risques courants :</p>
+
+<h2>Les risques les plus courants</h2>
 <ul>
-<li><strong>Arômes laitiers :</strong> les fruits secs "grillés au beurre" ou enrobés de chocolat au lait ne sont plus parve.</li>
-<li><strong>Lignes partagées :</strong> une usine peut transformer des fruits secs parve sur le même équipement utilisé ensuite pour des produits laitiers ou dérivés de viande, générant des traces non cachères en l\'absence de nettoyage certifié entre les lots.</li>
-<li><strong>Huiles de cuisson :</strong> certains fruits secs frits utilisent des huiles partagées avec d\'autres produits non cachères.</li>
-<li><strong>Glaçages et enrobages :</strong> les fruits secs "caramélisés" ou avec un enrobage sucré peuvent contenir de la gélatine ou d\'autres ingrédients d\'origine animale.</li>
+<li><strong>Arômes laitiers :</strong> les fruits secs "grillés au beurre" ou enrobés de chocolat au lait ne sont plus parve et passent dans la catégorie laitière, avec toutes les restrictions de mélange que cela implique.</li>
+<li><strong>Lignes partagées :</strong> une usine peut transformer des fruits secs parve sur le même équipement utilisé ensuite pour des produits laitiers ou dérivés de viande, générant des traces non cachères en l\'absence de nettoyage certifié entre les lots, chose qu\'aucune étiquette d\'ingrédients ne révèle à elle seule.</li>
+<li><strong>Huiles de cuisson :</strong> certains fruits secs frits utilisent des huiles partagées avec d\'autres produits non cachères, sans que cela n\'affecte le goût final.</li>
+<li><strong>Glaçages et enrobages :</strong> les fruits secs "caramélisés" ou avec un enrobage sucré peuvent contenir de la <a href="/articulos/gelatina-kosher">gélatine</a> ou d\'autres ingrédients d\'origine animale dans le glaçage.</li>
 </ul>
-<p>C\'est pourquoi, bien qu\'un fruit sec cru et non transformé pose presque jamais de problème, les produits industriels (mélanges de fruits secs, en-cas aromatisés, barres de céréales) doivent toujours être vérifiés pour leur certification, sans supposer qu\'ils sont automatiquement cachères simplement parce que l\'ingrédient principal l\'est.</p>',
+
+<h2>Pourquoi c\'est plus courant qu\'il n\'y paraît</h2>
+<p>De nombreuses usines de fruits secs transforment des dizaines de variétés et présentations différentes dans la même installation, pour rentabiliser le même équipement : la ligne qui grille aujourd\'hui des amandes nature a pu transformer hier un lot enrobé de chocolat au lait. Sans nettoyage certifié entre les lots (ou sans lignes dédiées exclusivement aux produits parve), il reste assez de résidus pour que le produit ne soit plus considéré parve selon un critère strict.</p>
+
+<h2>Comment minimiser le risque en pratique</h2>
+<p>Un fruit sec cru et non transformé, acheté en vrac auprès d\'une source fiable ou dans sa coque d\'origine, ne pose presque jamais de problème. Mais les produits industriels (mélanges de fruits secs, en-cas aromatisés, barres de céréales) doivent toujours être vérifiés pour leur certification, sans supposer qu\'ils sont automatiquement cachères simplement parce que l\'ingrédient principal l\'est. Cela s\'applique tout autant aux produits commercialisés comme "naturels" ou "sans additifs" : ces mentions ne disent rien sur l\'équipement partagé.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Les fruits secs en vrac sans marque sont-ils plus risqués que ceux emballés ?</strong><br>
+Ils peuvent l\'être, car il n\'y a aucun moyen de tracer l\'origine ou le processus ; mieux vaut les acheter dans des commerces de confiance ou préférer des marques avec certification visible.</p>
+<p><strong>Le beurre de cacahuète présente-t-il le même risque ?</strong><br>
+Oui, et parfois plus, car il contient souvent des huiles et stabilisants supplémentaires nécessitant aussi une vérification, au-delà de la cacahuète elle-même.</p>
+<p><strong>Les fruits secs activés ou trempés à la maison changent-ils l\'analyse ?</strong><br>
+Non, si le fruit sec d\'origine était cru et non transformé industriellement, le tremper à la maison n\'introduit aucun nouveau risque de cacherout.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Pour un autre ingrédient où la transformation industrielle est la clé du problème, voir <a href="/articulos/gelatina-kosher">la gélatine cachère : le débat halakhique</a>. Et pour comprendre comment lire toutes les informations pertinentes sur une étiquette, voir <a href="/articulos/como-leer-etiqueta-kosher">comment lire une étiquette de produit cachère</a>.</p>',
             ],
             'kashrut-y-veganismo' => [
                 'title' => 'Cacherout et véganisme : manger végane équivaut-il à manger cachère ?',
