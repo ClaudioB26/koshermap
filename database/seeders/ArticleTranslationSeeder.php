@@ -89,14 +89,33 @@ class ArticleTranslationSeeder extends Seeder
   <img src="/images/articulos/kasherizar-horno.jpg" alt="Libun, koshering the oven with intense heat, requires a thorough cleaning first and 24 hours without use." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Libun, koshering the oven with intense heat, requires a thorough cleaning first and 24 hours without use. Photo: Brandon Carson from San Carlos, USA via <a href="https://commons.wikimedia.org/wiki/File%3ADouble_oven.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY 2.0.</figcaption>
 </figure>
-<p>The traditional method for ovens is called <em>libun</em> (self-cleaning through intense heat) and consists of:</p>
-<ul>
-<li>Cleaning the oven thoroughly, removing all visible dirt and food residue.</li>
-<li>Not using the oven for 24 hours before koshering it.</li>
-<li>Turning the oven to its highest possible temperature (ideally using the self-cleaning function, if the oven has one) for at least one hour.</li>
-</ul>
-<p>Metal racks and trays can usually be koshered separately by immersion in boiling water (hagalah), while glass or enamel surfaces generally require libun because they are more absorbent materials.</p>
-<p>It is important to consult a rabbi before koshering a particular oven, since the exact procedure can vary depending on the material, model and community custom (minhag). Some modern ovens with special coatings may not be suitable for high-temperature libun, so it is worth checking the manufacturer\'s manual.</p>',
+
+<h2>Why an oven needs such a drastic method</h2>
+<p>An oven\'s interior reaches very high temperatures on every use, so any absorbed residue is considered "baked in" at a much deeper level than in a pot. That is why a milder method like hagalah (boiling water immersion) is not enough here: the oven needs libun, self-cleaning through intense dry heat, which mirrors the same "as it absorbed, so it releases" principle used for metal utensils, just applied through fire instead of water.</p>
+
+<h2>The step-by-step procedure</h2>
+<ol>
+<li>Clean the oven thoroughly, removing all visible dirt and food residue, including the door seal and any corner where grease tends to build up.</li>
+<li>Do not use the oven for 24 hours before koshering it.</li>
+<li>Turn the oven to its highest possible temperature (ideally using the self-cleaning function, if the oven has one) for at least one hour, until the interior surfaces glow.</li>
+</ol>
+
+<h2>Racks, trays and glass surfaces</h2>
+<p>Metal racks and trays can usually be koshered separately by immersion in boiling water (hagalah), while glass or enamel surfaces generally require libun because they are more absorbent materials. Glass, in particular, is one of the most debated materials in kashrut: some opinions treat it as non-absorbent altogether, while others require the same intense heat as metal.</p>
+
+<h2>Ovens that cannot handle libun</h2>
+<p>Some modern ovens, especially those with plastic components, electronic touch panels or special non-stick coatings, are not built to withstand the temperature that libun requires and can be damaged or even become a fire hazard. In those cases, it is better to replace the oven entirely for a fresh kosher start rather than force a koshering method the appliance was not designed for.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Does the self-cleaning cycle by itself count as libun?</strong><br>
+In most opinions, yes, since it reaches the required temperature, but it is worth confirming that the cycle covers every interior surface, including the door.</p>
+<p><strong>Do I need to kosher the oven every time I cook something non-kosher by mistake?</strong><br>
+If it was an isolated event, consulting a rabbi about the specific situation is the safest path, since the answer can depend on the food, the temperature and how long it was inside.</p>
+<p><strong>Can I kosher an oven for both meat and dairy use?</strong><br>
+Many families prefer to assign the oven to a single category from the start, or use separate trays and liners for each use, rather than koshering it repeatedly between uses.</p>
+
+<h2>Related reading</h2>
+<p>For the microwave, which uses a different method based on steam instead of dry heat, see <a href="/articulos/kasherizar-microondas">how to kosher a microwave</a>. For the dishwasher, one of the most debated appliances among rabbinic authorities, see <a href="/articulos/kasherizar-lavavajillas">how to kosher a dishwasher</a>.</p>',
             ],
             'kasherizar-microondas' => [
                 'title' => 'How to kosher a microwave',
@@ -125,14 +144,34 @@ class ArticleTranslationSeeder extends Seeder
   <img src="/images/articulos/kasherizar-lavavajillas.jpg" alt="The dishwasher is one of the most debated appliances: its filters and spray arms hold residue at high temperature." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">The dishwasher is one of the most debated appliances: its filters and spray arms hold residue at high temperature. Photo: Myke2020 via <a href="https://commons.wikimedia.org/wiki/File%3ACountertop_dishwasher_7882.JPG" target="_blank" rel="noopener">Wikimedia Commons</a>, Public domain.</figcaption>
 </figure>
-<p>For this reason, many rabbinic authorities are stricter about koshering dishwashers than other appliances, and some directly discourage using one for both categories (meat and dairy), even on different days. Those who do allow it generally require:</p>
+
+<h2>Why it generates so much rabbinic debate</h2>
+<p>Unlike an oven or a set of pots, a dishwasher has dozens of hidden crevices, a filter that traps food particles directly, and spray arms that recirculate hot water loaded with residue throughout the entire cycle. That combination makes some authorities treat it more strictly than almost any other appliance, and a few discourage using the same unit for both meat and dairy altogether, even on different days.</p>
+
+<h2>The procedure for those who do allow it</h2>
 <ul>
-<li>Thorough cleaning of filters, spray arms and rubber seals.</li>
+<li>Thorough cleaning of filters, spray arms and rubber seals, removing every visible particle by hand.</li>
 <li>Not using the dishwasher for 24 hours before koshering it.</li>
 <li>Running a full empty cycle at the highest possible temperature, ideally with a strong cleaning product.</li>
 <li>In some communities, it is recommended to use separate, interchangeable racks or trays for meat and dairy, rather than koshering the entire appliance between uses.</li>
 </ul>
-<p>Since customs vary quite a bit on this topic — some Sephardic and Ashkenazi communities differ notably — this is one of those cases where it is well worth consulting directly with the congregation\'s rabbi before deciding how to organize the kitchen.</p>',
+
+<h2>The alternative that avoids the problem at the root</h2>
+<p>Many families sidestep the debate entirely by using removable rack baskets or dedicated racks, one for meat and one for dairy, that go in and out of the same machine. Since the food itself never touches the machine\'s walls or filter directly, some rabbinic opinions consider this a much simpler solution than repeated koshering.</p>
+
+<h2>Differences between communities</h2>
+<p>Customs vary quite a bit on this topic — some Sephardic and Ashkenazi communities differ notably in how strict they are about dishwashers specifically. This is one of those cases where it is well worth consulting directly with the congregation\'s rabbi before deciding how to organize the kitchen, rather than assuming the same rule that applies to hagalah for pots also applies here.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Is a dishwasher with a sanitizing high-heat cycle automatically easier to kosher?</strong><br>
+It can help reach the required temperature faster, but the debate is less about temperature and more about the machine\'s internal structure and how food residue circulates inside it.</p>
+<p><strong>Do plastic dishwasher racks need separate koshering?</strong><br>
+Plastic parts are generally treated differently from the metal interior; ask your rabbi about the specific model if this comes up.</p>
+<p><strong>Does using rack baskets fully resolve the issue for every community?</strong><br>
+Not universally — some more stringent opinions still prefer a fully dedicated machine per category. It is worth confirming the criterion your community follows.</p>
+
+<h2>Related reading</h2>
+<p>For the koshering method used on pots, pans and cutlery, see <a href="/articulos/hagala-utensilios-metal">hagalah: how to kosher metal utensils</a>. And for the oven, which follows the same underlying logic through dry heat, see <a href="/articulos/kasherizar-horno">how to kosher an oven</a>.</p>',
             ],
             'hagala-utensilios-metal' => [
                 'title' => 'How to kosher metal utensils (hagalah)',
@@ -239,42 +278,83 @@ class ArticleTranslationSeeder extends Seeder
             'comer-kosher-restaurante' => [
                 'title' => 'How to eat kosher at a non-certified restaurant',
                 'excerpt' => 'Traveling or eating out without a kosher restaurant nearby doesn\'t mean breaking your diet. There are options to stay within the rules.',
-                'content' => '<p>A certified kosher restaurant isn\'t always available, especially when traveling or living in cities with little community infrastructure. Even so, there are strategies to stay within kashrut at regular restaurants.</p>
+                'content' => '<p>A certified kosher restaurant isn\'t always available, especially when traveling or living in cities with little community infrastructure. Even so, there are strategies to stay within kashrut at regular restaurants, and not all of them mean going hungry.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/comer-kosher-restaurante.jpg" alt="Without a certified restaurant nearby, there are still ways to stay within kashrut." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Without a certified restaurant nearby, there are still ways to stay within kashrut. Photo: Sohail1308 via <a href="https://commons.wikimedia.org/wiki/File%3AAl_Fanar_Restaurant.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
+
+<h2>The safest options, from strictest to most flexible</h2>
 <ul>
-<li><strong>Vegetarian or vegan options:</strong> by removing meat and dairy from the plate, the risk is greatly reduced, though it is still necessary to check ingredients (meat broth, butter, animal-based sauces).</li>
-<li><strong>Raw fruits and vegetables:</strong> with no cooking or complex handling, these are usually a safe option almost anywhere.</li>
-<li><strong>Fish with fins and scales:</strong> at simple-cuisine restaurants, plain grilled fish without sauces can be a reasonable alternative for those following a more flexible approach (as long as it is not cooked alongside shellfish or non-kosher meat on the same equipment, depending on personal criteria).</li>
-<li><strong>Bottled and sealed beverages:</strong> water, sodas and juices in their original packaging generally present no problems.</li>
+<li><strong>Bottled and sealed beverages:</strong> water, sodas and juices in their original packaging generally present no problems, no matter where they are bought.</li>
+<li><strong>Raw fruits and vegetables:</strong> with no cooking or complex handling, these are usually the safest option almost anywhere in the world.</li>
+<li><strong>Vegetarian or vegan options:</strong> by removing meat and dairy from the plate, the risk is greatly reduced, though it is still necessary to check for hidden ingredients (meat broth in a vegetable stir-fry, butter in a puree, animal-based sauces).</li>
+<li><strong>Fish with fins and scales:</strong> at simple-cuisine restaurants, plain grilled fish without sauces can be a reasonable alternative for those following a more flexible approach, as long as it is not cooked alongside shellfish or non-kosher meat on the same equipment — this ultimately depends on each person\'s and community\'s criteria.</li>
 </ul>
-<p>Here\'s a very concrete example of how this plays out in practice. We once traveled on vacation to Mar del Plata with the kids still small, and as we came in along Constitución Avenue, my wife remembered we\'d forgotten the crackers. In winter, in that part of the country, finding kosher bread or crackers is practically impossible. What were we going to give the kids? At home we didn\'t usually eat certain packaged snacks, but given the emergency we turned to the Ajdut Kosher list, a guide to approved supermarket-shelf products published by the certifier. We looked through the approved brands and found some Traviata-style crackers that were on the list. That saved us.</p>
-<p>The takeaway: when you travel, having your trusted certifier\'s list of approved products on hand is worth its weight in gold. A huge number of everyday supermarket products are kosher even without a big seal printed on the package, and knowing that list opens up options where it seemed like there were none.</p>
-<p>Each person and community has a different level of strictness about what is considered acceptable outside a certified restaurant (some only eat packaged and sealed products, others accept certain simple preparations). When in doubt, it is best to ask the congregation\'s rabbi which criteria to follow.</p>',
+<p>What almost no opinion allows is meat or poultry from a non-certified restaurant, no matter how the dish looks: both the animal\'s origin and the slaughter method (<a href="/articulos/shejita-sacrificio-kosher">shechita</a>) come into play, and neither can be verified by sight.</p>
+
+<h2>A real example of how this plays out in practice</h2>
+<p>We once traveled on vacation to Mar del Plata with the kids still small, and as we came in along Constitución Avenue, my wife remembered we\'d forgotten the crackers. In winter, in that part of the country, finding kosher bread or crackers is practically impossible. What were we going to give the kids? At home we didn\'t usually eat certain packaged snacks, but given the emergency we turned to the Ajdut Kosher list, a guide to approved supermarket-shelf products published by the certifier. We looked through the approved brands and found some Traviata-style crackers that were on the list. That saved us.</p>
+<p>The takeaway: when you travel, having your trusted certifier\'s list of approved products on hand is worth its weight in gold. A huge number of everyday supermarket products are kosher even without a big seal printed on the package, and knowing that list opens up options where it seemed like there were none. Most certifiers today publish these lists online or through an app, so it is worth saving one to your phone before traveling rather than searching for it once you actually need it.</p>
+
+<h2>Asking in the kitchen: what actually helps</h2>
+<p>If you are going to eat something prepared on the spot, some questions help more than others. Asking a waiter "is this kosher?" rarely works if they don\'t know what the word means. It is more useful to ask something concrete: was this oil used to fry something else before, is the same grill used for meat, is there butter or cream in the preparation? The more specific the question, the more reliable the answer.</p>
+
+<h2>Different levels of strictness, and why they vary</h2>
+<p>Each person and community has a different threshold for what is considered acceptable outside a certified restaurant. Some families only eat packaged and sealed products, no exceptions. Others accept certain simple preparations (a salad, a tea) at regular restaurants, but not elaborate dishes. There is no single correct answer: it depends on family custom and which rabbi each person follows. When in doubt about a specific case, it is best to ask beforehand, before a trip, rather than improvise on the spot.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Is a vegan restaurant automatically acceptable?</strong><br>
+Not necessarily. Having no animal-derived ingredients does not resolve everything: shared equipment and the issue of <a href="/articulos/bishul-akum">bishul akum</a> (food cooked entirely by a non-Jew) are still relevant depending on the opinion followed. We cover this in more detail in <a href="/articulos/kashrut-y-veganismo">kashrut and veganism</a>.</p>
+<p><strong>What do I do if I travel to a city with no Jewish community at all?</strong><br>
+Prioritize packaged and sealed items (with visible certification) you brought with you or can find at a supermarket, plus raw fruits and vegetables. Many travelers keep a stock of certified non-perishables for these situations.</p>
+<p><strong>Do delivery apps show whether a place is kosher?</strong><br>
+Some certifiers have their own apps or online listings of certified restaurants in their region, which tend to be more reliable than trusting a generic delivery app\'s description of a place.</p>
+
+<h2>Related reading</h2>
+<p>To understand what makes a place genuinely certified, see <a href="/articulos/simbolos-certificacion-kosher">kosher certification symbols</a>. And if the goal is to set up your own kitchen so you rely less on eating out, see <a href="/articulos/armar-cocina-kosher">how to set up a kosher kitchen from scratch</a>.</p>',
             ],
             'simbolos-certificacion-kosher' => [
                 'title' => 'The most common kosher certification symbols',
                 'excerpt' => 'OU, OK, Star-K, KSA... there are dozens of kosher certification symbols around the world. We help you recognize the most common ones.',
-                'content' => '<p>When a product goes through the kosher certification process, the certifying agency authorizes the use of a symbol (hechsher) on the packaging that lets it be identified at a glance. There are hundreds of certifiers worldwide, but some are especially well known for their global reach.</p>
+                'content' => '<p>When a product goes through the kosher certification process, the certifying agency authorizes the use of a symbol (hechsher) on the packaging that lets it be identified at a glance. There are hundreds of certifiers worldwide, but some are especially well known for their global reach, and learning to recognize them saves a lot of time at the store.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/simbolos-certificacion-kosher.jpg" alt="A hechsher: the kashrut certificate a rabbinical agency grants to a business or product." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">A hechsher: the kashrut certificate a rabbinical agency grants to a business or product. Photo: Utilisateur:Djampa - User:Djampa via <a href="https://commons.wikimedia.org/wiki/File%3AHechsher_Safed_Rabbinate.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
+
+<h2>The most widely recognized symbols worldwide</h2>
 <ul>
-<li><strong>OU (Orthodox Union):</strong> a "U" inside a circle. It is probably the most recognized kosher symbol worldwide, based in the United States.</li>
-<li><strong>OK Kosher Certification:</strong> a "K" inside a circle, another major U.S. agency.</li>
-<li><strong>Star-K:</strong> a star with a "K" in the center.</li>
-<li><strong>KSA (Kosher Supervision of America):</strong> a certifier with a strong presence in industrial products.</li>
-<li><strong>Badatz:</strong> a seal used by several rabbinic courts in Israel, associated with very high standards of strictness.</li>
-<li><strong>Local certifiers:</strong> in countries like Argentina, Brazil or Mexico there are local community certifiers (such as each kehilah\'s Va\'ad Hakashrut) with their own seals.</li>
+<li><strong>OU (Orthodox Union):</strong> a "U" inside a circle. It is probably the most recognized kosher symbol worldwide, based in the United States, appearing on tens of thousands of products.</li>
+<li><strong>OK Kosher Certification:</strong> a "K" inside a circle, another major U.S. agency, strong in industrial products and additives.</li>
+<li><strong>Star-K:</strong> a star with a "K" in the center, based in Baltimore.</li>
+<li><strong>KSA (Kosher Supervision of America):</strong> a certifier with a strong presence in industrial products and flavorings.</li>
+<li><strong>Badatz:</strong> a seal used by several rabbinic courts in Israel, associated with very high standards of strictness (there are several distinct Badatz bodies, not a single organization).</li>
+<li><strong>Local certifiers:</strong> in countries like Argentina, Brazil or Mexico there are local community certifiers (such as each kehilah\'s Va\'ad Hakashrut) with their own seals, generally recognized only within that community or country.</li>
 </ul>
-<p>Besides the symbol, many labels include an additional letter: "D" (dairy), "M" (meat), "Pareve" (neutral) or "DE" (dairy equipment, made on dairy equipment but without direct dairy ingredients). Knowing these symbols greatly speeds up shopping, especially when traveling to countries where you don\'t speak the local language.</p>
+
+<h2>The letters that accompany the symbol</h2>
+<p>Besides the symbol, many labels include an additional letter: "D" (dairy), "M" (meat), "Pareve" (neutral) or "DE" (dairy equipment, made on dairy equipment but without direct dairy ingredients). This last distinction matters: a "DE" product is not suitable to eat right after meat, even though it contains no dairy ingredients. Knowing these symbols greatly speeds up shopping, especially when traveling to countries where you don\'t speak the local language.</p>
+
+<h2>A hechsher is not a one-time paperwork step: it is constant supervision</h2>
 <p>It\'s worth clarifying something people don\'t always understand: a hechsher isn\'t a one-time paperwork step that stays valid forever. It\'s active, ongoing supervision. We know of a case involving a bakery in Buenos Aires that held certification from a community agency. At one point the supervising rabbi noticed something odd and sent people to check things out, almost like a detective. They found the bakery was buying dulce de leche without supervision, when it was only supposed to use Chalav Yisrael products (dairy made under Jewish supervision). They warned the owner and asked him to fix it. Not long after, unaware he was still being watched closely, he turned up buying regular, uncertified cheese, and that was the last straw: his supervision was pulled. It was all handled quietly, with no scandal, simply by no longer certifying the place.</p>
-<p>The takeaway for consumers is clear: the seal is worth something because someone is genuinely checking, all the time, behind it. That\'s why it\'s worth trusting recognized certifiers and, when you come across an unfamiliar symbol, asking within the community before assuming a product is kosher.</p>',
+<p>The takeaway for consumers is clear: the seal is worth something because someone is genuinely checking, all the time, behind it. That\'s why it\'s worth trusting recognized certifiers and, when you come across an unfamiliar symbol, asking within the community before assuming a product is kosher.</p>
+
+<h2>Why some communities only accept certain seals</h2>
+<p>Not every rabbi or community accepts the same hechsherim. Some criteria are more flexible and trust a wide range of recognized certifiers; others, especially stricter communities, only trust a handful of seals whose standards they know in depth. It is not unusual to see "reliable hechsher lists" that each community publishes for its members. When in doubt about whether a particular seal is accepted, the simplest approach is to ask the congregation\'s rabbi directly.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Can a product with no symbol at all still be kosher?</strong><br>
+Technically yes, if all its ingredients are kosher and it never touched non-kosher equipment, but without certification there is no way to verify that from the outside. That is exactly why the hechsher exists.</p>
+<p><strong>Is every symbol with a "K" trustworthy?</strong><br>
+No. Unlike "OU" or "OK," a plain letter "K" is not trademarked by any specific agency, so any manufacturer can print it without it meaning real supervision. Be cautious of a standalone "K" with no identifiable agency behind it.</p>
+<p><strong>Do symbols mean the same thing in every country?</strong><br>
+The symbol\'s design is usually consistent since it is trademarked by the certifier, but the level of trust each community places in it varies by country and religious stream.</p>
+
+<h2>Related reading</h2>
+<p>To understand the difference between "D," "M" and "Pareve" in detail, see <a href="/articulos/que-significa-pareve">what pareve means</a>. And if you want to read a full label beyond the symbol, see <a href="/articulos/como-leer-etiqueta-kosher">how to read a kosher product label</a>.</p>',
             ],
             'que-significa-pareve' => [
                 'title' => 'Pareve: what it means and why it\'s so common on labels',
@@ -354,20 +434,38 @@ class ArticleTranslationSeeder extends Seeder
             'vino-mevushal' => [
                 'title' => 'Mevushal: kosher wine that can be served without restrictions',
                 'excerpt' => 'Mevushal wine is a special category that allows it to be served at events without requiring that only Jews handle it.',
-                'content' => '<p>As we saw when discussing kosher wine, the general rule requires that only observant Jews handle the wine from production to serving. Mevushal wine ("boiled" or pasteurized) is a practical exception to this rule: once the wine goes through a heating process at a specific minimum temperature, it keeps its kosher status no matter who serves it afterward.</p>
+                'content' => '<p>As we saw when discussing <a href="/articulos/vino-kosher">kosher wine</a>, the general rule requires that only observant Jews handle the wine from production to serving. Mevushal wine ("boiled" or pasteurized) is a practical exception to this rule: once the wine goes through a heating process at a specific minimum temperature, it keeps its kosher status no matter who serves it afterward.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/vino-mevushal.jpg" alt="Mevushal wine is pasteurised, so it keeps its kosher status even when served by a non-Jew." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Mevushal wine is pasteurised, so it keeps its kosher status even when served by a non-Jew. Photo: misbehave via <a href="https://commons.wikimedia.org/wiki/File%3ABottle_%26_glass_of_red_Bordeaux_style_blend.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY 2.0.</figcaption>
 </figure>
-<p>This category exists thanks to a halachic principle according to which wine altered by heat loses the ritual "dignity" that originally motivated the restriction, since historically that concern was aimed at wine\'s use in idolatrous ceremonies — something a boiled wine did not lend itself to in that context.</p>
+
+<h2>Why heat changes everything</h2>
+<p>This category exists thanks to a halachic principle according to which wine altered by heat loses the ritual "dignity" that originally motivated the restriction, since historically that concern was aimed at wine\'s use in idolatrous ceremonies — something a boiled wine did not lend itself to in that context. Once it loses that status, it stops mattering who touches or serves it afterward: it can pass through non-Jewish hands without losing its kosher status.</p>
+
+<h2>Where it is used most</h2>
 <p>Mevushal wine is very popular for:</p>
 <ul>
-<li>Catering and events where the serving staff is not necessarily Jewish.</li>
-<li>Kosher restaurants open to the general public.</li>
-<li>Airlines and hotels that offer kosher options.</li>
+<li><strong>Catering and events:</strong> weddings, bar/bat mitzvahs and receptions where serving staff is not necessarily Jewish.</li>
+<li><strong>Kosher restaurants open to the general public:</strong> lets any waiter serve the wine without special supervision at each table.</li>
+<li><strong>Airlines and hotels</strong> that offer kosher options, where it would be impractical to guarantee only Jewish staff touches every bottle.</li>
+<li><strong>Synagogues and large community events</strong>, where wine passes through many hands during a kiddush.</li>
 </ul>
-<p>Today there are modern flash pasteurization techniques that allow producing high-quality mevushal wine, which historically was harder to achieve without affecting the wine\'s flavor. This has greatly expanded the range of premium mevushal wines available on the market.</p>',
+
+<h2>How it is pasteurized without ruining the flavor</h2>
+<p>For a long time, boiling wine the traditional way affected the flavor considerably, and mevushal had a reputation for being lower quality. Today there are modern flash pasteurization techniques, where the wine is heated to the required minimum temperature for only a few seconds and cooled immediately, something that used to be much harder to achieve without ruining the flavor. This has greatly expanded the range of premium mevushal wines on the market, including labels from well-known wineries that previously only produced non-mevushal wine.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Is every kosher wine sold in supermarkets mevushal?</strong><br>
+No, there are also non-mevushal kosher wines on the general market. Check the label or the certifier\'s website if this matters for your use (for example, if you\'ll serve it at an event with non-Jewish staff).</p>
+<p><strong>Is mevushal lower quality than regular kosher wine?</strong><br>
+Not necessarily anymore. With modern flash pasteurization techniques, many wineries produce premium-level mevushal wine indistinguishable in a blind tasting from the non-pasteurized version.</p>
+<p><strong>Can a wine become mevushal after it has already been bottled?</strong><br>
+No, the heating process must happen before or during production, under supervision, and is noted on the label or in the certifier\'s product listing.</p>
+
+<h2>Related reading</h2>
+<p>To understand why regular wine needs such strict supervision in the first place, see <a href="/articulos/vino-kosher">kosher wine: why it needs special supervision</a>. The topic also relates to <a href="/articulos/bishul-akum">bishul akum</a>, another category where who handles the food matters.</p>',
             ],
             'tevilat-kelim' => [
                 'title' => 'Tevilat Kelim: the ritual immersion of new utensils',
