@@ -681,38 +681,72 @@ It varies a lot depending on each family\'s budget and pace, but it\'s not unusu
             'certificaciones-kosher-mundo' => [
                 'title' => 'Differences between kosher certifications around the world',
                 'excerpt' => 'Not all kosher certifiers follow exactly the same criteria. Knowing these differences helps you choose products with confidence.',
-                'content' => '<p>Although the fundamental principles of kashrut are universal, there are hundreds of certifying agencies in the world, and each can have slightly different criteria on specific topics — for example, what level of supervision it requires for bishul akum, or how it handles certain chemical additives whose origin is hard to trace.</p>
+                'content' => '<p>Although the fundamental principles of kashrut are universal, there are hundreds of certifying agencies in the world, and each can have slightly different criteria on specific topics — for example, what level of supervision it requires for <a href="/articulos/bishul-akum">bishul akum</a>, or how it handles certain chemical additives whose origin is hard to trace.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/certificaciones-kosher-mundo.svg" alt="The principles of kashrut are universal, but each region has its own certifying agencies." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">The principles of kashrut are universal, but each region has its own certifying agencies. Illustration: KosherMap.</figcaption>
 </figure>
-<p>Some common differences between regions:</p>
+
+<h2>How certification varies by region</h2>
 <ul>
-<li><strong>United States:</strong> home to the largest industrial certifiers (OU, OK, Star-K, Kof-K), with highly standardized processes for mass export.</li>
-<li><strong>Israel:</strong> the Rabbanut (chief rabbinate) offers official state certification, while organizations like the Badatz maintain additional standards considered stricter by certain communities.</li>
-<li><strong>Europe:</strong> certifiers like the Beth Din of various cities (London, Paris, Zurich) supervise both local production and imports.</li>
-<li><strong>Latin America:</strong> each community usually has its own local Va\'ad Hakashrut (for example, in Buenos Aires, São Paulo or Mexico City), which certifies both local products and restaurants.</li>
+<li><strong>United States:</strong> home to the largest industrial certifiers (OU, OK, Star-K, Kof-K), with highly standardized processes for mass export. A product certified there tends to reach dozens of countries in almost the same form.</li>
+<li><strong>Israel:</strong> the Rabbanut (chief rabbinate) offers official state certification, while organizations like the Badatz maintain additional standards considered stricter by certain communities, sometimes resulting in two levels of certification on the same product.</li>
+<li><strong>Europe:</strong> certifiers like the Beth Din of various cities (London, Paris, Zurich) supervise both local production and imports, adapting to markets with less industrial scale than the United States.</li>
+<li><strong>Latin America:</strong> each community usually has its own local Va\'ad Hakashrut (for example, in Buenos Aires, São Paulo or Mexico City), which certifies both local products and restaurants, generally with a scope limited to its own city or country.</li>
 </ul>
-<p>For the consumer, the most important thing is to learn to recognize the active certifiers in their region and, when in doubt about an unfamiliar symbol, consult the community rabbi or look into the agency\'s reputation before trusting a product. Most large certifiers publish public lists of certified products on their websites.</p>',
+
+<h2>Why there isn\'t just one single agency</h2>
+<p>Unlike other quality seals, there is no single central authority for kashrut worldwide. Each certifier answers to its own chain of supervising rabbis, and its recognition is built over time, based on the trust other communities and rabbis place in it. That is why a certifier can be highly respected in its country of origin and practically unknown elsewhere, without that meaning it is any less serious.</p>
+
+<h2>What to do with a seal you don\'t recognize</h2>
+<p>For the consumer, the most important thing is to learn to recognize the active certifiers in their region (covered in more detail in <a href="/articulos/simbolos-certificacion-kosher">kosher certification symbols</a>). And when in doubt about an unfamiliar symbol, consult the community rabbi or look into the agency\'s reputation before trusting a product. Most large certifiers publish public lists of certified products on their websites, which is especially useful when buying imported goods.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Is a product certified in one country automatically accepted in another?</strong><br>
+Not always. It depends on mutual recognition between certifiers and on each community\'s criteria; some families only trust a limited list of agencies, regardless of where the product comes from.</p>
+<p><strong>Is there a single global list of trustworthy certifiers?</strong><br>
+There isn\'t one official list, but many regional rabbinic organizations publish their own lists of agencies they recognize, which serve as a practical reference.</p>
+<p><strong>Why do some products carry two or three different seals?</strong><br>
+This usually happens when the manufacturer wants to reach markets or communities with different trust criteria, and seeks approval from several recognized agencies in each region.</p>
+
+<h2>Related reading</h2>
+<p>To recognize the most common symbols at a glance, see <a href="/articulos/simbolos-certificacion-kosher">the most common kosher certification symbols</a>. And to understand all the information a label can carry beyond the seal, see <a href="/articulos/como-leer-etiqueta-kosher">how to read a kosher product label</a>.</p>',
             ],
             'queso-kosher-cuajo' => [
                 'title' => 'Kosher cheese: why it needs special rennet',
                 'excerpt' => 'Cheese is one of the dairy products with the most kosher restrictions, mainly because of the origin of the rennet used to make it.',
-                'content' => '<p>Rennet is the enzyme traditionally used to coagulate milk and separate the whey in cheesemaking. The problem from a kashrut standpoint is that traditional rennet is extracted from a calf\'s stomach, and for it to be fit, that animal must have been slaughtered via shechita (the kosher slaughter method) — something that almost never happens in conventional cheese manufacturing.</p>
+                'content' => '<p>Rennet is the enzyme traditionally used to coagulate milk and separate the whey in cheesemaking. The problem from a kashrut standpoint is that traditional rennet is extracted from a calf\'s stomach, and for it to be fit, that animal must have been slaughtered via <a href="/articulos/shejita-sacrificio-kosher">shechita</a> — something that almost never happens in conventional cheese manufacturing.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/queso-kosher-cuajo.jpg" alt="Cheese needs specific certification because of the origin of the rennet that curdles the milk." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Cheese needs specific certification because of the origin of the rennet that curdles the milk. Photo: Daderot via <a href="https://commons.wikimedia.org/wiki/File%3ACheese_display%2C_Cambridge_MA_-_DSC05391.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC0.</figcaption>
 </figure>
-<p>That is why practically all "regular" cheese on the market, even if made only with milk and rennet, is not kosher without specific certification, since the rennet\'s origin cannot be verified by sight.</p>
+
+<h2>Why "regular" cheese usually isn\'t kosher by elimination</h2>
+<p>That is why practically all "regular" cheese on the market, even if made only with milk and rennet, is not kosher without specific certification, since the rennet\'s origin cannot be verified by sight. Neither the color, taste, nor texture of the cheese changes based on the type of rennet used, so there is no way to tell them apart without information from the manufacturer.</p>
+
+<h2>The three alternatives manufacturers use</h2>
 <p>Options used by kosher cheese manufacturers include:</p>
 <ul>
-<li><strong>Kosher animal rennet:</strong> extracted from animals slaughtered according to shechita and under rabbinic supervision throughout the chain.</li>
-<li><strong>Microbial rennet:</strong> produced through fermentation, with no animal origin, increasingly common in industrial and kosher cheeses.</li>
-<li><strong>Plant-based rennet:</strong> extracted from certain plants, traditionally used in some specific artisanal cheese varieties.</li>
+<li><strong>Kosher animal rennet:</strong> extracted from animals slaughtered according to shechita and under rabbinic supervision throughout the chain, from slaughter to enzyme extraction.</li>
+<li><strong>Microbial rennet:</strong> produced through fermentation of fungi or bacteria, with no animal origin, increasingly common in both industrial and kosher cheeses, since it also solves the problem for vegetarian consumers.</li>
+<li><strong>Plant-based rennet:</strong> extracted from certain plants (such as thistle), traditionally used in some specific artisanal cheese varieties, especially on the Iberian Peninsula.</li>
 </ul>
-<p>Besides rennet, there is another relevant factor: many communities require that the cheese be made under constant Jewish supervision (Gvinat Yisrael) to consider it fully kosher, an additional criterion beyond a simple ingredient analysis. That is why buying cheese with recognized certification is the most reliable way to avoid mistakes.</p>',
+
+<h2>Gvinat Yisrael: a criterion that goes beyond rennet</h2>
+<p>Besides rennet, there is another relevant factor: many communities require that the cheese be made under constant Jewish supervision (Gvinat Yisrael) to consider it fully kosher, an additional criterion beyond a simple ingredient analysis, closer to the principle behind <a href="/articulos/bishul-akum">bishul akum</a>: correct ingredients aren\'t enough, who supervises the process matters too.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Are vegan or "dairy-free" cheeses automatically kosher?</strong><br>
+Not necessarily. Even though they avoid the animal rennet problem, you still need to check the rest of the ingredients and the equipment used, just like with any other industrial product.</p>
+<p><strong>Does packaged shredded cheese carry the same risk as a whole block?</strong><br>
+Yes, and sometimes more: the shredding and packaging process can introduce other ingredients (anti-caking agents, preservatives) that also require verification.</p>
+<p><strong>How do I know if a cheese uses microbial or animal rennet with no certification?</strong><br>
+Without visible certification there is no reliable way to know from the label; that is why buying cheese with a recognized seal is the safest way to avoid mistakes.</p>
+
+<h2>Related reading</h2>
+<p>To understand the slaughter method that determines whether animal rennet is fit, see <a href="/articulos/shejita-sacrificio-kosher">shechita: the kosher slaughter method</a>. And for another equally debated animal-derived ingredient, see <a href="/articulos/gelatina-kosher">kosher gelatin: the halachic debate</a>.</p>',
             ],
             'huevos-kosher' => [
                 'title' => 'Kosher eggs: what to check before using them',
@@ -723,14 +757,30 @@ It varies a lot depending on each family\'s budget and pace, but it\'s not unusu
   <img src="/images/articulos/huevos-kosher.jpg" alt="Eggs are pareve, but they must be checked for blood spots before use." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Eggs are pareve, but they must be checked for blood spots before use. Photo: Evan-Amos via <a href="https://commons.wikimedia.org/wiki/File%3A6-Pack-Chicken-Eggs.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, Public domain.</figcaption>
 </figure>
-<p>The procedure is simple: when cracking the egg, visually check the yolk (and sometimes the white) against the light, looking for red spots or marks. If blood is found, the egg is discarded entirely; if the yolk is clean, the egg is fit to use normally.</p>
-<p>Some additional facts about eggs and kashrut:</p>
+
+<h2>The checking procedure</h2>
+<p>The procedure is simple: when cracking the egg, visually check the yolk (and sometimes the white) against the light, looking for red spots or marks. It\'s best to crack each egg into a separate container before adding it to a larger mix, precisely so it can be discarded without ruining the rest of the preparation. If blood is found, the egg is discarded entirely; if the yolk is clean, the egg is fit to use normally.</p>
+
+<h2>Why this happens in some eggs</h2>
+<p>A blood spot usually originates from a ruptured blood vessel during the egg\'s formation inside the hen, and has nothing to do with whether the egg is fertilized or with any health issue in the bird. It is more common in eggs from older hens, though it can appear in any egg with no predictable pattern, which is why the check is always done, not just "when it looks suspicious."</p>
+
+<h2>Other facts about eggs and kashrut</h2>
 <ul>
-<li>The shell and white generally don\'t carry the same risk as the yolk, although custom varies by community.</li>
-<li>Eggs from non-kosher birds (such as ostrich or certain birds of prey) are also not fit, regardless of the presence of blood.</li>
-<li>Industrial products containing egg (such as pasta or mayonnaise) generally go through a quality control process that includes automatic detection of eggs with blood, but still require certification to guarantee that control was done correctly.</li>
+<li>The shell and white generally don\'t carry the same risk as the yolk, although custom varies by community: some check both parts with equal care.</li>
+<li>Eggs from non-kosher birds (such as ostrich or certain birds of prey) are also not fit, regardless of the presence of blood, since the underlying issue is the bird\'s origin, not the blood itself.</li>
+<li>Industrial products containing egg (such as pasta or mayonnaise) generally go through a quality control process that automatically detects eggs with blood via candling, but still require certification to guarantee that control was done under the correct criteria.</li>
 </ul>
-<p>It is one of the simplest habits to incorporate into a daily kosher kitchen: checking each egg as soon as it is cracked, before mixing it with the rest of the ingredients.</p>',
+
+<h2>Frequently asked questions</h2>
+<p><strong>Do quail or duck eggs also need to be checked?</strong><br>
+Yes, the same criterion applies to eggs from any kosher bird, not just chicken eggs.</p>
+<p><strong>Can an egg with a tiny blood spot be saved by removing just that part?</strong><br>
+Opinions vary depending on tradition and the size of the spot; some allow removing only the affected point, others require discarding the whole egg. When in doubt, it\'s best to follow the stricter opinion or consult a rabbi.</p>
+<p><strong>Do kosher-certified eggs already come checked from the factory?</strong><br>
+It doesn\'t replace the check at home: certification guarantees the bird\'s origin and the industrial process, but checking the yolk for blood remains the cook\'s responsibility, except for industrial products that already went through certified candling.</p>
+
+<h2>Related reading</h2>
+<p>It is one of the simplest habits to incorporate into a daily kosher kitchen: checking each egg as soon as it is cracked, before mixing it with the rest of the ingredients. For other everyday practical steps, see <a href="/articulos/armar-cocina-kosher">how to set up a kosher kitchen from scratch</a>. And for another pareve food with its own checking rules, see <a href="/articulos/insectos-frutas-verduras">insects in fruits and vegetables</a>.</p>',
             ],
             'pescado-kosher-aletas-escamas' => [
                 'title' => 'Kosher fish: fins and scales, the basic rules',
@@ -741,16 +791,32 @@ It varies a lot depending on each family\'s budget and pace, but it\'s not unusu
   <img src="/images/articulos/pescado-kosher-aletas-escamas.jpg" alt="To be kosher, a fish must have visible fins and scales." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">To be kosher, a fish must have visible fins and scales. Photo: IndayLiburan via <a href="https://commons.wikimedia.org/wiki/File%3AFish_stalls_at_Valencia_Public_Market_01.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>Excluded from kashrut, among others, are:</p>
+
+<h2>What is excluded from kashrut</h2>
 <ul>
-<li>All shellfish (shrimp, prawns, crab, mussels, oysters).</li>
-<li>Octopus and squid.</li>
-<li>Shark and monkfish (they lack true scales according to most halachic opinions).</li>
-<li>Eel (lacks visible scales).</li>
-<li>Swordfish (its status has historically been debated among different rabbinic authorities).</li>
+<li><strong>All shellfish</strong> (shrimp, prawns, crab, mussels, oysters): they lack both fins and scales under any criterion.</li>
+<li><strong>Octopus and squid:</strong> also fail to meet the criterion, having neither true fins nor scales.</li>
+<li><strong>Shark and monkfish:</strong> they lack true scales according to most halachic opinions, though the topic has been debated for years among different rabbinic authorities.</li>
+<li><strong>Eel:</strong> lacks visible scales, and is excluded from the kosher criterion.</li>
+<li><strong>Swordfish:</strong> its status has historically been debated among different rabbinic authorities, and not every certifier treats it the same way.</li>
 </ul>
-<p>An important difference from meat: kosher fish does not require shechita or a blood-removal salting process, which greatly simplifies its preparation. However, in many traditions — especially Ashkenazi — fish is treated as a category separate from meat and dairy, avoiding combining it with meat in the same dish (although it does not require the same strict utensil separation that applies between meat and milk).</p>
-<p>When buying fresh fish, it\'s worth verifying that it retains skin with visible scales, since some filleting removes the skin entirely, making verification difficult. That is why many kosher fishmongers leave an identifiable patch of skin on the cut.</p>',
+
+<h2>Why kosher fish is simpler to prepare than meat</h2>
+<p>An important difference from meat: kosher fish does not require <a href="/articulos/shejita-sacrificio-kosher">shechita</a> or a blood-removal salting process, which greatly simplifies its preparation. However, in many traditions — especially Ashkenazi — fish is treated as a category separate from meat and dairy, avoiding combining it with meat in the same dish (although it does not require the same strict utensil separation that applies between meat and milk).</p>
+
+<h2>How to verify fish when buying it</h2>
+<p>When buying fresh fish, it\'s worth verifying that it retains skin with visible scales, since some filleting removes the skin entirely, making verification difficult. That is why many kosher fishmongers leave an identifiable patch of skin on the cut, usually a strip near the tail, specifically so the species can be confirmed without doubt.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Is caviar kosher?</strong><br>
+It depends on the fish of origin: sturgeon caviar is a debated topic (due to the sturgeon\'s atypical scales), while roe from other fish with clear fins and scales is generally accepted without issue.</p>
+<p><strong>Is certification needed to buy fresh, whole fish at the fish market?</strong><br>
+It isn\'t mandatory if you can verify the species yourself by its physical characteristics, though for processed products (skinless fillets, canned goods) it is worth looking for certification.</p>
+<p><strong>Why is fish kept separate from meat if both are fit on their own?</strong><br>
+It is a custom, not a prohibition of the same category as meat and dairy; it originated from a historical health concern that no longer applies, but it is maintained as tradition in many communities.</p>
+
+<h2>Related reading</h2>
+<p>To understand the process required for meat from mammals and poultry, see <a href="/articulos/shejita-sacrificio-kosher">shechita: the kosher slaughter method</a>. And for another animal-derived ingredient with its own rules, see <a href="/articulos/gelatina-kosher">kosher gelatin: the halachic debate</a>.</p>',
             ],
             'frutos-secos-contaminacion-cruzada' => [
                 'title' => 'Nuts and kashrut: cross-contamination risks',
@@ -761,14 +827,31 @@ It varies a lot depending on each family\'s budget and pace, but it\'s not unusu
   <img src="/images/articulos/frutos-secos-contaminacion-cruzada.jpg" alt="Raw they are pareve without restrictions; the risk appears in industrial processing." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Raw they are pareve without restrictions; the risk appears in industrial processing. Photo: Famartin via <a href="https://commons.wikimedia.org/wiki/File%3A2021-01-06_12_15_43_Cranberry_trail_mix_with_cranberries%2C_peanuts%2C_raisins%2C_walnuts%2C_almonds%2C_sunflower_seeds%2C_pepitas_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>Some common risks:</p>
+
+<h2>The most common risks</h2>
 <ul>
-<li><strong>Dairy flavorings:</strong> nuts "roasted with butter" or coated in milk chocolate are no longer pareve.</li>
-<li><strong>Shared lines:</strong> a factory may process pareve nuts on the same equipment later used for dairy or meat-derived products, generating non-kosher traces if there is no certified cleaning between batches.</li>
-<li><strong>Cooking oils:</strong> some fried nuts use oils shared with other non-kosher products.</li>
-<li><strong>Glazes and coatings:</strong> "candied" nuts or those with a sweet coating may contain gelatin or other animal-derived ingredients.</li>
+<li><strong>Dairy flavorings:</strong> nuts "roasted with butter" or coated in milk chocolate are no longer pareve, and move into the dairy category, with all the mixing restrictions that implies.</li>
+<li><strong>Shared lines:</strong> a factory may process pareve nuts on the same equipment later used for dairy or meat-derived products, generating non-kosher traces if there is no certified cleaning between batches, something no ingredient label reveals on its own.</li>
+<li><strong>Cooking oils:</strong> some fried nuts use oils shared with other non-kosher products, without it affecting the final flavor.</li>
+<li><strong>Glazes and coatings:</strong> "candied" nuts or those with a sweet coating may contain <a href="/articulos/gelatina-kosher">gelatin</a> or other animal-derived ingredients in the glaze.</li>
 </ul>
-<p>That is why, although a raw, unprocessed nut almost never presents problems, industrial products (nut mixes, flavored snacks, granola bars) should always be checked for certification, without assuming they are automatically kosher just because the main ingredient is.</p>',
+
+<h2>Why this is more common than it seems</h2>
+<p>Many nut factories process dozens of different varieties and presentations at the same plant, to make the most of the same equipment: the line that today roasts plain almonds may have processed a milk-chocolate-coated batch yesterday. Without certified cleaning between batches (or without lines dedicated exclusively to pareve products), enough residue remains for the product to no longer be considered pareve under a strict criterion.</p>
+
+<h2>How to reduce the risk in practice</h2>
+<p>That is why, although a raw, unprocessed nut bought in bulk from a trustworthy source or in its original shell almost never presents problems, industrial products (nut mixes, flavored snacks, granola bars) should always be checked for certification, without assuming they are automatically kosher just because the main ingredient is. This applies just as strongly to products marketed as "natural" or "additive-free": those labels say nothing about shared equipment.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Are unbranded bulk nuts riskier than packaged ones?</strong><br>
+They can be, since there is no way to trace the origin or process; it\'s best to buy them from trustworthy stores or prefer certified brands.</p>
+<p><strong>Does peanut butter carry the same risk?</strong><br>
+Yes, and sometimes more, since it often includes additional oils and stabilizers that also require verification, beyond the peanuts themselves.</p>
+<p><strong>Do home-activated or soaked nuts change the analysis at all?</strong><br>
+No, if the original nut was raw and not industrially processed, soaking it at home introduces no new kashrut risk.</p>
+
+<h2>Related reading</h2>
+<p>For another ingredient where industrial processing is the key issue, see <a href="/articulos/gelatina-kosher">kosher gelatin: the halachic debate</a>. And to understand how to read all the relevant information on a label, see <a href="/articulos/como-leer-etiqueta-kosher">how to read a kosher product label</a>.</p>',
             ],
             'kashrut-y-veganismo' => [
                 'title' => 'Kashrut and veganism: is eating vegan the same as eating kosher?',
