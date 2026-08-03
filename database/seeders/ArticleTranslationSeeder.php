@@ -2420,50 +2420,103 @@ Le dessin du symbole est généralement cohérent car il est déposé par le cer
             'glatt-kosher' => [
                 'title' => 'Glatt cachère : quelle différence avec le cachère ordinaire',
                 'excerpt' => 'Le terme "glatt" apparaît fréquemment dans les boucheries et restaurants cachères. Nous expliquons le niveau de rigueur qu\'il représente.',
-                'content' => '<p>"Glatt" signifie "lisse" en yiddish et désignait à l\'origine spécifiquement l\'état des poumons d\'un animal après la shehita : si les poumons ne présentaient aucune adhérence (sircha), l\'animal était considéré "glatt", le niveau le plus élevé de certitude que la viande est cachère sans aucun doute.</p>
+                'content' => '<p>"Glatt" signifie "lisse" en yiddish et désignait à l\'origine spécifiquement l\'état des poumons d\'un animal après la <a href="/articulos/shejita-sacrificio-kosher">shehita</a> : si les poumons ne présentaient aucune adhérence (sircha), l\'animal était considéré "glatt", le niveau le plus élevé de certitude que la viande est cachère sans aucun doute.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/glatt-kosher.jpg" alt="Un restaurant de viande casher à Jérusalem. « Glatt » désigne le standard d&#039;inspection le plus strict." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Un restaurant de viande casher à Jérusalem. « Glatt » désigne le standard d\'inspection le plus strict. Photo: brionv from San Francisco, United States via <a href="https://commons.wikimedia.org/wiki/File%3AJerusalem_MMMM_MEAT_%286036353902%29.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 2.0.</figcaption>
 </figure>
-<p>Avec le temps, particulièrement dans les communautés ashkénazes des États-Unis, le terme "glatt kosher" s\'est étendu familièrement pour décrire un standard général de plus grande rigueur dans toute la chaîne de production d\'un aliment, pas seulement dans l\'inspection des poumons. Aujourd\'hui, il est courant de voir "glatt kosher" sur les étiquettes de restaurants et de produits pour indiquer qu\'ils respectent les critères les plus exigeants possibles.</p>
-<p>Il est important de souligner qu\'un produit "cachère" sans l\'étiquette "glatt" n\'est pas moins valide halakhiquement : il suit simplement un standard de certification différent, généralement accepté par la grande majorité des communautés. Le choix entre cachère standard et glatt kosher dépend généralement de la coutume familiale ou communautaire, plus que d\'une différence objective de validité.</p>
-<p>Pour la volaille et le poisson, le concept de "glatt" ne s\'applique techniquement pas de la même manière que pour les mammifères, bien qu\'il soit parfois utilisé familièrement pour indiquer un niveau de supervision plus rigoureux en général.</p>',
+
+<h2>L\'origine technique : les poumons de l\'animal</h2>
+<p>Pendant l\'inspection post-shehita, l\'une des étapes clés consiste à examiner les poumons de l\'animal à la recherche d\'adhérences (sirchot), qui peuvent indiquer une maladie ou une perforation invalidant l\'animal comme cachère. Quand le poumon apparaît complètement lisse, sans aucune adhérence, l\'animal est classé "glatt". S\'il présente des adhérences mineures qu\'un examinateur expert (bodek) juge pouvoir être retirées sans laisser de perforation, l\'animal peut encore être qualifié cachère selon le critère standard, mais pas comme "glatt".</p>
+
+<h2>Comment il est passé d\'un terme technique à une marque de rigueur générale</h2>
+<p>Avec le temps, particulièrement dans les communautés ashkénazes des États-Unis, le terme "glatt kosher" s\'est étendu familièrement pour décrire un standard général de plus grande rigueur dans toute la chaîne de production d\'un aliment, pas seulement dans l\'inspection des poumons. Aujourd\'hui, il est courant de voir "glatt kosher" sur les étiquettes de restaurants et de produits pour indiquer qu\'ils respectent les critères les plus exigeants possibles, même dans des contextes où le terme technique original (les poumons de l\'animal) ne s\'applique même pas.</p>
+
+<h2>Le cachère ordinaire est-il "moins valide" ?</h2>
+<p>Il est important de souligner qu\'un produit "cachère" sans l\'étiquette "glatt" n\'est pas moins valide halakhiquement : il suit simplement un standard de certification différent, généralement accepté par la grande majorité des communautés et autorités rabbiniques. Le choix entre cachère standard et glatt kosher dépend généralement de la coutume familiale ou communautaire, plus que d\'une différence objective de validité. De nombreuses familles qui ne suivent pas le glatt au quotidien le choisissent quand même pour des occasions spéciales, comme un mariage ou une fête importante.</p>
+<p>Pour la volaille et le poisson, le concept de "glatt" ne s\'applique techniquement pas de la même manière, car les volailles ne subissent pas le même type d\'inspection pulmonaire, bien qu\'il soit parfois utilisé familièrement pour indiquer un niveau de supervision plus rigoureux en général.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Toute viande glatt kosher est-elle plus chère ?</strong><br>
+En général oui, car le processus de sélection est plus strict et un pourcentage plus élevé d\'animaux est écarté, ce qui réduit l\'offre disponible par rapport à la demande.</p>
+<p><strong>Un restaurant qui dit "cachère" sans préciser "glatt" est-il malhonnête ?</strong><br>
+Non, il est simplement précis : il suit le critère cachère standard, pleinement valide pour la grande majorité des communautés.</p>
+<p><strong>"Glatt" garantit-il que d\'autres règles, comme le bishoul akoum, ont aussi été respectées ?</strong><br>
+Pas automatiquement. "Glatt" se réfère spécifiquement au niveau d\'inspection de la viande ; d\'autres règles comme le <a href="/articulos/bishul-akum">bishoul akoum</a> sont vérifiées séparément dans le cadre du processus général de certification.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Pour comprendre le processus complet derrière la viande cachère, de l\'abattage à l\'inspection, voir <a href="/articulos/shejita-sacrificio-kosher">la shehita : la méthode d\'abattage cachère</a>. Et pour reconnaître les sceaux qui certifient tout cela sur l\'étiquette, voir <a href="/articulos/simbolos-certificacion-kosher">les symboles de certification cachère</a>.</p>',
             ],
             'como-leer-etiqueta-kosher' => [
                 'title' => 'Comment lire une étiquette de produit cachère',
                 'excerpt' => 'Au-delà du symbole de certification, les étiquettes cachères contiennent des informations clés pour savoir si un produit convient à votre table.',
-                'content' => '<p>Bien lire une étiquette cachère va au-delà de chercher le symbole de certification. Plusieurs éléments méritent toujours d\'être vérifiés :</p>
+                'content' => '<p>Bien lire une étiquette cachère va au-delà de chercher le symbole de certification. Plusieurs éléments méritent toujours d\'être vérifiés, et apprendre à les lire entièrement évite des surprises à table.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/como-leer-etiqueta-kosher.jpg" alt="L&#039;étiquette d&#039;un produit israélien : au-delà du sceau, il faut regarder la catégorie et les ingrédients." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">L\'étiquette d\'un produit israélien : au-delà du sceau, il faut regarder la catégorie et les ingrédients. Photo: Chenspec via <a href="https://commons.wikimedia.org/wiki/File%3AList_of_ingredients_of_food_products_in_Israel_02.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
+
+<h2>Les quatre éléments à chercher, dans l\'ordre</h2>
 <ul>
-<li><strong>Le symbole du certificateur :</strong> identifie quelle agence a supervisé le produit. Il est important de reconnaître les certificateurs fiables, car tous les symboles du monde n\'ont pas le même niveau d\'exigence.</li>
-<li><strong>La catégorie :</strong> "Dairy" ou "D" (lacté), "Meat" ou "M" (carné), "Pareve" (neutre), ou "Fish" (poisson, traité dans de nombreuses traditions comme une catégorie distincte de la viande).</li>
-<li><strong>"Cachère pour Pessah" :</strong> indication supplémentaire nécessaire pendant la fête, distincte de la certification cachère habituelle du reste de l\'année.</li>
-<li><strong>Date de certification :</strong> certains certificateurs incluent un code ou une date pour vérifier que le sceau est toujours valable, car les recettes et processus d\'usine peuvent changer.</li>
+<li><strong>Le symbole du certificateur :</strong> identifie quelle agence a supervisé le produit. Il est important de reconnaître les certificateurs fiables (détaillés dans <a href="/articulos/simbolos-certificacion-kosher">les symboles de certification cachère</a>), car tous les symboles du monde n\'ont pas le même niveau d\'exigence.</li>
+<li><strong>La catégorie :</strong> "Dairy" ou "D" (lacté), "Meat" ou "M" (carné), "Pareve" (neutre), ou "Fish" (poisson, traité dans de nombreuses traditions comme une catégorie distincte de la viande). Cette lettre détermine avec quels autres aliments le produit peut être combiné.</li>
+<li><strong>"Cachère pour Pessah" :</strong> indication supplémentaire nécessaire pendant la fête, distincte de la certification cachère habituelle du reste de l\'année. Un produit peut être cachère toute l\'année mais impropre à Pessah s\'il contient un dérivé des cinq céréales.</li>
+<li><strong>Date ou code de certification :</strong> certains certificateurs incluent un code ou une date pour vérifier que le sceau est toujours valable, car les recettes et processus d\'usine peuvent changer, et une certification peut être perdue sans que le design de l\'emballage change.</li>
 </ul>
-<p>Quand un produit n\'a pas de certification visible mais que la liste d\'ingrédients semble simple (par exemple, seulement de l\'eau, du sel et un légume), certaines personnes choisissent d\'enquêter davantage, mais la recommandation générale des autorités de cacherout est de ne pas supposer qu\'un produit est cachère uniquement à cause de l\'apparence simple de ses ingrédients : de nombreux additifs et processus industriels ne sont pas évidents au premier coup d\'œil.</p>
-<p>Sur KosherMap, vous pouvez rechercher des produits par nom ou code-barres et filtrer directement par certificateur, catégorie et type, pour ne pas dépendre uniquement de l\'étiquette physique.</p>',
+
+<h2>La catégorie "DE" : le détail le plus souvent négligé</h2>
+<p>Outre "D", "M" et "Pareve", certaines étiquettes incluent "DE" (dairy equipment) : cela signifie que le produit ne contient pas d\'ingrédients laitiers, mais a été élaboré sur le même équipement que des produits laitiers. En pratique, de nombreux avis traitent un produit "DE" de façon plus flexible qu\'un vrai "D", mais pas comme un pareve pur. Il vaut la peine de comprendre cette différence en détail dans <a href="/articulos/que-significa-pareve">ce que signifie parve</a>.</p>
+
+<h2>Pourquoi il ne faut pas supposer par élimination</h2>
+<p>Quand un produit n\'a pas de certification visible mais que la liste d\'ingrédients semble simple (par exemple, seulement de l\'eau, du sel et un légume), la tentation est de supposer qu\'il est cachère par élimination. La recommandation générale des autorités de cacherout est de ne pas le faire : de nombreux additifs et processus industriels ne sont pas évidents au premier coup d\'œil, des enzymes utilisées dans la transformation jusqu\'à l\'équipement partagé avec d\'autres produits sur la même chaîne de production.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Un produit sans catégorie (D/M/Pareve) imprimée est-il toujours pareve ?</strong><br>
+Ne le supposez pas. L\'absence d\'une lettre ne confirme rien à elle seule ; si l\'étiquette ne précise pas la catégorie, il vaut la peine de chercher directement le produit dans la base de données du certificateur.</p>
+<p><strong>Les applications de lecture de code-barres remplacent-elles la vérification de l\'étiquette physique ?</strong><br>
+Elles aident beaucoup, mais mieux vaut les utiliser en complément, pas comme substitut total, surtout pour des produits importés ou récemment fabriqués que la base de données n\'a pas encore mis à jour.</p>
+<p><strong>Tous les pays exigent-ils que l\'étiquette cachère soit dans la langue locale ?</strong><br>
+Non, il est courant de trouver des produits importés avec l\'information cachère uniquement dans la langue d\'origine (hébreu, anglais), ce qui rend plus précieux de reconnaître les symboles de mémoire plutôt que de dépendre du texte.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Pour reconnaître les sceaux les plus courants d\'un coup d\'œil, voir <a href="/articulos/simbolos-certificacion-kosher">les symboles de certification cachère</a>. Sur KosherMap, vous pouvez aussi rechercher des produits par nom ou code-barres et filtrer directement par certificateur, catégorie et type, pour ne pas dépendre uniquement de l\'étiquette physique.</p>',
             ],
             'bishul-akum' => [
                 'title' => 'Bishoul Akoum : pourquoi certains aliments cuits nécessitent une supervision juive',
                 'excerpt' => 'Il existe une catégorie de lois spécifique sur les aliments cuisinés par des non-juifs, connue sous le nom de bishoul akoum. Nous expliquons de quoi il s\'agit.',
-                'content' => '<p>Le bishoul akoum (littéralement "cuisson d\'un non-juif") est une catégorie de lois rabbiniques restreignant la consommation de certains aliments cuisinés entièrement par une personne non juive, même si tous les ingrédients sont cachères. L\'interdiction fut établie par les sages talmudiques, principalement pour favoriser la cohésion sociale et éviter l\'assimilation culturelle.</p>
+                'content' => '<p>Le bishoul akoum (littéralement "cuisson d\'un non-juif") est une catégorie de lois rabbiniques restreignant la consommation de certains aliments cuisinés entièrement par une personne non juive, même si tous les ingrédients sont cachères. L\'interdiction fut établie par les sages talmudiques, principalement pour favoriser la cohésion sociale et éviter l\'assimilation culturelle entre communautés.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/bishul-akum.jpg" alt="Le bichoul akoum régit les aliments cuits entièrement par un non-Juif, même avec des ingrédients cachers." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Le bichoul akoum régit les aliments cuits entièrement par un non-Juif, même avec des ingrédients cachers. Photo: Seattle Municipal Archives from Seattle, WA via <a href="https://commons.wikimedia.org/wiki/File%3ACooks_in_kitchen%2C_1930_%2820981103874%29.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY 2.0.</figcaption>
 </figure>
-<p>Cette loi ne s\'applique pas à tous les aliments : elle se limite généralement aux aliments considérés "dignes d\'être servis à la table d\'un roi" (hachivout) et ne se mangeant pas crus. C\'est pourquoi les fruits, légumes crus et la plupart des en-cas industriels n\'entrent pas dans cette catégorie.</p>
+
+<h2>Quels aliments entrent dans cette catégorie (et lesquels n\'y entrent pas)</h2>
+<p>Cette loi ne s\'applique pas à tous les aliments : elle se limite généralement aux aliments considérés "dignes d\'être servis à la table d\'un roi" (hachivout) et ne se mangeant pas crus. C\'est pourquoi les fruits, légumes crus et la plupart des en-cas industriels n\'entrent pas dans cette catégorie. Le critère de "hachivout" est en partie subjectif et varie selon la communauté : un ragoût élaboré y entre clairement, tandis qu\'un légume simplement bouilli fait davantage débat parmi les différents avis rabbiniques.</p>
+
+<h2>Comment cela se résout dans une usine ou un restaurant certifié</h2>
 <p>Il existe deux façons habituelles de résoudre le problème dans un contexte de production industrielle ou de restaurants certifiés :</p>
 <ul>
-<li>Qu\'un juif pratiquant participe activement au processus de cuisson, par exemple en allumant le feu ou l\'équipement de cuisson.</li>
-<li>Que la supervision rabbinique certifie qu\'un représentant juif était présent lors de l\'allumage des équipements de cuisson à chaque équipe de production.</li>
+<li><strong>Qu\'un juif pratiquant participe activement au processus de cuisson</strong>, par exemple en allumant le feu ou l\'équipement avant que le processus de production ne commence.</li>
+<li><strong>Que la supervision rabbinique certifie</strong> qu\'un représentant juif était présent lors de l\'allumage des équipements de cuisson à chaque équipe de production, même si le reste du processus est ensuite mené par du personnel non juif.</li>
 </ul>
-<p>C\'est l\'une des raisons pour lesquelles la certification cachère d\'une usine alimentaire ne se limite pas à examiner les ingrédients : elle supervise aussi les processus, la présence du personnel et les protocoles opérationnels de l\'établissement, ce qui rend le travail des certificateurs bien plus complexe qu\'une simple liste de vérification des intrants.</p>',
+<p>C\'est l\'une des raisons pour lesquelles la certification cachère d\'une usine alimentaire ne se limite pas à examiner les ingrédients : elle supervise aussi les processus, la présence du personnel et les protocoles opérationnels de l\'établissement, ce qui rend le travail des certificateurs bien plus complexe qu\'une simple liste de vérification des intrants.</p>
+
+<h2>Pourquoi cela affecte les restaurants qui ne sont pas cachères</h2>
+<p>C\'est l\'une des raisons de fond pour lesquelles un plat cuisiné dans un restaurant sans certification suscite des doutes même quand tous les ingrédients semblent aptes : au-delà de l\'origine de la viande ou de l\'équipement partagé, qui a effectivement allumé le feu et mené la cuisson entre aussi en jeu. Le sujet est développé avec des exemples concrets dans <a href="/articulos/comer-kosher-restaurante">comment manger cachère dans un restaurant non certifié</a>.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Le bishoul akoum s\'applique-t-il aussi à la maison, avec du personnel domestique non juif ?</strong><br>
+Oui, le principe est le même quel que soit l\'endroit où l\'on cuisine ; ce qui change, c\'est la solution pratique, généralement qu\'un membre juif de la famille participe à l\'allumage.</p>
+<p><strong>Un four électrique avec minuteur résout-il le problème de l\'allumage ?</strong><br>
+Cela dépend de l\'avis rabbinique suivi ; certains l\'acceptent comme une forme de "participation" du propriétaire juif, d\'autres exigent un acte plus direct. En cas de doute, consultez le rabbin de la communauté.</p>
+<p><strong>Le bishoul akoum a-t-il un lien avec la cachérisation des ustensiles ?</strong><br>
+Ce sont des catégories distinctes : le bishoul akoum traite de qui cuisine, tandis que la cachérisation (comme la <a href="/articulos/hagala-utensilios-metal">hagala</a>) traite de ce qu\'un ustensile a précédemment absorbé.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Pour voir comment ce principe s\'applique en pratique quand on mange dehors, voir <a href="/articulos/comer-kosher-restaurante">comment manger cachère dans un restaurant non certifié</a>. Et pour une autre catégorie où qui manipule le produit compte beaucoup, voir <a href="/articulos/vino-kosher">le vin cachère</a>.</p>',
             ],
             'vino-mevushal' => [
                 'title' => 'Mevoushal : le vin cachère qui peut être servi sans restrictions',
@@ -2510,9 +2563,31 @@ Non, le processus de chauffage doit être effectué avant ou pendant l\'élabora
   <img src="/images/articulos/tevilat-kelim.jpg" alt="Un mikvé, le bain rituel où l&#039;on immerge les ustensiles neufs avant leur première utilisation." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Un mikvé, le bain rituel où l\'on immerge les ustensiles neufs avant leur première utilisation. Photo: Stefan Walkowski via <a href="https://commons.wikimedia.org/wiki/File%3AMikveh.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>Cette coutume s\'applique principalement aux ustensiles en contact direct avec la nourriture : casseroles, poêles, couverts, assiettes en verre et verres. Elle ne s\'applique généralement pas aux appareils électriques (comme un grille-pain ou un mixeur) ni aux ustensiles en plastique ou en bois, bien que les avis varient selon la tradition de chaque communauté, c\'est pourquoi il est recommandé de consulter un rabbin pour des cas spécifiques.</p>
-<p>Le processus en lui-même est simple : l\'ustensile est bien nettoyé (sans restes d\'étiquettes, scellés ou adhésifs), immergé complètement dans l\'eau du mikvé pendant que l\'on récite une bénédiction, et il est ensuite prêt à être utilisé normalement.</p>
-<p>De nombreux mikvaot communautaires ont un horaire spécifique réservé à la tevilat kelim, séparé de l\'usage rituel personnel, ainsi que des instructions détaillées sur les matériaux nécessitant l\'immersion et ceux qui n\'en ont pas besoin. C\'est l\'une de ces pratiques qui, bien que paraissant un détail mineur, fait partie intégrante de la façon dont de nombreuses familles juives pratiquantes équipent leur cuisine.</p>',
+
+<h2>Quels ustensiles ont besoin de tevila, et lesquels non</h2>
+<p>Cette coutume s\'applique principalement aux ustensiles en contact direct avec la nourriture : casseroles, poêles, couverts, assiettes en verre et verres. Elle ne s\'applique généralement pas aux appareils électriques (comme un grille-pain ou un mixeur) ni aux ustensiles en plastique ou en bois, bien que les avis varient selon la tradition de chaque communauté, c\'est pourquoi il est recommandé de consulter un rabbin pour des cas spécifiques. Le critère général utilisé pour cette distinction ressemble à celui qui détermine ce qui a besoin de <a href="/articulos/hagala-utensilios-metal">hagala</a> : plus le contact avec la nourriture est direct et le matériau durable, plus il est probable qu\'une immersion soit nécessaire.</p>
+
+<h2>Le processus étape par étape</h2>
+<ol>
+<li>Bien nettoyer l\'ustensile, sans restes d\'étiquettes, scellés ou adhésifs pouvant se placer entre l\'eau et la surface.</li>
+<li>Vérifier qu\'aucune substance (graisse, rouille, résidu d\'emballage) n\'agit comme barrière.</li>
+<li>L\'immerger complètement dans l\'eau du mikvé, ou dans une source d\'eau naturelle appropriée, pendant que l\'on récite une bénédiction (pour les ustensiles qui l\'exigent selon la tradition).</li>
+<li>Une fois correctement immergé, l\'ustensile est prêt à être utilisé normalement, sans étape supplémentaire.</li>
+</ol>
+
+<h2>Où faire cela en pratique</h2>
+<p>De nombreux mikvaot communautaires ont un horaire spécifique réservé à la tevilat kelim, séparé de l\'usage rituel personnel, ainsi que des instructions détaillées sur les matériaux nécessitant l\'immersion et ceux qui n\'en ont pas besoin. Certaines communautés plus grandes disposent même d\'un bassin séparé, dédié exclusivement à cet usage, pour ne pas mélanger les horaires avec le mikvé d\'usage rituel personnel.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Un ustensile d\'occasion nécessite-t-il la tevila au même titre qu\'un ustensile neuf ?</strong><br>
+Oui, s\'il a été fabriqué ou vendu à l\'origine par une partie non juive, la coutume s\'applique indépendamment du fait que l\'ustensile soit neuf ou d\'occasion.</p>
+<p><strong>Que faire si j\'achète un ustensile et qu\'il n\'y a pas de mikvé à proximité ?</strong><br>
+On peut utiliser toute source d\'eau naturelle répondant aux exigences halakhiques (une rivière, la mer), bien qu\'en pratique la plupart des gens se tournent vers le mikvé communautaire le plus proche disposant d\'un horaire pour cela.</p>
+<p><strong>Les ustensiles achetés à un fabricant juif nécessitent-ils aussi la tevila ?</strong><br>
+En général non ; la coutume se concentre spécifiquement sur les ustensiles d\'origine non juive.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Pour d\'autres étapes pratiques lors de l\'équipement d\'une cuisine à partir de zéro, y compris cette coutume, voir <a href="/articulos/armar-cocina-kosher">comment organiser une cuisine cachère à partir de zéro</a>. Et pour la méthode utilisée pour purifier les ustensiles ayant absorbé une saveur non cachère, voir <a href="/articulos/hagala-utensilios-metal">la hagala : comment cachériser des ustensiles en métal</a>.</p>',
             ],
             'armar-cocina-kosher' => [
                 'title' => 'Comment organiser une cuisine cachère à partir de zéro',
@@ -2523,14 +2598,33 @@ Non, le processus de chauffage doit être effectué avant ou pendant l\'élabora
   <img src="/images/articulos/armar-cocina-kosher.jpg" alt="Aménager une cuisine casher est un processus graduel : inutile de tout régler en un jour." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Aménager une cuisine casher est un processus graduel : inutile de tout régler en un jour. Photo: MeRyan via <a href="https://commons.wikimedia.org/wiki/File%3AKitchen_with_island%2C_New_Orleans_2007.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY 2.0.</figcaption>
 </figure>
+
+<h2>Les étapes les plus fréquentes</h2>
 <ul>
 <li><strong>Définir la séparation physique :</strong> établir quels ustensiles, casseroles et vaisselle seront carnés et lesquels laitiers. Le plus pratique est généralement d\'utiliser des couleurs différentes (par exemple, rouge pour la viande, bleu pour le lait) pour éviter les confusions quotidiennes.</li>
-<li><strong>Séparer les surfaces de travail :</strong> planches à découper, torchons et éponges doivent aussi être divisés par catégorie.</li>
+<li><strong>Séparer les surfaces de travail :</strong> planches à découper, torchons et éponges doivent aussi être divisés par catégorie, idéalement rangés dans des endroits différents de la cuisine pour éviter les mélanges accidentels.</li>
 <li><strong>Évaluer les appareils partagés :</strong> four, micro-ondes et lave-vaisselle peuvent être cachérisés entre les usages ou, plus simplement, assignés à une seule catégorie dès le départ (par exemple, micro-ondes uniquement pour le parve).</li>
-<li><strong>Acheter des produits certifiés :</strong> vérifier le symbole de certification à chaque achat, jusqu\'à ce que cela devienne une habitude automatique.</li>
-<li><strong>Coordonner avec un rabbin :</strong> en particulier pour cachériser des éléments déjà présents dans la cuisine avant de commencer ce processus.</li>
+<li><strong>Acheter des produits certifiés :</strong> vérifier le symbole de certification à chaque achat, jusqu\'à ce que cela devienne une habitude automatique sans qu\'on ait à y penser.</li>
+<li><strong>Coordonner avec un rabbin :</strong> en particulier pour cachériser des éléments déjà présents dans la cuisine avant de commencer ce processus, et pour résoudre des doutes ponctuels sur des matériaux ou ustensiles spécifiques.</li>
+<li><strong>Ajouter la tevilat kelim :</strong> les ustensiles neufs en métal ou en verre achetés à un fabricant non juif nécessitent une immersion rituelle avant leur première utilisation.</li>
 </ul>
-<p>Une stratégie très utilisée par les débutants consiste à incorporer la séparation petit à petit : d\'abord les ustensiles d\'usage quotidien, ensuite la vaisselle de table, et enfin les appareils électroménagers. Il n\'est pas nécessaire de remplacer toute la cuisine d\'un coup, et de nombreuses familles mettent des mois à compléter la transition sans que cela pose un problème halakhique en soi.</p>',
+
+<h2>Y aller étape par étape : l\'ordre qui facilite le plus la transition</h2>
+<p>Une stratégie très utilisée par les débutants consiste à incorporer la séparation petit à petit : d\'abord les ustensiles d\'usage quotidien (casseroles, poêles, couverts), ensuite la vaisselle de table, et enfin les appareils électroménagers, qui sont généralement les plus chers et complexes à résoudre. Il n\'est pas nécessaire de remplacer toute la cuisine d\'un coup, et de nombreuses familles mettent des mois à compléter la transition sans que cela pose un problème halakhique en soi : ce qui compte, c\'est l\'intention de continuer à avancer, pas la vitesse.</p>
+
+<h2>Le budget : comment répartir l\'investissement</h2>
+<p>Aménager une cuisine complète à partir de zéro peut sembler coûteux si on le voit comme une dépense unique. En pratique, la plupart des familles répartissent cela en petits achats espacés : un service de casseroles ce mois-ci, des couverts le mois suivant, et ainsi de suite. Les bazars et boutiques communautaires ont souvent des lots pensés spécifiquement pour cela, à des prix plus accessibles que d\'acheter tout séparément.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Faut-il tout jeter de ce qui était déjà dans la cuisine avant de commencer ?</strong><br>
+Pas nécessairement. De nombreux ustensiles peuvent être cachérisés selon le matériau (voir <a href="/articulos/hagala-utensilios-metal">la hagala</a>) ; seul ce qui ne peut pas être cachérisé, comme la plupart des céramiques, doit être remplacé.</p>
+<p><strong>Le micro-ondes a-t-il besoin de deux unités, une pour la viande et une pour le lait ?</strong><br>
+Ce n\'est pas obligatoire : de nombreuses familles utilisent un seul micro-ondes assigné "uniquement au parve", ou le cachérisent entre les usages comme décrit dans <a href="/articulos/kasherizar-horno">comment cachériser un four</a> (le principe est similaire).</p>
+<p><strong>Combien de temps prend en moyenne la transition ?</strong><br>
+Cela varie beaucoup selon le budget et le rythme de chaque famille, mais il n\'est pas rare que cela prenne entre plusieurs mois et un an pour compléter toutes les étapes sereinement.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Pour le détail de l\'immersion rituelle des ustensiles neufs, voir <a href="/articulos/tevilat-kelim">tevilat kelim</a>. Et pour comprendre la méthode utilisée pour cachériser ce que vous aviez déjà à la maison, voir <a href="/articulos/hagala-utensilios-metal">la hagala : comment cachériser des ustensiles en métal</a>.</p>',
             ],
             'certificaciones-kosher-mundo' => [
                 'title' => 'Différences entre les certifications cachères à travers le monde',
