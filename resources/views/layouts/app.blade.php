@@ -50,16 +50,7 @@
                           {{ request()->routeIs('articles.*') ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-gray-100' }}">
                     📰 Artículos
                 </a>
-                <a href="{{ route('home') }}"
-                   class="px-3 py-1.5 rounded-lg text-sm font-semibold transition
-                          {{ request()->routeIs('home') || request()->routeIs('products.*') || request()->routeIs('categories.*') || request()->routeIs('certifiers.*') || request()->routeIs('brands.*') ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-gray-100' }}">
-                    🛒 Productos
-                </a>
-                <a href="{{ route('places.index') }}"
-                   class="px-3 py-1.5 rounded-lg text-sm font-semibold transition
-                          {{ request()->routeIs('places.*') || request()->routeIs('countries.*') ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-gray-100' }}">
-                    📍 Lugares
-                </a>
+                {{-- Productos y Lugares ocultos del menu: contenido marcado noindex, ver doc/plan-adsense.md --}}
                 <a href="{{ route('certifiers.index') }}"
                    class="px-3 py-1.5 rounded-lg text-sm font-medium transition text-gray-500 hover:bg-gray-100">
                     🏅 Certif.
@@ -180,16 +171,7 @@
                       {{ request()->routeIs('articles.*') ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-600' }}">
                 📰 Artículos
             </a>
-            <a href="{{ route('home') }}"
-               class="px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap
-                      {{ request()->routeIs('home') || request()->routeIs('products.*') ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-600' }}">
-                🛒 Productos
-            </a>
-            <a href="{{ route('places.index') }}"
-               class="px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap
-                      {{ request()->routeIs('places.*') || request()->routeIs('countries.*') ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-600' }}">
-                📍 Lugares
-            </a>
+            {{-- Productos y Lugares ocultos del menu: contenido marcado noindex, ver doc/plan-adsense.md --}}
             <a href="{{ route('certifiers.index') }}"
                class="px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap bg-gray-100 text-gray-600">
                 🏅 Certif.

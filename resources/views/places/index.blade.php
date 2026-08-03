@@ -2,6 +2,7 @@
 
 @section('title', 'Lugares Kosher - KosherMap')
 @section('meta_description', 'Encontrá restaurantes, sinagogas, panaderías, carnicerías y comunidades kosher en tu ciudad. Directorio global de lugares kosher verificados por país.')
+@section('robots', 'noindex, follow')
 
 @section('content')
 
