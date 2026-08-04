@@ -287,6 +287,11 @@ return [
                 'body'  => '<p>KosherMap utiliza tecnología moderna para mantener la información actualizada. Los lugares son verificados periódicamente a través de fuentes públicas y nuestra comunidad de moderadores, y los productos son actualizados desde fuentes oficiales de las agencias certificadoras.</p>
 <p>Nuestro compromiso es ofrecer información <strong>precisa, actualizada y confiable</strong>, aunque siempre recomendamos confirmar el estatus kosher de cualquier establecimiento directamente antes de visitarlo, ya que las situaciones pueden cambiar.</p>',
             ],
+            [
+                'title' => 'Quién Está Detrás de KosherMap',
+                'body'  => '<p>KosherMap es un proyecto creado y dirigido por <strong>Claudio Buenos</strong>, responsable del sitio y su contenido editorial.</p>
+<p>¿Preguntas o sugerencias? Escribime directamente a <a href="mailto:info@koshermap.org" class="text-blue-600 hover:underline">info@koshermap.org</a>.</p>',
+            ],
         ],
     ],
 
@@ -384,6 +389,23 @@ return [
                 'title' => 'Propiedad Intelectual',
                 'body'  => '<p>El diseño, los textos editoriales y el código de KosherMap son propiedad de sus creadores. Los datos de productos y certificaciones provienen de fuentes oficiales de las agencias certificadoras.</p>
 <p>Si encontrás contenido tuyo que considerás que está siendo usado incorrectamente, contactanos a <a href="mailto:info@koshermap.org" class="text-blue-600 hover:underline">info@koshermap.org</a>.</p>',
+            ],
+            [
+                'title' => 'Imágenes y Contenido Multimedia',
+                'body'  => '<p>Todas las fotografías utilizadas en los artículos de KosherMap provienen de <strong>Wikimedia Commons</strong> y se publican bajo licencias libres de derechos de autor (Creative Commons — CC BY, CC BY-SA, o dominio público). Debajo de cada imagen se indica el autor original, el enlace a la fuente y el tipo de licencia correspondiente.</p>
+<p>No utilizamos imágenes con derechos reservados sin autorización. Si considerás que alguna imagen publicada en el sitio infringe tus derechos de autor, escribinos a <a href="mailto:info@koshermap.org" class="text-blue-600 hover:underline">info@koshermap.org</a> y la retiraremos de inmediato tras verificarlo.</p>',
+            ],
+            [
+                'title' => 'Aviso Legal',
+                'body'  => '<h3 class="text-lg font-semibold text-gray-800 mt-2 mb-2">Identificación del Titular</h3>
+<p><strong>KosherMap</strong> (koshermap.org) es un proyecto editorial independiente dedicado a la difusión de información sobre productos y establecimientos kosher.</p>
+<ul>
+  <li><strong>Titular/responsable:</strong> Claudio Buenos</li>
+  <li><strong>Contacto:</strong> <a href="mailto:info@koshermap.org" class="text-blue-600 hover:underline">info@koshermap.org</a></li>
+  <li><strong>Sitio web:</strong> https://koshermap.org</li>
+</ul>
+<h3 class="text-lg font-semibold text-gray-800 mt-4 mb-2">Finalidad del Sitio</h3>
+<p>KosherMap tiene fines informativos y de directorio. No sustituye la verificación oficial de una certificadora kosher reconocida antes de tomar decisiones alimentarias.</p>',
             ],
             [
                 'title' => 'Limitación de Responsabilidad',

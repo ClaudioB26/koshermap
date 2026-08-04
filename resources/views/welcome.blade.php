@@ -2,7 +2,8 @@
 
 @section('title', 'KosherMap - Directorio de Productos y Locales Kosher')
 @section('meta_description', 'KosherMap es el directorio global de productos y locales con certificación kosher. Buscá por nombre, escaneá el código de barras, o encontrá restaurantes y sinagogas en tu ciudad.')
-@section('canonical', 'https://koshermap.org/')
+@section('canonical', 'https://koshermap.org/productos')
+@section('robots', 'noindex, follow')
 
 @section('content')
 
@@ -133,31 +134,31 @@
             @if(request('country'))
             <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold flex items-center gap-2">
                 📍 {{ ucwords(str_replace('-', ' ', request('country'))) }}
-                <a href="{{ route('home', request()->except(['country', 'page'])) }}" class="text-blue-500 hover:text-blue-700">✕</a>
+                <a href="{{ route('search.index', request()->except(['country', 'page'])) }}" class="text-blue-500 hover:text-blue-700">✕</a>
             </span>
             @endif
             @if(request('category'))
             <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-semibold flex items-center gap-2">
                 🏷️ {{ $selectedCategoryModel->name ?? ucwords(str_replace('-', ' ', request('category'))) }}
-                <a href="{{ route('home', request()->except(['category', 'page'])) }}" class="text-green-500 hover:text-green-700">✕</a>
+                <a href="{{ route('search.index', request()->except(['category', 'page'])) }}" class="text-green-500 hover:text-green-700">✕</a>
             </span>
             @endif
             @if(request('certifier'))
             <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-semibold flex items-center gap-2">
                 🏅 {{ ucwords(str_replace('-', ' ', request('certifier'))) }}
-                <a href="{{ route('home', request()->except(['certifier', 'page'])) }}" class="text-purple-500 hover:text-purple-700">✕</a>
+                <a href="{{ route('search.index', request()->except(['certifier', 'page'])) }}" class="text-purple-500 hover:text-purple-700">✕</a>
             </span>
             @endif
             @if(request('brand'))
             <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm font-semibold flex items-center gap-2">
                 🏭 {{ $selectedBrandModel->name ?? ucwords(str_replace('-', ' ', request('brand'))) }}
-                <a href="{{ route('home', request()->except(['brand', 'page'])) }}" class="text-orange-500 hover:text-orange-700">✕</a>
+                <a href="{{ route('search.index', request()->except(['brand', 'page'])) }}" class="text-orange-500 hover:text-orange-700">✕</a>
             </span>
             @endif
             @if(request('tipo'))
             <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm font-semibold flex items-center gap-2">
                 🥘 {{ $tipoLabels[request('tipo')] ?? request('tipo') }}
-                <a href="{{ route('home', request()->except(['tipo', 'page'])) }}" class="text-pink-500 hover:text-pink-700">✕</a>
+                <a href="{{ route('search.index', request()->except(['tipo', 'page'])) }}" class="text-pink-500 hover:text-pink-700">✕</a>
             </span>
             @endif
         </div>

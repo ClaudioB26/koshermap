@@ -8,14 +8,14 @@
         <ul class="space-y-1 text-sm">
             @if($selectedCountry)
             <li>
-                <a href="{{ route('home', array_merge(request()->except(['country', 'page']), ['country' => ''])) }}"
+                <a href="{{ route('search.index', array_merge(request()->except(['country', 'page']), ['country' => ''])) }}"
                    class="text-blue-600 hover:underline">🌍 Todos los países</a>
             </li>
             @endif
             @foreach($countryFacets as $facet)
             @php $c = $facet['country']; @endphp
             <li>
-                <a href="{{ route('home', array_merge(request()->except(['country', 'page']), ['country' => $c->slug])) }}"
+                <a href="{{ route('search.index', array_merge(request()->except(['country', 'page']), ['country' => $c->slug])) }}"
                    class="flex justify-between items-center px-2 py-1 rounded-lg transition
                           {{ $selectedCountry === $c->slug ? 'bg-blue-50 text-blue-700 font-semibold' : 'text-gray-600 hover:bg-gray-50' }}">
                     <span class="truncate">{{ $c->name }}</span>
@@ -34,14 +34,14 @@
         <ul class="space-y-1 text-sm">
             @if($selectedCategoryModel)
             <li>
-                <a href="{{ route('home', request()->except(['category', 'page'])) }}"
+                <a href="{{ route('search.index', request()->except(['category', 'page'])) }}"
                    class="text-blue-600 hover:underline">✕ Quitar filtro</a>
             </li>
             @endif
             @foreach($categoryFacets as $facet)
             @php $cat = $facet['category']; @endphp
             <li>
-                <a href="{{ route('home', array_merge(request()->except(['category', 'page']), ['category' => $cat->slug])) }}"
+                <a href="{{ route('search.index', array_merge(request()->except(['category', 'page']), ['category' => $cat->slug])) }}"
                    class="flex justify-between items-center px-2 py-1 rounded-lg transition
                           {{ $selectedCategory === $cat->slug ? 'bg-blue-50 text-blue-700 font-semibold' : 'text-gray-600 hover:bg-gray-50' }}">
                     <span class="truncate">{{ $cat->name }}</span>
@@ -61,14 +61,14 @@
         <ul class="space-y-1 text-sm">
             @if($selectedBrandModel)
             <li>
-                <a href="{{ route('home', request()->except(['brand', 'page'])) }}"
+                <a href="{{ route('search.index', request()->except(['brand', 'page'])) }}"
                    class="text-blue-600 hover:underline">✕ Quitar filtro</a>
             </li>
             @endif
             @foreach($brandFacets as $facet)
             @php $brand = $facet['brand']; @endphp
             <li>
-                <a href="{{ route('home', array_merge(request()->except(['brand', 'page']), ['brand' => $brand->slug])) }}"
+                <a href="{{ route('search.index', array_merge(request()->except(['brand', 'page']), ['brand' => $brand->slug])) }}"
                    class="flex justify-between items-center px-2 py-1 rounded-lg transition
                           {{ $selectedBrand === $brand->slug ? 'bg-blue-50 text-blue-700 font-semibold' : 'text-gray-600 hover:bg-gray-50' }}">
                     <span class="truncate">{{ $brand->name }}</span>
@@ -88,13 +88,13 @@
         <ul class="space-y-1 text-sm">
             @if($selectedTipo)
             <li>
-                <a href="{{ route('home', request()->except(['tipo', 'page'])) }}"
+                <a href="{{ route('search.index', request()->except(['tipo', 'page'])) }}"
                    class="text-blue-600 hover:underline">✕ Quitar filtro</a>
             </li>
             @endif
             @foreach($tipoFacets as $facet)
             <li>
-                <a href="{{ route('home', array_merge(request()->except(['tipo', 'page']), ['tipo' => $facet['tipo']])) }}"
+                <a href="{{ route('search.index', array_merge(request()->except(['tipo', 'page']), ['tipo' => $facet['tipo']])) }}"
                    class="flex justify-between items-center px-2 py-1 rounded-lg transition
                           {{ $selectedTipo === $facet['tipo'] ? 'bg-blue-50 text-blue-700 font-semibold' : 'text-gray-600 hover:bg-gray-50' }}">
                     <span>{{ $facet['label'] }}</span>

@@ -75,8 +75,13 @@ Route::get('/robots.txt', function () {
     return response(implode("\n", $lines), 200)->header('Content-Type', 'text/plain');
 })->name('robots');
 
-// Cambia la ruta '/' que estaba antes por esta:
-Route::get('/', [SearchController::class, 'index'])->name('home');
+// Home apunta a /articulos durante el proceso de aprobación de AdSense
+// (contenido editorial en vez de buscador). La búsqueda de productos
+// se movió a /productos para no perder la funcionalidad.
+Route::get('/', function () {
+    return redirect()->route('articles.index', [], 301);
+})->name('home');
+Route::get('/productos', [SearchController::class, 'index'])->name('search.index');
 // Ruta para ver un producto individual
 Route::get('/product/{slug}', [ProductController::class, 'show'])->name('products.show');
 Route::post('/product/{slug}/reviews', [ReviewController::class, 'store'])->name('reviews.store');
@@ -205,7 +210,6 @@ $infoPages = [
     'judaismo'        => 'judaismo',
     'etiqueta-kosher' => 'etiqueta_kosher',
     'sobre-nosotros'  => 'sobre_nosotros',
-    'contacto'        => 'contacto',
     'privacidad'      => 'privacidad',
     'terminos'        => 'terminos',
 ];
@@ -216,6 +220,14 @@ foreach ($infoPages as $slug => $pageKey) {
         return view('pages.show', compact('content'));
     })->name("pages.{$slug}");
 }
+
+// Contacto: página con formulario (no usa el template genérico de pages.show)
+Route::get('/contacto', function () {
+    $content = trans('pages.contacto');
+    abort_if(!is_array($content), 404);
+    return view('pages.contacto', compact('content'));
+})->name('pages.contacto');
+Route::post('/contacto', [\App\Http\Controllers\ContactController::class, 'store'])->name('contact.store');
 
 // Artículos sobre kashrut (tabla articles, multiidioma vía JSON)
 // Español es el default: sin prefijo de idioma en la URL.

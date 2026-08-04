@@ -18,18 +18,48 @@
     <style>[x-cloak] { display: none !important; }</style>
     <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
 
-    {{-- Google Analytics 4 --}}
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9G0V2KMB14"></script>
+    {{-- Google Consent Mode + carga diferida de Analytics/AdSense:
+         los scripts de GA y AdSense NO se cargan (y por lo tanto no setean cookies)
+         hasta que el usuario acepta el banner de cookies, o si ya lo había aceptado antes. --}}
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-9G0V2KMB14');
-    </script>
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied'
+        });
 
-    {{-- Google AdSense --}}
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3393238730190407"
-            crossorigin="anonymous"></script>        
+        window.loadAnalyticsAndAds = function () {
+            if (window.__analyticsAdsLoaded) return;
+            window.__analyticsAdsLoaded = true;
+
+            gtag('consent', 'update', {
+                'ad_storage': 'granted',
+                'ad_user_data': 'granted',
+                'ad_personalization': 'granted',
+                'analytics_storage': 'granted'
+            });
+
+            const ga = document.createElement('script');
+            ga.async = true;
+            ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-9G0V2KMB14';
+            document.head.appendChild(ga);
+            gtag('js', new Date());
+            gtag('config', 'G-9G0V2KMB14');
+
+            const ads = document.createElement('script');
+            ads.async = true;
+            ads.crossOrigin = 'anonymous';
+            ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3393238730190407';
+            document.head.appendChild(ads);
+        };
+
+        if (document.cookie.includes('cookie_consent=accepted')) {
+            window.loadAnalyticsAndAds();
+        }
+    </script>
     @stack('head')
 </head>
 <body class="bg-gray-50 flex flex-col min-h-screen">
@@ -59,7 +89,7 @@
 
             <!-- Search Bar -->
             <div class="flex-grow">
-                <form action="{{ request()->routeIs('places.*') || request()->routeIs('countries.*') ? route('places.index') : route('home') }}"
+                <form action="{{ request()->routeIs('places.*') || request()->routeIs('countries.*') ? route('places.index') : route('search.index') }}"
                       method="GET" class="relative">
                     @if(isset($country) && $country instanceof \App\Models\Country)
                         <input type="hidden" name="country" value="{{ $country->slug }}">
@@ -279,6 +309,8 @@
     });
 })();
 </script>
+@include('partials.cookie_consent')
+
 @stack('scripts')
 </body>
 </html>

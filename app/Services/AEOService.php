@@ -26,7 +26,7 @@ class AEOService
             // Certificaciones kosher
             '/(qué|cuál|cuando).*certificación.*kosher/i' => 'certification_info',
             '/(diferencia|diferencias).*ou.*kmd/i' => 'certifier_comparison',
-            '/(significa|qué es).*pareve/i' => 'kosher_term_definition',
+            '/(significa|qué es).*(pareve|parve)/i' => 'kosher_term_definition',
             
             // Categorías específicas
             '/(vino|bebida).*kosher/i' => 'category_wine',
@@ -201,7 +201,7 @@ class AEOService
      */
     private function defineKosherTerm()
     {
-        return "Pareve significa que el producto kosher no contiene ni derivados de leche ni carne. Es neutral y puede consumirse con alimentos lácteos o cárnicos según las leyes kosher. La mejor solución para productos pareve es buscar certificación específica que lo indique.";
+        return "Parve significa que el producto kosher no contiene ni derivados de leche ni carne. Es neutral y puede consumirse con alimentos lácteos o cárnicos según las leyes kosher. La mejor solución para productos parve es buscar certificación específica que lo indique.";
     }
 
     /**

@@ -123,7 +123,7 @@ No. La halajá se refiere a lo que es visible a simple vista. Los microorganismo
   <text x="425" y="145" font-family="system-ui,sans-serif" font-size="11" fill="#166534">se combina ✓</text>
 </svg>
 
-<p>La categoría <strong>parve</strong> es la más versátil y por eso la más buscada por la industria alimentaria: un postre parve puede servirse después de una comida de carne, algo imposible con uno lácteo. Si querés profundizar en ese punto, lo desarrollamos en el artículo sobre <a href="/articulos/que-significa-pareve">qué significa pareve</a>.</p>
+<p>La categoría <strong>parve</strong> es la más versátil y por eso la más buscada por la industria alimentaria: un postre parve puede servirse después de una comida de carne, algo imposible con uno lácteo. Si querés profundizar en ese punto, lo desarrollamos en el artículo sobre <a href="/articulos/que-significa-pareve">qué significa parve</a>.</p>
 
 <h2>Por qué hacen falta dos juegos de todo</h2>
 <p>Esto no se queda en la teoría. En una cocina kosher observante los utensilios, las ollas, los platos y hasta el lavavajillas se dividen en dos juegos separados. El motivo es un principio halájico llamado <em>bliot</em>: cuando un alimento se cocina en un recipiente a temperatura alta, se considera que el sabor queda absorbido en las paredes de ese recipiente. Una olla en la que herviste leche "es" lácteo aunque esté impecablemente limpia, y si después cocinás carne ahí, esa carne queda comprometida.</p>
@@ -141,7 +141,7 @@ No. La halajá se refiere a lo que es visible a simple vista. Los microorganismo
 <p>La excepción son los quesos duros y muy estacionados, que en varias comunidades requieren la misma espera completa que la carne, justamente porque su sabor es más persistente. Lo importante acá es no improvisar: la costumbre se hereda de la familia o se define con el rabino de la comunidad, no se elige la más cómoda.</p>
 
 <h2>Cómo se traduce esto en las etiquetas del supermercado</h2>
-<p>Por eso tantas etiquetas llevan una letra chiquita junto al sello de certificación: "D" para <em>dairy</em> (lácteo), "M" para <em>meat</em> (cárnico) o directamente "Pareve". Con solo mirar esa letra sabés al instante si podés combinar ese producto con lo que estás por comer.</p>
+<p>Por eso tantas etiquetas llevan una letra chiquita junto al sello de certificación: "D" para <em>dairy</em> (lácteo), "M" para <em>meat</em> (cárnico) o directamente "Parve". Con solo mirar esa letra sabés al instante si podés combinar ese producto con lo que estás por comer.</p>
 <p>Hay una cuarta marca que confunde bastante: <strong>"DE"</strong>, de <em>dairy equipment</em>. Significa que el producto no tiene ingredientes lácteos, pero se elaboró en una línea de producción que también procesa lácteos. No se puede comer junto con carne, pero sí después de carne. Es una categoría intermedia que existe justamente porque las fábricas modernas comparten equipos entre productos. Lo explicamos en detalle en <a href="/articulos/como-leer-etiqueta-kosher">cómo leer una etiqueta kosher</a>.</p>
 
 <h2>Preguntas frecuentes</h2>
@@ -602,7 +602,7 @@ Algunas certificadoras tienen sus propias apps o listados online con los restaur
 </ul>
 
 <h2>Las letras que acompañan al símbolo</h2>
-<p>Además del símbolo, muchas etiquetas incluyen una letra adicional: "D" (dairy/lácteo), "M" (meat/cárnico), "Pareve" (neutro) o "DE" (dairy equipment, elaborado en equipo lácteo pero sin ingredientes lácteos directos). Esta última distinción es importante: un producto "DE" no es apto para comer directamente después de carne, aunque no contenga lácteos como ingrediente. Conocer estos símbolos agiliza enormemente las compras, sobre todo al viajar a países donde no se domina el idioma local.</p>
+<p>Además del símbolo, muchas etiquetas incluyen una letra adicional: "D" (dairy/lácteo), "M" (meat/cárnico), "Parve" (neutro) o "DE" (dairy equipment, elaborado en equipo lácteo pero sin ingredientes lácteos directos). Esta última distinción es importante: un producto "DE" no es apto para comer directamente después de carne, aunque no contenga lácteos como ingrediente. Conocer estos símbolos agiliza enormemente las compras, sobre todo al viajar a países donde no se domina el idioma local.</p>
 
 <h2>Un hechsher no es un trámite único: es supervisión constante</h2>
 <p>Vale aclarar algo que no siempre se entiende: un hechsher no es un trámite que se hace una vez y queda para siempre. Es una supervisión activa y constante. Conocemos el caso de una panadería de Buenos Aires que tenía la certificación de una agencia comunitaria. En un momento el rabino supervisor notó movimientos raros y mandó gente a controlar, casi como un detective. Descubrieron que estaba comprando dulce de leche sin supervisión, cuando debía usar solamente productos Jalav Israel (lácteos elaborados bajo supervisión judía). Le advirtieron y le pidieron corregir. Al poco tiempo, sin saber que lo seguían de cerca, apareció comprando queso común sin certificación, y esa fue la gota que rebalsó el vaso: le retiraron la supervisión. Todo se manejó con discreción, sin escándalo, simplemente dejando de certificar el local.</p>
@@ -620,14 +620,14 @@ No. A diferencia de "OU" o "OK", la letra "K" sola no está registrada como marc
 El símbolo en sí (el diseño) suele ser consistente porque está registrado por la certificadora, pero el nivel de reconocimiento que le da cada comunidad varía según el país y la corriente religiosa.</p>
 
 <h2>Para seguir leyendo</h2>
-<p>Para entender la diferencia entre "D", "M" y "Pareve" en detalle, mirá <a href="/articulos/que-significa-pareve">qué significa pareve</a>. Y si te interesa cómo leer una etiqueta completa más allá del símbolo, está <a href="/articulos/como-leer-etiqueta-kosher">cómo leer una etiqueta kosher</a>.</p>',
+<p>Para entender la diferencia entre "D", "M" y "Parve" en detalle, mirá <a href="/articulos/que-significa-pareve">qué significa parve</a>. Y si te interesa cómo leer una etiqueta completa más allá del símbolo, está <a href="/articulos/como-leer-etiqueta-kosher">cómo leer una etiqueta kosher</a>.</p>',
             ],
             [
                 'slug' => 'que-significa-pareve',
                 'category' => 'kashrut-basico',
-                'title' => 'Pareve: qué significa y por qué es tan común en las etiquetas',
-                'excerpt' => 'Pareve es una de las palabras más repetidas en el etiquetado kosher. Te explicamos qué significa y por qué es tan valorada.',
-                'content' => '<p>Pareve (también escrito <em>parve</em>, del ídish "neutral") es la palabra que describe a los alimentos que no son ni cárnicos ni lácteos: frutas, verduras, huevos, pescado, granos, legumbres y la mayoría de los productos elaborados sin ingredientes de origen lácteo o cárnico.</p>
+                'title' => 'Parve: qué significa y por qué es tan común en las etiquetas',
+                'excerpt' => 'Parve es una de las palabras más repetidas en el etiquetado kosher. Te explicamos qué significa y por qué es tan valorada.',
+                'content' => '<p>Parve (en otras fuentes, sobre todo internacionales, aparece escrito <em>pareve</em>, del ídish "neutral") es la palabra que describe a los alimentos que no son ni cárnicos ni lácteos: frutas, verduras, huevos, pescado, granos, legumbres y la mayoría de los productos elaborados sin ingredientes de origen lácteo o cárnico.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/que-significa-pareve.jpg" alt="Frutas y verduras frescas son parve por naturaleza: se combinan tanto con carne como con lácteos." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
@@ -636,12 +636,12 @@ El símbolo en sí (el diseño) suele ser consistente porque está registrado po
 <p>Es probablemente la palabra que más vas a leer en las etiquetas kosher, y entender bien qué implica te ahorra la mitad de las dudas cotidianas en la cocina.</p>
 
 <h2>Por qué es la categoría más buscada</h2>
-<p>La gran ventaja de un producto pareve es que se puede combinar libremente tanto con comidas cárnicas como con lácteas, sin generar ningún conflicto. Eso lo convierte en el comodín de la cocina kosher.</p>
-<p>El caso donde más se nota es el postre. Si la cena fue de carne, no podés servir helado, flan ni nada con crema, porque hay que esperar entre <a href="/articulos/carne-y-leche">carne y lácteos</a>. Un postre pareve resuelve el problema: se puede servir inmediatamente después de un asado. Por eso la industria invierte tanto en desarrollar versiones pareve de productos que tradicionalmente llevan lácteos —chocolate, margarina, cremas vegetales para repostería, helados a base de agua o leches vegetales—: le abre un mercado que de otra forma no podría comprarlos en la comida principal.</p>
+<p>La gran ventaja de un producto parve es que se puede combinar libremente tanto con comidas cárnicas como con lácteas, sin generar ningún conflicto. Eso lo convierte en el comodín de la cocina kosher.</p>
+<p>El caso donde más se nota es el postre. Si la cena fue de carne, no podés servir helado, flan ni nada con crema, porque hay que esperar entre <a href="/articulos/carne-y-leche">carne y lácteos</a>. Un postre parve resuelve el problema: se puede servir inmediatamente después de un asado. Por eso la industria invierte tanto en desarrollar versiones parve de productos que tradicionalmente llevan lácteos —chocolate, margarina, cremas vegetales para repostería, helados a base de agua o leches vegetales—: le abre un mercado que de otra forma no podría comprarlos en la comida principal.</p>
 
-<svg viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Un producto puede ser pareve por ingredientes pero perder ese estatus si se elabora en equipamiento compartido con lácteos, pasando a la categoría DE (dairy equipment)." style="width:100%;height:auto;max-width:640px;margin:1.5rem auto;display:block;">
+<svg viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Un producto puede ser parve por ingredientes pero perder ese estatus si se elabora en equipamiento compartido con lácteos, pasando a la categoría DE (dairy equipment)." style="width:100%;height:auto;max-width:640px;margin:1.5rem auto;display:block;">
   <rect x="0" y="0" width="640" height="200" fill="#f9fafb" rx="8"/>
-  <text x="20" y="28" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#1f2937">Ser pareve no depende solo de los ingredientes</text>
+  <text x="20" y="28" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#1f2937">Ser parve no depende solo de los ingredientes</text>
   <rect x="20" y="48" width="150" height="60" fill="#dcfce7" stroke="#16a34a" stroke-width="2" rx="8"/>
   <text x="95" y="72" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#166534">Ingredientes</text>
   <text x="95" y="90" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#166534">sin lácteos</text>
@@ -661,34 +661,34 @@ El símbolo en sí (el diseño) suele ser consistente porque está registrado po
   <text x="20" y="180" font-family="system-ui,sans-serif" font-size="11" fill="#6b7280">Por eso la certificación revisa la línea de producción, no solo la lista de ingredientes.</text>
 </svg>
 
-<h2>El matiz que confunde a todo el mundo: pareve por ingredientes vs. pareve certificado</h2>
-<p>Acá está el punto donde más gente se equivoca. Un alimento puede tener una lista de ingredientes impecablemente libre de lácteos y aun así no ser pareve, si se fabricó en un equipo que también procesa productos lácteos.</p>
+<h2>El matiz que confunde a todo el mundo: parve por ingredientes vs. parve certificado</h2>
+<p>Acá está el punto donde más gente se equivoca. Un alimento puede tener una lista de ingredientes impecablemente libre de lácteos y aun así no ser parve, si se fabricó en un equipo que también procesa productos lácteos.</p>
 <p>Pensá en una fábrica de galletitas: la misma línea produce a la mañana galletitas con manteca y a la tarde galletitas sin ella. Aunque la segunda tanda no lleve ningún ingrediente lácteo, el equipo retiene sabor del lote anterior. El resultado se etiqueta <strong>"DE"</strong> (<em>dairy equipment</em>): no se puede comer junto con carne, aunque sí después de una comida cárnica, sin esperar las horas completas.</p>
 <p>Por eso la certificación kosher no es un análisis de laboratorio de ingredientes: es una auditoría del proceso completo, incluyendo qué se produjo antes en esa línea y cómo se limpió en el medio.</p>
 
-<h2>Ejemplos concretos de productos pareve</h2>
+<h2>Ejemplos concretos de productos parve</h2>
 <ul>
-<li><strong>Casi siempre pareve:</strong> aceite de oliva y otros aceites vegetales, azúcar, sal, arroz, legumbres secas, frutas y verduras frescas, frutos secos sin procesar, agua mineral y gaseosas.</li>
-<li><strong>Depende de la marca:</strong> pan (muchos llevan manteca o suero de leche), pastas (las que llevan huevo siguen siendo pareve, pero conviene verificar), chocolate (el amargo suele ser pareve, el con leche obviamente no), galletitas, margarina.</li>
-<li><strong>Pareve pero con asterisco:</strong> el pescado es pareve, pero muchas comunidades no lo combinan con carne en el mismo plato por una cuestión aparte, explicada en <a href="/articulos/pescado-kosher-aletas-escamas">pescado kosher</a>.</li>
+<li><strong>Casi siempre parve:</strong> aceite de oliva y otros aceites vegetales, azúcar, sal, arroz, legumbres secas, frutas y verduras frescas, frutos secos sin procesar, agua mineral y gaseosas.</li>
+<li><strong>Depende de la marca:</strong> pan (muchos llevan manteca o suero de leche), pastas (las que llevan huevo siguen siendo parve, pero conviene verificar), chocolate (el amargo suele ser parve, el con leche obviamente no), galletitas, margarina.</li>
+<li><strong>Parve pero con asterisco:</strong> el pescado es parve, pero muchas comunidades no lo combinan con carne en el mismo plato por una cuestión aparte, explicada en <a href="/articulos/pescado-kosher-aletas-escamas">pescado kosher</a>.</li>
 </ul>
 <p>Podés verificar el estatus de una marca puntual en nuestro <a href="/">directorio de productos certificados</a>, filtrando directamente por tipo.</p>
 
-<h2>Un error clásico: confundir pareve con vegano</h2>
+<h2>Un error clásico: confundir parve con vegano</h2>
 <p>No son lo mismo, aunque se superpongan bastante. Un producto vegano no contiene nada de origen animal, pero puede haberse elaborado en equipamiento compartido con productos cárnicos, o contener ingredientes que la halajá restringe por otros motivos —como el vino, que necesita supervisión propia aunque sea vegano.</p>
-<p>Y al revés: un producto pareve puede contener huevo o pescado, que no son veganos. Desarrollamos las diferencias en <a href="/articulos/kashrut-y-veganismo">kashrut y veganismo</a>.</p>
+<p>Y al revés: un producto parve puede contener huevo o pescado, que no son veganos. Desarrollamos las diferencias en <a href="/articulos/kashrut-y-veganismo">kashrut y veganismo</a>.</p>
 
 <h2>Preguntas frecuentes</h2>
-<p><strong>¿El huevo es pareve aunque venga de un animal?</strong><br>
-Sí. La categoría cárnica se refiere a la carne del animal, no a sus subproductos no lácteos. El huevo de un ave kosher es pareve y se puede usar tanto en preparaciones lácteas como cárnicas. Eso sí, hay que revisarlo antes de usarlo, como explicamos en <a href="/articulos/huevos-kosher">huevos kosher</a>.</p>
-<p><strong>Si cocino algo pareve en una olla cárnica, ¿sigue siendo pareve?</strong><br>
-No exactamente. Pasa a considerarse "pareve cocinado en cárnico", lo que en la práctica significa que no lo podés servir con lácteos. Por eso muchas familias tienen algunas ollas dedicadas exclusivamente a parve, justamente para conservar esa flexibilidad.</p>
-<p><strong>¿La miel es pareve si la producen las abejas?</strong><br>
-Sí, la miel es pareve y kosher, a pesar de que las abejas no son un animal kosher. Es una de las excepciones clásicas del kashrut, porque la miel no se considera un producto del cuerpo de la abeja sino néctar transformado.</p>
+<p><strong>¿El huevo es parve aunque venga de un animal?</strong><br>
+Sí. La categoría cárnica se refiere a la carne del animal, no a sus subproductos no lácteos. El huevo de un ave kosher es parve y se puede usar tanto en preparaciones lácteas como cárnicas. Eso sí, hay que revisarlo antes de usarlo, como explicamos en <a href="/articulos/huevos-kosher">huevos kosher</a>.</p>
+<p><strong>Si cocino algo parve en una olla cárnica, ¿sigue siendo parve?</strong><br>
+No exactamente. Pasa a considerarse "parve cocinado en cárnico", lo que en la práctica significa que no lo podés servir con lácteos. Por eso muchas familias tienen algunas ollas dedicadas exclusivamente a parve, justamente para conservar esa flexibilidad.</p>
+<p><strong>¿La miel es parve si la producen las abejas?</strong><br>
+Sí, la miel es parve y kosher, a pesar de que las abejas no son un animal kosher. Es una de las excepciones clásicas del kashrut, porque la miel no se considera un producto del cuerpo de la abeja sino néctar transformado.</p>
 
 <h2>Para seguir leyendo</h2>
 <p>El complemento natural de este artículo es <a href="/articulos/carne-y-leche">carne y leche: por qué no se mezclan</a>, que explica de dónde sale toda esta división. Para el detalle de cómo interpretar los símbolos en el envase, mirá <a href="/articulos/como-leer-etiqueta-kosher">cómo leer una etiqueta kosher</a>.</p>
-<p>En fuentes externas, la <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">guía de la Orthodox Union</a> cubre las categorías con las fuentes halájicas correspondientes, y podés consultar la entrada de <a href="https://es.wikipedia.org/wiki/Pareve" target="_blank" rel="noopener">Wikipedia sobre pareve</a> para una referencia rápida. Otras certificadoras con material público útil son <a href="https://www.ok.org" target="_blank" rel="noopener">OK Kosher Certification</a> y el <a href="https://www.crcweb.org" target="_blank" rel="noopener">Chicago Rabbinical Council (cRc)</a>, que publica listas de productos actualizadas.</p>',
+<p>En fuentes externas, la <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">guía de la Orthodox Union</a> cubre las categorías con las fuentes halájicas correspondientes, y podés consultar la entrada de <a href="https://es.wikipedia.org/wiki/Pareve" target="_blank" rel="noopener">Wikipedia sobre parve</a> para una referencia rápida. Otras certificadoras con material público útil son <a href="https://www.ok.org" target="_blank" rel="noopener">OK Kosher Certification</a> y el <a href="https://www.crcweb.org" target="_blank" rel="noopener">Chicago Rabbinical Council (cRc)</a>, que publica listas de productos actualizadas.</p>',
             ],
             [
                 'slug' => 'shejita-sacrificio-kosher',
@@ -819,19 +819,19 @@ No automáticamente. "Glatt" se refiere específicamente al nivel de inspección
 <h2>Los cuatro datos que hay que buscar, en orden</h2>
 <ul>
 <li><strong>El símbolo de la certificadora:</strong> indica qué agencia supervisó el producto. Conviene reconocer certificadoras confiables (repasadas en <a href="/articulos/simbolos-certificacion-kosher">símbolos de certificación kosher</a>), porque no todos los símbolos del mundo tienen el mismo nivel de exigencia.</li>
-<li><strong>La categoría:</strong> "Dairy" o "D" (lácteo), "Meat" o "M" (cárnico), "Pareve" (neutro), o "Fish" (pescado, que en muchas tradiciones se trata como categoría aparte de la carne). Esta letra determina con qué otras comidas se puede combinar el producto.</li>
+<li><strong>La categoría:</strong> "Dairy" o "D" (lácteo), "Meat" o "M" (cárnico), "Parve" (neutro), o "Fish" (pescado, que en muchas tradiciones se trata como categoría aparte de la carne). Esta letra determina con qué otras comidas se puede combinar el producto.</li>
 <li><strong>"Kosher para Pesaj":</strong> una indicación aparte, necesaria durante la festividad, distinta de la certificación kosher habitual del resto del año. Un producto puede ser kosher todo el año pero no apto para Pesaj si contiene algún derivado de los cinco granos.</li>
 <li><strong>Fecha o código de certificación:</strong> algunas certificadoras incluyen un código o fecha para poder verificar que el sello sigue vigente, porque las recetas y los procesos de fábrica cambian, y una certificación puede perderse sin que cambie el diseño del envase.</li>
 </ul>
 
 <h2>La categoría "DE": el detalle que más se pasa por alto</h2>
-<p>Además de "D", "M" y "Pareve", algunas etiquetas incluyen "DE" (dairy equipment): significa que el producto no lleva ingredientes lácteos, pero se elaboró en el mismo equipamiento que productos lácteos. Para efectos prácticos, muchas opiniones tratan un producto "DE" de forma más flexible que uno "D" real, pero no como si fuera pareve puro. Vale la pena entender esta diferencia en detalle en <a href="/articulos/que-significa-pareve">qué significa pareve</a>.</p>
+<p>Además de "D", "M" y "Parve", algunas etiquetas incluyen "DE" (dairy equipment): significa que el producto no lleva ingredientes lácteos, pero se elaboró en el mismo equipamiento que productos lácteos. Para efectos prácticos, muchas opiniones tratan un producto "DE" de forma más flexible que uno "D" real, pero no como si fuera parve puro. Vale la pena entender esta diferencia en detalle en <a href="/articulos/que-significa-pareve">qué significa parve</a>.</p>
 
 <h2>Por qué no conviene asumir por descarte</h2>
 <p>Cuando un producto no tiene certificación visible pero la lista de ingredientes parece simple (agua, sal y un vegetal, por ejemplo), la tentación es asumir que es kosher por descarte. La recomendación general de las autoridades de kashrut es no hacer eso: muchos aditivos y procesos industriales no se ven a simple vista, desde enzimas usadas en el procesamiento hasta el equipamiento compartido con otros productos en la misma línea de producción.</p>
 
 <h2>Preguntas frecuentes</h2>
-<p><strong>¿Un producto sin categoría (D/M/Pareve) impresa es siempre pareve?</strong><br>
+<p><strong>¿Un producto sin categoría (D/M/Parve) impresa es siempre parve?</strong><br>
 No hay que asumirlo. La ausencia de una letra no confirma nada por sí sola; si la etiqueta no aclara la categoría, conviene buscar el producto directamente en la base de datos de la certificadora.</p>
 <p><strong>¿Las apps de códigos de barra reemplazan la necesidad de revisar la etiqueta física?</strong><br>
 Ayudan mucho, pero conviene usarlas como complemento, no como reemplazo total, sobre todo con productos importados o de fabricación reciente que la base todavía no actualizó.</p>
@@ -1070,8 +1070,8 @@ Sin certificación visible no hay forma confiable de saberlo desde la etiqueta; 
                 'slug' => 'huevos-kosher',
                 'category' => 'kashrut-basico',
                 'title' => 'Huevos kosher: qué hay que revisar antes de usarlos',
-                'excerpt' => 'Los huevos son pareve y generalmente kosher, pero existe un paso de revisión obligatorio antes de cocinarlos.',
-                'content' => '<p>Los huevos de aves kosher, como la gallina, son en principio pareve y aptos para comer. Pero antes de usar un huevo, la tradición pide revisar que no tenga manchas de sangre en la yema, porque un huevo con sangre se considera no apto.</p>
+                'excerpt' => 'Los huevos son parve y generalmente kosher, pero existe un paso de revisión obligatorio antes de cocinarlos.',
+                'content' => '<p>Los huevos de aves kosher, como la gallina, son en principio parve y aptos para comer. Pero antes de usar un huevo, la tradición pide revisar que no tenga manchas de sangre en la yema, porque un huevo con sangre se considera no apto.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/huevos-kosher.jpg" alt="Los huevos son parve, pero hay que revisarlos por manchas de sangre antes de usarlos." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
@@ -1100,7 +1100,7 @@ Las opiniones varían según la tradición y el tamaño de la mancha; algunas pe
 No reemplaza la revisión casera: la certificación garantiza el origen del ave y el proceso industrial, pero la revisión de sangre en la yema sigue siendo responsabilidad de quien cocina, salvo en productos industrializados que ya pasaron por ovoscopía certificada.</p>
 
 <h2>Para seguir leyendo</h2>
-<p>Es de los hábitos más simples de meter en la rutina diaria de una cocina kosher: revisar cada huevo apenas se rompe, antes de mezclarlo con el resto de los ingredientes. Para otros pasos prácticos del día a día, mirá <a href="/articulos/armar-cocina-kosher">cómo armar una cocina kosher desde cero</a>. Y sobre otro alimento pareve con reglas propias de revisión, está <a href="/articulos/insectos-frutas-verduras">insectos en frutas y verduras</a>.</p>',
+<p>Es de los hábitos más simples de meter en la rutina diaria de una cocina kosher: revisar cada huevo apenas se rompe, antes de mezclarlo con el resto de los ingredientes. Para otros pasos prácticos del día a día, mirá <a href="/articulos/armar-cocina-kosher">cómo armar una cocina kosher desde cero</a>. Y sobre otro alimento parve con reglas propias de revisión, está <a href="/articulos/insectos-frutas-verduras">insectos en frutas y verduras</a>.</p>',
             ],
             [
                 'slug' => 'pescado-kosher-aletas-escamas',
@@ -1144,8 +1144,8 @@ Es una costumbre, no una prohibición de la misma categoría que carne y leche; 
                 'slug' => 'frutos-secos-contaminacion-cruzada',
                 'category' => 'productos',
                 'title' => 'Frutos secos y kashrut: riesgos de contaminación cruzada',
-                'excerpt' => 'Los frutos secos son naturalmente pareve, pero el procesamiento industrial puede introducir riesgos de kashrut que no son evidentes.',
-                'content' => '<p>Almendras, nueces, maní y la mayoría de los frutos secos son, crudos y sin procesar, alimentos pareve sin ninguna restricción de kashrut. El problema aparece cuando entran en la cadena de procesamiento industrial, donde pueden mezclarse con otros productos en las mismas líneas de producción.</p>
+                'excerpt' => 'Los frutos secos son naturalmente parve, pero el procesamiento industrial puede introducir riesgos de kashrut que no son evidentes.',
+                'content' => '<p>Almendras, nueces, maní y la mayoría de los frutos secos son, crudos y sin procesar, alimentos parve sin ninguna restricción de kashrut. El problema aparece cuando entran en la cadena de procesamiento industrial, donde pueden mezclarse con otros productos en las mismas líneas de producción.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/frutos-secos-contaminacion-cruzada.jpg" alt="Crudos son parve sin restricciones; el riesgo aparece en el procesamiento industrial." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
@@ -1154,14 +1154,14 @@ Es una costumbre, no una prohibición de la misma categoría que carne y leche; 
 
 <h2>Los riesgos más habituales</h2>
 <ul>
-<li><strong>Saborizantes lácteos:</strong> los frutos secos "tostados con manteca" o con cobertura de chocolate con leche dejan de ser pareve y pasan a la categoría de lácteos, con todas las restricciones de mezcla que eso implica.</li>
-<li><strong>Líneas compartidas:</strong> una fábrica puede procesar frutos secos pareve en el mismo equipo donde después procesa productos con leche o derivados cárnicos, dejando trazas no kosher si no hay una limpieza certificada entre lotes, algo que ninguna etiqueta de ingredientes revela por sí sola.</li>
+<li><strong>Saborizantes lácteos:</strong> los frutos secos "tostados con manteca" o con cobertura de chocolate con leche dejan de ser parve y pasan a la categoría de lácteos, con todas las restricciones de mezcla que eso implica.</li>
+<li><strong>Líneas compartidas:</strong> una fábrica puede procesar frutos secos parve en el mismo equipo donde después procesa productos con leche o derivados cárnicos, dejando trazas no kosher si no hay una limpieza certificada entre lotes, algo que ninguna etiqueta de ingredientes revela por sí sola.</li>
 <li><strong>Aceites de cocción:</strong> algunos frutos secos fritos usan aceites que también se usan para otros productos no kosher, sin que eso se note en el sabor final.</li>
 <li><strong>Glaseados y recubrimientos:</strong> los "garrapiñados" o con cobertura dulce pueden llevar <a href="/articulos/gelatina-kosher">gelatina</a> u otros ingredientes de origen animal en el glaseado.</li>
 </ul>
 
 <h2>Por qué esto es más común de lo que parece</h2>
-<p>Muchas fábricas de frutos secos procesan decenas de variedades y presentaciones distintas en la misma planta, para aprovechar el mismo equipamiento: la línea que hoy tuesta almendras naturales puede haber procesado ayer un lote con recubrimiento de chocolate con leche. Sin una limpieza certificada entre lotes (o sin líneas dedicadas exclusivamente a productos pareve), quedan trazas suficientes para que el producto deje de ser considerado pareve bajo un criterio estricto.</p>
+<p>Muchas fábricas de frutos secos procesan decenas de variedades y presentaciones distintas en la misma planta, para aprovechar el mismo equipamiento: la línea que hoy tuesta almendras naturales puede haber procesado ayer un lote con recubrimiento de chocolate con leche. Sin una limpieza certificada entre lotes (o sin líneas dedicadas exclusivamente a productos parve), quedan trazas suficientes para que el producto deje de ser considerado parve bajo un criterio estricto.</p>
 
 <h2>Cómo minimizar el riesgo en la práctica</h2>
 <p>Un fruto seco crudo y sin procesar, comprado a granel de una fuente confiable o en su cáscara original, casi nunca da problemas. Pero los productos industrializados (mix de frutos secos, snacks saborizados, barras de cereal) siempre hay que revisarlos por certificación, sin asumir que son kosher solo porque el ingrediente principal lo es. Esto aplica igual de fuerte a los productos que se venden como "naturales" o "sin aditivos": esas etiquetas no dicen nada sobre el equipamiento compartido.</p>
@@ -1201,11 +1201,11 @@ No, si el fruto seco de origen era crudo y sin procesar industrialmente, remojar
 <p>Las certificaciones veganas se enfocan casi exclusivamente en el origen de los ingredientes: que no haya carne, lácteos, huevo, miel ni derivados animales de ningún tipo. El kashrut mira eso también, pero además revisa el proceso completo: qué equipamiento se usó, quién estuvo presente en ciertas etapas de cocción, y si hubo contacto con productos no kosher en algún punto de la cadena. Son sistemas de verificación con objetivos distintos, aunque se superpongan en varios productos.</p>
 
 <h2>La otra dirección: kosher no siempre es vegano</h2>
-<p>Y a la inversa también pasa: muchos productos kosher pareve terminan siendo veganos, porque "pareve" ya excluye carne y lácteos. Pero un producto puede ser kosher y no vegano sin ninguna contradicción: un yogur con certificación kosher lácteo, por ejemplo, es perfectamente válido para el kashrut y no apto para veganos.</p>
+<p>Y a la inversa también pasa: muchos productos kosher parve terminan siendo veganos, porque "parve" ya excluye carne y lácteos. Pero un producto puede ser kosher y no vegano sin ninguna contradicción: un yogur con certificación kosher lácteo, por ejemplo, es perfectamente válido para el kashrut y no apto para veganos.</p>
 
 <h2>Preguntas frecuentes</h2>
 <p><strong>¿Existe alguna certificación que combine ambos criterios en un solo sello?</strong><br>
-Algunas certificadoras ofrecen indicaciones combinadas ("Kosher Pareve" junto a un sello vegano del mismo fabricante), pero son dos procesos de verificación separados, no un único trámite.</p>
+Algunas certificadoras ofrecen indicaciones combinadas ("Kosher Parve" junto a un sello vegano del mismo fabricante), pero son dos procesos de verificación separados, no un único trámite.</p>
 <p><strong>¿Un restaurante 100% vegano necesita certificación kosher aparte para ser confiable?</strong><br>
 Sí, si busca ser considerado kosher: el hecho de que todos los platos sean veganos no resuelve automáticamente el tema del equipamiento ni el de quién cocina.</p>
 <p><strong>¿El miel es vegana o kosher?</strong><br>
@@ -1307,7 +1307,7 @@ No hay una razón única; simplemente la costumbre de comer lácteos en Shavuot 
 <h2>Los errores más frecuentes</h2>
 <ul>
 <li><strong>Asumir que "natural" o "sin conservantes" significa kosher:</strong> el marketing de un producto no tiene nada que ver con su estatus de kashrut. Siempre hay que buscar la certificación, sin importar cuán simple parezca la lista de ingredientes.</li>
-<li><strong>No revisar productos que parecen obviamente pareve:</strong> snacks, panificados y golosinas a veces tienen ingredientes lácteos o <a href="/articulos/gelatina-kosher">gelatina</a> que no se notan en el nombre del producto.</li>
+<li><strong>No revisar productos que parecen obviamente parve:</strong> snacks, panificados y golosinas a veces tienen ingredientes lácteos o <a href="/articulos/gelatina-kosher">gelatina</a> que no se notan en el nombre del producto.</li>
 <li><strong>Mezclar utensilios cárnicos y lácteos por descuido:</strong> al principio es fácil olvidarse de la separación; etiquetar o usar colores distintos ayuda mucho durante la transición, como se detalla en <a href="/articulos/armar-cocina-kosher">cómo armar una cocina kosher desde cero</a>.</li>
 <li><strong>No revisar verduras de hoja por insectos:</strong> un paso que mucha gente nueva en el kashrut ni sabe que existe, y que aplica especialmente a verduras de hoja verde.</li>
 <li><strong>Confiar en certificaciones desconocidas:</strong> no todos los símbolos de un paquete son certificaciones kosher reales, algunos son sellos de calidad que no tienen nada que ver con el kashrut. Vale la pena aprender a distinguirlos.</li>

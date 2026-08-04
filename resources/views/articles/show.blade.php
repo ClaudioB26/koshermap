@@ -49,7 +49,7 @@
         <p class="font-bold text-gray-800 mb-1">¿Buscás productos o lugares kosher certificados?</p>
         <p class="text-sm text-gray-500 mb-4">KosherMap reúne miles de productos y locales kosher de todo el mundo en un solo lugar.</p>
         <div class="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="{{ route('home') }}" class="px-5 py-2 bg-blue-600 text-white rounded-lg font-semibold text-sm hover:bg-blue-700 transition">🛒 Buscar productos kosher</a>
+            <a href="{{ route('search.index') }}" class="px-5 py-2 bg-blue-600 text-white rounded-lg font-semibold text-sm hover:bg-blue-700 transition">🛒 Buscar productos kosher</a>
             <a href="{{ route('places.index') }}" class="px-5 py-2 bg-white border border-blue-200 text-blue-700 rounded-lg font-semibold text-sm hover:bg-blue-50 transition">📍 Encontrar locales</a>
         </div>
     </div>

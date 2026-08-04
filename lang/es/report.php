@@ -12,7 +12,7 @@ return [
 
     'product' => [
         'not_kosher'         => 'Ya no es kosher',
-        'wrong_label'        => 'Etiqueta incorrecta (ej: dice pareve pero tiene lácteo)',
+        'wrong_label'        => 'Etiqueta incorrecta (ej: dice parve pero tiene lácteo)',
         'lost_certification' => 'Perdió la certificación',
         'wrong_certifier'    => 'Certificadora incorrecta',
         'other'              => 'Otro',
