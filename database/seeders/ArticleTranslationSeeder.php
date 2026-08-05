@@ -65,7 +65,28 @@ class ArticleTranslationSeeder extends Seeder
 <li><strong>Dried legumes (lentils, chickpeas):</strong> spread on a light surface and check before cooking.</li>
 </ul>
 <p>And let\'s be honest, this is not as easy as it sounds. In our house, checking the vegetables always fell to one particular person. Over the years he started needing glasses, and one day he spotted a tiny black dot on a leaf. Convinced it was nothing, he asked his daughter what it was. She looked at him and said: can\'t you see it\'s a bug, look, it even has little legs? Since that day he doesn\'t check a single leaf without his glasses on. The lesson is simple: checking properly takes good light and good eyesight, and when in doubt, a second look never hurts.</p>
-<p>Many kosher certifiers offer specific, illustrated guides on how to check each type of vegetable depending on where it was grown, since insect prevalence varies by climate and farming method. Today there are also "pre-checked" vegetables or ones grown under specific supervision to minimize infestation, which greatly simplifies the process in everyday cooking.</p>',
+<p>It is worth looking again at the photo above with that in mind. Magnified, you can see the six legs, the antennae, everything. On the leaf, on the kitchen counter and under mediocre light, it is the little dot that almost goes unnoticed.</p>
+<p>The lesson is simple but worth the whole article: checking properly requires good light and good eyesight. If you wear glasses, put them on. If your kitchen has dim yellow light, move the task to the table near the window. And when in doubt, a second look — or a second person — never hurts.</p>
+
+<h2>The seasonal factor: why summer demands extra attention</h2>
+<p>Insect prevalence is not the same all year round. In warm, humid months aphid and thrip populations multiply, and a lettuce that came practically clean in winter may require twice the work in midsummer. The same goes for provenance: greenhouse vegetables often come more infested than open-field ones, because the enclosed, temperate environment favours these populations.</p>
+<p>That is why many certifiers publish seasonal alerts warning which products are coming in especially problematic at a given time of year. If your community has a list like this, it is worth checking before big holiday shopping trips.</p>
+
+<h2>Pre-checked vegetables: are they reliable?</h2>
+<p>There are now vegetables grown under specific supervision to minimise infestation — typically hydroponic or controlled greenhouse — sold with kosher certification and requiring no additional checking. They are considerably more expensive, but for families short on time or for large events they solve the problem at the root.</p>
+<p>The important caveat: a package saying "washed and ready to eat" means nothing from a kashrut standpoint. That label speaks to food hygiene, not to insect checking. It only counts if it carries explicit kosher certification from a recognised agency. You can verify the status of a specific product in our <a href="/productos">directory of certified products</a>.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>What if I find an insect after cooking?</strong><br>
+It depends on the case and it is worth consulting a rabbi, because concepts of nullification (<em>bitul</em>) come into play that cannot be generalised in an article. The practical rule is that checking is done before cooking, precisely so as not to reach that situation.</p>
+<p><strong>Do commercial vegetable-disinfecting products work?</strong><br>
+They help detach insects, just like soapy water, but they do not replace visual inspection. Washing is a preliminary step, not the final one.</p>
+<p><strong>Are microscopic insects also prohibited?</strong><br>
+No. Halacha refers to what is visible to the naked eye. Microorganisms that can only be seen under a microscope do not fall under the prohibition, precisely because the criterion is what the human eye can perceive.</p>
+
+<h2>Further reading</h2>
+<p>If you are setting up a kosher kitchen from scratch, our guide on <a href="/articulos/armar-cocina-kosher">how to set up a kosher kitchen</a> may help, and if you are just starting out, the review of <a href="/articulos/errores-comunes-empezar-comer-kosher">common mistakes when starting to eat kosher</a> includes precisely this topic among the most overlooked.</p>
+<p>To go deeper into external sources, the <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">Orthodox Union introductory guide</a> covers the fundamentals of kashrut in detail, and the <a href="https://www.youtube.com/@OUKosher" target="_blank" rel="noopener">OU Kosher YouTube channel</a> publishes audiovisual material on product checking. Many kosher certifiers also offer specific illustrated guides on how to check each type of vegetable depending on where it was grown, since insect prevalence varies by climate and farming method.</p>',
             ],
             'carne-y-leche' => [
                 'title' => 'Meat and milk: why they don\'t mix',
@@ -1173,7 +1194,28 @@ Repeatedly mixing meat and dairy utensils can complicate the kitchen more long-t
 <li><strong>Leguminosas secas (lentilhas, grão-de-bico):</strong> espalhar sobre uma superfície clara e revisar antes de cozinhar.</li>
 </ul>
 <p>E que fique claro que isso não é tão fácil quanto parece. Em nossa casa, revisar as verduras sempre coube a uma pessoa em especial. Com os anos, ele começou a precisar de óculos, e um dia viu um pontinho preto em uma folha. Convencido de que não era nada, perguntou à filha o que era aquilo. E a filha respondeu: não está vendo que é um bicho, dá para ver as perninhas? Desde esse dia, ele não revisa uma única folha sem os óculos postos. O ensinamento é simples: revisar bem exige boa luz e boa visão, e na dúvida, um segundo olhar nunca é demais.</p>
-<p>Muitas certificadoras kosher oferecem guias específicos e ilustrados de como revisar cada tipo de verdura conforme a região onde foi cultivada, já que a prevalência de insetos varia conforme o clima e o método de cultivo. Hoje também existem verduras "pré-revisadas" ou cultivadas sob supervisão específica para minimizar a infestação, o que simplifica muito o processo na cozinha do dia a dia.</p>',
+<p>Vale a pena olhar novamente a foto acima com isso em mente. Ampliado, veem-se as seis patas, as antenas, tudo. Sobre a folha, na bancada da cozinha e com luz medíocre, é o pontinho que quase passa despercebido.</p>
+<p>O ensinamento é simples mas vale por todo o artigo: revisar bem exige boa luz e boa visão. Se você usa óculos, coloque-os. Se a cozinha tem luz amarela fraca, mude a tarefa para a mesa perto da janela. E na dúvida, um segundo olhar — ou uma segunda pessoa — nunca é demais.</p>
+
+<h2>O fator sazonal: por que no verão é preciso redobrar a atenção</h2>
+<p>A prevalência de insetos não é igual o ano todo. Nos meses quentes e úmidos as populações de pulgões e tripes se multiplicam, e uma alface que no inverno vinha praticamente limpa pode exigir o dobro de trabalho no auge do verão. O mesmo acontece com a procedência: a verdura de estufa costuma vir mais infestada que a de campo aberto, porque o ambiente fechado e temperado favorece essas populações.</p>
+<p>Por isso muitas certificadoras publicam alertas sazonais avisando quais produtos estão vindo especialmente problemáticos em determinado momento do ano. Se sua comunidade tem uma lista desse tipo, convém consultá-la antes das compras grandes de festividades.</p>
+
+<h2>Verduras pré-revisadas: são confiáveis?</h2>
+<p>Hoje existem verduras cultivadas sob supervisão específica para minimizar a infestação — tipicamente hidropônicas ou de estufa controlada — vendidas com certificação kosher e que não exigem revisão adicional. São consideravelmente mais caras, mas para famílias com pouco tempo ou para eventos grandes resolvem o problema pela raiz.</p>
+<p>A advertência importante: um pacote dizer "lavado e pronto para consumo" não significa nada do ponto de vista do kashrut. Esse selo fala de higiene alimentar, não de revisão de insetos. Só serve se tiver certificação kosher explícita de uma agência reconhecida. Você pode verificar o status de um produto específico em nosso <a href="/productos">diretório de produtos certificados</a>.</p>
+
+<h2>Perguntas frequentes</h2>
+<p><strong>E se eu encontrar um inseto depois de ter cozinhado?</strong><br>
+Depende do caso e convém consultar um rabino, porque entram em jogo conceitos de anulação (<em>bitul</em>) que não se podem generalizar em um artigo. A regra prática é que a revisão se faz antes de cozinhar, justamente para não chegar a essa situação.</p>
+<p><strong>Adianta lavar com produtos comerciais para desinfetar verduras?</strong><br>
+Ajudam a soltar insetos, assim como a água com sabão, mas não substituem a inspeção visual. A lavagem é uma etapa prévia, não a etapa final.</p>
+<p><strong>Os insetos microscópicos também são proibidos?</strong><br>
+Não. A halachá refere-se ao que é visível a olho nu. Os microrganismos que só se veem com microscópio não entram na proibição, justamente porque o critério é o perceptível pelo olho humano.</p>
+
+<h2>Para continuar lendo</h2>
+<p>Se você está organizando uma cozinha kosher do zero, pode ser útil nosso guia sobre <a href="/articulos/armar-cocina-kosher">como montar uma cozinha kosher</a>, e se está começando agora, a revisão de <a href="/articulos/errores-comunes-empezar-comer-kosher">erros comuns ao começar a comer kosher</a> inclui justamente este tema entre os mais negligenciados.</p>
+<p>Para aprofundar em fontes externas, o <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">guia introdutório da Orthodox Union</a> cobre os fundamentos do kashrut em detalhe, e o <a href="https://www.youtube.com/@OUKosher" target="_blank" rel="noopener">canal da OU Kosher no YouTube</a> publica material audiovisual sobre revisão de produtos. Muitas certificadoras kosher também oferecem guias específicos e ilustrados de como revisar cada tipo de verdura conforme a região onde foi cultivada, já que a prevalência de insetos varia conforme o clima e o método de cultivo.</p>',
             ],
             'carne-y-leche' => [
                 'title' => 'Carne e leite: por que não se misturam',
@@ -2280,7 +2322,28 @@ Misturar utensílios cárneos e lácteos repetidamente pode complicar mais a coz
 <li><strong>Légumineuses sèches (lentilles, pois chiches) :</strong> étaler sur une surface claire et vérifier avant cuisson.</li>
 </ul>
 <p>Et il faut être honnête, ce n\'est pas aussi simple que ça en a l\'air. Chez nous, c\'est toujours la même personne qui se chargeait de vérifier les légumes. Avec les années, il a commencé à avoir besoin de lunettes, et un jour il a repéré un petit point noir sur une feuille. Convaincu que ce n\'était rien, il a demandé à sa fille ce que c\'était. Elle lui a répondu : tu ne vois pas que c\'est une bestiole, on voit même ses petites pattes ? Depuis ce jour, il ne vérifie plus une seule feuille sans ses lunettes. La leçon est simple : bien vérifier demande une bonne lumière et une bonne vue, et en cas de doute, un second regard ne fait jamais de mal.</p>
-<p>De nombreux organismes de certification cachère proposent des guides illustrés détaillant comment vérifier chaque type de légume selon la région où il a été cultivé, car la prévalence des insectes varie selon le climat et la méthode de culture. Aujourd\'hui, il existe aussi des légumes "pré-vérifiés" ou cultivés sous supervision spécifique pour minimiser l\'infestation, ce qui simplifie beaucoup le processus au quotidien.</p>',
+<p>Cela vaut la peine de regarder à nouveau la photo ci-dessus avec cela en tête. Agrandi, on voit les six pattes, les antennes, tout. Sur la feuille, sur le plan de travail et sous une lumière médiocre, c\'est le petit point qui passe presque inaperçu.</p>
+<p>La leçon est simple mais vaut tout l\'article : bien vérifier exige une bonne lumière et une bonne vue. Si vous portez des lunettes, mettez-les. Si votre cuisine a un éclairage jaune faible, déplacez la tâche vers la table près de la fenêtre. Et en cas de doute, un second regard — ou une seconde personne — n\'est jamais superflu.</p>
+
+<h2>Le facteur saisonnier : pourquoi il faut redoubler d\'attention en été</h2>
+<p>La prévalence des insectes n\'est pas la même toute l\'année. Durant les mois chauds et humides, les populations de pucerons et de thrips se multiplient, et une laitue qui arrivait pratiquement propre en hiver peut demander deux fois plus de travail en plein été. Il en va de même pour la provenance : les légumes de serre sont souvent plus infestés que ceux de plein champ, car l\'environnement clos et tempéré favorise ces populations.</p>
+<p>C\'est pourquoi de nombreux organismes de certification publient des alertes saisonnières signalant quels produits arrivent particulièrement problématiques à tel moment de l\'année. Si votre communauté dispose d\'une telle liste, il convient de la consulter avant les gros achats de fêtes.</p>
+
+<h2>Légumes pré-vérifiés : sont-ils fiables ?</h2>
+<p>Il existe aujourd\'hui des légumes cultivés sous supervision spécifique pour minimiser l\'infestation — typiquement hydroponiques ou de serre contrôlée — vendus avec certification cachère et ne nécessitant aucune vérification supplémentaire. Ils sont nettement plus chers, mais pour les familles pressées ou pour les grands événements, ils règlent le problème à la racine.</p>
+<p>L\'avertissement important : qu\'un paquet indique « lavé et prêt à consommer » ne signifie rien du point de vue de la cacherout. Cette mention parle d\'hygiène alimentaire, non de vérification des insectes. Elle ne compte que si elle porte une certification cachère explicite d\'un organisme reconnu. Vous pouvez vérifier le statut d\'un produit précis dans notre <a href="/productos">répertoire de produits certifiés</a>.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Et si je trouve un insecte après avoir cuisiné ?</strong><br>
+Cela dépend du cas et il convient de consulter un rabbin, car entrent en jeu des concepts d\'annulation (<em>bitoul</em>) qu\'on ne peut pas généraliser dans un article. La règle pratique est que la vérification se fait avant la cuisson, justement pour ne pas arriver à cette situation.</p>
+<p><strong>Les produits commerciaux de désinfection des légumes fonctionnent-ils ?</strong><br>
+Ils aident à détacher les insectes, tout comme l\'eau savonneuse, mais ils ne remplacent pas l\'inspection visuelle. Le lavage est une étape préalable, pas l\'étape finale.</p>
+<p><strong>Les insectes microscopiques sont-ils aussi interdits ?</strong><br>
+Non. La halakha se réfère à ce qui est visible à l\'œil nu. Les micro-organismes qu\'on ne voit qu\'au microscope n\'entrent pas dans l\'interdiction, précisément parce que le critère est ce que l\'œil humain peut percevoir.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Si vous organisez une cuisine cachère de zéro, notre guide sur <a href="/articulos/armar-cocina-kosher">comment monter une cuisine cachère</a> peut vous être utile, et si vous débutez, le passage en revue des <a href="/articulos/errores-comunes-empezar-comer-kosher">erreurs courantes quand on commence à manger cachère</a> inclut justement ce sujet parmi les plus négligés.</p>
+<p>Pour approfondir avec des sources externes, le <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">guide introductif de l\'Orthodox Union</a> couvre les fondements de la cacherout en détail, et la <a href="https://www.youtube.com/@OUKosher" target="_blank" rel="noopener">chaîne YouTube d\'OU Kosher</a> publie du matériel audiovisuel sur la vérification des produits. De nombreux organismes de certification proposent aussi des guides illustrés détaillant comment vérifier chaque type de légume selon la région où il a été cultivé, car la prévalence des insectes varie selon le climat et la méthode de culture.</p>',
             ],
             'carne-y-leche' => [
                 'title' => 'Viande et lait : pourquoi ils ne se mélangent pas',
@@ -3387,7 +3450,28 @@ Mélanger les ustensiles carnés et laitiers de façon répétée peut complique
 <li><strong>קטניות יבשות (עדשים, חומוס):</strong> לפזר על משטח בהיר ולבדוק לפני הבישול.</li>
 </ul>
 <p>וחשוב להיות כנים: זה לא כל כך פשוט כמו שזה נשמע. אצלנו בבית, בדיקת הירקות תמיד נפלה על אדם מסוים במשפחה. עם השנים הוא התחיל להזדקק למשקפיים, ויום אחד הבחין בנקודה שחורה קטנה על עלה. בטוח שזה כלום, הוא שאל את בתו מה זה. והיא ענתה לו: אתה לא רואה שזה חרק, רואים לו את הרגליים הקטנות? מאז אותו יום הוא לא בודק עלה אחד בלי המשקפיים. הלקח פשוט: בדיקה טובה דורשת אור טוב וראייה טובה, ובמקרה של ספק, מבט נוסף אף פעם לא מזיק.</p>
-<p>כשרויות רבות מציעות מדריכים מפורטים ומאוירים כיצד לבדוק כל סוג ירק בהתאם לאזור הגידול, מאחר ושכיחות החרקים משתנה לפי האקלים ושיטת הגידול. כיום קיימים גם ירקות "בדוקים מראש" או מגודלים תחת השגחה מיוחדת כדי לצמצם את ההדבקה, מה שמפשט מאוד את התהליך במטבח היומיומי.</p>',
+<p>כדאי להסתכל שוב על התמונה למעלה עם זה בראש. במצב מוגדל רואים את שש הרגליים, המחושים, הכול. על העלה, על משטח המטבח ובתאורה בינונית, זו הנקודה הקטנה שכמעט חומקת מהעין.</p>
+<p>הלקח פשוט אך שווה את כל המאמר: בדיקה טובה דורשת אור טוב וראייה טובה. אם אתם מרכיבים משקפיים, הרכיבו אותם. אם במטבח יש אור צהוב עמום, העבירו את המשימה לשולחן ליד החלון. ובמקרה של ספק, מבט שני — או אדם שני — אף פעם לא מיותר.</p>
+
+<h2>הגורם העונתי: למה בקיץ צריך להכפיל תשומת לב</h2>
+<p>שכיחות החרקים אינה זהה לאורך כל השנה. בחודשים החמים והלחים אוכלוסיות הכנימות והתריפסים מתרבות, וחסה שבחורף הגיעה כמעט נקייה עשויה לדרוש כפליים עבודה בשיא הקיץ. אותו דבר לגבי המקור: ירקות חממה מגיעים לרוב נגועים יותר מאלו של שדה פתוח, משום שהסביבה הסגורה והממוזגת מיטיבה עם אוכלוסיות אלו.</p>
+<p>לכן גופי כשרות רבים מפרסמים התראות עונתיות המודיעות אילו מוצרים מגיעים בעייתיים במיוחד בתקופה מסוימת בשנה. אם לקהילה שלכם יש רשימה כזו, כדאי לעיין בה לפני הקניות הגדולות לקראת החגים.</p>
+
+<h2>ירקות בדוקים מראש: האם הם אמינים?</h2>
+<p>כיום קיימים ירקות המגודלים תחת השגחה מיוחדת לצמצום הנגיעות — בדרך כלל הידרופוניים או מחממה מבוקרת — הנמכרים עם הכשר ואינם דורשים בדיקה נוספת. הם יקרים במידה ניכרת, אך למשפחות עם מעט זמן או לאירועים גדולים הם פותרים את הבעיה מהשורש.</p>
+<p>האזהרה החשובה: כיתוב על אריזה "שטוף ומוכן לאכילה" אינו אומר דבר מבחינת הכשרות. תווית זו מדברת על היגיינת מזון, לא על בדיקת חרקים. היא מועילה רק אם יש עליה הכשר מפורש מגוף מוכר. תוכלו לבדוק את מעמדו של מוצר מסוים ב<a href="/productos">מדריך המוצרים המוסמכים</a> שלנו.</p>
+
+<h2>שאלות נפוצות</h2>
+<p><strong>ומה אם מצאתי חרק אחרי הבישול?</strong><br>
+זה תלוי במקרה וכדאי להתייעץ עם רב, משום שנכנסים לתמונה מושגי ביטול שאי אפשר להכליל במאמר. הכלל המעשי הוא שהבדיקה נעשית לפני הבישול, בדיוק כדי לא להגיע למצב הזה.</p>
+<p><strong>האם שווה לשטוף עם מוצרים מסחריים לחיטוי ירקות?</strong><br>
+הם מסייעים בהסרת חרקים, בדומה למי סבון, אך אינם מחליפים בדיקה חזותית. השטיפה היא שלב מקדים, לא השלב הסופי.</p>
+<p><strong>האם גם חרקים מיקרוסקופיים אסורים?</strong><br>
+לא. ההלכה מתייחסת למה שנראה לעין בלתי מזוינת. מיקרואורגניזמים הנראים רק במיקרוסקופ אינם נכללים באיסור, דווקא משום שהקריטריון הוא מה שהעין האנושית מסוגלת לתפוס.</p>
+
+<h2>להמשך קריאה</h2>
+<p>אם אתם מארגנים מטבח כשר מאפס, עשוי לסייע לכם המדריך שלנו על <a href="/articulos/armar-cocina-kosher">כיצד להקים מטבח כשר</a>, ואם אתם רק מתחילים, הסקירה של <a href="/articulos/errores-comunes-empezar-comer-kosher">טעויות נפוצות בתחילת שמירת כשרות</a> כוללת בדיוק את הנושא הזה בין אלו שהכי מפספסים.</p>
+<p>להעמקה במקורות חיצוניים, <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">המדריך המקדים של Orthodox Union</a> מכסה את יסודות הכשרות בפירוט, ו<a href="https://www.youtube.com/@OUKosher" target="_blank" rel="noopener">ערוץ היוטיוב של OU Kosher</a> מפרסם חומר חזותי על בדיקת מוצרים. גופי כשרות רבים גם מציעים מדריכים מפורטים ומאוירים כיצד לבדוק כל סוג ירק בהתאם לאזור הגידול, מאחר ששכיחות החרקים משתנה לפי האקלים ושיטת הגידול.</p>',
             ],
             'carne-y-leche' => [
                 'title' => 'בשר וחלב: למה אסור לערבב',
@@ -4494,7 +4578,28 @@ Mélanger les ustensiles carnés et laitiers de façon répétée peut complique
 <li><strong>Сухие бобовые (чечевица, нут):</strong> рассыпать на светлой поверхности и проверить перед варкой.</li>
 </ul>
 <p>И надо честно признать: это не так просто, как звучит. У нас дома проверка овощей всегда доставалась одному конкретному человеку. С годами ему понадобились очки, и однажды он заметил маленькую чёрную точку на листе. Уверенный, что это ничего, он спросил у дочери, что это такое. А она ответила: разве не видно, что это жучок, у него даже лапки видны? С того дня он не проверяет ни один лист без очков. Урок прост: чтобы хорошо проверять, нужен хороший свет и хорошее зрение, а в случае сомнения лишний взгляд никогда не помешает.</p>
-<p>Многие кошерные сертификаторы предлагают подробные иллюстрированные руководства по проверке каждого вида овощей в зависимости от региона выращивания, поскольку распространённость насекомых зависит от климата и метода земледелия. Сегодня также существуют "предварительно проверенные" овощи или выращенные под специальным надзором для минимизации заражения, что значительно упрощает процесс на повседневной кухне.</p>',
+<p>Стоит ещё раз взглянуть на фотографию выше с этим в уме. При увеличении видны шесть лапок, усики — всё. На листе, на кухонной столешнице и при посредственном освещении это та самая точка, которая почти остаётся незамеченной.</p>
+<p>Урок простой, но он стоит всей статьи: чтобы проверять как следует, нужны хороший свет и хорошее зрение. Если вы носите очки — наденьте их. Если на кухне тусклый жёлтый свет, перенесите работу на стол у окна. А при сомнении второй взгляд — или второй человек — никогда не бывает лишним.</p>
+
+<h2>Сезонный фактор: почему летом нужно удваивать внимание</h2>
+<p>Распространённость насекомых неодинакова в течение года. В тёплые и влажные месяцы популяции тли и трипсов размножаются, и салат, который зимой приходил практически чистым, в разгар лета может потребовать вдвое больше работы. То же касается происхождения: тепличные овощи обычно приходят более заражёнными, чем выращенные в открытом грунте, потому что закрытая тёплая среда благоприятствует этим популяциям.</p>
+<p>Поэтому многие сертификаторы публикуют сезонные предупреждения о том, какие продукты приходят особенно проблемными в тот или иной период года. Если у вашей общины есть такой список, стоит свериться с ним перед крупными предпраздничными закупками.</p>
+
+<h2>Предварительно проверенные овощи: можно ли им доверять?</h2>
+<p>Сегодня существуют овощи, выращенные под специальным надзором для минимизации заражения — обычно гидропонные или из контролируемых теплиц, — продающиеся с кошерной сертификацией и не требующие дополнительной проверки. Они значительно дороже, но для семей с нехваткой времени или для крупных мероприятий решают проблему в корне.</p>
+<p>Важное предостережение: надпись на упаковке «вымыто и готово к употреблению» ничего не значит с точки зрения кашрута. Эта маркировка говорит о пищевой гигиене, а не о проверке на насекомых. Она имеет значение, только если есть явная кошерная сертификация признанного агентства. Вы можете проверить статус конкретного продукта в нашем <a href="/productos">каталоге сертифицированных продуктов</a>.</p>
+
+<h2>Часто задаваемые вопросы</h2>
+<p><strong>А если я нашёл насекомое уже после приготовления?</strong><br>
+Это зависит от случая, и стоит проконсультироваться с раввином, потому что в игру вступают понятия аннулирования (<em>битуль</em>), которые нельзя обобщить в статье. Практическое правило: проверка делается до приготовления — именно чтобы не доводить до такой ситуации.</p>
+<p><strong>Помогают ли коммерческие средства для дезинфекции овощей?</strong><br>
+Они помогают отделить насекомых, как и мыльная вода, но не заменяют визуальный осмотр. Мытьё — предварительный этап, а не финальный.</p>
+<p><strong>Микроскопические насекомые тоже запрещены?</strong><br>
+Нет. Галаха имеет в виду то, что видно невооружённым глазом. Микроорганизмы, различимые только под микроскопом, под запрет не подпадают — именно потому, что критерием является воспринимаемое человеческим глазом.</p>
+
+<h2>Что почитать дальше</h2>
+<p>Если вы обустраиваете кошерную кухню с нуля, вам может пригодиться наше руководство <a href="/articulos/armar-cocina-kosher">как обустроить кошерную кухню</a>, а если вы только начинаете, обзор <a href="/articulos/errores-comunes-empezar-comer-kosher">распространённых ошибок в начале соблюдения кашрута</a> включает именно эту тему среди самых упускаемых.</p>
+<p>Для углубления во внешние источники <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">вводное руководство Orthodox Union</a> подробно охватывает основы кашрута, а <a href="https://www.youtube.com/@OUKosher" target="_blank" rel="noopener">YouTube-канал OU Kosher</a> публикует видеоматериалы о проверке продуктов. Многие кошерные сертификаторы также предлагают подробные иллюстрированные руководства по проверке каждого вида овощей в зависимости от региона выращивания, поскольку распространённость насекомых зависит от климата и метода земледелия.</p>',
             ],
             'carne-y-leche' => [
                 'title' => 'Мясо и молоко: почему их не смешивают',
