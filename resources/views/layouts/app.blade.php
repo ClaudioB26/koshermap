@@ -241,7 +241,7 @@
 
         {{-- Links del catálogo --}}
         <div class="flex flex-wrap justify-center gap-4 mt-3 text-xs text-gray-400">
-            <a href="{{ route('places.index') }}" class="hover:text-blue-600">📍 Lugares kosher</a>
+            {{-- Lugares kosher oculto temporalmente --}}
             <a href="{{ route('countries.index') }}" class="hover:text-blue-600">🌍 Países</a>
             <a href="{{ route('certifiers.index') }}" class="hover:text-blue-600">🏅 Certificadoras</a>
         </div>
