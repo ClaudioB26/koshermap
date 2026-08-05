@@ -25,21 +25,12 @@ class SitemapController extends Controller
         );
         
         // Calcular cantidad de páginas para cada tipo
-        $categoryPages = ceil(Category::count() / 500);
         $certifierPages = ceil(Certifier::count() / 100);
 
-        // Nota: los sitemaps de productos y marcas quedan deliberadamente fuera
-        // del índice porque esas páginas están marcadas noindex (contenido
-        // demasiado fino para AdSense). Los controladores siguen existiendo
-        // por si se decide reactivarlos más adelante.
-
-        // Agregar sitemaps de categorías
-        for ($page = 1; $page <= $categoryPages; $page++) {
-            $sitemap .= $this->createSitemapEntry(
-                url("/sitemap-categories-{$page}.xml"),
-                Carbon::now()
-            );
-        }
+        // Nota: los sitemaps de productos, marcas y categorías quedan
+        // deliberadamente fuera del índice (contenido demasiado fino para
+        // AdSense, o listados de filtro sin contenido editorial propio).
+        // Los controladores siguen existiendo por si se decide reactivarlos.
 
         // Agregar sitemaps de certificadores
         for ($page = 1; $page <= $certifierPages; $page++) {
