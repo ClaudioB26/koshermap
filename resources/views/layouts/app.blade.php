@@ -132,43 +132,13 @@
                 </form>
             </div>
 
-            <!-- Right: location + lang -->
+            <!-- Right: auth (desktop) + lang -->
             <div class="flex items-center gap-2 shrink-0">
                 {{-- Selector de país (dropdown a /countries) oculto temporalmente --}}
 
-                @auth
-                <div class="relative" x-data="{ open: false }" @click.outside="open = false">
-                    <button @click="open = !open" type="button"
-                            class="flex items-center gap-1.5 text-sm font-medium text-gray-600 hover:text-blue-600 whitespace-nowrap">
-                        @if(auth()->user()->avatar)
-                        <img src="{{ auth()->user()->avatar }}" alt="" class="w-6 h-6 rounded-full">
-                        @else
-                        <span>👤</span>
-                        @endif
-                        <span class="hidden lg:inline">{{ \Illuminate\Support\Str::limit(auth()->user()->name, 16) }}</span>
-                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <div x-show="open" x-transition @click="open = false"
-                         class="absolute right-0 rtl:right-auto rtl:left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-100"
-                         style="display: none;">
-                        <a href="{{ route('account.places') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700">
-                            🏪 Mis locales
-                        </a>
-                        <form method="POST" action="{{ route('logout') }}">
-                            @csrf
-                            <button type="submit" class="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700">
-                                Cerrar sesión
-                            </button>
-                        </form>
-                    </div>
+                <div class="hidden md:block">
+                    @include('partials.auth_menu')
                 </div>
-                @else
-                <a href="{{ route('login') }}" class="text-sm font-medium text-gray-600 hover:text-blue-600 whitespace-nowrap">
-                    Iniciar sesión
-                </a>
-                @endauth
 
                 @include('partials.language_switcher')
             </div>
@@ -178,19 +148,24 @@
         <div id="reader" class="hidden mt-3 rounded-xl overflow-hidden shadow-lg max-w-sm mx-auto"></div>
 
         <!-- Mobile Nav -->
-        <nav class="md:hidden flex gap-2 mt-2 overflow-x-auto pb-1 -mx-1 px-1">
-            <a href="{{ \App\Models\Article::indexUrlFor(app()->getLocale()) }}"
-               class="px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap
-                      {{ request()->routeIs('articles.*') ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-600' }}">
-                📰 {{ \App\Models\Article::sectionLabelFor(app()->getLocale()) }}
-            </a>
-            {{-- Productos y Lugares ocultos del menu: contenido marcado noindex, ver doc/plan-adsense.md --}}
-            <a href="{{ route('certifiers.index') }}"
-               class="px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap bg-gray-100 text-gray-600">
-                🏅 {{ __('certifiers') }}
-            </a>
-            {{-- Países oculto temporalmente --}}
-        </nav>
+        <div class="md:hidden flex items-center justify-between gap-2 mt-2">
+            <nav class="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1 flex-grow">
+                <a href="{{ \App\Models\Article::indexUrlFor(app()->getLocale()) }}"
+                   class="px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap
+                          {{ request()->routeIs('articles.*') ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-600' }}">
+                    📰 {{ \App\Models\Article::sectionLabelFor(app()->getLocale()) }}
+                </a>
+                {{-- Productos y Lugares ocultos del menu: contenido marcado noindex, ver doc/plan-adsense.md --}}
+                <a href="{{ route('certifiers.index') }}"
+                   class="px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap bg-gray-100 text-gray-600">
+                    🏅 {{ __('certifiers') }}
+                </a>
+                {{-- Países oculto temporalmente --}}
+            </nav>
+            <div class="shrink-0 pl-2">
+                @include('partials.auth_menu')
+            </div>
+        </div>
     </div>
 </header>
 

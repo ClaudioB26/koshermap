@@ -78,5 +78,8 @@
     "Contact": "Contacto",
     "Visit website": "Visitar sitio web",
     "no_direct_contact_yet": "todavía no cargó sus datos de contacto en KosherMap. Escribinos a info@koshermap.org y te ayudamos a contactarla.",
-    "certifier_general_contact_body": "¿Tenés una consulta como consumidor, o representás una empresa y querés comunicarte con esta certificadora? Estos son sus datos de contacto."
+    "certifier_general_contact_body": "¿Tenés una consulta como consumidor, o representás una empresa y querés comunicarte con esta certificadora? Estos son sus datos de contacto.",
+    "login_link": "Iniciar sesión",
+    "logout_link": "Cerrar sesión",
+    "my_places": "Mis locales"
 }
