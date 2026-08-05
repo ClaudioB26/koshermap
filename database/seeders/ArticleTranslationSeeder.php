@@ -76,9 +76,41 @@ class ArticleTranslationSeeder extends Seeder
   <img src="/images/articulos/carne-y-leche.jpg" alt="An observant kosher kitchen keeps two complete sets of pots and utensils, one for meat and one for dairy." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">An observant kosher kitchen keeps two complete sets of pots and utensils, one for meat and one for dairy. Photo: PattayaPatrol via <a href="https://commons.wikimedia.org/wiki/File%3ADFC_2431_A_cook_flips_food_in_a_hot_pan_while_working_in_a_compact_well-used_kitchen_filled_with_pots_utensils_and_shelves_of_ingredients.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>In practice, this means food is divided into three categories: <strong>meat</strong> (meat and its derivatives), <strong>dairy</strong> (milk and its derivatives) and <strong>pareve</strong> (neutral, such as fruits, vegetables, eggs and fish, which are neither meat nor milk).</p>
-<p>An observant kosher kitchen keeps separate utensils, pots, plates and even dishwashers for meat and for milk, since heat and repeated use can transfer flavors and particles between surfaces. In addition, a waiting period is required between eating meat and eating dairy — which varies by family custom, generally between one and six hours — while going from dairy to meat usually only requires rinsing one\'s mouth and eating something neutral.</p>
-<p>This separation is why so many product labels carry the letters "D" (dairy), "M" (meat) or "Pareve" next to the certification symbol: it lets the consumer instantly know which category a product falls into before combining it with other foods.</p>',
+<p>That last part often comes as a surprise. Someone who keeps kosher not only refrains from eating a dish of meat with cream: they also cannot sell it or give it away, because economic benefit is included in the prohibition too.</p>
+
+<h2>The three categories that organise the whole kitchen</h2>
+<p>From this comes the division of all food into three groups that anyone keeping kosher knows by heart: <strong>meat</strong> (meat and its derivatives), <strong>dairy</strong> (milk and its derivatives) and <strong>pareve</strong> (neutral: fruits, vegetables, eggs, fish, grains).</p>
+<p>The <strong>pareve</strong> category is the most versatile and therefore the most sought after by the food industry: a pareve dessert can be served after a meat meal, something impossible with a dairy one. If you want to go deeper into that point, we develop it in the article on <a href="/articulos/que-significa-pareve">what pareve means</a>.</p>
+
+<h2>Why you need two sets of everything</h2>
+<p>This does not stay theoretical. In an observant kosher kitchen the utensils, pots, plates and even the dishwasher are divided into two separate sets. The reason is a halachic principle called <em>bliot</em>: when food is cooked in a vessel at high temperature, the flavour is considered absorbed into the walls of that vessel. A pot in which you boiled milk "is" dairy even if it is impeccably clean, and if you then cook meat in it, that meat is compromised.</p>
+<p>The practical solution most families use is colour coding: one colour for meat, another for dairy. Red and blue is the most widespread combination, but any will do as long as it is consistent. This applies to pots, pans, cutlery, cutting boards, sponges and dish towels.</p>
+<p>And if they get mixed up by mistake? There are kashering procedures that allow certain utensils to be recovered: <a href="/articulos/hagala-utensilios-metal">hagalah for metal utensils</a> is the most common. But not every material can be kashered, and the correct procedure depends on the case, so it is worth consulting.</p>
+
+<h2>Waiting times between meat and dairy</h2>
+<p>After eating meat you must wait before consuming dairy. The exact time is one of the most visible differences between communities:</p>
+<ul>
+<li><strong>Six hours:</strong> the most widespread custom, followed by most Sephardic communities and many Ashkenazi ones.</li>
+<li><strong>Three hours:</strong> a custom of German origin, still practised in some families.</li>
+<li><strong>One hour:</strong> the Dutch custom, the shortest of the traditional ones.</li>
+</ul>
+<p>The reason given by the sources is twofold: meat leaves residue between the teeth, and its flavour lingers in the mouth longer than that of other foods. In the reverse direction — from dairy to meat — no wait is needed: rinsing your mouth and eating something neutral, such as a piece of bread, is enough.</p>
+<p>The exception is hard, well-aged cheeses, which in several communities require the same full wait as meat, precisely because their flavour is more persistent. The important thing here is not to improvise: the custom is inherited from the family or defined with the community rabbi, not chosen for convenience.</p>
+
+<h2>How this translates onto supermarket labels</h2>
+<p>This is why so many labels carry a small letter next to the certification symbol: "D" for <em>dairy</em>, "M" for <em>meat</em>, or simply "Pareve". Just by looking at that letter you instantly know whether you can combine that product with what you are about to eat.</p>
+<p>There is a fourth mark that causes quite a lot of confusion: <strong>"DE"</strong>, for <em>dairy equipment</em>. It means the product has no dairy ingredients, but was made on a production line that also processes dairy. It cannot be eaten together with meat, but it can be eaten after meat. It is an intermediate category that exists precisely because modern factories share equipment between products. We explain it in detail in <a href="/articulos/como-leer-etiqueta-kosher">how to read a kosher label</a>.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Does chicken also count as meat?</strong><br>
+Yes. By Torah law chicken would not be included in the prohibition, which speaks of "a kid", but the sages extended it to all poultry to avoid confusion. Today chicken is treated exactly like red meat for these purposes.</p>
+<p><strong>And fish?</strong><br>
+Fish is pareve, so technically it can be combined with dairy — salmon with cream is in fact a classic. With meat it is different: there is a widespread custom of not eating them together on the same plate, but for health reasons according to the Talmud, not because of the meat-and-milk prohibition. More detail in <a href="/articulos/pescado-kosher-aletas-escamas">kosher fish</a>.</p>
+<p><strong>Can I have just one oven?</strong><br>
+Yes, that is the most common setup. It is handled by covering food well, using dedicated trays, or assigning the oven to a single category. The simplest option for someone just starting out is to designate it for pareve and meat, and handle dairy on the stovetop.</p>
+
+<h2>Further reading</h2>
+<p>If you are organising your kitchen, the guide on <a href="/articulos/armar-cocina-kosher">how to set up a kosher kitchen from scratch</a> turns all of this into concrete steps. For the original sources, the <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">Orthodox Union introductory guide</a> develops the topic with the Talmudic citations, the <a href="https://en.wikipedia.org/wiki/Kashrut" target="_blank" rel="noopener">Wikipedia article on kashrut</a> gives the general historical overview, and the <a href="https://www.youtube.com/@OUKosher" target="_blank" rel="noopener">OU Kosher YouTube channel</a> publishes audiovisual material on how a kitchen with separation is organised.</p>',
             ],
             'kasherizar-horno' => [
                 'title' => 'How to kosher an oven',
@@ -1081,9 +1113,41 @@ Repeatedly mixing meat and dairy utensils can complicate the kitchen more long-t
   <img src="/images/articulos/carne-y-leche.jpg" alt="Uma cozinha kosher observante mantém dois conjuntos completos de panelas e utensílios, um para carne e outro para laticínios." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Uma cozinha kosher observante mantém dois conjuntos completos de panelas e utensílios, um para carne e outro para laticínios. Foto: PattayaPatrol via <a href="https://commons.wikimedia.org/wiki/File%3ADFC_2431_A_cook_flips_food_in_a_hot_pan_while_working_in_a_compact_well-used_kitchen_filled_with_pots_utensils_and_shelves_of_ingredients.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>Na prática, isso significa que os alimentos se dividem em três categorias: <strong>cárneos</strong> (carne e derivados), <strong>lácteos</strong> (leite e derivados) e <strong>pareve</strong> (neutros, como frutas, verduras, ovos e peixe, que não são nem carne nem leite).</p>
-<p>Uma cozinha kosher observante mantém utensílios, panelas, pratos e até lava-louças separados para carne e para leite, já que o calor e o uso repetido podem transferir sabores e partículas entre superfícies. Além disso, exige-se um tempo de espera entre comer carne e comer laticínios — que varia conforme o costume familiar, geralmente entre uma e seis horas — enquanto de laticínios para carne basta enxaguar a boca e comer algo neutro.</p>
-<p>Essa separação é a razão pela qual muitos rótulos de produtos trazem as letras "D" (dairy/lácteo), "M" (meat/cárneo) ou "Pareve" junto ao símbolo de certificação: permite ao consumidor saber de imediato em que categoria o produto se enquadra antes de combiná-lo com outros alimentos.</p>',
+<p>Essa última parte costuma surpreender. Uma pessoa que segue o kashrut não apenas se abstém de comer um prato de carne com creme: também não pode vendê-lo nem doá-lo, porque o benefício econômico também está incluído na proibição.</p>
+
+<h2>As três categorias que organizam toda a cozinha</h2>
+<p>Daí vem a divisão de todos os alimentos em três grupos que qualquer pessoa que segue o kashrut sabe de cor: <strong>cárneos</strong> (carne e derivados), <strong>lácteos</strong> (leite e derivados) e <strong>pareve</strong> (neutros: frutas, verduras, ovos, peixe, grãos).</p>
+<p>A categoria <strong>pareve</strong> é a mais versátil e por isso a mais procurada pela indústria alimentícia: uma sobremesa pareve pode ser servida depois de uma refeição de carne, algo impossível com uma láctea. Se quiser aprofundar nesse ponto, desenvolvemos no artigo sobre <a href="/articulos/que-significa-pareve">o que significa pareve</a>.</p>
+
+<h2>Por que são necessários dois jogos de tudo</h2>
+<p>Isso não fica na teoria. Em uma cozinha kosher observante os utensílios, as panelas, os pratos e até a lava-louças se dividem em dois jogos separados. O motivo é um princípio haláchico chamado <em>bliot</em>: quando um alimento é cozido em um recipiente em alta temperatura, considera-se que o sabor fica absorvido nas paredes desse recipiente. Uma panela na qual você ferveu leite "é" láctea mesmo estando impecavelmente limpa, e se depois você cozinhar carne ali, essa carne fica comprometida.</p>
+<p>A solução prática que a maioria das famílias usa é codificar por cor: uma cor para carne, outra para leite. Vermelho e azul é a combinação mais difundida, mas qualquer uma serve desde que seja consistente. Isso se aplica a panelas, frigideiras, talheres, tábuas de corte, esponjas e panos de prato.</p>
+<p>E se forem misturados por engano? Existem procedimentos de kasherização que permitem recuperar certos utensílios: a <a href="/articulos/hagala-utensilios-metal">hagalá para utensílios de metal</a> é o mais comum. Mas nem todo material pode ser kasherizado, e o procedimento correto depende do caso, então convém consultar.</p>
+
+<h2>Os tempos de espera entre carne e laticínios</h2>
+<p>Depois de comer carne é preciso esperar antes de consumir laticínios. O tempo exato é uma das diferenças mais visíveis entre comunidades:</p>
+<ul>
+<li><strong>Seis horas:</strong> o costume mais difundido, seguido pela maioria das comunidades sefarditas e muitas asquenazitas.</li>
+<li><strong>Três horas:</strong> costume de origem alemã, ainda vigente em algumas famílias.</li>
+<li><strong>Uma hora:</strong> costume holandês, o mais breve dos tradicionais.</li>
+</ul>
+<p>A razão que as fontes dão é dupla: a carne deixa resíduos entre os dentes, e seu sabor persiste na boca mais tempo que o de outros alimentos. No sentido inverso — de laticínios para carne — não é preciso esperar: basta enxaguar a boca e comer algo neutro, como um pedaço de pão.</p>
+<p>A exceção são os queijos duros e bem curados, que em várias comunidades exigem a mesma espera completa da carne, justamente porque seu sabor é mais persistente. O importante aqui é não improvisar: o costume se herda da família ou se define com o rabino da comunidade, não se escolhe o mais cômodo.</p>
+
+<h2>Como isso se traduz nos rótulos do supermercado</h2>
+<p>Por isso tantos rótulos trazem uma letrinha junto ao selo de certificação: "D" de <em>dairy</em> (lácteo), "M" de <em>meat</em> (cárneo) ou simplesmente "Pareve". Só de olhar essa letra você sabe na hora se pode combinar aquele produto com o que está prestes a comer.</p>
+<p>Há uma quarta marca que confunde bastante: <strong>"DE"</strong>, de <em>dairy equipment</em>. Significa que o produto não tem ingredientes lácteos, mas foi elaborado em uma linha de produção que também processa laticínios. Não pode ser comido junto com carne, mas sim depois de carne. É uma categoria intermediária que existe justamente porque as fábricas modernas compartilham equipamentos entre produtos. Explicamos em detalhe em <a href="/articulos/como-leer-etiqueta-kosher">como ler um rótulo kosher</a>.</p>
+
+<h2>Perguntas frequentes</h2>
+<p><strong>O frango também conta como carne?</strong><br>
+Sim. Pela Torá o frango não estaria incluído na proibição, que fala de "um cabrito", mas os sábios a estenderam a todas as aves para evitar confusões. Hoje o frango é tratado exatamente como a carne vermelha para esses efeitos.</p>
+<p><strong>E o peixe?</strong><br>
+O peixe é pareve, então tecnicamente pode ser combinado com laticínios — aliás, salmão com creme é um clássico. Com carne é diferente: existe um costume difundido de não comê-los juntos no mesmo prato, mas por motivos de saúde segundo o Talmud, não pela proibição de carne e leite. Mais detalhes em <a href="/articulos/pescado-kosher-aletas-escamas">peixe kosher</a>.</p>
+<p><strong>Posso ter um só forno?</strong><br>
+Sim, é o mais comum. Isso se administra cobrindo bem os alimentos, usando assadeiras dedicadas, ou destinando o forno a uma só categoria. A opção mais simples para quem está começando é destiná-lo a pareve e cárneo, e resolver os laticínios no fogão.</p>
+
+<h2>Para continuar lendo</h2>
+<p>Se você está organizando sua cozinha, o guia de <a href="/articulos/armar-cocina-kosher">como montar uma cozinha kosher do zero</a> traduz tudo isso em passos concretos. Para as fontes originais, o <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">guia introdutório da Orthodox Union</a> desenvolve o tema com as citações talmúdicas, o artigo da <a href="https://pt.wikipedia.org/wiki/Kashrut" target="_blank" rel="noopener">Wikipédia sobre kashrut</a> dá o panorama histórico geral, e o <a href="https://www.youtube.com/@OUKosher" target="_blank" rel="noopener">canal da OU Kosher no YouTube</a> publica material audiovisual sobre como se organiza uma cozinha com separação.</p>',
             ],
             'kasherizar-horno' => [
                 'title' => 'Como casherizar um forno',
@@ -2086,9 +2150,41 @@ Misturar utensílios cárneos e lácteos repetidamente pode complicar mais a coz
   <img src="/images/articulos/carne-y-leche.jpg" alt="Une cuisine casher observante garde deux jeux complets d&#039;ustensiles, un pour la viande et un pour les produits laitiers." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Une cuisine casher observante garde deux jeux complets d\'ustensiles, un pour la viande et un pour les produits laitiers. Photo: PattayaPatrol via <a href="https://commons.wikimedia.org/wiki/File%3ADFC_2431_A_cook_flips_food_in_a_hot_pan_while_working_in_a_compact_well-used_kitchen_filled_with_pots_utensils_and_shelves_of_ingredients.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>En pratique, cela signifie que les aliments se divisent en trois catégories : <strong>carnés</strong> (viande et dérivés), <strong>lactés</strong> (lait et dérivés) et <strong>parve</strong> (neutres, comme les fruits, légumes, œufs et poisson, qui ne sont ni viande ni lait).</p>
-<p>Une cuisine cachère pratiquante conserve des ustensiles, casseroles, assiettes et même lave-vaisselle séparés pour la viande et pour le lait, car la chaleur et l\'usage répété peuvent transférer saveurs et particules entre surfaces. De plus, un temps d\'attente est exigé entre manger de la viande et manger des produits laitiers — variable selon les coutumes familiales, généralement entre une et six heures — tandis que passer du lait à la viande nécessite seulement de se rincer la bouche et de manger quelque chose de neutre.</p>
-<p>Cette séparation explique pourquoi tant d\'étiquettes de produits portent les lettres "D" (dairy/lacté), "M" (meat/carné) ou "Pareve" à côté du symbole de certification : cela permet au consommateur de savoir immédiatement dans quelle catégorie se situe un produit avant de le combiner avec d\'autres aliments.</p>',
+<p>Cette dernière partie surprend souvent. Une personne qui suit la cacherout ne s\'abstient pas seulement de manger un plat de viande à la crème : elle ne peut pas non plus le vendre ni le donner, car le bénéfice économique est lui aussi inclus dans l\'interdiction.</p>
+
+<h2>Les trois catégories qui organisent toute la cuisine</h2>
+<p>De là vient la division de tous les aliments en trois groupes que toute personne suivant la cacherout connaît par cœur : <strong>carnés</strong> (viande et dérivés), <strong>lactés</strong> (lait et dérivés) et <strong>parvé</strong> (neutres : fruits, légumes, œufs, poisson, céréales).</p>
+<p>La catégorie <strong>parvé</strong> est la plus polyvalente et donc la plus recherchée par l\'industrie alimentaire : un dessert parvé peut être servi après un repas carné, ce qui est impossible avec un dessert lacté. Si vous voulez approfondir ce point, nous le développons dans l\'article sur <a href="/articulos/que-significa-pareve">ce que signifie parvé</a>.</p>
+
+<h2>Pourquoi il faut deux jeux de tout</h2>
+<p>Cela ne reste pas théorique. Dans une cuisine cachère pratiquante, les ustensiles, les casseroles, les assiettes et même le lave-vaisselle se divisent en deux jeux séparés. La raison est un principe halakhique appelé <em>bliot</em> : lorsqu\'un aliment est cuit dans un récipient à haute température, on considère que la saveur est absorbée dans les parois de ce récipient. Une casserole dans laquelle vous avez fait bouillir du lait « est » lactée même si elle est impeccablement propre, et si vous y cuisinez ensuite de la viande, cette viande est compromise.</p>
+<p>La solution pratique qu\'utilisent la plupart des familles est le codage par couleur : une couleur pour la viande, une autre pour le lait. Rouge et bleu est la combinaison la plus répandue, mais n\'importe laquelle convient tant qu\'elle est cohérente. Cela s\'applique aux casseroles, poêles, couverts, planches à découper, éponges et torchons.</p>
+<p>Et s\'ils se mélangent par erreur ? Il existe des procédures de cachérisation permettant de récupérer certains ustensiles : la <a href="/articulos/hagala-utensilios-metal">hagala pour les ustensiles en métal</a> est la plus courante. Mais tous les matériaux ne peuvent pas être cachérisés, et la procédure correcte dépend du cas, il convient donc de consulter.</p>
+
+<h2>Les temps d\'attente entre viande et laitages</h2>
+<p>Après avoir mangé de la viande, il faut attendre avant de consommer des laitages. Le temps exact est l\'une des différences les plus visibles entre communautés :</p>
+<ul>
+<li><strong>Six heures :</strong> la coutume la plus répandue, suivie par la plupart des communautés séfarades et de nombreuses communautés ashkénazes.</li>
+<li><strong>Trois heures :</strong> coutume d\'origine allemande, encore en vigueur dans certaines familles.</li>
+<li><strong>Une heure :</strong> coutume hollandaise, la plus brève des traditionnelles.</li>
+</ul>
+<p>La raison donnée par les sources est double : la viande laisse des résidus entre les dents, et sa saveur persiste en bouche plus longtemps que celle d\'autres aliments. Dans le sens inverse — du laitage à la viande — il n\'est pas nécessaire d\'attendre : il suffit de se rincer la bouche et de manger quelque chose de neutre, comme un morceau de pain.</p>
+<p>L\'exception concerne les fromages durs et très affinés, qui dans plusieurs communautés exigent la même attente complète que la viande, justement parce que leur saveur est plus persistante. L\'important ici est de ne pas improviser : la coutume s\'hérite de la famille ou se définit avec le rabbin de la communauté, elle ne se choisit pas selon la commodité.</p>
+
+<h2>Comment cela se traduit sur les étiquettes du supermarché</h2>
+<p>C\'est pourquoi tant d\'étiquettes portent une petite lettre à côté du sceau de certification : « D » pour <em>dairy</em> (lacté), « M » pour <em>meat</em> (carné) ou directement « Parve ». Rien qu\'en regardant cette lettre, vous savez instantanément si vous pouvez combiner ce produit avec ce que vous êtes sur le point de manger.</p>
+<p>Il existe une quatrième mention qui prête à confusion : <strong>« DE »</strong>, pour <em>dairy equipment</em>. Elle signifie que le produit ne contient pas d\'ingrédients laitiers, mais qu\'il a été élaboré sur une ligne de production traitant également des laitages. Il ne peut pas être mangé avec de la viande, mais il peut l\'être après de la viande. C\'est une catégorie intermédiaire qui existe précisément parce que les usines modernes partagent leurs équipements entre produits. Nous l\'expliquons en détail dans <a href="/articulos/como-leer-etiqueta-kosher">comment lire une étiquette cachère</a>.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Le poulet compte-t-il aussi comme viande ?</strong><br>
+Oui. Selon la Torah, le poulet ne serait pas inclus dans l\'interdiction, qui parle d\'« un chevreau », mais les sages l\'ont étendue à toutes les volailles pour éviter les confusions. Aujourd\'hui le poulet est traité exactement comme la viande rouge à cet égard.</p>
+<p><strong>Et le poisson ?</strong><br>
+Le poisson est parvé, il peut donc techniquement être combiné avec des laitages — le saumon à la crème est d\'ailleurs un classique. Avec la viande, c\'est différent : il existe une coutume répandue de ne pas les manger ensemble dans la même assiette, mais pour des raisons de santé selon le Talmud, non à cause de l\'interdiction viande-lait. Plus de détails dans <a href="/articulos/pescado-kosher-aletas-escamas">poisson cachère</a>.</p>
+<p><strong>Puis-je n\'avoir qu\'un seul four ?</strong><br>
+Oui, c\'est le cas le plus courant. Cela se gère en couvrant bien les aliments, en utilisant des plats dédiés, ou en assignant le four à une seule catégorie. L\'option la plus simple pour qui débute est de le destiner au parvé et au carné, et de gérer les laitages sur la plaque de cuisson.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Si vous organisez votre cuisine, le guide sur <a href="/articulos/armar-cocina-kosher">comment monter une cuisine cachère de zéro</a> traduit tout cela en étapes concrètes. Pour les sources originales, le <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">guide introductif de l\'Orthodox Union</a> développe le sujet avec les citations talmudiques, l\'article de <a href="https://fr.wikipedia.org/wiki/Cacheroute" target="_blank" rel="noopener">Wikipédia sur la cacherout</a> donne le panorama historique général, et la <a href="https://www.youtube.com/@OUKosher" target="_blank" rel="noopener">chaîne YouTube d\'OU Kosher</a> publie du matériel audiovisuel sur l\'organisation d\'une cuisine avec séparation.</p>',
             ],
             'kasherizar-horno' => [
                 'title' => 'Comment cachériser un four',
@@ -3091,9 +3187,41 @@ Mélanger les ustensiles carnés et laitiers de façon répétée peut complique
   <img src="/images/articulos/carne-y-leche.jpg" alt="מטבח כשר מקפיד על שני סטים נפרדים של כלים: אחד לבשרי ואחד לחלבי." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">מטבח כשר מקפיד על שני סטים נפרדים של כלים: אחד לבשרי ואחד לחלבי. צילום: PattayaPatrol דרך <a href="https://commons.wikimedia.org/wiki/File%3ADFC_2431_A_cook_flips_food_in_a_hot_pan_while_working_in_a_compact_well-used_kitchen_filled_with_pots_utensils_and_shelves_of_ingredients.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>בפועל, זה אומר שהמזון מתחלק לשלוש קטגוריות: <strong>בשרי</strong> (בשר ונגזרותיו), <strong>חלבי</strong> (חלב ונגזרותיו) ו<strong>פרווה</strong> (ניטרלי, כמו פירות, ירקות, ביצים ודגים, שאינם בשר ואינם חלב).</p>
-<p>מטבח כשר שומר כלים, סירים, צלחות ואפילו מדיח כלים נפרדים לבשר ולחלב, מכיוון שחום ושימוש חוזר עלולים להעביר טעמים וחלקיקים בין משטחים. בנוסף, נדרש זמן המתנה בין אכילת בשר לאכילת חלבי — המשתנה לפי מנהג המשפחה, בדרך כלל בין שעה לשש שעות — בעוד שמחלבי לבשרי מספיק לשטוף את הפה ולאכול משהו ניטרלי.</p>
-<p>הפרדה זו היא הסיבה שעל תוויות מוצרים רבות מופיעות האותיות "D" (חלבי), "M" (בשרי) או "Pareve" (פרווה) לצד סמל הכשרות: זה מאפשר לצרכן לדעת מיד לאיזו קטגוריה שייך המוצר לפני שילובו עם מאכלים אחרים.</p>',
+<p>החלק האחרון הזה בדרך כלל מפתיע. אדם שומר כשרות לא רק נמנע מלאכול מנת בשר עם שמנת: הוא גם אינו יכול למכור אותה או לתת אותה במתנה, משום שגם ההנאה הכלכלית כלולה באיסור.</p>
+
+<h2>שלוש הקטגוריות שמארגנות את כל המטבח</h2>
+<p>מכאן נובעת החלוקה של כל המזון לשלוש קבוצות שכל שומר כשרות מכיר בעל פה: <strong>בשרי</strong> (בשר ונגזרותיו), <strong>חלבי</strong> (חלב ונגזרותיו) ו<strong>פרווה</strong> (ניטרלי: פירות, ירקות, ביצים, דגים, דגנים).</p>
+<p>קטגוריית <strong>פרווה</strong> היא הגמישה ביותר ולכן המבוקשת ביותר בתעשיית המזון: קינוח פרווה אפשר להגיש אחרי ארוחה בשרית, דבר בלתי אפשרי עם קינוח חלבי. אם תרצו להעמיק בנקודה זו, אנו מרחיבים במאמר על <a href="/articulos/que-significa-pareve">מה זה פרווה</a>.</p>
+
+<h2>למה צריך שני סטים של הכול</h2>
+<p>זה לא נשאר בתיאוריה. במטבח כשר הכלים, הסירים, הצלחות ואפילו המדיח מתחלקים לשני סטים נפרדים. הסיבה היא עיקרון הלכתי הנקרא <em>בליעות</em>: כאשר מאכל מתבשל בכלי בחום גבוה, נחשב שהטעם נבלע בדפנות הכלי. סיר שהרתחתם בו חלב "הוא" חלבי גם אם הוא נקי לחלוטין, ואם תבשלו בו אחר כך בשר, אותו בשר נפגם.</p>
+<p>הפתרון המעשי שרוב המשפחות משתמשות בו הוא קידוד לפי צבע: צבע אחד לבשרי, אחר לחלבי. אדום וכחול הוא השילוב הנפוץ ביותר, אך כל שילוב מתאים כל עוד הוא עקבי. זה חל על סירים, מחבתות, סכו"ם, קרשי חיתוך, ספוגים ומגבות מטבח.</p>
+<p>ומה אם מתערבבים בטעות? קיימים תהליכי הכשרה המאפשרים להציל כלים מסוימים: <a href="/articulos/hagala-utensilios-metal">הגעלה לכלי מתכת</a> היא הנפוצה ביותר. אך לא כל חומר ניתן להכשרה, והתהליך הנכון תלוי במקרה, ולכן כדאי להתייעץ.</p>
+
+<h2>זמני ההמתנה בין בשר לחלב</h2>
+<p>אחרי אכילת בשר צריך להמתין לפני צריכת מוצרי חלב. הזמן המדויק הוא אחד ההבדלים הבולטים בין קהילות:</p>
+<ul>
+<li><strong>שש שעות:</strong> המנהג הנפוץ ביותר, הנהוג ברוב הקהילות הספרדיות ורבות מהאשכנזיות.</li>
+<li><strong>שלוש שעות:</strong> מנהג ממקור גרמני, עדיין נהוג בחלק מהמשפחות.</li>
+<li><strong>שעה אחת:</strong> המנהג ההולנדי, הקצר מבין המסורתיים.</li>
+</ul>
+<p>הנימוק שהמקורות נותנים כפול: הבשר משאיר שאריות בין השיניים, וטעמו נשאר בפה זמן רב יותר משל מאכלים אחרים. בכיוון ההפוך — מחלבי לבשרי — אין צורך להמתין: די בשטיפת הפה ואכילת משהו ניטרלי, כמו פרוסת לחם.</p>
+<p>היוצא מן הכלל הוא גבינות קשות ומיושנות, שבקהילות אחדות דורשות את אותה המתנה מלאה כמו בשר, דווקא משום שטעמן מתמשך יותר. החשוב כאן הוא לא לאלתר: המנהג עובר בירושה מהמשפחה או נקבע עם רב הקהילה, ולא נבחר לפי הנוחות.</p>
+
+<h2>איך זה מתורגם לתוויות בסופרמרקט</h2>
+<p>לכן על תוויות רבות מופיעה אות קטנה לצד סמל הכשרות: "D" ל<em>dairy</em> (חלבי), "M" ל<em>meat</em> (בשרי) או פשוט "Pareve". במבט אחד על האות הזו אתם יודעים מיד אם אפשר לשלב את המוצר עם מה שאתם עומדים לאכול.</p>
+<p>יש סימון רביעי שמבלבל למדי: <strong>"DE"</strong>, מלשון <em>dairy equipment</em>. משמעותו שהמוצר אינו מכיל מרכיבים חלביים, אך יוצר בקו ייצור שמעבד גם חלבי. אי אפשר לאכול אותו יחד עם בשר, אבל כן אחרי בשר. זו קטגוריית ביניים שקיימת בדיוק משום שמפעלים מודרניים חולקים ציוד בין מוצרים. אנו מסבירים זאת בפירוט ב<a href="/articulos/como-leer-etiqueta-kosher">כיצד לקרוא תווית כשרות</a>.</p>
+
+<h2>שאלות נפוצות</h2>
+<p><strong>האם עוף נחשב גם הוא בשר?</strong><br>
+כן. מדאורייתא העוף לא היה נכלל באיסור, המדבר על "גדי", אך חכמים הרחיבו אותו לכל העופות כדי למנוע בלבול. כיום העוף מטופל בדיוק כמו בשר אדום לעניין זה.</p>
+<p><strong>ומה עם דגים?</strong><br>
+דגים הם פרווה, ולכן טכנית אפשר לשלבם עם חלבי — למעשה סלמון בשמנת הוא קלאסיקה. עם בשר זה שונה: קיים מנהג רווח לא לאכול אותם יחד באותה צלחת, אך מטעמי בריאות לפי התלמוד, ולא מחמת איסור בשר בחלב. פירוט נוסף ב<a href="/articulos/pescado-kosher-aletas-escamas">דגים כשרים</a>.</p>
+<p><strong>אפשר להסתפק בתנור אחד?</strong><br>
+כן, זה הנפוץ ביותר. מתמודדים עם זה על ידי כיסוי טוב של המאכלים, שימוש בתבניות ייעודיות, או ייעוד התנור לקטגוריה אחת בלבד. האפשרות הפשוטה ביותר למתחילים היא לייעד אותו לפרווה ובשרי, ולפתור את החלבי על הכיריים.</p>
+
+<h2>להמשך קריאה</h2>
+<p>אם אתם מארגנים את המטבח, המדריך <a href="/articulos/armar-cocina-kosher">כיצד להקים מטבח כשר מאפס</a> מתרגם את כל זה לצעדים מעשיים. למקורות המקוריים, <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">המדריך המקדים של Orthodox Union</a> מפתח את הנושא עם הציטוטים התלמודיים, הערך ב<a href="https://en.wikipedia.org/wiki/Kashrut" target="_blank" rel="noopener">ויקיפדיה על כשרות</a> נותן את התמונה ההיסטורית הכללית, ו<a href="https://www.youtube.com/@OUKosher" target="_blank" rel="noopener">ערוץ היוטיוב של OU Kosher</a> מפרסם חומר חזותי על אופן ארגון מטבח עם הפרדה.</p>',
             ],
             'kasherizar-horno' => [
                 'title' => 'איך מכשירים תנור',
@@ -4096,9 +4224,41 @@ Mélanger les ustensiles carnés et laitiers de façon répétée peut complique
   <img src="/images/articulos/carne-y-leche.jpg" alt="На кошерной кухне держат два полных набора посуды: отдельно для мясного и для молочного." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">На кошерной кухне держат два полных набора посуды: отдельно для мясного и для молочного. Фото: PattayaPatrol через <a href="https://commons.wikimedia.org/wiki/File%3ADFC_2431_A_cook_flips_food_in_a_hot_pan_while_working_in_a_compact_well-used_kitchen_filled_with_pots_utensils_and_shelves_of_ingredients.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>На практике это означает, что продукты делятся на три категории: <strong>мясные</strong> (мясо и производные), <strong>молочные</strong> (молоко и производные) и <strong>парве</strong> (нейтральные, например фрукты, овощи, яйца и рыба, которые не являются ни мясом, ни молоком).</p>
-<p>Соблюдающая кошерную кухню семья держит отдельную посуду, кастрюли, тарелки и даже посудомоечные машины для мяса и для молока, поскольку тепло и многократное использование могут передавать вкусы и частицы между поверхностями. Кроме того, требуется время ожидания между употреблением мяса и молочных продуктов — оно варьируется в зависимости от семейного обычая, обычно от одного до шести часов — тогда как переход от молочного к мясному обычно требует лишь полоскания рта и употребления чего-то нейтрального.</p>
-<p>Это разделение объясняет, почему на многих этикетках продуктов рядом с символом сертификации стоят буквы "D" (молочный), "M" (мясной) или "Pareve" (парве): это позволяет потребителю сразу понять, к какой категории относится продукт, прежде чем сочетать его с другими блюдами.</p>',
+<p>Эта последняя часть обычно удивляет. Человек, соблюдающий кашрут, не только воздерживается от блюда из мяса со сливками: он также не может его продать или подарить, потому что экономическая выгода тоже включена в запрет.</p>
+
+<h2>Три категории, которые упорядочивают всю кухню</h2>
+<p>Отсюда возникает деление всех продуктов на три группы, которые любой соблюдающий кашрут знает наизусть: <strong>мясные</strong> (мясо и производные), <strong>молочные</strong> (молоко и производные) и <strong>парве</strong> (нейтральные: фрукты, овощи, яйца, рыба, злаки).</p>
+<p>Категория <strong>парве</strong> самая универсальная и потому самая востребованная пищевой промышленностью: десерт парве можно подать после мясной трапезы, что невозможно с молочным. Если хотите углубиться в этот вопрос, мы разбираем его в статье о том, <a href="/articulos/que-significa-pareve">что означает парве</a>.</p>
+
+<h2>Почему нужны два комплекта всего</h2>
+<p>Это не остаётся теорией. На соблюдающей кошерной кухне посуда, кастрюли, тарелки и даже посудомоечная машина делятся на два отдельных комплекта. Причина — галахический принцип под названием <em>блиот</em>: когда пища готовится в посуде при высокой температуре, считается, что вкус впитывается в стенки этой посуды. Кастрюля, в которой вы кипятили молоко, «является» молочной, даже если она безупречно чистая, и если потом приготовить в ней мясо, это мясо становится некошерным.</p>
+<p>Практическое решение, которым пользуется большинство семей, — цветовая маркировка: один цвет для мясного, другой для молочного. Красный и синий — самое распространённое сочетание, но подойдёт любое, лишь бы оно было последовательным. Это касается кастрюль, сковород, столовых приборов, разделочных досок, губок и полотенец.</p>
+<p>А если они перепутались по ошибке? Существуют процедуры кашерования, позволяющие восстановить некоторую посуду: <a href="/articulos/hagala-utensilios-metal">агала для металлической посуды</a> — самая распространённая. Но не всякий материал можно кашеровать, и правильная процедура зависит от случая, поэтому стоит проконсультироваться.</p>
+
+<h2>Время ожидания между мясом и молочным</h2>
+<p>После употребления мяса нужно подождать, прежде чем есть молочное. Точное время — одно из самых заметных различий между общинами:</p>
+<ul>
+<li><strong>Шесть часов:</strong> самый распространённый обычай, которого придерживается большинство сефардских общин и многие ашкеназские.</li>
+<li><strong>Три часа:</strong> обычай немецкого происхождения, всё ещё соблюдаемый в некоторых семьях.</li>
+<li><strong>Один час:</strong> голландский обычай, самый краткий из традиционных.</li>
+</ul>
+<p>Источники приводят двойное объяснение: мясо оставляет остатки между зубами, и его вкус сохраняется во рту дольше, чем вкус других продуктов. В обратном направлении — от молочного к мясному — ждать не нужно: достаточно прополоскать рот и съесть что-то нейтральное, например кусок хлеба.</p>
+<p>Исключение составляют твёрдые и выдержанные сыры, которые в ряде общин требуют такого же полного ожидания, как мясо, именно потому, что их вкус более стойкий. Здесь важно не импровизировать: обычай наследуется от семьи или определяется с раввином общины, а не выбирается по удобству.</p>
+
+<h2>Как это выглядит на этикетках в супермаркете</h2>
+<p>Именно поэтому на многих этикетках рядом с знаком сертификации стоит маленькая буква: «D» для <em>dairy</em> (молочное), «M» для <em>meat</em> (мясное) или прямо «Pareve». Достаточно взглянуть на эту букву, чтобы мгновенно понять, можно ли сочетать этот продукт с тем, что вы собираетесь есть.</p>
+<p>Есть четвёртая пометка, которая изрядно сбивает с толку: <strong>«DE»</strong>, от <em>dairy equipment</em>. Она означает, что в продукте нет молочных ингредиентов, но он изготовлен на производственной линии, которая также обрабатывает молочное. Его нельзя есть вместе с мясом, но можно после мяса. Это промежуточная категория, существующая именно потому, что современные фабрики используют общее оборудование для разных продуктов. Мы объясняем это подробно в статье <a href="/articulos/como-leer-etiqueta-kosher">как читать кошерную этикетку</a>.</p>
+
+<h2>Часто задаваемые вопросы</h2>
+<p><strong>Курица тоже считается мясом?</strong><br>
+Да. По Торе курица не входила бы в запрет, который говорит о «козлёнке», но мудрецы распространили его на всю птицу во избежание путаницы. Сегодня курица в этом отношении рассматривается точно так же, как красное мясо.</p>
+<p><strong>А рыба?</strong><br>
+Рыба является парве, поэтому технически её можно сочетать с молочным — лосось со сливками действительно классика. С мясом иначе: существует распространённый обычай не есть их вместе на одной тарелке, но по соображениям здоровья согласно Талмуду, а не из-за запрета мяса с молоком. Подробнее в статье <a href="/articulos/pescado-kosher-aletas-escamas">кошерная рыба</a>.</p>
+<p><strong>Можно ли обойтись одной духовкой?</strong><br>
+Да, это самый распространённый вариант. С этим справляются, хорошо накрывая продукты, используя отдельные противни или закрепляя духовку за одной категорией. Самый простой вариант для начинающих — отвести её под парве и мясное, а молочное готовить на плите.</p>
+
+<h2>Что почитать дальше</h2>
+<p>Если вы обустраиваете кухню, руководство <a href="/articulos/armar-cocina-kosher">как обустроить кошерную кухню с нуля</a> переводит всё это в конкретные шаги. Что касается первоисточников, <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">вводное руководство Orthodox Union</a> раскрывает тему с талмудическими цитатами, статья в <a href="https://ru.wikipedia.org/wiki/Кашрут" target="_blank" rel="noopener">Википедии о кашруте</a> даёт общий исторический обзор, а <a href="https://www.youtube.com/@OUKosher" target="_blank" rel="noopener">YouTube-канал OU Kosher</a> публикует видеоматериалы о том, как организована кухня с разделением.</p>',
             ],
             'kasherizar-horno' => [
                 'title' => 'Как откошеровать духовку',
