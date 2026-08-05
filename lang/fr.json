@@ -82,5 +82,6 @@
     "login_link": "Connexion",
     "logout_link": "Déconnexion",
     "my_places": "Mes établissements",
-    "empty_category_notice": "Nous n'avons pas encore de produits dans cette catégorie. En attendant, vous pouvez lire nos guides sur la cacherout ou explorer d'autres catégories."
+    "empty_category_notice": "Nous n'avons pas encore de produits dans cette catégorie. En attendant, vous pouvez lire nos guides sur la cacherout ou explorer d'autres catégories.",
+    "related_articles_heading": "Cela pourrait vous intéresser"
 }

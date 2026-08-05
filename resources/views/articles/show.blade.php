@@ -44,24 +44,18 @@
         {!! $article->content !!}
     </div>
 
-    {{-- CTA al directorio --}}
-    <div class="mt-10 bg-blue-50 border border-blue-100 rounded-2xl p-6 text-center">
-        <p class="font-bold text-gray-800 mb-1">¿Buscás productos o lugares kosher certificados?</p>
-        <p class="text-sm text-gray-500 mb-4">KosherMap reúne miles de productos y locales kosher de todo el mundo en un solo lugar.</p>
-        <div class="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="{{ route('search.index') }}" class="px-5 py-2 bg-blue-600 text-white rounded-lg font-semibold text-sm hover:bg-blue-700 transition">🛒 Buscar productos kosher</a>
-            <a href="{{ route('places.index') }}" class="px-5 py-2 bg-white border border-blue-200 text-blue-700 rounded-lg font-semibold text-sm hover:bg-blue-50 transition">📍 Encontrar locales</a>
-        </div>
-    </div>
-
     @if($related->isNotEmpty())
         <hr class="border-gray-200 my-10">
-        <h2 class="text-lg font-bold text-gray-800 mb-4">Artículos relacionados</h2>
+        <h2 class="text-lg font-bold text-gray-800 mb-4">📰 {{ __('related_articles_heading') }}</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             @foreach($related as $r)
                 <a href="{{ $r->urlFor(app()->getLocale()) ?? route('articles.show', $r->slug) }}"
                    class="block bg-white border border-gray-100 rounded-xl p-4 shadow-sm hover:shadow-md transition">
-                    <p class="font-semibold text-gray-800 text-sm">{{ $r->title }}</p>
+                    <p class="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-1">
+                        {{ \App\Http\Controllers\ArticleController::CATEGORY_LABELS[$r->category] ?? $r->category }}
+                    </p>
+                    <p class="font-semibold text-gray-800 text-sm mb-1 leading-snug">{{ $r->title }}</p>
+                    <p class="text-xs text-gray-500 line-clamp-2">{{ $r->excerpt }}</p>
                 </a>
             @endforeach
         </div>

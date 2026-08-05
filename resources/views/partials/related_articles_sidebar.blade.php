@@ -1,6 +1,6 @@
 @if($relatedArticles->isNotEmpty())
 <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
-    <h2 class="text-lg font-bold text-gray-800 mb-4">📰 Te puede interesar</h2>
+    <h2 class="text-lg font-bold text-gray-800 mb-4">📰 {{ __('related_articles_heading') }}</h2>
     <div class="flex flex-col gap-3">
         @foreach($relatedArticles as $relatedArticle)
         <a href="{{ $relatedArticle->urlFor(app()->getLocale()) ?? route('articles.show', $relatedArticle->slug) }}"

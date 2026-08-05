@@ -82,5 +82,6 @@
     "login_link": "Iniciar sesión",
     "logout_link": "Cerrar sesión",
     "my_places": "Mis locales",
-    "empty_category_notice": "Todavía no tenemos productos cargados en este rubro. Mientras tanto, podés leer nuestras guías sobre kashrut o explorar otros rubros del catálogo."
+    "empty_category_notice": "Todavía no tenemos productos cargados en este rubro. Mientras tanto, podés leer nuestras guías sobre kashrut o explorar otros rubros del catálogo.",
+    "related_articles_heading": "Te puede interesar"
 }
