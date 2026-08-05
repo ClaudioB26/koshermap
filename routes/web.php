@@ -98,7 +98,6 @@ Route::get('/countries/{slug}', [CatalogController::class, 'country'])->name('co
 Route::get('/certifiers', [CatalogController::class, 'certifiers'])->name('certifiers.index');
 Route::get('/certifiers/{slug}', [CatalogController::class, 'certifier'])->name('certifiers.show');
 Route::get('/certifiers/{slug}/contacto', [\App\Http\Controllers\ContactController::class, 'certifierContact'])->name('certifiers.contact');
-Route::post('/certifiers/{slug}/contacto', [\App\Http\Controllers\ContactController::class, 'storeCertifierContact'])->name('certifiers.contact.store');
 
 Route::get('/brands', [CatalogController::class, 'brands'])->name('brands.index');
 Route::get('/brands/{slug}', [CatalogController::class, 'brand'])->name('brands.show');

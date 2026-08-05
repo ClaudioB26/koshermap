@@ -76,5 +76,6 @@
     "View certified products": "Ver productos certificados",
     "Contact": "Contacto",
     "Visit website": "Visitar sitio web",
-    "no_direct_contact_yet": "todavía no cargó un email de contacto directo en KosherMap. Completá el formulario y te ponemos en contacto."
+    "no_direct_contact_yet": "todavía no cargó sus datos de contacto en KosherMap. Escribinos a info@koshermap.org y te ayudamos a contactarla.",
+    "certifier_general_contact_body": "¿Tenés una consulta como consumidor, o representás una empresa y querés comunicarte con esta certificadora? Estos son sus datos de contacto."
 }

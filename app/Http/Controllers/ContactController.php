@@ -30,29 +30,8 @@ class ContactController extends Controller
     public function certifierContact(Request $request, string $slug)
     {
         $certifier = Certifier::where('slug', $slug)->firstOrFail();
+        $intent = $request->query('intent') === 'certify' ? 'certify' : 'general';
 
-        return view('catalog.certifiers.contacto', compact('certifier'));
-    }
-
-    public function storeCertifierContact(Request $request, string $slug)
-    {
-        $certifier = Certifier::where('slug', $slug)->firstOrFail();
-
-        $request->validate([
-            'name'              => 'required|string|max:255',
-            'email'             => 'required|email|max:255',
-            'message'           => 'required|string|max:2000',
-            'accepted_privacy'  => 'accepted',
-        ]);
-
-        ContactMessage::create([
-            'certifier_id'     => $certifier->id,
-            'name'             => $request->name,
-            'email'            => $request->email,
-            'message'          => $request->message,
-            'accepted_privacy' => true,
-        ]);
-
-        return back()->with('contact_sent', true);
+        return view('catalog.certifiers.contacto', compact('certifier', 'intent'));
     }
 }

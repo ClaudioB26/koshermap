@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Certifier extends Model
 {
-    protected $fillable = ['name', 'slug', 'logo_symbol', 'about', 'website', 'contact_email', 'phone', 'hours'];
+    protected $fillable = ['name', 'slug', 'logo_symbol', 'about', 'website', 'contact_email', 'phone', 'hours', 'address'];
 
     public function products()
     {

@@ -21,7 +21,7 @@
     @endif
 
     <div class="mb-8 grid grid-cols-1 sm:grid-cols-2 gap-3">
-        <a href="{{ route('certifiers.contact', $certifier->slug) }}"
+        <a href="{{ route('certifiers.contact', ['slug' => $certifier->slug, 'intent' => 'certify']) }}"
            class="flex flex-col items-center text-center gap-1 bg-white border border-gray-200 rounded-xl p-4 hover:border-blue-400 hover:shadow-md transition">
             <span class="text-2xl">🏭</span>
             <span class="font-semibold text-sm text-gray-800">{{ __('Want to certify your business?') }} {{ $certifier->name }}</span>
@@ -36,13 +36,16 @@
 
     <div class="mb-8 p-5 bg-white border border-gray-200 rounded-xl">
         <h2 class="text-lg font-bold text-gray-800 mb-3">✉️ {{ __('Contact') }} {{ $certifier->name }}</h2>
-        @if($certifier->contact_email || $certifier->phone || $certifier->hours)
+        @if($certifier->contact_email || $certifier->phone || $certifier->address || $certifier->hours)
             <ul class="space-y-1.5 text-sm text-gray-700">
                 @if($certifier->contact_email)
                 <li>📧 <a href="mailto:{{ $certifier->contact_email }}" class="text-blue-600 hover:underline">{{ $certifier->contact_email }}</a></li>
                 @endif
                 @if($certifier->phone)
                 <li>📞 <a href="tel:{{ $certifier->phone }}" class="text-blue-600 hover:underline">{{ $certifier->phone }}</a></li>
+                @endif
+                @if($certifier->address)
+                <li>📍 {{ $certifier->address }}</li>
                 @endif
                 @if($certifier->hours)
                 <li>🕒 {{ $certifier->hours }}</li>
