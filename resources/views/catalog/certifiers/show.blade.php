@@ -10,13 +10,7 @@
 
     @if($certifier->about)
     <div class="mb-6 p-5 bg-blue-50 border border-blue-100 rounded-xl">
-        <h2 class="text-lg font-bold text-blue-900 mb-2">{{ __('About this certifier') }}</h2>
         <p class="text-gray-700 text-sm leading-relaxed">{{ $certifier->about }}</p>
-        @if($certifier->website)
-        <a href="{{ $certifier->website }}" target="_blank" rel="noopener" class="inline-block mt-3 text-sm text-blue-600 hover:underline">
-            🔗 {{ __('Visit website') }}
-        </a>
-        @endif
     </div>
     @endif
 
@@ -24,7 +18,7 @@
         <a href="{{ route('certifiers.contact', ['slug' => $certifier->slug, 'intent' => 'certify']) }}"
            class="flex flex-col items-center text-center gap-1 bg-white border border-gray-200 rounded-xl p-4 hover:border-blue-400 hover:shadow-md transition">
             <span class="text-2xl">🏭</span>
-            <span class="font-semibold text-sm text-gray-800">{{ __('Want to certify your business?') }} {{ $certifier->name }}</span>
+            <span class="font-semibold text-sm text-gray-800">{{ __('want_to_certify_with', ['name' => $certifier->name]) }}</span>
             <span class="text-xs text-gray-500">{{ __('certify_cta_body') }}</span>
         </a>
         <a href="#productos-certificados"
@@ -36,7 +30,7 @@
 
     <div class="mb-8 p-5 bg-white border border-gray-200 rounded-xl">
         <h2 class="text-lg font-bold text-gray-800 mb-3">✉️ {{ __('Contact') }} {{ $certifier->name }}</h2>
-        @if($certifier->contact_email || $certifier->phone || $certifier->address || $certifier->hours)
+        @if($certifier->contact_email || $certifier->phone || $certifier->address || $certifier->hours || $certifier->website)
             <ul class="space-y-1.5 text-sm text-gray-700">
                 @if($certifier->contact_email)
                 <li>📧 <a href="mailto:{{ $certifier->contact_email }}" class="text-blue-600 hover:underline">{{ $certifier->contact_email }}</a></li>
@@ -49,6 +43,9 @@
                 @endif
                 @if($certifier->hours)
                 <li>🕒 {{ $certifier->hours }}</li>
+                @endif
+                @if($certifier->website)
+                <li>🔗 <a href="{{ $certifier->website }}" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{{ __('Visit website') }}</a></li>
                 @endif
             </ul>
         @else

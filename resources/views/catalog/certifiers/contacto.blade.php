@@ -16,14 +16,14 @@
     </nav>
 
     @if($intent === 'certify')
-        <h1 class="text-2xl font-bold text-gray-900 mb-2">{{ __('Want to certify your business?') }} {{ $certifier->name }}</h1>
+        <h1 class="text-2xl font-bold text-gray-900 mb-2">{{ __('want_to_certify_with', ['name' => $certifier->name]) }}</h1>
         <p class="text-gray-600 text-sm mb-8">{{ __('certify_cta_body') }}</p>
     @else
         <h1 class="text-2xl font-bold text-gray-900 mb-2">{{ __('Contact') }} {{ $certifier->name }}</h1>
         <p class="text-gray-600 text-sm mb-8">{{ __('certifier_general_contact_body') }}</p>
     @endif
 
-    @if($certifier->contact_email || $certifier->phone || $certifier->address || $certifier->hours)
+    @if($certifier->contact_email || $certifier->phone || $certifier->address || $certifier->hours || $certifier->website)
         <div class="p-5 bg-blue-50 border border-blue-100 rounded-xl">
             <h2 class="font-semibold text-blue-900 mb-3">{{ $certifier->name }}</h2>
             <ul class="space-y-1.5 text-sm text-gray-700">
@@ -38,6 +38,9 @@
                 @endif
                 @if($certifier->hours)
                 <li>🕒 {{ $certifier->hours }}</li>
+                @endif
+                @if($certifier->website)
+                <li>🔗 <a href="{{ $certifier->website }}" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{{ __('Visit website') }}</a></li>
                 @endif
             </ul>
         </div>
