@@ -160,4 +160,61 @@ return [
         ],
     ],
 
+    'aviso_legal' => [
+        'title'       => 'Aviso Legal — KosherMap',
+        'description' => 'Aviso legal da KosherMap: identificação do responsável pelo site, dados de contato e finalidade do projeto.',
+        'intro'       => 'Este aviso legal identifica o responsável pela <strong>KosherMap</strong> (koshermap.org) e explica as condições gerais que regem o site.',
+        'sections'    => [
+            [
+                'title' => 'Identificação do Titular',
+                'body'  => '<p><strong>KosherMap</strong> (koshermap.org) é um projeto editorial independente dedicado à divulgação de informações sobre produtos e estabelecimentos kosher.</p>
+<ul>
+  <li><strong>Titular/responsável:</strong> Claudio Buenos</li>
+  <li><strong>Contato:</strong> <a href="mailto:info@koshermap.org" class="text-blue-600 hover:underline">info@koshermap.org</a></li>
+  <li><strong>Site:</strong> https://koshermap.org</li>
+</ul>',
+            ],
+            [
+                'title' => 'Finalidade do Site',
+                'body'  => '<p>A KosherMap tem fins informativos e de diretório. Não substitui a verificação oficial de uma certificadora kosher reconhecida antes de tomar decisões alimentares ou religiosas.</p>',
+            ],
+            [
+                'title' => 'Propriedade Intelectual',
+                'body'  => '<p>O design, os textos editoriais e o código da KosherMap são propriedade de seus criadores.</p>',
+            ],
+            [
+                'title' => 'Legislação Aplicável',
+                'body'  => '<p>O uso deste site é regido pela legislação aplicável em matéria de serviços da sociedade da informação e comércio eletrônico. Para qualquer dúvida legal, escreva para <a href="mailto:info@koshermap.org" class="text-blue-600 hover:underline">info@koshermap.org</a>.</p>',
+            ],
+        ],
+    ],
+
+    'politica_cookies' => [
+        'title'       => 'Política de Cookies — KosherMap',
+        'description' => 'Política de cookies da KosherMap: quais cookies usamos, para quê, e como gerenciá-los ou rejeitá-los.',
+        'intro'       => 'Esta política explica o que são cookies, quais a <strong>KosherMap</strong> (koshermap.org) utiliza e como você pode gerenciá-los.',
+        'sections'    => [
+            [
+                'title' => 'O que São Cookies?',
+                'body'  => '<p>Cookies são pequenos arquivos de texto que um site salva no seu navegador para lembrar informações sobre sua visita, como seu idioma preferido.</p>',
+            ],
+            [
+                'title' => 'Cookies que Utilizamos',
+                'body'  => '<ul>
+  <li><strong>Cookies essenciais:</strong> lembram seu idioma, país selecionado e preferência de consentimento de cookies.</li>
+  <li><strong>Google Analytics:</strong> cookies analíticos que nos ajudam a entender o uso do site de forma agregada e anônima. Só ativam se você aceitar o banner de cookies.</li>
+  <li><strong>Google AdSense:</strong> cookies publicitários que o Google pode usar para mostrar anúncios relevantes. Só ativam se você aceitar o banner de cookies.</li>
+</ul>',
+            ],
+            [
+                'title' => 'Como Gerenciar os Cookies',
+                'body'  => '<p>Na sua primeira visita, um banner permite <strong>aceitar ou rejeitar</strong> cookies não essenciais. Você pode mudar sua preferência a qualquer momento em <a href="https://www.google.com/settings/ads" class="text-blue-600 hover:underline" target="_blank" rel="noopener">Configurações de anúncios do Google</a>.</p>',
+            ],
+            [
+                'title' => 'Mais Informações',
+                'body'  => '<p>Para mais detalhes, consulte nossa <a href="/privacidad" class="text-blue-600 hover:underline">Política de Privacidade</a>.</p>',
+            ],
+        ],
+    ],
+
 ];

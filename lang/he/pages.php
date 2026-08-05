@@ -147,4 +147,61 @@ return [
         ],
     ],
 
+    'aviso_legal' => [
+        'title'       => 'הודעה משפטית — KosherMap',
+        'description' => 'הודעה משפטית של KosherMap: זיהוי בעל האתר, פרטי קשר ומטרת הפרויקט.',
+        'intro'       => 'הודעה משפטית זו מזהה את האחראי על <strong>KosherMap</strong> (koshermap.org) ומסבירה את התנאים הכלליים החלים על האתר.',
+        'sections'    => [
+            [
+                'title' => 'זיהוי בעל האתר',
+                'body'  => '<p><strong>KosherMap</strong> (koshermap.org) הוא פרויקט עריכה עצמאי המוקדש להפצת מידע על מוצרים ומקומות כשרים.</p>
+<ul>
+  <li><strong>בעלים/אחראי:</strong> קלאודיו בואנוס</li>
+  <li><strong>קשר:</strong> <a href="mailto:info@koshermap.org" class="text-blue-600 hover:underline">info@koshermap.org</a></li>
+  <li><strong>אתר:</strong> https://koshermap.org</li>
+</ul>',
+            ],
+            [
+                'title' => 'מטרת האתר',
+                'body'  => '<p>ל-KosherMap מטרות מידעיות ומדריך. הוא אינו מחליף אימות רשמי מול גוף הכשרות מוכר לפני קבלת החלטות תזונתיות או דתיות.</p>',
+            ],
+            [
+                'title' => 'קניין רוחני',
+                'body'  => '<p>העיצוב, הטקסטים העריכתיים והקוד של KosherMap הם רכוש יוצריהם.</p>',
+            ],
+            [
+                'title' => 'חוק החל',
+                'body'  => '<p>השימוש באתר זה כפוף לחוק החל בנוגע לשירותי חברת המידע ומסחר אלקטרוני. לכל שאלה משפטית, כתבו אלינו לכתובת <a href="mailto:info@koshermap.org" class="text-blue-600 hover:underline">info@koshermap.org</a>.</p>',
+            ],
+        ],
+    ],
+
+    'politica_cookies' => [
+        'title'       => 'מדיניות עוגיות — KosherMap',
+        'description' => 'מדיניות העוגיות של KosherMap: באילו עוגיות אנו משתמשים, למה, וכיצד ניתן לנהל או לדחות אותן.',
+        'intro'       => 'מדיניות זו מסבירה מהן עוגיות, אילו עוגיות <strong>KosherMap</strong> (koshermap.org) משתמשת בהן, וכיצד ניתן לנהל אותן.',
+        'sections'    => [
+            [
+                'title' => 'מהן עוגיות?',
+                'body'  => '<p>עוגיות הן קבצי טקסט קטנים שאתר שומר בדפדפן שלכם כדי לזכור מידע על הביקור שלכם, כמו השפה המועדפת עליכם.</p>',
+            ],
+            [
+                'title' => 'עוגיות בהן אנו משתמשים',
+                'body'  => '<ul>
+  <li><strong>עוגיות חיוניות:</strong> זוכרות את השפה, המדינה שנבחרה והעדפת ההסכמה לעוגיות שלכם.</li>
+  <li><strong>Google Analytics:</strong> עוגיות אנליטיות המסייעות לנו להבין כיצד נעשה שימוש באתר, בצורה מצטברת ואנונימית. מופעלות רק אם תאשרו את באנר העוגיות.</li>
+  <li><strong>Google AdSense:</strong> עוגיות פרסומיות ש-Google עשויה להשתמש בהן להצגת פרסומות רלוונטיות. מופעלות רק אם תאשרו את באנר העוגיות.</li>
+</ul>',
+            ],
+            [
+                'title' => 'כיצד לנהל עוגיות',
+                'body'  => '<p>בביקורכם הראשון, באנר מאפשר לכם <strong>לאשר או לדחות</strong> עוגיות שאינן חיוניות. תוכלו לשנות את העדפתכם בכל עת דרך <a href="https://www.google.com/settings/ads" class="text-blue-600 hover:underline" target="_blank" rel="noopener">הגדרות הפרסומות של Google</a>.</p>',
+            ],
+            [
+                'title' => 'מידע נוסף',
+                'body'  => '<p>למידע נוסף, עיינו ב<a href="/privacidad" class="text-blue-600 hover:underline">מדיניות הפרטיות</a> שלנו.</p>',
+            ],
+        ],
+    ],
+
 ];

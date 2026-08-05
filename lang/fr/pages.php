@@ -156,4 +156,61 @@ return [
         ],
     ],
 
+    'aviso_legal' => [
+        'title'       => 'Mentions Légales — KosherMap',
+        'description' => 'Mentions légales de KosherMap : identification du responsable du site, coordonnées et objet du projet.',
+        'intro'       => 'Ces mentions légales identifient le responsable de <strong>KosherMap</strong> (koshermap.org) et expliquent les conditions générales régissant le site.',
+        'sections'    => [
+            [
+                'title' => 'Identification du Titulaire',
+                'body'  => '<p><strong>KosherMap</strong> (koshermap.org) est un projet éditorial indépendant dédié à la diffusion d\'informations sur les produits et établissements cachères.</p>
+<ul>
+  <li><strong>Titulaire/responsable :</strong> Claudio Buenos</li>
+  <li><strong>Contact :</strong> <a href="mailto:info@koshermap.org" class="text-blue-600 hover:underline">info@koshermap.org</a></li>
+  <li><strong>Site web :</strong> https://koshermap.org</li>
+</ul>',
+            ],
+            [
+                'title' => 'Objet du Site',
+                'body'  => '<p>KosherMap a des fins informatives et de répertoire. Il ne remplace pas la vérification officielle par un certificateur cachère reconnu avant de prendre des décisions alimentaires ou religieuses.</p>',
+            ],
+            [
+                'title' => 'Propriété Intellectuelle',
+                'body'  => '<p>La conception, les textes éditoriaux et le code de KosherMap sont la propriété de leurs créateurs.</p>',
+            ],
+            [
+                'title' => 'Législation Applicable',
+                'body'  => '<p>L\'utilisation de ce site est régie par la réglementation applicable aux services de la société de l\'information et au commerce électronique. Pour toute question juridique, écrivez-nous à <a href="mailto:info@koshermap.org" class="text-blue-600 hover:underline">info@koshermap.org</a>.</p>',
+            ],
+        ],
+    ],
+
+    'politica_cookies' => [
+        'title'       => 'Politique de Cookies — KosherMap',
+        'description' => 'Politique de cookies de KosherMap : quels cookies nous utilisons, pourquoi, et comment les gérer ou les refuser.',
+        'intro'       => 'Cette politique explique ce que sont les cookies, ceux que <strong>KosherMap</strong> (koshermap.org) utilise et comment vous pouvez les gérer.',
+        'sections'    => [
+            [
+                'title' => 'Que Sont les Cookies ?',
+                'body'  => '<p>Les cookies sont de petits fichiers texte qu\'un site web enregistre dans votre navigateur pour se souvenir d\'informations sur votre visite, comme votre langue préférée.</p>',
+            ],
+            [
+                'title' => 'Cookies que Nous Utilisons',
+                'body'  => '<ul>
+  <li><strong>Cookies essentiels :</strong> mémorisent votre langue, votre pays sélectionné et votre préférence de consentement aux cookies.</li>
+  <li><strong>Google Analytics :</strong> cookies analytiques qui nous aident à comprendre l\'utilisation du site, de manière agrégée et anonyme. Ils ne s\'activent que si vous acceptez la bannière de cookies.</li>
+  <li><strong>Google AdSense :</strong> cookies publicitaires que Google peut utiliser pour afficher des publicités pertinentes. Ils ne s\'activent que si vous acceptez la bannière de cookies.</li>
+</ul>',
+            ],
+            [
+                'title' => 'Comment Gérer les Cookies',
+                'body'  => '<p>Lors de votre première visite, une bannière vous permet d\'<strong>accepter ou refuser</strong> les cookies non essentiels. Vous pouvez modifier votre préférence à tout moment depuis les <a href="https://www.google.com/settings/ads" class="text-blue-600 hover:underline" target="_blank" rel="noopener">paramètres des annonces Google</a>.</p>',
+            ],
+            [
+                'title' => 'Plus d\'Informations',
+                'body'  => '<p>Pour plus de détails, consultez notre <a href="/privacidad" class="text-blue-600 hover:underline">Politique de Confidentialité</a>.</p>',
+            ],
+        ],
+    ],
+
 ];

@@ -2,6 +2,7 @@
 
 @section('title', 'Países con Productos Kosher - KosherMap')
 @section('meta_description', 'Directorio de productos y locales kosher por país: Argentina, Brasil, Israel, Estados Unidos, México, Uruguay, Chile, Francia, Alemania y Reino Unido. Seleccioná tu país para ver resultados locales.')
+@section('robots', 'noindex, follow')
 
 @section('content')
     <h1 class="text-3xl font-bold mb-4 text-center text-blue-800">{{ __('Countries with Kosher Products') }}</h1>

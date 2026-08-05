@@ -402,15 +402,7 @@ return [
             ],
             [
                 'title' => 'Aviso Legal',
-                'body'  => '<h3 class="text-lg font-semibold text-gray-800 mt-2 mb-2">Identificación del Titular</h3>
-<p><strong>KosherMap</strong> (koshermap.org) es un proyecto editorial independiente dedicado a la difusión de información sobre productos y establecimientos kosher.</p>
-<ul>
-  <li><strong>Titular/responsable:</strong> Claudio Buenos</li>
-  <li><strong>Contacto:</strong> <a href="mailto:info@koshermap.org" class="text-blue-600 hover:underline">info@koshermap.org</a></li>
-  <li><strong>Sitio web:</strong> https://koshermap.org</li>
-</ul>
-<h3 class="text-lg font-semibold text-gray-800 mt-4 mb-2">Finalidad del Sitio</h3>
-<p>KosherMap tiene fines informativos y de directorio. No sustituye la verificación oficial de una certificadora kosher reconocida antes de tomar decisiones alimentarias.</p>',
+                'body'  => '<p>La identificación del titular del sitio, sus datos de contacto y la finalidad del proyecto están detallados en nuestro <a href="/aviso-legal" class="text-blue-600 hover:underline">Aviso Legal</a>.</p>',
             ],
             [
                 'title' => 'Limitación de Responsabilidad',
@@ -420,6 +412,63 @@ return [
                 'title' => 'Modificaciones',
                 'body'  => '<p>Nos reservamos el derecho de modificar estos términos en cualquier momento. Los cambios entran en vigencia al ser publicados en esta página. La versión actual fue actualizada en <strong>julio de 2026</strong>.</p>
 <p>Para consultas sobre estos términos, escribinos a <a href="mailto:info@koshermap.org" class="text-blue-600 hover:underline">info@koshermap.org</a>.</p>',
+            ],
+        ],
+    ],
+
+    'aviso_legal' => [
+        'title'       => 'Aviso Legal — KosherMap',
+        'description' => 'Aviso legal de KosherMap: identificación del titular del sitio, datos de contacto y finalidad del proyecto.',
+        'intro'       => 'Este aviso legal identifica al responsable de <strong>KosherMap</strong> (koshermap.org) y explica las condiciones generales que rigen el sitio, en cumplimiento con la normativa vigente aplicable a sitios web informativos.',
+        'sections'    => [
+            [
+                'title' => 'Identificación del Titular',
+                'body'  => '<p><strong>KosherMap</strong> (koshermap.org) es un proyecto editorial independiente dedicado a la difusión de información sobre productos y establecimientos kosher.</p>
+<ul>
+  <li><strong>Titular/responsable:</strong> Claudio Buenos</li>
+  <li><strong>Contacto:</strong> <a href="mailto:info@koshermap.org" class="text-blue-600 hover:underline">info@koshermap.org</a></li>
+  <li><strong>Sitio web:</strong> https://koshermap.org</li>
+</ul>',
+            ],
+            [
+                'title' => 'Finalidad del Sitio',
+                'body'  => '<p>KosherMap tiene fines informativos y de directorio: reúne información sobre productos con certificación kosher, certificadoras y establecimientos relacionados con la vida judía. No sustituye la verificación oficial de una certificadora kosher reconocida antes de tomar decisiones alimentarias o religiosas.</p>',
+            ],
+            [
+                'title' => 'Propiedad Intelectual',
+                'body'  => '<p>El diseño, los textos editoriales y el código de KosherMap son propiedad de sus creadores. Para más detalle sobre uso del contenido y licencias de imágenes, consultá nuestros <a href="/terminos" class="text-blue-600 hover:underline">Términos de Uso</a>.</p>',
+            ],
+            [
+                'title' => 'Legislación Aplicable',
+                'body'  => '<p>El uso de este sitio se rige por la legislación aplicable en materia de servicios de la sociedad de la información y comercio electrónico. Ante cualquier consulta legal sobre el sitio, podés escribirnos a <a href="mailto:info@koshermap.org" class="text-blue-600 hover:underline">info@koshermap.org</a>.</p>',
+            ],
+        ],
+    ],
+
+    'politica_cookies' => [
+        'title'       => 'Política de Cookies — KosherMap',
+        'description' => 'Política de cookies de KosherMap: qué cookies utilizamos, para qué, y cómo podés gestionarlas o rechazarlas.',
+        'intro'       => 'Esta política explica qué son las cookies, cuáles utiliza <strong>KosherMap</strong> (koshermap.org) y cómo podés gestionarlas.',
+        'sections'    => [
+            [
+                'title' => '¿Qué son las Cookies?',
+                'body'  => '<p>Las cookies son pequeños archivos de texto que un sitio web guarda en tu navegador para recordar información sobre tu visita, como tu idioma preferido o tus preferencias de privacidad.</p>',
+            ],
+            [
+                'title' => 'Cookies que Utilizamos',
+                'body'  => '<ul>
+  <li><strong>Cookies esenciales:</strong> recuerdan tu idioma, tu país seleccionado y tu preferencia de consentimiento de cookies. No requieren tu autorización previa porque son necesarias para el funcionamiento básico del sitio.</li>
+  <li><strong>Google Analytics:</strong> cookies analíticas que nos ayudan a entender cómo se usa el sitio, de forma agregada y anónima. Solo se activan si aceptás el banner de cookies.</li>
+  <li><strong>Google AdSense:</strong> cookies publicitarias que Google puede usar para mostrar anuncios relevantes. Solo se activan si aceptás el banner de cookies.</li>
+</ul>',
+            ],
+            [
+                'title' => 'Cómo Gestionar las Cookies',
+                'body'  => '<p>Cuando visitás KosherMap por primera vez, un banner te permite <strong>aceptar o rechazar</strong> las cookies no esenciales (Analytics y AdSense). Podés cambiar tu preferencia de anuncios personalizados en cualquier momento desde la <a href="https://www.google.com/settings/ads" class="text-blue-600 hover:underline" target="_blank" rel="noopener">configuración de anuncios de Google</a>, o borrando las cookies desde la configuración de tu navegador.</p>',
+            ],
+            [
+                'title' => 'Más Información',
+                'body'  => '<p>Para más detalle sobre qué información recopilamos y tus derechos, consultá nuestra <a href="/privacidad" class="text-blue-600 hover:underline">Política de Privacidad</a>.</p>',
             ],
         ],
     ],

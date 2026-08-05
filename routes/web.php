@@ -213,6 +213,8 @@ $infoPages = [
     'sobre-nosotros'  => 'sobre_nosotros',
     'privacidad'      => 'privacidad',
     'terminos'        => 'terminos',
+    'aviso-legal'      => 'aviso_legal',
+    'politica-cookies' => 'politica_cookies',
 ];
 foreach ($infoPages as $slug => $pageKey) {
     Route::get("/{$slug}", function () use ($pageKey) {

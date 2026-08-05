@@ -332,4 +332,61 @@ return [
         ],
     ],
 
+    'aviso_legal' => [
+        'title'       => 'Legal Notice — KosherMap',
+        'description' => 'Legal notice of KosherMap: identification of the site owner, contact details, and purpose of the project.',
+        'intro'       => 'This legal notice identifies the person responsible for <strong>KosherMap</strong> (koshermap.org) and explains the general conditions governing the site, in compliance with applicable regulations for informational websites.',
+        'sections'    => [
+            [
+                'title' => 'Owner Identification',
+                'body'  => '<p><strong>KosherMap</strong> (koshermap.org) is an independent editorial project dedicated to sharing information about kosher products and establishments.</p>
+<ul>
+  <li><strong>Owner/responsible party:</strong> Claudio Buenos</li>
+  <li><strong>Contact:</strong> <a href="mailto:info@koshermap.org" class="text-blue-600 hover:underline">info@koshermap.org</a></li>
+  <li><strong>Website:</strong> https://koshermap.org</li>
+</ul>',
+            ],
+            [
+                'title' => 'Purpose of the Site',
+                'body'  => '<p>KosherMap has informational and directory purposes: it gathers information about kosher-certified products, certifying agencies, and establishments related to Jewish life. It does not replace official verification by a recognized kosher certifier before making dietary or religious decisions.</p>',
+            ],
+            [
+                'title' => 'Intellectual Property',
+                'body'  => '<p>The design, editorial texts, and code of KosherMap are the property of their creators. For more detail on content use and image licensing, see our <a href="/terminos" class="text-blue-600 hover:underline">Terms of Use</a>.</p>',
+            ],
+            [
+                'title' => 'Applicable Law',
+                'body'  => '<p>Use of this site is governed by applicable regulations on information society services and electronic commerce. For any legal question about the site, write to us at <a href="mailto:info@koshermap.org" class="text-blue-600 hover:underline">info@koshermap.org</a>.</p>',
+            ],
+        ],
+    ],
+
+    'politica_cookies' => [
+        'title'       => 'Cookie Policy — KosherMap',
+        'description' => 'KosherMap cookie policy: which cookies we use, why, and how you can manage or reject them.',
+        'intro'       => 'This policy explains what cookies are, which ones <strong>KosherMap</strong> (koshermap.org) uses, and how you can manage them.',
+        'sections'    => [
+            [
+                'title' => 'What Are Cookies?',
+                'body'  => '<p>Cookies are small text files that a website stores in your browser to remember information about your visit, such as your preferred language or privacy preferences.</p>',
+            ],
+            [
+                'title' => 'Cookies We Use',
+                'body'  => '<ul>
+  <li><strong>Essential cookies:</strong> remember your language, your selected country, and your cookie consent preference. They don\'t require prior authorization because they\'re necessary for the site\'s basic functioning.</li>
+  <li><strong>Google Analytics:</strong> analytics cookies that help us understand how the site is used, in aggregate and anonymous form. They only activate if you accept the cookie banner.</li>
+  <li><strong>Google AdSense:</strong> advertising cookies that Google may use to show relevant ads. They only activate if you accept the cookie banner.</li>
+</ul>',
+            ],
+            [
+                'title' => 'How to Manage Cookies',
+                'body'  => '<p>When you first visit KosherMap, a banner lets you <strong>accept or reject</strong> non-essential cookies (Analytics and AdSense). You can change your personalized ads preference at any time from <a href="https://www.google.com/settings/ads" class="text-blue-600 hover:underline" target="_blank" rel="noopener">Google Ads Settings</a>, or by clearing cookies in your browser settings.</p>',
+            ],
+            [
+                'title' => 'More Information',
+                'body'  => '<p>For more detail on what information we collect and your rights, see our <a href="/privacidad" class="text-blue-600 hover:underline">Privacy Policy</a>.</p>',
+            ],
+        ],
+    ],
+
 ];
