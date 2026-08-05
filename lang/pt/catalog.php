@@ -1,0 +1,16 @@
+<?php
+
+return [
+    'categories_title'       => 'Categorias de Alimentos Kosher - KosherMap',
+    'categories_description' => 'Explore todas as categorias de alimentos kosher: laticínios, carnes, bebidas, padaria, salgadinhos e mais. Cada categoria inclui produtos certificados pelas principais agências kosher do mundo.',
+    'categories_intro_1'     => 'A KosherMap organiza seu catálogo de mais de 6.000 produtos kosher em categorias e subcategorias para facilitar sua busca. Encontre alimentos certificados por categoria: de laticínios e carnes a padaria, bebidas, salgadinhos e produtos de limpeza.',
+    'categories_intro_2'     => 'Cada categoria mostra o selo da certificadora (OU, KMD, Ajdut, BDK e outras) para que você possa verificar a kashrut do produto antes de comprá-lo. As leis da kashrut estabelecem diferentes categorias de alimentos: os produtos <strong>parve</strong> (sem carne nem laticínios) podem ser consumidos com qualquer refeição; os <strong>laticínios</strong> (chalav) não podem ser misturados com carne; e os produtos <strong>cárneos</strong> (basar) exigem um período de espera após laticínios, que varia entre comunidades.',
+    'categories_intro_3'     => 'Use os filtros de cada categoria para refinar sua busca por país de origem, marca ou certificadora. Se você procura um produto específico, pode usar a busca por nome ou escanear o código de barras com a câmera do seu dispositivo.',
+    'categories_faq_heading' => 'Perguntas frequentes sobre categorias kosher',
+    'categories_faq_1_q'     => 'Qual é a diferença entre parve, laticínio e carne?',
+    'categories_faq_1_a'     => 'A kashrut divide os alimentos em três grandes grupos. Os produtos <strong>parve</strong> não contêm carne nem laticínios (incluem frutas, verduras, ovos, peixe e a maioria dos grãos) e podem ser consumidos com qualquer refeição. Os produtos <strong>laticínios</strong> contêm leite ou derivados e não podem ser misturados nem consumidos junto com carne, segundo as leis da kashrut. Os produtos <strong>cárneos</strong> vêm de animais permitidos, abatidos segundo as regras da shechita, e exigem um intervalo após laticínios que varia entre comunidades (entre 1 e 6 horas).',
+    'categories_faq_2_q'     => 'Posso confiar em um produto importado sem selo kosher local?',
+    'categories_faq_2_a'     => 'Depende do selo que ele tiver. Um produto com OU (Orthodox Union), OK Kosher, Star-K ou Kof-K é reconhecido internacionalmente e aceito por praticamente todas as comunidades judaicas. Se o selo for de uma certificadora regional desconhecida no seu país, é recomendável consultar seu rabino ou autoridade kosher local antes de consumi-lo. A KosherMap mostra a certificadora de cada produto para ajudar você a tomar essa decisão.',
+    'categories_faq_3_q'     => 'Produtos de limpeza ou cosméticos precisam de certificação kosher?',
+    'categories_faq_3_a'     => 'Em geral, produtos não alimentícios não exigem certificação kosher para uso cotidiano. No entanto, alguns produtos que entram em contato com a boca (pasta de dente, enxaguante bucal, batom) ou que são usados no preparo de alimentos (sabonete para as mãos, detergente) podem precisar de supervisão, especialmente durante a Páscoa judaica, quando as restrições são mais rígidas. Consulte sua autoridade rabínica se tiver dúvidas específicas.',
+];

@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
-@section('title', 'Rubros de Alimentos Kosher - KosherMap')
-@section('meta_description', 'Explorá todas las categorías de alimentos kosher: lácteos, carnes, bebidas, panadería, snacks y más. Cada rubro incluye productos certificados por las principales agencias kosher del mundo.')
+@section('title', __('catalog.categories_title'))
+@section('meta_description', __('catalog.categories_description'))
 
 @section('content')
     <h1 class="text-3xl font-bold mb-4 text-center text-blue-800">{{ __('Food Categories') }}</h1>
 
     <div class="max-w-3xl mx-auto mb-8 text-gray-600 text-sm leading-relaxed">
-        <p class="mb-3">KosherMap organiza su catálogo de más de 6.000 productos kosher en rubros y subrubros para facilitar tu búsqueda. Encontrá alimentos certificados por categoría: desde lácteos y carnes hasta panadería, bebidas, snacks y productos de limpieza.</p>
-        <p class="mb-3">Cada categoría muestra el sello de la certificadora (OU, KMD, Ajdut, BDK y otras) para que puedas verificar la kashrut del producto antes de comprarlo. Las leyes de kashrut establecen distintas categorías para los alimentos: los productos <strong>parve</strong> (sin carne ni lácteos) pueden consumirse con cualquier comida; los <strong>lácteos</strong> (chalav) no pueden mezclarse con carne; y los productos <strong>cárnicos</strong> (basar) requieren una espera después de los lácteos según la tradición de cada comunidad.</p>
-        <p>Usá los filtros de cada categoría para acotar tu búsqueda por país de origen, marca o certificadora. Si buscás un producto específico, podés usar el buscador por nombre o escanear el código de barras con la cámara de tu dispositivo.</p>
+        <p class="mb-3">{!! __('catalog.categories_intro_1') !!}</p>
+        <p class="mb-3">{!! __('catalog.categories_intro_2') !!}</p>
+        <p>{!! __('catalog.categories_intro_3') !!}</p>
     </div>
     
     <div class="space-y-12">
@@ -38,19 +38,19 @@
     </div>
 
     <div class="max-w-3xl mx-auto mt-16">
-        <h2 class="text-xl font-bold text-gray-800 mb-6">Preguntas frecuentes sobre rubros kosher</h2>
+        <h2 class="text-xl font-bold text-gray-800 mb-6">{{ __('catalog.categories_faq_heading') }}</h2>
         <div class="space-y-5 text-sm text-gray-600 leading-relaxed">
             <div>
-                <h3 class="font-semibold text-gray-800 mb-1">¿Qué diferencia hay entre parve, lácteo y cárnico?</h3>
-                <p>La kashrut divide los alimentos en tres grandes grupos. Los productos <strong>parve</strong> no contienen carne ni lácteos (incluyen frutas, verduras, huevos, pescado y la mayoría de los granos) y pueden comerse con cualquier comida. Los productos <strong>lácteos</strong> contienen leche o derivados y no pueden mezclarse con carne ni consumirse juntos según las leyes de kashrut. Los productos <strong>cárnicos</strong> provienen de animales permitidos sacrificados según las reglas de shejitá y requieren una separación temporal de los lácteos que varía entre comunidades (entre 1 y 6 horas).</p>
+                <h3 class="font-semibold text-gray-800 mb-1">{{ __('catalog.categories_faq_1_q') }}</h3>
+                <p>{!! __('catalog.categories_faq_1_a') !!}</p>
             </div>
             <div>
-                <h3 class="font-semibold text-gray-800 mb-1">¿Puedo confiar en un producto importado sin sello kosher local?</h3>
-                <p>Depende del sello que tenga. Un producto con OU (Orthodox Union), OK Kosher, Star-K o Kof-K es reconocido internacionalmente y aceptado por prácticamente todas las comunidades judías. Si el sello es de una certificadora regional desconocida en tu país, es recomendable consultar con tu rabino o autoridad kosher local antes de consumirlo. KosherMap muestra la certificadora de cada producto para ayudarte a tomar esa decisión.</p>
+                <h3 class="font-semibold text-gray-800 mb-1">{{ __('catalog.categories_faq_2_q') }}</h3>
+                <p>{!! __('catalog.categories_faq_2_a') !!}</p>
             </div>
             <div>
-                <h3 class="font-semibold text-gray-800 mb-1">¿Los productos de limpieza o cosméticos necesitan certificación kosher?</h3>
-                <p>En general, los productos no comestibles no requieren certificación kosher para uso cotidiano. Sin embargo, algunos productos que entran en contacto con la boca (pasta de dientes, enjuague bucal, lápiz labial) o que se usan en la preparación de alimentos (jabón de manos, detergente) pueden necesitar supervisión, especialmente durante Pesaj, cuando las restricciones son más estrictas. Consultá con tu autoridad rabbínica si tenés dudas específicas.</p>
+                <h3 class="font-semibold text-gray-800 mb-1">{{ __('catalog.categories_faq_3_q') }}</h3>
+                <p>{!! __('catalog.categories_faq_3_a') !!}</p>
             </div>
         </div>
     </div>
