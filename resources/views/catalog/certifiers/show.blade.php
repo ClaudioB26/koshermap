@@ -21,10 +21,10 @@
     @endif
 
     <div class="mb-8 grid grid-cols-1 sm:grid-cols-2 gap-3">
-        <a href="{{ $certifier->contact_email ? 'mailto:'.$certifier->contact_email : route('pages.contacto') }}"
+        <a href="{{ route('certifiers.contact', $certifier->slug) }}"
            class="flex flex-col items-center text-center gap-1 bg-white border border-gray-200 rounded-xl p-4 hover:border-blue-400 hover:shadow-md transition">
             <span class="text-2xl">🏭</span>
-            <span class="font-semibold text-sm text-gray-800">{{ __('Want to certify your business?') }}</span>
+            <span class="font-semibold text-sm text-gray-800">{{ __('Want to certify your business?') }} {{ $certifier->name }}</span>
             <span class="text-xs text-gray-500">{{ __('certify_cta_body') }}</span>
         </a>
         <a href="#productos-certificados"
@@ -35,7 +35,7 @@
     </div>
 
     <div class="mb-8 p-5 bg-white border border-gray-200 rounded-xl">
-        <h2 class="text-lg font-bold text-gray-800 mb-3">✉️ {{ __('Contact') }}</h2>
+        <h2 class="text-lg font-bold text-gray-800 mb-3">✉️ {{ __('Contact') }} {{ $certifier->name }}</h2>
         @if($certifier->contact_email || $certifier->phone || $certifier->hours)
             <ul class="space-y-1.5 text-sm text-gray-700">
                 @if($certifier->contact_email)
@@ -49,10 +49,9 @@
                 @endif
             </ul>
         @else
-            <p class="text-sm text-gray-500">
-                {{ __('certify_cta_body') }}
-                <a href="{{ route('pages.contacto') }}" class="text-blue-600 hover:underline">{{ __('Contact') }}</a>
-            </p>
+            <a href="{{ route('certifiers.contact', $certifier->slug) }}" class="text-sm text-blue-600 hover:underline">
+                {{ __('Contact') }} {{ $certifier->name }} →
+            </a>
         @endif
     </div>
 
