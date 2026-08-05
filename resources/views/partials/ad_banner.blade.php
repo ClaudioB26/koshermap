@@ -1,3 +1,4 @@
+@if(app()->environment('production') && !View::hasSection('no_ads'))
 <div class="{{ $class ?? 'my-6' }}">
     <ins class="adsbygoogle"
          style="display:block"
@@ -7,3 +8,4 @@
          data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
+@endif

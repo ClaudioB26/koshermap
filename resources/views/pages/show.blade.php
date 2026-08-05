@@ -2,6 +2,9 @@
 
 @section('title', $content['title'] . ' — KosherMap')
 @section('meta_description', $content['description'] ?? '')
+@if(in_array(request()->path(), ['privacidad', 'terminos', 'aviso-legal', 'politica-cookies']))
+@section('no_ads', '1')
+@endif
 
 @section('content')
 <div class="max-w-3xl mx-auto px-4 py-10">

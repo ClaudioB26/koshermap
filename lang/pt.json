@@ -81,5 +81,6 @@
     "certifier_general_contact_body": "Você tem uma dúvida como consumidor, ou representa uma empresa que quer falar com esta certificadora? Aqui estão seus dados de contato.",
     "login_link": "Entrar",
     "logout_link": "Sair",
-    "my_places": "Meus locais"
+    "my_places": "Meus locais",
+    "empty_category_notice": "Ainda não temos produtos cadastrados nesta categoria. Enquanto isso, você pode ler nossos guias sobre kashrut ou explorar outras categorias."
 }

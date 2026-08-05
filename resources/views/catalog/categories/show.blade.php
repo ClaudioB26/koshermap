@@ -1,6 +1,17 @@
 @extends('layouts.app')
 
+@php
+    // Una categoría con muy pocos productos no aporta contenido propio: no se
+    // indexa y no lleva publicidad (política de AdSense sobre páginas sin
+    // contenido suficiente del editor).
+    $isThinCategory = $products->total() < 5;
+@endphp
+
 @section('title', __('Category') . ': ' . $category->name . ' - KosherMap')
+@if($isThinCategory)
+@section('robots', 'noindex, follow')
+@section('no_ads', '1')
+@endif
 
 @section('content')
     <nav class="flex mb-4 text-sm text-gray-500" aria-label="Breadcrumb">
@@ -42,6 +53,26 @@
     </div>
     @endif
     
+    @if($products->total() === 0)
+    <div class="bg-blue-50 border border-blue-100 rounded-xl p-6 text-center">
+        <p class="text-gray-700 mb-4">{{ __('empty_category_notice') }}</p>
+        <div class="flex flex-wrap justify-center gap-3 text-sm">
+            <a href="{{ \App\Models\Article::indexUrlFor(app()->getLocale()) }}"
+               class="px-4 py-2 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">
+                📰 {{ \App\Models\Article::sectionLabelFor(app()->getLocale()) }}
+            </a>
+            <a href="{{ route('categories.index') }}"
+               class="px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-lg font-medium hover:border-blue-400 transition">
+                {{ __('Categories') }}
+            </a>
+            <a href="{{ route('certifiers.index') }}"
+               class="px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-lg font-medium hover:border-blue-400 transition">
+                🏅 {{ __('certifiers') }}
+            </a>
+        </div>
+    </div>
+    @endif
+
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         @foreach($products as $product)
         <div class="bg-white p-4 rounded-lg shadow hover:shadow-md transition border border-gray-100">

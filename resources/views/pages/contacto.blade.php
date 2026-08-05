@@ -2,6 +2,7 @@
 
 @section('title', $content['title'] . ' — KosherMap')
 @section('meta_description', $content['description'] ?? '')
+@section('no_ads', '1')
 
 @section('content')
 <div class="max-w-3xl mx-auto px-4 py-10">

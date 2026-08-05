@@ -81,5 +81,6 @@
     "certifier_general_contact_body": "Do you have a question as a consumer, or represent a business that wants to reach this certifier? Here are its contact details.",
     "login_link": "Log in",
     "logout_link": "Log out",
-    "my_places": "My places"
+    "my_places": "My places",
+    "empty_category_notice": "We don't have products listed in this category yet. In the meantime, you can read our kashrut guides or explore other categories."
 }

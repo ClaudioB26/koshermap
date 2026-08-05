@@ -6,6 +6,7 @@
     <title>@yield('title', 'KosherMap')</title>
     <meta name="description" content="@yield('meta_description', 'KosherMap — Directorio global de productos y locales con certificación kosher. Encontrá restaurantes, sinagogas, panaderías y productos certificados en tu ciudad.')">
     <link rel="canonical" href="@yield('canonical', request()->url())">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <meta name="robots" content="@yield('robots', 'index, follow')">
     <meta property="og:title" content="@yield('title', 'KosherMap')">
     <meta property="og:description" content="@yield('meta_description', 'KosherMap — Directorio global de productos y locales con certificación kosher.')">
@@ -169,8 +170,11 @@
     </div>
 </header>
 
-{{-- Anuncio horizontal debajo del header --}}
-@if(app()->environment('production'))
+{{-- Anuncio horizontal debajo del header.
+     Las vistas que declaran @section('no_ads') no muestran publicidad: páginas
+     legales/utilitarias y listados sin contenido suficiente. Poner anuncios ahí
+     viola la política de AdSense sobre "pantallas sin contenido del editor". --}}
+@if(app()->environment('production') && !View::hasSection('no_ads'))
 <div class="container mx-auto px-4 pt-3">
     <ins class="adsbygoogle"
          style="display:block"
@@ -187,7 +191,9 @@
 </main>
 
 {{-- Anuncio antes del footer --}}
+@unless(View::hasSection('no_ads'))
 @include('partials.ad_banner', ['class' => 'container mx-auto px-4 mb-2'])
+@endunless
 
 <footer class="bg-white border-t py-8 mt-auto">
     <div class="container mx-auto px-4 text-center text-gray-500 text-sm">

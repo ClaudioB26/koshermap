@@ -81,5 +81,6 @@
     "certifier_general_contact_body": "Vous avez une question en tant que consommateur, ou vous représentez une entreprise souhaitant contacter ce certificateur ? Voici ses coordonnées.",
     "login_link": "Connexion",
     "logout_link": "Déconnexion",
-    "my_places": "Mes établissements"
+    "my_places": "Mes établissements",
+    "empty_category_notice": "Nous n'avons pas encore de produits dans cette catégorie. En attendant, vous pouvez lire nos guides sur la cacherout ou explorer d'autres catégories."
 }

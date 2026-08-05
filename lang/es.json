@@ -81,5 +81,6 @@
     "certifier_general_contact_body": "¿Tenés una consulta como consumidor, o representás una empresa y querés comunicarte con esta certificadora? Estos son sus datos de contacto.",
     "login_link": "Iniciar sesión",
     "logout_link": "Cerrar sesión",
-    "my_places": "Mis locales"
+    "my_places": "Mis locales",
+    "empty_category_notice": "Todavía no tenemos productos cargados en este rubro. Mientras tanto, podés leer nuestras guías sobre kashrut o explorar otros rubros del catálogo."
 }

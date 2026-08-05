@@ -14,6 +14,23 @@ use App\Http\Controllers\AccountController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\ReportController;
 
+// Favicon servido por ruta: el Document Root de producción apunta a public_html/
+// en vez de public_html/public/, así que los estáticos de la raíz de public/ no
+// se sirven solos. Ver doc/plan-adsense.md.
+Route::get('/favicon.svg', function () {
+    $svg = <<<'SVG'
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#2563eb"/>
+  <text x="32" y="45" font-family="system-ui,Segoe UI,Arial,sans-serif" font-size="38"
+        font-weight="700" fill="#ffffff" text-anchor="middle">K</text>
+</svg>
+SVG;
+
+    return response($svg, 200)
+        ->header('Content-Type', 'image/svg+xml')
+        ->header('Cache-Control', 'public, max-age=604800');
+})->name('favicon');
+
 // Robots.txt generado por ruta (no depende de servir el archivo estático en el hosting)
 Route::get('/robots.txt', function () {
     $lines = [
