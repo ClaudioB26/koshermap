@@ -579,10 +579,48 @@ Yes, honey is pareve and kosher, despite bees not being a kosher animal. It is o
   <img src="/images/articulos/shejita-sacrificio-kosher.svg" alt="The chalef is checked before and after each animal: a single nick invalidates the procedure." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">The chalef is checked before and after each animal: a single nick invalidates the procedure. Illustration: KosherMap.</figcaption>
 </figure>
-<p>The goal of this method is to minimize the animal\'s suffering and produce an almost instantaneous loss of consciousness. The shochet inspects the knife before and after each slaughter to make sure it has no imperfection, however small, since any irregularity invalidates the procedure.</p>
-<p>A relative of ours works in shechita, which gives a sense of just how obsessive the oversight is in practice. The chalaf (the knife) isn\'t only checked by the shochet before and after each animal: there is also a supervisor who inspects every knife, day after day, with an extremely strict standard. An imperfection that isn\'t even visible to the naked eye is enough to take a knife out of service. It is an environment of total seriousness and precision, where the moment anything out of the ordinary comes up, the first move is to stop everything and put safety first.</p>
-<p>After shechita, an inspection (bedika) of the animal\'s internal organs is performed, especially the lungs, to rule out diseases or adhesions that would invalidate the meat as kosher. Only animals that pass this inspection are considered fit.</p>
-<p>Additionally, the meat must go through a salting process (kashering) to extract the blood, since the Torah forbids consuming blood. This is done by soaking the meat in water, salting it and letting it rest before rinsing it again — a process that today is usually carried out by the certified butcher shop or slaughterhouse itself before the product reaches the consumer.</p>',
+<p>It is one of the most regulated processes in all of kashrut, and understanding how it works explains why kosher meat costs considerably more than conventional meat.</p>
+
+<h2>What shechita actually is</h2>
+<p>Shechita consists of a single, continuous cut to the animal\'s throat, severing the trachea and the oesophagus in one movement. It is performed with a knife called a <em>chalaf</em>, with an extremely refined edge and without any nick.</p>
+<p>The stated goal of the method is that loss of consciousness be practically instantaneous. For that, halacha defines five conditions that invalidate the procedure if they are not met: the cut must be without pause, without pressure, without the knife being covered, within the correct anatomical area, and without tearing. If any one fails, the animal is not kosher — no exceptions, regardless of the economic value at stake.</p>
+
+<h2>The chalaf: why the knife is the centre of everything</h2>
+<p>The knife has almost obsessive requirements. It must be perfectly smooth, without the slightest imperfection on the edge. The shochet checks it by running a fingernail along the blade, a method that detects irregularities the eye cannot see, and does so before and after each animal. If a nick is found afterwards, that animal is invalidated retroactively, because there is no way to know whether the nick was there during the cut.</p>
+
+<h2>What this looks like inside a slaughterhouse</h2>
+<p>A relative of our team works in shechita, and what he describes gives a sense of the level of control in practice, beyond what the manuals say.</p>
+<p>The chalaf is not only checked by the shochet before and after each animal: there is also a supervisor who inspects every knife in the facility, day after day, with an extremely strict standard. An imperfection not even perceptible to the naked eye is enough to take a knife out of use until it is reconditioned.</p>
+<p>And there is something rarely mentioned: it is an environment where safety outranks production. Faced with any situation outside what was planned, the protocol is to stop everything, put the knives away and assess before continuing. There is no "let\'s just finish the shift anyway" logic. That combination of technical precision and operational seriousness is what sustains the reliability of the kosher seal on meat.</p>
+
+<h2>Bedika: the inspection that rejects a good share of animals</h2>
+<p>After shechita comes <em>bedika</em>, the inspection of internal organs, focused on the lungs. It looks for adhesions (<em>sirchot</em>) and signs of disease that would indicate the animal was not healthy.</p>
+<p>This step rejects a significant percentage of animals that were already slaughtered correctly. That meat is not thrown away — it is sold through the conventional non-kosher circuit — but it explains much of the extra cost: the kosher slaughterhouse pays for every animal and can only sell as kosher those that pass inspection.</p>
+<p>Animals whose lungs show no adhesion at all are classified as <em>glatt</em> (smooth, in Yiddish), the most demanding standard. We develop this in <a href="/articulos/glatt-kosher">glatt kosher: how it differs from regular kosher</a>.</p>
+
+<h2>Salting: why kosher meat is prepared differently</h2>
+<p>The Torah expressly prohibits consuming blood, so meat must go through an extraction process called <em>melicha</em>:</p>
+<ol>
+<li><strong>Soaking</strong> in water for approximately 30 minutes, to soften it and open the pores.</li>
+<li><strong>Salting</strong> with coarse salt over all surfaces, including folds and cuts.</li>
+<li><strong>Resting</strong> for around an hour on an inclined surface or rack, so the blood drains away.</li>
+<li><strong>Rinsing</strong> thoroughly, generally three times, to remove the salt.</li>
+</ol>
+<p>Today this process is almost always carried out by the certified butcher shop or slaughterhouse before the product reaches the consumer. If you buy meat at a kosher butcher, it already comes koshered unless you are told otherwise. The classic exception is liver: because of its high blood content it cannot be koshered by salting and requires direct roasting over fire.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Can anyone be a shochet?</strong><br>
+No. It requires years of study of the relevant laws, supervised practical training, and a certification (<em>kabbalah</em>) granted by a rabbinic authority. They must also be an observant person, because the whole chain depends on their integrity.</p>
+<p><strong>Does shechita apply to poultry as well?</strong><br>
+Yes, with the same principle, although the technical details and the knife differ because of the size. Kosher chicken goes through the same type of process as beef.</p>
+<p><strong>And does fish need shechita?</strong><br>
+No. Kosher fish requires neither shechita nor salting, which greatly simplifies its preparation. It only has to meet the fins-and-scales criterion, explained in <a href="/articulos/pescado-kosher-aletas-escamas">kosher fish</a>.</p>
+<p><strong>Why is kosher meat so much more expensive?</strong><br>
+Because of the sum of all the above: specialised staff, permanent supervision, animals rejected at inspection, and the additional salting process. It is not a brand premium, it is real operating cost.</p>
+
+<h2>Further reading</h2>
+<p>To understand what can be done with that meat once at home, see <a href="/articulos/carne-y-leche">meat and milk: why they are not mixed</a>. And if you are interested in the strictest standard, there is <a href="/articulos/glatt-kosher">glatt kosher</a>.</p>
+<p>Among external sources, the <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">Orthodox Union guide</a> develops the laws of shechita with their sources, the <a href="https://www.youtube.com/@OUKosher" target="_blank" rel="noopener">OU Kosher YouTube channel</a> publishes explanatory material on the process, and you can consult the <a href="https://en.wikipedia.org/wiki/Shechita" target="_blank" rel="noopener">Wikipedia article on shechita</a> for historical context and contemporary debate.</p>',
             ],
             'glatt-kosher' => [
                 'title' => 'Glatt kosher: how is it different from regular kosher',
@@ -1648,10 +1686,48 @@ Sim, o mel é pareve e kosher, apesar de a abelha não ser um animal kosher. É 
   <img src="/images/articulos/shejita-sacrificio-kosher.svg" alt="O chalef é revisado antes e depois de cada animal: uma única falha invalida o procedimento." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">O chalef é revisado antes e depois de cada animal: uma única falha invalida o procedimento. Ilustração: KosherMap.</figcaption>
 </figure>
-<p>O objetivo desse método é minimizar o sofrimento do animal e produzir uma perda de consciência praticamente instantânea. O shochet inspeciona a faca antes e depois de cada abate para garantir que não tenha nenhuma imperfeição, por mínima que seja, já que qualquer irregularidade invalida o procedimento.</p>
-<p>Um parente da nossa equipe trabalha em shechitá, e isso dá uma ideia de o quanto o controle é obsessivo na prática. O chalaf (a faca) não é revisado apenas pelo shochet antes e depois de cada animal: existe também um supervisor que controla todas as facas, dia após dia, com um critério extremamente rigoroso. Uma imperfeição que nem se percebe a olho nu já é suficiente para tirar uma faca de uso. É um ambiente de máxima seriedade e precisão, onde diante de qualquer situação fora do comum, a primeira atitude é parar tudo e priorizar a segurança.</p>
-<p>Após a shechitá, é feita uma inspeção (bedika) dos órgãos internos do animal, especialmente os pulmões, para descartar doenças ou aderências que invalidariam a carne como kosher. Apenas os animais que passam nessa inspeção são considerados aptos.</p>
-<p>Além disso, a carne deve passar por um processo de salga (kashering) para extrair o sangue, já que a Torá proíbe consumir sangue. Isso é feito deixando a carne de molho em água, salgando-a e deixando-a descansar antes de enxaguá-la novamente — um processo que hoje em dia geralmente é realizado pelo próprio açougue ou frigorífico certificado antes de o produto chegar ao consumidor.</p>',
+<p>É um dos processos mais regulados de todo o kashrut, e entender como funciona explica por que a carne kosher custa bem mais que a convencional.</p>
+
+<h2>O que é exatamente a shechitá</h2>
+<p>A shechitá consiste em um corte único e contínuo na garganta do animal, que secciona a traqueia e o esôfago em um só movimento. É realizada com uma faca chamada <em>chalaf</em>, de fio extremamente aperfeiçoado e sem nenhuma falha.</p>
+<p>O objetivo declarado do método é que a perda de consciência seja praticamente instantânea. Para isso, a halachá define cinco condições que invalidam o procedimento se não forem cumpridas: que o corte seja sem pausa, sem pressão, sem que a faca fique coberta, dentro da zona anatômica correta, e sem rasgo. Se alguma falhar, o animal não é kosher, sem exceções e independentemente do valor econômico em jogo.</p>
+
+<h2>O chalaf: por que a faca é o centro de tudo</h2>
+<p>A faca tem requisitos quase obsessivos. Precisa ser perfeitamente lisa, sem a mínima imperfeição no fio. O shochet a revisa passando a unha pela borda, um método que detecta irregularidades que o olho não vê, e o faz antes e depois de cada animal. Se ao terminar encontrar uma falha, aquele animal é invalidado retroativamente, porque não há como saber se a falha existia durante o corte.</p>
+
+<h2>Como isso se vive dentro de um frigorífico</h2>
+<p>Um parente da nossa equipe trabalha em shechitá, e o que ele conta dá a dimensão do nível de controle que existe na prática, além do que dizem os manuais.</p>
+<p>O chalaf não é revisado apenas pelo shochet antes e depois de cada animal: há também um supervisor que controla todas as facas do estabelecimento, dia após dia, com um critério extremamente rigoroso. Uma imperfeição que a olho nu nem se percebe já basta para deixar uma faca fora de uso até que seja recondicionada.</p>
+<p>E há algo que costuma não ser contado: é um ambiente onde a segurança manda acima da produção. Diante de qualquer situação fora do previsto, o protocolo é parar tudo, guardar as facas e avaliar antes de continuar. Não existe a lógica de "vamos terminar o turno assim mesmo". Essa combinação de precisão técnica e seriedade operacional é o que sustenta a confiabilidade do selo kosher na carne.</p>
+
+<h2>Bedika: a inspeção que descarta boa parte dos animais</h2>
+<p>Depois da shechitá vem a <em>bedika</em>, a inspeção dos órgãos internos, com foco nos pulmões. Buscam-se aderências (<em>sirchot</em>) e sinais de doença que indicariam que o animal não estava saudável.</p>
+<p>Essa etapa descarta uma porcentagem significativa de animais que já foram abatidos corretamente. Essa carne não é jogada fora — é vendida no circuito convencional não kosher —, mas explica boa parte do sobrecusto: o frigorífico kosher paga por todos os animais e só pode vender como kosher os que passam na inspeção.</p>
+<p>Os animais cujos pulmões não apresentam nenhuma aderência são classificados como <em>glatt</em> (liso, em ídiche), o padrão mais exigente. Desenvolvemos isso em <a href="/articulos/glatt-kosher">glatt kosher: qual a diferença para o kosher comum</a>.</p>
+
+<h2>A salga: por que a carne kosher é preparada de forma diferente</h2>
+<p>A Torá proíbe expressamente consumir sangue, então a carne deve passar por um processo de extração chamado <em>melichá</em>:</p>
+<ol>
+<li><strong>Molho</strong> em água durante aproximadamente 30 minutos, para amaciar e abrir os poros.</li>
+<li><strong>Salga</strong> com sal grosso por todas as superfícies, incluindo as dobras e os cortes.</li>
+<li><strong>Descanso</strong> de cerca de uma hora sobre uma superfície inclinada ou grelha, para que o sangue escorra.</li>
+<li><strong>Enxágue</strong> abundante, geralmente três vezes, para eliminar o sal.</li>
+</ol>
+<p>Hoje esse processo é quase sempre realizado pelo açougue ou frigorífico certificado antes de o produto chegar ao consumidor. Se você compra carne em um açougue kosher, ela já vem casherizada, salvo aviso em contrário. A exceção clássica é o fígado: por seu alto conteúdo de sangue não pode ser casherizado por salga e exige assado direto no fogo.</p>
+
+<h2>Perguntas frequentes</h2>
+<p><strong>Qualquer pessoa pode ser shochet?</strong><br>
+Não. Exige anos de estudo das leis correspondentes, treinamento prático supervisionado e uma certificação (<em>kabalá</em>) concedida por uma autoridade rabínica. Além disso, deve ser uma pessoa observante, porque de sua integridade depende toda a cadeia.</p>
+<p><strong>A shechitá se aplica também às aves?</strong><br>
+Sim, com o mesmo princípio, embora os detalhes técnicos e a faca sejam diferentes pelo tamanho. O frango kosher passa pelo mesmo tipo de processo que a carne bovina.</p>
+<p><strong>E o peixe precisa de shechitá?</strong><br>
+Não. O peixe kosher não requer nem shechitá nem salga, o que simplifica muito seu preparo. Só precisa cumprir o critério de nadadeiras e escamas, explicado em <a href="/articulos/pescado-kosher-aletas-escamas">peixe kosher</a>.</p>
+<p><strong>Por que a carne kosher é tão mais cara?</strong><br>
+Pela soma de tudo o anterior: pessoal especializado, supervisão permanente, animais descartados na inspeção e o processo adicional de salga. Não é um sobrepreço de marca, é custo operacional real.</p>
+
+<h2>Para continuar lendo</h2>
+<p>Para entender o que se pode fazer com essa carne em casa, veja <a href="/articulos/carne-y-leche">carne e leite: por que não se misturam</a>. E se você tem interesse no padrão mais rigoroso, está <a href="/articulos/glatt-kosher">glatt kosher</a>.</p>
+<p>Em fontes externas, o <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">guia da Orthodox Union</a> desenvolve as leis de shechitá com suas fontes, o <a href="https://www.youtube.com/@OUKosher" target="_blank" rel="noopener">canal da OU Kosher no YouTube</a> publica material explicativo do processo, e você pode consultar o artigo da <a href="https://en.wikipedia.org/wiki/Shechita" target="_blank" rel="noopener">Wikipédia sobre shechita</a> (em inglês) para o contexto histórico e o debate contemporâneo.</p>',
             ],
             'glatt-kosher' => [
                 'title' => 'Glatt kosher: que diferença há para o kosher comum',
@@ -2717,10 +2793,48 @@ Oui, le miel est parvé et cachère, bien que l\'abeille ne soit pas un animal c
   <img src="/images/articulos/shejita-sacrificio-kosher.svg" alt="Le halef est vérifié avant et après chaque animal : une seule brèche invalide la procédure." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Le halef est vérifié avant et après chaque animal : une seule brèche invalide la procédure. Illustration : KosherMap.</figcaption>
 </figure>
-<p>L\'objectif de cette méthode est de minimiser la souffrance de l\'animal et de produire une perte de conscience pratiquement instantanée. Le shohet inspecte le couteau avant et après chaque abattage pour s\'assurer qu\'il n\'a aucune imperfection, aussi minime soit-elle, car toute irrégularité invalide la procédure.</p>
-<p>Un membre de notre entourage travaille dans la shehita, ce qui donne une idée du caractère obsessionnel du contrôle en pratique. Le halaf (le couteau) n\'est pas seulement inspecté par le shohet avant et après chaque animal : il y a aussi un superviseur qui contrôle tous les couteaux, jour après jour, avec un critère extrêmement strict. Une imperfection à peine perceptible à l\'œil nu suffit à mettre un couteau hors service. C\'est un environnement d\'une rigueur et d\'une précision absolues, où face à toute situation inhabituelle, le premier réflexe est de tout arrêter et de faire de la sécurité la priorité.</p>
-<p>Après la shehita, une inspection (bedika) des organes internes de l\'animal est effectuée, en particulier les poumons, pour écarter les maladies ou adhérences qui invalideraient la viande comme cachère. Seuls les animaux passant cette inspection sont considérés aptes.</p>
-<p>De plus, la viande doit subir un processus de salage (kashering) pour extraire le sang, car la Torah interdit de consommer du sang. Cela se fait en faisant tremper la viande dans l\'eau, en la salant et en la laissant reposer avant de la rincer à nouveau — un processus généralement réalisé aujourd\'hui par la boucherie ou l\'abattoir certifié lui-même avant que le produit n\'atteigne le consommateur.</p>',
+<p>C\'est l\'un des processus les plus réglementés de toute la cacherout, et comprendre son fonctionnement explique pourquoi la viande cachère coûte nettement plus cher que la viande conventionnelle.</p>
+
+<h2>Ce qu\'est exactement la shehita</h2>
+<p>La shehita consiste en une incision unique et continue à la gorge de l\'animal, sectionnant la trachée et l\'œsophage en un seul mouvement. Elle est réalisée avec un couteau appelé <em>halaf</em>, au tranchant extrêmement affûté et sans la moindre brèche.</p>
+<p>L\'objectif déclaré de la méthode est que la perte de conscience soit pratiquement instantanée. Pour cela, la halakha définit cinq conditions qui invalident la procédure si elles ne sont pas remplies : que l\'incision soit sans pause, sans pression, sans que le couteau soit recouvert, dans la zone anatomique correcte, et sans déchirure. Si l\'une échoue, l\'animal n\'est pas cachère, sans exception et quelle que soit la valeur économique en jeu.</p>
+
+<h2>Le halaf : pourquoi le couteau est au centre de tout</h2>
+<p>Le couteau fait l\'objet d\'exigences quasi obsessionnelles. Il doit être parfaitement lisse, sans la moindre imperfection sur le tranchant. Le shohet le vérifie en passant l\'ongle sur le fil, une méthode qui détecte des irrégularités invisibles à l\'œil, et il le fait avant et après chaque animal. Si à la fin il trouve une brèche, cet animal est invalidé rétroactivement, car il n\'y a aucun moyen de savoir si la brèche était présente pendant l\'incision.</p>
+
+<h2>Comment cela se vit à l\'intérieur d\'un abattoir</h2>
+<p>Un proche de notre équipe travaille dans la shehita, et ce qu\'il raconte donne la mesure du niveau de contrôle qui existe en pratique, au-delà de ce que disent les manuels.</p>
+<p>Le halaf n\'est pas seulement vérifié par le shohet avant et après chaque animal : il y a aussi un superviseur qui contrôle tous les couteaux de l\'établissement, jour après jour, avec un critère extrêmement strict. Une imperfection à peine perceptible à l\'œil nu suffit à mettre un couteau hors service jusqu\'à son reconditionnement.</p>
+<p>Et il y a quelque chose dont on parle rarement : c\'est un environnement où la sécurité prime sur la production. Face à toute situation imprévue, le protocole est de tout arrêter, de ranger les couteaux et d\'évaluer avant de poursuivre. La logique du « finissons quand même le service » n\'existe pas. Cette combinaison de précision technique et de sérieux opérationnel est ce qui soutient la fiabilité du label cachère sur la viande.</p>
+
+<h2>Bedika : l\'inspection qui écarte une bonne partie des animaux</h2>
+<p>Après la shehita vient la <em>bedika</em>, l\'inspection des organes internes, centrée sur les poumons. On y recherche des adhérences (<em>sirhot</em>) et des signes de maladie qui indiqueraient que l\'animal n\'était pas sain.</p>
+<p>Cette étape écarte un pourcentage significatif d\'animaux pourtant abattus correctement. Cette viande n\'est pas jetée — elle est vendue dans le circuit conventionnel non cachère — mais elle explique une bonne partie du surcoût : l\'abattoir cachère paie pour tous les animaux et ne peut vendre comme cachère que ceux qui passent l\'inspection.</p>
+<p>Les animaux dont les poumons ne présentent aucune adhérence sont classés <em>glatt</em> (lisse, en yiddish), le standard le plus exigeant. Nous le développons dans <a href="/articulos/glatt-kosher">glatt kosher : quelle différence avec le cachère ordinaire</a>.</p>
+
+<h2>Le salage : pourquoi la viande cachère se prépare différemment</h2>
+<p>La Torah interdit expressément de consommer du sang, la viande doit donc passer par un processus d\'extraction appelé <em>meliha</em> :</p>
+<ol>
+<li><strong>Trempage</strong> dans l\'eau pendant environ 30 minutes, pour attendrir et ouvrir les pores.</li>
+<li><strong>Salage</strong> au gros sel sur toutes les surfaces, y compris les plis et les entailles.</li>
+<li><strong>Repos</strong> d\'environ une heure sur une surface inclinée ou une grille, pour que le sang s\'écoule.</li>
+<li><strong>Rinçage</strong> abondant, généralement trois fois, pour éliminer le sel.</li>
+</ol>
+<p>Aujourd\'hui, ce processus est presque toujours réalisé par la boucherie ou l\'abattoir certifié avant que le produit n\'atteigne le consommateur. Si vous achetez de la viande dans une boucherie cachère, elle est déjà cachérisée sauf indication contraire. L\'exception classique est le foie : en raison de sa forte teneur en sang, il ne peut pas être cachérisé par salage et nécessite une cuisson directe au feu.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>N\'importe qui peut-il être shohet ?</strong><br>
+Non. Cela requiert des années d\'étude des lois correspondantes, une formation pratique supervisée et une certification (<em>kabbala</em>) délivrée par une autorité rabbinique. Il doit en outre s\'agir d\'une personne pratiquante, car toute la chaîne dépend de son intégrité.</p>
+<p><strong>La shehita s\'applique-t-elle aussi à la volaille ?</strong><br>
+Oui, avec le même principe, bien que les détails techniques et le couteau diffèrent en raison de la taille. Le poulet cachère passe par le même type de processus que la viande bovine.</p>
+<p><strong>Et le poisson a-t-il besoin de la shehita ?</strong><br>
+Non. Le poisson cachère ne nécessite ni shehita ni salage, ce qui simplifie beaucoup sa préparation. Il doit seulement remplir le critère des nageoires et écailles, expliqué dans <a href="/articulos/pescado-kosher-aletas-escamas">poisson cachère</a>.</p>
+<p><strong>Pourquoi la viande cachère est-elle bien plus chère ?</strong><br>
+Par la somme de tout ce qui précède : personnel spécialisé, supervision permanente, animaux écartés à l\'inspection, et processus supplémentaire de salage. Ce n\'est pas un surprix de marque, c\'est un coût opérationnel réel.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Pour comprendre ce que l\'on peut faire de cette viande une fois à la maison, voyez <a href="/articulos/carne-y-leche">viande et lait : pourquoi on ne les mélange pas</a>. Et si le standard le plus strict vous intéresse, il y a <a href="/articulos/glatt-kosher">glatt kosher</a>.</p>
+<p>Parmi les sources externes, le <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">guide de l\'Orthodox Union</a> développe les lois de la shehita avec leurs sources, la <a href="https://www.youtube.com/@OUKosher" target="_blank" rel="noopener">chaîne YouTube d\'OU Kosher</a> publie du matériel explicatif sur le processus, et vous pouvez consulter l\'article de <a href="https://en.wikipedia.org/wiki/Shechita" target="_blank" rel="noopener">Wikipédia sur la shehita</a> (en anglais) pour le contexte historique et le débat contemporain.</p>',
             ],
             'glatt-kosher' => [
                 'title' => 'Glatt cachère : quelle différence avec le cachère ordinaire',
@@ -3786,10 +3900,48 @@ Mélanger les ustensiles carnés et laitiers de façon répétée peut complique
   <img src="/images/articulos/shejita-sacrificio-kosher.svg" alt="החלף נבדק לפני ואחרי כל בהמה: פגימה אחת פוסלת את השחיטה." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">החלף נבדק לפני ואחרי כל בהמה: פגימה אחת פוסלת את השחיטה. איור: KosherMap.</figcaption>
 </figure>
-<p>מטרת שיטה זו היא לצמצם את סבל בעל החיים ולגרום לאובדן הכרה כמעט מיידי. השוחט בודק את הסכין לפני ואחרי כל שחיטה כדי לוודא שאין בה כל פגם, ולו הקטן ביותר, מכיוון שכל אי-סדירות פוסלת את ההליך.</p>
-<p>קרוב משפחה מהצוות שלנו עובד בשחיטה, וזה נותן מושג עד כמה הבקרה אובססיבית בפועל. את החלף (הסכין) לא בודק רק השוחט לפני ואחרי כל בהמה: יש גם משגיח שבודק את כל הסכינים, יום אחר יום, בקריטריון קפדני ביותר. פגם שאפילו לא ניכר לעין בלתי מזוינת מספיק כדי להוציא סכין משימוש. זו סביבה של רצינות ודיוק מקסימליים, שבה מול כל מצב חריג, הצעד הראשון הוא לעצור הכול ולתת עדיפות לבטיחות.</p>
-<p>לאחר השחיטה מתבצעת בדיקה של איברי הגוף הפנימיים, בעיקר הריאות, כדי לשלול מחלות או הידבקויות שיפסלו את הבשר ככשר. רק בעלי חיים שעוברים בדיקה זו נחשבים כשרים.</p>
-<p>בנוסף, הבשר חייב לעבור תהליך ניקוי במלח (כשרות) להוצאת הדם, מכיוון שהתורה אוסרת אכילת דם. זה נעשה על ידי השריית הבשר במים, מליחתו והשהייתו לפני שטיפה נוספת — תהליך המתבצע כיום בדרך כלל על ידי האטליז או בית המטבחיים המוסמך עצמו לפני שהמוצר מגיע לצרכן.</p>',
+<p>זהו אחד התהליכים המפוקחים ביותר בכל הכשרות, והבנת אופן פעולתו מסבירה מדוע בשר כשר עולה הרבה יותר מבשר רגיל.</p>
+
+<h2>מהי בדיוק שחיטה</h2>
+<p>השחיטה מורכבת מחיתוך יחיד ורציף בגרון בעל החיים, החותך את קנה הנשימה והוושט בתנועה אחת. היא מתבצעת בסכין הנקראת <em>חלף</em>, בעלת להב מושחז לשלמות וללא כל פגימה.</p>
+<p>המטרה המוצהרת של השיטה היא שאובדן ההכרה יהיה כמעט מיידי. לשם כך, ההלכה מגדירה חמישה תנאים הפוסלים את ההליך אם אינם מתקיימים: שהחיתוך יהיה ללא שהייה, ללא דרסה, ללא חלדה (שהסכין תהיה מכוסה), בתוך האזור האנטומי הנכון, וללא עיקור. אם אחד מהם נכשל, בעל החיים אינו כשר, ללא יוצא מן הכלל וללא קשר לערך הכלכלי המונח על הכף.</p>
+
+<h2>החלף: למה הסכין היא מרכז הכול</h2>
+<p>לסכין יש דרישות כמעט אובססיביות. עליה להיות חלקה לחלוטין, ללא הפגם הקטן ביותר בלהב. השוחט בודק אותה בהעברת הציפורן על החוד, שיטה המגלה אי-סדירויות שהעין אינה רואה, ועושה זאת לפני ואחרי כל בהמה. אם בסיום הוא מוצא פגימה, אותה בהמה נפסלת למפרע, משום שאין דרך לדעת אם הפגימה הייתה קיימת בזמן השחיטה.</p>
+
+<h2>איך זה נחווה בתוך בית מטבחיים</h2>
+<p>קרוב משפחה מהצוות שלנו עובד בשחיטה, ומה שהוא מספר נותן מושג על רמת הבקרה הקיימת בפועל, מעבר למה שכתוב בספרים.</p>
+<p>את החלף לא בודק רק השוחט לפני ואחרי כל בהמה: יש גם משגיח הבודק את כל הסכינים במפעל, יום אחר יום, בקריטריון קפדני ביותר. פגם שאינו ניכר כלל לעין בלתי מזוינת מספיק כדי להוציא סכין משימוש עד שתעבור השחזה מחדש.</p>
+<p>ויש דבר שבדרך כלל אינו מסופר: זו סביבה שבה הבטיחות גוברת על הייצור. מול כל מצב חריג, הנוהל הוא לעצור הכול, להניח את הסכינים ולהעריך לפני שממשיכים. אין היגיון של "בואו נסיים את המשמרת בכל זאת". השילוב הזה של דיוק טכני ורצינות תפעולית הוא שמחזיק את אמינות חותמת הכשרות על הבשר.</p>
+
+<h2>בדיקה: הבחינה שפוסלת חלק ניכר מהבהמות</h2>
+<p>לאחר השחיטה מגיעה ה<em>בדיקה</em>, בחינת האיברים הפנימיים, בדגש על הריאות. מחפשים סרכות וסימני מחלה שיעידו שהבהמה לא הייתה בריאה.</p>
+<p>שלב זה פוסל אחוז משמעותי מבהמות שכבר נשחטו כהלכה. הבשר הזה אינו נזרק — הוא נמכר במעגל הרגיל הלא-כשר — אך זה מסביר חלק ניכר מהתוספת במחיר: בית המטבחיים הכשר משלם עבור כל הבהמות ויכול למכור ככשר רק את אלו שעוברות את הבדיקה.</p>
+<p>בהמות שריאותיהן אינן מציגות שום סרכה מסווגות כ<em>גלאט</em> (חלק, ביידיש), הסטנדרט המחמיר ביותר. אנו מרחיבים על כך ב<a href="/articulos/glatt-kosher">גלאט כשר: מה ההבדל מכשר רגיל</a>.</p>
+
+<h2>המליחה: למה בשר כשר מוכן אחרת</h2>
+<p>התורה אוסרת במפורש אכילת דם, ולכן הבשר חייב לעבור תהליך הוצאה הנקרא <em>מליחה</em>:</p>
+<ol>
+<li><strong>השרייה</strong> במים במשך כ-30 דקות, לריכוך ולפתיחת הנקבוביות.</li>
+<li><strong>מליחה</strong> במלח גס על כל המשטחים, כולל הקפלים והחתכים.</li>
+<li><strong>המתנה</strong> של כשעה על משטח משופע או רשת, כדי שהדם יזרום החוצה.</li>
+<li><strong>שטיפה</strong> יסודית, בדרך כלל שלוש פעמים, להסרת המלח.</li>
+</ol>
+<p>כיום תהליך זה מתבצע כמעט תמיד על ידי האטליז או בית המטבחיים המוסמך לפני שהמוצר מגיע לצרכן. אם אתם קונים בשר באטליז כשר, הוא כבר מגיע מוכשר אלא אם נאמר לכם אחרת. היוצא מן הכלל הקלאסי הוא הכבד: בשל תכולת הדם הגבוהה שלו אי אפשר להכשירו במליחה והוא דורש צלייה ישירה על האש.</p>
+
+<h2>שאלות נפוצות</h2>
+<p><strong>האם כל אדם יכול להיות שוחט?</strong><br>
+לא. נדרשות שנות לימוד של ההלכות הרלוונטיות, הכשרה מעשית בפיקוח, ותעודה (<em>קבלה</em>) הניתנת על ידי רשות רבנית. בנוסף עליו להיות אדם שומר מצוות, משום שכל השרשרת תלויה ביושרתו.</p>
+<p><strong>האם השחיטה חלה גם על עופות?</strong><br>
+כן, באותו עיקרון, אם כי הפרטים הטכניים והסכין שונים בשל הגודל. עוף כשר עובר את אותו סוג תהליך כמו בשר בקר.</p>
+<p><strong>והאם דגים זקוקים לשחיטה?</strong><br>
+לא. דג כשר אינו דורש שחיטה ולא מליחה, מה שמפשט מאוד את הכנתו. עליו רק לעמוד בקריטריון של סנפיר וקשקשת, המוסבר ב<a href="/articulos/pescado-kosher-aletas-escamas">דגים כשרים</a>.</p>
+<p><strong>למה בשר כשר יקר בהרבה?</strong><br>
+בגלל סכום כל האמור לעיל: כוח אדם מקצועי, פיקוח מתמיד, בהמות שנפסלות בבדיקה, ותהליך המליחה הנוסף. זו אינה תוספת מחיר של מותג, זו עלות תפעולית אמיתית.</p>
+
+<h2>להמשך קריאה</h2>
+<p>כדי להבין מה אפשר לעשות עם הבשר הזה בבית, ראו <a href="/articulos/carne-y-leche">בשר וחלב: למה לא מערבבים</a>. ואם מעניין אתכם הסטנדרט המחמיר ביותר, יש <a href="/articulos/glatt-kosher">גלאט כשר</a>.</p>
+<p>במקורות חיצוניים, <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">המדריך של Orthodox Union</a> מפתח את הלכות השחיטה עם מקורותיהן, <a href="https://www.youtube.com/@OUKosher" target="_blank" rel="noopener">ערוץ היוטיוב של OU Kosher</a> מפרסם חומר הסברה על התהליך, ותוכלו לעיין בערך ב<a href="https://en.wikipedia.org/wiki/Shechita" target="_blank" rel="noopener">ויקיפדיה על שחיטה</a> (באנגלית) להקשר ההיסטורי ולדיון העכשווי.</p>',
             ],
             'glatt-kosher' => [
                 'title' => 'גלאט כשר: מה ההבדל מכשר רגיל',
@@ -4855,10 +5007,48 @@ Mélanger les ustensiles carnés et laitiers de façon répétée peut complique
   <img src="/images/articulos/shejita-sacrificio-kosher.svg" alt="Халеф проверяют до и после каждого животного: одна зазубрина делает процедуру недействительной." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Халеф проверяют до и после каждого животного: одна зазубрина делает процедуру недействительной. Иллюстрация: KosherMap.</figcaption>
 </figure>
-<p>Цель этого метода — минимизировать страдания животного и вызвать практически мгновенную потерю сознания. Шохет проверяет нож до и после каждого забоя, чтобы убедиться в отсутствии каких-либо изъянов, даже самых незначительных, поскольку любая неровность делает процедуру недействительной.</p>
-<p>Один из наших родственников работает в шхите, и это даёт представление о том, насколько дотошным бывает контроль на практике. Халаф (нож) проверяет не только шохет до и после каждого животного: есть ещё и надзиратель, который проверяет все ножи, день за днём, по чрезвычайно строгому критерию. Изъян, который даже не заметен невооружённым глазом, достаточен, чтобы вывести нож из использования. Это среда предельной серьёзности и точности, где при любой нестандартной ситуации первым делом всё останавливают и ставят безопасность на первое место.</p>
-<p>После шхиты проводится осмотр (бдика) внутренних органов животного, особенно лёгких, чтобы исключить заболевания или спайки, которые сделали бы мясо некошерным. Только животные, прошедшие эту проверку, считаются пригодными.</p>
-<p>Кроме того, мясо должно пройти процесс засолки (кашерование) для удаления крови, поскольку Тора запрещает употребление крови. Это делается путём замачивания мяса в воде, посолки и выдержки перед повторным ополаскиванием — процесс, который сегодня обычно выполняет сама сертифицированная мясная лавка или бойня до того, как продукт попадёт к потребителю.</p>',
+<p>Это один из самых строго регламентированных процессов во всём кашруте, и понимание того, как он устроен, объясняет, почему кошерное мясо стоит значительно дороже обычного.</p>
+
+<h2>Что такое шхита в точности</h2>
+<p>Шхита представляет собой единственный непрерывный разрез горла животного, рассекающий трахею и пищевод одним движением. Он выполняется ножом под названием <em>халаф</em>, с исключительно доведённым лезвием и без единой зазубрины.</p>
+<p>Заявленная цель метода — чтобы потеря сознания была практически мгновенной. Для этого галаха определяет пять условий, несоблюдение которых делает процедуру недействительной: разрез должен быть без паузы, без давления, без того чтобы нож был закрыт, в правильной анатомической зоне и без разрыва. Если хотя бы одно нарушено, животное не является кошерным — без исключений и независимо от экономической стоимости.</p>
+
+<h2>Халаф: почему нож — центр всего</h2>
+<p>К ножу предъявляются почти навязчивые требования. Он должен быть идеально гладким, без малейшего изъяна на лезвии. Шохет проверяет его, проводя ногтем по кромке — метод, выявляющий неровности, невидимые глазу, — и делает это до и после каждого животного. Если по завершении обнаруживается зазубрина, это животное признаётся негодным задним числом, поскольку нет способа узнать, была ли зазубрина во время разреза.</p>
+
+<h2>Как это выглядит внутри мясокомбината</h2>
+<p>Родственник члена нашей команды работает в шхите, и то, что он рассказывает, даёт представление об уровне контроля на практике, помимо того, что написано в руководствах.</p>
+<p>Халаф проверяет не только шохет до и после каждого животного: есть ещё и супервайзер, который контролирует все ножи на предприятии, день за днём, по чрезвычайно строгому критерию. Изъяна, который невооружённым глазом даже не заметен, достаточно, чтобы вывести нож из употребления до его восстановления.</p>
+<p>И есть кое-что, о чём обычно не рассказывают: это среда, где безопасность важнее производства. При любой нештатной ситуации протокол — остановить всё, убрать ножи и оценить обстановку, прежде чем продолжать. Логики «давайте всё равно доработаем смену» не существует. Именно это сочетание технической точности и операционной серьёзности поддерживает надёжность кошерного знака на мясе.</p>
+
+<h2>Бдика: проверка, отбраковывающая немалую часть животных</h2>
+<p>После шхиты следует <em>бдика</em> — осмотр внутренних органов с упором на лёгкие. Ищут спайки (<em>сирхот</em>) и признаки болезни, которые указывали бы на нездоровье животного.</p>
+<p>Этот этап отбраковывает значительный процент животных, уже забитых правильным образом. Это мясо не выбрасывают — его продают по обычному некошерному каналу, — но это объясняет немалую часть надбавки: кошерный мясокомбинат платит за всех животных и может продавать как кошерное только тех, кто прошёл проверку.</p>
+<p>Животные, чьи лёгкие не имеют ни одной спайки, классифицируются как <em>глатт</em> (гладкий на идише) — самый требовательный стандарт. Мы разбираем это в статье <a href="/articulos/glatt-kosher">глатт кошер: чем он отличается от обычного кошерного</a>.</p>
+
+<h2>Засолка: почему кошерное мясо готовят иначе</h2>
+<p>Тора прямо запрещает употреблять кровь, поэтому мясо должно пройти процесс извлечения под названием <em>мелиха</em>:</p>
+<ol>
+<li><strong>Замачивание</strong> в воде примерно на 30 минут, чтобы размягчить и раскрыть поры.</li>
+<li><strong>Засолка</strong> крупной солью по всем поверхностям, включая складки и надрезы.</li>
+<li><strong>Выдержка</strong> около часа на наклонной поверхности или решётке, чтобы кровь стекала.</li>
+<li><strong>Обильное ополаскивание</strong>, обычно трижды, для удаления соли.</li>
+</ol>
+<p>Сегодня этот процесс почти всегда выполняет сертифицированная мясная лавка или бойня до того, как продукт попадёт к потребителю. Если вы покупаете мясо в кошерной мясной лавке, оно уже кашеровано, если вам не сказали иного. Классическое исключение — печень: из-за высокого содержания крови её нельзя кашеровать засолкой, она требует прямого обжаривания на огне.</p>
+
+<h2>Часто задаваемые вопросы</h2>
+<p><strong>Может ли любой человек стать шохетом?</strong><br>
+Нет. Требуются годы изучения соответствующих законов, практическое обучение под наблюдением и сертификация (<em>кабала</em>), выдаваемая раввинским авторитетом. Кроме того, это должен быть соблюдающий человек, потому что от его порядочности зависит вся цепочка.</p>
+<p><strong>Применяется ли шхита и к птице?</strong><br>
+Да, по тому же принципу, хотя технические детали и нож отличаются из-за размера. Кошерная курица проходит тот же тип процесса, что и говядина.</p>
+<p><strong>А рыбе нужна шхита?</strong><br>
+Нет. Кошерная рыба не требует ни шхиты, ни засолки, что сильно упрощает её приготовление. Она должна лишь соответствовать критерию плавников и чешуи, объяснённому в статье <a href="/articulos/pescado-kosher-aletas-escamas">кошерная рыба</a>.</p>
+<p><strong>Почему кошерное мясо настолько дороже?</strong><br>
+Из-за суммы всего вышеперечисленного: специализированный персонал, постоянный надзор, животные, отбракованные при проверке, и дополнительный процесс засолки. Это не наценка за бренд, это реальные операционные издержки.</p>
+
+<h2>Что почитать дальше</h2>
+<p>Чтобы понять, что можно делать с этим мясом дома, смотрите <a href="/articulos/carne-y-leche">мясо и молоко: почему их не смешивают</a>. А если вас интересует самый строгий стандарт, есть статья <a href="/articulos/glatt-kosher">глатт кошер</a>.</p>
+<p>Из внешних источников <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">руководство Orthodox Union</a> раскрывает законы шхиты с их источниками, <a href="https://www.youtube.com/@OUKosher" target="_blank" rel="noopener">YouTube-канал OU Kosher</a> публикует разъяснительные материалы о процессе, а для исторического контекста и современной дискуссии можно посмотреть статью в <a href="https://en.wikipedia.org/wiki/Shechita" target="_blank" rel="noopener">Википедии о шхите</a> (на английском).</p>',
             ],
             'glatt-kosher' => [
                 'title' => 'Глатт кошер: чем отличается от обычного кошер',
