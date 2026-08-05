@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Certifier;
 use App\Models\ContactMessage;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -23,6 +25,19 @@ class ContactController extends Controller
             'message'          => $request->message,
             'accepted_privacy' => true,
         ]);
+
+        try {
+            Mail::raw(
+                "Nombre: {$request->name}\nEmail: {$request->email}\n\nMensaje:\n{$request->message}",
+                function ($message) use ($request) {
+                    $message->to('info@koshermap.org')
+                            ->replyTo($request->email, $request->name)
+                            ->subject('Nuevo mensaje de contacto - KosherMap');
+                }
+            );
+        } catch (\Throwable $e) {
+            Log::error('Error al enviar email de contacto: ' . $e->getMessage());
+        }
 
         return back()->with('contact_sent', true);
     }
