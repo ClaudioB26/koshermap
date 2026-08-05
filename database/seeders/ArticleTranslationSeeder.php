@@ -152,20 +152,53 @@ Many families prefer to assign the oven to a single category from the start, or 
             'kasherizar-microondas' => [
                 'title' => 'How to kosher a microwave',
                 'excerpt' => 'Microwaves have a different koshering process than a traditional oven, because they cook with steam rather than dry heat.',
-                'content' => '<p>Unlike a conventional oven, a microwave heats food by generating steam inside it, which changes the koshering method recommended by most halachic authorities.</p>
+                'content' => '<p>The microwave is probably the appliance that raises the most questions in a kosher kitchen, and for good reason: it does not cook like any other device. While an oven uses dry heat and a stovetop transmits heat by direct contact, the microwave heats the water already inside the food, and that generates steam which circulates throughout the interior.</p>
+<p>That technical difference is what defines the koshering method, and why you cannot simply apply the same approach as with a <a href="/articulos/kasherizar-horno">conventional oven</a>.</p>
+
+<h2>Why steam changes everything</h2>
+<p>A central principle governs these cases in halacha: <em>k\'bolo kach polto</em>, "as it absorbed, so it expels". A utensil is purified by the same medium through which it absorbed flavour. If it absorbed through boiling liquid, it is koshered with boiling liquid; if it absorbed through direct fire, it needs direct fire.</p>
+<p>The microwave absorbs through steam, so it is koshered through steam. That is why the procedure consists of deliberately generating a large amount of steam inside the cavity, so it reaches every surface that came into contact with the splatters and vapours of the previous food.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/microondas-cocina.jpg" alt="Splatters build up mostly on the roof of the microwave cavity, which is the spot people look at least when cleaning." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Splatters build up mostly on the roof of the microwave cavity, which is the spot people look at least when cleaning. Photo: Tomwsulcer via <a href="https://commons.wikimedia.org/wiki/File:Stove_oven_combination_and_microwave_oven.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC0.</figcaption>
 </figure>
-<p>The most common process includes:</p>
+<p>If you are interested in the technical detail of why the <a href="https://en.wikipedia.org/wiki/Microwave_oven" target="_blank" rel="noopener">microwave oven</a> heats by agitating the water molecules in food, the full physical explanation is there. For kashrut, what matters is the consequence: steam is generated, and steam carries flavour.</p>
+
+<h2>The procedure, step by step</h2>
+<ol>
+<li><strong>Deep cleaning.</strong> No visible food particle may remain. Pay attention to splatters on the roof of the cavity, which is where they build up most and where people look least. Remove the turntable and also clean the ring and the base.</li>
+<li><strong>24 hours without use.</strong> This step is not optional. Halacha considers that after 24 hours the absorbed flavour degrades and loses its status, which makes the koshering valid. If you used the microwave two hours ago, you have to wait.</li>
+<li><strong>Generate the steam.</strong> Place a container of water inside — preferably one you will not use afterwards for food, or a disposable one — and bring it to a boil until the interior is completely fogged up. This usually takes between 5 and 10 minutes depending on the appliance\'s power. If the water evaporates completely, refill and repeat.</li>
+<li><strong>Let it act.</strong> Once the steam has been generated, leave the container inside for a few more minutes with the door closed, so the steam also reaches the inner face of the door and the corners.</li>
+</ol>
+
+<h2>The turntable: the detail people overlook</h2>
+<p>The rotating glass plate receives food spills directly, so it needs its own treatment. Since it is glass, opinions vary: some hold that a thorough wash suffices, others require immersion in boiling water, and the most practical solution many families adopt is simply to buy a spare plate and keep one per category of use.</p>
+
+<h2>The strategy that avoids all of this</h2>
+<p>Most observant families do not kosher the microwave every time they switch use, for a simple reason: it is tedious. Instead they apply two customs that solve the problem at the root:</p>
 <ul>
-<li>Thoroughly cleaning the interior, removing every visible food particle, including the turntable and walls.</li>
-<li>Not using the microwave for 24 hours before koshering it.</li>
-<li>Placing a container of water inside the microwave and running it until the water boils and generates enough steam to cover all interior surfaces, including the door.</li>
-<li>Letting the steam act on the walls for several minutes.</li>
+<li><strong>Always cover.</strong> Heat food with a microwave-safe lid or wrap. If nothing evaporates freely, there is no flavour transfer and the microwave stays neutral. This is why in many kosher kitchens the plastic lids sit next to the microwave and not in a drawer.</li>
+<li><strong>Assign it a single category.</strong> Dedicate the appliance exclusively to pareve, or exclusively to dairy, and handle the rest on the stovetop or in the oven. It is the simplest option for anyone just <a href="/articulos/armar-cocina-kosher">setting up their kosher kitchen</a>.</li>
 </ul>
-<p>Many families also choose to always use a microwave-safe lid or wrap when heating food, and reserve the appliance for a single use (meat, dairy or pareve) to avoid having to kosher it repeatedly. Microwaves with a grill or convection function may require an additional process similar to a traditional oven for that specific function. As with any koshering, it is recommended to consult a rabbi about the particular model and material of the appliance.</p>',
+
+<h2>Special cases</h2>
+<p><strong>Microwaves with grill or convection.</strong> Those functions generate dry heat, not steam, so the steam method does not cover them. For that part a <em>libun</em>-type procedure is needed, similar to a conventional oven. If you have a combination appliance and used the grill, ask about it specifically.</p>
+<p><strong>Stainless steel vs. plastic or enamelled interior.</strong> Materials absorb differently, and some authorities are stricter with certain coatings. It is one of the points where it is most worth asking about your particular model.</p>
+<p><strong>Koshering for Passover.</strong> Passover rules are stricter than those of the rest of the year. The base procedure is the same, but many communities add requirements. Before the holiday it is worth reviewing your certifier\'s specific guide and our article on <a href="/articulos/vajilla-para-pesaj">Passover dishes</a>.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Can I use vinegar or lemon in the water?</strong><br>
+It is not necessary for the koshering itself — what purifies is the steam, not the additive — but it helps loosen dirt and neutralise odours during the prior cleaning step.</p>
+<p><strong>Is putting in just a glass of water enough?</strong><br>
+A small glass probably will not generate enough steam to saturate the whole cavity. A wide container with plenty of water is better, so that the steam is abundant and sustained.</p>
+<p><strong>I bought a used microwave, is this enough?</strong><br>
+The procedure is the same, but since you do not know what was cooked in it, this is a case where it is especially worth consulting the community rabbi before using it.</p>
+
+<h2>Further reading</h2>
+<p>The other koshering procedures are covered in <a href="/articulos/kasherizar-horno">how to kosher an oven</a>, <a href="/articulos/kasherizar-lavavajillas">how to kosher a dishwasher</a> and <a href="/articulos/hagala-utensilios-metal">hagalah for metal utensils</a>.</p>
+<p>As an external source, Star-K\'s <a href="https://www.star-k.org/articles/kashrus-kurrents/" target="_blank" rel="noopener">Kashrus Kurrents publication</a> has detailed technical material on koshering appliances, and the <a href="https://oukosher.org/passover/" target="_blank" rel="noopener">Orthodox Union Passover section</a> covers the additional requirements of the holiday.</p>',
             ],
             'kasherizar-lavavajillas' => [
                 'title' => 'How to kosher a dishwasher',
@@ -1195,14 +1228,46 @@ Muitas famílias preferem destinar o forno a uma única categoria desde o iníci
   <img src="/images/articulos/microondas-cocina.jpg" alt="A cavidade do micro-ondas acumula respingos sobretudo no teto, que é onde menos se olha ao limpar." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">A cavidade do micro-ondas acumula respingos sobretudo no teto, que é onde menos se olha ao limpar. Foto: Tomwsulcer via <a href="https://commons.wikimedia.org/wiki/File:Stove_oven_combination_and_microwave_oven.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC0.</figcaption>
 </figure>
-<p>O processo mais comum inclui:</p>
+<p>Se você tem interesse no detalhe técnico de por que o <a href="https://pt.wikipedia.org/wiki/Forno_de_micro-ondas" target="_blank" rel="noopener">forno de micro-ondas</a> aquece agitando as moléculas de água do alimento, ali está a explicação física completa. Para o kashrut, o relevante é a consequência: gera-se vapor, e o vapor transporta sabor.</p>
+
+<h2>Por que o vapor muda tudo</h2>
+<p>Na halachá vigora um princípio central para esses casos: <em>k\'bolo kach polto</em>, "assim como absorveu, assim expele". Um utensílio se purifica pelo mesmo meio pelo qual absorveu o sabor. Se absorveu por líquido fervente, casheriza-se com líquido fervente; se absorveu por fogo direto, precisa de fogo direto.</p>
+<p>O micro-ondas absorve por vapor, portanto casheriza-se por vapor. Por isso o procedimento consiste em gerar deliberadamente uma grande quantidade de vapor dentro da cavidade, para que alcance todas as superfícies que estiveram em contato com os respingos e vapores da comida anterior.</p>
+
+<h2>O procedimento, passo a passo</h2>
+<ol>
+<li><strong>Limpeza profunda.</strong> Não pode restar nenhuma partícula visível de comida. Preste atenção aos respingos no teto da cavidade, que é onde mais se acumulam e onde menos se olha. Retire o prato giratório e limpe também o aro e a base.</li>
+<li><strong>24 horas sem usar.</strong> Este passo não é opcional. A halachá considera que após 24 horas o sabor absorvido se degrada e perde sua condição, o que torna válida a casherização. Se você usou o micro-ondas há duas horas, precisa esperar.</li>
+<li><strong>Gerar o vapor.</strong> Coloque um recipiente com água — de preferência um que você não vá usar depois para comida, ou um descartável — e faça ferver até que o interior fique completamente embaçado. Costumam ser necessários de 5 a 10 minutos conforme a potência do aparelho. Se a água evaporar por completo, reponha e repita.</li>
+<li><strong>Deixar agir.</strong> Com o vapor já gerado, deixe o recipiente dentro por mais alguns minutos com a porta fechada, para que o vapor alcance também a face interna da porta e os cantos.</li>
+</ol>
+
+<h2>O prato giratório: o detalhe que passa despercebido</h2>
+<p>O prato de vidro giratório recebe diretamente os derramamentos da comida, portanto precisa de tratamento próprio. Por ser vidro, as opiniões variam: alguns consideram que basta uma lavagem a fundo, outros pedem imersão em água fervente, e a solução mais prática que muitas famílias adotam é simplesmente comprar um prato reserva e ter um por categoria de uso.</p>
+
+<h2>A estratégia que evita tudo isso</h2>
+<p>A maioria das famílias observantes não casheriza o micro-ondas cada vez que muda de uso, por uma razão simples: é tedioso. Em vez disso, aplicam dois costumes que resolvem o problema pela raiz:</p>
 <ul>
-<li>Limpar minuciosamente o interior, eliminando toda partícula de comida visível, incluindo o prato giratório e as paredes.</li>
-<li>Não usar o micro-ondas durante 24 horas antes de casherizá-lo.</li>
-<li>Colocar um recipiente com água dentro do micro-ondas e ligá-lo até que a água ferva e gere vapor suficiente para cobrir todas as superfícies internas, incluindo a porta.</li>
-<li>Deixar o vapor agir sobre as paredes durante vários minutos.</li>
+<li><strong>Tampar sempre.</strong> Aquecer a comida com tampa própria para micro-ondas ou filme. Se nada evapora livremente, não há transferência de sabor e o micro-ondas se mantém neutro. Esta é a razão pela qual em muitas cozinhas kosher as tampas de plástico ficam ao lado do micro-ondas e não na gaveta.</li>
+<li><strong>Destiná-lo a uma só categoria.</strong> Reservar o aparelho exclusivamente ao pareve, ou exclusivamente ao lácteo, e resolver o resto no fogão ou no forno. É a opção mais simples para quem está <a href="/articulos/armar-cocina-kosher">montando sua cozinha kosher</a>.</li>
 </ul>
-<p>Muitas famílias optam, além disso, por usar sempre uma tampa ou filme próprio para micro-ondas ao aquecer comida, e reservar o aparelho para um único uso (cárneo, lácteo ou pareve) para evitar ter que casherizá-lo repetidamente. Micro-ondas com função grill ou convecção podem exigir um processo adicional semelhante ao do forno tradicional para essa função específica. Como em qualquer casherização, é recomendável consultar um rabino sobre o caso particular do modelo e material do aparelho.</p>',
+
+<h2>Casos especiais</h2>
+<p><strong>Micro-ondas com grill ou convecção.</strong> Essas funções geram calor seco, não vapor, então o método do vapor não as cobre. Para essa parte é necessário um procedimento tipo <em>libun</em>, semelhante ao do forno convencional. Se você tem um aparelho combinado e usou o grill, consulte especificamente.</p>
+<p><strong>Micro-ondas de aço inoxidável vs. interior plástico ou esmaltado.</strong> Os materiais absorvem de forma diferente, e algumas autoridades são mais rigorosas com certos revestimentos. É um dos pontos em que mais vale a pena perguntar sobre o seu modelo específico.</p>
+<p><strong>Casherizar para Pessach.</strong> As regras de Pessach são mais rigorosas que as do resto do ano. O procedimento base é o mesmo, mas muitas comunidades acrescentam requisitos. Antes da festividade convém revisar o guia específico da sua certificadora e nosso artigo sobre <a href="/articulos/vajilla-para-pesaj">louça para Pessach</a>.</p>
+
+<h2>Perguntas frequentes</h2>
+<p><strong>Posso usar vinagre ou limão na água?</strong><br>
+Não é necessário para a casherização em si — o que purifica é o vapor, não o aditivo —, mas ajuda a soltar sujeira e a neutralizar odores durante a etapa de limpeza prévia.</p>
+<p><strong>Basta colocar um copo de água?</strong><br>
+Um copo pequeno provavelmente não gera vapor suficiente para saturar toda a cavidade. Convém um recipiente amplo e com bastante água, para que o vapor seja abundante e sustentado.</p>
+<p><strong>Comprei um micro-ondas usado, isso é suficiente?</strong><br>
+O procedimento é o mesmo, mas como você não sabe o que foi cozido ali, é um caso em que vale especialmente a pena consultar o rabino da comunidade antes de usá-lo.</p>
+
+<h2>Para continuar lendo</h2>
+<p>Os outros procedimentos de casherização estão em <a href="/articulos/kasherizar-horno">como casherizar um forno</a>, <a href="/articulos/kasherizar-lavavajillas">como casherizar uma lava-louças</a> e <a href="/articulos/hagala-utensilios-metal">hagalá para utensílios de metal</a>.</p>
+<p>Como fonte externa, a <a href="https://www.star-k.org/articles/kashrus-kurrents/" target="_blank" rel="noopener">publicação Kashrus Kurrents da Star-K</a> tem material técnico detalhado sobre casherização de eletrodomésticos, e a <a href="https://oukosher.org/passover/" target="_blank" rel="noopener">seção de Pessach da Orthodox Union</a> cobre os requisitos adicionais da festividade.</p>',
             ],
             'kasherizar-lavavajillas' => [
                 'title' => 'Como casherizar uma lava-louças',
@@ -2232,14 +2297,46 @@ De nombreuses familles préfèrent réserver le four à une seule catégorie dè
   <img src="/images/articulos/microondas-cocina.jpg" alt="Les éclaboussures s&#039;accumulent surtout au plafond de la cavité du micro-ondes, l&#039;endroit qu&#039;on regarde le moins en nettoyant." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Les éclaboussures s\'accumulent surtout au plafond de la cavité du micro-ondes, l\'endroit qu\'on regarde le moins en nettoyant. Photo: Tomwsulcer via <a href="https://commons.wikimedia.org/wiki/File:Stove_oven_combination_and_microwave_oven.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC0.</figcaption>
 </figure>
-<p>Le processus le plus courant comprend :</p>
+<p>Si le détail technique vous intéresse, l\'article sur le <a href="https://fr.wikipedia.org/wiki/Four_%C3%A0_micro-ondes" target="_blank" rel="noopener">four à micro-ondes</a> explique pourquoi il chauffe en agitant les molécules d\'eau de l\'aliment. Pour la cacherout, ce qui compte est la conséquence : de la vapeur est générée, et la vapeur transporte le goût.</p>
+
+<h2>Pourquoi la vapeur change tout</h2>
+<p>Un principe central régit ces cas en halakha : <em>k\'bolo kach polto</em>, « comme il a absorbé, ainsi il expulse ». Un ustensile se purifie par le même moyen par lequel il a absorbé le goût. S\'il a absorbé par liquide bouillant, il se cachérise avec du liquide bouillant ; s\'il a absorbé par feu direct, il faut du feu direct.</p>
+<p>Le micro-ondes absorbe par la vapeur, il se cachérise donc par la vapeur. C\'est pourquoi la procédure consiste à générer délibérément une grande quantité de vapeur dans la cavité, afin qu\'elle atteigne toutes les surfaces ayant été en contact avec les éclaboussures et les vapeurs de l\'aliment précédent.</p>
+
+<h2>La procédure, étape par étape</h2>
+<ol>
+<li><strong>Nettoyage en profondeur.</strong> Aucune particule visible de nourriture ne doit subsister. Faites attention aux éclaboussures au plafond de la cavité, là où elles s\'accumulent le plus et où l\'on regarde le moins. Retirez le plateau tournant et nettoyez aussi l\'anneau et la base.</li>
+<li><strong>24 heures sans utilisation.</strong> Cette étape n\'est pas facultative. La halakha considère qu\'après 24 heures le goût absorbé se dégrade et perd son statut, ce qui rend la cachérisation valide. Si vous avez utilisé le micro-ondes il y a deux heures, vous devez attendre.</li>
+<li><strong>Générer la vapeur.</strong> Placez un récipient d\'eau — de préférence un que vous n\'utiliserez pas ensuite pour la nourriture, ou un jetable — et faites-le bouillir jusqu\'à ce que l\'intérieur soit complètement embué. Il faut généralement entre 5 et 10 minutes selon la puissance de l\'appareil. Si l\'eau s\'évapore entièrement, remettez-en et recommencez.</li>
+<li><strong>Laisser agir.</strong> Une fois la vapeur générée, laissez le récipient à l\'intérieur quelques minutes de plus, porte fermée, pour que la vapeur atteigne aussi la face interne de la porte et les coins.</li>
+</ol>
+
+<h2>Le plateau tournant : le détail qu\'on oublie</h2>
+<p>Le plateau en verre reçoit directement les débordements de nourriture, il nécessite donc son propre traitement. Comme il s\'agit de verre, les avis divergent : certains estiment qu\'un lavage en profondeur suffit, d\'autres exigent une immersion dans l\'eau bouillante, et la solution la plus pratique adoptée par de nombreuses familles est simplement d\'acheter un plateau de rechange et d\'en avoir un par catégorie d\'usage.</p>
+
+<h2>La stratégie qui évite tout cela</h2>
+<p>La plupart des familles pratiquantes ne cachérisent pas le micro-ondes à chaque changement d\'usage, pour une raison simple : c\'est fastidieux. Elles appliquent à la place deux coutumes qui règlent le problème à la racine :</p>
 <ul>
-<li>Nettoyer minutieusement l\'intérieur, en éliminant toute particule de nourriture visible, y compris le plateau tournant et les parois.</li>
-<li>Ne pas utiliser le micro-ondes pendant 24 heures avant de le cachériser.</li>
-<li>Placer un récipient d\'eau à l\'intérieur du micro-ondes et le faire fonctionner jusqu\'à ce que l\'eau bout et génère assez de vapeur pour couvrir toutes les surfaces intérieures, y compris la porte.</li>
-<li>Laisser la vapeur agir sur les parois pendant plusieurs minutes.</li>
+<li><strong>Toujours couvrir.</strong> Réchauffer les aliments avec un couvercle adapté au micro-ondes ou un film. Si rien ne s\'évapore librement, il n\'y a pas de transfert de goût et le micro-ondes reste neutre. C\'est pourquoi, dans beaucoup de cuisines cachères, les couvercles en plastique se trouvent à côté du micro-ondes et non dans un tiroir.</li>
+<li><strong>Lui assigner une seule catégorie.</strong> Destiner l\'appareil exclusivement au parvé, ou exclusivement au laitier, et gérer le reste sur la plaque ou au four. C\'est l\'option la plus simple pour qui vient de <a href="/articulos/armar-cocina-kosher">monter sa cuisine cachère</a>.</li>
 </ul>
-<p>De nombreuses familles choisissent en outre d\'utiliser toujours un couvercle ou un film adapté au micro-ondes pour réchauffer la nourriture, et de réserver l\'appareil à un seul usage (carné, laitier ou parve) pour éviter d\'avoir à le cachériser à répétition. Les micro-ondes avec fonction grill ou convection peuvent nécessiter un processus supplémentaire similaire à celui du four traditionnel pour cette fonction spécifique. Comme pour toute cachérisation, il est recommandé de consulter un rabbin sur le cas particulier du modèle et du matériau de l\'appareil.</p>',
+
+<h2>Cas particuliers</h2>
+<p><strong>Micro-ondes avec grill ou convection.</strong> Ces fonctions génèrent de la chaleur sèche, pas de la vapeur, la méthode à la vapeur ne les couvre donc pas. Pour cette partie, une procédure de type <em>libun</em> est nécessaire, similaire à celle du four conventionnel. Si vous avez un appareil combiné et avez utilisé le grill, renseignez-vous spécifiquement.</p>
+<p><strong>Micro-ondes en acier inoxydable vs. intérieur plastique ou émaillé.</strong> Les matériaux absorbent différemment, et certaines autorités sont plus strictes avec certains revêtements. C\'est l\'un des points où il vaut le plus la peine de se renseigner pour votre modèle précis.</p>
+<p><strong>Cachériser pour Pessah.</strong> Les règles de Pessah sont plus strictes que celles du reste de l\'année. La procédure de base est la même, mais de nombreuses communautés ajoutent des exigences. Avant la fête, il convient de consulter le guide spécifique de votre organisme de certification et notre article sur <a href="/articulos/vajilla-para-pesaj">la vaisselle de Pessah</a>.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>Puis-je mettre du vinaigre ou du citron dans l\'eau ?</strong><br>
+Ce n\'est pas nécessaire pour la cachérisation elle-même — ce qui purifie est la vapeur, pas l\'additif — mais cela aide à décoller la saleté et à neutraliser les odeurs lors de l\'étape de nettoyage préalable.</p>
+<p><strong>Suffit-il de mettre un simple verre d\'eau ?</strong><br>
+Un petit verre ne générera probablement pas assez de vapeur pour saturer toute la cavité. Mieux vaut un récipient large avec beaucoup d\'eau, pour que la vapeur soit abondante et soutenue.</p>
+<p><strong>J\'ai acheté un micro-ondes d\'occasion, cela suffit-il ?</strong><br>
+La procédure est la même, mais comme vous ignorez ce qui y a été cuit, c\'est un cas où il vaut particulièrement la peine de consulter le rabbin de la communauté avant de l\'utiliser.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Les autres procédures de cachérisation sont détaillées dans <a href="/articulos/kasherizar-horno">comment cachériser un four</a>, <a href="/articulos/kasherizar-lavavajillas">comment cachériser un lave-vaisselle</a> et <a href="/articulos/hagala-utensilios-metal">la hagala pour ustensiles en métal</a>.</p>
+<p>Comme source externe, la publication <a href="https://www.star-k.org/articles/kashrus-kurrents/" target="_blank" rel="noopener">Kashrus Kurrents de Star-K</a> propose du matériel technique détaillé sur la cachérisation des appareils, et la <a href="https://oukosher.org/passover/" target="_blank" rel="noopener">section Pessah de l\'Orthodox Union</a> couvre les exigences supplémentaires de la fête.</p>',
             ],
             'kasherizar-lavavajillas' => [
                 'title' => 'Comment cachériser un lave-vaisselle',
@@ -3269,14 +3366,46 @@ Mélanger les ustensiles carnés et laitiers de façon répétée peut complique
   <img src="/images/articulos/microondas-cocina.jpg" alt="התזות מצטברות בעיקר בתקרת תא המיקרוגל, המקום שהכי פחות מסתכלים בו בזמן ניקוי." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">התזות מצטברות בעיקר בתקרת תא המיקרוגל, המקום שהכי פחות מסתכלים בו בזמן ניקוי. צילום: Tomwsulcer דרך <a href="https://commons.wikimedia.org/wiki/File:Stove_oven_combination_and_microwave_oven.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC0.</figcaption>
 </figure>
-<p>התהליך הנפוץ ביותר כולל:</p>
+<p>אם מעניין אתכם הפירוט הטכני של הסיבה שבגללה <a href="https://en.wikipedia.org/wiki/Microwave_oven" target="_blank" rel="noopener">תנור המיקרוגל</a> מחמם על ידי הנעת מולקולות המים שבמזון, שם נמצא ההסבר הפיזיקלי המלא. לעניין הכשרות, הרלוונטי הוא התוצאה: נוצרים אדים, והאדים נושאים טעם.</p>
+
+<h2>למה האדים משנים הכול</h2>
+<p>בהלכה חל עיקרון מרכזי במקרים אלו: <em>כבולעו כך פולטו</em>. כלי מיטהר באותו אמצעי שבו בלע את הטעם. אם בלע על ידי נוזל רותח, מכשירים אותו בנוזל רותח; אם בלע באש ישירה, נדרשת אש ישירה.</p>
+<p>המיקרוגל בולע באמצעות אדים, ולכן מוכשר באמצעות אדים. לכן התהליך מורכב מיצירה מכוונת של כמות גדולה של אדים בתוך התא, כדי שיגיעו לכל המשטחים שבאו במגע עם ההתזות והאדים של המזון הקודם.</p>
+
+<h2>התהליך, שלב אחר שלב</h2>
+<ol>
+<li><strong>ניקוי יסודי.</strong> לא יכול להישאר שום חלקיק מזון נראה לעין. שימו לב להתזות בתקרת התא, שם הן מצטברות הכי הרבה ושם מסתכלים הכי פחות. הוציאו את הצלחת המסתובבת ונקו גם את הטבעת והבסיס.</li>
+<li><strong>24 שעות ללא שימוש.</strong> שלב זה אינו אופציונלי. ההלכה רואה שלאחר 24 שעות הטעם הבלוע נפגם ומאבד ממעמדו, מה שהופך את ההכשרה לתקפה. אם השתמשתם במיקרוגל לפני שעתיים, עליכם להמתין.</li>
+<li><strong>יצירת האדים.</strong> הניחו כלי עם מים — רצוי כלי שלא תשתמשו בו אחר כך למזון, או כלי חד-פעמי — והרתיחו עד שהפנים מתאדה לחלוטין. בדרך כלל נדרשות בין 5 ל-10 דקות בהתאם לעוצמת המכשיר. אם המים מתאדים כליל, מלאו שוב וחזרו על הפעולה.</li>
+<li><strong>לתת לפעול.</strong> לאחר שנוצרו האדים, השאירו את הכלי בפנים עוד כמה דקות עם דלת סגורה, כדי שהאדים יגיעו גם לצד הפנימי של הדלת ולפינות.</li>
+</ol>
+
+<h2>הצלחת המסתובבת: הפרט שמפספסים</h2>
+<p>צלחת הזכוכית המסתובבת מקבלת ישירות את שפיכות המזון, ולכן זקוקה לטיפול משלה. מכיוון שמדובר בזכוכית, הדעות חלוקות: יש הסוברים שדי בשטיפה יסודית, אחרים דורשים הגעלה במים רותחים, והפתרון המעשי ביותר שמשפחות רבות מאמצות הוא פשוט לקנות צלחת חלופית ולהחזיק אחת לכל קטגוריית שימוש.</p>
+
+<h2>האסטרטגיה שחוסכת את כל זה</h2>
+<p>רוב המשפחות שומרות הכשרות אינן מכשירות את המיקרוגל בכל פעם שמשנות שימוש, מסיבה פשוטה: זה מייגע. במקום זאת הן נוקטות שני מנהגים הפותרים את הבעיה מהשורש:</p>
 <ul>
-<li>ניקוי יסודי של הפנים, הסרת כל חלקיק מזון נראה לעין, כולל הצלחת המסתובבת והדפנות.</li>
-<li>אי שימוש במיקרוגל במשך 24 שעות לפני ההכשרה.</li>
-<li>הנחת כלי מים בתוך המיקרוגל והפעלתו עד שהמים רותחים ויוצרים מספיק אדים לכסות את כל המשטחים הפנימיים, כולל הדלת.</li>
-<li>לתת לאדים לפעול על הדפנות במשך מספר דקות.</li>
+<li><strong>לכסות תמיד.</strong> לחמם את המזון עם מכסה המתאים למיקרוגל או ניילון. אם דבר אינו מתאדה בחופשיות, אין העברת טעם והמיקרוגל נשאר ניטרלי. זו הסיבה שבמטבחים כשרים רבים מכסי הפלסטיק נמצאים ליד המיקרוגל ולא במגירה.</li>
+<li><strong>לייעד לו קטגוריה אחת.</strong> להקדיש את המכשיר אך ורק לפרווה, או אך ורק לחלבי, ולפתור את השאר על הכיריים או בתנור. זו האפשרות הפשוטה ביותר למי שרק <a href="/articulos/armar-cocina-kosher">מקים את מטבחו הכשר</a>.</li>
 </ul>
-<p>משפחות רבות בוחרות גם להשתמש תמיד במכסה או ניילון מתאים למיקרוגל בעת חימום מזון, ולייעד את המכשיר לשימוש יחיד (בשרי, חלבי או פרווה) כדי להימנע מהכשרתו שוב ושוב. מיקרוגלים עם פונקציית גריל או קונבקציה עשויים לדרוש תהליך נוסף בדומה לתנור רגיל עבור פונקציה זו. כמו בכל הכשרה, מומלץ להתייעץ עם רב לגבי הדגם והחומר הספציפיים של המכשיר.</p>',
+
+<h2>מקרים מיוחדים</h2>
+<p><strong>מיקרוגל עם גריל או טורבו.</strong> פונקציות אלו מייצרות חום יבש, לא אדים, ולכן שיטת האדים אינה מכסה אותן. לחלק זה נדרש תהליך מסוג <em>ליבון</em>, בדומה לתנור רגיל. אם יש לכם מכשיר משולב והשתמשתם בגריל, התייעצו על כך במפורש.</p>
+<p><strong>מיקרוגל מנירוסטה מול פנים פלסטיק או אמייל.</strong> החומרים בולעים באופן שונה, וחלק מהפוסקים מחמירים יותר בציפויים מסוימים. זו אחת הנקודות שבהן הכי כדאי לשאול לגבי הדגם הספציפי שלכם.</p>
+<p><strong>הכשרה לפסח.</strong> כללי פסח מחמירים יותר מאלו של שאר השנה. התהליך הבסיסי זהה, אך קהילות רבות מוסיפות דרישות. לפני החג כדאי לעיין במדריך הספציפי של גוף הכשרות שלכם ובמאמר שלנו על <a href="/articulos/vajilla-para-pesaj">כלים לפסח</a>.</p>
+
+<h2>שאלות נפוצות</h2>
+<p><strong>אפשר להשתמש בחומץ או לימון במים?</strong><br>
+אין בכך צורך להכשרה עצמה — מה שמטהר הוא האדים, לא התוסף — אך זה מסייע להסיר לכלוך ולנטרל ריחות בשלב הניקוי המקדים.</p>
+<p><strong>מספיק לשים כוס מים בלבד?</strong><br>
+כוס קטנה כנראה לא תייצר מספיק אדים כדי להרוות את כל התא. עדיף כלי רחב עם הרבה מים, כדי שהאדים יהיו שופעים ומתמשכים.</p>
+<p><strong>קניתי מיקרוגל משומש, זה מספיק?</strong><br>
+התהליך זהה, אך מכיוון שאינכם יודעים מה בושל שם, זה מקרה שבו כדאי במיוחד להתייעץ עם רב הקהילה לפני השימוש.</p>
+
+<h2>להמשך קריאה</h2>
+<p>שאר תהליכי ההכשרה נמצאים ב<a href="/articulos/kasherizar-horno">כיצד להכשיר תנור</a>, <a href="/articulos/kasherizar-lavavajillas">כיצד להכשיר מדיח כלים</a> ו<a href="/articulos/hagala-utensilios-metal">הגעלה לכלי מתכת</a>.</p>
+<p>כמקור חיצוני, הפרסום <a href="https://www.star-k.org/articles/kashrus-kurrents/" target="_blank" rel="noopener">Kashrus Kurrents של Star-K</a> מכיל חומר טכני מפורט על הכשרת מכשירי חשמל, ו<a href="https://oukosher.org/passover/" target="_blank" rel="noopener">מדור הפסח של Orthodox Union</a> מכסה את הדרישות הנוספות של החג.</p>',
             ],
             'kasherizar-lavavajillas' => [
                 'title' => 'איך מכשירים מדיח כלים',
@@ -4306,14 +4435,46 @@ Mélanger les ustensiles carnés et laitiers de façon répétée peut complique
   <img src="/images/articulos/microondas-cocina.jpg" alt="Брызги скапливаются прежде всего на потолке камеры микроволновки — там, куда при уборке смотрят меньше всего." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Брызги скапливаются прежде всего на потолке камеры микроволновки — там, куда при уборке смотрят меньше всего. Фото: Tomwsulcer через <a href="https://commons.wikimedia.org/wiki/File:Stove_oven_combination_and_microwave_oven.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC0.</figcaption>
 </figure>
-<p>Наиболее распространённый процесс включает:</p>
+<p>Если вам интересна техническая сторона того, почему <a href="https://ru.wikipedia.org/wiki/Микроволновая_печь" target="_blank" rel="noopener">микроволновая печь</a> нагревает, возбуждая молекулы воды в продукте, там есть полное физическое объяснение. Для кашрута важно следствие: образуется пар, а пар переносит вкус.</p>
+
+<h2>Почему пар меняет всё</h2>
+<p>В галахе для таких случаев действует ключевой принцип: <em>к\'больо ках польто</em> — «как впитал, так и выделяет». Посуда очищается тем же способом, каким она впитала вкус. Если впитала через кипящую жидкость, кашеруется кипящей жидкостью; если через прямой огонь — нужен прямой огонь.</p>
+<p>Микроволновка впитывает через пар, поэтому и кашеруется паром. Именно поэтому процедура состоит в намеренном создании большого количества пара внутри камеры, чтобы он достиг всех поверхностей, соприкасавшихся с брызгами и испарениями предыдущей еды.</p>
+
+<h2>Процедура шаг за шагом</h2>
+<ol>
+<li><strong>Глубокая очистка.</strong> Не должно остаться ни одной видимой частицы пищи. Обратите внимание на брызги на потолке камеры — именно там они скапливаются больше всего и туда смотрят меньше всего. Снимите вращающуюся тарелку и очистите также кольцо и основание.</li>
+<li><strong>24 часа без использования.</strong> Этот шаг не является необязательным. Галаха считает, что через 24 часа впитавшийся вкус портится и теряет свой статус, что делает кашерование действительным. Если вы пользовались микроволновкой два часа назад, придётся подождать.</li>
+<li><strong>Создать пар.</strong> Поставьте ёмкость с водой — желательно ту, которую потом не будете использовать для еды, или одноразовую — и доведите до кипения, пока внутренняя часть полностью не запотеет. Обычно требуется от 5 до 10 минут в зависимости от мощности прибора. Если вода полностью испарилась, долейте и повторите.</li>
+<li><strong>Дать подействовать.</strong> После образования пара оставьте ёмкость внутри ещё на несколько минут с закрытой дверцей, чтобы пар достиг также внутренней стороны дверцы и углов.</li>
+</ol>
+
+<h2>Вращающаяся тарелка: деталь, которую упускают</h2>
+<p>Стеклянная вращающаяся тарелка принимает пролитую еду напрямую, поэтому нуждается в собственной обработке. Поскольку это стекло, мнения расходятся: одни считают, что достаточно тщательного мытья, другие требуют погружения в кипяток, а самое практичное решение, которое принимают многие семьи, — просто купить запасную тарелку и держать по одной на каждую категорию использования.</p>
+
+<h2>Стратегия, которая избавляет от всего этого</h2>
+<p>Большинство соблюдающих семей не кашеруют микроволновку каждый раз при смене использования по простой причине: это утомительно. Вместо этого они применяют два обычая, решающих проблему в корне:</p>
 <ul>
-<li>Тщательную очистку внутренней части, удаление всех видимых частиц пищи, включая вращающуюся тарелку и стенки.</li>
-<li>Неиспользование микроволновки в течение 24 часов перед откошерованием.</li>
-<li>Размещение ёмкости с водой внутри микроволновки и включение её до тех пор, пока вода не закипит и не образуется достаточно пара, чтобы покрыть все внутренние поверхности, включая дверцу.</li>
-<li>Оставить пар воздействовать на стенки в течение нескольких минут.</li>
+<li><strong>Всегда накрывать.</strong> Разогревать еду под крышкой, подходящей для микроволновки, или под плёнкой. Если ничего не испаряется свободно, переноса вкуса не происходит и микроволновка остаётся нейтральной. Именно поэтому во многих кошерных кухнях пластиковые крышки лежат рядом с микроволновкой, а не в ящике.</li>
+<li><strong>Закрепить за ней одну категорию.</strong> Использовать прибор исключительно для парве или исключительно для молочного, а остальное готовить на плите или в духовке. Это самый простой вариант для тех, кто только <a href="/articulos/armar-cocina-kosher">обустраивает свою кошерную кухню</a>.</li>
 </ul>
-<p>Многие семьи также предпочитают всегда использовать крышку или плёнку, подходящую для микроволновки, при разогреве пищи, и закрепить за прибором только одно использование (мясное, молочное или парве), чтобы избежать повторного откошерования. Микроволновки с функцией гриля или конвекции могут потребовать дополнительного процесса, аналогичного обычной духовке, для этой конкретной функции. Как и при любом откошеровании, рекомендуется проконсультироваться с раввином о конкретной модели и материале прибора.</p>',
+
+<h2>Особые случаи</h2>
+<p><strong>Микроволновки с грилем или конвекцией.</strong> Эти функции создают сухой жар, а не пар, поэтому паровой метод их не покрывает. Для этой части нужна процедура типа <em>либун</em>, аналогичная обычной духовке. Если у вас комбинированный прибор и вы пользовались грилем, уточните это отдельно.</p>
+<p><strong>Нержавеющая сталь против пластикового или эмалированного покрытия.</strong> Материалы впитывают по-разному, и некоторые авторитеты строже относятся к определённым покрытиям. Это один из тех вопросов, где особенно стоит уточнить по вашей конкретной модели.</p>
+<p><strong>Кашерование к Песаху.</strong> Правила Песаха строже, чем в остальное время года. Базовая процедура та же, но многие общины добавляют требования. Перед праздником стоит изучить конкретное руководство вашего сертификатора и нашу статью о <a href="/articulos/vajilla-para-pesaj">посуде для Песаха</a>.</p>
+
+<h2>Часто задаваемые вопросы</h2>
+<p><strong>Можно ли добавить уксус или лимон в воду?</strong><br>
+Для самого кашерования это не требуется — очищает пар, а не добавка, — но это помогает отделить загрязнения и нейтрализовать запахи на этапе предварительной очистки.</p>
+<p><strong>Достаточно ли поставить просто стакан воды?</strong><br>
+Небольшой стакан, скорее всего, не создаст достаточно пара, чтобы насытить всю камеру. Лучше взять широкую ёмкость с достаточным количеством воды, чтобы пар был обильным и продолжительным.</p>
+<p><strong>Я купил бывшую в употреблении микроволновку, этого достаточно?</strong><br>
+Процедура та же, но поскольку вы не знаете, что там готовили, это случай, когда особенно стоит проконсультироваться с раввином общины перед использованием.</p>
+
+<h2>Что почитать дальше</h2>
+<p>Остальные процедуры кашерования описаны в статьях <a href="/articulos/kasherizar-horno">как кашеровать духовку</a>, <a href="/articulos/kasherizar-lavavajillas">как кашеровать посудомоечную машину</a> и <a href="/articulos/hagala-utensilios-metal">агала для металлической посуды</a>.</p>
+<p>В качестве внешнего источника издание <a href="https://www.star-k.org/articles/kashrus-kurrents/" target="_blank" rel="noopener">Kashrus Kurrents от Star-K</a> содержит подробный технический материал о кашеровании бытовой техники, а <a href="https://oukosher.org/passover/" target="_blank" rel="noopener">раздел о Песахе на сайте Orthodox Union</a> охватывает дополнительные требования праздника.</p>',
             ],
             'kasherizar-lavavajillas' => [
                 'title' => 'Как откошеровать посудомоечную машину',
