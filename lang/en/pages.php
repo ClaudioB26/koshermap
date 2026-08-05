@@ -229,30 +229,48 @@ return [
 
     'sobre_nosotros' => [
         'title'       => 'About Us — KosherMap',
-        'description' => 'KosherMap is the global directory of kosher products and places, designed to help the Jewish community and all those who follow a kosher diet worldwide.',
-        'intro'       => '<strong>KosherMap</strong> was born from a real need: finding certified kosher products and places (restaurants, synagogues, supermarkets) in different cities around the world, easily and reliably.',
+        'description' => 'KosherMap is an independent platform created to make reliable, organized, and up-to-date kosher information easy to access.',
+        'intro'       => '<strong>KosherMap</strong> is an independent platform created to make reliable, organized, and up-to-date kosher information easy to access.<br><br>The project was born from a very simple need: finding kosher-certified products and establishments related to Jewish life without having to check dozens of different sites. This information is often scattered across certifying agencies, directories, social media, and other public sources. KosherMap brings that information together in one place, organizes it, and presents it clearly and practically.',
         'sections'    => [
             [
                 'title' => 'Our Mission',
-                'body'  => '<p>Our mission is to make living kosher easier, wherever you are. Whether you travel, move to a new city, or simply want to expand your repertoire of certified products, KosherMap gives you the information you need.</p>
+                'body'  => '<p>Our mission is to make reliable kosher information accessible to anyone, anywhere in the world.</p>
+<p>Whether you\'re traveling, living in a new city, or simply looking for a certified product, KosherMap helps you find the information you need quickly and easily.</p>
+<p>The platform includes:</p>
 <ul>
-  <li>An extensive catalog of <strong>certified kosher products</strong> with their certifiers, categories, and status (pareve, dairy, meat).</li>
-  <li>A directory of <strong>kosher places</strong>: restaurants, synagogues, butcher shops, bakeries, hotels, and more — with Google Maps ratings, hours, and contact.</li>
-  <li>Educational information about kashrut, certifying agencies, and Judaism.</li>
+  <li>A catalog of <strong>kosher-certified products</strong>, showing the certifying agency, category, and status (pareve, dairy, or meat).</li>
+  <li>An <strong>international directory</strong> of restaurants, supermarkets, bakeries, butcher shops, hotels, synagogues, and other establishments related to Jewish life.</li>
+  <li>Information about kosher certifying agencies and educational content about kashrut.</li>
 </ul>',
             ],
             [
-                'title' => 'Global Coverage',
-                'body'  => '<p>KosherMap covers multiple countries, with special focus on Spanish, Portuguese, English, French, Hebrew, and Russian-speaking communities. Our cities include Buenos Aires, São Paulo, New York, Tel Aviv, London, Paris, and many more — with coverage constantly expanding.</p>',
+                'title' => 'International Coverage',
+                'body'  => '<p>KosherMap gathers information from different countries and keeps expanding its coverage on an ongoing basis.</p>
+<p>The platform is available in several languages to make it accessible to users from different communities around the world, and includes information from cities such as Buenos Aires, São Paulo, New York, Miami, Tel Aviv, Jerusalem, London, Paris, and many others.</p>',
             ],
             [
-                'title' => 'How to Contribute',
-                'body'  => '<p>KosherMap grows thanks to the community. If you notice a missing place, product, or outdated information, you can:</p>
-<ul>
-  <li>Report a problem from each place or product page.</li>
-  <li>Suggest a new kosher establishment from the places section.</li>
-  <li>Contact us directly for improvements, corrections, or suggestions.</li>
-</ul>',
+                'title' => 'How We Work',
+                'body'  => '<p>The information published on KosherMap is collected, organized, and reviewed on an ongoing basis.</p>
+<p>Product data is compiled based on the official publications of the different certifying agencies, while information about establishments comes from public sources and contributions from the community.</p>
+<p>Our job is to centralize that information, classify it, keep it up to date, and make it easily accessible through a unified search and a platform available in several languages.</p>
+<p>Although we carry out periodic reviews, certifications, hours, and other data may change over time. For that reason, we recommend always confirming information directly with the establishment or the relevant certifying agency before making a purchase or a visit.</p>',
+            ],
+            [
+                'title' => 'Collaborate with KosherMap',
+                'body'  => '<p>KosherMap also grows thanks to the collaboration of its community.</p>
+<p>If you find incorrect information, a missing product, or an establishment that isn\'t on the platform yet, you can send us a suggestion or report a problem.</p>
+<p>If you own or represent a kosher establishment, you can also contact us to review and complete the information published about your business.</p>',
+            ],
+            [
+                'title' => 'Who Is Behind KosherMap',
+                'body'  => '<p>KosherMap was created and is developed by <strong>Claudio Buenos</strong>.</p>
+<p>The project is the result of more than twenty years of experience developing websites and web applications. For nearly two decades, I was responsible for the development and maintenance of <strong>Ajdut Kosher</strong> (kosher.org.ar), one of Argentina\'s leading kosher information portals.</p>
+<p>That experience gave me a deep understanding of the community\'s needs and inspired me to create KosherMap as an independent project with an international vision. Today, KosherMap gathers and organizes information about kosher products, certifications, and establishments from different countries on a modern platform, available in several languages and constantly growing.</p>',
+            ],
+            [
+                'title' => 'Contact',
+                'body'  => '<p>If you have questions, suggestions, or want to collaborate with the project, you can write to us at <a href="mailto:info@koshermap.org" class="text-blue-600 hover:underline">info@koshermap.org</a>.</p>
+<p>Our commitment is to keep improving KosherMap to offer an increasingly complete, useful, and reliable platform for the whole community.</p>',
             ],
         ],
     ],

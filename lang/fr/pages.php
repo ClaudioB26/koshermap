@@ -89,12 +89,49 @@ return [
 
     'sobre_nosotros' => [
         'title'       => 'À Propos — KosherMap',
-        'description' => 'KosherMap est le répertoire mondial de produits et de lieux cachères, conçu pour aider la communauté juive dans le monde entier.',
-        'intro'       => '<strong>KosherMap</strong> est né d\'un besoin réel : trouver facilement des produits cachères certifiés et des lieux (restaurants, synagogues, supermarchés) dans différentes villes du monde.',
+        'description' => 'KosherMap est une plateforme indépendante créée pour faciliter l\'accès à des informations cachères fiables, organisées et à jour.',
+        'intro'       => '<strong>KosherMap</strong> est une plateforme indépendante créée pour faciliter l\'accès à des informations cachères fiables, organisées et à jour.<br><br>Le projet est né d\'un besoin très simple : trouver des produits certifiés cachères et des établissements liés à la vie juive sans avoir à consulter des dizaines de sites différents. Cette information est souvent dispersée entre les agences de certification, les répertoires, les réseaux sociaux et d\'autres sources publiques. KosherMap rassemble cette information en un seul endroit, l\'organise et la présente de manière claire, pratique et facile à consulter.',
         'sections'    => [
-            ['title' => 'Notre Mission', 'body' => '<p>Notre mission est de faciliter la vie cachère, où que vous soyez. Nous réunissons en un seul endroit un catalogue étendu de <strong>produits cachères certifiés</strong> et un répertoire de <strong>lieux cachères</strong> avec évaluations Google Maps, horaires et contact.</p>'],
-            ['title' => 'Couverture Mondiale', 'body' => '<p>KosherMap couvre de nombreux pays, avec un accent particulier sur les communautés francophones, hispanophones, anglophones, hébraïques et russophones. Nos villes incluent Buenos Aires, São Paulo, New York, Tel Aviv, Londres, Paris et bien d\'autres.</p>'],
-            ['title' => 'Comment Contribuer', 'body' => '<p>KosherMap grandit grâce à la communauté. Si vous trouvez des informations manquantes ou obsolètes, utilisez le bouton "Signaler" sur chaque page ou contactez-nous directement.</p>'],
+            [
+                'title' => 'Notre Mission',
+                'body'  => '<p>Notre mission est de faciliter l\'accès à des informations cachères fiables pour n\'importe qui, où que ce soit dans le monde.</p>
+<p>Que vous voyagiez, viviez dans une nouvelle ville ou cherchiez simplement un produit certifié, KosherMap vous aide à trouver rapidement et facilement l\'information dont vous avez besoin.</p>
+<p>La plateforme comprend :</p>
+<ul>
+  <li>Un catalogue de <strong>produits certifiés cachères</strong>, indiquant l\'agence de certification, la catégorie et le statut (paraev, laitier ou viande).</li>
+  <li>Un <strong>répertoire international</strong> de restaurants, supermarchés, boulangeries, boucheries, hôtels, synagogues et autres établissements liés à la vie juive.</li>
+  <li>Des informations sur les agences de certification cachères et du contenu éducatif sur la cacherout.</li>
+</ul>',
+            ],
+            [
+                'title' => 'Couverture Internationale',
+                'body'  => '<p>KosherMap rassemble des informations de différents pays et continue d\'élargir sa couverture en permanence.</p>
+<p>La plateforme est disponible en plusieurs langues pour faciliter l\'accès aux utilisateurs de différentes communautés à travers le monde, et inclut des informations sur des villes comme Buenos Aires, São Paulo, New York, Miami, Tel Aviv, Jérusalem, Londres, Paris et bien d\'autres.</p>',
+            ],
+            [
+                'title' => 'Comment Nous Travaillons',
+                'body'  => '<p>L\'information publiée sur KosherMap est collectée, organisée et révisée en permanence.</p>
+<p>Les données sur les produits sont élaborées à partir des publications officielles des différentes agences de certification, tandis que l\'information sur les établissements provient de sources publiques et des contributions de la communauté.</p>
+<p>Notre travail consiste à centraliser cette information, à la classer, à la maintenir à jour et à la rendre facilement accessible grâce à une recherche unifiée et une plateforme disponible en plusieurs langues.</p>
+<p>Bien que nous effectuions des révisions périodiques, les certifications, horaires et autres données peuvent changer avec le temps. C\'est pourquoi nous recommandons de toujours confirmer l\'information directement auprès de l\'établissement ou de l\'agence de certification correspondante avant un achat ou une visite.</p>',
+            ],
+            [
+                'title' => 'Collaborez avec KosherMap',
+                'body'  => '<p>KosherMap grandit aussi grâce à la collaboration de sa communauté.</p>
+<p>Si vous trouvez une information incorrecte, un produit manquant ou un établissement qui ne figure pas encore sur la plateforme, vous pouvez nous envoyer une suggestion ou signaler un problème.</p>
+<p>Si vous êtes propriétaire ou représentant d\'un établissement cachère, vous pouvez également nous contacter pour vérifier et compléter l\'information publiée sur votre commerce.</p>',
+            ],
+            [
+                'title' => 'Qui Est Derrière KosherMap',
+                'body'  => '<p>KosherMap a été créé et est développé par <strong>Claudio Buenos</strong>.</p>
+<p>Le projet est le résultat de plus de vingt ans d\'expérience dans le développement de sites et d\'applications web. Pendant près de deux décennies, j\'ai été responsable du développement et de la maintenance d\'<strong>Ajdut Kosher</strong> (kosher.org.ar), l\'un des principaux portails d\'information cachère en Argentine.</p>
+<p>Cette expérience m\'a permis de bien comprendre les besoins de la communauté et a été l\'inspiration pour créer KosherMap comme un projet indépendant, avec une vision internationale. Aujourd\'hui, KosherMap rassemble et organise des informations sur les produits, certifications et établissements cachères de différents pays sur une plateforme moderne, disponible en plusieurs langues et en constante croissance.</p>',
+            ],
+            [
+                'title' => 'Contact',
+                'body'  => '<p>Si vous avez des questions, des suggestions ou souhaitez collaborer avec le projet, vous pouvez nous écrire à <a href="mailto:info@koshermap.org" class="text-blue-600 hover:underline">info@koshermap.org</a>.</p>
+<p>Notre engagement est de continuer à améliorer KosherMap pour offrir une plateforme toujours plus complète, utile et fiable pour toute la communauté.</p>',
+            ],
         ],
     ],
 
