@@ -76,14 +76,14 @@
             <!-- Primary Nav (desktop) -->
             <nav class="hidden md:flex items-center gap-1 shrink-0">
                 <a href="{{ \App\Models\Article::indexUrlFor(app()->getLocale()) }}"
-                   class="px-3 py-1.5 rounded-lg text-sm font-semibold transition
+                   class="px-3 py-1.5 rounded-lg text-sm font-semibold transition whitespace-nowrap
                           {{ request()->routeIs('articles.*') ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-gray-100' }}">
-                    📰 Artículos
+                    📰 {{ \App\Models\Article::sectionLabelFor(app()->getLocale()) }}
                 </a>
                 {{-- Productos y Lugares ocultos del menu: contenido marcado noindex, ver doc/plan-adsense.md --}}
                 <a href="{{ route('certifiers.index') }}"
-                   class="px-3 py-1.5 rounded-lg text-sm font-medium transition text-gray-500 hover:bg-gray-100">
-                    🏅 Certif.
+                   class="px-3 py-1.5 rounded-lg text-sm font-medium transition text-gray-500 hover:bg-gray-100 whitespace-nowrap">
+                    🏅 {{ __('certifiers') }}
                 </a>
             </nav>
 
@@ -182,12 +182,12 @@
             <a href="{{ \App\Models\Article::indexUrlFor(app()->getLocale()) }}"
                class="px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap
                       {{ request()->routeIs('articles.*') ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-600' }}">
-                📰 Artículos
+                📰 {{ \App\Models\Article::sectionLabelFor(app()->getLocale()) }}
             </a>
             {{-- Productos y Lugares ocultos del menu: contenido marcado noindex, ver doc/plan-adsense.md --}}
             <a href="{{ route('certifiers.index') }}"
                class="px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap bg-gray-100 text-gray-600">
-                🏅 Certif.
+                🏅 {{ __('certifiers') }}
             </a>
             {{-- Países oculto temporalmente --}}
         </nav>
