@@ -20,8 +20,8 @@
     </div>
     @endif
 
-    <div class="mb-8 grid grid-cols-1 sm:grid-cols-3 gap-3">
-        <a href="{{ route('pages.contacto') }}"
+    <div class="mb-8 grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <a href="{{ $certifier->contact_email ? 'mailto:'.$certifier->contact_email : route('pages.contacto') }}"
            class="flex flex-col items-center text-center gap-1 bg-white border border-gray-200 rounded-xl p-4 hover:border-blue-400 hover:shadow-md transition">
             <span class="text-2xl">🏭</span>
             <span class="font-semibold text-sm text-gray-800">{{ __('Want to certify your business?') }}</span>
@@ -32,11 +32,28 @@
             <span class="text-2xl">🛒</span>
             <span class="font-semibold text-sm text-gray-800">{{ __('View certified products') }}</span>
         </a>
-        <a href="{{ route('pages.contacto') }}"
-           class="flex flex-col items-center text-center gap-1 bg-white border border-gray-200 rounded-xl p-4 hover:border-blue-400 hover:shadow-md transition">
-            <span class="text-2xl">✉️</span>
-            <span class="font-semibold text-sm text-gray-800">{{ __('Contact') }}</span>
-        </a>
+    </div>
+
+    <div class="mb-8 p-5 bg-white border border-gray-200 rounded-xl">
+        <h2 class="text-lg font-bold text-gray-800 mb-3">✉️ {{ __('Contact') }}</h2>
+        @if($certifier->contact_email || $certifier->phone || $certifier->hours)
+            <ul class="space-y-1.5 text-sm text-gray-700">
+                @if($certifier->contact_email)
+                <li>📧 <a href="mailto:{{ $certifier->contact_email }}" class="text-blue-600 hover:underline">{{ $certifier->contact_email }}</a></li>
+                @endif
+                @if($certifier->phone)
+                <li>📞 <a href="tel:{{ $certifier->phone }}" class="text-blue-600 hover:underline">{{ $certifier->phone }}</a></li>
+                @endif
+                @if($certifier->hours)
+                <li>🕒 {{ $certifier->hours }}</li>
+                @endif
+            </ul>
+        @else
+            <p class="text-sm text-gray-500">
+                {{ __('certify_cta_body') }}
+                <a href="{{ route('pages.contacto') }}" class="text-blue-600 hover:underline">{{ __('Contact') }}</a>
+            </p>
+        @endif
     </div>
 
     <div class="flex flex-col lg:flex-row gap-6">
