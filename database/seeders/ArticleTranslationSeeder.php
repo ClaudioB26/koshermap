@@ -464,15 +464,46 @@ The symbol\'s design is usually consistent since it is trademarked by the certif
             'que-significa-pareve' => [
                 'title' => 'Pareve: what it means and why it\'s so common on labels',
                 'excerpt' => 'Pareve is one of the most repeated words in kosher labeling. We explain what it means and why it\'s so valued.',
-                'content' => '<p>"Pareve" (also spelled parve) describes foods that are neither meat nor dairy: fruits, vegetables, eggs, fish, grains and most products made without dairy or meat ingredients of animal origin.</p>
+                'content' => '<p>Pareve (also spelled <em>parve</em>, from the Yiddish for "neutral") is the word describing foods that are neither meat nor dairy: fruits, vegetables, eggs, fish, grains, legumes and most products made without dairy or meat ingredients.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/que-significa-pareve.jpg" alt="Fresh fruit and vegetables are pareve by nature: they go with both meat and dairy." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Fresh fruit and vegetables are pareve by nature: they go with both meat and dairy. Photo: PattayaPatrol via <a href="https://commons.wikimedia.org/wiki/File%3ADFC_2197_A_colorful_assortment_of_fresh_fruits_and_vegetables_-_apples_mango_dragon_fruit_kiwis_limes_bananas_and_more_-_arranged_on_a_wooden_crate.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>The great advantage of a pareve product is its flexibility: it can be freely combined with both meat and dairy meals, without creating any kashrut conflict. That is why many food companies actively develop pareve versions of products that traditionally contain dairy — such as chocolate, margarine or cream substitutes — to expand their market.</p>
-<p>It\'s worth noting a nuance: a food can be pareve by ingredients but lose that status if it was made on equipment that also processes dairy or meat, depending on possible traces left behind. That is why certification doesn\'t just review ingredients, but also the production equipment and cleaning processes between batches.</p>
-<p>Some common examples of pareve products: olive oil, dry pasta without egg, most breads (although some contain butter and become dairy), unprocessed nuts, and soft drinks. Always checking the label is the only sure way to confirm it, since the recipe can vary between brands or even between presentations of the same brand.</p>',
+<p>It is probably the word you will read most often on kosher labels, and understanding exactly what it implies saves you half of the everyday doubts in the kitchen.</p>
+
+<h2>Why it is the most sought-after category</h2>
+<p>The great advantage of a pareve product is that it can be freely combined with both meat and dairy meals, without creating any conflict. That makes it the wildcard of the kosher kitchen.</p>
+<p>Dessert is where this matters most. If dinner was meat, you cannot serve ice cream, custard or anything with cream, because you have to wait between <a href="/articulos/carne-y-leche">meat and dairy</a>. A pareve dessert solves the problem: it can be served immediately after a barbecue. That is why the industry invests so heavily in developing pareve versions of products that traditionally contain dairy — chocolate, margarine, vegetable creams for baking, water-based or plant-milk ice creams: it opens up a market that otherwise could not buy them with the main meal.</p>
+
+<h2>The nuance that confuses everyone: pareve by ingredients vs. certified pareve</h2>
+<p>This is where most people get it wrong. A food can have an ingredient list that is impeccably free of dairy and still not be pareve, if it was produced on equipment that also processes dairy products.</p>
+<p>Think of a cookie factory: the same line produces butter cookies in the morning and butter-free cookies in the afternoon. Even though the second batch contains no dairy ingredient, the equipment retains flavour from the previous run. The result is labelled <strong>"DE"</strong> (<em>dairy equipment</em>): it cannot be eaten together with meat, though it may be eaten after a meat meal without waiting the full hours.</p>
+<p>That is why kosher certification is not a laboratory analysis of ingredients: it is an audit of the entire process, including what was produced earlier on that line and how it was cleaned in between.</p>
+
+<h2>Concrete examples of pareve products</h2>
+<ul>
+<li><strong>Almost always pareve:</strong> olive oil and other vegetable oils, sugar, salt, rice, dried legumes, fresh fruit and vegetables, unprocessed nuts, mineral water and soft drinks.</li>
+<li><strong>Depends on the brand:</strong> bread (many contain butter or whey), pasta (egg pasta is still pareve, but worth verifying), chocolate (dark chocolate is usually pareve, milk chocolate obviously is not), cookies, margarine.</li>
+<li><strong>Pareve with an asterisk:</strong> fish is pareve, but many communities do not combine it with meat on the same plate for a separate reason, explained in <a href="/articulos/pescado-kosher-aletas-escamas">kosher fish</a>.</li>
+</ul>
+<p>You can check the status of a specific brand in our <a href="/productos">directory of certified products</a>, filtering directly by type.</p>
+
+<h2>A classic mistake: confusing pareve with vegan</h2>
+<p>They are not the same, although they overlap considerably. A vegan product contains nothing of animal origin, but it may have been made on equipment shared with meat products, or contain ingredients that halacha restricts for other reasons — such as wine, which needs its own supervision even when vegan.</p>
+<p>And the other way around: a pareve product may contain egg or fish, which are not vegan. We develop the differences in <a href="/articulos/kashrut-y-veganismo">kashrut and veganism</a>.</p>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Is an egg pareve even though it comes from an animal?</strong><br>
+Yes. The meat category refers to the flesh of the animal, not to its non-dairy by-products. The egg of a kosher bird is pareve and can be used in both dairy and meat preparations. That said, it must be checked before use, as we explain in <a href="/articulos/huevos-kosher">kosher eggs</a>.</p>
+<p><strong>If I cook something pareve in a meat pot, is it still pareve?</strong><br>
+Not exactly. It becomes considered "pareve cooked in meat", which in practice means you cannot serve it with dairy. That is why many families keep some pots dedicated exclusively to pareve, precisely to preserve that flexibility.</p>
+<p><strong>Is honey pareve if bees produce it?</strong><br>
+Yes, honey is pareve and kosher, despite bees not being a kosher animal. It is one of the classic exceptions of kashrut, because honey is not considered a product of the bee\'s body but transformed nectar.</p>
+
+<h2>Further reading</h2>
+<p>The natural companion to this article is <a href="/articulos/carne-y-leche">meat and milk: why they are not mixed</a>, which explains where this whole division comes from. For detail on how to interpret the symbols on the package, see <a href="/articulos/como-leer-etiqueta-kosher">how to read a kosher label</a>.</p>
+<p>Among external sources, the <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">Orthodox Union guide</a> covers the categories with the corresponding halachic sources, and you can consult the <a href="https://en.wikipedia.org/wiki/Pareve" target="_blank" rel="noopener">Wikipedia entry on pareve</a> for a quick reference. Other certifiers with useful public material are <a href="https://www.ok.org" target="_blank" rel="noopener">OK Kosher Certification</a> and the <a href="https://www.crcweb.org" target="_blank" rel="noopener">Chicago Rabbinical Council (cRc)</a>, which publishes updated product lists.</p>',
             ],
             'shejita-sacrificio-kosher' => [
                 'title' => 'Shechita: the kosher slaughter method',
@@ -1438,15 +1469,46 @@ O desenho do símbolo costuma ser consistente porque é registrado pela certific
             'que-significa-pareve' => [
                 'title' => 'Pareve: o que significa e por que é tão comum nos rótulos',
                 'excerpt' => 'Pareve é uma das palavras mais repetidas na rotulagem kosher. Explicamos o que significa e por que é tão valorizada.',
-                'content' => '<p>"Pareve" (também escrito parve) descreve os alimentos que não são nem cárneos nem lácteos: frutas, verduras, ovos, peixe, grãos e a maioria dos produtos elaborados sem ingredientes de origem animal láctea ou cárnea.</p>
+                'content' => '<p>Pareve (também escrito <em>parve</em>, do ídiche "neutro") é a palavra que descreve os alimentos que não são nem cárneos nem lácteos: frutas, verduras, ovos, peixe, grãos, leguminosas e a maioria dos produtos elaborados sem ingredientes lácteos ou cárneos.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/que-significa-pareve.jpg" alt="Frutas e verduras frescas são parve por natureza: combinam tanto com carne quanto com laticínios." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Frutas e verduras frescas são parve por natureza: combinam tanto com carne quanto com laticínios. Foto: PattayaPatrol via <a href="https://commons.wikimedia.org/wiki/File%3ADFC_2197_A_colorful_assortment_of_fresh_fruits_and_vegetables_-_apples_mango_dragon_fruit_kiwis_limes_bananas_and_more_-_arranged_on_a_wooden_crate.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>A grande vantagem de um produto pareve é sua flexibilidade: pode se combinar livremente tanto com refeições cárneas quanto lácteas, sem gerar nenhum conflito de kashrut. Por isso, muitas indústrias alimentícias buscam ativamente desenvolver versões pareve de produtos que tradicionalmente levam laticínios — como chocolate, margarina ou substitutos de creme — para ampliar seu mercado.</p>
-<p>É importante esclarecer um detalhe: um alimento pode ser pareve pelos ingredientes, mas perder esse status se foi elaborado em equipamento que também processa laticínios ou carne, dependendo dos traços que possam restar. Por isso a certificação não analisa apenas ingredientes, mas também o equipamento de produção e os processos de limpeza entre lotes.</p>
-<p>Alguns exemplos comuns de produtos pareve: azeite de oliva, massa seca sem ovo, a maioria dos pães (embora alguns levem manteiga e passem a ser lácteos), castanhas sem processamento, e refrigerantes. Revisar sempre o rótulo é a única forma certeira de confirmar, já que a receita pode variar entre marcas ou até entre apresentações da mesma marca.</p>',
+<p>É provavelmente a palavra que você mais vai ler nos rótulos kosher, e entender bem o que ela implica poupa metade das dúvidas cotidianas na cozinha.</p>
+
+<h2>Por que é a categoria mais procurada</h2>
+<p>A grande vantagem de um produto pareve é que pode ser combinado livremente tanto com refeições cárneas quanto lácteas, sem gerar nenhum conflito. Isso o torna o coringa da cozinha kosher.</p>
+<p>A sobremesa é onde isso mais aparece. Se o jantar foi de carne, você não pode servir sorvete, pudim nem nada com creme, porque é preciso esperar entre <a href="/articulos/carne-y-leche">carne e laticínios</a>. Uma sobremesa pareve resolve o problema: pode ser servida imediatamente após um churrasco. Por isso a indústria investe tanto em desenvolver versões pareve de produtos que tradicionalmente levam laticínios — chocolate, margarina, cremes vegetais para confeitaria, sorvetes à base de água ou de leites vegetais: abre um mercado que de outra forma não poderia consumi-los na refeição principal.</p>
+
+<h2>O detalhe que confunde todo mundo: pareve por ingredientes vs. pareve certificado</h2>
+<p>Aqui é onde a maioria das pessoas se engana. Um alimento pode ter uma lista de ingredientes impecavelmente livre de laticínios e ainda assim não ser pareve, se foi fabricado em um equipamento que também processa produtos lácteos.</p>
+<p>Pense em uma fábrica de biscoitos: a mesma linha produz de manhã biscoitos com manteiga e à tarde biscoitos sem ela. Embora a segunda leva não contenha nenhum ingrediente lácteo, o equipamento retém sabor do lote anterior. O resultado é rotulado <strong>"DE"</strong> (<em>dairy equipment</em>): não pode ser comido junto com carne, embora possa ser consumido depois de uma refeição cárnea, sem esperar as horas completas.</p>
+<p>Por isso a certificação kosher não é uma análise laboratorial de ingredientes: é uma auditoria do processo completo, incluindo o que foi produzido antes naquela linha e como ela foi limpa no meio.</p>
+
+<h2>Exemplos concretos de produtos pareve</h2>
+<ul>
+<li><strong>Quase sempre pareve:</strong> azeite de oliva e outros óleos vegetais, açúcar, sal, arroz, leguminosas secas, frutas e verduras frescas, castanhas sem processamento, água mineral e refrigerantes.</li>
+<li><strong>Depende da marca:</strong> pão (muitos levam manteiga ou soro de leite), massas (as que levam ovo continuam sendo pareve, mas convém verificar), chocolate (o amargo costuma ser pareve, o ao leite obviamente não), biscoitos, margarina.</li>
+<li><strong>Pareve com asterisco:</strong> o peixe é pareve, mas muitas comunidades não o combinam com carne no mesmo prato por uma questão à parte, explicada em <a href="/articulos/pescado-kosher-aletas-escamas">peixe kosher</a>.</li>
+</ul>
+<p>Você pode verificar o status de uma marca específica em nosso <a href="/productos">diretório de produtos certificados</a>, filtrando diretamente por tipo.</p>
+
+<h2>Um erro clássico: confundir pareve com vegano</h2>
+<p>Não são a mesma coisa, embora se sobreponham bastante. Um produto vegano não contém nada de origem animal, mas pode ter sido elaborado em equipamento compartilhado com produtos cárneos, ou conter ingredientes que a halachá restringe por outros motivos — como o vinho, que precisa de supervisão própria mesmo sendo vegano.</p>
+<p>E ao contrário: um produto pareve pode conter ovo ou peixe, que não são veganos. Desenvolvemos as diferenças em <a href="/articulos/kashrut-y-veganismo">kashrut e veganismo</a>.</p>
+
+<h2>Perguntas frequentes</h2>
+<p><strong>O ovo é pareve mesmo vindo de um animal?</strong><br>
+Sim. A categoria cárnea refere-se à carne do animal, não a seus subprodutos não lácteos. O ovo de uma ave kosher é pareve e pode ser usado tanto em preparações lácteas quanto cárneas. Ainda assim, é preciso examiná-lo antes de usar, como explicamos em <a href="/articulos/huevos-kosher">ovos kosher</a>.</p>
+<p><strong>Se eu cozinhar algo pareve em uma panela cárnea, continua sendo pareve?</strong><br>
+Não exatamente. Passa a ser considerado "pareve cozido em cárneo", o que na prática significa que você não pode servi-lo com laticínios. Por isso muitas famílias mantêm algumas panelas dedicadas exclusivamente ao pareve, justamente para preservar essa flexibilidade.</p>
+<p><strong>O mel é pareve se é produzido pelas abelhas?</strong><br>
+Sim, o mel é pareve e kosher, apesar de a abelha não ser um animal kosher. É uma das exceções clássicas do kashrut, porque o mel não é considerado um produto do corpo da abelha, mas néctar transformado.</p>
+
+<h2>Para continuar lendo</h2>
+<p>O complemento natural deste artigo é <a href="/articulos/carne-y-leche">carne e leite: por que não se misturam</a>, que explica de onde vem toda essa divisão. Para o detalhe de como interpretar os símbolos na embalagem, veja <a href="/articulos/como-leer-etiqueta-kosher">como ler um rótulo kosher</a>.</p>
+<p>Em fontes externas, o <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">guia da Orthodox Union</a> cobre as categorias com as fontes haláchicas correspondentes, e você pode consultar o verbete da <a href="https://pt.wikipedia.org/wiki/Pareve" target="_blank" rel="noopener">Wikipédia sobre pareve</a> para uma referência rápida. Outras certificadoras com material público útil são a <a href="https://www.ok.org" target="_blank" rel="noopener">OK Kosher Certification</a> e o <a href="https://www.crcweb.org" target="_blank" rel="noopener">Chicago Rabbinical Council (cRc)</a>, que publica listas de produtos atualizadas.</p>',
             ],
             'shejita-sacrificio-kosher' => [
                 'title' => 'Shechitá: o método de abate kosher',
@@ -2412,15 +2474,46 @@ Le dessin du symbole est généralement cohérent car il est déposé par le cer
             'que-significa-pareve' => [
                 'title' => 'Parve : que signifie ce terme si fréquent sur les étiquettes',
                 'excerpt' => 'Parve est l\'un des mots les plus répétés dans l\'étiquetage cachère. Nous expliquons sa signification et pourquoi il est tant valorisé.',
-                'content' => '<p>"Parve" (aussi orthographié pareve) décrit les aliments qui ne sont ni carnés ni laitiers : fruits, légumes, œufs, poisson, céréales et la plupart des produits élaborés sans ingrédients d\'origine animale laitière ou carnée.</p>
+                'content' => '<p>Parvé (aussi orthographié <em>pareve</em>, du yiddish « neutre ») est le mot qui décrit les aliments qui ne sont ni carnés ni laitiers : fruits, légumes, œufs, poisson, céréales, légumineuses et la plupart des produits élaborés sans ingrédients laitiers ou carnés.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/que-significa-pareve.jpg" alt="Fruits et légumes frais sont parvé par nature : ils se combinent avec la viande comme avec le lait." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Fruits et légumes frais sont parvé par nature : ils se combinent avec la viande comme avec le lait. Photo: PattayaPatrol via <a href="https://commons.wikimedia.org/wiki/File%3ADFC_2197_A_colorful_assortment_of_fresh_fruits_and_vegetables_-_apples_mango_dragon_fruit_kiwis_limes_bananas_and_more_-_arranged_on_a_wooden_crate.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>Le grand avantage d\'un produit parve est sa flexibilité : il peut se combiner librement avec des repas tant carnés que laitiers, sans générer aucun conflit de cacherout. C\'est pourquoi de nombreuses industries alimentaires cherchent activement à développer des versions parve de produits traditionnellement laitiers — comme le chocolat, la margarine ou les substituts de crème — pour élargir leur marché.</p>
-<p>Il est important de préciser une nuance : un aliment peut être parve par ses ingrédients, mais perdre ce statut s\'il a été élaboré sur un équipement traitant aussi des produits laitiers ou carnés, selon les traces pouvant subsister. C\'est pourquoi la certification n\'analyse pas seulement les ingrédients, mais aussi l\'équipement de production et les processus de nettoyage entre les lots.</p>
-<p>Quelques exemples courants de produits parve : huile d\'olive, pâtes sèches sans œuf, la plupart des pains (bien que certains contiennent du beurre et deviennent laitiers), fruits secs non transformés, et boissons gazeuses. Toujours vérifier l\'étiquette est le seul moyen sûr de le confirmer, car la recette peut varier selon les marques ou même selon les présentations d\'une même marque.</p>',
+<p>C\'est probablement le mot que vous lirez le plus souvent sur les étiquettes cachères, et bien comprendre ce qu\'il implique vous épargne la moitié des doutes quotidiens en cuisine.</p>
+
+<h2>Pourquoi c\'est la catégorie la plus recherchée</h2>
+<p>Le grand avantage d\'un produit parvé est qu\'il peut se combiner librement avec des repas tant carnés que laitiers, sans générer aucun conflit. Cela en fait le joker de la cuisine cachère.</p>
+<p>Le dessert est le cas où cela se remarque le plus. Si le dîner était carné, vous ne pouvez pas servir de glace, de flan ni quoi que ce soit à la crème, car il faut attendre entre <a href="/articulos/carne-y-leche">viande et laitages</a>. Un dessert parvé résout le problème : il peut être servi immédiatement après un barbecue. C\'est pourquoi l\'industrie investit autant dans le développement de versions parvé de produits traditionnellement laitiers — chocolat, margarine, crèmes végétales pour la pâtisserie, glaces à base d\'eau ou de laits végétaux : cela ouvre un marché qui autrement ne pourrait pas les consommer au repas principal.</p>
+
+<h2>La nuance qui trompe tout le monde : parvé par les ingrédients vs. parvé certifié</h2>
+<p>C\'est ici que la plupart des gens se trompent. Un aliment peut avoir une liste d\'ingrédients impeccablement exempte de laitages et ne pas être parvé pour autant, s\'il a été fabriqué sur un équipement qui traite également des produits laitiers.</p>
+<p>Pensez à une biscuiterie : la même ligne produit le matin des biscuits au beurre et l\'après-midi des biscuits sans beurre. Bien que le second lot ne contienne aucun ingrédient laitier, l\'équipement retient le goût du lot précédent. Le résultat est étiqueté <strong>« DE »</strong> (<em>dairy equipment</em>) : il ne peut pas être consommé avec de la viande, même s\'il peut l\'être après un repas carné, sans attendre les heures complètes.</p>
+<p>C\'est pourquoi la certification cachère n\'est pas une analyse de laboratoire des ingrédients : c\'est un audit du processus complet, y compris ce qui a été produit auparavant sur cette ligne et comment elle a été nettoyée entre-temps.</p>
+
+<h2>Exemples concrets de produits parvé</h2>
+<ul>
+<li><strong>Presque toujours parvé :</strong> huile d\'olive et autres huiles végétales, sucre, sel, riz, légumineuses sèches, fruits et légumes frais, fruits secs non transformés, eau minérale et boissons gazeuses.</li>
+<li><strong>Dépend de la marque :</strong> pain (beaucoup contiennent du beurre ou du lactosérum), pâtes (celles aux œufs restent parvé, mais il vaut mieux vérifier), chocolat (le noir est généralement parvé, celui au lait évidemment pas), biscuits, margarine.</li>
+<li><strong>Parvé avec un astérisque :</strong> le poisson est parvé, mais de nombreuses communautés ne le combinent pas avec la viande dans la même assiette pour une raison distincte, expliquée dans <a href="/articulos/pescado-kosher-aletas-escamas">poisson cachère</a>.</li>
+</ul>
+<p>Vous pouvez vérifier le statut d\'une marque précise dans notre <a href="/productos">répertoire de produits certifiés</a>, en filtrant directement par type.</p>
+
+<h2>Une erreur classique : confondre parvé et végan</h2>
+<p>Ce n\'est pas la même chose, même si les deux se recoupent largement. Un produit végan ne contient rien d\'origine animale, mais il peut avoir été élaboré sur un équipement partagé avec des produits carnés, ou contenir des ingrédients que la halakha restreint pour d\'autres raisons — comme le vin, qui nécessite sa propre supervision même s\'il est végan.</p>
+<p>Et inversement : un produit parvé peut contenir de l\'œuf ou du poisson, qui ne sont pas végans. Nous développons les différences dans <a href="/articulos/kashrut-y-veganismo">cacherout et véganisme</a>.</p>
+
+<h2>Questions fréquentes</h2>
+<p><strong>L\'œuf est-il parvé même s\'il vient d\'un animal ?</strong><br>
+Oui. La catégorie carnée désigne la chair de l\'animal, non ses sous-produits non laitiers. L\'œuf d\'une volaille cachère est parvé et peut être utilisé aussi bien dans des préparations laitières que carnées. Cela dit, il faut l\'examiner avant usage, comme nous l\'expliquons dans <a href="/articulos/huevos-kosher">œufs cachères</a>.</p>
+<p><strong>Si je cuisine quelque chose de parvé dans une casserole carnée, est-ce encore parvé ?</strong><br>
+Pas exactement. Cela devient « parvé cuit en carné », ce qui signifie en pratique que vous ne pouvez pas le servir avec des laitages. C\'est pourquoi de nombreuses familles gardent quelques casseroles dédiées exclusivement au parvé, précisément pour préserver cette flexibilité.</p>
+<p><strong>Le miel est-il parvé s\'il est produit par les abeilles ?</strong><br>
+Oui, le miel est parvé et cachère, bien que l\'abeille ne soit pas un animal cachère. C\'est l\'une des exceptions classiques de la cacherout, car le miel n\'est pas considéré comme un produit du corps de l\'abeille mais comme du nectar transformé.</p>
+
+<h2>Pour aller plus loin</h2>
+<p>Le complément naturel de cet article est <a href="/articulos/carne-y-leche">viande et lait : pourquoi on ne les mélange pas</a>, qui explique d\'où vient toute cette division. Pour le détail de l\'interprétation des symboles sur l\'emballage, voyez <a href="/articulos/como-leer-etiqueta-kosher">comment lire une étiquette cachère</a>.</p>
+<p>Parmi les sources externes, le <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">guide de l\'Orthodox Union</a> couvre les catégories avec les sources halakhiques correspondantes, et vous pouvez consulter l\'article de <a href="https://fr.wikipedia.org/wiki/Pareve" target="_blank" rel="noopener">Wikipédia sur le parvé</a> pour une référence rapide. D\'autres organismes de certification publiant du matériel utile sont <a href="https://www.ok.org" target="_blank" rel="noopener">OK Kosher Certification</a> et le <a href="https://www.crcweb.org" target="_blank" rel="noopener">Chicago Rabbinical Council (cRc)</a>, qui publie des listes de produits actualisées.</p>',
             ],
             'shejita-sacrificio-kosher' => [
                 'title' => 'La shehita : la méthode d\'abattage cachère',
@@ -3386,15 +3479,46 @@ Mélanger les ustensiles carnés et laitiers de façon répétée peut complique
             'que-significa-pareve' => [
                 'title' => 'פרווה: מה זה אומר ולמה זה כה נפוץ בתוויות',
                 'excerpt' => 'פרווה היא אחת המילים הנפוצות ביותר בתיוג כשר. נסביר מה זה אומר ולמה זה כל כך מוערך.',
-                'content' => '<p>"פרווה" מתאר מאכלים שאינם בשריים ואינם חלביים: פירות, ירקות, ביצים, דגים, דגנים ורוב המוצרים המיוצרים ללא מרכיבים מן החי חלביים או בשריים.</p>
+                'content' => '<p>פרווה (מיידיש, במשמעות "ניטרלי") היא המילה המתארת מאכלים שאינם בשריים ואינם חלביים: פירות, ירקות, ביצים, דגים, דגנים, קטניות ורוב המוצרים המיוצרים ללא מרכיבים חלביים או בשריים.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/que-significa-pareve.jpg" alt="פירות וירקות טריים הם פרווה מטבעם: אפשר לשלבם גם עם בשרי וגם עם חלבי." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">פירות וירקות טריים הם פרווה מטבעם: אפשר לשלבם גם עם בשרי וגם עם חלבי. צילום: PattayaPatrol דרך <a href="https://commons.wikimedia.org/wiki/File%3ADFC_2197_A_colorful_assortment_of_fresh_fruits_and_vegetables_-_apples_mango_dragon_fruit_kiwis_limes_bananas_and_more_-_arranged_on_a_wooden_crate.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>היתרון הגדול של מוצר פרווה הוא הגמישות שלו: ניתן לשלבו בחופשיות הן עם ארוחות בשריות והן עם ארוחות חלביות, מבלי ליצור כל בעיית כשרות. לכן, תעשיות מזון רבות שואפות באופן פעיל לפתח גרסאות פרווה למוצרים שמסורתית מכילים חלב — כמו שוקולד, מרגרינה או תחליפי שמנת — כדי להרחיב את שוקן.</p>
-<p>חשוב להבהיר ניואנס: מאכל יכול להיות פרווה מבחינת מרכיביו, אך לאבד מעמד זה אם יוצר על ציוד המעבד גם חלב או בשר, בהתאם לשאריות שעלולות להישאר. לכן ההכשר אינו בודק רק מרכיבים, אלא גם את ציוד הייצור ותהליכי הניקוי בין אצוות.</p>
-<p>דוגמאות נפוצות למוצרי פרווה: שמן זית, פסטה יבשה ללא ביצים, רוב סוגי הלחם (אם כי חלקם מכילים חמאה והופכים לחלביים), אגוזים שאינם מעובדים, ומשקאות מוגזים. בדיקת התווית תמיד היא הדרך הבטוחה היחידה לאישור, מאחר שהמתכון עשוי להשתנות בין מותגים או אפילו בין אריזות שונות של אותו מותג.</p>',
+<p>זו כנראה המילה שתקראו הכי הרבה על תוויות כשרות, והבנה מדויקת של משמעותה חוסכת מחצית מהספקות היומיומיים במטבח.</p>
+
+<h2>למה זו הקטגוריה המבוקשת ביותר</h2>
+<p>היתרון הגדול של מוצר פרווה הוא שניתן לשלבו בחופשיות הן עם ארוחות בשריות והן עם חלביות, מבלי ליצור שום התנגשות. זה הופך אותו לג\'וקר של המטבח הכשר.</p>
+<p>הקינוח הוא המקרה שבו זה בולט במיוחד. אם הארוחה הייתה בשרית, אי אפשר להגיש גלידה, פודינג או כל דבר עם שמנת, כי צריך להמתין בין <a href="/articulos/carne-y-leche">בשר לחלב</a>. קינוח פרווה פותר את הבעיה: אפשר להגישו מיד לאחר מנגל. לכן התעשייה משקיעה כל כך הרבה בפיתוח גרסאות פרווה למוצרים שמסורתית מכילים חלב — שוקולד, מרגרינה, קרמים צמחיים לאפייה, גלידות על בסיס מים או חלבים צמחיים: זה פותח שוק שאחרת לא היה יכול לצרוך אותם בארוחה העיקרית.</p>
+
+<h2>הניואנס שמבלבל את כולם: פרווה לפי מרכיבים מול פרווה מוסמך</h2>
+<p>כאן רוב האנשים טועים. מאכל יכול להיות בעל רשימת מרכיבים נקייה לחלוטין מחלב ועדיין לא להיות פרווה, אם יוצר על ציוד שמעבד גם מוצרי חלב.</p>
+<p>חשבו על מפעל עוגיות: אותו קו מייצר בבוקר עוגיות עם חמאה ואחר הצהריים עוגיות בלעדיה. למרות שהאצווה השנייה אינה מכילה שום מרכיב חלבי, הציוד סופג טעם מהאצווה הקודמת. התוצאה מתויגת <strong>"DE"</strong> (<em>dairy equipment</em>): אי אפשר לאכול אותה יחד עם בשר, אם כי כן אפשר לאחר ארוחה בשרית, בלי להמתין את השעות המלאות.</p>
+<p>לכן ההכשר אינו בדיקת מעבדה של מרכיבים: זהו ביקורת על התהליך כולו, כולל מה יוצר קודם באותו קו וכיצד הוא נוקה בין לבין.</p>
+
+<h2>דוגמאות מוחשיות למוצרי פרווה</h2>
+<ul>
+<li><strong>כמעט תמיד פרווה:</strong> שמן זית ושמנים צמחיים אחרים, סוכר, מלח, אורז, קטניות יבשות, פירות וירקות טריים, אגוזים לא מעובדים, מים מינרליים ומשקאות מוגזים.</li>
+<li><strong>תלוי במותג:</strong> לחם (רבים מכילים חמאה או מי גבינה), פסטה (זו שעם ביצים עדיין פרווה, אך כדאי לוודא), שוקולד (המריר בדרך כלל פרווה, זה עם החלב כמובן לא), עוגיות, מרגרינה.</li>
+<li><strong>פרווה עם כוכבית:</strong> דגים הם פרווה, אך קהילות רבות אינן משלבות אותם עם בשר באותה צלחת מסיבה נפרדת, המוסברת ב<a href="/articulos/pescado-kosher-aletas-escamas">דגים כשרים</a>.</li>
+</ul>
+<p>תוכלו לבדוק את מעמדו של מותג מסוים ב<a href="/productos">מדריך המוצרים המוסמכים</a> שלנו, תוך סינון ישיר לפי סוג.</p>
+
+<h2>טעות קלאסית: לבלבל בין פרווה לטבעוני</h2>
+<p>אלו אינם אותו דבר, אף שיש ביניהם חפיפה רבה. מוצר טבעוני אינו מכיל דבר ממקור מן החי, אך ייתכן שיוצר על ציוד משותף עם מוצרים בשריים, או שהוא מכיל מרכיבים שההלכה מגבילה מסיבות אחרות — כמו יין, הזקוק להשגחה משלו גם אם הוא טבעוני.</p>
+<p>ולהפך: מוצר פרווה עשוי להכיל ביצה או דג, שאינם טבעוניים. אנו מרחיבים על ההבדלים ב<a href="/articulos/kashrut-y-veganismo">כשרות וטבעונות</a>.</p>
+
+<h2>שאלות נפוצות</h2>
+<p><strong>האם ביצה היא פרווה למרות שהיא מגיעה מבעל חיים?</strong><br>
+כן. הקטגוריה הבשרית מתייחסת לבשר בעל החיים, לא לתוצריו הלא-חלביים. ביצה של עוף כשר היא פרווה וניתן להשתמש בה גם בהכנות חלביות וגם בשריות. עם זאת, יש לבדוק אותה לפני השימוש, כפי שאנו מסבירים ב<a href="/articulos/huevos-kosher">ביצים כשרות</a>.</p>
+<p><strong>אם אבשל משהו פרווה בסיר בשרי, האם הוא נשאר פרווה?</strong><br>
+לא בדיוק. הוא נחשב ל"פרווה שבושל בבשרי", מה שאומר בפועל שאי אפשר להגישו עם חלבי. לכן משפחות רבות מחזיקות כמה סירים המיועדים אך ורק לפרווה, בדיוק כדי לשמר את הגמישות הזו.</p>
+<p><strong>האם דבש הוא פרווה אם הדבורים מייצרות אותו?</strong><br>
+כן, דבש הוא פרווה וכשר, למרות שהדבורה אינה בעל חיים כשר. זו אחת החריגות הקלאסיות של הכשרות, משום שהדבש אינו נחשב תוצר של גוף הדבורה אלא צוף שעבר שינוי.</p>
+
+<h2>להמשך קריאה</h2>
+<p>ההשלמה הטבעית למאמר זה היא <a href="/articulos/carne-y-leche">בשר וחלב: למה לא מערבבים</a>, המסביר מהיכן מגיעה כל החלוקה הזו. לפירוט על אופן פענוח הסמלים על האריזה, ראו <a href="/articulos/como-leer-etiqueta-kosher">כיצד לקרוא תווית כשרות</a>.</p>
+<p>במקורות חיצוניים, <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">המדריך של Orthodox Union</a> מכסה את הקטגוריות עם המקורות ההלכתיים המתאימים, ותוכלו לעיין בערך ב<a href="https://en.wikipedia.org/wiki/Pareve" target="_blank" rel="noopener">ויקיפדיה על פרווה</a> לעיון מהיר. גופי כשרות נוספים עם חומר ציבורי שימושי הם <a href="https://www.ok.org" target="_blank" rel="noopener">OK Kosher Certification</a> ו<a href="https://www.crcweb.org" target="_blank" rel="noopener">Chicago Rabbinical Council (cRc)</a>, המפרסם רשימות מוצרים מעודכנות.</p>',
             ],
             'shejita-sacrificio-kosher' => [
                 'title' => 'שחיטה: שיטת השחיטה הכשרה',
@@ -4360,15 +4484,46 @@ Mélanger les ustensiles carnés et laitiers de façon répétée peut complique
             'que-significa-pareve' => [
                 'title' => 'Парве: что это значит и почему так часто встречается на этикетках',
                 'excerpt' => 'Парве — одно из самых часто повторяемых слов в кошерной маркировке. Объясняем, что это значит и почему так ценится.',
-                'content' => '<p>"Парве" описывает продукты, которые не являются ни мясными, ни молочными: фрукты, овощи, яйца, рыба, злаки и большинство продуктов, изготовленных без молочных или мясных ингредиентов животного происхождения.</p>
+                'content' => '<p>Парве (на идише — «нейтральный») — это слово, описывающее продукты, которые не являются ни мясными, ни молочными: фрукты, овощи, яйца, рыба, злаки, бобовые и большинство продуктов, изготовленных без молочных или мясных ингредиентов.</p>
 
 <figure style="margin:1.5rem 0;">
   <img src="/images/articulos/que-significa-pareve.jpg" alt="Свежие фрукты и овощи парве по своей природе: сочетаются и с мясным, и с молочным." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
   <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Свежие фрукты и овощи парве по своей природе: сочетаются и с мясным, и с молочным. Фото: PattayaPatrol через <a href="https://commons.wikimedia.org/wiki/File%3ADFC_2197_A_colorful_assortment_of_fresh_fruits_and_vegetables_-_apples_mango_dragon_fruit_kiwis_limes_bananas_and_more_-_arranged_on_a_wooden_crate.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
 </figure>
-<p>Главное преимущество продукта парве — его гибкость: его можно свободно сочетать как с мясными, так и с молочными блюдами, не создавая никакого конфликта кашрута. Поэтому многие пищевые компании активно разрабатывают версии парве продуктов, традиционно содержащих молочные компоненты — например, шоколад, маргарин или заменители сливок, — чтобы расширить свой рынок.</p>
-<p>Важно прояснить нюанс: продукт может быть парве по ингредиентам, но потерять этот статус, если он изготовлен на оборудовании, которое также обрабатывает молочные продукты или мясо, в зависимости от возможных следов. Поэтому сертификация анализирует не только ингредиенты, но и производственное оборудование и процессы очистки между партиями.</p>
-<p>Некоторые распространённые примеры продуктов парве: оливковое масло, сухие макароны без яиц, большинство видов хлеба (хотя некоторые содержат сливочное масло и становятся молочными), необработанные орехи и газированные напитки. Всегда проверять этикетку — единственный надёжный способ подтверждения, поскольку рецепт может меняться между брендами или даже между разными вариантами одного бренда.</p>',
+<p>Это, вероятно, слово, которое вы будете читать на кошерных этикетках чаще всего, и понимание того, что оно означает, избавляет от половины повседневных сомнений на кухне.</p>
+
+<h2>Почему это самая востребованная категория</h2>
+<p>Главное преимущество продукта парве в том, что его можно свободно сочетать как с мясными, так и с молочными блюдами, не создавая никакого конфликта. Это делает его джокером кошерной кухни.</p>
+<p>Больше всего это заметно на десерте. Если ужин был мясным, нельзя подать мороженое, пудинг или что-либо со сливками, потому что нужно выждать между <a href="/articulos/carne-y-leche">мясом и молочным</a>. Десерт парве решает проблему: его можно подать сразу после барбекю. Именно поэтому индустрия так вкладывается в разработку парве-версий продуктов, традиционно содержащих молочное — шоколад, маргарин, растительные сливки для выпечки, мороженое на водной основе или на растительном молоке: это открывает рынок, который иначе не мог бы употреблять их с основным блюдом.</p>
+
+<h2>Нюанс, который всех сбивает с толку: парве по ингредиентам против сертифицированного парве</h2>
+<p>Именно здесь большинство людей ошибается. Продукт может иметь безупречно свободный от молочного состав и всё равно не быть парве, если он изготовлен на оборудовании, которое также обрабатывает молочные продукты.</p>
+<p>Представьте фабрику печенья: одна и та же линия производит утром печенье со сливочным маслом, а днём — без него. Хотя вторая партия не содержит молочных ингредиентов, оборудование сохраняет вкус предыдущей партии. Результат маркируется <strong>«DE»</strong> (<em>dairy equipment</em>): его нельзя есть вместе с мясом, хотя можно после мясной трапезы, не выжидая полные часы.</p>
+<p>Поэтому кошерная сертификация — это не лабораторный анализ ингредиентов: это аудит всего процесса, включая то, что производилось ранее на этой линии и как её очищали в промежутке.</p>
+
+<h2>Конкретные примеры продуктов парве</h2>
+<ul>
+<li><strong>Почти всегда парве:</strong> оливковое и другие растительные масла, сахар, соль, рис, сухие бобовые, свежие фрукты и овощи, необработанные орехи, минеральная вода и газированные напитки.</li>
+<li><strong>Зависит от бренда:</strong> хлеб (многие содержат сливочное масло или сыворотку), макароны (яичные остаются парве, но стоит проверять), шоколад (тёмный обычно парве, молочный — очевидно нет), печенье, маргарин.</li>
+<li><strong>Парве со звёздочкой:</strong> рыба является парве, но многие общины не сочетают её с мясом на одной тарелке по отдельной причине, объяснённой в статье <a href="/articulos/pescado-kosher-aletas-escamas">кошерная рыба</a>.</li>
+</ul>
+<p>Вы можете проверить статус конкретного бренда в нашем <a href="/productos">каталоге сертифицированных продуктов</a>, фильтруя напрямую по типу.</p>
+
+<h2>Классическая ошибка: путать парве с веганским</h2>
+<p>Это не одно и то же, хотя они во многом пересекаются. Веганский продукт не содержит ничего животного происхождения, но он мог быть изготовлен на оборудовании, общем с мясными продуктами, или содержать ингредиенты, которые галаха ограничивает по другим причинам — например, вино, требующее собственного надзора, даже будучи веганским.</p>
+<p>И наоборот: продукт парве может содержать яйцо или рыбу, которые не являются веганскими. Мы разбираем различия в статье <a href="/articulos/kashrut-y-veganismo">кашрут и веганство</a>.</p>
+
+<h2>Часто задаваемые вопросы</h2>
+<p><strong>Является ли яйцо парве, хотя оно от животного?</strong><br>
+Да. Мясная категория относится к плоти животного, а не к его немолочным продуктам. Яйцо кошерной птицы является парве и может использоваться как в молочных, так и в мясных блюдах. При этом его нужно проверить перед использованием, как мы объясняем в статье <a href="/articulos/huevos-kosher">кошерные яйца</a>.</p>
+<p><strong>Если я приготовлю что-то парве в мясной кастрюле, останется ли это парве?</strong><br>
+Не совсем. Оно становится «парве, приготовленным в мясном», что на практике означает, что его нельзя подавать с молочным. Поэтому многие семьи держат несколько кастрюль исключительно для парве — именно чтобы сохранить эту гибкость.</p>
+<p><strong>Является ли мёд парве, если его производят пчёлы?</strong><br>
+Да, мёд является парве и кошерным, несмотря на то, что пчела не кошерное животное. Это одно из классических исключений кашрута, поскольку мёд считается не продуктом тела пчелы, а преобразованным нектаром.</p>
+
+<h2>Что почитать дальше</h2>
+<p>Естественное дополнение к этой статье — <a href="/articulos/carne-y-leche">мясо и молоко: почему их не смешивают</a>, где объясняется, откуда взялось всё это разделение. Подробнее о том, как расшифровывать символы на упаковке, читайте в статье <a href="/articulos/como-leer-etiqueta-kosher">как читать кошерную этикетку</a>.</p>
+<p>Из внешних источников <a href="https://oukosher.org/the-kosher-primer/" target="_blank" rel="noopener">руководство Orthodox Union</a> охватывает категории с соответствующими галахическими источниками, а для быстрой справки можно посмотреть статью в <a href="https://en.wikipedia.org/wiki/Pareve" target="_blank" rel="noopener">Википедии о парве</a>. Другие сертификаторы с полезными общедоступными материалами — <a href="https://www.ok.org" target="_blank" rel="noopener">OK Kosher Certification</a> и <a href="https://www.crcweb.org" target="_blank" rel="noopener">Chicago Rabbinical Council (cRc)</a>, публикующий актуальные списки продуктов.</p>',
             ],
             'shejita-sacrificio-kosher' => [
                 'title' => 'Шхита: метод кошерного забоя',

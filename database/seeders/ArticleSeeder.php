@@ -71,7 +71,7 @@ class ArticleSeeder extends Seeder
 
 <h2>Verduras pre-revisadas: ¿son confiables?</h2>
 <p>Hoy existen verduras cultivadas bajo supervisión específica para minimizar la infestación —típicamente hidropónicas o de invernadero controlado— que se venden con certificación kosher y no requieren revisión adicional. Son considerablemente más caras, pero para familias con poco tiempo o para eventos grandes resuelven el problema de raíz.</p>
-<p>La advertencia importante: que un paquete diga "lavado y listo para consumir" no significa nada desde el punto de vista del kashrut. Ese sello habla de higiene alimentaria, no de revisión por insectos. Solo sirve si tiene certificación kosher explícita de una agencia reconocida. Podés verificar el estatus de un producto puntual en nuestro <a href="/">directorio de productos certificados</a>.</p>
+<p>La advertencia importante: que un paquete diga "lavado y listo para consumir" no significa nada desde el punto de vista del kashrut. Ese sello habla de higiene alimentaria, no de revisión por insectos. Solo sirve si tiene certificación kosher explícita de una agencia reconocida. Podés verificar el estatus de un producto puntual en nuestro <a href="/productos">directorio de productos certificados</a>.</p>
 
 <h2>Preguntas frecuentes</h2>
 <p><strong>¿Y si encuentro un insecto después de haber cocinado?</strong><br>
@@ -672,7 +672,7 @@ El símbolo en sí (el diseño) suele ser consistente porque está registrado po
 <li><strong>Depende de la marca:</strong> pan (muchos llevan manteca o suero de leche), pastas (las que llevan huevo siguen siendo parve, pero conviene verificar), chocolate (el amargo suele ser parve, el con leche obviamente no), galletitas, margarina.</li>
 <li><strong>Parve pero con asterisco:</strong> el pescado es parve, pero muchas comunidades no lo combinan con carne en el mismo plato por una cuestión aparte, explicada en <a href="/articulos/pescado-kosher-aletas-escamas">pescado kosher</a>.</li>
 </ul>
-<p>Podés verificar el estatus de una marca puntual en nuestro <a href="/">directorio de productos certificados</a>, filtrando directamente por tipo.</p>
+<p>Podés verificar el estatus de una marca puntual en nuestro <a href="/productos">directorio de productos certificados</a>, filtrando directamente por tipo.</p>
 
 <h2>Un error clásico: confundir parve con vegano</h2>
 <p>No son lo mismo, aunque se superpongan bastante. Un producto vegano no contiene nada de origen animal, pero puede haberse elaborado en equipamiento compartido con productos cárnicos, o contener ingredientes que la halajá restringe por otros motivos —como el vino, que necesita supervisión propia aunque sea vegano.</p>
