@@ -94,8 +94,8 @@ No. Halacha refers to what is visible to the naked eye. Microorganisms that can 
                 'content' => '<p>The prohibition on mixing meat and milk is based on a verse that appears three times in the Torah: "You shall not cook a kid in its mother\'s milk." Oral tradition interpreted this phrase as a triple prohibition: not to cook, not to eat, and not to derive any benefit from a mixture of meat and milk.</p>
 
 <figure style="margin:1.5rem 0;">
-  <img src="/images/articulos/carne-y-leche.jpg" alt="An observant kosher kitchen keeps two complete sets of pots and utensils, one for meat and one for dairy." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
-  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">An observant kosher kitchen keeps two complete sets of pots and utensils, one for meat and one for dairy. Photo: PattayaPatrol via <a href="https://commons.wikimedia.org/wiki/File%3ADFC_2431_A_cook_flips_food_in_a_hot_pan_while_working_in_a_compact_well-used_kitchen_filled_with_pots_utensils_and_shelves_of_ingredients.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
+  <img src="/images/articulos/carne-y-leche.jpg" alt="Meat and milk do not mix in a kosher kitchen: they are two separate food categories." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Meat and milk do not mix in a kosher kitchen. Photos: PotatoCow25 (milk) and Kolforn (steak) via <a href="https://commons.wikimedia.org/wiki/File:Glass_of_milk_on_table.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>.</figcaption>
 </figure>
 <p>That last part often comes as a surprise. Someone who keeps kosher not only refrains from eating a dish of meat with cream: they also cannot sell it or give it away, because economic benefit is included in the prohibition too.</p>
 
@@ -1223,8 +1223,8 @@ Não. A halachá refere-se ao que é visível a olho nu. Os microrganismos que s
                 'content' => '<p>A proibição de misturar carne e leite se baseia em um versículo que aparece três vezes na Torá: "Não cozinharás um cabrito no leite de sua mãe". A tradição oral interpretou essa frase como uma proibição tripla: não cozinhar, não comer e não obter nenhum benefício de uma mistura de carne e leite.</p>
 
 <figure style="margin:1.5rem 0;">
-  <img src="/images/articulos/carne-y-leche.jpg" alt="Uma cozinha kosher observante mantém dois conjuntos completos de panelas e utensílios, um para carne e outro para laticínios." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
-  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Uma cozinha kosher observante mantém dois conjuntos completos de panelas e utensílios, um para carne e outro para laticínios. Foto: PattayaPatrol via <a href="https://commons.wikimedia.org/wiki/File%3ADFC_2431_A_cook_flips_food_in_a_hot_pan_while_working_in_a_compact_well-used_kitchen_filled_with_pots_utensils_and_shelves_of_ingredients.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
+  <img src="/images/articulos/carne-y-leche.jpg" alt="Carne e leite não se misturam em uma cozinha kosher: são duas categorias de alimentos separadas." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Carne e leite não se misturam em uma cozinha kosher. Fotos: PotatoCow25 (leite) e Kolforn (bife) via <a href="https://commons.wikimedia.org/wiki/File:Glass_of_milk_on_table.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>.</figcaption>
 </figure>
 <p>Essa última parte costuma surpreender. Uma pessoa que segue o kashrut não apenas se abstém de comer um prato de carne com creme: também não pode vendê-lo nem doá-lo, porque o benefício econômico também está incluído na proibição.</p>
 
@@ -2351,8 +2351,8 @@ Non. La halakha se réfère à ce qui est visible à l\'œil nu. Les micro-organ
                 'content' => '<p>L\'interdiction de mélanger viande et lait repose sur un verset qui apparaît trois fois dans la Torah : "Tu ne cuiras pas un chevreau dans le lait de sa mère". La tradition orale a interprété cette phrase comme une triple interdiction : ne pas cuire, ne pas manger et ne tirer aucun bénéfice d\'un mélange de viande et de lait.</p>
 
 <figure style="margin:1.5rem 0;">
-  <img src="/images/articulos/carne-y-leche.jpg" alt="Une cuisine casher observante garde deux jeux complets d&#039;ustensiles, un pour la viande et un pour les produits laitiers." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
-  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Une cuisine casher observante garde deux jeux complets d\'ustensiles, un pour la viande et un pour les produits laitiers. Photo: PattayaPatrol via <a href="https://commons.wikimedia.org/wiki/File%3ADFC_2431_A_cook_flips_food_in_a_hot_pan_while_working_in_a_compact_well-used_kitchen_filled_with_pots_utensils_and_shelves_of_ingredients.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
+  <img src="/images/articulos/carne-y-leche.jpg" alt="La viande et le lait ne se mélangent pas dans une cuisine casher : ce sont deux catégories d&#039;aliments séparées." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">La viande et le lait ne se mélangent pas dans une cuisine casher. Photos : PotatoCow25 (lait) et Kolforn (steak) via <a href="https://commons.wikimedia.org/wiki/File:Glass_of_milk_on_table.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>.</figcaption>
 </figure>
 <p>Cette dernière partie surprend souvent. Une personne qui suit la cacherout ne s\'abstient pas seulement de manger un plat de viande à la crème : elle ne peut pas non plus le vendre ni le donner, car le bénéfice économique est lui aussi inclus dans l\'interdiction.</p>
 
@@ -3479,8 +3479,8 @@ Mélanger les ustensiles carnés et laitiers de façon répétée peut complique
                 'content' => '<p>איסור בישול בשר וחלב יחד מבוסס על פסוק שמופיע שלוש פעמים בתורה: "לא תבשל גדי בחלב אמו". התורה שבעל פה פירשה משפט זה כאיסור משולש: לא לבשל, לא לאכול ולא ליהנות מתערובת בשר וחלב.</p>
 
 <figure style="margin:1.5rem 0;">
-  <img src="/images/articulos/carne-y-leche.jpg" alt="מטבח כשר מקפיד על שני סטים נפרדים של כלים: אחד לבשרי ואחד לחלבי." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
-  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">מטבח כשר מקפיד על שני סטים נפרדים של כלים: אחד לבשרי ואחד לחלבי. צילום: PattayaPatrol דרך <a href="https://commons.wikimedia.org/wiki/File%3ADFC_2431_A_cook_flips_food_in_a_hot_pan_while_working_in_a_compact_well-used_kitchen_filled_with_pots_utensils_and_shelves_of_ingredients.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
+  <img src="/images/articulos/carne-y-leche.jpg" alt="בשר וחלב אינם מתערבבים במטבח כשר: אלו שתי קטגוריות מזון נפרדות." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">בשר וחלב אינם מתערבבים במטבח כשר. צילומים: PotatoCow25 (חלב) ו-Kolforn (סטייק) דרך <a href="https://commons.wikimedia.org/wiki/File:Glass_of_milk_on_table.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>.</figcaption>
 </figure>
 <p>החלק האחרון הזה בדרך כלל מפתיע. אדם שומר כשרות לא רק נמנע מלאכול מנת בשר עם שמנת: הוא גם אינו יכול למכור אותה או לתת אותה במתנה, משום שגם ההנאה הכלכלית כלולה באיסור.</p>
 
@@ -4607,8 +4607,8 @@ Mélanger les ustensiles carnés et laitiers de façon répétée peut complique
                 'content' => '<p>Запрет на смешивание мяса и молока основан на стихе, который трижды встречается в Торе: "Не вари козлёнка в молоке матери его". Устная традиция истолковала эту фразу как тройной запрет: не варить, не есть и не извлекать никакой пользы из смеси мяса и молока.</p>
 
 <figure style="margin:1.5rem 0;">
-  <img src="/images/articulos/carne-y-leche.jpg" alt="На кошерной кухне держат два полных набора посуды: отдельно для мясного и для молочного." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
-  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">На кошерной кухне держат два полных набора посуды: отдельно для мясного и для молочного. Фото: PattayaPatrol через <a href="https://commons.wikimedia.org/wiki/File%3ADFC_2431_A_cook_flips_food_in_a_hot_pan_while_working_in_a_compact_well-used_kitchen_filled_with_pots_utensils_and_shelves_of_ingredients.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
+  <img src="/images/articulos/carne-y-leche.jpg" alt="Мясо и молоко не смешиваются на кошерной кухне: это две отдельные категории продуктов." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Мясо и молоко не смешиваются на кошерной кухне. Фото: PotatoCow25 (молоко) и Kolforn (стейк) через <a href="https://commons.wikimedia.org/wiki/File:Glass_of_milk_on_table.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>.</figcaption>
 </figure>
 <p>Эта последняя часть обычно удивляет. Человек, соблюдающий кашрут, не только воздерживается от блюда из мяса со сливками: он также не может его продать или подарить, потому что экономическая выгода тоже включена в запрет.</p>
 

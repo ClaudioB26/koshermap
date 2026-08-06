@@ -93,8 +93,8 @@ No. La halajá se refiere a lo que es visible a simple vista. Los microorganismo
                 'content' => '<p>"No cocinarás un cabrito en la leche de su madre." Ese versículo aparece tres veces en la Torá —en Éxodo dos veces y en Deuteronomio una— y de esa repetición la tradición oral sacó una prohibición triple: no cocinar carne con leche, no comerla mezclada y tampoco sacar ningún provecho de esa mezcla, ni siquiera vendiéndola.</p>
 
 <figure style="margin:1.5rem 0;">
-  <img src="/images/articulos/carne-y-leche.jpg" alt="Una cocina kosher observante mantiene dos juegos completos de ollas y utensilios, uno para carne y otro para lácteos." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
-  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Una cocina kosher observante mantiene dos juegos completos de ollas y utensilios, uno para carne y otro para lácteos. Foto: PattayaPatrol vía <a href="https://commons.wikimedia.org/wiki/File%3ADFC_2431_A_cook_flips_food_in_a_hot_pan_while_working_in_a_compact_well-used_kitchen_filled_with_pots_utensils_and_shelves_of_ingredients.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, CC BY-SA 4.0.</figcaption>
+  <img src="/images/articulos/carne-y-leche.jpg" alt="Carne y leche no se combinan en una cocina kosher: son dos categorías separadas de alimentos." loading="lazy" style="width:100%;height:auto;border-radius:12px;display:block;">
+  <figcaption style="font-size:0.8rem;color:#6b7280;margin-top:0.6rem;line-height:1.5;">Carne y leche no se combinan en una cocina kosher. Fotos: PotatoCow25 (leche) y Kolforn (bife) vía <a href="https://commons.wikimedia.org/wiki/File:Glass_of_milk_on_table.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>.</figcaption>
 </figure>
 <p>Esa última parte suele sorprender. Una persona que sigue el kashrut no solo se abstiene de comer un plato de carne con crema: tampoco puede venderlo ni regalarlo, porque el beneficio económico también está incluido en la prohibición.</p>
 
