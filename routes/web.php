@@ -177,7 +177,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::post('/login', [\App\Http\Controllers\Admin\AdminAuthController::class, 'login'])->name('login.post');
 
     // Rutas protegidas
-    Route::middleware('auth')->group(function () {
+    Route::middleware(['auth', 'admin.check'])->group(function () {
         Route::post('/logout', [\App\Http\Controllers\Admin\AdminAuthController::class, 'logout'])->name('logout');
 
         Route::get('/reports',                  [\App\Http\Controllers\Admin\ReportsAdminController::class, 'index'])->name('reports.index');
