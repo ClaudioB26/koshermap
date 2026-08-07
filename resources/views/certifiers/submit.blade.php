@@ -77,10 +77,17 @@
             <label class="block text-sm text-gray-600 mb-1">Documentos de respaldo</label>
             <p class="text-xs text-gray-400 mb-1">
                 Adjuntá el sello de certificación, cartas de recomendación, credenciales del rabinato u otro
-                material que nos ayude a verificarla. PDF o imagen (JPG/PNG), máx. 8&nbsp;MB por archivo, hasta 5 archivos.
+                material que nos ayude a verificarla. Podés subir varios archivos (PDF o imagen JPG/PNG),
+                máx. 8&nbsp;MB c/u, hasta 5 en total.
             </p>
-            <input type="file" name="documents[]" multiple accept=".pdf,.jpg,.jpeg,.png,.webp"
-                   class="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:ring-2 focus:ring-blue-300 focus:outline-none">
+            <div id="documents-list" class="space-y-2">
+                <input type="file" name="documents[]" accept=".pdf,.jpg,.jpeg,.png,.webp"
+                       class="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:ring-2 focus:ring-blue-300 focus:outline-none">
+            </div>
+            <button type="button" id="add-document-btn"
+                    class="mt-2 text-sm text-blue-600 hover:underline">
+                + Agregar otro documento
+            </button>
         </div>
 
         <div>
@@ -113,5 +120,21 @@
         </button>
     </form>
 </div>
+
+<script>
+document.getElementById('add-document-btn').addEventListener('click', function () {
+    const list = document.getElementById('documents-list');
+    if (list.children.length >= 5) {
+        alert('Máximo 5 documentos.');
+        return;
+    }
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.name = 'documents[]';
+    input.accept = '.pdf,.jpg,.jpeg,.png,.webp';
+    input.className = 'w-full text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:ring-2 focus:ring-blue-300 focus:outline-none';
+    list.appendChild(input);
+});
+</script>
 
 @endsection
