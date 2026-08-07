@@ -83,5 +83,8 @@
     "logout_link": "Déconnexion",
     "my_places": "Mes établissements",
     "empty_category_notice": "Nous n'avons pas encore de produits dans cette catégorie. En attendant, vous pouvez lire nos guides sur la cacherout ou explorer d'autres catégories.",
-    "related_articles_heading": "Cela pourrait vous intéresser"
+    "related_articles_heading": "Cela pourrait vous intéresser",
+    "certifier_signup_title": "Êtes-vous un organisme de certification cachère ?",
+    "certifier_signup_body": "Inscrivez votre organisme de certification sur KosherMap. Nous l'examinerons et, une fois approuvé, vous pourrez ajouter vous-même vos produits certifiés.",
+    "certifier_signup_cta": "Inscrire mon organisme"
 }

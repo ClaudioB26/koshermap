@@ -113,6 +113,11 @@ Route::get('/countries', [CatalogController::class, 'countries'])->name('countri
 Route::get('/countries/{slug}', [CatalogController::class, 'country'])->name('countries.show');
 
 Route::get('/certifiers', [CatalogController::class, 'certifiers'])->name('certifiers.index');
+Route::middleware('auth')->group(function () {
+    // Antes de /certifiers/{slug}: si no, "agregar" se interpreta como un slug de certificadora.
+    Route::get('/certifiers/agregar', [\App\Http\Controllers\CertifierSubmissionController::class, 'create'])->name('certifiers.create');
+    Route::post('/certifiers/agregar', [\App\Http\Controllers\CertifierSubmissionController::class, 'store'])->name('certifiers.store');
+});
 Route::get('/certifiers/{slug}', [CatalogController::class, 'certifier'])->name('certifiers.show');
 Route::get('/certifiers/{slug}/contacto', [\App\Http\Controllers\ContactController::class, 'certifierContact'])->name('certifiers.contact');
 
@@ -136,6 +141,14 @@ Route::post('/logout', [GoogleAuthController::class, 'logout'])->name('logout');
 
 Route::middleware('auth')->prefix('cuenta')->name('account.')->group(function () {
     Route::get('/mis-locales', [AccountController::class, 'places'])->name('places');
+    Route::get('/mi-certificadora', [AccountController::class, 'certifier'])->name('certifiers.my');
+
+    Route::get('/mis-productos', [\App\Http\Controllers\ProductSubmissionController::class, 'index'])->name('products');
+    Route::get('/mis-productos/nuevo', [\App\Http\Controllers\ProductSubmissionController::class, 'create'])->name('products.create');
+    Route::post('/mis-productos', [\App\Http\Controllers\ProductSubmissionController::class, 'store'])->name('products.store');
+    Route::get('/mis-productos/{product}/editar', [\App\Http\Controllers\ProductSubmissionController::class, 'edit'])->name('products.edit');
+    Route::put('/mis-productos/{product}', [\App\Http\Controllers\ProductSubmissionController::class, 'update'])->name('products.update');
+    Route::post('/mis-productos/{product}/toggle', [\App\Http\Controllers\ProductSubmissionController::class, 'toggleActive'])->name('products.toggle');
 });
 
 // Categorías en árbol por certificadora
@@ -172,6 +185,10 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
         Route::get('/reviews',      [\App\Http\Controllers\Admin\ReviewsModerationController::class, 'index'])->name('reviews.index');
         Route::post('/reviews/bulk', [\App\Http\Controllers\Admin\ReviewsModerationController::class, 'bulkAction'])->name('reviews.bulk');
+
+        Route::get('/certifiers',                  [\App\Http\Controllers\Admin\CertifiersModerationController::class, 'index'])->name('certifiers.index');
+        Route::post('/certifiers/{certifier}/approve', [\App\Http\Controllers\Admin\CertifiersModerationController::class, 'approve'])->name('certifiers.approve');
+        Route::post('/certifiers/{certifier}/reject',  [\App\Http\Controllers\Admin\CertifiersModerationController::class, 'reject'])->name('certifiers.reject');
 
         Route::get('/places',                   [\App\Http\Controllers\Admin\PlacesModerationController::class, 'index'])->name('places.index');
         Route::post('/places/bulk',             [\App\Http\Controllers\Admin\PlacesModerationController::class, 'bulkAction'])->name('places.bulk');

@@ -83,5 +83,8 @@
     "logout_link": "Sair",
     "my_places": "Meus locais",
     "empty_category_notice": "Ainda não temos produtos cadastrados nesta categoria. Enquanto isso, você pode ler nossos guias sobre kashrut ou explorar outras categorias.",
-    "related_articles_heading": "Você pode se interessar"
+    "related_articles_heading": "Você pode se interessar",
+    "certifier_signup_title": "Você é uma certificadora kosher?",
+    "certifier_signup_body": "Cadastre sua agência de certificação na KosherMap. Vamos revisá-la e, uma vez aprovada, você poderá cadastrar seus próprios produtos certificados.",
+    "certifier_signup_cta": "Cadastrar minha certificadora"
 }

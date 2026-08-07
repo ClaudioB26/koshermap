@@ -21,6 +21,15 @@
         @endforeach
     </div>
 
+    <div class="max-w-3xl mx-auto mt-10 bg-blue-50 border border-blue-100 rounded-2xl p-6 text-center">
+        <p class="font-bold text-gray-800 mb-1">🏅 {{ __('certifier_signup_title') }}</p>
+        <p class="text-sm text-gray-500 mb-4">{{ __('certifier_signup_body') }}</p>
+        <a href="{{ route('certifiers.create') }}"
+           class="inline-block px-5 py-2 bg-blue-600 text-white rounded-lg font-semibold text-sm hover:bg-blue-700 transition">
+            {{ __('certifier_signup_cta') }}
+        </a>
+    </div>
+
     <div class="max-w-3xl mx-auto mt-16">
         <h2 class="text-xl font-bold text-gray-800 mb-6">{{ __('catalog.certifiers_faq_heading') }}</h2>
         <div class="space-y-5 text-sm text-gray-600 leading-relaxed">

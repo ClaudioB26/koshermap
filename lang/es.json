@@ -83,5 +83,8 @@
     "logout_link": "Cerrar sesión",
     "my_places": "Mis locales",
     "empty_category_notice": "Todavía no tenemos productos cargados en este rubro. Mientras tanto, podés leer nuestras guías sobre kashrut o explorar otros rubros del catálogo.",
-    "related_articles_heading": "Te puede interesar"
+    "related_articles_heading": "Te puede interesar",
+    "certifier_signup_title": "¿Sos una certificadora kosher?",
+    "certifier_signup_body": "Dá de alta tu agencia de certificación en KosherMap. La revisamos y, una vez aprobada, vas a poder cargar vos mismo tus productos certificados.",
+    "certifier_signup_cta": "Dar de alta mi certificadora"
 }

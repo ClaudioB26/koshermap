@@ -83,5 +83,8 @@
     "logout_link": "התנתקות",
     "my_places": "המקומות שלי",
     "empty_category_notice": "עדיין אין לנו מוצרים בקטגוריה זו. בינתיים, תוכלו לקרוא את המדריכים שלנו על כשרות או לעיין בקטגוריות אחרות.",
-    "related_articles_heading": "אולי יעניין אתכם"
+    "related_articles_heading": "אולי יעניין אתכם",
+    "certifier_signup_title": "האם אתם גוף הכשרות?",
+    "certifier_signup_body": "רשמו את גוף ההכשרות שלכם ב-KosherMap. נבדוק את הבקשה, ולאחר אישורה תוכלו להוסיף בעצמכם את המוצרים המוסמכים שלכם.",
+    "certifier_signup_cta": "רישום גוף הכשרות"
 }

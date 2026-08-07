@@ -100,7 +100,7 @@ class CatalogController extends Controller
 
     public function certifier(Request $request, $slug, RelatedArticlesService $relatedArticlesService)
     {
-        $certifier = Certifier::where('slug', $slug)->firstOrFail();
+        $certifier = Certifier::where('slug', $slug)->approved()->firstOrFail();
         
         $categorySlug = $request->input('category');
         

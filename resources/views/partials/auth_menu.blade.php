@@ -18,6 +18,14 @@
         <a href="{{ route('account.places') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700">
             🏪 {{ __('my_places') }}
         </a>
+        @if(auth()->user()->isCertifier())
+        <a href="{{ route('account.products') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700">
+            📦 Mis productos
+        </a>
+        @endif
+        <a href="{{ route('account.certifiers.my') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700">
+            🏅 Mi certificadora
+        </a>
         <form method="POST" action="{{ route('logout') }}">
             @csrf
             <button type="submit" class="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700">
