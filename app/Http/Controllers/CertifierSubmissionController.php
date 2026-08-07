@@ -6,6 +6,7 @@ use App\Models\Certifier;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 class CertifierSubmissionController extends Controller
@@ -33,6 +34,8 @@ class CertifierSubmissionController extends Controller
             'website'               => 'nullable|url|max:255',
             'reference_info'        => 'nullable|string|max:1000',
             'submitted_by_phone'    => 'nullable|string|max:50',
+            'documents'             => 'nullable|array|max:5',
+            'documents.*'           => 'file|mimes:pdf,jpg,jpeg,png,webp|max:8192',
             'terms'                 => 'accepted',
         ]);
 
@@ -46,6 +49,15 @@ class CertifierSubmissionController extends Controller
             $n++;
         }
 
+        $documents = [];
+        foreach ($request->file('documents', []) as $file) {
+            $path = $file->store('certifier_documents', 'public');
+            $documents[] = [
+                'path' => $path,
+                'name' => $file->getClientOriginalName(),
+            ];
+        }
+
         $certifier = Certifier::create([
             'name'                 => $validated['name'],
             'slug'                 => $slug,
@@ -56,6 +68,7 @@ class CertifierSubmissionController extends Controller
             'coverage_description' => $validated['coverage_description'],
             'website'              => $validated['website'] ?? null,
             'reference_info'       => $validated['reference_info'] ?? null,
+            'documents'            => $documents,
             'submitted_by_name'    => $user->name,
             'submitted_by_email'   => $user->email,
             'submitted_by_phone'   => $validated['submitted_by_phone'] ?? null,
@@ -69,7 +82,8 @@ class CertifierSubmissionController extends Controller
                 . "Desde: " . ($certifier->founded_year ?: '—') . "\n"
                 . "Cobertura: {$certifier->coverage_description}\n"
                 . "Sitio web: " . ($certifier->website ?: '—') . "\n"
-                . "Referencias: " . ($certifier->reference_info ?: '—') . "\n\n"
+                . "Referencias: " . ($certifier->reference_info ?: '—') . "\n"
+                . "Documentos adjuntos: " . (count($documents) ?: 'ninguno') . "\n\n"
                 . "Enviado por: {$user->name} ({$user->email})"
                 . ($certifier->submitted_by_phone ? " / {$certifier->submitted_by_phone}" : '') . "\n\n"
                 . "Revisar en: " . route('admin.certifiers.index'),

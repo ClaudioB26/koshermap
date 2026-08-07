@@ -25,7 +25,7 @@
     </div>
     @endif
 
-    <form method="POST" action="{{ route('certifiers.store') }}"
+    <form method="POST" action="{{ route('certifiers.store') }}" enctype="multipart/form-data"
           class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 space-y-5">
         @csrf
 
@@ -71,6 +71,16 @@
             </p>
             <textarea name="reference_info" rows="3"
                       class="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:ring-2 focus:ring-blue-300 focus:outline-none">{{ old('reference_info') }}</textarea>
+        </div>
+
+        <div>
+            <label class="block text-sm text-gray-600 mb-1">Documentos de respaldo</label>
+            <p class="text-xs text-gray-400 mb-1">
+                Adjuntá el sello de certificación, cartas de recomendación, credenciales del rabinato u otro
+                material que nos ayude a verificarla. PDF o imagen (JPG/PNG), máx. 8&nbsp;MB por archivo, hasta 5 archivos.
+            </p>
+            <input type="file" name="documents[]" multiple accept=".pdf,.jpg,.jpeg,.png,.webp"
+                   class="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:ring-2 focus:ring-blue-300 focus:outline-none">
         </div>
 
         <div>

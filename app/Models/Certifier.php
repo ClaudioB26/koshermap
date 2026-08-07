@@ -14,8 +14,12 @@ class Certifier extends Model
     protected $fillable = [
         'name', 'slug', 'logo_symbol', 'about', 'website', 'contact_email', 'phone', 'hours', 'address',
         'status', 'rejection_reason', 'owner_id',
-        'rabbi_name', 'founded_year', 'coverage_description', 'reference_info',
+        'rabbi_name', 'founded_year', 'coverage_description', 'reference_info', 'documents',
         'submitted_by_name', 'submitted_by_email', 'submitted_by_phone',
+    ];
+
+    protected $casts = [
+        'documents' => 'array',
     ];
 
     public function products()

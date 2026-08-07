@@ -84,6 +84,13 @@
                         @if($certifier->reference_info)
                         <div class="text-xs text-gray-500 mt-1 max-w-xs">📎 {{ $certifier->reference_info }}</div>
                         @endif
+                        @if(!empty($certifier->documents))
+                        <div class="text-xs mt-1 space-y-0.5">
+                            @foreach($certifier->documents as $doc)
+                            <div><a href="{{ Storage::disk('public')->url($doc['path']) }}" target="_blank" class="text-blue-500 hover:underline">📄 {{ $doc['name'] }}</a></div>
+                            @endforeach
+                        </div>
+                        @endif
                         @if($certifier->rejection_reason)
                         <div class="text-xs text-red-500 mt-0.5">Motivo: {{ $certifier->rejection_reason }}</div>
                         @endif
