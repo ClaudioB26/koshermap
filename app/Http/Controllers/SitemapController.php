@@ -25,7 +25,7 @@ class SitemapController extends Controller
         );
         
         // Calcular cantidad de páginas para cada tipo
-        $certifierPages = ceil(Certifier::count() / 100);
+        $certifierPages = ceil(Certifier::approved()->count() / 100);
 
         // Nota: los sitemaps de productos, marcas y categorías quedan
         // deliberadamente fuera del índice (contenido demasiado fino para
@@ -166,7 +166,8 @@ class SitemapController extends Controller
         
         $offset = ($page - 1) * 100;
         
-        Certifier::orderBy('updated_at', 'desc')
+        Certifier::approved()
+            ->orderBy('updated_at', 'desc')
             ->skip($offset)
             ->take(100)
             ->chunk(25, function ($certifiers) use (&$xml) {

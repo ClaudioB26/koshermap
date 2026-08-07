@@ -90,8 +90,9 @@ class CatalogController extends Controller
 
     public function certifiers()
     {
-        // Solo mostrar certificadoras que tengan productos
-        $certifiers = Certifier::withCount('products')
+        // Solo mostrar certificadoras aprobadas que tengan productos
+        $certifiers = Certifier::approved()
+            ->withCount('products')
             ->having('products_count', '>', 0)
             ->orderBy('name')
             ->get();

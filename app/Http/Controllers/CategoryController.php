@@ -13,7 +13,7 @@ class CategoryController extends Controller
      */
     public function tree($certifierSlug)
     {
-        $certifier = Certifier::where('slug', $certifierSlug)->firstOrFail();
+        $certifier = Certifier::where('slug', $certifierSlug)->approved()->firstOrFail();
         
         // Obtener categorías principales con sus subcategorías y conteo de productos
         $categories = Category::whereNull('parent_id')
@@ -36,7 +36,7 @@ class CategoryController extends Controller
      */
     public function show($certifierSlug, $categorySlug)
     {
-        $certifier = Certifier::where('slug', $certifierSlug)->firstOrFail();
+        $certifier = Certifier::where('slug', $certifierSlug)->approved()->firstOrFail();
         $category = Category::where('slug', $categorySlug)->firstOrFail();
         
         // Obtener productos de esta categoría y subcategorías
@@ -94,7 +94,7 @@ class CategoryController extends Controller
      */
     public function api($certifierSlug)
     {
-        $certifier = Certifier::where('slug', $certifierSlug)->firstOrFail();
+        $certifier = Certifier::where('slug', $certifierSlug)->approved()->firstOrFail();
         
         $categories = Category::whereNull('parent_id')
             ->with(['children' => function($query) use ($certifier) {

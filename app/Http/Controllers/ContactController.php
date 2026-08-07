@@ -44,7 +44,7 @@ class ContactController extends Controller
 
     public function certifierContact(Request $request, string $slug)
     {
-        $certifier = Certifier::where('slug', $slug)->firstOrFail();
+        $certifier = Certifier::where('slug', $slug)->approved()->firstOrFail();
         $intent = $request->query('intent') === 'certify' ? 'certify' : 'general';
 
         return view('catalog.certifiers.contacto', compact('certifier', 'intent'));
