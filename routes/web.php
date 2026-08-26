@@ -145,7 +145,11 @@ Route::get('/certifiers/{slug}/contacto', [\App\Http\Controllers\ContactControll
 Route::get('/brands', fn () => abort(410))->name('brands.index');
 Route::get('/brands/{slug}', fn () => abort(410))->name('brands.show');
 
-Route::get('/places', [CatalogController::class, 'placesIndex'])->name('places.index');
+// Listado público retirado temporalmente para la revisión de AdSense (410
+// Gone). Es reversible: los datos y el resto del flujo (alta de locales,
+// moderación admin, "mis locales") siguen intactos, solo se apaga la
+// página pública. Ver doc/plan-adsense.md.
+Route::get('/places', fn () => abort(410))->name('places.index');
 Route::middleware('auth')->group(function () {
     Route::get('/places/agregar', [\App\Http\Controllers\PlaceSubmissionController::class, 'create'])->name('places.create');
     Route::post('/places/agregar', [\App\Http\Controllers\PlaceSubmissionController::class, 'store'])->name('places.store');

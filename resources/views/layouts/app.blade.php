@@ -90,7 +90,9 @@
 
             <!-- Search Bar -->
             <div class="flex-grow">
-                <form action="{{ request()->routeIs('places.*') || request()->routeIs('countries.*') ? route('places.index') : route('search.index') }}"
+                {{-- El listado de /places esta retirado (410) mientras dure la revision
+                     de AdSense, asi que la busqueda siempre apunta al buscador de productos. --}}
+                <form action="{{ route('search.index') }}"
                       method="GET" class="relative">
                     @if(isset($country) && $country instanceof \App\Models\Country)
                         <input type="hidden" name="country" value="{{ $country->slug }}">

@@ -22,11 +22,8 @@
                        text-white font-bold py-5 px-6 rounded-2xl shadow-lg transition text-base">
             🛒 <span>Buscar producto</span>
         </button>
-        <a href="{{ route('places.index') }}"
-           class="flex-1 flex items-center justify-center gap-3 bg-white hover:bg-gray-50
-                  text-gray-800 font-bold py-5 px-6 rounded-2xl shadow-lg border border-gray-200 transition text-base">
-            📍 <span>Encontrar local</span>
-        </a>
+        {{-- "Encontrar local" retirado junto con /places (410) mientras dure la
+             revision de AdSense. Ver doc/plan-adsense.md. --}}
         <a href="{{ \App\Models\Article::indexUrlFor(app()->getLocale()) }}"
            class="flex-1 flex items-center justify-center gap-3 bg-white hover:bg-gray-50
                   text-gray-800 font-bold py-5 px-6 rounded-2xl shadow-lg border border-gray-200 transition text-base">
