@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('title', $country->name . ' - KosherMap')
+{{-- Listado sin texto editorial propio: no debe indexarse ni mostrar anuncios. --}}
+@section('robots', 'noindex, follow')
+@section('no_ads', true)
 
 @section('content')
 

@@ -2,6 +2,10 @@
 
 @section('title', 'Marcas Kosher - KosherMap')
 @section('meta_description', 'Explorá todas las marcas de productos kosher disponibles en KosherMap: alimentos, bebidas y más, certificados por las principales agencias kosher de América Latina, Israel y Estados Unidos.')
+{{-- Hub de ~1.100 links a fichas de marca que estan fuera del rastreo: sin
+     contenido propio, no debe indexarse ni mostrar anuncios. Ver doc/plan-adsense.md. --}}
+@section('robots', 'noindex, follow')
+@section('no_ads', true)
 
 @section('content')
     <h1 class="text-3xl font-bold mb-4 text-center text-blue-800">Marcas con Productos Kosher</h1>

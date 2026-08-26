@@ -130,7 +130,11 @@ class CatalogController extends Controller
 
     public function brands()
     {
+        // Sin slug no se puede construir la URL de la ficha y route() tira 500:
+        // el listado se rompia entero por una sola marca mal cargada.
         $brands = Brand::withCount('products')
+            ->whereNotNull('slug')
+            ->where('slug', '!=', '')
             ->orderBy('products_count', 'desc')
             ->orderBy('name')
             ->paginate(24);
