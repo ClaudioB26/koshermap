@@ -102,30 +102,18 @@ class CatalogController extends Controller
     public function certifier(Request $request, $slug, RelatedArticlesService $relatedArticlesService)
     {
         $certifier = Certifier::where('slug', $slug)->approved()->firstOrFail();
-        
-        $categorySlug = $request->input('category');
-        
-        $productsQuery = $certifier->products()->active()->with('category');
-        
-        $category = null;
-        if ($categorySlug) {
-            $productsQuery->whereHas('category', function($q) use ($categorySlug) {
-                $q->where('slug', $categorySlug);
-            });
-            $category = Category::where('slug', $categorySlug)->first();
-        }
-        
-        $products = $productsQuery->paginate(20)->withQueryString();
 
-        // Get all categories that have products certified by this certifier
-        // We only want categories that actually have products for this certifier
-        $categories = Category::whereHas('products', function($q) use ($certifier) {
-            $q->where('certifier_id', $certifier->id);
-        })->with('parent')->get()->sortBy('name');
+        // El listado paginado de productos por certificadora se saco: eran
+        // cientos de tarjetas genericas paginadas (ej. BDK Brasil: 1.167
+        // productos en 59 paginas), el mismo patron de contenido templado que
+        // se retiro de /product y /brands, solo que anidado aca. Se reemplaza
+        // por un conteo + link al buscador (/productos?certifier=), que ya
+        // esta en noindex. Ver doc/plan-adsense.md.
+        $productsCount = $certifier->products()->active()->count();
 
         $relatedArticles = $relatedArticlesService->forCertifier();
 
-        return view('catalog.certifiers.show', compact('certifier', 'products', 'categories', 'category', 'relatedArticles'));
+        return view('catalog.certifiers.show', compact('certifier', 'productsCount', 'relatedArticles'));
     }
 
     public function brands()
