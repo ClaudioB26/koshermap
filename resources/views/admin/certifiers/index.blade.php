@@ -67,6 +67,7 @@
                     <th class="text-left px-4 py-3 font-semibold text-gray-600">Rabino</th>
                     <th class="text-left px-4 py-3 font-semibold text-gray-600">Cobertura</th>
                     <th class="text-left px-4 py-3 font-semibold text-gray-600">Solicitante</th>
+                    <th class="text-left px-4 py-3 font-semibold text-gray-600">Plan / Leads</th>
                     <th class="text-right px-4 py-3 font-semibold text-gray-600">Acciones</th>
                 </tr>
             </thead>
@@ -103,6 +104,20 @@
                         @if($certifier->submitted_by_phone)
                         <br><span class="text-xs text-gray-400">{{ $certifier->submitted_by_phone }}</span>
                         @endif
+                    </td>
+                    <td class="px-4 py-3">
+                        @if($certifier->status === 'approved')
+                        <form method="POST" action="{{ route('admin.certifiers.tier', $certifier) }}" class="mb-1.5">
+                            @csrf
+                            <select name="tier" onchange="this.form.submit()"
+                                    class="text-xs border border-gray-300 rounded-lg px-2 py-1 bg-white">
+                                <option value="free" @selected($certifier->tier === 'free')>Gratis</option>
+                                <option value="destacada" @selected($certifier->tier === 'destacada')>Destacada</option>
+                                <option value="pro" @selected($certifier->tier === 'pro')>⭐ Pro</option>
+                            </select>
+                        </form>
+                        @endif
+                        <div class="text-xs text-gray-500">{{ $certifier->leads_count }} {{ $certifier->leads_count === 1 ? 'lead' : 'leads' }}</div>
                     </td>
                     <td class="px-4 py-3">
                         <div class="flex gap-2 justify-end items-center flex-wrap">

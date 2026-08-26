@@ -19,7 +19,14 @@
         @foreach($certifiers as $certifier)
         <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
             <div class="flex items-baseline justify-between gap-3 flex-wrap mb-2">
-                <h2 class="text-xl font-bold text-blue-800">{{ $certifier->name }}</h2>
+                <h2 class="text-xl font-bold text-blue-800 flex items-center gap-2">
+                    {{ $certifier->name }}
+                    @if($certifier->tier === 'pro')
+                    <span class="text-[10px] font-bold uppercase tracking-wide bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full">⭐ Pro</span>
+                    @elseif($certifier->tier === 'destacada')
+                    <span class="text-[10px] font-bold uppercase tracking-wide bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">Destacada</span>
+                    @endif
+                </h2>
                 <span class="text-xs text-gray-400">{{ number_format($certifier->products_count) }} productos certificados</span>
             </div>
 

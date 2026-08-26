@@ -142,6 +142,7 @@ Route::middleware('auth')->group(function () {
 // contenido no se borro, se mudo a /certifiers. Ver doc/plan-adsense.md.
 Route::get('/certifiers/{slug}', fn () => redirect()->route('certifiers.index', [], 301))->name('certifiers.show');
 Route::get('/certifiers/{slug}/contacto', [\App\Http\Controllers\ContactController::class, 'certifierContact'])->name('certifiers.contact');
+Route::post('/certifiers/{slug}/contacto', [\App\Http\Controllers\ContactController::class, 'storeCertifierLead'])->name('certifiers.contact.store');
 
 // Marcas retiradas junto con las fichas de producto: el listado era un hub de
 // ~1.100 links sin contenido propio y cada ficha de marca solo repetía
@@ -224,6 +225,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('/certifiers',                  [\App\Http\Controllers\Admin\CertifiersModerationController::class, 'index'])->name('certifiers.index');
         Route::post('/certifiers/{certifier}/approve', [\App\Http\Controllers\Admin\CertifiersModerationController::class, 'approve'])->name('certifiers.approve');
         Route::post('/certifiers/{certifier}/reject',  [\App\Http\Controllers\Admin\CertifiersModerationController::class, 'reject'])->name('certifiers.reject');
+        Route::post('/certifiers/{certifier}/tier',    [\App\Http\Controllers\Admin\CertifiersModerationController::class, 'updateTier'])->name('certifiers.tier');
 
         Route::get('/places',                   [\App\Http\Controllers\Admin\PlacesModerationController::class, 'index'])->name('places.index');
         Route::post('/places/bulk',             [\App\Http\Controllers\Admin\PlacesModerationController::class, 'bulkAction'])->name('places.bulk');

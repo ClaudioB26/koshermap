@@ -90,12 +90,15 @@ class CatalogController extends Controller
 
     public function certifiers()
     {
-        // Solo mostrar certificadoras aprobadas que tengan productos
+        // Solo mostrar certificadoras aprobadas que tengan productos.
+        // Orden: pro > destacada > free (ver Certifier::TIER_ORDER), alfabetico dentro de cada nivel.
         $certifiers = Certifier::approved()
             ->withCount('products')
             ->having('products_count', '>', 0)
             ->orderBy('name')
-            ->get();
+            ->get()
+            ->sortBy(fn ($c) => \App\Models\Certifier::TIER_ORDER[$c->tier] ?? 99)
+            ->values();
         return view('catalog.certifiers.index', compact('certifiers'));
     }
 

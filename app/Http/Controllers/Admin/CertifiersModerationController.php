@@ -16,6 +16,7 @@ class CertifiersModerationController extends Controller
         $status = $request->input('status', 'pending');
 
         $certifiers = Certifier::with('owner')
+            ->withCount('leads')
             ->where('status', $status)
             ->orderBy('created_at', 'desc')
             ->paginate(30)
@@ -42,6 +43,17 @@ class CertifiersModerationController extends Controller
         $this->notifyOwner($certifier, 'aprobada', "¡Buenas noticias! Tu certificadora \"{$certifier->name}\" fue aprobada en KosherMap. Ya podés cargar tus productos entrando a tu cuenta en koshermap.org.");
 
         return back()->with('success', "\"$certifier->name\" aprobada.");
+    }
+
+    public function updateTier(Request $request, Certifier $certifier)
+    {
+        $request->validate([
+            'tier' => 'required|in:' . implode(',', [Certifier::TIER_FREE, Certifier::TIER_DESTACADA, Certifier::TIER_PRO]),
+        ]);
+
+        $certifier->update(['tier' => $request->tier]);
+
+        return back()->with('success', "Plan de \"$certifier->name\" actualizado a {$request->tier}.");
     }
 
     public function reject(Request $request, Certifier $certifier)

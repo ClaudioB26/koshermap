@@ -11,9 +11,16 @@ class Certifier extends Model
     const STATUS_APPROVED = 'approved';
     const STATUS_REJECTED = 'rejected';
 
+    const TIER_FREE      = 'free';
+    const TIER_DESTACADA = 'destacada';
+    const TIER_PRO       = 'pro';
+
+    // Orden de aparicion en /certifiers: pro primero, despues destacada, gratis al final.
+    const TIER_ORDER = [self::TIER_PRO => 0, self::TIER_DESTACADA => 1, self::TIER_FREE => 2];
+
     protected $fillable = [
         'name', 'slug', 'logo_symbol', 'about', 'website', 'contact_email', 'phone', 'hours', 'address',
-        'status', 'rejection_reason', 'owner_id',
+        'status', 'tier', 'rejection_reason', 'owner_id',
         'rabbi_name', 'founded_year', 'coverage_description', 'reference_info', 'documents',
         'submitted_by_name', 'submitted_by_email', 'submitted_by_phone',
     ];
@@ -25,6 +32,11 @@ class Certifier extends Model
     public function products()
     {
         return $this->hasMany(Product::class);
+    }
+
+    public function leads()
+    {
+        return $this->hasMany(CertifierLead::class);
     }
 
     /**
