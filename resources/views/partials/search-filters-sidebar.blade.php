@@ -77,7 +77,6 @@
             </li>
             @endforeach
         </ul>
-        <a href="{{ route('brands.index') }}" class="text-xs text-blue-500 hover:underline mt-2 inline-block">Ver todas las marcas →</a>
     </div>
     @endif
 

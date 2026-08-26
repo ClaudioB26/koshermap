@@ -62,15 +62,12 @@ class SitemapController extends Controller
 
     public function show($type)
     {
-        // Para compatibilidad con rutas antiguas
-        if ($type === 'products') {
-            return $this->generateProductsSitemap(1);
-        } elseif ($type === 'categories') {
+        // Para compatibilidad con rutas antiguas.
+        // products y brands ya no se publican: esas páginas devuelven 410.
+        if ($type === 'categories') {
             return $this->generateCategoriesSitemap(1);
         } elseif ($type === 'certifiers') {
             return $this->generateCertifiersSitemap(1);
-        } elseif ($type === 'brands') {
-            return $this->generateBrandsSitemap(1);
         } elseif ($type === 'pages') {
             return $this->generatePagesSitemap();
         } elseif ($type === 'articles') {

@@ -151,6 +151,39 @@ user-agent (Googlebot, Mediapartners-Google, Bingbot, etc. tienen grupos propios
 llevan el Disallow explícito ignoran el de `User-agent: *`). Esto saca esas ~7.300 páginas
 del rastreo por completo para todo bot, no solo de la indexación.
 
+### Corrección definitiva: retirar el catálogo (ago 2026)
+
+Bloquear por `robots.txt` resultó insuficiente por una razón concreta: **no lo ve un revisor
+humano**. Las revisiones de AdSense incluyen personas navegando el sitio, y el buscador
+seguía llevando a las mismas fichas flacas que motivaron los rechazos anteriores.
+
+Datos que definieron la decisión:
+
+| Dato | Valor |
+|---|---|
+| Productos activos | 5.968 |
+| Con descripción real (>150 caracteres) | **86 (1,4%)** |
+| Reseñas en toda la base | **1** |
+| Vistas del sitio que linkeaban a `/product/` | 5 |
+
+La fila de resultados del buscador ya muestra certificadora, marca y estado kosher — o sea,
+responde entera la pregunta "¿esto es kosher?" sin necesidad de la ficha. Por eso se pudieron
+retirar las ~7.100 páginas **sin perder utilidad real** y sin caer en "servicios que no
+tenés": el sitio sigue haciendo lo que promete.
+
+Aplicado:
+
+- `/product/{slug}` y `/brands/{slug}` y `/brands` devuelven **410 Gone**.
+- **Se quitó el `Disallow` de `robots.txt`** (trampa importante: un `Disallow` le impide a
+  Google entrar a ver el 410, y las URLs quedarían en el limbo en vez de darse de baja).
+- Sitemaps de productos y marcas retirados del índice y del controlador.
+- Links removidos de las 5 vistas; vistas de ficha de producto/marca eliminadas.
+- **Los datos siguen en la base**: esto es solo la capa pública, es reversible.
+
+`/places` se mantuvo deliberadamente: no tiene fichas individuales (es una sola página con
+intro + FAQ propios), así que sacarlo eliminaba 1 página con contenido editorial y rompía
+toda la función de alta de locales, sin mover la aguja del ratio de contenido flaco.
+
 ### A esperar antes de la próxima revisión
 
 Igual que en rechazos anteriores: dar tiempo (2-4 semanas) para que el crawler reprocese el

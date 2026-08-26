@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\CatalogController;
 use App\Http\Controllers\CategoryController;
@@ -34,61 +33,39 @@ SVG;
 // Robots.txt generado por ruta (no depende de servir el archivo estático en el hosting)
 Route::get('/robots.txt', function () {
     $lines = [
-        // Bloqueadas del rastreo (no solo noindex): ~6.200 fichas de producto y
-        // ~1.100 de marca son contenido templado sin texto editorial propio.
-        // Estaban en noindex,follow, lo que significa que los bots (incluido el
-        // de revisión de AdSense) igual las recorrían en profundidad y evaluaban
-        // el sitio como mayormente catálogo generado. Ver doc/plan-adsense.md.
+        // /product/ y /brands/ NO se bloquean acá a propósito: devuelven 410 Gone
+        // y un Disallow le impediría a Google entrar a verlo, dejándolas en el
+        // limbo en vez de darlas de baja. Ver doc/plan-adsense.md.
         'User-agent: *',
         'Allow: /',
         'Disallow: /lang/',
-        'Disallow: /product/',
-        'Disallow: /brands/',
         '',
         'User-agent: Googlebot',
         'Allow: /',
-        'Disallow: /product/',
-        'Disallow: /brands/',
         '',
         'User-agent: Googlebot-Image',
         'Allow: /',
-        'Disallow: /product/',
-        'Disallow: /brands/',
         '',
         'User-agent: Mediapartners-Google',
         'Allow: /',
-        'Disallow: /product/',
-        'Disallow: /brands/',
         '',
         'User-agent: Bingbot',
         'Allow: /',
-        'Disallow: /product/',
-        'Disallow: /brands/',
         '',
         'User-agent: Slurp',
         'Allow: /',
-        'Disallow: /product/',
-        'Disallow: /brands/',
         '',
         'User-agent: DuckDuckBot',
         'Allow: /',
-        'Disallow: /product/',
-        'Disallow: /brands/',
         '',
         'User-agent: Baiduspider',
         'Allow: /',
-        'Disallow: /product/',
-        'Disallow: /brands/',
         '',
         'User-agent: YandexBot',
         'Allow: /',
-        'Disallow: /product/',
-        'Disallow: /brands/',
         '',
         'User-agent: Applebot',
         'Allow: /',
-        'Disallow: /product/',
-        'Disallow: /brands/',
         '',
         'User-agent: GPTBot',
         'Allow: /',
@@ -127,8 +104,21 @@ Route::get('/', function () {
     return redirect()->route('articles.index', [], 301);
 })->name('home');
 Route::get('/productos', [SearchController::class, 'index'])->name('search.index');
-// Ruta para ver un producto individual
-Route::get('/product/{slug}', [ProductController::class, 'show'])->name('products.show');
+// Fichas de producto retiradas de la web pública (410 Gone).
+//
+// Eran ~6.000 páginas templadas: de 5.968 productos activos solo 86 tenían
+// una descripción real, y había 1 sola reseña en toda la base. Google rechazó
+// el sitio 4 veces por "contenido de bajo valor" y esas fichas eran el 99% de
+// las páginas. La búsqueda de /productos sigue funcionando igual: cada fila de
+// resultado ya muestra certificadora, marca y estado kosher, que es la
+// pregunta que el usuario viene a responder.
+//
+// Se usa 410 (no 404) para que Google las dé de baja rápido, y por eso NO
+// deben bloquearse en robots.txt: un Disallow le impediría entrar a ver el
+// 410 y quedarían en el limbo. Ver doc/plan-adsense.md.
+//
+// Los datos siguen en la base: esto es solo la capa pública.
+Route::get('/product/{slug}', fn () => abort(410))->name('products.show');
 Route::post('/product/{slug}/reviews', [ReviewController::class, 'store'])->name('reviews.store');
 Route::post('/product/{product}/report', [ReportController::class, 'storeProduct'])->name('products.report');
 Route::post('/places/{place}/report',   [ReportController::class, 'storePlace'])->name('places.report');
@@ -149,8 +139,11 @@ Route::middleware('auth')->group(function () {
 Route::get('/certifiers/{slug}', [CatalogController::class, 'certifier'])->name('certifiers.show');
 Route::get('/certifiers/{slug}/contacto', [\App\Http\Controllers\ContactController::class, 'certifierContact'])->name('certifiers.contact');
 
-Route::get('/brands', [CatalogController::class, 'brands'])->name('brands.index');
-Route::get('/brands/{slug}', [CatalogController::class, 'brand'])->name('brands.show');
+// Marcas retiradas junto con las fichas de producto: el listado era un hub de
+// ~1.100 links sin contenido propio y cada ficha de marca solo repetía
+// productos. El filtro por marca sigue disponible en /productos?brand=...
+Route::get('/brands', fn () => abort(410))->name('brands.index');
+Route::get('/brands/{slug}', fn () => abort(410))->name('brands.show');
 
 Route::get('/places', [CatalogController::class, 'placesIndex'])->name('places.index');
 Route::middleware('auth')->group(function () {
@@ -232,10 +225,9 @@ Route::prefix('admin')->name('admin.')->group(function () {
 Route::get('/sitemap.xml', [App\Http\Controllers\SitemapController::class, 'index'])->name('sitemap.index');
 
 // Sitemaps paginados (más específicos primero)
-Route::get('/sitemap-products-{page}.xml', [App\Http\Controllers\SitemapController::class, 'products'])->name('sitemap.products');
+// products y brands quedan fuera: esas páginas ahora devuelven 410.
 Route::get('/sitemap-categories-{page}.xml', [App\Http\Controllers\SitemapController::class, 'categories'])->name('sitemap.categories');
 Route::get('/sitemap-certifiers-{page}.xml', [App\Http\Controllers\SitemapController::class, 'certifiers'])->name('sitemap.certifiers');
-Route::get('/sitemap-brands-{page}.xml', [App\Http\Controllers\SitemapController::class, 'brands'])->name('sitemap.brands');
 Route::get('/sitemap-pages.xml', [App\Http\Controllers\SitemapController::class, 'pages'])->name('sitemap.pages');
 Route::get('/sitemap-articles.xml', [App\Http\Controllers\SitemapController::class, 'articles'])->name('sitemap.articles');
 

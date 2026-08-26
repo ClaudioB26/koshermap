@@ -80,10 +80,6 @@
                 <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">
                     {{ $product->kosher_status }}
                 </span>
-                <a href="{{ route('products.show', $product->slug) }}"
-                   class="text-blue-500 hover:text-blue-700 text-sm font-medium">
-                    {{ __('View details') }}
-                </a>
             </div>
         </div>
         @endforeach

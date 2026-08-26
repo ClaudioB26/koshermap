@@ -189,8 +189,10 @@
             @include('partials.ad_banner')
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             @endif
-            <a href="/product/{{ $product->slug }}"
-               class="bg-white p-4 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-0.5 border border-gray-100 flex items-center justify-between transition-all duration-200 group">
+            {{-- Sin link: las fichas individuales se retiraron (410). La fila ya
+                 muestra certificadora, marca y estado kosher, que es la respuesta
+                 que el usuario busca. Ver doc/plan-adsense.md. --}}
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between">
                 <div class="flex items-center space-x-4">
                     @php
                         $productCertifier = $product->certifier;
@@ -231,7 +233,7 @@
                     <span class="text-[10px] text-gray-400 uppercase tracking-wider">{{ $product->source }}</span>
                     @endif
                 </div>
-            </a>
+            </div>
             @endforeach
         </div>
 

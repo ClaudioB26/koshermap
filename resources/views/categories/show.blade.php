@@ -61,10 +61,7 @@
                         </div>
                         
                         <h3 class="font-semibold text-gray-900 mb-2 line-clamp-2">
-                            <a href="{{ route('products.show', $product->slug) }}" 
-                               class="hover:text-blue-600 transition-colors">
-                                {{ $product->name }}
-                            </a>
+                            {{ $product->name }}
                         </h3>
                         
                         @if($product->barcode)
