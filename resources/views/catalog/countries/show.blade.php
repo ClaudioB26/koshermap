@@ -54,7 +54,7 @@
         <h2 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">{{ __('Certifiers in this region') }}</h2>
         <div class="flex gap-3 flex-wrap">
             @foreach($certifiers as $cert)
-            <a href="{{ route('certifiers.show', $cert->slug) }}"
+            <a href="{{ route('certifiers.index') }}"
                class="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-medium bg-blue-50 text-blue-800 hover:bg-blue-100 transition border border-blue-200">
                 {{ $cert->name }}
             </a>

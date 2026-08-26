@@ -57,7 +57,7 @@ $statusInfo = [
            class="inline-block px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition">
             📦 Cargar mis productos
         </a>
-        <a href="{{ route('certifiers.show', $certifier->slug) }}"
+        <a href="{{ route('certifiers.index') }}"
            class="inline-block ml-2 px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm font-medium rounded-lg hover:border-blue-400 transition">
             Ver mi ficha pública
         </a>

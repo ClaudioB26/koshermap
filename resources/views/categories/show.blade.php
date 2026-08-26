@@ -8,7 +8,7 @@
     <nav class="flex items-center space-x-2 text-sm text-gray-600 mb-6">
         <a href="{{ route('home') }}" class="hover:text-blue-600">Inicio</a>
         <span>/</span>
-        <a href="{{ route('certifiers.show', $certifier->slug) }}" class="hover:text-blue-600">{{ $certifier->name }}</a>
+        <a href="{{ route('certifiers.index') }}" class="hover:text-blue-600">{{ $certifier->name }}</a>
         <span>/</span>
         <a href="{{ route('certifiers.categories.tree', $certifier->slug) }}" class="hover:text-blue-600">Categorías</a>
         <span>/</span>

@@ -12,12 +12,49 @@
         <p>{!! __('catalog.certifiers_intro_3') !!}</p>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    {{-- Cada certificadora con toda su info en esta misma página (antes tenía
+         una ficha propia en /certifiers/{slug} que paginaba su catálogo
+         completo; ver doc/plan-adsense.md). --}}
+    <div class="max-w-3xl mx-auto space-y-6">
         @foreach($certifiers as $certifier)
-        <a href="{{ route('certifiers.show', $certifier->slug) }}" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition text-center border border-gray-100">
-            <h2 class="text-xl font-semibold">{{ $certifier->name }}</h2>
-            <div class="text-gray-500 text-sm mt-1">{{ $certifier->logo_symbol ?? 'N/A' }}</div>
-        </a>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+            <div class="flex items-baseline justify-between gap-3 flex-wrap mb-2">
+                <h2 class="text-xl font-bold text-blue-800">{{ $certifier->name }}</h2>
+                <span class="text-xs text-gray-400">{{ number_format($certifier->products_count) }} productos certificados</span>
+            </div>
+
+            @if($certifier->about)
+            <p class="text-gray-700 text-sm leading-relaxed mb-4">{{ $certifier->about }}</p>
+            @endif
+
+            <div class="flex flex-wrap gap-x-5 gap-y-1.5 text-sm text-gray-600 mb-4">
+                @if($certifier->contact_email)
+                <span>📧 <a href="mailto:{{ $certifier->contact_email }}" class="text-blue-600 hover:underline">{{ $certifier->contact_email }}</a></span>
+                @endif
+                @if($certifier->phone)
+                <span>📞 <a href="tel:{{ $certifier->phone }}" class="text-blue-600 hover:underline">{{ $certifier->phone }}</a></span>
+                @endif
+                @if($certifier->address)
+                <span>📍 {{ $certifier->address }}</span>
+                @endif
+                @if($certifier->website)
+                <span>🔗 <a href="{{ $certifier->website }}" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{{ __('Visit website') }}</a></span>
+                @endif
+            </div>
+
+            <div class="flex flex-wrap gap-3">
+                <a href="{{ route('certifiers.contact', ['slug' => $certifier->slug, 'intent' => 'certify']) }}"
+                   class="px-4 py-1.5 bg-white border border-gray-200 text-gray-700 rounded-lg text-sm font-medium hover:border-blue-400 hover:text-blue-600 transition">
+                    🏭 {{ __('want_to_certify_with', ['name' => $certifier->name]) }}
+                </a>
+                @if($certifier->products_count > 0)
+                <a href="{{ route('search.index', ['certifier' => $certifier->slug]) }}"
+                   class="px-4 py-1.5 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition">
+                    🛒 Buscar productos de {{ $certifier->name }}
+                </a>
+                @endif
+            </div>
+        </div>
         @endforeach
     </div>
 

@@ -136,7 +136,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/certifiers/agregar', [\App\Http\Controllers\CertifierSubmissionController::class, 'create'])->name('certifiers.create');
     Route::post('/certifiers/agregar', [\App\Http\Controllers\CertifierSubmissionController::class, 'store'])->name('certifiers.store');
 });
-Route::get('/certifiers/{slug}', [CatalogController::class, 'certifier'])->name('certifiers.show');
+// La ficha por certificadora se fusiono en /certifiers (fila por fila, con
+// toda la info): antes era indexable y paginaba su catalogo completo (ej.
+// BDK Brasil: 1.167 productos en 59 paginas). 301 y no 410 porque el
+// contenido no se borro, se mudo a /certifiers. Ver doc/plan-adsense.md.
+Route::get('/certifiers/{slug}', fn () => redirect()->route('certifiers.index', [], 301))->name('certifiers.show');
 Route::get('/certifiers/{slug}/contacto', [\App\Http\Controllers\ContactController::class, 'certifierContact'])->name('certifiers.contact');
 
 // Marcas retiradas junto con las fichas de producto: el listado era un hub de
@@ -177,8 +181,14 @@ Route::middleware('auth')->prefix('cuenta')->name('account.')->group(function ()
 });
 
 // Categorías en árbol por certificadora
-Route::get('/certifiers/{certifierSlug}/categories', [CategoryController::class, 'tree'])->name('certifiers.categories.tree');
-Route::get('/certifiers/{certifierSlug}/categories/{categorySlug}', [CategoryController::class, 'show'])->name('certifiers.categories.show');
+// Retirado (410): mismo patron que /certifiers/{slug} y /product — un arbol
+// de categorias por certificadora con productos paginados (7 certificadoras x
+// ~67 categorias x paginacion = potencialmente miles de paginas index,follow
+// casi identicas). Nada en el sitio lo linkeaba ya (huerfano) y es redundante
+// con /productos?certifier=X&category=Y, que ya existe y es noindex. Ver
+// doc/plan-adsense.md.
+Route::get('/certifiers/{certifierSlug}/categories', fn () => abort(410))->name('certifiers.categories.tree');
+Route::get('/certifiers/{certifierSlug}/categories/{categorySlug}', fn () => abort(410))->name('certifiers.categories.show');
 Route::get('/api/certifiers/{certifierSlug}/categories', [CategoryController::class, 'api'])->name('certifiers.categories.api');
 
 // Geolocalización y preferencias de país
