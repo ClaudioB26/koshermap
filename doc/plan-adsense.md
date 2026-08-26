@@ -128,6 +128,36 @@ Objetivo: pasar de 247 a 800+ palabras promedio.
 
 ---
 
+## 4to rechazo (ago 2026) y nueva causa raíz identificada
+
+**Estado:** rechazado de nuevo por "contenido de bajo valor" a pesar de que las Fases 1-3
+del plan de arriba ya estaban cumplidas (698 palabras/artículo, imágenes, links, fechas
+escalonadas, e indexación confirmada vía `site:koshermap.org/articulos`).
+
+### Hallazgo
+
+Las fichas de producto (`/product/{slug}`, ~6.200) y de marca (`/brands/{slug}`, ~1.100)
+estaban en `noindex, follow`. El `follow` es la trampa: aunque no se indexan, cualquier bot
+(incluido el que evalúa la política de AdSense) las sigue rastreando en profundidad vía los
+links internos de categorías y marcas. El resultado es que el sitio, visto por el crawler,
+es ~99% catálogo generado (7.300 páginas templadas sin texto propio) y ~1% contenido
+editorial (30 artículos), que es exactamente el patrón de "contenido de bajo valor /
+generado en masa" — independientemente de que esas páginas nunca aparezcan en Search.
+
+### Corrección aplicada
+
+`Disallow: /product/` y `Disallow: /brands/` en `robots.txt`, repetido en cada grupo de
+user-agent (Googlebot, Mediapartners-Google, Bingbot, etc. tienen grupos propios que si no
+llevan el Disallow explícito ignoran el de `User-agent: *`). Esto saca esas ~7.300 páginas
+del rastreo por completo para todo bot, no solo de la indexación.
+
+### A esperar antes de la próxima revisión
+
+Igual que en rechazos anteriores: dar tiempo (2-4 semanas) para que el crawler reprocese el
+sitio con la nueva estructura antes de pedir revisión de nuevo.
+
+---
+
 ## Historial de correcciones ya aplicadas (jul 2026)
 
 Para no repetir trabajo:
