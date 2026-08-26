@@ -1,4 +1,5 @@
-@if(app()->environment('production') && !View::hasSection('no_ads'))
+{{-- Anuncios solo en /articulos, a pedido explicito. Ver doc/plan-adsense.md. --}}
+@if(app()->environment('production') && request()->routeIs('articles.*'))
 <div class="{{ $class ?? 'my-6' }}">
     <ins class="adsbygoogle"
          style="display:block"

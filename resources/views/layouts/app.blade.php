@@ -50,11 +50,17 @@
             gtag('js', new Date());
             gtag('config', 'G-9G0V2KMB14');
 
+            @if(request()->routeIs('articles.*'))
+            {{-- El script de AdSense solo se carga en /articulos: si se cargara en
+                 todo el sitio y la cuenta tuviera "Anuncios automáticos" activado,
+                 Google podría insertar anuncios en cualquier página igual, sin
+                 depender del <ins> que agregamos a mano. Ver doc/plan-adsense.md. --}}
             const ads = document.createElement('script');
             ads.async = true;
             ads.crossOrigin = 'anonymous';
             ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3393238730190407';
             document.head.appendChild(ads);
+            @endif
         };
 
         if (document.cookie.includes('cookie_consent=accepted')) {
@@ -172,11 +178,11 @@
     </div>
 </header>
 
-{{-- Anuncio horizontal debajo del header.
-     Las vistas que declaran @section('no_ads') no muestran publicidad: páginas
-     legales/utilitarias y listados sin contenido suficiente. Poner anuncios ahí
-     viola la política de AdSense sobre "pantallas sin contenido del editor". --}}
-@if(app()->environment('production') && !View::hasSection('no_ads'))
+{{-- Anuncios solo en /articulos (a pedido explícito, para no comprometer la
+     revisión de AdSense mientras el resto del catálogo está retirado). Antes
+     era opt-out (@section('no_ads')); ahora es opt-in por ruta. Ver
+     doc/plan-adsense.md. --}}
+@if(app()->environment('production') && request()->routeIs('articles.*'))
 <div class="container mx-auto px-4 pt-3">
     <ins class="adsbygoogle"
          style="display:block"
@@ -193,9 +199,9 @@
 </main>
 
 {{-- Anuncio antes del footer --}}
-@unless(View::hasSection('no_ads'))
+@if(request()->routeIs('articles.*'))
 @include('partials.ad_banner', ['class' => 'container mx-auto px-4 mb-2'])
-@endunless
+@endif
 
 <footer class="bg-white border-t py-8 mt-auto">
     <div class="container mx-auto px-4 text-center text-gray-500 text-sm">
