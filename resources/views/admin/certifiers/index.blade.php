@@ -29,6 +29,33 @@
     </div>
     @endif
 
+    @if($pendingTransfers->isNotEmpty())
+    <div class="mb-6 bg-amber-50 border border-amber-200 rounded-xl p-4">
+        <h2 class="font-semibold text-amber-900 mb-3">💰 Comprobantes de transferencia pendientes ({{ $pendingTransfers->count() }})</h2>
+        <div class="space-y-2">
+            @foreach($pendingTransfers as $payment)
+            <div class="bg-white rounded-lg border border-amber-100 p-3 flex items-center justify-between flex-wrap gap-2">
+                <div class="text-sm">
+                    <strong>{{ $payment->certifier->name }}</strong> — Plan {{ ucfirst($payment->tier) }}
+                    (${{ number_format($payment->amount, 0, ',', '.') }} {{ $payment->currency }})
+                    <a href="{{ Storage::disk('public')->url($payment->transfer_proof_path) }}" target="_blank" class="text-blue-600 hover:underline ml-2">📄 Ver comprobante</a>
+                </div>
+                <div class="flex gap-2">
+                    <form method="POST" action="{{ route('admin.certifier-transfers.approve', $payment) }}">
+                        @csrf
+                        <button type="submit" class="px-3 py-1 bg-green-600 text-white text-xs rounded-lg hover:bg-green-700 transition">✓ Aprobar</button>
+                    </form>
+                    <form method="POST" action="{{ route('admin.certifier-transfers.reject', $payment) }}">
+                        @csrf
+                        <button type="submit" class="px-3 py-1 bg-red-600 text-white text-xs rounded-lg hover:bg-red-700 transition">✗ Rechazar</button>
+                    </form>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+    @endif
+
     {{-- Tabs de estado --}}
     <div class="flex gap-1 mb-6">
         @php

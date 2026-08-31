@@ -169,9 +169,15 @@ Route::get('/login/google', [GoogleAuthController::class, 'redirect'])->name('au
 Route::get('/login/google/callback', [GoogleAuthController::class, 'callback'])->name('auth.google.callback');
 Route::post('/logout', [GoogleAuthController::class, 'logout'])->name('logout');
 
+Route::post('/webhooks/mercadopago', \App\Http\Controllers\MercadoPagoWebhookController::class)->name('webhooks.mercadopago');
+
 Route::middleware('auth')->prefix('cuenta')->name('account.')->group(function () {
     Route::get('/mis-locales', [AccountController::class, 'places'])->name('places');
     Route::get('/mi-certificadora', [AccountController::class, 'certifier'])->name('certifiers.my');
+    Route::get('/mi-certificadora/plan', [\App\Http\Controllers\CertifierBillingController::class, 'plans'])->name('certifiers.plan');
+    Route::post('/mi-certificadora/plan/checkout', [\App\Http\Controllers\CertifierBillingController::class, 'checkout'])->name('certifiers.plan.checkout');
+    Route::get('/mi-certificadora/plan/transferencia', [\App\Http\Controllers\CertifierBillingController::class, 'transferForm'])->name('certifiers.plan.transfer');
+    Route::post('/mi-certificadora/plan/transferencia', [\App\Http\Controllers\CertifierBillingController::class, 'transferStore'])->name('certifiers.plan.transfer.store');
 
     Route::get('/mis-productos', [\App\Http\Controllers\ProductSubmissionController::class, 'index'])->name('products');
     Route::get('/mis-productos/nuevo', [\App\Http\Controllers\ProductSubmissionController::class, 'create'])->name('products.create');
@@ -226,6 +232,8 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::post('/certifiers/{certifier}/approve', [\App\Http\Controllers\Admin\CertifiersModerationController::class, 'approve'])->name('certifiers.approve');
         Route::post('/certifiers/{certifier}/reject',  [\App\Http\Controllers\Admin\CertifiersModerationController::class, 'reject'])->name('certifiers.reject');
         Route::post('/certifiers/{certifier}/tier',    [\App\Http\Controllers\Admin\CertifiersModerationController::class, 'updateTier'])->name('certifiers.tier');
+        Route::post('/certifier-transfers/{payment}/approve', [\App\Http\Controllers\Admin\CertifiersModerationController::class, 'approveTransfer'])->name('certifier-transfers.approve');
+        Route::post('/certifier-transfers/{payment}/reject',  [\App\Http\Controllers\Admin\CertifiersModerationController::class, 'rejectTransfer'])->name('certifier-transfers.reject');
 
         Route::get('/places',                   [\App\Http\Controllers\Admin\PlacesModerationController::class, 'index'])->name('places.index');
         Route::post('/places/bulk',             [\App\Http\Controllers\Admin\PlacesModerationController::class, 'bulkAction'])->name('places.bulk');

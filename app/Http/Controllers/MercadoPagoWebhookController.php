@@ -1,0 +1,73 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Certifier;
+use App\Models\CertifierTierPayment;
+use App\Services\MercadoPago\MercadoPagoClient;
+use App\Services\MercadoPago\WebhookSignatureValidator;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+
+class MercadoPagoWebhookController extends Controller
+{
+    public function __invoke(Request $request)
+    {
+        $paymentId = $request->input('data.id') ?? $request->query('id');
+        if (! $paymentId) {
+            return response()->noContent();
+        }
+
+        $accessToken = config('services.mercadopago.access_token');
+        if (! $accessToken) {
+            return response()->noContent();
+        }
+
+        $webhookSecret = config('services.mercadopago.webhook_secret');
+        if ($webhookSecret) {
+            $valid = WebhookSignatureValidator::isValid(
+                $request->header('x-signature'),
+                $request->header('x-request-id'),
+                $request->query('data.id') ?? (string) $paymentId,
+                $webhookSecret,
+            );
+
+            if (! $valid) {
+                Log::warning('Webhook MP: firma invalida, se ignora.');
+                return response()->noContent();
+            }
+        }
+
+        try {
+            $payment = (new MercadoPagoClient($accessToken))->getPayment($paymentId);
+        } catch (\Throwable $e) {
+            Log::warning('Webhook MP: no se pudo consultar el pago', ['payment_id' => $paymentId, 'error' => $e->getMessage()]);
+            return response()->noContent();
+        }
+
+        // external_reference viene como "certifier_tier_payment:{id}"
+        $reference = $payment['external_reference'] ?? '';
+        if (! str_starts_with($reference, 'certifier_tier_payment:')) {
+            return response()->noContent();
+        }
+
+        $tierPayment = CertifierTierPayment::find(substr($reference, strlen('certifier_tier_payment:')));
+        if (! $tierPayment || $tierPayment->status === CertifierTierPayment::STATUS_APPROVED) {
+            return response()->noContent();
+        }
+
+        if ($payment['status'] === 'approved') {
+            $tierPayment->update([
+                'status'        => CertifierTierPayment::STATUS_APPROVED,
+                'mp_payment_id' => $paymentId,
+            ]);
+
+            $tierPayment->certifier->update([
+                'tier'             => $tierPayment->tier,
+                'tier_expires_at'  => now()->addMonth(),
+            ]);
+        }
+
+        return response()->noContent();
+    }
+}

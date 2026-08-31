@@ -22,6 +22,11 @@ return Application::configure(basePath: dirname(__DIR__))
             'admin.check' => \App\Http\Middleware\EnsureUserIsAdmin::class,
         ]);
 
+        // Mercado Pago llama directo a este endpoint, sin token CSRF de Laravel.
+        $middleware->validateCsrfTokens(except: [
+            'webhooks/mercadopago',
+        ]);
+
         // Redirigir unauthenticated al login correspondiente
         $middleware->redirectGuestsTo(fn (\Illuminate\Http\Request $request) =>
             $request->is('admin/*') ? route('admin.login') : route('login')

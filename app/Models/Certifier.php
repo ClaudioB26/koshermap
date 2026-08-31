@@ -20,13 +20,14 @@ class Certifier extends Model
 
     protected $fillable = [
         'name', 'slug', 'logo_symbol', 'about', 'website', 'contact_email', 'phone', 'hours', 'address',
-        'status', 'tier', 'rejection_reason', 'owner_id',
+        'status', 'tier', 'tier_expires_at', 'rejection_reason', 'owner_id',
         'rabbi_name', 'founded_year', 'coverage_description', 'reference_info', 'documents',
         'submitted_by_name', 'submitted_by_email', 'submitted_by_phone',
     ];
 
     protected $casts = [
         'documents' => 'array',
+        'tier_expires_at' => 'datetime',
     ];
 
     public function products()
@@ -37,6 +38,17 @@ class Certifier extends Model
     public function leads()
     {
         return $this->hasMany(CertifierLead::class);
+    }
+
+    public function tierPayments()
+    {
+        return $this->hasMany(CertifierTierPayment::class);
+    }
+
+    public function hasActivePaidTier(): bool
+    {
+        return $this->tier !== self::TIER_FREE
+            && (! $this->tier_expires_at || $this->tier_expires_at->isFuture());
     }
 
     /**

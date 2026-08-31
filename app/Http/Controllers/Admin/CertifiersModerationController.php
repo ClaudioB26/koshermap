@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Certifier;
+use App\Models\CertifierTierPayment;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -26,7 +27,32 @@ class CertifiersModerationController extends Controller
             ->groupBy('status')
             ->pluck('total', 'status');
 
-        return view('admin.certifiers.index', compact('certifiers', 'counts', 'status'));
+        $pendingTransfers = CertifierTierPayment::with('certifier')
+            ->where('payment_method', CertifierTierPayment::METHOD_TRANSFER)
+            ->where('status', CertifierTierPayment::STATUS_PENDING)
+            ->orderBy('created_at')
+            ->get();
+
+        return view('admin.certifiers.index', compact('certifiers', 'counts', 'status', 'pendingTransfers'));
+    }
+
+    public function approveTransfer(CertifierTierPayment $payment)
+    {
+        $payment->update(['status' => CertifierTierPayment::STATUS_APPROVED]);
+
+        $payment->certifier->update([
+            'tier'            => $payment->tier,
+            'tier_expires_at' => now()->addMonth(),
+        ]);
+
+        return back()->with('success', "Transferencia aprobada, plan de \"{$payment->certifier->name}\" activado.");
+    }
+
+    public function rejectTransfer(CertifierTierPayment $payment)
+    {
+        $payment->update(['status' => CertifierTierPayment::STATUS_REJECTED]);
+
+        return back()->with('success', "Transferencia de \"{$payment->certifier->name}\" rechazada.");
     }
 
     public function approve(Certifier $certifier)

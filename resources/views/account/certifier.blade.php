@@ -61,6 +61,10 @@ $statusInfo = [
            class="inline-block ml-2 px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm font-medium rounded-lg hover:border-blue-400 transition">
             Ver mi ficha pública
         </a>
+        <a href="{{ route('account.certifiers.plan') }}"
+           class="inline-block ml-2 px-4 py-2 bg-amber-50 border border-amber-200 text-amber-800 text-sm font-medium rounded-lg hover:bg-amber-100 transition">
+            ⭐ Mejorar plan ({{ ucfirst($certifier->tier) }})
+        </a>
         @elseif($certifier->isRejected())
         <p class="text-sm text-gray-600 mb-2">Tu solicitud no fue aprobada.</p>
         @if($certifier->rejection_reason)
