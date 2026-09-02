@@ -115,11 +115,19 @@
     @php
     $typeInfo  = \App\Models\KosherPlace::types()[$place->place_type] ?? \App\Models\KosherPlace::types()['other'];
     $typeBadge = [$typeInfo['badge'], $typeInfo['emoji']];
+    // Mismo criterio que /certifiers: recuadro segun plan en vez de un
+    // texto tipo "Premium"/"Destacado".
+    $cardClass = match($place->tier ?? 'free') {
+        'premium' => 'bg-amber-50/60 rounded-2xl shadow-md border-2 border-amber-300 p-5 flex flex-col gap-2 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200',
+        'destacada_rubro' => 'bg-white rounded-2xl shadow-sm border-2 border-blue-300 p-5 flex flex-col gap-2 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200',
+        default => 'bg-white rounded-2xl shadow-sm border border-gray-100 p-5 flex flex-col gap-2 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200',
+    };
+    $nameClass = ($place->tier ?? 'free') === 'premium' ? 'font-extrabold text-amber-900 text-base leading-tight' : 'font-bold text-gray-800 text-base leading-tight';
     @endphp
-    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 flex flex-col gap-2 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
+    <div class="{{ $cardClass }}">
 
         <div class="flex justify-between items-start gap-2">
-            <h3 class="font-bold text-gray-800 text-base leading-tight">{{ $place->name }}</h3>
+            <h3 class="{{ $nameClass }}">{{ $place->name }}</h3>
             <span class="shrink-0 text-xs font-medium px-2 py-0.5 rounded-full {{ $typeBadge[0] }}">
                 {{ $typeBadge[1] }}
             </span>

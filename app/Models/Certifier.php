@@ -20,7 +20,7 @@ class Certifier extends Model
 
     protected $fillable = [
         'name', 'slug', 'logo_symbol', 'about', 'website', 'contact_email', 'phone', 'hours', 'address',
-        'status', 'tier', 'tier_expires_at', 'rejection_reason', 'owner_id',
+        'status', 'tier', 'tier_expires_at', 'tier_reminder_sent_at', 'rejection_reason', 'owner_id',
         'rabbi_name', 'founded_year', 'coverage_description', 'reference_info', 'documents',
         'submitted_by_name', 'submitted_by_email', 'submitted_by_phone',
     ];
@@ -28,6 +28,7 @@ class Certifier extends Model
     protected $casts = [
         'documents' => 'array',
         'tier_expires_at' => 'datetime',
+        'tier_reminder_sent_at' => 'datetime',
     ];
 
     public function products()

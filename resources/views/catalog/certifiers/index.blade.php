@@ -17,16 +17,20 @@
          completo; ver doc/plan-adsense.md). --}}
     <div class="max-w-3xl mx-auto space-y-6">
         @foreach($certifiers as $certifier)
-        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+        @php
+        // En vez de un texto tipo "Pro"/"Destacada": un recuadro mas marcado
+        // segun el plan. Pro es el mas fuerte (borde + fondo tenue ambar),
+        // Destacada un escalon debajo (borde azul), free queda como estaba.
+        $cardClass = match($certifier->tier) {
+            'pro' => 'bg-amber-50/60 p-6 rounded-2xl shadow-md border-2 border-amber-300',
+            'destacada' => 'bg-white p-6 rounded-2xl shadow-sm border-2 border-blue-300',
+            default => 'bg-white p-6 rounded-2xl shadow-sm border border-gray-100',
+        };
+        $nameClass = $certifier->tier === 'pro' ? 'text-xl font-extrabold text-amber-900' : 'text-xl font-bold text-blue-800';
+        @endphp
+        <div class="{{ $cardClass }}">
             <div class="flex items-baseline justify-between gap-3 flex-wrap mb-2">
-                <h2 class="text-xl font-bold text-blue-800 flex items-center gap-2">
-                    {{ $certifier->name }}
-                    @if($certifier->tier === 'pro')
-                    <span class="text-[10px] font-bold uppercase tracking-wide bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full">⭐ Pro</span>
-                    @elseif($certifier->tier === 'destacada')
-                    <span class="text-[10px] font-bold uppercase tracking-wide bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">Destacada</span>
-                    @endif
-                </h2>
+                <h2 class="{{ $nameClass }}">{{ $certifier->name }}</h2>
                 <span class="text-xs text-gray-400">{{ number_format($certifier->products_count) }} productos certificados</span>
             </div>
 

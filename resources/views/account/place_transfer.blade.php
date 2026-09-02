@@ -7,7 +7,7 @@
 <div class="max-w-xl mx-auto">
     <h1 class="text-2xl font-bold text-gray-800 mb-2">Pagar plan {{ $plan['label'] }} por transferencia</h1>
     <p class="text-gray-500 text-sm mb-6">
-        Monto: <strong>${{ number_format($plan['price'], 0, ',', '.') }} ARS</strong>.
+        Período: <strong>{{ $periodLabel }}</strong> — Monto: <strong>${{ number_format($amount, 0, ',', '.') }} ARS</strong>.
         Transferí a la cuenta de KosherMap (te la pasamos por mail o WhatsApp) y subí el comprobante acá.
         Activamos el plan apenas lo revisemos.
     </p>
@@ -24,6 +24,7 @@
           class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 space-y-4">
         @csrf
         <input type="hidden" name="tier" value="{{ $tier }}">
+        <input type="hidden" name="period" value="{{ $period }}">
 
         <div>
             <label class="block text-sm text-gray-600 mb-1">Comprobante de transferencia *</label>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Certifier;
 use App\Models\CertifierTierPayment;
+use App\Services\Billing\TierPricingService;
 use App\Services\MercadoPago\MercadoPagoClient;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -23,8 +24,9 @@ class CertifierBillingController extends Controller
     {
         $certifier = $this->ownedCertifier($request);
         $plans = config('certifier_plans');
+        $periods = TierPricingService::PERIOD_LABELS;
 
-        return view('account.certifier_plans', compact('certifier', 'plans'));
+        return view('account.certifier_plans', compact('certifier', 'plans', 'periods'));
     }
 
     public function checkout(Request $request)
@@ -33,20 +35,26 @@ class CertifierBillingController extends Controller
 
         $validated = $request->validate([
             'tier'           => 'required|in:destacada,pro',
+            'period'         => 'required|in:1,6,12',
             'payment_method' => 'required|in:mercadopago,transfer',
         ]);
 
         $plan = config("certifier_plans.{$validated['tier']}");
         abort_if(! $plan, 404);
 
+        $months = TierPricingService::monthsFor($validated['period']);
+        $amount = TierPricingService::priceFor($plan['price'], $validated['period']);
+        $periodLabel = TierPricingService::PERIOD_LABELS[$validated['period']];
+
         if ($validated['payment_method'] === 'transfer') {
-            return redirect()->route('account.certifiers.plan.transfer', ['tier' => $validated['tier']]);
+            return redirect()->route('account.certifiers.plan.transfer', ['tier' => $validated['tier'], 'period' => $validated['period']]);
         }
 
         $payment = CertifierTierPayment::create([
             'certifier_id'   => $certifier->id,
             'tier'           => $validated['tier'],
-            'amount'         => $plan['price'],
+            'months'         => $months,
+            'amount'         => $amount,
             'currency'       => 'ARS',
             'payment_method' => CertifierTierPayment::METHOD_MERCADOPAGO,
             'status'         => CertifierTierPayment::STATUS_PENDING,
@@ -61,9 +69,9 @@ class CertifierBillingController extends Controller
         try {
             $preference = (new MercadoPagoClient($accessToken))->createPreference(
                 items: [[
-                    'title'      => "Plan {$plan['label']} - {$certifier->name} - KosherMap",
+                    'title'      => "Plan {$plan['label']} ({$periodLabel}) - {$certifier->name} - KosherMap",
                     'quantity'   => 1,
-                    'unit_price' => $plan['price'],
+                    'unit_price' => $amount,
                     'currency_id' => 'ARS',
                 ]],
                 externalReference: "certifier_tier_payment:{$payment->id}",
@@ -86,10 +94,14 @@ class CertifierBillingController extends Controller
     {
         $certifier = $this->ownedCertifier($request);
         $tier = $request->query('tier');
+        $period = $request->query('period', '1');
         $plan = config("certifier_plans.{$tier}");
-        abort_if(! $plan, 404);
+        abort_if(! $plan || ! isset(TierPricingService::PERIOD_MONTHS[$period]), 404);
 
-        return view('account.certifier_transfer', compact('certifier', 'tier', 'plan'));
+        $amount = TierPricingService::priceFor($plan['price'], $period);
+        $periodLabel = TierPricingService::PERIOD_LABELS[$period];
+
+        return view('account.certifier_transfer', compact('certifier', 'tier', 'plan', 'period', 'amount', 'periodLabel'));
     }
 
     public function transferStore(Request $request)
@@ -97,17 +109,22 @@ class CertifierBillingController extends Controller
         $certifier = $this->ownedCertifier($request);
 
         $validated = $request->validate([
-            'tier'  => 'required|in:destacada,pro',
-            'proof' => 'required|file|mimes:pdf,jpg,jpeg,png|max:8192',
+            'tier'   => 'required|in:destacada,pro',
+            'period' => 'required|in:1,6,12',
+            'proof'  => 'required|file|mimes:pdf,jpg,jpeg,png|max:8192',
         ]);
 
         $plan = config("certifier_plans.{$validated['tier']}");
+        $months = TierPricingService::monthsFor($validated['period']);
+        $amount = TierPricingService::priceFor($plan['price'], $validated['period']);
+        $periodLabel = TierPricingService::PERIOD_LABELS[$validated['period']];
         $path = $request->file('proof')->store('tier_payment_proofs', 'public');
 
         CertifierTierPayment::create([
             'certifier_id'         => $certifier->id,
             'tier'                 => $validated['tier'],
-            'amount'               => $plan['price'],
+            'months'               => $months,
+            'amount'               => $amount,
             'currency'             => 'ARS',
             'payment_method'       => CertifierTierPayment::METHOD_TRANSFER,
             'status'               => CertifierTierPayment::STATUS_PENDING,
@@ -118,7 +135,7 @@ class CertifierBillingController extends Controller
             Mail::raw(
                 "Nuevo comprobante de transferencia para revisar.\n\n"
                 . "Certificadora: {$certifier->name}\n"
-                . "Plan: {$plan['label']} ({$plan['price']} ARS)\n\n"
+                . "Plan: {$plan['label']} ({$periodLabel}) - {$amount} ARS\n\n"
                 . "Revisar en: " . route('admin.certifiers.index'),
                 fn ($m) => $m->to('info@koshermap.org')->subject('Comprobante de transferencia - ' . $certifier->name)
             );

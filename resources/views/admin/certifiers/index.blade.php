@@ -36,7 +36,7 @@
             @foreach($pendingTransfers as $payment)
             <div class="bg-white rounded-lg border border-amber-100 p-3 flex items-center justify-between flex-wrap gap-2">
                 <div class="text-sm">
-                    <strong>{{ $payment->certifier->name }}</strong> — Plan {{ ucfirst($payment->tier) }}
+                    <strong>{{ $payment->certifier->name }}</strong> — Plan {{ ucfirst($payment->tier) }} ({{ $payment->months }} {{ $payment->months === 1 ? 'mes' : 'meses' }})
                     (${{ number_format($payment->amount, 0, ',', '.') }} {{ $payment->currency }})
                     <a href="{{ Storage::disk('public')->url($payment->transfer_proof_path) }}" target="_blank" class="text-blue-600 hover:underline ml-2">📄 Ver comprobante</a>
                 </div>

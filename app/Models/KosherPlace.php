@@ -27,6 +27,7 @@ class KosherPlace extends Model
         'status',
         'tier',
         'tier_expires_at',
+        'tier_reminder_sent_at',
         'rejection_reason',
         'name',
         'place_type',
@@ -80,6 +81,7 @@ class KosherPlace extends Model
         'last_verified_at'      => 'datetime',
         'synced_at'             => 'datetime',
         'tier_expires_at'       => 'datetime',
+        'tier_reminder_sent_at' => 'datetime',
     ];
 
     public function city(): BelongsTo

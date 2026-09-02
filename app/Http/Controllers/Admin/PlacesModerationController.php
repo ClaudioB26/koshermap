@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Country;
 use App\Models\KosherPlace;
 use App\Models\PlaceTierPayment;
+use App\Services\Billing\TierPricingService;
 use Illuminate\Http\Request;
 
 class PlacesModerationController extends Controller
@@ -60,9 +61,11 @@ class PlacesModerationController extends Controller
     {
         $payment->update(['status' => PlaceTierPayment::STATUS_APPROVED]);
 
-        $payment->place->update([
-            'tier'            => $payment->tier,
-            'tier_expires_at' => now()->addMonth(),
+        $place = $payment->place;
+        $place->update([
+            'tier'                  => $payment->tier,
+            'tier_expires_at'       => TierPricingService::nextExpiry($place->tier_expires_at, $payment->months),
+            'tier_reminder_sent_at' => null,
         ]);
 
         return back()->with('success', "Transferencia aprobada, plan de \"{$payment->place->name}\" activado.");

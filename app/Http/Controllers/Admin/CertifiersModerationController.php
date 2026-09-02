@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Certifier;
 use App\Models\CertifierTierPayment;
 use App\Models\User;
+use App\Services\Billing\TierPricingService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
@@ -40,9 +41,11 @@ class CertifiersModerationController extends Controller
     {
         $payment->update(['status' => CertifierTierPayment::STATUS_APPROVED]);
 
-        $payment->certifier->update([
-            'tier'            => $payment->tier,
-            'tier_expires_at' => now()->addMonth(),
+        $certifier = $payment->certifier;
+        $certifier->update([
+            'tier'                  => $payment->tier,
+            'tier_expires_at'       => TierPricingService::nextExpiry($certifier->tier_expires_at, $payment->months),
+            'tier_reminder_sent_at' => null,
         ]);
 
         return back()->with('success', "Transferencia aprobada, plan de \"{$payment->certifier->name}\" activado.");

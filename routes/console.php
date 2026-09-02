@@ -2,6 +2,12 @@
 
 use Illuminate\Foundation\Inspiring;
 use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Schedule;
+
+// Requiere el cron de siempre en el servidor: * * * * * php artisan schedule:run
+// (mismo criterio que mayorista-platform, ver su routes/console.php).
+Schedule::command('tier:renewal-reminders')->daily();
+Schedule::command('tier:expire-overdue')->daily();
 
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());

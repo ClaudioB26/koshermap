@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Certifier;
 use App\Models\CertifierTierPayment;
 use App\Models\PlaceTierPayment;
+use App\Services\Billing\TierPricingService;
 use App\Services\MercadoPago\MercadoPagoClient;
 use App\Services\MercadoPago\WebhookSignatureValidator;
 use Illuminate\Http\Request;
@@ -71,9 +72,11 @@ class MercadoPagoWebhookController extends Controller
                 'mp_payment_id' => $paymentId,
             ]);
 
-            $tierPayment->certifier->update([
-                'tier'            => $tierPayment->tier,
-                'tier_expires_at' => now()->addMonth(),
+            $certifier = $tierPayment->certifier;
+            $certifier->update([
+                'tier'                  => $tierPayment->tier,
+                'tier_expires_at'       => TierPricingService::nextExpiry($certifier->tier_expires_at, $tierPayment->months),
+                'tier_reminder_sent_at' => null,
             ]);
         }
     }
@@ -91,9 +94,11 @@ class MercadoPagoWebhookController extends Controller
                 'mp_payment_id' => $paymentId,
             ]);
 
-            $tierPayment->place->update([
-                'tier'            => $tierPayment->tier,
-                'tier_expires_at' => now()->addMonth(),
+            $place = $tierPayment->place;
+            $place->update([
+                'tier'                  => $tierPayment->tier,
+                'tier_expires_at'       => TierPricingService::nextExpiry($place->tier_expires_at, $tierPayment->months),
+                'tier_reminder_sent_at' => null,
             ]);
         }
     }

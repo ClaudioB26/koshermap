@@ -15,7 +15,7 @@ class CertifierTierPayment extends Model
     const METHOD_TRANSFER    = 'transfer';
 
     protected $fillable = [
-        'certifier_id', 'tier', 'amount', 'currency', 'payment_method',
+        'certifier_id', 'tier', 'months', 'amount', 'currency', 'payment_method',
         'status', 'mp_payment_id', 'transfer_proof_path', 'rejection_reason',
     ];
 
