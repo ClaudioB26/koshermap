@@ -77,6 +77,11 @@ $statusInfo = [
             {{ $place->rejection_reason }}
         </div>
         @endif
+
+        <a href="{{ route('account.places.edit', $place) }}"
+           class="mt-2 inline-block text-sm text-blue-600 hover:underline">
+            ✏️ Editar
+        </a>
     </div>
     @endforeach
 </div>

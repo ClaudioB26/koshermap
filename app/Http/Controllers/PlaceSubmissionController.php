@@ -21,6 +21,57 @@ class PlaceSubmissionController extends Controller
 
     public function store(Request $request)
     {
+        $validated = $this->validatePlace($request);
+        $user = $request->user();
+
+        KosherPlace::create(array_merge($validated, [
+            'google_place_id' => 'manual-' . Str::uuid(),
+            'source'          => 'owner',
+            'status'          => KosherPlace::STATUS_PENDING,
+            'owner_id'        => $user->id,
+            'owner_name'      => $user->name,
+            'owner_email'     => $user->email,
+            'is_active'       => true,
+        ]));
+
+        return redirect()->route('account.places')
+            ->with('success', '¡Gracias! Tu local fue enviado y será revisado por nuestro equipo antes de publicarse.');
+    }
+
+    public function edit(Request $request, KosherPlace $place)
+    {
+        abort_unless($place->owner_id === $request->user()->id, 403);
+
+        $countries  = Country::with(['cities' => fn ($q) => $q->orderBy('name')])->orderBy('name')->get();
+        $certifiers = Certifier::orderBy('name')->get();
+        $types      = KosherPlace::types();
+
+        return view('places.edit', compact('place', 'countries', 'certifiers', 'types'));
+    }
+
+    public function update(Request $request, KosherPlace $place)
+    {
+        abort_unless($place->owner_id === $request->user()->id, 403);
+
+        $validated = $this->validatePlace($request);
+
+        // Si ya estaba publicado o rechazado, editar lo vuelve a mandar a revision:
+        // los datos cambiaron, no corresponde que siga publicado sin que lo veamos de nuevo.
+        $needsReview = $place->status !== KosherPlace::STATUS_PENDING;
+
+        $place->update(array_merge($validated, $needsReview ? [
+            'status'           => KosherPlace::STATUS_PENDING,
+            'rejection_reason' => null,
+        ] : []));
+
+        return redirect()->route('account.places')
+            ->with('success', $needsReview
+                ? 'Guardamos los cambios. Como se modificó, vuelve a quedar en revisión antes de publicarse.'
+                : 'Guardamos los cambios.');
+    }
+
+    private function validatePlace(Request $request): array
+    {
         $validated = $request->validate([
             'name'            => 'required|string|max:255',
             'place_type'      => 'required|in:' . implode(',', array_keys(KosherPlace::types())),
@@ -44,29 +95,8 @@ class PlaceSubmissionController extends Controller
             ? ($validated['orientation'] ?? 'orthodox')
             : 'orthodox';
 
-        $user = $request->user();
+        unset($validated['terms']);
 
-        KosherPlace::create([
-            'google_place_id' => 'manual-' . Str::uuid(),
-            'source'          => 'owner',
-            'status'          => KosherPlace::STATUS_PENDING,
-            'owner_id'        => $user->id,
-            'name'            => $validated['name'],
-            'place_type'      => $validated['place_type'],
-            'orientation'     => $validated['orientation'],
-            'city_id'         => $validated['city_id'],
-            'address'         => $validated['address'] ?? null,
-            'phone'           => $validated['phone'] ?? null,
-            'website'         => $validated['website'] ?? null,
-            'certifier_id'    => $validated['certifier_id'] ?? null,
-            'certifier_other' => $validated['certifier_other'] ?? null,
-            'owner_name'      => $user->name,
-            'owner_email'     => $user->email,
-            'owner_phone'     => $validated['owner_phone'] ?? null,
-            'is_active'       => true,
-        ]);
-
-        return redirect()->route('account.places')
-            ->with('success', '¡Gracias! Tu local fue enviado y será revisado por nuestro equipo antes de publicarse.');
+        return $validated;
     }
 }

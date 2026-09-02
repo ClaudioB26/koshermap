@@ -173,6 +173,8 @@ Route::post('/webhooks/mercadopago', \App\Http\Controllers\MercadoPagoWebhookCon
 
 Route::middleware('auth')->prefix('cuenta')->name('account.')->group(function () {
     Route::get('/mis-locales', [AccountController::class, 'places'])->name('places');
+    Route::get('/mis-locales/{place}/editar', [\App\Http\Controllers\PlaceSubmissionController::class, 'edit'])->name('places.edit');
+    Route::put('/mis-locales/{place}', [\App\Http\Controllers\PlaceSubmissionController::class, 'update'])->name('places.update');
     Route::get('/mi-certificadora', [AccountController::class, 'certifier'])->name('certifiers.my');
     Route::get('/mi-certificadora/plan', [\App\Http\Controllers\CertifierBillingController::class, 'plans'])->name('certifiers.plan');
     Route::post('/mi-certificadora/plan/checkout', [\App\Http\Controllers\CertifierBillingController::class, 'checkout'])->name('certifiers.plan.checkout');
