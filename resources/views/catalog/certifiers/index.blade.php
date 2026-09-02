@@ -38,20 +38,10 @@
             <p class="text-gray-700 text-sm leading-relaxed mb-4">{{ $certifier->about }}</p>
             @endif
 
-            <div class="flex flex-wrap gap-x-5 gap-y-1.5 text-sm text-gray-600 mb-4">
-                @if($certifier->contact_email)
-                <span>📧 <a href="mailto:{{ $certifier->contact_email }}" class="text-blue-600 hover:underline">{{ $certifier->contact_email }}</a></span>
-                @endif
-                @if($certifier->phone)
-                <span>📞 <a href="tel:{{ $certifier->phone }}" class="text-blue-600 hover:underline">{{ $certifier->phone }}</a></span>
-                @endif
-                @if($certifier->address)
-                <span>📍 {{ $certifier->address }}</span>
-                @endif
-                @if($certifier->website)
-                <span>🔗 <a href="{{ $certifier->website }}" target="_blank" rel="noopener" class="text-blue-600 hover:underline">{{ __('Visit website') }}</a></span>
-                @endif
-            </div>
+            {{-- Contacto directo (mail/tel/web) sacado a proposito: si esta a
+                 mano acá, nadie completa el formulario de "querer certificar"
+                 (que es el que captura el lead). Se movio a
+                 /certifiers/{slug}/mas_informacion, noindex. --}}
 
             <div class="flex flex-wrap gap-3">
                 <a href="{{ route('certifiers.contact', ['slug' => $certifier->slug, 'intent' => 'certify']) }}"

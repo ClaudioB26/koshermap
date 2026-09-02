@@ -143,6 +143,11 @@ Route::middleware('auth')->group(function () {
 Route::get('/certifiers/{slug}', fn () => redirect()->route('certifiers.index', [], 301))->name('certifiers.show');
 Route::get('/certifiers/{slug}/contacto', [\App\Http\Controllers\ContactController::class, 'certifierContact'])->name('certifiers.contact');
 Route::post('/certifiers/{slug}/contacto', [\App\Http\Controllers\ContactController::class, 'storeCertifierLead'])->name('certifiers.contact.store');
+// Datos de contacto directo, separados del formulario de lead a proposito
+// (ver comentario noindex en la vista). Reusa el CatalogController::certifier()
+// y la vista show.blade.php que quedaron sin usar cuando se fusiono todo en
+// /certifiers.
+Route::get('/certifiers/{slug}/mas_informacion', [CatalogController::class, 'certifier'])->name('certifiers.more-info');
 
 // Marcas retiradas junto con las fichas de producto: el listado era un hub de
 // ~1.100 links sin contenido propio y cada ficha de marca solo repetía

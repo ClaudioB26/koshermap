@@ -81,6 +81,15 @@
                 Enviar a {{ $certifier->name }}
             </button>
         </form>
+
+        {{-- Chico y debajo a proposito: que la gente prefiera enviar el
+             formulario (que si genera un lead) en vez de ir directo al
+             contacto. --}}
+        <p class="text-center mt-3">
+            <a href="{{ route('certifiers.more-info', $certifier->slug) }}" class="text-xs text-gray-400 hover:text-gray-600 hover:underline">
+                Ver información de contacto de {{ $certifier->name }}
+            </a>
+        </p>
         @endif
     @else
         <h1 class="text-2xl font-bold text-gray-900 mb-2">{{ __('Contact') }} {{ $certifier->name }}</h1>
