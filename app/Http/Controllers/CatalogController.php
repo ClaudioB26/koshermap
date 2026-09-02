@@ -95,9 +95,17 @@ class CatalogController extends Controller
         // que paga por Destacada/Pro se muestra igual aunque todavia no haya
         // cargado productos -- si esta pagando por visibilidad, no tiene
         // sentido que quede invisible por eso.
+        // whereHas('products') en vez de having('products_count', ...): esa
+        // columna es un alias de subconsulta de withCount(), y produccion corre
+        // con sql_mode=ONLY_FULL_GROUP_BY, que rechaza mezclar un alias asi con
+        // otra columna comun en el mismo HAVING sin GROUP BY (error 1463). Local
+        // no tenia ese modo estricto, por eso no se detecto antes.
         $certifiers = Certifier::approved()
             ->withCount('products')
-            ->havingRaw('products_count > 0 OR tier != ?', [\App\Models\Certifier::TIER_FREE])
+            ->where(function ($q) {
+                $q->whereHas('products')
+                  ->orWhere('tier', '!=', \App\Models\Certifier::TIER_FREE);
+            })
             ->orderBy('name')
             ->get()
             ->sortBy(fn ($c) => \App\Models\Certifier::TIER_ORDER[$c->tier] ?? 99)
