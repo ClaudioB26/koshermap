@@ -90,11 +90,14 @@ class CatalogController extends Controller
 
     public function certifiers()
     {
-        // Solo mostrar certificadoras aprobadas que tengan productos.
-        // Orden: pro > destacada > free (ver Certifier::TIER_ORDER), alfabetico dentro de cada nivel.
+        // Certificadoras aprobadas: las gratis necesitan al menos 1 producto
+        // (para no mostrar fichas vacias sin motivo), pero una certificadora
+        // que paga por Destacada/Pro se muestra igual aunque todavia no haya
+        // cargado productos -- si esta pagando por visibilidad, no tiene
+        // sentido que quede invisible por eso.
         $certifiers = Certifier::approved()
             ->withCount('products')
-            ->having('products_count', '>', 0)
+            ->havingRaw('products_count > 0 OR tier != ?', [\App\Models\Certifier::TIER_FREE])
             ->orderBy('name')
             ->get()
             ->sortBy(fn ($c) => \App\Models\Certifier::TIER_ORDER[$c->tier] ?? 99)
