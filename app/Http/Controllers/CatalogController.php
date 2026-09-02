@@ -199,7 +199,14 @@ class CatalogController extends Controller
             $placesQuery->where('place_type', $placeType);
         }
 
-        $places = $placesQuery->orderBy('google_rating', 'desc')->paginate(24)->withQueryString();
+        // Premium primero en todo el listado; destacada_rubro sube dentro de su
+        // propio place_type (queda arriba cuando se filtra por ese rubro); gratis
+        // al final. Dentro de cada nivel, se ordena por rating como antes.
+        $places = $placesQuery
+            ->orderByRaw("FIELD(tier, 'premium', 'destacada_rubro', 'free')")
+            ->orderBy('google_rating', 'desc')
+            ->paginate(24)
+            ->withQueryString();
 
         $relatedArticles = $relatedArticlesService->forPlaces();
 

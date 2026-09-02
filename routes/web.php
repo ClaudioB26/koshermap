@@ -175,6 +175,10 @@ Route::middleware('auth')->prefix('cuenta')->name('account.')->group(function ()
     Route::get('/mis-locales', [AccountController::class, 'places'])->name('places');
     Route::get('/mis-locales/{place}/editar', [\App\Http\Controllers\PlaceSubmissionController::class, 'edit'])->name('places.edit');
     Route::put('/mis-locales/{place}', [\App\Http\Controllers\PlaceSubmissionController::class, 'update'])->name('places.update');
+    Route::get('/mis-locales/{place}/plan', [\App\Http\Controllers\PlaceBillingController::class, 'plans'])->name('places.plan');
+    Route::post('/mis-locales/{place}/plan/checkout', [\App\Http\Controllers\PlaceBillingController::class, 'checkout'])->name('places.plan.checkout');
+    Route::get('/mis-locales/{place}/plan/transferencia', [\App\Http\Controllers\PlaceBillingController::class, 'transferForm'])->name('places.plan.transfer');
+    Route::post('/mis-locales/{place}/plan/transferencia', [\App\Http\Controllers\PlaceBillingController::class, 'transferStore'])->name('places.plan.transfer.store');
     Route::get('/mi-certificadora', [AccountController::class, 'certifier'])->name('certifiers.my');
     Route::get('/mi-certificadora/plan', [\App\Http\Controllers\CertifierBillingController::class, 'plans'])->name('certifiers.plan');
     Route::post('/mi-certificadora/plan/checkout', [\App\Http\Controllers\CertifierBillingController::class, 'checkout'])->name('certifiers.plan.checkout');
@@ -244,6 +248,9 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::post('/places/{place}/pending',  [\App\Http\Controllers\Admin\PlacesModerationController::class, 'resetPending'])->name('places.pending');
         Route::post('/places/{place}/type',     [\App\Http\Controllers\Admin\PlacesModerationController::class, 'updateType'])->name('places.update-type');
         Route::post('/places/{place}/orientation', [\App\Http\Controllers\Admin\PlacesModerationController::class, 'updateOrientation'])->name('places.update-orientation');
+        Route::post('/places/{place}/tier', [\App\Http\Controllers\Admin\PlacesModerationController::class, 'updateTier'])->name('places.tier');
+        Route::post('/place-transfers/{payment}/approve', [\App\Http\Controllers\Admin\PlacesModerationController::class, 'approveTransfer'])->name('place-transfers.approve');
+        Route::post('/place-transfers/{payment}/reject', [\App\Http\Controllers\Admin\PlacesModerationController::class, 'rejectTransfer'])->name('place-transfers.reject');
     });
 });
 

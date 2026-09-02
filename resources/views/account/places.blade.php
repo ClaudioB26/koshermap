@@ -78,10 +78,16 @@ $statusInfo = [
         </div>
         @endif
 
-        <a href="{{ route('account.places.edit', $place) }}"
-           class="mt-2 inline-block text-sm text-blue-600 hover:underline">
-            ✏️ Editar
-        </a>
+        <div class="flex items-center gap-3 mt-2">
+            <a href="{{ route('account.places.edit', $place) }}" class="text-sm text-blue-600 hover:underline">
+                ✏️ Editar
+            </a>
+            @if($place->status === 'approved')
+            <a href="{{ route('account.places.plan', $place) }}" class="text-sm text-amber-700 hover:underline">
+                ⭐ Mejorar plan ({{ ucfirst(str_replace('_', ' ', $place->tier)) }})
+            </a>
+            @endif
+        </div>
     </div>
     @endforeach
 </div>

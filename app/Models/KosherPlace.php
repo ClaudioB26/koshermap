@@ -12,11 +12,21 @@ class KosherPlace extends Model
     const STATUS_APPROVED = 'approved';
     const STATUS_REJECTED = 'rejected';
 
+    const TIER_FREE            = 'free';
+    const TIER_DESTACADA_RUBRO = 'destacada_rubro';
+    const TIER_PREMIUM         = 'premium';
+
+    // Orden dentro del listado: premium primero (en toda la plataforma),
+    // despues destacada_rubro (sube dentro de su propio rubro/place_type), gratis al final.
+    const TIER_ORDER = [self::TIER_PREMIUM => 0, self::TIER_DESTACADA_RUBRO => 1, self::TIER_FREE => 2];
+
     protected $fillable = [
         'city_id',
         'owner_id',
         'google_place_id',
         'status',
+        'tier',
+        'tier_expires_at',
         'rejection_reason',
         'name',
         'place_type',
@@ -69,6 +79,7 @@ class KosherPlace extends Model
         'is_active'             => 'boolean',
         'last_verified_at'      => 'datetime',
         'synced_at'             => 'datetime',
+        'tier_expires_at'       => 'datetime',
     ];
 
     public function city(): BelongsTo
@@ -148,6 +159,17 @@ class KosherPlace extends Model
     public function certifier(): BelongsTo
     {
         return $this->belongsTo(Certifier::class);
+    }
+
+    public function tierPayments()
+    {
+        return $this->hasMany(PlaceTierPayment::class, 'place_id');
+    }
+
+    public function hasActivePaidTier(): bool
+    {
+        return $this->tier !== self::TIER_FREE
+            && (! $this->tier_expires_at || $this->tier_expires_at->isFuture());
     }
 
     public function owner(): BelongsTo

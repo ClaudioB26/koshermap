@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Country;
 use App\Models\KosherPlace;
+use App\Models\PlaceTierPayment;
 use Illuminate\Http\Request;
 
 class PlacesModerationController extends Controller
@@ -35,7 +36,43 @@ class PlacesModerationController extends Controller
 
         $countries = Country::whereHas('cities.kosherPlaces')->orderBy('name')->get();
 
-        return view('admin.places.index', compact('places', 'counts', 'status', 'countries', 'country', 'type'));
+        $pendingTransfers = PlaceTierPayment::with('place')
+            ->where('payment_method', PlaceTierPayment::METHOD_TRANSFER)
+            ->where('status', PlaceTierPayment::STATUS_PENDING)
+            ->orderBy('created_at')
+            ->get();
+
+        return view('admin.places.index', compact('places', 'counts', 'status', 'countries', 'country', 'type', 'pendingTransfers'));
+    }
+
+    public function updateTier(Request $request, KosherPlace $place)
+    {
+        $request->validate([
+            'tier' => 'required|in:' . implode(',', [KosherPlace::TIER_FREE, KosherPlace::TIER_DESTACADA_RUBRO, KosherPlace::TIER_PREMIUM]),
+        ]);
+
+        $place->update(['tier' => $request->tier]);
+
+        return back()->with('success', "Plan de \"$place->name\" actualizado a {$request->tier}.");
+    }
+
+    public function approveTransfer(PlaceTierPayment $payment)
+    {
+        $payment->update(['status' => PlaceTierPayment::STATUS_APPROVED]);
+
+        $payment->place->update([
+            'tier'            => $payment->tier,
+            'tier_expires_at' => now()->addMonth(),
+        ]);
+
+        return back()->with('success', "Transferencia aprobada, plan de \"{$payment->place->name}\" activado.");
+    }
+
+    public function rejectTransfer(PlaceTierPayment $payment)
+    {
+        $payment->update(['status' => PlaceTierPayment::STATUS_REJECTED]);
+
+        return back()->with('success', "Transferencia de \"{$payment->place->name}\" rechazada.");
     }
 
     public function approve(KosherPlace $place)

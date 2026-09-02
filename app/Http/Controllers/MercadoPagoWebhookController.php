@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Certifier;
 use App\Models\CertifierTierPayment;
+use App\Models\PlaceTierPayment;
 use App\Services\MercadoPago\MercadoPagoClient;
 use App\Services\MercadoPago\WebhookSignatureValidator;
 use Illuminate\Http\Request;
@@ -45,29 +46,55 @@ class MercadoPagoWebhookController extends Controller
             return response()->noContent();
         }
 
-        // external_reference viene como "certifier_tier_payment:{id}"
+        // external_reference viene como "certifier_tier_payment:{id}" o "place_tier_payment:{id}"
         $reference = $payment['external_reference'] ?? '';
-        if (! str_starts_with($reference, 'certifier_tier_payment:')) {
-            return response()->noContent();
+
+        if (str_starts_with($reference, 'certifier_tier_payment:')) {
+            $this->activateCertifierTier($reference, $paymentId, $payment['status']);
+        } elseif (str_starts_with($reference, 'place_tier_payment:')) {
+            $this->activatePlaceTier($reference, $paymentId, $payment['status']);
         }
 
+        return response()->noContent();
+    }
+
+    private function activateCertifierTier(string $reference, string $paymentId, string $status): void
+    {
         $tierPayment = CertifierTierPayment::find(substr($reference, strlen('certifier_tier_payment:')));
         if (! $tierPayment || $tierPayment->status === CertifierTierPayment::STATUS_APPROVED) {
-            return response()->noContent();
+            return;
         }
 
-        if ($payment['status'] === 'approved') {
+        if ($status === 'approved') {
             $tierPayment->update([
                 'status'        => CertifierTierPayment::STATUS_APPROVED,
                 'mp_payment_id' => $paymentId,
             ]);
 
             $tierPayment->certifier->update([
-                'tier'             => $tierPayment->tier,
-                'tier_expires_at'  => now()->addMonth(),
+                'tier'            => $tierPayment->tier,
+                'tier_expires_at' => now()->addMonth(),
             ]);
         }
+    }
 
-        return response()->noContent();
+    private function activatePlaceTier(string $reference, string $paymentId, string $status): void
+    {
+        $tierPayment = PlaceTierPayment::find(substr($reference, strlen('place_tier_payment:')));
+        if (! $tierPayment || $tierPayment->status === PlaceTierPayment::STATUS_APPROVED) {
+            return;
+        }
+
+        if ($status === 'approved') {
+            $tierPayment->update([
+                'status'        => PlaceTierPayment::STATUS_APPROVED,
+                'mp_payment_id' => $paymentId,
+            ]);
+
+            $tierPayment->place->update([
+                'tier'            => $tierPayment->tier,
+                'tier_expires_at' => now()->addMonth(),
+            ]);
+        }
     }
 }

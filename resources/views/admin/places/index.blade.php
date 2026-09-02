@@ -34,6 +34,33 @@
     </div>
     @endif
 
+    @if($pendingTransfers->isNotEmpty())
+    <div class="mb-6 bg-amber-50 border border-amber-200 rounded-xl p-4">
+        <h2 class="font-semibold text-amber-900 mb-3">💰 Comprobantes de transferencia pendientes ({{ $pendingTransfers->count() }})</h2>
+        <div class="space-y-2">
+            @foreach($pendingTransfers as $payment)
+            <div class="bg-white rounded-lg border border-amber-100 p-3 flex items-center justify-between flex-wrap gap-2">
+                <div class="text-sm">
+                    <strong>{{ $payment->place->name }}</strong> — Plan {{ ucfirst(str_replace('_', ' ', $payment->tier)) }}
+                    (${{ number_format($payment->amount, 0, ',', '.') }} {{ $payment->currency }})
+                    <a href="{{ Storage::disk('public')->url($payment->transfer_proof_path) }}" target="_blank" class="text-blue-600 hover:underline ml-2">📄 Ver comprobante</a>
+                </div>
+                <div class="flex gap-2">
+                    <form method="POST" action="{{ route('admin.place-transfers.approve', $payment) }}">
+                        @csrf
+                        <button type="submit" class="px-3 py-1 bg-green-600 text-white text-xs rounded-lg hover:bg-green-700 transition">✓ Aprobar</button>
+                    </form>
+                    <form method="POST" action="{{ route('admin.place-transfers.reject', $payment) }}">
+                        @csrf
+                        <button type="submit" class="px-3 py-1 bg-red-600 text-white text-xs rounded-lg hover:bg-red-700 transition">✗ Rechazar</button>
+                    </form>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+    @endif
+
     @php $pendingSync = \App\Models\KosherPlace::pendingSync()->count(); @endphp
     @if($pendingSync > 0)
     <div class="mb-6 flex items-center justify-between gap-4 bg-amber-50 border border-amber-300 rounded-xl px-5 py-3">
@@ -214,7 +241,18 @@
                             {{ $place->address ?? '—' }}
                         </td>
                         <td class="px-4 py-3">
-                            <div class="flex gap-2 justify-end items-center">
+                            <div class="flex gap-2 justify-end items-center flex-wrap">
+                                @if($place->status === 'approved')
+                                <form method="POST" action="{{ route('admin.places.tier', $place) }}">
+                                    @csrf
+                                    <select name="tier" onchange="this.form.submit()"
+                                            class="text-xs border border-gray-300 rounded-lg px-2 py-1 bg-white">
+                                        <option value="free" @selected($place->tier === 'free')>Gratis</option>
+                                        <option value="destacada_rubro" @selected($place->tier === 'destacada_rubro')>Destacado rubro</option>
+                                        <option value="premium" @selected($place->tier === 'premium')>⭐ Premium</option>
+                                    </select>
+                                </form>
+                                @endif
                                 @if($place->status !== 'approved')
                                 <form method="POST" action="{{ route('admin.places.approve', $place) }}">
                                     @csrf
