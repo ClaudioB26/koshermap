@@ -127,29 +127,37 @@
         <a href="{{ route('admin.places.index', ['status' => $status]) }}" class="px-4 py-2 text-sm text-gray-500 hover:text-gray-700">Limpiar</a>
     </form>
 
-    {{-- Formulario bulk (envuelve toda la tabla) --}}
+    {{-- Formulario bulk: a proposito NO envuelve la tabla. HTML no permite forms
+         anidados, y cada fila de la tabla ya tiene sus propios forms (tipo,
+         orientacion, tier, aprobar, rechazar). Anidarlos rompia el parser: el
+         browser descartaba el primer form anidado (sus campos terminaban
+         asociados a este form exterior en vez del suyo propio), asi que la
+         primera fila de cada pagina nunca guardaba nada. Los checkboxes de
+         cada fila se asocian por atributo form="bulk-form" en vez de por
+         anidamiento (soportado desde HTML5, no requiere ser descendiente). --}}
     <form id="bulk-form" method="POST" action="{{ route('admin.places.bulk') }}">
         @csrf
         <input type="hidden" name="action" id="bulk-action" value="">
         <input type="hidden" name="reason" id="bulk-reason" value="">
+    </form>
 
-        {{-- Barra de acciones en lote (solo visible cuando hay selección) --}}
-        <div id="bulk-bar"
-             class="hidden mb-3 flex items-center gap-3 bg-blue-50 border border-blue-200 rounded-xl px-4 py-3">
-            <span id="bulk-count" class="text-sm font-semibold text-blue-700">0 seleccionados</span>
-            <div class="flex gap-2 ml-auto">
-                <button type="button" onclick="submitBulk('approve')"
-                        class="px-4 py-1.5 bg-green-600 text-white text-sm rounded-lg hover:bg-green-700 transition font-medium">
-                    ✓ Aprobar seleccionados
-                </button>
-                <button type="button" onclick="submitBulk('reject')"
-                        class="px-4 py-1.5 bg-red-600 text-white text-sm rounded-lg hover:bg-red-700 transition font-medium">
-                    ✗ Rechazar seleccionados
-                </button>
-            </div>
+    {{-- Barra de acciones en lote (solo visible cuando hay selección) --}}
+    <div id="bulk-bar"
+         class="hidden mb-3 flex items-center gap-3 bg-blue-50 border border-blue-200 rounded-xl px-4 py-3">
+        <span id="bulk-count" class="text-sm font-semibold text-blue-700">0 seleccionados</span>
+        <div class="flex gap-2 ml-auto">
+            <button type="button" onclick="submitBulk('approve')"
+                    class="px-4 py-1.5 bg-green-600 text-white text-sm rounded-lg hover:bg-green-700 transition font-medium">
+                ✓ Aprobar seleccionados
+            </button>
+            <button type="button" onclick="submitBulk('reject')"
+                    class="px-4 py-1.5 bg-red-600 text-white text-sm rounded-lg hover:bg-red-700 transition font-medium">
+                ✗ Rechazar seleccionados
+            </button>
         </div>
+    </div>
 
-        {{-- Tabla --}}
+    {{-- Tabla --}}
         <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
             @if($places->isEmpty())
             <div class="p-12 text-center text-gray-400">
@@ -183,7 +191,7 @@
                     <tr class="hover:bg-gray-50 transition row-item">
                         @if($status === 'pending')
                         <td class="px-4 py-3">
-                            <input type="checkbox" name="ids[]" value="{{ $place->id }}"
+                            <input type="checkbox" name="ids[]" value="{{ $place->id }}" form="bulk-form"
                                    class="row-check rounded border-gray-300 text-blue-600 cursor-pointer">
                         </td>
                         @endif
@@ -293,7 +301,6 @@
             </table>
             @endif
         </div>
-    </form>
 
     <div class="mt-6">
         {{ $places->links() }}
