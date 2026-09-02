@@ -18,7 +18,7 @@
         <a href="{{ route('account.places') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700">
             🏪 {{ __('my_places') }}
         </a>
-        @if(auth()->user()->isCertifier())
+        @if((auth()->user()->isCertifier() || auth()->user()->isAdmin()) && auth()->user()->certifier_id)
         <a href="{{ route('account.products') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700">
             📦 Mis productos
         </a>

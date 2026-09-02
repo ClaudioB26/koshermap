@@ -15,7 +15,11 @@ class ProductSubmissionController extends Controller
     private function certifierOrFail(Request $request)
     {
         $user = $request->user();
-        abort_unless($user->isCertifier() && $user->certifier_id, 403, 'Esta sección es solo para certificadoras aprobadas.');
+        // isAdmin() tambien pasa: un admin no deberia tener MENOS acceso que un
+        // certificador comun sobre su propia certificadora (ej: la cuenta del
+        // dueño de la plataforma es a la vez admin y dueña de una certificadora
+        // de prueba, y perderia "Mis productos" si solo se chequeara isCertifier()).
+        abort_unless(($user->isCertifier() || $user->isAdmin()) && $user->certifier_id, 403, 'Esta sección es solo para certificadoras aprobadas.');
 
         return $user->certifier;
     }
