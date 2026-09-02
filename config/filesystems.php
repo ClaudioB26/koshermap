@@ -41,7 +41,12 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => rtrim(env('APP_URL'), '/').'/storage',
+            // No usar "/storage": en producción el Document Root apunta a
+            // public_html/ (la raiz del repo, no public_html/public/), y ahi
+            // "storage" ya existe como la carpeta real de Laravel (logs, cache,
+            // sesiones). Un symlink de nombre "storage" en la raiz pisaria eso.
+            // "media" no colisiona con nada. Ver doc/plan-adsense.md.
+            'url' => rtrim(env('APP_URL'), '/').'/media',
             'visibility' => 'public',
             'throw' => false,
             'report' => false,
@@ -74,7 +79,7 @@ return [
     */
 
     'links' => [
-        public_path('storage') => storage_path('app/public'),
+        public_path('media') => storage_path('app/public'),
     ],
 
 ];

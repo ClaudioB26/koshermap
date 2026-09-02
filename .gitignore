@@ -47,7 +47,7 @@ ajdut_*.json
 /node_modules
 /public/build
 /public/hot
-/public/storage
+/public/media
 /storage/*.key
 /storage/pail
 /vendor
