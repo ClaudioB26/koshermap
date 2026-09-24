@@ -6,8 +6,13 @@ use Illuminate\Support\Facades\Schedule;
 
 // Requiere el cron de siempre en el servidor: * * * * * php artisan schedule:run
 // (mismo criterio que mayorista-platform, ver su routes/console.php).
-Schedule::command('tier:renewal-reminders')->daily();
-Schedule::command('tier:expire-overdue')->daily();
+// La salida de cada corrida se guarda en storage/logs/tier-scheduler.log (bloqueado
+// por web en el .htaccess): sin eso el scheduler no deja ningun rastro y no hay forma
+// de saber si el cron del servidor esta funcionando.
+Schedule::command('tier:renewal-reminders')->daily()
+    ->appendOutputTo(storage_path('logs/tier-scheduler.log'));
+Schedule::command('tier:expire-overdue')->daily()
+    ->appendOutputTo(storage_path('logs/tier-scheduler.log'));
 
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
