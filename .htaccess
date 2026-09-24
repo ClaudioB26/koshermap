@@ -1,6 +1,15 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
+    # En produccion el Document Root es la raiz del repo (no public/), asi que
+    # cualquier archivo que exista en disco se servia tal cual: laravel.log,
+    # composer.json, artisan, etc. Se bloquean primero, con 403.
+    # Los archivos publicos van por /media (symlink a storage/app/public) y
+    # /images (symlink a public/images), no por estas rutas.
+    RewriteRule ^(storage|vendor|bootstrap|database|app|config|routes|tests|doc|scripts|node_modules)(/|$) - [F,L]
+    RewriteRule ^(composer\.(json|lock)|artisan|package(-lock)?\.json|phpunit\.xml|vite\.config\.js|README\.md)$ - [F,L]
+    RewriteRule \.(log|sql|bak|env)$ - [F,L]
+
     # Si el archivo o directorio existe en public/, servirlo directo
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
