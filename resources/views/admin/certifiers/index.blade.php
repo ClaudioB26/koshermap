@@ -38,7 +38,7 @@
                 <div class="text-sm">
                     <strong>{{ $payment->certifier->name }}</strong> — Plan {{ ucfirst($payment->tier) }} ({{ $payment->months }} {{ $payment->months === 1 ? 'mes' : 'meses' }})
                     (${{ number_format($payment->amount, 0, ',', '.') }} {{ $payment->currency }})
-                    <a href="{{ Storage::disk('public')->url($payment->transfer_proof_path) }}" target="_blank" class="text-blue-600 hover:underline ml-2">📄 Ver comprobante</a>
+                    <a href="{{ route('admin.files.show', ['path' => $payment->transfer_proof_path]) }}" target="_blank" class="text-blue-600 hover:underline ml-2">📄 Ver comprobante</a>
                 </div>
                 <div class="flex gap-2">
                     <form method="POST" action="{{ route('admin.certifier-transfers.approve', $payment) }}">
@@ -115,7 +115,7 @@
                         @if(!empty($certifier->documents))
                         <div class="text-xs mt-1 space-y-0.5">
                             @foreach($certifier->documents as $doc)
-                            <div><a href="{{ Storage::disk('public')->url($doc['path']) }}" target="_blank" class="text-blue-500 hover:underline">📄 {{ $doc['name'] }}</a></div>
+                            <div><a href="{{ route('admin.files.show', ['path' => $doc['path']]) }}" target="_blank" class="text-blue-500 hover:underline">📄 {{ $doc['name'] }}</a></div>
                             @endforeach
                         </div>
                         @endif

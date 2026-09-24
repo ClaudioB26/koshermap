@@ -233,7 +233,11 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::middleware(['auth', 'admin.check'])->group(function () {
         Route::post('/logout', [\App\Http\Controllers\Admin\AdminAuthController::class, 'logout'])->name('logout');
 
-        Route::get('/reports',                  [\App\Http\Controllers\Admin\ReportsAdminController::class, 'index'])->name('reports.index');
+        // Comprobantes de pago y documentos de certificadoras: solo admins, sin URL publica.
+        Route::get('/archivos/{path}', [\App\Http\Controllers\Admin\PrivateFileController::class, 'show'])
+            ->where('path', '.+')->name('files.show');
+
+        Route::get('/reports',                 [\App\Http\Controllers\Admin\ReportsAdminController::class, 'index'])->name('reports.index');
         Route::post('/reports/{report}/review', [\App\Http\Controllers\Admin\ReportsAdminController::class, 'review'])->name('reports.review');
 
         Route::get('/reviews',      [\App\Http\Controllers\Admin\ReviewsModerationController::class, 'index'])->name('reviews.index');

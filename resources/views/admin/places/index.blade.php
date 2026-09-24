@@ -43,7 +43,7 @@
                 <div class="text-sm">
                     <strong>{{ $payment->place->name }}</strong> — Plan {{ ucfirst(str_replace('_', ' ', $payment->tier)) }} ({{ $payment->months }} {{ $payment->months === 1 ? 'mes' : 'meses' }})
                     (${{ number_format($payment->amount, 0, ',', '.') }} {{ $payment->currency }})
-                    <a href="{{ Storage::disk('public')->url($payment->transfer_proof_path) }}" target="_blank" class="text-blue-600 hover:underline ml-2">📄 Ver comprobante</a>
+                    <a href="{{ route('admin.files.show', ['path' => $payment->transfer_proof_path]) }}" target="_blank" class="text-blue-600 hover:underline ml-2">📄 Ver comprobante</a>
                 </div>
                 <div class="flex gap-2">
                     <form method="POST" action="{{ route('admin.place-transfers.approve', $payment) }}">
