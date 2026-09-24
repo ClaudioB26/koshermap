@@ -30,6 +30,27 @@ SVG;
         ->header('Cache-Control', 'public, max-age=604800');
 })->name('favicon');
 
+// Imagenes de public/images servidas por ruta. En produccion el Document Root es
+// la raiz del repo (no public/), asi que /images/... solo funcionaba con un symlink
+// manual (ln -sfn .../public/images .../images) que habia que repetir tras cada
+// deploy y, cuando faltaba, las imagenes de los articulos daban 404. Si el symlink
+// existe, el servidor sirve el archivo directo y esta ruta ni se ejecuta; si no
+// existe, el .htaccess manda el pedido a Laravel y lo resuelve esto.
+Route::get('/images/{path}', function (string $path) {
+    $base = realpath(public_path('images'));
+    $file = realpath(public_path('images/' . $path));
+
+    abort_unless(
+        $base && $file
+            && str_starts_with($file, $base . DIRECTORY_SEPARATOR)
+            && is_file($file)
+            && in_array(strtolower(pathinfo($file, PATHINFO_EXTENSION)), ['jpg', 'jpeg', 'png', 'webp', 'gif', 'svg', 'ico'], true),
+        404
+    );
+
+    return response()->file($file, ['Cache-Control' => 'public, max-age=31536000, immutable']);
+})->where('path', '.+')->name('images');
+
 // Robots.txt generado por ruta (no depende de servir el archivo estático en el hosting)
 Route::get('/robots.txt', function () {
     $lines = [
