@@ -81,6 +81,9 @@
             </div>
             @error('accepted_privacy')<p class="text-sm text-red-600">{{ $message }}</p>@enderror
 
+            @include('partials.turnstile')
+            @error('cf-turnstile-response')<p class="text-sm text-red-600">{{ $message }}</p>@enderror
+
             <button type="submit"
                     class="px-6 py-2.5 bg-blue-600 text-white rounded-lg font-semibold text-sm hover:bg-blue-700 transition">
                 {{ __('contact.submit') }}

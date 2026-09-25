@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Certifier;
 use App\Models\CertifierLead;
 use App\Models\ContactMessage;
+use App\Rules\Turnstile;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
@@ -18,6 +19,7 @@ class ContactController extends Controller
             'email'             => 'required|email|max:255',
             'message'           => 'required|string|max:2000',
             'accepted_privacy'  => 'accepted',
+            'cf-turnstile-response' => [new Turnstile],
         ]);
 
         ContactMessage::create([
@@ -71,7 +73,10 @@ class ContactController extends Controller
             'phone'        => 'nullable|string|max:50',
             'product_type' => 'nullable|string|max:255',
             'message'      => 'nullable|string|max:1000',
+            'cf-turnstile-response' => [new Turnstile],
         ]);
+
+        unset($validated['cf-turnstile-response']);
 
         $lead = CertifierLead::create(array_merge($validated, ['certifier_id' => $certifier->id]));
 

@@ -76,6 +76,9 @@
                 <textarea name="message" rows="3"
                           class="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:ring-2 focus:ring-blue-300 focus:outline-none">{{ old('message') }}</textarea>
             </div>
+
+            @include('partials.turnstile')
+
             <button type="submit"
                     class="w-full px-4 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition">
                 Enviar a {{ $certifier->name }}

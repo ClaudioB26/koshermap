@@ -140,9 +140,14 @@ Route::get('/productos', [SearchController::class, 'index'])->name('search.index
 //
 // Los datos siguen en la base: esto es solo la capa pública.
 Route::get('/product/{slug}', fn () => abort(410))->name('products.show');
-Route::post('/product/{slug}/reviews', [ReviewController::class, 'store'])->name('reviews.store');
-Route::post('/product/{product}/report', [ReportController::class, 'storeProduct'])->name('products.report');
-Route::post('/places/{place}/report',   [ReportController::class, 'storePlace'])->name('places.report');
+// Reseñas y reportes de fichas de producto/local: sin ninguna pantalla que los
+// use desde que se retiraron esas paginas (410), pero los POST seguian abiertos
+// a cualquiera sin login ni captcha. Se cierran tambien (410). Si se reactiva
+// /places o las fichas, restaurar estas rutas junto con App\Rules\Turnstile en
+// el formulario (ver el de /contacto como ejemplo).
+Route::post('/product/{slug}/reviews', fn () => abort(410))->name('reviews.store');
+Route::post('/product/{product}/report', fn () => abort(410))->name('products.report');
+Route::post('/places/{place}/report',   fn () => abort(410))->name('places.report');
 
 // Catálogo
 Route::get('/categories', [CatalogController::class, 'categories'])->name('categories.index');
