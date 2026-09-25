@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Certifier;
 use App\Models\CertifierLead;
+use App\Support\LeadsCsv;
 use Illuminate\Http\Request;
 
 /**
@@ -24,7 +25,7 @@ class LeadsController extends Controller
         }
 
         if ($request->query('export') === 'csv') {
-            return $this->exportCsv($query);
+            return LeadsCsv::download($query, true);
         }
 
         $leads = $query->paginate(30)->withQueryString();
@@ -45,43 +46,5 @@ class LeadsController extends Controller
             'certifierId' => $certifierId,
             'total'       => CertifierLead::count(),
         ]);
-    }
-
-    private function exportCsv($query)
-    {
-        $filename = 'leads-koshermap-' . now()->format('Y-m-d') . '.csv';
-
-        return response()->streamDownload(function () use ($query) {
-            $out = fopen('php://output', 'w');
-            fwrite($out, "\xEF\xBB\xBF"); // BOM UTF-8: Excel reconoce los acentos
-            fputcsv($out, ['Fecha', 'Certificadora', 'Empresa', 'Contacto', 'Email', 'Telefono', 'Producto', 'Mensaje'], ',', '"', '');
-
-            foreach ($query->cursor() as $lead) {
-                fputcsv($out, array_map([$this, 'safeCell'], [
-                    $lead->created_at->format('Y-m-d H:i'),
-                    $lead->certifier?->name,
-                    $lead->company,
-                    $lead->name,
-                    $lead->email,
-                    $lead->phone,
-                    $lead->product_type,
-                    $lead->message,
-                ]), ',', '"', '');
-            }
-
-            fclose($out);
-        }, $filename, ['Content-Type' => 'text/csv; charset=UTF-8']);
-    }
-
-    /**
-     * Los datos los escribe cualquier visitante. Una celda que empiece con
-     * = + - @ se interpreta como formula al abrir el CSV en Excel (inyeccion
-     * de formulas), asi que se le antepone un apostrofe para que quede texto.
-     */
-    private function safeCell(?string $value): string
-    {
-        $value = (string) $value;
-
-        return preg_match('/^[=+\-@\t\r]/', $value) ? "'" . $value : $value;
     }
 }

@@ -211,6 +211,7 @@ Route::middleware('auth')->prefix('cuenta')->name('account.')->group(function ()
     Route::get('/mis-locales/{place}/plan/transferencia', [\App\Http\Controllers\PlaceBillingController::class, 'transferForm'])->name('places.plan.transfer');
     Route::post('/mis-locales/{place}/plan/transferencia', [\App\Http\Controllers\PlaceBillingController::class, 'transferStore'])->name('places.plan.transfer.store');
     Route::get('/mi-certificadora', [AccountController::class, 'certifier'])->name('certifiers.my');
+    Route::get('/mi-certificadora/contactos', [AccountController::class, 'certifierLeads'])->name('certifiers.leads');
     Route::get('/mi-certificadora/plan', [\App\Http\Controllers\CertifierBillingController::class, 'plans'])->name('certifiers.plan');
     Route::post('/mi-certificadora/plan/checkout', [\App\Http\Controllers\CertifierBillingController::class, 'checkout'])->name('certifiers.plan.checkout');
     Route::get('/mi-certificadora/plan/transferencia', [\App\Http\Controllers\CertifierBillingController::class, 'transferForm'])->name('certifiers.plan.transfer');

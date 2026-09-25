@@ -98,7 +98,8 @@ class ContactController extends Controller
                 . "Email: {$lead->email}\n"
                 . "Telefono: " . ($lead->phone ?: '—') . "\n"
                 . "Tipo de producto: " . ($lead->product_type ?: '—') . "\n"
-                . "Mensaje: " . ($lead->message ?: '—'),
+                . "Mensaje: " . ($lead->message ?: '—') . "\n\n"
+                . "Todos tus contactos quedan guardados en: " . route('account.certifiers.leads'),
                 function ($message) use ($lead, $notifyEmail, $adminEmail) {
                     $message->to($notifyEmail)
                             ->replyTo($lead->email, $lead->name)
