@@ -14,6 +14,7 @@
         <h1 class="text-2xl font-bold text-gray-800">🏠 Moderación de Lugares Kosher</h1>
         <div class="flex items-center gap-4">
             <span class="text-sm text-gray-500">{{ auth()->user()->email }}</span>
+            <a href="{{ route('admin.leads.index') }}" class="text-sm text-blue-600 hover:underline">📥 Leads</a>
             <a href="{{ route('admin.reports.index') }}" class="text-sm text-blue-600 hover:underline">⚑ Reportes
                 @php $pendingReports = \App\Models\Report::where('status','pending')->count(); @endphp
                 @if($pendingReports > 0)

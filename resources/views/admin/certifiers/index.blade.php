@@ -14,6 +14,7 @@
         <h1 class="text-2xl font-bold text-gray-800">🏅 Moderación de Certificadoras</h1>
         <div class="flex items-center gap-4">
             <span class="text-sm text-gray-500">{{ auth()->user()->email }}</span>
+            <a href="{{ route('admin.leads.index') }}" class="text-sm text-blue-600 hover:underline">📥 Leads</a>
             <a href="{{ route('admin.places.index') }}" class="text-sm text-blue-600 hover:underline">🏠 Lugares</a>
             <a href="/" class="text-sm text-blue-600 hover:underline">← Sitio</a>
             <form method="POST" action="{{ route('admin.logout') }}">
@@ -144,7 +145,13 @@
                             </select>
                         </form>
                         @endif
-                        <div class="text-xs text-gray-500">{{ $certifier->leads_count }} {{ $certifier->leads_count === 1 ? 'lead' : 'leads' }}</div>
+                        <div class="text-xs text-gray-500">
+                            @if($certifier->leads_count > 0)
+                            <a href="{{ route('admin.leads.index', ['certifier' => $certifier->id]) }}" class="text-blue-600 hover:underline">{{ $certifier->leads_count }} {{ $certifier->leads_count === 1 ? 'lead' : 'leads' }} →</a>
+                            @else
+                            0 leads
+                            @endif
+                        </div>
                     </td>
                     <td class="px-4 py-3">
                         <div class="flex gap-2 justify-end items-center flex-wrap">
