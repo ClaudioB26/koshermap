@@ -51,6 +51,10 @@ Route::get('/images/{path}', function (string $path) {
     return response()->file($file, ['Cache-Control' => 'public, max-age=31536000, immutable']);
 })->where('path', '.+')->name('images');
 
+// Banners propios: imagen (desde storage, sin symlink) y clic (cuenta y redirige).
+Route::get('/banner-img/{banner}', [\App\Http\Controllers\BannerController::class, 'image'])->name('banners.image');
+Route::get('/b/{banner}', [\App\Http\Controllers\BannerController::class, 'click'])->middleware('throttle:60,1')->name('banners.click');
+
 // Robots.txt generado por ruta (no depende de servir el archivo estático en el hosting)
 Route::get('/robots.txt', function () {
     $lines = [
@@ -261,6 +265,9 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::post('/logout', [\App\Http\Controllers\Admin\AdminAuthController::class, 'logout'])->name('logout');
 
         Route::get('/leads', [\App\Http\Controllers\Admin\LeadsController::class, 'index'])->name('leads.index');
+
+        Route::resource('banners', \App\Http\Controllers\Admin\BannersController::class)->except('show');
+        Route::post('/banners/{banner}/toggle', [\App\Http\Controllers\Admin\BannersController::class, 'toggle'])->name('banners.toggle');
 
         // Comprobantes de pago y documentos de certificadoras: solo admins, sin URL publica.
         Route::get('/archivos/{path}', [\App\Http\Controllers\Admin\PrivateFileController::class, 'show'])

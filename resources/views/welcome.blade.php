@@ -180,12 +180,7 @@
         {{-- Resultados --}}
         @if($products->count() > 0)
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            @foreach($products as $i => $product)
-            @if($i > 0 && $i % 6 === 0)
-            </div>
-            @include('partials.ad_banner')
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            @endif
+            @foreach($products as $product)
             {{-- Sin link: las fichas individuales se retiraron (410). La fila ya
                  muestra certificadora, marca y estado kosher, que es la respuesta
                  que el usuario busca. Ver doc/plan-adsense.md. --}}

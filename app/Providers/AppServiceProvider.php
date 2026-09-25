@@ -38,6 +38,9 @@ class AppServiceProvider extends ServiceProvider
                 'leads'      => \App\Models\CertifierLead::where('created_at', '>=', now()->subDays(7))->count(),
                 'reports'    => \App\Models\Report::where('status', 'pending')->count(),
                 'reviews'    => \App\Models\Review::where('status', \App\Models\Review::STATUS_PENDING)->count(),
+                // banners activos que vencen en los proximos 7 dias (para renovarlos o cobrar otro periodo)
+                'banners'    => \App\Models\Banner::live()->whereNotNull('ends_on')
+                    ->where('ends_on', '<=', now()->addDays(7)->toDateString())->count(),
             ]);
         });
     }

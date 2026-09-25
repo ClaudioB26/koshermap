@@ -19,6 +19,7 @@ $menu = [
     ['route' => 'admin.leads.index',      'match' => 'admin.leads.*',      'icon' => '📥', 'label' => 'Leads',          'badge' => $adminBadges['leads'] ?? 0,      'badgeClass' => 'bg-blue-500', 'badgeTitle' => 'últimos 7 días'],
     ['route' => 'admin.reports.index',    'match' => 'admin.reports.*',    'icon' => '🚩', 'label' => 'Reportes',       'badge' => $adminBadges['reports'] ?? 0,    'badgeClass' => 'bg-red-500'],
     ['route' => 'admin.reviews.index',    'match' => 'admin.reviews.*',    'icon' => '💬', 'label' => 'Comentarios',    'badge' => $adminBadges['reviews'] ?? 0,    'badgeClass' => 'bg-red-500'],
+    ['route' => 'admin.banners.index',    'match' => 'admin.banners.*',    'icon' => '📢', 'label' => 'Banners',        'badge' => $adminBadges['banners'] ?? 0,    'badgeClass' => 'bg-amber-500', 'badgeTitle' => 'vencen en los próximos 7 días'],
 ];
 @endphp
 
