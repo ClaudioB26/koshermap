@@ -3,7 +3,22 @@
 @section('title', $article->title . ' — KosherMap')
 @section('meta_description', $article->excerpt)
 
+@php
+    $__locale = app()->getLocale();
+    $__img = $article->thumbnail ? (str_starts_with($article->thumbnail, 'http') ? $article->thumbnail : url($article->thumbnail)) : null;
+@endphp
+@section('og_type', 'article')
+@if($__img)
+    @section('og_image', $__img)
+@endif
+
 @push('head')
+    {!! \App\Services\SchemaService::render(\App\Services\SchemaService::articleSchema($article, $__locale, $__img)) !!}
+    {!! \App\Services\SchemaService::render(\App\Services\SchemaService::breadcrumbSchema([
+        ['name' => 'KosherMap', 'url' => url('/')],
+        ['name' => \App\Models\Article::sectionLabelFor($__locale), 'url' => \App\Models\Article::indexUrlFor($__locale)],
+        ['name' => $article->title, 'url' => $article->urlFor($__locale) ?? url()->current()],
+    ])) !!}
     {{-- hreflang: le dice a Google que esta misma nota existe en estos otros
     idiomas, cada uno con su propia URL, para que le muestre a cada usuario
     la versión que corresponde en los resultados de búsqueda. --}}

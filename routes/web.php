@@ -122,12 +122,9 @@ Route::get('/robots.txt', function () {
     return response(implode("\n", $lines), 200)->header('Content-Type', 'text/plain');
 })->name('robots');
 
-// Home apunta a /articulos durante el proceso de aprobación de AdSense
-// (contenido editorial en vez de buscador). La búsqueda de productos
-// se movió a /productos para no perder la funcionalidad.
-Route::get('/', function () {
-    return redirect()->route('articles.index', [], 301);
-})->name('home');
+// Home: eslogan + accesos (productos, certificadoras, guías). El buscador
+// completo vive en /productos.
+Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/productos', [SearchController::class, 'index'])->name('search.index');
 // Fichas de producto retiradas de la web pública (410 Gone).
 //

@@ -260,10 +260,10 @@ class SitemapController extends Controller
         
         // Static pages
         $pages = [
-            '/articulos' => ['priority' => '1.0', 'changefreq' => 'daily'],
+            '/' => ['priority' => '1.0', 'changefreq' => 'daily'],
+            '/articulos' => ['priority' => '0.9', 'changefreq' => 'daily'],
             '/categories' => ['priority' => '0.6', 'changefreq' => 'weekly'],
             '/certifiers' => ['priority' => '0.6', 'changefreq' => 'weekly'],
-            '/brands' => ['priority' => '0.5', 'changefreq' => 'weekly'],
             '/que-es-kosher' => ['priority' => '0.7', 'changefreq' => 'monthly'],
             '/kashrut' => ['priority' => '0.6', 'changefreq' => 'monthly'],
             '/judaismo' => ['priority' => '0.6', 'changefreq' => 'monthly'],

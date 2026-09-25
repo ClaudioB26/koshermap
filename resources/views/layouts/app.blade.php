@@ -11,7 +11,11 @@
     <meta property="og:title" content="@yield('title', 'KosherMap')">
     <meta property="og:description" content="@yield('meta_description', 'KosherMap — Directorio global de productos y locales con certificación kosher.')">
     <meta property="og:url" content="@yield('canonical', request()->url())">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="@yield('og_type', 'website')">
+    <meta property="og:site_name" content="KosherMap">
+    <meta property="og:image" content="@yield('og_image', url('/images/og-default.png'))">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="@yield('og_image', url('/images/og-default.png'))">
     <meta property="og:locale" content="{{ str_replace('-', '_', app()->getLocale()) === 'es' ? 'es_AR' : str_replace('-', '_', app()->getLocale()) }}">
     <meta name="language" content="{{ app()->getLocale() }}">
     <script src="https://cdn.tailwindcss.com"></script>

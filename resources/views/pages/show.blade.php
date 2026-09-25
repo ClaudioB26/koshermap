@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', $content['title'] . ' — KosherMap')
+@section('title', str_contains($content['title'], 'KosherMap') ? $content['title'] : $content['title'] . ' — KosherMap')
 @section('meta_description', $content['description'] ?? '')
 @if(in_array(request()->path(), ['privacidad', 'terminos', 'aviso-legal', 'politica-cookies']))
 @section('no_ads', '1')

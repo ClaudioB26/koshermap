@@ -15,6 +15,7 @@
 @endphp
 
 @section('title', $pageCopy['title'] . ' — KosherMap')
+@section('meta_description', $pageCopy['intro'])
 
 @section('content')
 <div class="max-w-5xl mx-auto px-4 py-10">

@@ -87,47 +87,65 @@ class SchemaService
         return [
             '@context' => 'https://schema.org',
             '@type' => 'Organization',
+            '@id' => url('/') . '#organization',
             'name' => 'KosherMap',
-            'url' => config('app.url'),
-            'logo' => config('app.url') . '/images/logo.png',
-            'description' => 'Comprehensive kosher product database and certification verification platform',
-            'sameAs' => [
-                // Add social media links when available
-            ],
-            'contactPoint' => [
-                '@type' => 'ContactPoint',
-                'contactType' => 'customer service',
-                'availableLanguage' => ['Spanish', 'English', 'Portuguese', 'French', 'Hebrew', 'Russian']
-            ],
-            'knowsAbout' => [
-                'Kosher food certification',
-                'Halal food standards',
-                'Food safety regulations',
-                'Religious dietary laws'
-            ]
+            'url' => url('/'),
+            'logo' => url('/images/logo.png'),
+            'description' => 'Directorio global de productos kosher, certificadoras y guías de kashrut.',
         ];
     }
 
     /**
-     * Generate WebSite schema.org JSON-LD
+     * Generate WebSite schema.org JSON-LD (con buscador de productos)
      */
     public static function webSiteSchema()
     {
         return [
             '@context' => 'https://schema.org',
             '@type' => 'WebSite',
+            '@id' => url('/') . '#website',
             'name' => 'KosherMap',
-            'url' => config('app.url'),
-            'description' => 'Search and verify kosher products from multiple certification agencies',
+            'url' => url('/'),
+            'publisher' => ['@id' => url('/') . '#organization'],
+            'inLanguage' => ['es', 'en', 'pt', 'fr', 'he', 'ru'],
             'potentialAction' => [
                 '@type' => 'SearchAction',
-                'target' => config('app.url') . '/search?q={search_term_string}',
-                'query-input' => 'required name=search_term_string'
+                'target' => [
+                    '@type' => 'EntryPoint',
+                    'urlTemplate' => url('/productos') . '?query={search_term_string}',
+                ],
+                'query-input' => 'required name=search_term_string',
             ],
-            'inLanguage' => ['es', 'en', 'pt', 'fr', 'he', 'ru']
         ];
     }
 
+    /**
+     * Generate Article schema.org JSON-LD para una nota del blog
+     */
+    public static function articleSchema($article, string $locale, ?string $image = null)
+    {
+        $url = $article->urlFor($locale) ?? url()->current();
+
+        $schema = [
+            '@context' => 'https://schema.org',
+            '@type' => 'Article',
+            'mainEntityOfPage' => ['@type' => 'WebPage', '@id' => $url],
+            'headline' => \Illuminate\Support\Str::limit((string) $article->title, 110, ''),
+            'description' => (string) $article->excerpt,
+            'inLanguage' => $locale,
+            'datePublished' => optional($article->created_at)->toIso8601String(),
+            'dateModified' => optional($article->updated_at ?? $article->created_at)->toIso8601String(),
+            'author' => ['@type' => 'Organization', 'name' => 'Equipo KosherMap', 'url' => url('/')],
+            'publisher' => [
+                '@type' => 'Organization',
+                'name' => 'KosherMap',
+                'logo' => ['@type' => 'ImageObject', 'url' => url('/images/logo.png')],
+            ],
+            'image' => [$image ?: url('/images/og-default.png')],
+        ];
+
+        return $schema;
+    }
     /**
      * Generate BreadcrumbList schema.org JSON-LD
      */
@@ -292,7 +310,7 @@ class SchemaService
      */
     public static function render($schema)
     {
-        $json = json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+        $json = json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_HEX_AMP);
         return "<script type=\"application/ld+json\">\n{$json}\n</script>";
     }
 }
