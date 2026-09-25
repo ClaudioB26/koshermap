@@ -38,9 +38,16 @@ class AppServiceProvider extends ServiceProvider
                 'leads'      => \App\Models\CertifierLead::where('created_at', '>=', now()->subDays(7))->count(),
                 'reports'    => \App\Models\Report::where('status', 'pending')->count(),
                 'reviews'    => \App\Models\Review::where('status', \App\Models\Review::STATUS_PENDING)->count(),
-                // banners activos que vencen en los proximos 7 dias (para renovarlos o cobrar otro periodo)
-                'banners'    => \App\Models\Banner::live()->whereNotNull('ends_on')
-                    ->where('ends_on', '<=', now()->addDays(7)->toDateString())->count(),
+                // banners activos que vencen en los proximos 7 dias (para renovarlos o cobrar otro periodo).
+                // Con try/catch: si la migracion de banners todavia no corrio, el panel tiene que abrir igual.
+                'banners'    => (function () {
+                    try {
+                        return \App\Models\Banner::live()->whereNotNull('ends_on')
+                            ->where('ends_on', '<=', now()->addDays(7)->toDateString())->count();
+                    } catch (\Illuminate\Database\QueryException $e) {
+                        return 0;
+                    }
+                })(),
             ]);
         });
     }

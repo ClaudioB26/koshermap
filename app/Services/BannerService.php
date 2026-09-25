@@ -30,17 +30,26 @@ class BannerService
             return null;
         }
 
-        $banner = Banner::live()
-            ->where('slot', $slot)
-            ->whereIn('pages', ['all', $group])
-            ->inRandomOrder()
-            ->first();
+        // Un banner nunca debe tumbar una pagina: si la tabla todavia no existe
+        // (deploy del codigo antes de correr la migracion) o la base falla, la
+        // pagina sale igual, sin banner.
+        try {
+            $banner = Banner::live()
+                ->where('slot', $slot)
+                ->whereIn('pages', ['all', $group])
+                ->inRandomOrder()
+                ->first();
 
-        if ($banner && $this->shouldCount()) {
-            Banner::whereKey($banner->id)->increment('impressions');
+            if ($banner && $this->shouldCount()) {
+                Banner::whereKey($banner->id)->increment('impressions');
+            }
+
+            return $banner;
+        } catch (\Illuminate\Database\QueryException $e) {
+            \Illuminate\Support\Facades\Log::warning('BannerService: no se pudo leer banners, se omite. ' . $e->getMessage());
+
+            return null;
         }
-
-        return $banner;
     }
 
     /** No se cuentan bots ni al admin (que mira los banners para revisarlos). */
