@@ -47,7 +47,7 @@
             <a href="{{ $listedArticle->urlFor($locale) ?? route('articles.show', $listedArticle->slug) }}"
                class="group flex flex-col bg-white border border-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
                 @if($listedArticle->thumbnail)
-                    <img src="{{ $listedArticle->thumbnail }}" alt="{{ $listedArticle->title }}" loading="lazy"
+                    <img src="{{ $listedArticle->thumbnail_small }}" alt="{{ $listedArticle->title }}" loading="lazy" decoding="async" width="480" height="320"
                          class="w-full h-40 object-cover">
                 @else
                     <div class="w-full h-40 bg-gradient-to-br from-blue-50 to-gray-100 flex items-center justify-center">

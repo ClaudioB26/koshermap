@@ -51,6 +51,18 @@ Route::get('/images/{path}', function (string $path) {
     return response()->file($file, ['Cache-Control' => 'public, max-age=31536000, immutable']);
 })->where('path', '.+')->name('images');
 
+// CSS público compilado (Tailwind, ver tailwind.config.js). Va por ruta por la
+// misma razón que /images: en producción public/ no es el Document Root. El
+// layout le agrega ?v=<mtime>, así que se puede cachear "para siempre".
+Route::get('/css/app.css', function () {
+    $file = public_path('css/app.css');
+    abort_unless(is_file($file), 404);
+
+    return response()->file($file, [
+        'Content-Type' => 'text/css; charset=utf-8',
+        'Cache-Control' => 'public, max-age=31536000, immutable',
+    ]);
+})->name('css.app');
 // Banners propios: imagen (desde storage, sin symlink) y clic (cuenta y redirige).
 Route::get('/banner-img/{banner}', [\App\Http\Controllers\BannerController::class, 'image'])->name('banners.image');
 Route::get('/b/{banner}', [\App\Http\Controllers\BannerController::class, 'click'])->middleware('throttle:60,1')->name('banners.click');

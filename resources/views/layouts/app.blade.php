@@ -18,10 +18,10 @@
     <meta name="twitter:image" content="@yield('og_image', url('/images/og-default.png'))">
     <meta property="og:locale" content="{{ str_replace('-', '_', app()->getLocale()) === 'es' ? 'es_AR' : str_replace('-', '_', app()->getLocale()) }}">
     <meta name="language" content="{{ app()->getLocale() }}">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preload" href="{{ url('/css/app.css') }}?v={{ @filemtime(public_path('css/app.css')) }}" as="style">
+    <link rel="stylesheet" href="{{ url('/css/app.css') }}?v={{ @filemtime(public_path('css/app.css')) }}">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <style>[x-cloak] { display: none !important; }</style>
-    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
 
     {{-- Google Consent Mode + carga diferida de Analytics/AdSense:
          los scripts de GA y AdSense NO se cargan (y por lo tanto no setean cookies)
@@ -227,10 +227,22 @@
     const queryInput = document.getElementById('query-input');
     if (!scanBtn || !readerDiv || !queryInput) return;
 
-    const html5QrCode = new Html5Qrcode("reader");
+    // La librería (~100 KB) se baja recién al tocar el botón de escanear.
+    let html5QrCode = null;
     let isScanning = false;
+    let libPromise = null;
+    const loadLib = () => libPromise || (libPromise = new Promise((resolve, reject) => {
+        if (window.Html5Qrcode) return resolve();
+        const s = document.createElement('script');
+        s.src = 'https://unpkg.com/html5-qrcode';
+        s.onload = resolve;
+        s.onerror = () => { libPromise = null; reject(); };
+        document.head.appendChild(s);
+    }));
 
-    scanBtn.addEventListener('click', () => {
+    scanBtn.addEventListener('click', async () => {
+        try { await loadLib(); } catch (e) { return; }
+        if (!html5QrCode) html5QrCode = new Html5Qrcode("reader");
         if (isScanning) {
             html5QrCode.stop().then(() => {
                 readerDiv.classList.add('hidden');

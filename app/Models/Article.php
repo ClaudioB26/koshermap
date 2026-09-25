@@ -84,6 +84,23 @@ class Article extends Model
         return $m[1];
     }
 
+    /**
+     * Miniatura liviana (480 px) para las tarjetas de los listados. Si la foto
+     * es de /images/articulos y existe su versión en thumbs/, se usa esa; si no,
+     * cae a la imagen original.
+     */
+    public function getThumbnailSmallAttribute(): ?string
+    {
+        $src = $this->thumbnail;
+        if (!$src || !preg_match('#^/images/articulos/([^/]+)\.[a-z]+$#i', $src, $m)) {
+            return $src;
+        }
+
+        return is_file(public_path('images/articulos/thumbs/' . $m[1] . '.jpg'))
+            ? '/images/articulos/thumbs/' . $m[1] . '.jpg'
+            : $src;
+    }
+
     public function getCategoryIconAttribute(): string
     {
         return self::CATEGORY_ICONS[$this->category] ?? '📰';
