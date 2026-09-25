@@ -1,30 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Moderación de Comentarios — Admin</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-</head>
-<body class="bg-gray-100 min-h-screen">
-
-<header class="bg-white shadow-sm px-6 py-4 flex items-center justify-between">
-    <div class="flex items-center gap-4">
-        <span class="text-xl font-black text-blue-600">Kosher<span class="text-gray-800">Map</span></span>
-        <span class="text-gray-400">|</span>
-        <span class="font-semibold text-gray-700">Moderación de comentarios</span>
-    </div>
-    <div class="flex items-center gap-4 text-sm">
-        <a href="{{ route('admin.places.index') }}"  class="text-gray-500 hover:text-blue-600">📍 Lugares</a>
-        <a href="{{ route('admin.reports.index') }}" class="text-gray-500 hover:text-blue-600">🚩 Reportes</a>
-        <form method="POST" action="{{ route('admin.logout') }}">@csrf
-            <button class="text-red-500 hover:text-red-700">Salir</button>
-        </form>
-    </div>
-</header>
-
-<main class="max-w-6xl mx-auto px-4 py-8">
+@extends('layouts.admin-panel')
+@section('title', 'Comentarios')
+@section('content')
+<div>
+    <h1 class="text-2xl font-bold text-gray-800 mb-6">💬 Moderación de comentarios</h1>
 
     @if(session('success'))
     <div class="mb-4 px-4 py-3 bg-green-50 border border-green-200 text-green-800 rounded-xl text-sm font-medium">
@@ -222,7 +200,7 @@
     <div class="mt-6">{{ $reviews->links() }}</div>
 
     @endif
-</main>
+</div>
 
 <script>
 const checkAll = document.getElementById('check-all');
@@ -264,5 +242,4 @@ function submitBulk(action) {
     document.getElementById('bulk-form').submit();
 }
 </script>
-</body>
-</html>
+@endsection

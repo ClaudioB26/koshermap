@@ -1,33 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moderación de Lugares — Admin</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 min-h-screen">
-
-<div class="max-w-7xl mx-auto px-4 py-8">
-
-    <div class="flex justify-between items-center mb-6">
-        <h1 class="text-2xl font-bold text-gray-800">🏠 Moderación de Lugares Kosher</h1>
-        <div class="flex items-center gap-4">
-            <span class="text-sm text-gray-500">{{ auth()->user()->email }}</span>
-            <a href="{{ route('admin.leads.index') }}" class="text-sm text-blue-600 hover:underline">📥 Leads</a>
-            <a href="{{ route('admin.reports.index') }}" class="text-sm text-blue-600 hover:underline">⚑ Reportes
-                @php $pendingReports = \App\Models\Report::where('status','pending')->count(); @endphp
-                @if($pendingReports > 0)
-                <span class="ml-1 bg-red-500 text-white text-xs rounded-full px-1.5">{{ $pendingReports }}</span>
-                @endif
-            </a>
-            <a href="/" class="text-sm text-blue-600 hover:underline">← Sitio</a>
-            <form method="POST" action="{{ route('admin.logout') }}">
-                @csrf
-                <button type="submit" class="text-sm text-red-500 hover:text-red-700">Salir</button>
-            </form>
-        </div>
-    </div>
+@extends('layouts.admin-panel')
+@section('title', 'Lugares')
+@section('content')
+<div>
+    <h1 class="text-2xl font-bold text-gray-800 mb-6">🏠 Moderación de Lugares Kosher</h1>
 
     @if(session('success'))
     <div class="mb-4 p-3 bg-green-100 border border-green-300 text-green-800 rounded-lg text-sm">
@@ -361,5 +336,4 @@ function confirmReject(form) {
 }
 </script>
 
-</body>
-</html>
+@endsection

@@ -1,25 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reportes — Admin</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 min-h-screen">
-
-<div class="max-w-6xl mx-auto px-4 py-8">
-
-    <div class="flex justify-between items-center mb-6">
-        <h1 class="text-2xl font-bold text-gray-800">⚑ Reportes de usuarios</h1>
-        <div class="flex items-center gap-4">
-            <a href="{{ route('admin.places.index') }}" class="text-sm text-blue-600 hover:underline">← Lugares</a>
-            <form method="POST" action="{{ route('admin.logout') }}">
-                @csrf
-                <button class="text-sm text-red-500 hover:text-red-700">Salir</button>
-            </form>
-        </div>
-    </div>
+@extends('layouts.admin-panel')
+@section('title', 'Reportes')
+@section('content')
+<div>
+    <h1 class="text-2xl font-bold text-gray-800 mb-6">🚩 Reportes de usuarios</h1>
 
     @if(session('success'))
     <div class="mb-4 p-3 bg-green-100 border border-green-300 text-green-800 rounded-lg text-sm">
@@ -130,5 +113,4 @@
     </div>
 </div>
 
-</body>
-</html>
+@endsection
