@@ -27,10 +27,6 @@ class HomeController extends Controller
 
         $certifiers = Certifier::approved()
             ->withCount('products')
-            ->where(function ($q) {
-                $q->whereHas('products')
-                  ->orWhere('tier', '!=', Certifier::TIER_FREE);
-            })
             ->orderByDesc('products_count')
             ->limit(8)
             ->get();

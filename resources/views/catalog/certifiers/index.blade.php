@@ -31,7 +31,9 @@
         <div class="{{ $cardClass }}">
             <div class="flex items-baseline justify-between gap-3 flex-wrap mb-2">
                 <h2 class="{{ $nameClass }}">{{ $certifier->name }}</h2>
+                @if($certifier->products_count > 0)
                 <span class="text-xs text-gray-400">{{ number_format($certifier->products_count) }} productos certificados</span>
+                @endif
             </div>
 
             @if($certifier->about)

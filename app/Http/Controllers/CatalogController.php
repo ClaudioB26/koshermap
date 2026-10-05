@@ -90,22 +90,10 @@ class CatalogController extends Controller
 
     public function certifiers()
     {
-        // Certificadoras aprobadas: las gratis necesitan al menos 1 producto
-        // (para no mostrar fichas vacias sin motivo), pero una certificadora
-        // que paga por Destacada/Pro se muestra igual aunque todavia no haya
-        // cargado productos -- si esta pagando por visibilidad, no tiene
-        // sentido que quede invisible por eso.
-        // whereHas('products') en vez de having('products_count', ...): esa
-        // columna es un alias de subconsulta de withCount(), y produccion corre
-        // con sql_mode=ONLY_FULL_GROUP_BY, que rechaza mezclar un alias asi con
-        // otra columna comun en el mismo HAVING sin GROUP BY (error 1463). Local
-        // no tenia ese modo estricto, por eso no se detecto antes.
+        // Todas las certificadoras aprobadas, tengan o no productos cargados: la
+        // vista oculta el botón de buscar productos y el contador cuando son 0.
         $certifiers = Certifier::approved()
             ->withCount('products')
-            ->where(function ($q) {
-                $q->whereHas('products')
-                  ->orWhere('tier', '!=', \App\Models\Certifier::TIER_FREE);
-            })
             ->orderBy('name')
             ->get()
             ->sortBy(fn ($c) => \App\Models\Certifier::TIER_ORDER[$c->tier] ?? 99)
