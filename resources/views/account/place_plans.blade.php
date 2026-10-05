@@ -46,7 +46,7 @@
                     <input type="hidden" name="tier" value="{{ $tierKey }}">
                     <input type="hidden" name="payment_method" value="mercadopago">
                     <select name="period" class="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white">
-                        @foreach($periods as $periodKey => $periodLabel)
+                        @foreach(array_reverse($periods, true) as $periodKey => $periodLabel)
                         <option value="{{ $periodKey }}">
                             {{ $periodLabel }} — ${{ number_format(\App\Services\Billing\TierPricingService::priceFor($plan['price'], $periodKey), 0, ',', '.') }} ARS
                         </option>
@@ -60,7 +60,7 @@
                 <form method="GET" action="{{ route('account.places.plan.transfer', $place) }}" class="space-y-2">
                     <input type="hidden" name="tier" value="{{ $tierKey }}">
                     <select name="period" class="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white">
-                        @foreach($periods as $periodKey => $periodLabel)
+                        @foreach(array_reverse($periods, true) as $periodKey => $periodLabel)
                         <option value="{{ $periodKey }}">
                             {{ $periodLabel }} — ${{ number_format(\App\Services\Billing\TierPricingService::priceFor($plan['price'], $periodKey), 0, ',', '.') }} ARS
                         </option>
