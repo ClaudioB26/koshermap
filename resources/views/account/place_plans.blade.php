@@ -48,7 +48,8 @@
                     <select name="period" class="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white">
                         @foreach(array_reverse($periods, true) as $periodKey => $periodLabel)
                         <option value="{{ $periodKey }}">
-                            {{ $periodLabel }} — ${{ number_format(\App\Services\Billing\TierPricingService::priceFor($plan['price'], $periodKey), 0, ',', '.') }} ARS
+                            @php $total = \App\Services\Billing\TierPricingService::priceFor($plan['price'], $periodKey); $m = \App\Services\Billing\TierPricingService::monthsFor($periodKey); @endphp
+                            {{ $periodLabel }} — ${{ number_format($total, 0, ',', '.') }} ARS{{ $m > 1 ? ' (= $' . number_format($total / $m, 0, ',', '.') . ' por mes)' : '' }}
                         </option>
                         @endforeach
                     </select>
@@ -62,7 +63,8 @@
                     <select name="period" class="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white">
                         @foreach(array_reverse($periods, true) as $periodKey => $periodLabel)
                         <option value="{{ $periodKey }}">
-                            {{ $periodLabel }} — ${{ number_format(\App\Services\Billing\TierPricingService::priceFor($plan['price'], $periodKey), 0, ',', '.') }} ARS
+                            @php $total = \App\Services\Billing\TierPricingService::priceFor($plan['price'], $periodKey); $m = \App\Services\Billing\TierPricingService::monthsFor($periodKey); @endphp
+                            {{ $periodLabel }} — ${{ number_format($total, 0, ',', '.') }} ARS{{ $m > 1 ? ' (= $' . number_format($total / $m, 0, ',', '.') . ' por mes)' : '' }}
                         </option>
                         @endforeach
                     </select>
