@@ -75,22 +75,23 @@ class CertifierSubmissionController extends Controller
         ]);
 
         try {
-            Mail::raw(
-                "Nueva solicitud de alta de certificadora en KosherMap.\n\n"
-                . "Nombre: {$certifier->name}\n"
-                . "Rabino a cargo: " . ($certifier->rabbi_name ?: '—') . "\n"
-                . "Desde: " . ($certifier->founded_year ?: '—') . "\n"
-                . "Cobertura: {$certifier->coverage_description}\n"
-                . "Sitio web: " . ($certifier->website ?: '—') . "\n"
-                . "Referencias: " . ($certifier->reference_info ?: '—') . "\n"
-                . "Documentos adjuntos: " . (count($documents) ?: 'ninguno') . "\n\n"
-                . "Enviado por: {$user->name} ({$user->email})"
-                . ($certifier->submitted_by_phone ? " / {$certifier->submitted_by_phone}" : '') . "\n\n"
-                . "Revisar en: " . route('admin.certifiers.index'),
-                function ($message) use ($certifier) {
-                    $message->to('info@koshermap.org')
-                            ->subject('Nueva certificadora pendiente: ' . $certifier->name);
-                }
+            \App\Support\BrandedMail::send(
+                'info@koshermap.org',
+                'Nueva certificadora pendiente: ' . $certifier->name,
+                'Nueva solicitud de alta de certificadora',
+                [],
+                [
+                    'Nombre'              => $certifier->name,
+                    'Rabino a cargo'      => $certifier->rabbi_name ?: '—',
+                    'Desde'               => (string) ($certifier->founded_year ?: '—'),
+                    'Cobertura'           => $certifier->coverage_description,
+                    'Sitio web'           => $certifier->website ?: '—',
+                    'Referencias'         => $certifier->reference_info ?: '—',
+                    'Documentos adjuntos' => (string) (count($documents) ?: 'ninguno'),
+                    'Enviado por'         => "{$user->name} ({$user->email})"
+                        . ($certifier->submitted_by_phone ? " / {$certifier->submitted_by_phone}" : ''),
+                ],
+                ['Revisar solicitud', route('admin.certifiers.index', ['status' => 'pending'])]
             );
         } catch (\Throwable $e) {
             Log::error('Error al enviar email de alta de certificadora: ' . $e->getMessage());

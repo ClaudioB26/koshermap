@@ -30,13 +30,14 @@ class ContactController extends Controller
         ]);
 
         try {
-            Mail::raw(
-                "Nombre: {$request->name}\nEmail: {$request->email}\n\nMensaje:\n{$request->message}",
-                function ($message) use ($request) {
-                    $message->to('info@koshermap.org')
-                            ->replyTo($request->email, $request->name)
-                            ->subject('Nuevo mensaje de contacto - KosherMap');
-                }
+            \App\Support\BrandedMail::send(
+                'info@koshermap.org',
+                'Nuevo mensaje de contacto - KosherMap',
+                'Nuevo mensaje de contacto',
+                [],
+                ['Nombre' => $request->name, 'Email' => $request->email, 'Mensaje' => $request->message],
+                null,
+                ['replyTo' => [$request->email, $request->name]]
             );
         } catch (\Throwable $e) {
             Log::error('Error al enviar email de contacto: ' . $e->getMessage());
@@ -91,27 +92,29 @@ class ContactController extends Controller
             ?: $adminEmail;
 
         try {
-            Mail::raw(
-                "Nueva empresa interesada en certificarse con {$certifier->name} via KosherMap.\n\n"
-                . "Empresa: {$lead->company}\n"
-                . "Contacto: {$lead->name}\n"
-                . "Email: {$lead->email}\n"
-                . "Telefono: " . ($lead->phone ?: '—') . "\n"
-                . "Tipo de producto: " . ($lead->product_type ?: '—') . "\n"
-                . "Mensaje: " . ($lead->message ?: '—') . "\n\n"
-                . "Todos tus contactos quedan guardados en: " . route('account.certifiers.leads'),
-                function ($message) use ($lead, $notifyEmail, $adminEmail) {
-                    $message->to($notifyEmail)
-                            ->replyTo($lead->email, $lead->name)
-                            ->subject('Empresa interesada en certificarse - via KosherMap');
+            // Copia oculta a KosherMap: cada lead queda registrado tambien
+            // en el mail del sitio, que es el dato con el que despues se le
+            // demuestra a cada certificadora cuantos clientes se le mandaron.
+            $opts = ['replyTo' => [$lead->email, $lead->name]];
+            if (strcasecmp($notifyEmail, $adminEmail) !== 0) {
+                $opts['bcc'] = $adminEmail;
+            }
 
-                    // Copia oculta a KosherMap: cada lead queda registrado tambien
-                    // en el mail del sitio, que es el dato con el que despues se le
-                    // demuestra a cada certificadora cuantos clientes se le mandaron.
-                    if (strcasecmp($notifyEmail, $adminEmail) !== 0) {
-                        $message->bcc($adminEmail);
-                    }
-                }
+            \App\Support\BrandedMail::send(
+                $notifyEmail,
+                'Empresa interesada en certificarse - via KosherMap',
+                'Una empresa quiere certificarse con ustedes',
+                ["Recibiste un nuevo contacto para {$certifier->name} a través de KosherMap. Podés responder directamente a este mail."],
+                [
+                    'Empresa'          => $lead->company,
+                    'Contacto'         => $lead->name,
+                    'Email'            => $lead->email,
+                    'Teléfono'         => $lead->phone ?: '—',
+                    'Tipo de producto' => $lead->product_type ?: '—',
+                    'Mensaje'          => $lead->message ?: '—',
+                ],
+                ['Ver todos mis contactos', route('account.certifiers.leads')],
+                $opts
             );
         } catch (\Throwable $e) {
             Log::error("Error al enviar lead #{$lead->id} de certificacion a {$notifyEmail}: " . $e->getMessage());

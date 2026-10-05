@@ -69,7 +69,13 @@ class CertifiersModerationController extends Controller
             ]);
         }
 
-        $this->notifyOwner($certifier, 'aprobada', "¡Buenas noticias! Tu certificadora \"{$certifier->name}\" fue aprobada en KosherMap. Ya podés cargar tus productos entrando a tu cuenta en koshermap.org.");
+        $this->notifyOwner(
+            $certifier,
+            'aprobada',
+            '¡Tu certificadora fue aprobada!',
+            ["¡Buenas noticias! \"{$certifier->name}\" ya está aprobada en KosherMap. Ya podés cargar tus productos entrando a tu cuenta."],
+            ['Ir a mi cuenta', route('account.certifiers.my')]
+        );
 
         return back()->with('success', "\"$certifier->name\" aprobada.");
     }
@@ -94,13 +100,21 @@ class CertifiersModerationController extends Controller
             'rejection_reason' => $reason,
         ]);
 
-        $this->notifyOwner($certifier, 'rechazada', "Tu solicitud de alta para \"{$certifier->name}\" en KosherMap no fue aprobada."
-            . ($reason ? " Motivo: {$reason}" : '') . " Podés escribirnos a info@koshermap.org si querés más información.");
+        $this->notifyOwner(
+            $certifier,
+            'rechazada',
+            'Tu solicitud no fue aprobada',
+            array_filter([
+                "Tu solicitud de alta para \"{$certifier->name}\" en KosherMap no fue aprobada.",
+                $reason ? "Motivo: {$reason}" : null,
+                'Podés escribirnos a info@koshermap.org si querés más información.',
+            ])
+        );
 
         return back()->with('success', "\"$certifier->name\" rechazada.");
     }
 
-    private function notifyOwner(Certifier $certifier, string $verb, string $body): void
+    private function notifyOwner(Certifier $certifier, string $verb, string $heading, array $paragraphs, ?array $button = null): void
     {
         $email = $certifier->submitted_by_email ?? $certifier->owner?->email;
         if (!$email) {
@@ -108,9 +122,14 @@ class CertifiersModerationController extends Controller
         }
 
         try {
-            Mail::raw($body, function ($message) use ($email, $certifier, $verb) {
-                $message->to($email)->subject("Tu certificadora \"{$certifier->name}\" fue {$verb} - KosherMap");
-            });
+            \App\Support\BrandedMail::send(
+                $email,
+                "Tu certificadora \"{$certifier->name}\" fue {$verb} - KosherMap",
+                $heading,
+                $paragraphs,
+                [],
+                $button
+            );
         } catch (\Throwable $e) {
             Log::error("Error al notificar al dueño de la certificadora #{$certifier->id}: " . $e->getMessage());
         }

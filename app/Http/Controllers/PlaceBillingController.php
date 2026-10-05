@@ -131,12 +131,13 @@ class PlaceBillingController extends Controller
         ]);
 
         try {
-            Mail::raw(
-                "Nuevo comprobante de transferencia para revisar.\n\n"
-                . "Local: {$place->name}\n"
-                . "Plan: {$plan['label']} ({$periodLabel}) - {$amount} ARS\n\n"
-                . "Revisar en: " . route('admin.places.index'),
-                fn ($m) => $m->to('info@koshermap.org')->subject('Comprobante de transferencia - ' . $place->name)
+            \App\Support\BrandedMail::send(
+                'info@koshermap.org',
+                'Comprobante de transferencia - ' . $place->name,
+                'Nuevo comprobante de transferencia',
+                ['Hay un comprobante para revisar.'],
+                ['Local' => $place->name, 'Plan' => "{$plan['label']} ({$periodLabel})", 'Monto' => "{$amount} ARS"],
+                ['Revisar en el panel', route('admin.places.index')]
             );
         } catch (\Throwable $e) {
             Log::error('Error al notificar comprobante de transferencia: ' . $e->getMessage());

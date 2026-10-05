@@ -73,11 +73,16 @@ class TierRenewalReminders extends Command
     private function notify(string $email, string $name, string $renewUrl, string $expiresAt): void
     {
         try {
-            Mail::raw(
-                "Tu plan pago de \"{$name}\" en KosherMap vence el {$expiresAt}.\n\n"
-                . "Para renovarlo entrá a: {$renewUrl}\n\n"
-                . "Si no renovás, tu ficha vuelve al plan gratis automáticamente al vencer.",
-                fn ($m) => $m->to($email)->subject("Tu plan de \"{$name}\" vence pronto - KosherMap")
+            \App\Support\BrandedMail::send(
+                $email,
+                "Tu plan de \"{$name}\" vence pronto - KosherMap",
+                'Tu plan está por vencer',
+                [
+                    "Tu plan pago de \"{$name}\" en KosherMap vence el {$expiresAt}.",
+                    'Si no lo renovás, tu ficha vuelve al plan gratis automáticamente al vencer.',
+                ],
+                [],
+                ['Renovar mi plan', $renewUrl]
             );
         } catch (\Throwable $e) {
             Log::error("Error al enviar aviso de vencimiento de plan ({$name}): " . $e->getMessage());

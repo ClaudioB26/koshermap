@@ -132,12 +132,13 @@ class CertifierBillingController extends Controller
         ]);
 
         try {
-            Mail::raw(
-                "Nuevo comprobante de transferencia para revisar.\n\n"
-                . "Certificadora: {$certifier->name}\n"
-                . "Plan: {$plan['label']} ({$periodLabel}) - {$amount} ARS\n\n"
-                . "Revisar en: " . route('admin.certifiers.index'),
-                fn ($m) => $m->to('info@koshermap.org')->subject('Comprobante de transferencia - ' . $certifier->name)
+            \App\Support\BrandedMail::send(
+                'info@koshermap.org',
+                'Comprobante de transferencia - ' . $certifier->name,
+                'Nuevo comprobante de transferencia',
+                ['Hay un comprobante para revisar.'],
+                ['Certificadora' => $certifier->name, 'Plan' => "{$plan['label']} ({$periodLabel})", 'Monto' => "{$amount} ARS"],
+                ['Revisar en el panel', route('admin.certifiers.index')]
             );
         } catch (\Throwable $e) {
             Log::error('Error al notificar comprobante de transferencia: ' . $e->getMessage());

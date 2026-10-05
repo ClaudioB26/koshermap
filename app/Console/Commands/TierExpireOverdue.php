@@ -87,10 +87,13 @@ class TierExpireOverdue extends Command
     private function notify(string $email, string $name, string $renewUrl): void
     {
         try {
-            Mail::raw(
-                "El plan pago de \"{$name}\" en KosherMap venció y volvió al plan gratis.\n\n"
-                . "Si querés renovarlo, entrá a: {$renewUrl}",
-                fn ($m) => $m->to($email)->subject("Tu plan de \"{$name}\" venció - KosherMap")
+            \App\Support\BrandedMail::send(
+                $email,
+                "Tu plan de \"{$name}\" venció - KosherMap",
+                'Tu plan venció',
+                ["El plan pago de \"{$name}\" en KosherMap venció y volvió al plan gratis. Si querés, podés renovarlo cuando quieras."],
+                [],
+                ['Renovar mi plan', $renewUrl]
             );
         } catch (\Throwable $e) {
             Log::error("Error al enviar aviso de plan vencido ({$name}): " . $e->getMessage());
