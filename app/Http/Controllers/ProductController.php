@@ -9,13 +9,28 @@ class ProductController extends Controller
 {
     public function show($slug, RelatedArticlesService $relatedArticlesService)
     {
-        // Buscamos el producto por su slug (ej: /product/oreo)
-        // Carga también la marca y el certificador para que no haya errores
-        // Los productos despublicados (is_active=false) no deben ser accesibles ni por URL directa
+        // Los productos despublicados (is_active=false) no son accesibles ni por URL directa.
         $product = Product::active()->with(['brand', 'certifier', 'category'])->where('slug', $slug)->firstOrFail();
 
         $relatedArticles = $relatedArticlesService->forProduct($product);
 
-        return view('products.show', compact('product', 'relatedArticles'));
+        // Otros productos de la misma marca (si la hay) o de la misma categoría.
+        $related = Product::active()
+            ->with(['brand', 'certifier'])
+            ->where('id', '!=', $product->id)
+            ->where(function ($q) use ($product) {
+                if ($product->brand_id) {
+                    $q->where('brand_id', $product->brand_id);
+                } elseif ($product->category_id) {
+                    $q->where('category_id', $product->category_id);
+                } else {
+                    $q->whereRaw('1 = 0');
+                }
+            })
+            ->orderBy('name')
+            ->limit(6)
+            ->get();
+
+        return view('products.show', compact('product', 'relatedArticles', 'related'));
     }
 }

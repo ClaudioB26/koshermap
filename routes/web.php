@@ -138,7 +138,9 @@ Route::get('/robots.txt', function () {
 // completo vive en /productos.
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/productos', [SearchController::class, 'index'])->name('search.index');
-// Fichas de producto retiradas de la web pública (410 Gone).
+// Fichas de producto: se retiraron (410) durante la revisión de AdSense y se
+// repusieron en oct 2026 (AdSense descartado). Solo se indexan las que tienen
+// descripción real; el resto queda noindex. Historial: antes eran 410 Gone.
 //
 // Eran ~6.000 páginas templadas: de 5.968 productos activos solo 86 tenían
 // una descripción real, y había 1 sola reseña en toda la base. Google rechazó
@@ -152,7 +154,7 @@ Route::get('/productos', [SearchController::class, 'index'])->name('search.index
 // 410 y quedarían en el limbo. Ver doc/plan-adsense.md.
 //
 // Los datos siguen en la base: esto es solo la capa pública.
-Route::get('/product/{slug}', fn () => abort(410))->name('products.show');
+Route::get('/product/{slug}', [\App\Http\Controllers\ProductController::class, 'show'])->name('products.show');
 // Reseñas y reportes de fichas de producto/local: sin ninguna pantalla que los
 // use desde que se retiraron esas paginas (410), pero los POST seguian abiertos
 // a cualquiera sin login ni captcha. Se cierran tambien (410). Si se reactiva

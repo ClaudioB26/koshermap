@@ -181,10 +181,9 @@
         @if($products->count() > 0)
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             @foreach($products as $product)
-            {{-- Sin link: las fichas individuales se retiraron (410). La fila ya
-                 muestra certificadora, marca y estado kosher, que es la respuesta
-                 que el usuario busca. Ver doc/plan-adsense.md. --}}
-            <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between">
+            @php $hasPage = !empty($product->id) && !empty($product->slug); @endphp
+            <{{ $hasPage ? 'a' : 'div' }} @if($hasPage) href="{{ route('products.show', $product->slug) }}" @endif
+               class="group bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between transition-all duration-200 {{ $hasPage ? 'hover:shadow-lg hover:-translate-y-0.5' : '' }}">
                 <div class="flex items-center space-x-4">
                     @php
                         $productCertifier = $product->certifier;
@@ -225,7 +224,7 @@
                     <span class="text-[10px] text-gray-400 uppercase tracking-wider">{{ $product->source }}</span>
                     @endif
                 </div>
-            </div>
+            </{{ $hasPage ? 'a' : 'div' }}>
             @endforeach
         </div>
 
