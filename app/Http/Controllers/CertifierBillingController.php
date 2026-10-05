@@ -63,7 +63,7 @@ class CertifierBillingController extends Controller
         $accessToken = config('services.mercadopago.access_token');
         if (! $accessToken) {
             Log::error('MERCADOPAGO_ACCESS_TOKEN no configurado: no se puede crear la preferencia de pago.');
-            return back()->withErrors('El pago con Mercado Pago no está disponible en este momento. Probá con transferencia o escribinos a info@koshermap.org.');
+            return back()->withErrors(__('plans.err_mp_unavailable'));
         }
 
         try {
@@ -84,7 +84,7 @@ class CertifierBillingController extends Controller
             );
         } catch (\Throwable $e) {
             Log::error('Error al crear preferencia de MP: ' . $e->getMessage());
-            return back()->withErrors('No pudimos iniciar el pago. Probá de nuevo en unos minutos.');
+            return back()->withErrors(__('plans.err_start_payment'));
         }
 
         return redirect()->away($preference['init_point']);
@@ -145,6 +145,6 @@ class CertifierBillingController extends Controller
         }
 
         return redirect()->route('account.certifiers.my')
-            ->with('success', 'Recibimos tu comprobante. Lo vamos a revisar y activamos tu plan en breve.');
+            ->with('success', __('plans.proof_received'));
     }
 }
