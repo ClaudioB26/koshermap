@@ -45,11 +45,11 @@
                     @csrf
                     <input type="hidden" name="tier" value="{{ $tierKey }}">
                     <input type="hidden" name="payment_method" value="mercadopago">
-                    <select name="period" class="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white">
+                    <select name="period" class="w-full text-[13px] border border-gray-300 rounded-lg px-2 py-2 bg-white">
                         @foreach(array_reverse($periods, true) as $periodKey => $periodLabel)
                         <option value="{{ $periodKey }}">
                             @php $total = \App\Services\Billing\TierPricingService::priceFor($plan['price'], $periodKey); $m = \App\Services\Billing\TierPricingService::monthsFor($periodKey); @endphp
-                            {{ $periodLabel }} — ${{ number_format($total, 0, ',', '.') }} ARS{{ $m > 1 ? ' (= $' . number_format($total / $m, 0, ',', '.') . ' por mes)' : '' }}
+                            {{ $periodLabel }} — ${{ number_format($total, 0, ',', '.') }} {{ $m > 1 ? ' ($' . number_format($total / $m, 0, ',', '.') . '/mes)' : '' }}
                         </option>
                         @endforeach
                     </select>
@@ -60,11 +60,11 @@
                 </form>
                 <form method="GET" action="{{ route('account.certifiers.plan.transfer') }}" class="space-y-2">
                     <input type="hidden" name="tier" value="{{ $tierKey }}">
-                    <select name="period" class="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white">
+                    <select name="period" class="w-full text-[13px] border border-gray-300 rounded-lg px-2 py-2 bg-white">
                         @foreach(array_reverse($periods, true) as $periodKey => $periodLabel)
                         <option value="{{ $periodKey }}">
                             @php $total = \App\Services\Billing\TierPricingService::priceFor($plan['price'], $periodKey); $m = \App\Services\Billing\TierPricingService::monthsFor($periodKey); @endphp
-                            {{ $periodLabel }} — ${{ number_format($total, 0, ',', '.') }} ARS{{ $m > 1 ? ' (= $' . number_format($total / $m, 0, ',', '.') . ' por mes)' : '' }}
+                            {{ $periodLabel }} — ${{ number_format($total, 0, ',', '.') }} {{ $m > 1 ? ' ($' . number_format($total / $m, 0, ',', '.') . '/mes)' : '' }}
                         </option>
                         @endforeach
                     </select>
