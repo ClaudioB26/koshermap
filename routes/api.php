@@ -13,4 +13,8 @@ Route::middleware(\App\Http\Middleware\VerifySyncKey::class)->group(function () 
     Route::post('/sync/products',    [SyncController::class, 'products']);
     Route::post('/sync/cities',      [SyncController::class, 'cities']);
     Route::post('/sync/places',      [SyncController::class, 'places']);
+
+    // Marketing: la notebook trae contactos con permiso y devuelve las bajas.
+    Route::get('/marketing/contacts',      [\App\Http\Controllers\Api\MarketingController::class, 'contacts']);
+    Route::post('/marketing/unsubscribes', [\App\Http\Controllers\Api\MarketingController::class, 'unsubscribes']);
 });

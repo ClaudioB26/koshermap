@@ -217,6 +217,12 @@ Route::post('/logout', [GoogleAuthController::class, 'logout'])->name('logout');
 
 Route::post('/webhooks/mercadopago', \App\Http\Controllers\MercadoPagoWebhookController::class)->name('webhooks.mercadopago');
 
+// Newsletter: alta con doble confirmación y baja de un clic (campañas desde la notebook).
+Route::post('/newsletter', [\App\Http\Controllers\NewsletterController::class, 'store'])->middleware('throttle:5,1')->name('newsletter.store');
+Route::get('/newsletter/confirmar/{token}', [\App\Http\Controllers\NewsletterController::class, 'confirm'])->name('newsletter.confirm');
+Route::get('/newsletter/baja/{token}', [\App\Http\Controllers\NewsletterController::class, 'unsubscribeForm'])->name('newsletter.unsubscribe');
+Route::post('/newsletter/baja/{token}', [\App\Http\Controllers\NewsletterController::class, 'unsubscribe'])->name('newsletter.unsubscribe.do');
+
 Route::middleware('auth')->prefix('cuenta')->name('account.')->group(function () {
     Route::get('/mis-locales', [AccountController::class, 'places'])->name('places');
     Route::get('/mis-locales/{place}/editar', [\App\Http\Controllers\PlaceSubmissionController::class, 'edit'])->name('places.edit');

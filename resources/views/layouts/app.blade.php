@@ -191,6 +191,8 @@
         <p class="font-semibold text-gray-700 mb-1">Kosher<span class="text-blue-600">Map</span></p>
         <p>{{ __('footer_text') }}</p>
 
+        @include('partials.newsletter_form')
+
         {{-- Links del catálogo --}}
         <div class="flex flex-wrap justify-center gap-4 mt-3 text-xs text-gray-400">
             {{-- Lugares kosher y Países ocultos temporalmente --}}
