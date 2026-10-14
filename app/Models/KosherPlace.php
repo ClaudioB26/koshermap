@@ -146,10 +146,10 @@ class KosherPlace extends Model
     public static function orientations(): array
     {
         return [
-            'orthodox'     => 'Ortodoxa',
-            'conservative' => 'Conservadora',
-            'reform'       => 'Reformista',
-            'other'        => 'Otra',
+            'orthodox'     => __('places.o_orthodox'),
+            'conservative' => __('places.o_conservative'),
+            'reform'       => __('places.o_reform'),
+            'other'        => __('places.o_other'),
         ];
     }
 
