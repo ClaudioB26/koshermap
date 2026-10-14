@@ -150,11 +150,12 @@ return [
 
     'privacidad' => [
         'title'       => 'Política de Privacidade',
-        'description' => 'Política de privacidade do KosherMap: quais informações coletamos, como as utilizamos, cookies, publicidade Google AdSense e seus direitos.',
+        'description' => 'Política de privacidade do KosherMap: quais informações coletamos, como as utilizamos, cookies, análise e seus direitos.',
         'intro'       => 'No <strong>KosherMap</strong> (koshermap.org) nos comprometemos a proteger sua privacidade. Esta política explica quais informações coletamos, como as utilizamos e quais são seus direitos.',
         'sections'    => [
             ['title' => 'Informações que Coletamos', 'body' => '<ul><li><strong>Informações de uso:</strong> Páginas visitadas, pesquisas realizadas, país de origem (detectado automaticamente para personalizar resultados).</li><li><strong>Cookies de sessão:</strong> Para lembrar seu idioma e país preferidos.</li><li><strong>Informações de contato:</strong> Seu e-mail, se nos escrever, usado apenas para responder à sua consulta.</li></ul>'],
-            ['title' => 'Cookies e Publicidade', 'body' => '<p>O KosherMap usa o <strong>Google AdSense</strong> para exibir publicidade. O Google AdSense usa cookies para mostrar anúncios relevantes. Você pode optar por não receber publicidade personalizada em <a href="https://www.google.com/settings/ads" class="text-blue-600 hover:underline" target="_blank" rel="noopener">Configurações de anúncios do Google</a>.</p>'],
+            ['title' => 'Cookies e Análise', 'body' => '<p>O KosherMap usa o <strong>Google Analytics</strong> para analisar o tráfego do site de forma anônima e melhorar a experiência. Esses cookies só ativam se você aceitar o banner de cookies e não incluem dados pessoais identificáveis.</p>
+<p>O site pode exibir <strong>banners próprios</strong> de certificadoras e negócios do setor. Esses banners não usam cookies nem rastreadores de terceiros: apenas contamos, de forma agregada, quantas vezes cada um é exibido e clicado.</p>'],
             ['title' => 'Uso das Informações', 'body' => '<p>Usamos as informações para personalizar resultados, melhorar o site e responder consultas. <strong>Não vendemos nem compartilhamos suas informações pessoais com terceiros</strong> para fins comerciais.</p>'],
             ['title' => 'Seus Direitos', 'body' => '<p>Você tem o direito de solicitar acesso, correção ou exclusão de seus dados. Para exercer qualquer desses direitos, escreva para <a href="mailto:info@koshermap.org" class="text-blue-600 hover:underline">info@koshermap.org</a>.</p>'],
         ],
@@ -203,12 +204,12 @@ return [
                 'body'  => '<ul>
   <li><strong>Cookies essenciais:</strong> lembram seu idioma, país selecionado e preferência de consentimento de cookies.</li>
   <li><strong>Google Analytics:</strong> cookies analíticos que nos ajudam a entender o uso do site de forma agregada e anônima. Só ativam se você aceitar o banner de cookies.</li>
-  <li><strong>Google AdSense:</strong> cookies publicitários que o Google pode usar para mostrar anúncios relevantes. Só ativam se você aceitar o banner de cookies.</li>
+  <li><strong>Banners próprios:</strong> não usam cookies nem rastreadores de terceiros; apenas impressões e cliques são contados, de forma agregada.</li>
 </ul>',
             ],
             [
                 'title' => 'Como Gerenciar os Cookies',
-                'body'  => '<p>Na sua primeira visita, um banner permite <strong>aceitar ou rejeitar</strong> cookies não essenciais. Você pode mudar sua preferência a qualquer momento em <a href="https://www.google.com/settings/ads" class="text-blue-600 hover:underline" target="_blank" rel="noopener">Configurações de anúncios do Google</a>.</p>',
+                'body'  => '<p>Na sua primeira visita, um banner permite <strong>aceitar ou rejeitar</strong> cookies não essenciais. Você pode mudar sua preferência a qualquer momento apagando os cookies nas configurações do seu navegador.</p>',
             ],
             [
                 'title' => 'Mais Informações',

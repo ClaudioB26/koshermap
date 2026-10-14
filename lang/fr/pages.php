@@ -147,11 +147,12 @@ return [
 
     'privacidad' => [
         'title'       => 'Politique de Confidentialité',
-        'description' => 'Politique de confidentialité de KosherMap : informations collectées, utilisation, cookies, publicité Google AdSense et vos droits.',
+        'description' => 'Politique de confidentialité de KosherMap : informations collectées, utilisation, cookies, mesure d\'audience et vos droits.',
         'intro'       => 'Chez <strong>KosherMap</strong> (koshermap.org), nous nous engageons à protéger votre vie privée.',
         'sections'    => [
             ['title' => 'Informations Collectées', 'body' => '<ul><li>Informations d\'utilisation (pages visitées, recherches, pays).</li><li>Cookies de session (langue et pays préférés).</li><li>Adresse e-mail si vous nous contactez.</li></ul>'],
-            ['title' => 'Cookies et Publicité', 'body' => '<p>KosherMap utilise <strong>Google AdSense</strong> pour afficher de la publicité. Google AdSense utilise des cookies pour afficher des annonces pertinentes. Vous pouvez désactiver la publicité personnalisée sur <a href="https://www.google.com/settings/ads" class="text-blue-600 hover:underline" target="_blank" rel="noopener">les paramètres des annonces Google</a>.</p>'],
+            ['title' => 'Cookies et Mesure d\'audience', 'body' => '<p>KosherMap utilise <strong>Google Analytics</strong> pour analyser le trafic du site de manière anonyme et améliorer l\'expérience. Ces cookies ne s\'activent que si vous acceptez la bannière de cookies et ne contiennent aucune donnée personnelle identifiable.</p>
+<p>Le site peut afficher des <strong>bannières propres</strong> de certificateurs et de commerces du secteur. Ces bannières n\'utilisent ni cookies ni traceurs tiers : nous comptons uniquement, de façon agrégée, combien de fois chacune est affichée et cliquée.</p>'],
             ['title' => 'Vos Droits', 'body' => '<p>Vous avez le droit d\'accéder, corriger ou supprimer vos données. Écrivez-nous à <a href="mailto:info@koshermap.org" class="text-blue-600 hover:underline">info@koshermap.org</a>.</p>'],
         ],
     ],
@@ -199,12 +200,12 @@ return [
                 'body'  => '<ul>
   <li><strong>Cookies essentiels :</strong> mémorisent votre langue, votre pays sélectionné et votre préférence de consentement aux cookies.</li>
   <li><strong>Google Analytics :</strong> cookies analytiques qui nous aident à comprendre l\'utilisation du site, de manière agrégée et anonyme. Ils ne s\'activent que si vous acceptez la bannière de cookies.</li>
-  <li><strong>Google AdSense :</strong> cookies publicitaires que Google peut utiliser pour afficher des publicités pertinentes. Ils ne s\'activent que si vous acceptez la bannière de cookies.</li>
+  <li><strong>Bannières propres :</strong> elles n\'utilisent ni cookies ni traceurs tiers ; seules les impressions et les clics sont comptés, de façon agrégée.</li>
 </ul>',
             ],
             [
                 'title' => 'Comment Gérer les Cookies',
-                'body'  => '<p>Lors de votre première visite, une bannière vous permet d\'<strong>accepter ou refuser</strong> les cookies non essentiels. Vous pouvez modifier votre préférence à tout moment depuis les <a href="https://www.google.com/settings/ads" class="text-blue-600 hover:underline" target="_blank" rel="noopener">paramètres des annonces Google</a>.</p>',
+                'body'  => '<p>Lors de votre première visite, une bannière vous permet d\'<strong>accepter ou refuser</strong> les cookies non essentiels. Vous pouvez modifier votre préférence à tout moment en supprimant les cookies dans les paramètres de votre navigateur.</p>',
             ],
             [
                 'title' => 'Plus d\'Informations',

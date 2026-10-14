@@ -23,8 +23,8 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <style>[x-cloak] { display: none !important; }</style>
 
-    {{-- Google Consent Mode + carga diferida de Analytics/AdSense:
-         los scripts de GA y AdSense NO se cargan (y por lo tanto no setean cookies)
+    {{-- Google Consent Mode + carga diferida de Analytics:
+         el script de GA NO se carga (y por lo tanto no setean cookies)
          hasta que el usuario acepta el banner de cookies, o si ya lo había aceptado antes. --}}
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -41,9 +41,6 @@
             window.__analyticsAdsLoaded = true;
 
             gtag('consent', 'update', {
-                'ad_storage': 'granted',
-                'ad_user_data': 'granted',
-                'ad_personalization': 'granted',
                 'analytics_storage': 'granted'
             });
 

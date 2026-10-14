@@ -324,7 +324,7 @@ return [
 
     'privacidad' => [
         'title'       => 'Política de Privacidad',
-        'description' => 'Política de privacidad de KosherMap: qué información recopilamos, cómo la usamos, cookies, publicidad de Google AdSense y tus derechos.',
+        'description' => 'Política de privacidad de KosherMap: qué información recopilamos, cómo la usamos, cookies, analítica y tus derechos.',
         'intro'       => 'En <strong>KosherMap</strong> (koshermap.org) nos comprometemos a proteger tu privacidad. Esta política explica qué información recopilamos, cómo la usamos y cuáles son tus derechos.',
         'sections'    => [
             [
@@ -338,9 +338,9 @@ return [
 </ul>',
             ],
             [
-                'title' => 'Cookies y Publicidad',
-                'body'  => '<p>KosherMap usa <strong>Google AdSense</strong> para mostrar publicidad. Google AdSense utiliza cookies para mostrar anuncios relevantes basados en tus visitas anteriores a este y otros sitios web. Podés optar por no recibir publicidad personalizada visitando <a href="https://www.google.com/settings/ads" class="text-blue-600 hover:underline" target="_blank" rel="noopener">Configuración de anuncios de Google</a>.</p>
-<p>También podemos usar <strong>Google Analytics</strong> para analizar el tráfico del sitio de forma anónima y mejorar la experiencia del usuario. Esta información no incluye datos personales identificables.</p>',
+                'title' => 'Cookies y Analítica',
+                'body'  => '<p>KosherMap usa <strong>Google Analytics</strong> para analizar el tráfico del sitio de forma anónima y mejorar la experiencia del usuario. Estas cookies solo se activan si aceptás el banner de cookies y no incluyen datos personales identificables.</p>
+<p>El sitio puede mostrar <strong>banners propios</strong> de certificadoras y comercios del sector. Esos banners no usan cookies ni rastreadores de terceros: solo contamos, de forma agregada, cuántas veces se muestra y se hace clic en cada uno.</p>',
             ],
             [
                 'title' => 'Uso de la Información',
@@ -349,7 +349,6 @@ return [
   <li>Personalizar los resultados según tu país e idioma.</li>
   <li>Mejorar el contenido y la funcionalidad del sitio.</li>
   <li>Responder consultas y reportes de usuarios.</li>
-  <li>Mostrar publicidad relevante a través de Google AdSense.</li>
 </ul>
 <p><strong>No vendemos ni compartimos tu información personal con terceros</strong> con fines comerciales.</p>',
             ],
@@ -459,12 +458,12 @@ return [
                 'body'  => '<ul>
   <li><strong>Cookies esenciales:</strong> recuerdan tu idioma, tu país seleccionado y tu preferencia de consentimiento de cookies. No requieren tu autorización previa porque son necesarias para el funcionamiento básico del sitio.</li>
   <li><strong>Google Analytics:</strong> cookies analíticas que nos ayudan a entender cómo se usa el sitio, de forma agregada y anónima. Solo se activan si aceptás el banner de cookies.</li>
-  <li><strong>Google AdSense:</strong> cookies publicitarias que Google puede usar para mostrar anuncios relevantes. Solo se activan si aceptás el banner de cookies.</li>
+  <li><strong>Banners propios:</strong> no usan cookies ni rastreadores de terceros; solo se cuentan, de forma agregada, las impresiones y los clics.</li>
 </ul>',
             ],
             [
                 'title' => 'Cómo Gestionar las Cookies',
-                'body'  => '<p>Cuando visitás KosherMap por primera vez, un banner te permite <strong>aceptar o rechazar</strong> las cookies no esenciales (Analytics y AdSense). Podés cambiar tu preferencia de anuncios personalizados en cualquier momento desde la <a href="https://www.google.com/settings/ads" class="text-blue-600 hover:underline" target="_blank" rel="noopener">configuración de anuncios de Google</a>, o borrando las cookies desde la configuración de tu navegador.</p>',
+                'body'  => '<p>Cuando visitás KosherMap por primera vez, un banner te permite <strong>aceptar o rechazar</strong> las cookies no esenciales (Analytics). Podés cambiar tu preferencia en cualquier momento borrando las cookies desde la configuración de tu navegador.</p>',
             ],
             [
                 'title' => 'Más Información',

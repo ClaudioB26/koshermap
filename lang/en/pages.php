@@ -295,7 +295,7 @@ return [
 
     'privacidad' => [
         'title'       => 'Privacy Policy',
-        'description' => 'KosherMap privacy policy: what information we collect, how we use it, cookies, Google AdSense advertising, and your rights.',
+        'description' => 'KosherMap privacy policy: what information we collect, how we use it, cookies, analytics, and your rights.',
         'intro'       => 'At <strong>KosherMap</strong> (koshermap.org) we are committed to protecting your privacy. This policy explains what information we collect, how we use it, and what your rights are.',
         'sections'    => [
             [
@@ -307,9 +307,9 @@ return [
 </ul>',
             ],
             [
-                'title' => 'Cookies and Advertising',
-                'body'  => '<p>KosherMap uses <strong>Google AdSense</strong> to display advertising. Google AdSense uses cookies to show relevant ads based on your prior visits to this and other websites. You can opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" class="text-blue-600 hover:underline" target="_blank" rel="noopener">Google Ads Settings</a>.</p>
-<p>We may also use <strong>Google Analytics</strong> to anonymously analyze site traffic and improve user experience. This information does not include personally identifiable data.</p>',
+                'title' => 'Cookies and Analytics',
+                'body'  => '<p>KosherMap uses <strong>Google Analytics</strong> to analyze site traffic anonymously and improve the user experience. These cookies only activate if you accept the cookie banner and do not include personally identifiable data.</p>
+<p>The site may show <strong>our own banners</strong> from certifiers and businesses in the sector. Those banners use no cookies or third-party trackers: we only count, in aggregate, how many times each one is shown and clicked.</p>',
             ],
             [
                 'title' => 'Use of Information',
@@ -317,7 +317,6 @@ return [
   <li>Personalize results according to your country and language.</li>
   <li>Improve site content and functionality.</li>
   <li>Respond to user inquiries and reports.</li>
-  <li>Display relevant advertising through Google AdSense.</li>
 </ul>
 <p><strong>We do not sell or share your personal information with third parties</strong> for commercial purposes.</p>',
             ],
@@ -375,12 +374,12 @@ return [
                 'body'  => '<ul>
   <li><strong>Essential cookies:</strong> remember your language, your selected country, and your cookie consent preference. They don\'t require prior authorization because they\'re necessary for the site\'s basic functioning.</li>
   <li><strong>Google Analytics:</strong> analytics cookies that help us understand how the site is used, in aggregate and anonymous form. They only activate if you accept the cookie banner.</li>
-  <li><strong>Google AdSense:</strong> advertising cookies that Google may use to show relevant ads. They only activate if you accept the cookie banner.</li>
+  <li><strong>Own banners:</strong> they use no cookies or third-party trackers; only impressions and clicks are counted, in aggregate.</li>
 </ul>',
             ],
             [
                 'title' => 'How to Manage Cookies',
-                'body'  => '<p>When you first visit KosherMap, a banner lets you <strong>accept or reject</strong> non-essential cookies (Analytics and AdSense). You can change your personalized ads preference at any time from <a href="https://www.google.com/settings/ads" class="text-blue-600 hover:underline" target="_blank" rel="noopener">Google Ads Settings</a>, or by clearing cookies in your browser settings.</p>',
+                'body'  => '<p>When you first visit KosherMap, a banner lets you <strong>accept or reject</strong> non-essential cookies (Analytics). You can change your preference at any time by clearing cookies in your browser settings.</p>',
             ],
             [
                 'title' => 'More Information',
