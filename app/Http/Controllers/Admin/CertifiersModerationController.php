@@ -69,16 +69,7 @@ class CertifiersModerationController extends Controller
             ]);
         }
 
-        $this->notifyOwner(
-            $certifier,
-            'aprobada',
-            '¡Tu certificadora fue aprobada!',
-            [
-                "¡Buenas noticias! \"{$certifier->name}\" ya está aprobada en KosherMap. Ya podés cargar tus productos entrando a tu cuenta.",
-                'Además, en "Mi certificadora" tenés una insignia de KosherMap para pegar en tu sitio web: les muestra a tus clientes que estás en el directorio.',
-            ],
-            ['Ir a mi cuenta', route('account.certifiers.my')]
-        );
+        $this->notifyOwner($certifier, 'approved');
 
         return back()->with('success', "\"$certifier->name\" aprobada.");
     }
@@ -103,36 +94,47 @@ class CertifiersModerationController extends Controller
             'rejection_reason' => $reason,
         ]);
 
-        $this->notifyOwner(
-            $certifier,
-            'rechazada',
-            'Tu solicitud no fue aprobada',
-            array_filter([
-                "Tu solicitud de alta para \"{$certifier->name}\" en KosherMap no fue aprobada.",
-                $reason ? "Motivo: {$reason}" : null,
-                'Podés escribirnos a info@koshermap.org si querés más información.',
-            ])
-        );
+        $this->notifyOwner($certifier, 'rejected', $reason);
 
         return back()->with('success', "\"$certifier->name\" rechazada.");
     }
 
-    private function notifyOwner(Certifier $certifier, string $verb, string $heading, array $paragraphs, ?array $button = null): void
+    /**
+     * Mail al dueño (aprobada / rechazada) en el idioma con el que usa el sitio.
+     */
+    private function notifyOwner(Certifier $certifier, string $type, ?string $reason = null): void
     {
         $email = $certifier->submitted_by_email ?? $certifier->owner?->email;
         if (!$email) {
             return;
         }
 
+        $locale = $certifier->owner?->locale ?: 'es';
+
         try {
-            \App\Support\BrandedMail::send(
-                $email,
-                "Tu certificadora \"{$certifier->name}\" fue {$verb} - KosherMap",
-                $heading,
-                $paragraphs,
-                [],
-                $button
-            );
+            \App\Support\BrandedMail::withLocale($locale, function () use ($email, $certifier, $type, $reason) {
+                if ($type === 'approved') {
+                    \App\Support\BrandedMail::send(
+                        $email,
+                        __('mail.approved_subject', ['name' => $certifier->name]),
+                        __('mail.approved_heading'),
+                        [__('mail.approved_body', ['name' => $certifier->name]), __('mail.approved_tip')],
+                        [],
+                        [__('mail.approved_button'), route('account.certifiers.my')]
+                    );
+                } else {
+                    \App\Support\BrandedMail::send(
+                        $email,
+                        __('mail.rejected_subject', ['name' => $certifier->name]),
+                        __('mail.rejected_heading'),
+                        array_values(array_filter([
+                            __('mail.rejected_body', ['name' => $certifier->name]),
+                            $reason ? __('mail.rejected_reason', ['reason' => $reason]) : null,
+                            __('mail.rejected_contact'),
+                        ]))
+                    );
+                }
+            });
         } catch (\Throwable $e) {
             Log::error("Error al notificar al dueño de la certificadora #{$certifier->id}: " . $e->getMessage());
         }

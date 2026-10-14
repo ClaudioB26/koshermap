@@ -49,7 +49,7 @@ class TierExpireOverdue extends Command
 
             $email = $certifier->contact_email ?? $certifier->owner?->email;
             if ($email) {
-                $this->notify($email, $certifier->name, route('account.certifiers.plan'));
+                $this->notify($email, $certifier->name, route('account.certifiers.plan'), $certifier->owner?->locale);
             }
             $this->info("  - Certificadora {$certifier->name}: plan vencido, bajado a gratis.");
         }
@@ -72,7 +72,7 @@ class TierExpireOverdue extends Command
 
             $email = $place->owner_email ?? $place->owner?->email;
             if ($email) {
-                $this->notify($email, $place->name, route('account.places.plan', $place));
+                $this->notify($email, $place->name, route('account.places.plan', $place), $place->owner?->locale);
             }
             $this->info("  - Local {$place->name}: plan vencido, bajado a gratis.");
         }
@@ -84,17 +84,19 @@ class TierExpireOverdue extends Command
         return 0;
     }
 
-    private function notify(string $email, string $name, string $renewUrl): void
+    private function notify(string $email, string $name, string $renewUrl, ?string $locale = null): void
     {
         try {
-            \App\Support\BrandedMail::send(
-                $email,
-                "Tu plan de \"{$name}\" venció - KosherMap",
-                'Tu plan venció',
-                ["El plan pago de \"{$name}\" en KosherMap venció y volvió al plan gratis. Si querés, podés renovarlo cuando quieras."],
-                [],
-                ['Renovar mi plan', $renewUrl]
-            );
+            \App\Support\BrandedMail::withLocale($locale ?: 'es', function () use ($email, $name, $renewUrl) {
+                \App\Support\BrandedMail::send(
+                    $email,
+                    __('mail.expired_subject', ['name' => $name]),
+                    __('mail.expired_heading'),
+                    [__('mail.expired_body', ['name' => $name])],
+                    [],
+                    [__('mail.expired_button'), $renewUrl]
+                );
+            });
         } catch (\Throwable $e) {
             Log::error("Error al enviar aviso de plan vencido ({$name}): " . $e->getMessage());
         }

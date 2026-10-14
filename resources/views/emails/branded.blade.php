@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="{{ app()->getLocale() }}" dir="{{ in_array(app()->getLocale(), ['he', 'ar']) ? 'rtl' : 'ltr' }}">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head>
 <body style="margin:0;padding:0;background:#f3f4f6;font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif;color:#1f2937;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f3f4f6;padding:24px 12px;">
@@ -38,7 +38,7 @@
         @endif
       </td></tr>
       <tr><td align="center" style="padding:16px 8px 0;font-size:12px;color:#9ca3af;line-height:1.5;">
-        KosherMap · Productos kosher, certificadoras y guías de kashrut<br>
+        {{ __('mail.footer') }}<br>
         <a href="{{ url('/') }}" style="color:#9ca3af;">koshermap.org</a>
       </td></tr>
     </table>

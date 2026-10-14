@@ -100,22 +100,28 @@ class ContactController extends Controller
                 $opts['bcc'] = $adminEmail;
             }
 
-            \App\Support\BrandedMail::send(
-                $notifyEmail,
-                'Empresa interesada en certificarse - via KosherMap',
-                'Una empresa quiere certificarse con ustedes',
-                ["Recibiste un nuevo contacto para {$certifier->name} a través de KosherMap. Podés responder directamente a este mail."],
-                [
-                    'Empresa'          => $lead->company,
-                    'Contacto'         => $lead->name,
-                    'Email'            => $lead->email,
-                    'Teléfono'         => $lead->phone ?: '—',
-                    'Tipo de producto' => $lead->product_type ?: '—',
-                    'Mensaje'          => $lead->message ?: '—',
-                ],
-                ['Ver todos mis contactos', route('account.certifiers.leads')],
-                $opts
-            );
+            // En el idioma del dueño de la certificadora, o el del país donde certifica.
+            $locale = $certifier->owner?->locale
+                ?: ($certifier->countries()->value('locale') ?: 'es');
+
+            \App\Support\BrandedMail::withLocale($locale, function () use ($notifyEmail, $certifier, $lead, $opts) {
+                \App\Support\BrandedMail::send(
+                    $notifyEmail,
+                    __('mail.lead_subject'),
+                    __('mail.lead_heading'),
+                    [__('mail.lead_intro', ['name' => $certifier->name])],
+                    [
+                        __('mail.lead_company') => $lead->company,
+                        __('mail.lead_contact') => $lead->name,
+                        __('mail.lead_email')   => $lead->email,
+                        __('mail.lead_phone')   => $lead->phone ?: '—',
+                        __('mail.lead_product') => $lead->product_type ?: '—',
+                        __('mail.lead_message') => $lead->message ?: '—',
+                    ],
+                    [__('mail.lead_button'), route('account.certifiers.leads')],
+                    $opts
+                );
+            });
         } catch (\Throwable $e) {
             Log::error("Error al enviar lead #{$lead->id} de certificacion a {$notifyEmail}: " . $e->getMessage());
         }

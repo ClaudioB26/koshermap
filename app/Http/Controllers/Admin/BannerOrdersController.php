@@ -35,16 +35,18 @@ class BannerOrdersController extends Controller
         $reason = (string) $request->input('reason');
         $order->update(['payment_status' => BannerOrder::REJECTED, 'rejection_reason' => $reason ?: null]);
 
-        $service->mail(
-            $order->user->email,
-            'No pudimos verificar tu pago - KosherMap',
-            'No pudimos verificar tu pago',
-            array_values(array_filter([
-                'No pudimos verificar el pago de tu banner "' . $order->banner->name . '".',
-                $reason ? 'Motivo: ' . $reason : null,
-                'Escribinos a info@koshermap.org y lo resolvemos.',
-            ]))
-        );
+        \App\Support\BrandedMail::withLocale($order->user->locale ?: 'es', function () use ($service, $order, $reason) {
+            $service->mail(
+                $order->user->email,
+                __('mail.banner_pay_subject'),
+                __('mail.banner_pay_heading'),
+                array_values(array_filter([
+                    __('mail.banner_pay_body', ['name' => $order->banner->name]),
+                    $reason ? __('mail.rejected_reason', ['reason' => $reason]) : null,
+                    __('mail.banner_pay_contact'),
+                ]))
+            );
+        });
 
         return back()->with('success', 'Pago rechazado.');
     }
@@ -65,18 +67,18 @@ class BannerOrdersController extends Controller
         $order->update(['review_status' => BannerOrder::REJECTED, 'rejection_reason' => $reason ?: null]);
         $order->banner->update(['is_active' => false]);
 
-        $service->mail(
-            $order->user->email,
-            'Tu banner no fue aprobado - KosherMap',
-            'Tu banner no fue aprobado',
-            array_values(array_filter([
-                'No pudimos aprobar tu banner "' . $order->banner->name . '" porque no cumple las condiciones de publicación.',
-                $reason ? 'Motivo: ' . $reason : null,
-                $order->payment_status === BannerOrder::APPROVED
-                    ? 'Como ya pagaste, escribinos a info@koshermap.org para devolverte el pago o cambiar la imagen.'
-                    : null,
-            ]))
-        );
+        \App\Support\BrandedMail::withLocale($order->user->locale ?: 'es', function () use ($service, $order, $reason) {
+            $service->mail(
+                $order->user->email,
+                __('mail.banner_img_subject'),
+                __('mail.banner_img_heading'),
+                array_values(array_filter([
+                    __('mail.banner_img_body', ['name' => $order->banner->name]),
+                    $reason ? __('mail.rejected_reason', ['reason' => $reason]) : null,
+                    $order->payment_status === \App\Models\BannerOrder::APPROVED ? __('mail.banner_img_refund') : null,
+                ]))
+            );
+        });
 
         return back()->with('success', 'Banner rechazado. Si ya pagó, hay que devolverle el pago.');
     }

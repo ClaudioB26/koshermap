@@ -30,6 +30,7 @@ class User extends Authenticatable
         'role',
         'google_id',
         'avatar',
+        'locale',
         'certifier_id',
     ];
 

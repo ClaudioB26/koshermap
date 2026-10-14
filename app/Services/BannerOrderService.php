@@ -40,13 +40,15 @@ class BannerOrderService
         ]);
         $order->update(['activated_at' => now()]);
 
-        $this->mail(
-            $order->user->email,
-            'Tu banner ya está publicado - KosherMap',
-            '¡Tu banner está publicado!',
-            ["Tu banner \"{$order->banner->name}\" ya se muestra en KosherMap hasta el {$end->format('d/m/Y')}. Podés ver cuántas veces se mostró y cuántos clics recibió desde tu cuenta."],
-            ['Ver mis banners', route('account.banners.index')]
-        );
+        \App\Support\BrandedMail::withLocale($order->user->locale ?: 'es', function () use ($order, $end) {
+            $this->mail(
+                $order->user->email,
+                __('mail.banner_live_subject'),
+                __('mail.banner_live_heading'),
+                [__('mail.banner_live_body', ['name' => $order->banner->name, 'date' => $end->format('d/m/Y')])],
+                [__('mail.banner_live_button'), route('account.banners.index')]
+            );
+        });
     }
 
     /** Aviso al admin: hay algo para revisar. */

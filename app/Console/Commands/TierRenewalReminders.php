@@ -40,7 +40,7 @@ class TierRenewalReminders extends Command
                 continue;
             }
 
-            $this->notify($email, $certifier->name, route('account.certifiers.plan'), $certifier->tier_expires_at->format('d/m/Y'));
+            $this->notify($email, $certifier->name, route('account.certifiers.plan'), $certifier->tier_expires_at->format('d/m/Y'), $certifier->owner?->locale);
             $certifier->update(['tier_reminder_sent_at' => now()]);
             $this->info("  - Certificadora {$certifier->name}: aviso de vencimiento enviado a {$email}.");
         }
@@ -58,7 +58,7 @@ class TierRenewalReminders extends Command
                 continue;
             }
 
-            $this->notify($email, $place->name, route('account.places.plan', $place), $place->tier_expires_at->format('d/m/Y'));
+            $this->notify($email, $place->name, route('account.places.plan', $place), $place->tier_expires_at->format('d/m/Y'), $place->owner?->locale);
             $place->update(['tier_reminder_sent_at' => now()]);
             $this->info("  - Local {$place->name}: aviso de vencimiento enviado a {$email}.");
         }
@@ -70,20 +70,19 @@ class TierRenewalReminders extends Command
         return 0;
     }
 
-    private function notify(string $email, string $name, string $renewUrl, string $expiresAt): void
+    private function notify(string $email, string $name, string $renewUrl, string $expiresAt, ?string $locale = null): void
     {
         try {
-            \App\Support\BrandedMail::send(
-                $email,
-                "Tu plan de \"{$name}\" vence pronto - KosherMap",
-                'Tu plan está por vencer',
-                [
-                    "Tu plan pago de \"{$name}\" en KosherMap vence el {$expiresAt}.",
-                    'Si no lo renovás, tu ficha vuelve al plan gratis automáticamente al vencer.',
-                ],
-                [],
-                ['Renovar mi plan', $renewUrl]
-            );
+            \App\Support\BrandedMail::withLocale($locale ?: 'es', function () use ($email, $name, $renewUrl, $expiresAt) {
+                \App\Support\BrandedMail::send(
+                    $email,
+                    __('mail.renew_subject', ['name' => $name]),
+                    __('mail.renew_heading'),
+                    [__('mail.renew_body', ['name' => $name, 'date' => $expiresAt]), __('mail.renew_note')],
+                    [],
+                    [__('mail.renew_button'), $renewUrl]
+                );
+            });
         } catch (\Throwable $e) {
             Log::error("Error al enviar aviso de vencimiento de plan ({$name}): " . $e->getMessage());
         }

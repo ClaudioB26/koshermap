@@ -12,6 +12,24 @@ use Illuminate\Support\Facades\Mail;
 class BrandedMail
 {
     /**
+     * Ejecuta $fn con el idioma pedido (y lo restaura): los mails se arman con
+     * __() en el idioma del destinatario, no en el de quien dispara la acción.
+     */
+    public static function withLocale(?string $locale, callable $fn): mixed
+    {
+        $supported = ['es', 'en', 'pt', 'fr', 'ru', 'he'];
+        $locale = in_array($locale, $supported, true) ? $locale : 'es';
+
+        $previous = app()->getLocale();
+        app()->setLocale($locale);
+
+        try {
+            return $fn();
+        } finally {
+            app()->setLocale($previous);
+        }
+    }
+    /**
      * @param array<int,string>     $paragraphs  texto libre (se escapa)
      * @param array<string,string>  $details     tabla etiqueta => valor
      * @param array{0:string,1:string}|null $button  [texto, url]
