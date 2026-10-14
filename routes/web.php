@@ -315,6 +315,7 @@ Route::get('/sitemap.xml', [App\Http\Controllers\SitemapController::class, 'inde
 
 // Sitemaps paginados (más específicos primero)
 // products y brands quedan fuera: esas páginas ahora devuelven 410.
+Route::get('/sitemap-products-{page}.xml', [App\Http\Controllers\SitemapController::class, 'products'])->name('sitemap.products');
 Route::get('/sitemap-categories-{page}.xml', [App\Http\Controllers\SitemapController::class, 'categories'])->name('sitemap.categories');
 Route::get('/sitemap-certifiers-{page}.xml', [App\Http\Controllers\SitemapController::class, 'certifiers'])->name('sitemap.certifiers');
 Route::get('/sitemap-pages.xml', [App\Http\Controllers\SitemapController::class, 'pages'])->name('sitemap.pages');

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @php
-    $hasRealDescription = mb_strlen(trim((string) $product->description)) >= 200;
+    $hasRealDescription = mb_strlen(trim((string) $product->description)) >= 200; // misma regla que Product::indexable()
     $brandName = $product->brand->name ?? null;
     $pageTitle = $product->name . ($brandName && !str_contains(mb_strtolower($product->name), mb_strtolower($brandName)) ? ' - ' . $brandName : '') . ' - KosherMap';
     $metaDesc = $product->description

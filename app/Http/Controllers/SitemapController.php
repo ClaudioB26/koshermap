@@ -32,6 +32,12 @@ class SitemapController extends Controller
         // AdSense, o listados de filtro sin contenido editorial propio).
         // Los controladores siguen existiendo por si se decide reactivarlos.
 
+        // Fichas de producto con descripción real (el resto es noindex)
+        $productPages = (int) ceil(Product::indexable()->count() / 1000);
+        for ($page = 1; $page <= $productPages; $page++) {
+            $sitemap .= $this->createSitemapEntry(url("/sitemap-products-{$page}.xml"), Carbon::now());
+        }
+
         // Agregar sitemaps de certificadores
         for ($page = 1; $page <= $certifierPages; $page++) {
             $sitemap .= $this->createSitemapEntry(
@@ -108,7 +114,7 @@ class SitemapController extends Controller
         
         $offset = ($page - 1) * 1000;
         
-        Product::active()
+        Product::indexable()
             ->orderBy('updated_at', 'desc')
             ->skip($offset)
             ->take(1000)

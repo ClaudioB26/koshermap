@@ -36,6 +36,15 @@ class Product extends Model
         return $query->where('is_active', true);
     }
 
+    /**
+     * Productos con descripción real (>= 200 caracteres): son los que la ficha
+     * deja indexar y los únicos que van al sitemap. El resto queda noindex.
+     */
+    public function scopeIndexable($query)
+    {
+        return $query->active()->whereRaw('CHAR_LENGTH(TRIM(description)) >= 200');
+    }
+
     public function reports()
     {
         return $this->morphMany(Report::class, 'reportable');
