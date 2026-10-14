@@ -88,7 +88,7 @@ if /i "%M%"=="ou"          ( call :ou & call :cola & goto :resumen )
 if /i "%M%"=="limpieza"    ( call :limpieza & goto :resumen )
 if /i "%M%"=="sync"        ( call :sync & goto :resumen )
 if /i "%M%"=="sync-prueba" ( call :run "Sincronizacion (sin enviar)" sync:push --dry-run & goto :resumen )
-if /i "%M%"=="lugares"     ( call :run "Google Maps: lugares kosher" scrape:places --limit=2 & goto :resumen )
+if /i "%M%"=="lugares"     ( call :run "Google Maps: lugares kosher" scrape:places --limit=2 --sync & goto :resumen )
 if /i "%M%"=="estado"      ( call :estado & goto :resumen )
 if /i "%M%"=="prueba"      ( call :prueba & goto :resumen )
 echo Modo desconocido: %M%
@@ -120,7 +120,7 @@ exit /b 0
 
 :cola
 rem Ajdut y OU encolan jobs: se procesan hasta vaciar la cola y se corta.
-call :run "Procesar cola de jobs"            queue:work --stop-when-empty --timeout=300 --tries=3
+call :run "Procesar cola de jobs"            queue:work --queue=scraping,default --stop-when-empty --timeout=300 --tries=3
 exit /b 0
 
 :limpieza

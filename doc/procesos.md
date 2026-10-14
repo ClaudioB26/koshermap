@@ -27,7 +27,7 @@ Los sitemaps y robots.txt se generan por ruta, no por cron.
 | `ou` | OU Kosher (lento; `--resume` retoma por letra) + cola |
 | `limpieza` | `categorize:bdk`, `products:smart-categorize`, `products:clean-data` |
 | `sync` / `sync-prueba` | Envía todo a producción / muestra qué enviaría |
-| `lugares` | `scrape:places --limit=2` (Google Maps, máx. 2 ciudades por corrida) |
+| `lugares` | `scrape:places --limit=2 --sync` (Google Maps, máx. 2 ciudades por corrida) |
 | `estado` | Chequea URLs clave de producción |
 | `prueba` | Verifica que existan los comandos y corre los dry-run |
 
