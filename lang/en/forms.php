@@ -59,4 +59,8 @@ return [
     'leads_empty_help' => 'Every time a company fills in the form you get an email and it is saved here.',
     'leads_count' => '{1} :count contact|[2,*] :count contacts',
     'leads_product' => 'Product:',
+    'acc_badge_title' => 'Badge for your website',
+    'acc_badge_help' => 'Copy this code and paste it on your site. It shows your customers that you are on KosherMap and helps more people find us.',
+    'acc_badge_copy' => 'Copy code',
+    'acc_badge_copied' => 'Copied!',
 ];

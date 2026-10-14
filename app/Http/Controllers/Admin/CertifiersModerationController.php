@@ -73,7 +73,10 @@ class CertifiersModerationController extends Controller
             $certifier,
             'aprobada',
             '¡Tu certificadora fue aprobada!',
-            ["¡Buenas noticias! \"{$certifier->name}\" ya está aprobada en KosherMap. Ya podés cargar tus productos entrando a tu cuenta."],
+            [
+                "¡Buenas noticias! \"{$certifier->name}\" ya está aprobada en KosherMap. Ya podés cargar tus productos entrando a tu cuenta.",
+                'Además, en "Mi certificadora" tenés una insignia de KosherMap para pegar en tu sitio web: les muestra a tus clientes que estás en el directorio.',
+            ],
             ['Ir a mi cuenta', route('account.certifiers.my')]
         );
 

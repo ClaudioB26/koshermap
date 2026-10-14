@@ -59,4 +59,8 @@ return [
     'leads_empty_help' => 'בכל פעם שחברה ממלאת את הטופס, תקבלו אימייל והפנייה תישמר כאן.',
     'leads_count' => ':count פניות',
     'leads_product' => 'מוצר:',
+    'acc_badge_title' => 'תג לאתר שלכם',
+    'acc_badge_help' => 'העתיקו את הקוד והדביקו אותו באתר שלכם. הוא מראה ללקוחות שאתם ב-KosherMap ועוזר ליותר אנשים למצוא אותנו.',
+    'acc_badge_copy' => 'העתקת הקוד',
+    'acc_badge_copied' => 'הועתק!',
 ];

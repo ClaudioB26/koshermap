@@ -76,6 +76,25 @@ $statusInfo = [
         @endif
         @endif
 
+        @if($certifier->isApproved())
+        @php
+            $badgeSnippet = '<a href="' . url('/certifiers') . '" rel="noopener"><img src="' . url('/images/badge-koshermap.svg') . '" alt="Certificadora en KosherMap" width="220" height="60"></a>';
+        @endphp
+        <div class="mt-6 pt-6 border-t border-gray-100" x-data="{ copied: false }">
+            <h3 class="text-sm font-semibold text-gray-700 mb-1">🏷️ {{ __('forms.acc_badge_title') }}</h3>
+            <p class="text-xs text-gray-500 mb-3">{{ __('forms.acc_badge_help') }}</p>
+            <img src="{{ asset('images/badge-koshermap.svg') }}" alt="" width="220" height="60" class="mb-3">
+            <textarea readonly rows="3" x-ref="snippet" @click="$el.select()"
+                      class="w-full text-xs font-mono border border-gray-300 rounded-lg px-3 py-2 bg-gray-50" dir="ltr">{{ $badgeSnippet }}</textarea>
+            <button type="button"
+                    @click="navigator.clipboard.writeText($refs.snippet.value).then(() => { copied = true; setTimeout(() => copied = false, 2000); })"
+                    class="mt-2 px-3 py-1.5 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 transition">
+                <span x-show="!copied">{{ __('forms.acc_badge_copy') }}</span>
+                <span x-show="copied" x-cloak>{{ __('forms.acc_badge_copied') }}</span>
+            </button>
+        </div>
+        @endif
+
         <dl class="mt-6 pt-6 border-t border-gray-100 space-y-2 text-sm">
             @if($certifier->rabbi_name)
             <div><dt class="inline text-gray-500">{{ __('forms.acc_rabbi') }}</dt> <dd class="inline text-gray-800">{{ $certifier->rabbi_name }}</dd></div>
