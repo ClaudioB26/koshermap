@@ -224,6 +224,12 @@ Route::get('/newsletter/baja/{token}', [\App\Http\Controllers\NewsletterControll
 Route::post('/newsletter/baja/{token}', [\App\Http\Controllers\NewsletterController::class, 'unsubscribe'])->name('newsletter.unsubscribe.do');
 
 Route::middleware('auth')->prefix('cuenta')->name('account.')->group(function () {
+    // Entrada única a la cuenta (la usan los mails): certificadora -> su ficha; el resto -> sus locales.
+    Route::get('/', function (\Illuminate\Http\Request $request) {
+        $hasCertifier = \App\Models\Certifier::where('owner_id', $request->user()->id)->exists();
+
+        return redirect()->route($hasCertifier ? 'account.certifiers.my' : 'account.places');
+    })->name('home');
     Route::get('/mis-locales', [AccountController::class, 'places'])->name('places');
     Route::get('/mis-locales/{place}/editar', [\App\Http\Controllers\PlaceSubmissionController::class, 'edit'])->name('places.edit');
     Route::put('/mis-locales/{place}', [\App\Http\Controllers\PlaceSubmissionController::class, 'update'])->name('places.update');
