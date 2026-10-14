@@ -26,6 +26,9 @@
         <a href="{{ route('account.certifiers.my') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700">
             🏅 Mi certificadora
         </a>
+        <a href="{{ route('account.banners.index') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700">
+            📢 {{ __('banners.menu') }}
+        </a>
         <form method="POST" action="{{ route('logout') }}">
             @csrf
             <button type="submit" class="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700">

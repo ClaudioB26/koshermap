@@ -54,9 +54,29 @@ class MercadoPagoWebhookController extends Controller
             $this->activateCertifierTier($reference, $paymentId, $payment['status']);
         } elseif (str_starts_with($reference, 'place_tier_payment:')) {
             $this->activatePlaceTier($reference, $paymentId, $payment['status']);
+        } elseif (str_starts_with($reference, 'banner_order:')) {
+            $this->approveBannerOrder($reference, $paymentId, $payment['status']);
         }
 
         return response()->noContent();
+    }
+
+    private function approveBannerOrder(string $reference, string $paymentId, string $status): void
+    {
+        $order = \App\Models\BannerOrder::with(['banner', 'user'])->find(substr($reference, strlen('banner_order:')));
+        if (! $order || $order->payment_status === \App\Models\BannerOrder::APPROVED || $status !== 'approved') {
+            return;
+        }
+
+        $order->update([
+            'payment_status' => \App\Models\BannerOrder::APPROVED,
+            'mp_payment_id'  => $paymentId,
+        ]);
+
+        // El banner sale al aire cuando el admin revise la imagen (activateIfReady lo chequea).
+        $service = app(\App\Services\BannerOrderService::class);
+        $service->activateIfReady($order);
+        $service->notifyAdmin($order, $order->user->name . ' pagó un banner por Mercado Pago (' . $order->amount . ' ARS). Falta revisar la imagen.');
     }
 
     private function activateCertifierTier(string $reference, string $paymentId, string $status): void

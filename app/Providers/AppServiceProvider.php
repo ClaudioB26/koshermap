@@ -40,6 +40,13 @@ class AppServiceProvider extends ServiceProvider
                 'reviews'    => \App\Models\Review::where('status', \App\Models\Review::STATUS_PENDING)->count(),
                 // banners activos que vencen en los proximos 7 dias (para renovarlos o cobrar otro periodo).
                 // Con try/catch: si la migracion de banners todavia no corrio, el panel tiene que abrir igual.
+                'banner_orders' => (function () {
+                    try {
+                        return \App\Models\BannerOrder::needsAdmin()->count();
+                    } catch (\Illuminate\Database\QueryException $e) {
+                        return 0;
+                    }
+                })(),
                 'banners'    => (function () {
                     try {
                         return \App\Models\Banner::live()->whereNotNull('ends_on')

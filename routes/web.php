@@ -232,6 +232,12 @@ Route::middleware('auth')->prefix('cuenta')->name('account.')->group(function ()
     Route::get('/mi-certificadora/plan/transferencia', [\App\Http\Controllers\CertifierBillingController::class, 'transferForm'])->name('certifiers.plan.transfer');
     Route::post('/mi-certificadora/plan/transferencia', [\App\Http\Controllers\CertifierBillingController::class, 'transferStore'])->name('certifiers.plan.transfer.store');
 
+    // Banners por autoservicio
+    Route::get('/mis-banners', [\App\Http\Controllers\BannerOrderController::class, 'index'])->name('banners.index');
+    Route::get('/mis-banners/nuevo', [\App\Http\Controllers\BannerOrderController::class, 'create'])->name('banners.create');
+    Route::post('/mis-banners', [\App\Http\Controllers\BannerOrderController::class, 'store'])->middleware('throttle:10,1')->name('banners.store');
+    Route::post('/mis-banners/{order}/comprobante', [\App\Http\Controllers\BannerOrderController::class, 'proof'])->name('banners.proof');
+
     Route::get('/mis-productos', [\App\Http\Controllers\ProductSubmissionController::class, 'index'])->name('products');
     Route::get('/mis-productos/nuevo', [\App\Http\Controllers\ProductSubmissionController::class, 'create'])->name('products.create');
     Route::post('/mis-productos', [\App\Http\Controllers\ProductSubmissionController::class, 'store'])->name('products.store');
@@ -279,6 +285,11 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
         Route::resource('banners', \App\Http\Controllers\Admin\BannersController::class)->except('show');
         Route::post('/banners/{banner}/toggle', [\App\Http\Controllers\Admin\BannersController::class, 'toggle'])->name('banners.toggle');
+        Route::get('/pedidos-banners', [\App\Http\Controllers\Admin\BannerOrdersController::class, 'index'])->name('banner-orders.index');
+        Route::post('/pedidos-banners/{order}/aprobar-pago', [\App\Http\Controllers\Admin\BannerOrdersController::class, 'approvePayment'])->name('banner-orders.approve-payment');
+        Route::post('/pedidos-banners/{order}/rechazar-pago', [\App\Http\Controllers\Admin\BannerOrdersController::class, 'rejectPayment'])->name('banner-orders.reject-payment');
+        Route::post('/pedidos-banners/{order}/aprobar-imagen', [\App\Http\Controllers\Admin\BannerOrdersController::class, 'approveReview'])->name('banner-orders.approve-review');
+        Route::post('/pedidos-banners/{order}/rechazar-imagen', [\App\Http\Controllers\Admin\BannerOrdersController::class, 'rejectReview'])->name('banner-orders.reject-review');
 
         // Comprobantes de pago y documentos de certificadoras: solo admins, sin URL publica.
         Route::get('/archivos/{path}', [\App\Http\Controllers\Admin\PrivateFileController::class, 'show'])

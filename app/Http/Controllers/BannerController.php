@@ -17,6 +17,13 @@ class BannerController extends Controller
         $disk = Storage::disk('public');
         abort_unless($disk->exists($banner->image_path), 404);
 
+        // Un banner todavia no publicado (pendiente de pago o de revision) no es publico.
+        if (! $banner->is_active) {
+            $user = auth()->user();
+            $allowed = $user && ($user->isAdmin() || \App\Models\BannerOrder::where('banner_id', $banner->id)->where('user_id', $user->id)->exists());
+            abort_unless($allowed, 404);
+        }
+
         return $disk->response($banner->image_path, null, [
             'Cache-Control'          => 'public, max-age=86400',
             'X-Content-Type-Options' => 'nosniff',
