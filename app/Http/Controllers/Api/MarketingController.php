@@ -23,8 +23,15 @@ class MarketingController extends Controller
 
         $unsubscribedEmails = NewsletterSubscriber::where('status', NewsletterSubscriber::UNSUBSCRIBED)->pluck('email')->all();
 
-        // Cuentas de certificadoras y dueños de locales: relación de servicio existente.
-        $businesses = User::whereIn('role', [User::ROLE_PLACE_OWNER, User::ROLE_CERTIFIER])
+        // Comercios: cuentas que tienen una relación real con el sitio, es decir,
+        // son certificadoras o cargaron al menos un local. Quien solo inició sesión
+        // con Google (rol place_owner por defecto) NO entra: no tiene ficha.
+        $businesses = User::query()
+            ->where('role', '!=', User::ROLE_ADMIN)
+            ->where(function ($q) {
+                $q->where('role', User::ROLE_CERTIFIER)
+                  ->orWhereIn('id', \App\Models\KosherPlace::whereNotNull('owner_id')->select('owner_id'));
+            })
             ->where('marketing_opt_out', false)
             ->whereNotNull('email')
             ->get(['email', 'name', 'locale', 'role'])
