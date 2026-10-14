@@ -21,7 +21,7 @@
 
         @if(session('lead_sent'))
         <div class="p-4 bg-green-50 border border-green-200 rounded-xl text-sm text-green-800 mb-6">
-            ¡Gracias! Le avisamos a {{ $certifier->name }} que querés certificar tu empresa. Te van a contactar directamente.
+            {{ __('forms.lead_thanks', ['name' => $certifier->name]) }}
         </div>
         @else
         @if($errors->any())
@@ -44,35 +44,35 @@
             </div>
 
             <div>
-                <label class="block text-sm text-gray-600 mb-1">Tu nombre *</label>
+                <label class="block text-sm text-gray-600 mb-1">{{ __('forms.lead_name') }} *</label>
                 <input type="text" name="name" value="{{ old('name') }}" required
                        class="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:ring-2 focus:ring-blue-300 focus:outline-none">
             </div>
             <div>
-                <label class="block text-sm text-gray-600 mb-1">Empresa *</label>
+                <label class="block text-sm text-gray-600 mb-1">{{ __('forms.lead_company') }} *</label>
                 <input type="text" name="company" value="{{ old('company') }}" required
                        class="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:ring-2 focus:ring-blue-300 focus:outline-none">
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
-                    <label class="block text-sm text-gray-600 mb-1">Email *</label>
+                    <label class="block text-sm text-gray-600 mb-1">{{ __('forms.lead_email') }} *</label>
                     <input type="email" name="email" value="{{ old('email') }}" required
                            class="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:ring-2 focus:ring-blue-300 focus:outline-none">
                 </div>
                 <div>
-                    <label class="block text-sm text-gray-600 mb-1">Teléfono</label>
+                    <label class="block text-sm text-gray-600 mb-1">{{ __('forms.lead_phone') }}</label>
                     <input type="text" name="phone" value="{{ old('phone') }}"
                            class="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:ring-2 focus:ring-blue-300 focus:outline-none">
                 </div>
             </div>
             <div>
-                <label class="block text-sm text-gray-600 mb-1">¿Qué producto querés certificar?</label>
+                <label class="block text-sm text-gray-600 mb-1">{{ __('forms.lead_product') }}</label>
                 <input type="text" name="product_type" value="{{ old('product_type') }}"
-                       placeholder="Ej: galletitas, lácteos, bebidas..."
+                       placeholder="{{ __('forms.lead_product_ph') }}"
                        class="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:ring-2 focus:ring-blue-300 focus:outline-none">
             </div>
             <div>
-                <label class="block text-sm text-gray-600 mb-1">Contanos más (opcional)</label>
+                <label class="block text-sm text-gray-600 mb-1">{{ __('forms.lead_message') }}</label>
                 <textarea name="message" rows="3"
                           class="w-full text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white focus:ring-2 focus:ring-blue-300 focus:outline-none">{{ old('message') }}</textarea>
             </div>
@@ -81,7 +81,7 @@
 
             <button type="submit"
                     class="w-full px-4 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition">
-                Enviar a {{ $certifier->name }}
+                {{ __('forms.lead_send', ['name' => $certifier->name]) }}
             </button>
         </form>
 
@@ -90,7 +90,7 @@
              contacto. --}}
         <p class="text-center mt-3">
             <a href="{{ route('certifiers.more-info', $certifier->slug) }}" class="text-xs text-gray-400 hover:text-gray-600 hover:underline">
-                Ver información de contacto de {{ $certifier->name }}
+                {{ __('forms.lead_view_contact', ['name' => $certifier->name]) }}
             </a>
         </p>
         @endif

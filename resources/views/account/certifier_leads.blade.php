@@ -1,24 +1,23 @@
 @extends('layouts.app')
 
-@section('title', 'Contactos recibidos - ' . $certifier->name . ' - KosherMap')
+@section('title', __('forms.leads_title') . ' - ' . $certifier->name . ' - KosherMap')
 @section('robots', 'noindex, nofollow')
 
 @section('content')
 <div class="max-w-5xl mx-auto">
     <div class="mb-6 flex items-start justify-between gap-3 flex-wrap">
         <div>
-            <h1 class="text-3xl font-bold text-gray-800">📥 Contactos recibidos</h1>
+            <h1 class="text-3xl font-bold text-gray-800">📥 {{ __('forms.leads_title') }}</h1>
             <p class="text-gray-500 text-sm mt-1">
-                Empresas que completaron el formulario "Quiero certificar mi empresa" de
-                <strong>{{ $certifier->name }}</strong> en KosherMap.
+                {!! __('forms.leads_intro', ['name' => '<strong>' . e($certifier->name) . '</strong>']) !!}
             </p>
         </div>
         <div class="flex items-center gap-2">
-            <a href="{{ route('account.certifiers.my') }}" class="text-sm text-blue-600 hover:underline">← Mi certificadora</a>
+            <a href="{{ route('account.certifiers.my') }}" class="text-sm text-blue-600 hover:underline">{{ __('forms.leads_back') }}</a>
             @if($leads->total() > 0)
             <a href="{{ route('account.certifiers.leads', ['export' => 'csv']) }}"
                class="px-3 py-1.5 bg-white border border-gray-300 text-gray-700 text-sm rounded-lg hover:bg-gray-50 transition">
-                ⬇️ Exportar CSV
+                ⬇️ {{ __('forms.leads_export') }}
             </a>
             @endif
         </div>
@@ -27,11 +26,11 @@
     @if($leads->isEmpty())
     <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-12 text-center text-gray-400">
         <p class="text-4xl mb-3">📭</p>
-        <p class="font-medium">Todavía no recibiste contactos.</p>
-        <p class="text-sm mt-1">Cada vez que una empresa complete el formulario, te llega un mail y queda guardado acá.</p>
+        <p class="font-medium">{{ __('forms.leads_empty') }}</p>
+        <p class="text-sm mt-1">{{ __('forms.leads_empty_help') }}</p>
     </div>
     @else
-    <p class="text-sm text-gray-500 mb-3">{{ number_format($leads->total()) }} contacto{{ $leads->total() === 1 ? '' : 's' }}</p>
+    <p class="text-sm text-gray-500 mb-3">{{ trans_choice('forms.leads_count', $leads->total(), ['count' => number_format($leads->total())]) }}</p>
 
     <div class="space-y-3">
         @foreach($leads as $lead)
@@ -49,7 +48,7 @@
             </div>
 
             @if($lead->product_type)
-            <div class="mt-3 text-sm"><span class="text-gray-400">Producto:</span> <span class="text-gray-700 font-medium">{{ $lead->product_type }}</span></div>
+            <div class="mt-3 text-sm"><span class="text-gray-400">{{ __('forms.leads_product') }}</span> <span class="text-gray-700 font-medium">{{ $lead->product_type }}</span></div>
             @endif
             @if($lead->message)
             <div class="mt-1 text-sm text-gray-600 whitespace-pre-line break-words">{{ $lead->message }}</div>

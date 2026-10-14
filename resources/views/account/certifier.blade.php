@@ -1,21 +1,21 @@
 @extends('layouts.app')
 
-@section('title', 'Mi certificadora - KosherMap')
+@section('title', __('forms.acc_title') . ' - KosherMap')
 @section('robots', 'noindex, follow')
 
 @section('content')
 
 @php
 $statusInfo = [
-    'pending'  => ['label' => 'En revisión', 'badge' => 'bg-yellow-100 text-yellow-700'],
-    'approved' => ['label' => 'Aprobada',    'badge' => 'bg-green-100 text-green-700'],
-    'rejected' => ['label' => 'Rechazada',   'badge' => 'bg-red-100 text-red-700'],
+    'pending'  => ['label' => __('forms.acc_pending_label'), 'badge' => 'bg-yellow-100 text-yellow-700'],
+    'approved' => ['label' => __('forms.acc_approved_label'), 'badge' => 'bg-green-100 text-green-700'],
+    'rejected' => ['label' => __('forms.acc_rejected_label'), 'badge' => 'bg-red-100 text-red-700'],
 ];
 @endphp
 
 <div class="max-w-2xl mx-auto">
     <div class="mb-6">
-        <h1 class="text-3xl font-bold text-gray-800">🏅 Mi certificadora</h1>
+        <h1 class="text-3xl font-bold text-gray-800">🏅 {{ __('forms.acc_title') }}</h1>
     </div>
 
     @if(session('success'))
@@ -27,9 +27,9 @@ $statusInfo = [
     @if(!$certifier)
     <div class="text-center py-20 text-gray-400">
         <p class="text-5xl mb-4">🏅</p>
-        <p class="text-lg font-medium">Todavía no diste de alta tu certificadora.</p>
+        <p class="text-lg font-medium">{{ __('forms.acc_none') }}</p>
         <a href="{{ route('certifiers.create') }}" class="mt-3 inline-block text-blue-600 hover:underline text-sm">
-            Dar de alta mi certificadora
+            {{ __('forms.acc_register') }}
         </a>
     </div>
     @else
@@ -45,32 +45,30 @@ $statusInfo = [
 
         @if($certifier->isPending())
         <p class="text-sm text-gray-600 mb-4">
-            Tu solicitud está en revisión. Nuestro equipo la investiga antes de aprobarla —
-            suele tomar alrededor de una semana. Te vamos a contactar por email.
+            {{ __('forms.acc_pending_text') }}
         </p>
         @elseif($certifier->isApproved())
         <p class="text-sm text-gray-600 mb-4">
-            ¡Tu certificadora ya está publicada en KosherMap! Ahora podés cargar los productos
-            que certificás directamente desde acá.
+            {{ __('forms.acc_approved_text') }}
         </p>
         <a href="{{ route('account.products') }}"
            class="inline-block px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition">
-            📦 Cargar mis productos
+            📦 {{ __('forms.acc_load_products') }}
         </a>
         <a href="{{ route('certifiers.index') }}"
            class="inline-block ml-2 px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm font-medium rounded-lg hover:border-blue-400 transition">
-            Ver mi ficha pública
+            {{ __('forms.acc_public') }}
         </a>
         <a href="{{ route('account.certifiers.leads') }}"
            class="inline-block ml-2 px-4 py-2 bg-white border border-gray-300 text-gray-700 text-sm font-medium rounded-lg hover:border-blue-400 transition">
-            📥 Contactos recibidos ({{ $leadsCount }})
+            📥 {{ __('forms.acc_leads', ['count' => $leadsCount]) }}
         </a>
         <a href="{{ route('account.certifiers.plan') }}"
            class="inline-block ml-2 px-4 py-2 bg-amber-50 border border-amber-200 text-amber-800 text-sm font-medium rounded-lg hover:bg-amber-100 transition">
-            ⭐ Mejorar plan ({{ ucfirst($certifier->tier) }})
+            ⭐ {{ __('forms.acc_upgrade', ['tier' => __('plans.tier_' . $certifier->tier)]) }}
         </a>
         @elseif($certifier->isRejected())
-        <p class="text-sm text-gray-600 mb-2">Tu solicitud no fue aprobada.</p>
+        <p class="text-sm text-gray-600 mb-2">{{ __('forms.acc_rejected_text') }}</p>
         @if($certifier->rejection_reason)
         <div class="text-sm text-red-700 bg-red-50 border border-red-100 rounded-lg p-3">
             {{ $certifier->rejection_reason }}
@@ -80,14 +78,14 @@ $statusInfo = [
 
         <dl class="mt-6 pt-6 border-t border-gray-100 space-y-2 text-sm">
             @if($certifier->rabbi_name)
-            <div><dt class="inline text-gray-500">Rabino a cargo:</dt> <dd class="inline text-gray-800">{{ $certifier->rabbi_name }}</dd></div>
+            <div><dt class="inline text-gray-500">{{ __('forms.acc_rabbi') }}</dt> <dd class="inline text-gray-800">{{ $certifier->rabbi_name }}</dd></div>
             @endif
             @if($certifier->founded_year)
-            <div><dt class="inline text-gray-500">Certifica desde:</dt> <dd class="inline text-gray-800">{{ $certifier->founded_year }}</dd></div>
+            <div><dt class="inline text-gray-500">{{ __('forms.acc_since') }}</dt> <dd class="inline text-gray-800">{{ $certifier->founded_year }}</dd></div>
             @endif
-            <div><dt class="inline text-gray-500">Cobertura:</dt> <dd class="inline text-gray-800">{{ $certifier->coverage_description }}</dd></div>
+            <div><dt class="inline text-gray-500">{{ __('forms.acc_coverage') }}</dt> <dd class="inline text-gray-800">{{ $certifier->coverage_description }}</dd></div>
             @if($certifier->website)
-            <div><dt class="inline text-gray-500">Sitio web:</dt> <dd class="inline text-gray-800">{{ $certifier->website }}</dd></div>
+            <div><dt class="inline text-gray-500">{{ __('forms.acc_website') }}</dt> <dd class="inline text-gray-800">{{ $certifier->website }}</dd></div>
             @endif
         </dl>
     </div>
