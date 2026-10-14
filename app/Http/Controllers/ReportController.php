@@ -32,6 +32,7 @@ class ReportController extends Controller
             'reason'      => 'required|string|max:100',
             'observation' => 'nullable|string|max:1000',
             'email'       => 'nullable|email|max:255',
+            'cf-turnstile-response' => [new \App\Rules\Turnstile],
         ]);
 
         $place->reports()->create([

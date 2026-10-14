@@ -2,7 +2,6 @@
 
 @section('title', 'Lugares Kosher - KosherMap')
 @section('meta_description', 'Encontrá restaurantes, sinagogas, panaderías, carnicerías y comunidades kosher en tu ciudad. Directorio global de lugares kosher verificados por país.')
-@section('robots', 'noindex, follow')
 
 @section('content')
 
@@ -191,6 +190,7 @@
                               class="w-full text-xs border border-gray-300 rounded-lg px-2 py-1.5 bg-white resize-none"></textarea>
                     <input type="email" name="email" placeholder="Tu email (opcional)"
                            class="w-full text-xs border border-gray-300 rounded-lg px-2 py-1.5 bg-white">
+                    @include('partials.turnstile')
                     <div class="flex gap-2">
                         <button type="submit"
                                 class="px-3 py-1 bg-red-600 text-white text-xs rounded-lg hover:bg-red-700 transition">

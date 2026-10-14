@@ -10,4 +10,5 @@ return [
     'ask_certifier' => 'If in doubt, check directly with the certifier.',
     'view_certifiers' => 'See certifiers',
     'products' => 'Products',
+    'places' => 'Places',
 ];

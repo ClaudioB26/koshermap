@@ -10,4 +10,5 @@ return [
     'ask_certifier' => 'Ante cualquier duda, consultá directamente a la certificadora.',
     'view_certifiers' => 'Ver certificadoras',
     'products' => 'Productos',
+    'places' => 'Lugares',
 ];

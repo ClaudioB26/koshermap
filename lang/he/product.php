@@ -10,4 +10,5 @@ return [
     'ask_certifier' => 'במקרה של ספק, פנו ישירות לגוף הכשרות.',
     'view_certifiers' => 'לגופי הכשרות',
     'products' => 'מוצרים',
+    'places' => 'מקומות',
 ];

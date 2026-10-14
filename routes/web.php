@@ -162,7 +162,7 @@ Route::get('/product/{slug}', [\App\Http\Controllers\ProductController::class, '
 // el formulario (ver el de /contacto como ejemplo).
 Route::post('/product/{slug}/reviews', fn () => abort(410))->name('reviews.store');
 Route::post('/product/{product}/report', fn () => abort(410))->name('products.report');
-Route::post('/places/{place}/report',   fn () => abort(410))->name('places.report');
+Route::post('/places/{place}/report',   [\App\Http\Controllers\ReportController::class, 'storePlace'])->middleware('throttle:10,1')->name('places.report');
 
 // Catálogo
 Route::get('/categories', [CatalogController::class, 'categories'])->name('categories.index');
@@ -200,7 +200,7 @@ Route::get('/brands/{slug}', fn () => abort(410))->name('brands.show');
 // Gone). Es reversible: los datos y el resto del flujo (alta de locales,
 // moderación admin, "mis locales") siguen intactos, solo se apaga la
 // página pública. Ver doc/plan-adsense.md.
-Route::get('/places', fn () => abort(410))->name('places.index');
+Route::get('/places', [CatalogController::class, 'placesIndex'])->name('places.index');
 Route::middleware('auth')->group(function () {
     Route::get('/places/agregar', [\App\Http\Controllers\PlaceSubmissionController::class, 'create'])->name('places.create');
     Route::post('/places/agregar', [\App\Http\Controllers\PlaceSubmissionController::class, 'store'])->name('places.store');

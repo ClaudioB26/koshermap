@@ -77,7 +77,14 @@
                           {{ request()->routeIs('articles.*') ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-gray-100' }}">
                     📰 {{ \App\Models\Article::sectionLabelFor(app()->getLocale()) }}
                 </a>
-                {{-- Productos y Lugares ocultos del menu: contenido marcado noindex, ver doc/plan-adsense.md --}}
+                <a href="{{ route('search.index') }}"
+                   class="px-3 py-1.5 rounded-lg text-sm font-medium transition whitespace-nowrap {{ request()->routeIs('search.*', 'products.*') ? 'bg-blue-600 text-white' : 'text-gray-500 hover:bg-gray-100' }}">
+                    🛒 {{ __('product.products') }}
+                </a>
+                <a href="{{ route('places.index') }}"
+                   class="px-3 py-1.5 rounded-lg text-sm font-medium transition whitespace-nowrap {{ request()->routeIs('places.*') ? 'bg-blue-600 text-white' : 'text-gray-500 hover:bg-gray-100' }}">
+                    📍 {{ __('product.places') }}
+                </a>
                 <a href="{{ route('certifiers.index') }}"
                    class="px-3 py-1.5 rounded-lg text-sm font-medium transition text-gray-500 hover:bg-gray-100 whitespace-nowrap">
                     🏅 {{ __('certifiers') }}
@@ -154,7 +161,8 @@
                           {{ request()->routeIs('articles.*') ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-600' }}">
                     📰 {{ \App\Models\Article::sectionLabelFor(app()->getLocale()) }}
                 </a>
-                {{-- Productos y Lugares ocultos del menu: contenido marcado noindex, ver doc/plan-adsense.md --}}
+                <a href="{{ route('search.index') }}" class="px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap bg-gray-100 text-gray-600">🛒 {{ __('product.products') }}</a>
+                <a href="{{ route('places.index') }}" class="px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap bg-gray-100 text-gray-600">📍 {{ __('product.places') }}</a>
                 <a href="{{ route('certifiers.index') }}"
                    class="px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap bg-gray-100 text-gray-600">
                     🏅 {{ __('certifiers') }}

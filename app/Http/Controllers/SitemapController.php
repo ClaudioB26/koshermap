@@ -268,6 +268,7 @@ class SitemapController extends Controller
         $pages = [
             '/' => ['priority' => '1.0', 'changefreq' => 'daily'],
             '/articulos' => ['priority' => '0.9', 'changefreq' => 'daily'],
+            '/places' => ['priority' => '0.7', 'changefreq' => 'weekly'],
             '/categories' => ['priority' => '0.6', 'changefreq' => 'weekly'],
             '/certifiers' => ['priority' => '0.6', 'changefreq' => 'weekly'],
             '/que-es-kosher' => ['priority' => '0.7', 'changefreq' => 'monthly'],
