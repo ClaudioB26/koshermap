@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Http;
  */
 class MarketingSync extends Command
 {
-    protected $signature = 'marketing:sync {--dry-run : Mostrar qué se haría sin tocar Brevo ni producción}';
+    protected $signature = 'marketing:sync {--dry-run : Mostrar qué se haría sin tocar Brevo ni producción} {--list : Listar cada contacto (email, nombre, tipo, idioma)}';
     protected $description = 'Sincroniza contactos y bajas entre producción y Brevo (solo notebook).';
 
     private string $stateFile;
@@ -62,6 +62,11 @@ class MarketingSync extends Command
             foreach ($contacts->groupBy(fn ($c) => $c['locale'] ?: 'es') as $locale => $group) {
                 $name = "KM {$label} {$locale}";
                 $this->line("  - {$name}: {$group->count()}");
+                if ($this->option('list')) {
+                    foreach ($group as $c) {
+                        $this->line('      ' . $c['email'] . '  |  ' . ($c['name'] ?: '-') . '  |  ' . ($c['role'] ?? 'suscriptor'));
+                    }
+                }
 
                 if ($dry) {
                     continue;
