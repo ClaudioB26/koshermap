@@ -32,9 +32,15 @@ class MarketingController extends Controller
             ->map(fn ($u) => ['email' => mb_strtolower($u->email), 'locale' => $u->locale ?: 'es', 'name' => $u->name, 'role' => $u->role])
             ->values();
 
+        // Bajas hechas en el sitio (para bloquearlas también en Brevo).
+        $unsubscribed = collect($unsubscribedEmails)
+            ->merge(User::where('marketing_opt_out', true)->pluck('email')->map(fn ($e) => mb_strtolower($e)))
+            ->unique()->values();
+
         return response()->json([
-            'consumers'  => $consumers->values(),
-            'businesses' => $businesses,
+            'consumers'    => $consumers->values(),
+            'businesses'   => $businesses,
+            'unsubscribed' => $unsubscribed,
         ]);
     }
 

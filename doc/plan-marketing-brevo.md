@@ -94,3 +94,38 @@ productos tras el onboarding, planes y banners comprados, y suscriptos nuevos po
 2. ¿Idioma de los mails: según el idioma del usuario (como ya hacemos) o solo español al principio?
 3. ¿Quién firma los mails (nombre y cargo) y qué tono usamos?
 4. ¿Qué plan de Brevo tenés hoy? (para confirmar los límites reales).
+
+---
+
+## 9. Estado y cómo se usa (actualizado 16 oct 2026)
+
+Decisiones tomadas: empezar por **comercios y consumidores**, idioma según el usuario, tono semi-informal,
+plan gratuito de Brevo, sin inversión extra.
+
+**Hecho:** etapas 1 y 2 (sin la pantalla web de la etapa 3: se opera por comandos y el `.bat`).
+
+| Pieza | Dónde |
+|---|---|
+| Formulario de suscripción en el pie, mail de confirmación, baja de un clic | producción (`/newsletter/...`) |
+| Tabla de suscriptos con consentimiento (fecha, IP, idioma) y opt-out de cuentas | producción (migración `2026_10_16_...`) |
+| API de contactos y bajas (misma clave que `sync:push`) | `/api/marketing/contacts`, `/api/marketing/unsubscribes` |
+| `marketing:sync`, `marketing:campaign`, `marketing:stats` | notebook |
+| Campañas listas: `consumidores-bienvenida`, `comercios-bienvenida` (6 idiomas) | `resources/marketing/campaigns/` |
+
+**Uso (en la notebook, con `BREVO_API_KEY` en el `.env` local):**
+
+```
+php artisan marketing:sync                                   # contactos con permiso -> listas de Brevo; bajas -> sitio
+php artisan marketing:campaign consumidores-bienvenida       # crea BORRADOR en Brevo (no envía)
+php artisan marketing:campaign consumidores-bienvenida --lang=es --test=tu@mail.com
+php artisan marketing:campaign consumidores-bienvenida --lang=es --send
+php artisan marketing:campaign comercios-bienvenida --schedule="2026-11-03 10:00"
+php artisan marketing:stats
+```
+
+Reglas de seguridad del comando: nunca envía sin `--send` o `--schedule`; avisa si el envío supera el tope
+diario (`MARKETING_DAILY_LIMIT`, 300 por defecto); solo corre con `SCRAPING_ENABLED=true`.
+
+**Antes del primer envío real:** verificar `info@koshermap.org` como remitente en Brevo, mandar una prueba
+(`--test=`) y revisar que el mail muestre el link "Darme de baja" que Brevo reemplaza por el de cada contacto.
+Los comandos se probaron contra respuestas simuladas; la primera corrida contra Brevo real es la prueba definitiva.

@@ -16,6 +16,8 @@ rem    procesos-kosher.bat sync-prueba  -> muestra que enviaria (no envia)
 rem    procesos-kosher.bat lugares      -> Google Maps (max 2 ciudades por corrida)
 rem    procesos-kosher.bat estado       -> chequea el sitio en produccion
 rem    procesos-kosher.bat prueba       -> verifica que existan los comandos
+rem    procesos-kosher.bat mkt-sync     -> contactos con permiso a Brevo, bajas al sitio
+rem    procesos-kosher.bat mkt-stats    -> resultados de las campanas
 rem
 rem  Solo corre en LOCAL (SCRAPING_ENABLED=true). Los crons del servidor
 rem  son otra cosa: ver doc/procesos.md
@@ -59,6 +61,8 @@ echo   6. Ver que se sincronizaria (sin enviar)
 echo   7. Lugares Google Maps (max 2 ciudades)
 echo   8. Estado del sitio en produccion
 echo   9. Verificar comandos (prueba)
+echo   A. Marketing: sincronizar contactos con Brevo
+echo   B. Marketing: resultados de campanas
 echo   0. Salir
 echo ========================================================
 set "OP="
@@ -72,6 +76,8 @@ if "%OP%"=="6" call :modo sync-prueba
 if "%OP%"=="7" call :modo lugares
 if "%OP%"=="8" call :modo estado
 if "%OP%"=="9" call :modo prueba
+if /i "%OP%"=="A" call :modo mkt-sync
+if /i "%OP%"=="B" call :modo mkt-stats
 if "%OP%"=="0" ( popd & exit /b 0 )
 goto menu
 
@@ -91,6 +97,8 @@ if /i "%M%"=="sync-prueba" ( call :run "Sincronizacion (sin enviar)" sync:push -
 if /i "%M%"=="lugares"     ( call :run "Google Maps: lugares kosher" scrape:places --limit=2 --sync & goto :resumen )
 if /i "%M%"=="estado"      ( call :estado & goto :resumen )
 if /i "%M%"=="prueba"      ( call :prueba & goto :resumen )
+if /i "%M%"=="mkt-sync"   ( call :run "Marketing: sincronizar contactos con Brevo" marketing:sync & goto :resumen )
+if /i "%M%"=="mkt-stats"  ( call :run "Marketing: resultados de campanas" marketing:stats & goto :resumen )
 echo Modo desconocido: %M%
 exit /b 2
 
@@ -143,7 +151,7 @@ exit /b 0
 
 :prueba
 echo --- Comandos disponibles ---
-for %%C in (scrape:ajdut scrape:kmd scrape:kehila scrape:kosher-chile scrape:uk-kosher scrape:bdk scrape:onekosher scrape:ou-robust scrape:places categorize:bdk products:smart-categorize products:clean-data sync:push tier:renewal-reminders tier:expire-overdue) do (
+for %%C in (scrape:ajdut scrape:kmd scrape:kehila scrape:kosher-chile scrape:uk-kosher scrape:bdk scrape:onekosher scrape:ou-robust scrape:places categorize:bdk products:smart-categorize products:clean-data sync:push marketing:sync marketing:campaign marketing:stats tier:renewal-reminders tier:expire-overdue) do (
     "%PHP%" artisan list --raw 2>nul | findstr /b /c:"%%C " >nul && ( echo   OK   %%C ) || ( echo   FALTA %%C & set /a FALLOS+=1 )
 )
 call :run "Limpieza en modo prueba" products:clean-data --dry-run
