@@ -51,7 +51,7 @@ if not "%~1"=="" (
 echo.
 echo ================= KosherMap - procesos =================
 echo   1. COMPLETO  (scrapers + cola + categorizar + limpiar + sync)
-echo   2. Solo scrapers rapidos (Ajdut, KMD, Kehila, Chile, UK, BDK) + cola
+echo   2. Solo scrapers rapidos (Ajdut, KMD, Kehila, Chile, UK, BDK, One Kosher) + cola
 echo   3. OU Kosher (lento, retoma donde quedo)
 echo   4. Solo limpieza y categorizacion
 echo   5. Sincronizar con produccion
@@ -112,6 +112,7 @@ call :run "Scraper Kehila (Uruguay)"         scrape:kehila
 call :run "Scraper Kosher Chile"             scrape:kosher-chile
 call :run "Scraper UK Kosher (Latinoamerica)" scrape:uk-kosher
 call :run "Scraper BDK Brasil"               scrape:bdk
+call :run "Scraper One Kosher (Mexico)"     scrape:onekosher
 exit /b 0
 
 :ou
@@ -142,7 +143,7 @@ exit /b 0
 
 :prueba
 echo --- Comandos disponibles ---
-for %%C in (scrape:ajdut scrape:kmd scrape:kehila scrape:kosher-chile scrape:uk-kosher scrape:bdk scrape:ou-robust scrape:places categorize:bdk products:smart-categorize products:clean-data sync:push tier:renewal-reminders tier:expire-overdue) do (
+for %%C in (scrape:ajdut scrape:kmd scrape:kehila scrape:kosher-chile scrape:uk-kosher scrape:bdk scrape:onekosher scrape:ou-robust scrape:places categorize:bdk products:smart-categorize products:clean-data sync:push tier:renewal-reminders tier:expire-overdue) do (
     "%PHP%" artisan list --raw 2>nul | findstr /b /c:"%%C " >nul && ( echo   OK   %%C ) || ( echo   FALTA %%C & set /a FALLOS+=1 )
 )
 call :run "Limpieza en modo prueba" products:clean-data --dry-run

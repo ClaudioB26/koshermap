@@ -22,7 +22,7 @@ Los sitemaps y robots.txt se generan por ruta, no por cron.
 
 | Modo | Qué hace |
 |---|---|
-| `completo` | Scrapers (Ajdut, KMD, Kehila, Chile, UK, BDK) → cola de jobs → categorizar BDK y por palabras clave → limpiar datos → `sync:push` a producción |
+| `completo` | Scrapers (Ajdut, KMD, Kehila, Chile, UK, BDK, One Kosher) → cola de jobs → categorizar BDK y por palabras clave → limpiar datos → `sync:push` a producción |
 | `scrapers` | Solo scrapers rápidos + cola |
 | `ou` | OU Kosher (lento; `--resume` retoma por letra) + cola |
 | `limpieza` | `categorize:bdk`, `products:smart-categorize`, `products:clean-data` |
