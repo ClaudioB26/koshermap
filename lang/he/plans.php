@@ -39,4 +39,10 @@ return [
     'err_mp_unavailable' => 'התשלום באמצעות Mercado Pago אינו זמין כרגע. נסו תשלום בהעברה בנקאית או כתבו לנו ל-info@koshermap.org.',
     'err_start_payment' => 'לא הצלחנו להתחיל את התשלום. נסו שוב בעוד כמה דקות.',
     'proof_received' => 'קיבלנו את אישור ההעברה. נבדוק אותו ונפעיל את המסלול בקרוב.',
+    'usd_per_month' => 'US$ :price / לחודש',
+    'ars_equiv' => '≈ $:price ARS',
+    'currency' => 'מטבע',
+    'currency_ars' => 'פסו ארגנטינאי (ARS)',
+    'currency_usd' => 'דולר (USD)',
+    'usd_note' => 'אם תבחרו בדולרים, נשלח לכם את פרטי חשבון ה-USD במייל או ב-WhatsApp.',
 ];

@@ -60,7 +60,7 @@
             <div class="mt-3 text-xs text-gray-500 flex flex-wrap gap-x-4 gap-y-1">
                 <span>{{ __('banners.slot_' . $order->slot) }}</span>
                 <span>{{ __('plans.period_' . $order->months, ['pct' => \App\Services\Billing\TierPricingService::PERIOD_DISCOUNT_PERCENT[(string) $order->months] ?? 0]) }}</span>
-                <span>{{ __('banners.total') }}: ${{ number_format($order->amount, 0, ',', '.') }} ARS</span>
+                <span>{{ __('banners.total') }}: {{ $order->currency === 'USD' ? 'US$ ' . number_format($order->amount, 2, ',', '.') : '$' . number_format($order->amount, 0, ',', '.') . ' ARS' }}</span>
                 @if($state === 'active' || $state === 'expired')
                 <span>{{ __('banners.impressions') }}: {{ number_format($b->impressions) }}</span>
                 <span>{{ __('banners.clicks') }}: {{ number_format($b->clicks) }}</span>

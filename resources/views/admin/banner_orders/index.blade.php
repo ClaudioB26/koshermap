@@ -43,7 +43,7 @@
                 <span>{{ \App\Models\Banner::SLOTS[$o->slot] ?? $o->slot }}</span>
                 <span>{{ \App\Models\Banner::PAGES[$b->pages] ?? $b->pages }}</span>
                 <span>{{ $o->months }} mes(es)</span>
-                <span>${{ number_format($o->amount, 0, ',', '.') }} ARS</span>
+                <span>{{ $o->currency === 'USD' ? 'US$ ' . number_format($o->amount, 2, ',', '.') : '$' . number_format($o->amount, 0, ',', '.') . ' ARS' }}</span>
                 <span>{{ $o->payment_method === 'transfer' ? 'Transferencia' : 'Mercado Pago' }}</span>
                 <span>Destino: <a href="{{ $b->target_url }}" target="_blank" rel="noopener nofollow" class="text-blue-600 hover:underline">{{ \Illuminate\Support\Str::limit($b->target_url, 50) }}</a></span>
                 @if($o->transfer_proof_path)

@@ -45,4 +45,5 @@ return [
     'proof_received' => 'קיבלנו את האישור. נבדוק אותו בקרוב.',
     'total' => 'סה"כ',
     'ad_label' => 'פרסומת',
+    'pay_transfer_usd' => 'העברה בנקאית בדולרים (USD)',
 ];

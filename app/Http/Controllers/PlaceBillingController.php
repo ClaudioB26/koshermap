@@ -98,9 +98,10 @@ class PlaceBillingController extends Controller
         abort_if(! $plan || ! isset(TierPricingService::PERIOD_MONTHS[$period]), 404);
 
         $amount = TierPricingService::priceFor($plan['price'], $period);
+        $amountUsd = TierPricingService::priceFor($plan['price_usd'], $period);
         $periodLabel = TierPricingService::PERIOD_LABELS[$period];
 
-        return view('account.place_transfer', compact('place', 'tier', 'plan', 'period', 'amount', 'periodLabel'));
+        return view('account.place_transfer', compact('place', 'tier', 'plan', 'period', 'amount', 'amountUsd', 'periodLabel'));
     }
 
     public function transferStore(Request $request, KosherPlace $place)
@@ -110,12 +111,14 @@ class PlaceBillingController extends Controller
         $validated = $request->validate([
             'tier'   => 'required|in:destacada_rubro,premium',
             'period' => 'required|in:1,6,12',
+            'currency' => 'required|in:ARS,USD',
             'proof'  => 'required|file|mimes:pdf,jpg,jpeg,png|max:8192',
         ]);
 
         $plan = config("place_plans.{$validated['tier']}");
         $months = TierPricingService::monthsFor($validated['period']);
-        $amount = TierPricingService::priceFor($plan['price'], $validated['period']);
+        $currency = $validated['currency'];
+        $amount = TierPricingService::priceFor($currency === 'USD' ? $plan['price_usd'] : $plan['price'], $validated['period']);
         $periodLabel = TierPricingService::PERIOD_LABELS[$validated['period']];
         $path = $request->file('proof')->store('tier_payment_proofs', 'public');
 
@@ -124,7 +127,7 @@ class PlaceBillingController extends Controller
             'tier'                => $validated['tier'],
             'months'              => $months,
             'amount'              => $amount,
-            'currency'            => 'ARS',
+            'currency'            => $currency,
             'payment_method'      => PlaceTierPayment::METHOD_TRANSFER,
             'status'              => PlaceTierPayment::STATUS_PENDING,
             'transfer_proof_path' => $path,
@@ -136,7 +139,7 @@ class PlaceBillingController extends Controller
                 'Comprobante de transferencia - ' . $place->name,
                 'Nuevo comprobante de transferencia',
                 ['Hay un comprobante para revisar.'],
-                ['Local' => $place->name, 'Plan' => "{$plan['label']} ({$periodLabel})", 'Monto' => "{$amount} ARS"],
+                ['Local' => $place->name, 'Plan' => "{$plan['label']} ({$periodLabel})", 'Monto' => "{$amount} {$currency}"],
                 ['Revisar en el panel', route('admin.places.index')]
             );
         } catch (\Throwable $e) {

@@ -29,6 +29,7 @@ class BannerOrderController extends Controller
     {
         return view('account.banners.create', [
             'prices'  => collect(config('banner_plans.slots'))->map(fn ($s) => $s['price'])->all(),
+            'pricesUsd' => collect(config('banner_plans.slots'))->map(fn ($s) => $s['price_usd'])->all(),
             'periods' => array_keys(TierPricingService::PERIOD_MONTHS),
         ]);
     }
@@ -42,7 +43,7 @@ class BannerOrderController extends Controller
             'target_url'     => 'required|url:http,https|max:500',
             'alt'            => 'nullable|string|max:255',
             'period'         => 'required|in:' . implode(',', array_keys(TierPricingService::PERIOD_MONTHS)),
-            'payment_method' => 'required|in:mercadopago,transfer',
+            'payment_method' => 'required|in:mercadopago,transfer,transfer_usd',
             // Sin SVG a proposito: puede llevar scripts.
             'image'          => 'required|image|mimes:jpg,jpeg,png,webp,gif|max:2048|dimensions:min_width=300,min_height=50',
         ]);
@@ -67,7 +68,10 @@ class BannerOrderController extends Controller
         ]);
 
         $months = TierPricingService::monthsFor($data['period']);
-        $amount = BannerOrderService::total($data['slot'], $data['period']);
+        // transfer_usd = transferencia bancaria pagada en dólares; el resto se cobra en pesos.
+        $currency = $data['payment_method'] === 'transfer_usd' ? 'USD' : 'ARS';
+        $method = $currency === 'USD' ? BannerOrder::PAY_TRANSFER : $data['payment_method'];
+        $amount = BannerOrderService::total($data['slot'], $data['period'], $currency);
 
         $order = BannerOrder::create([
             'user_id'        => $user->id,
@@ -75,11 +79,11 @@ class BannerOrderController extends Controller
             'slot'           => $data['slot'],
             'months'         => $months,
             'amount'         => $amount,
-            'currency'       => 'ARS',
-            'payment_method' => $data['payment_method'],
+            'currency'       => $currency,
+            'payment_method' => $method,
         ]);
 
-        if ($data['payment_method'] === BannerOrder::PAY_TRANSFER) {
+        if ($method === BannerOrder::PAY_TRANSFER) {
             return redirect()->route('account.banners.index')->with('success', __('banners.created_transfer'));
         }
 
@@ -126,7 +130,7 @@ class BannerOrderController extends Controller
         $order->update(['transfer_proof_path' => $request->file('proof')->store('tier_payment_proofs', 'public')]);
         $order->load('banner');
 
-        $service->notifyAdmin($order, $request->user()->name . ' subió un comprobante de transferencia por un banner (' . $order->amount . ' ARS).');
+        $service->notifyAdmin($order, $request->user()->name . ' subió un comprobante de transferencia por un banner (' . $order->amount . ' ' . $order->currency . ').');
 
         return redirect()->route('account.banners.index')->with('success', __('banners.proof_received'));
     }

@@ -45,4 +45,5 @@ return [
     'proof_received' => 'Recibimos tu comprobante. Lo vamos a revisar en breve.',
     'total' => 'Total',
     'ad_label' => 'Publicidad',
+    'pay_transfer_usd' => 'Transferencia bancaria en dólares (USD)',
 ];

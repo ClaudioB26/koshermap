@@ -45,4 +45,5 @@ return [
     'proof_received' => 'We received your receipt. We will review it shortly.',
     'total' => 'Total',
     'ad_label' => 'Advertisement',
+    'pay_transfer_usd' => 'Bank transfer in US dollars (USD)',
 ];

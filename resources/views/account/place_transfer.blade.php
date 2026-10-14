@@ -7,7 +7,7 @@
 <div class="max-w-xl mx-auto">
     <h1 class="text-2xl font-bold text-gray-800 mb-2">{{ __('plans.transfer_heading', ['plan' => __('plans.tier_' . $tier)]) }}</h1>
     <p class="text-gray-500 text-sm mb-6">
-        {{ __('plans.period') }}: <strong>{{ __('plans.period_' . $period, ['pct' => \App\Services\Billing\TierPricingService::PERIOD_DISCOUNT_PERCENT[$period]]) }}</strong> — {{ __('plans.amount') }}: <strong>${{ number_format($amount, 0, ',', '.') }} ARS</strong>.
+        {{ __('plans.period') }}: <strong>{{ __('plans.period_' . $period, ['pct' => \App\Services\Billing\TierPricingService::PERIOD_DISCOUNT_PERCENT[$period]]) }}</strong> — {{ __('plans.amount') }}: <strong>${{ number_format($amount, 0, ',', '.') }} ARS</strong> / <strong>US${{ number_format($amountUsd, 2, ',', '.') }}</strong>.
         {{ __('plans.transfer_intro') }}
     </p>
 
@@ -24,6 +24,13 @@
         @csrf
         <input type="hidden" name="tier" value="{{ $tier }}">
         <input type="hidden" name="period" value="{{ $period }}">
+
+        <div>
+            <label class="block text-sm text-gray-600 mb-1">{{ __('plans.currency') }} *</label>
+            <label class="flex items-center gap-2 text-sm text-gray-700"><input type="radio" name="currency" value="ARS" checked class="text-blue-600"> {{ __('plans.currency_ars') }} — ${{ number_format($amount, 0, ',', '.') }}</label>
+            <label class="flex items-center gap-2 text-sm text-gray-700 mt-1"><input type="radio" name="currency" value="USD" class="text-blue-600"> {{ __('plans.currency_usd') }} — US${{ number_format($amountUsd, 2, ',', '.') }}</label>
+            <p class="text-xs text-gray-400 mt-1">{{ __('plans.usd_note') }}</p>
+        </div>
 
         <div>
             <label class="block text-sm text-gray-600 mb-1">{{ __('plans.proof_label') }} *</label>

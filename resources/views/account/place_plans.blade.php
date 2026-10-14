@@ -27,7 +27,8 @@
         @foreach($plans as $tierKey => $plan)
         <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 flex flex-col">
             <h2 class="text-xl font-bold text-blue-800 mb-1">{{ __('plans.tier_' . $tierKey) }}</h2>
-            <p class="text-sm text-gray-400 mb-4">${{ number_format($plan['price'], 0, ',', '.') }} {{ __('plans.per_month') }}</p>
+            <p class="text-sm text-gray-500 mb-4">{{ __('plans.usd_per_month', ['price' => rtrim(rtrim(number_format($plan['price_usd'], 2, ',', '.'), '0'), ',')]) }}
+                <span class="text-gray-400">· {{ __('plans.ars_equiv', ['price' => number_format($plan['price'], 0, ',', '.')]) }}</span></p>
 
             <ul class="text-sm text-gray-600 space-y-1.5 mb-6 flex-1">
                 @if($tierKey === 'destacada_rubro')

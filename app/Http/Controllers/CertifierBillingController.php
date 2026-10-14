@@ -99,9 +99,10 @@ class CertifierBillingController extends Controller
         abort_if(! $plan || ! isset(TierPricingService::PERIOD_MONTHS[$period]), 404);
 
         $amount = TierPricingService::priceFor($plan['price'], $period);
+        $amountUsd = TierPricingService::priceFor($plan['price_usd'], $period);
         $periodLabel = TierPricingService::PERIOD_LABELS[$period];
 
-        return view('account.certifier_transfer', compact('certifier', 'tier', 'plan', 'period', 'amount', 'periodLabel'));
+        return view('account.certifier_transfer', compact('certifier', 'tier', 'plan', 'period', 'amount', 'amountUsd', 'periodLabel'));
     }
 
     public function transferStore(Request $request)
@@ -111,12 +112,14 @@ class CertifierBillingController extends Controller
         $validated = $request->validate([
             'tier'   => 'required|in:destacada,pro',
             'period' => 'required|in:1,6,12',
+            'currency' => 'required|in:ARS,USD',
             'proof'  => 'required|file|mimes:pdf,jpg,jpeg,png|max:8192',
         ]);
 
         $plan = config("certifier_plans.{$validated['tier']}");
         $months = TierPricingService::monthsFor($validated['period']);
-        $amount = TierPricingService::priceFor($plan['price'], $validated['period']);
+        $currency = $validated['currency'];
+        $amount = TierPricingService::priceFor($currency === 'USD' ? $plan['price_usd'] : $plan['price'], $validated['period']);
         $periodLabel = TierPricingService::PERIOD_LABELS[$validated['period']];
         $path = $request->file('proof')->store('tier_payment_proofs', 'public');
 
@@ -125,7 +128,7 @@ class CertifierBillingController extends Controller
             'tier'                 => $validated['tier'],
             'months'               => $months,
             'amount'               => $amount,
-            'currency'             => 'ARS',
+            'currency'             => $currency,
             'payment_method'       => CertifierTierPayment::METHOD_TRANSFER,
             'status'               => CertifierTierPayment::STATUS_PENDING,
             'transfer_proof_path'  => $path,
@@ -137,7 +140,7 @@ class CertifierBillingController extends Controller
                 'Comprobante de transferencia - ' . $certifier->name,
                 'Nuevo comprobante de transferencia',
                 ['Hay un comprobante para revisar.'],
-                ['Certificadora' => $certifier->name, 'Plan' => "{$plan['label']} ({$periodLabel})", 'Monto' => "{$amount} ARS"],
+                ['Certificadora' => $certifier->name, 'Plan' => "{$plan['label']} ({$periodLabel})", 'Monto' => "{$amount} {$currency}"],
                 ['Revisar en el panel', route('admin.certifiers.index')]
             );
         } catch (\Throwable $e) {

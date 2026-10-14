@@ -10,9 +10,11 @@
 @endphp
 <div class="max-w-2xl mx-auto px-4 py-8" x-data="{ slot: '{{ old('slot', 'top') }}', period: '{{ old('period', '12') }}',
     prices: @json($prices),
+    pricesUsd: @json($pricesUsd),
     pct: @json(\App\Services\Billing\TierPricingService::PERIOD_DISCOUNT_PERCENT),
     months: @json(\App\Services\Billing\TierPricingService::PERIOD_MONTHS),
     total() { return Math.round(this.prices[this.slot] * this.months[this.period] * (1 - this.pct[this.period] / 100)); },
+    totalUsd() { return Math.round(this.pricesUsd[this.slot] * this.months[this.period] * (1 - this.pct[this.period] / 100) * 100) / 100; },
     money(n) { return '$' + n.toLocaleString('es-AR'); } }">
     <a href="{{ route('account.banners.index') }}" class="text-sm text-blue-600 hover:underline">{{ __('banners.back') }}</a>
     <h1 class="text-3xl font-bold text-gray-800 mt-2 mb-6">📢 {{ __('banners.form_title') }}</h1>
@@ -80,7 +82,7 @@
                 <option value="{{ $p }}">{{ __('plans.period_' . $p, ['pct' => \App\Services\Billing\TierPricingService::PERIOD_DISCOUNT_PERCENT[$p]]) }}</option>
                 @endforeach
             </select>
-            <p class="text-sm text-gray-700 mt-2">{{ __('banners.total') }}: <strong x-text="money(total()) + ' ARS'"></strong></p>
+            <p class="text-sm text-gray-700 mt-2">{{ __('banners.total') }}: <strong x-text="money(total()) + ' ARS'"></strong> <span class="text-gray-500">/ US$ <span x-text="totalUsd().toLocaleString('es-AR')"></span></span></p>
         </div>
 
         <div>
@@ -91,6 +93,9 @@
                 </label>
                 <label class="flex items-center gap-2 text-sm text-gray-700">
                     <input type="radio" name="payment_method" value="transfer" @checked(old('payment_method') === 'transfer') class="text-blue-600"> {{ __('banners.pay_transfer') }}
+                </label>
+                <label class="flex items-center gap-2 text-sm text-gray-700">
+                    <input type="radio" name="payment_method" value="transfer_usd" @checked(old('payment_method') === 'transfer_usd') class="text-blue-600"> {{ __('banners.pay_transfer_usd') }}
                 </label>
             </div>
         </div>

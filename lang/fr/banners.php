@@ -45,4 +45,5 @@ return [
     'proof_received' => 'Nous avons reçu votre justificatif. Nous le vérifierons sous peu.',
     'total' => 'Total',
     'ad_label' => 'Publicité',
+    'pay_transfer_usd' => 'Virement bancaire en dollars (USD)',
 ];

@@ -8,10 +8,11 @@ use Illuminate\Support\Facades\Log;
 
 class BannerOrderService
 {
-    /** Precio total del período para una ubicación (con descuento por plazo). */
-    public static function total(string $slot, string $period): float
+    /** Precio total del período para una ubicación (con descuento por plazo), en ARS o USD. */
+    public static function total(string $slot, string $period, string $currency = 'ARS'): float
     {
-        $monthly = (float) config("banner_plans.slots.{$slot}.price", 0);
+        $key = $currency === 'USD' ? 'price_usd' : 'price';
+        $monthly = (float) config("banner_plans.slots.{$slot}.{$key}", 0);
 
         return \App\Services\Billing\TierPricingService::priceFor($monthly, $period);
     }
