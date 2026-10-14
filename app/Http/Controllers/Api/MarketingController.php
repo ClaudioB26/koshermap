@@ -29,7 +29,9 @@ class MarketingController extends Controller
         $businesses = User::query()
             ->where('role', '!=', User::ROLE_ADMIN)
             ->where(function ($q) {
+                // Certificadora aprobada ligada a la cuenta por owner_id o por users.certifier_id
                 $q->whereIn('id', \App\Models\Certifier::where('status', \App\Models\Certifier::STATUS_APPROVED)->whereNotNull('owner_id')->select('owner_id'))
+                  ->orWhereIn('certifier_id', \App\Models\Certifier::where('status', \App\Models\Certifier::STATUS_APPROVED)->select('id'))
                   ->orWhereIn('id', \App\Models\KosherPlace::where('status', \App\Models\KosherPlace::STATUS_APPROVED)->whereNotNull('owner_id')->select('owner_id'));
             })
             ->where('marketing_opt_out', false)
